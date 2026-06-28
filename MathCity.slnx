@@ -1,7 +1,8 @@
 <Solution>
-  <Project Path="MathCity/MathCity.API.csproj" Id="d30b75c8-71b6-4d3b-9d2e-aafc4c698e0c" />
-  <Project Path="src/MathCity.Application/MathCity.Application.csproj" Id="2fec3947-75da-405c-914f-816a2149af7f" />
-  <Project Path="src/MathCity.Domain/MathCity.Domain.csproj" Id="01d4ac58-b6bd-47d3-bcb6-b939e6f24d3b" />
-  <Project Path="src/MathCity.Infrastructure/MathCity.Infrastructure.csproj" Id="941bc687-07af-417e-b5be-19c9f44d8424" />
-  <Project Path="src/MathCity.Shared/MathCity.Shared.csproj" Id="19a48474-8eb5-47d0-8685-2eb765065101" />
+  <Folder Name="/Solution Items/" />
+  <Project Path="D:/code folder/vbnet8/MathCity/MathCity/MathCity.API.csproj" Id="d30b75c8-71b6-4d3b-9d2e-aafc4c698e0c" />
+  <Project Path="D:/code folder/vbnet8/MathCity/src/MathCity.Application/MathCity.Application.csproj" Id="2fec3947-75da-405c-914f-816a2149af7f" />
+  <Project Path="D:/code folder/vbnet8/MathCity/src/MathCity.Domain/MathCity.Domain.csproj" Id="01d4ac58-b6bd-47d3-bcb6-b939e6f24d3b" />
+  <Project Path="D:/code folder/vbnet8/MathCity/src/MathCity.Infrastructure/MathCity.Infrastructure.csproj" Id="941bc687-07af-417e-b5be-19c9f44d8424" />
+  <Project Path="D:/code folder/vbnet8/MathCity/src/MathCity.Shared/MathCity.Shared.csproj" Id="19a48474-8eb5-47d0-8685-2eb765065101" />
 </Solution>

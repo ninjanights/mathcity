@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +16,11 @@
     <Folder Include="Extensions\" />
     <Folder Include="Configurations\" />
     <Folder Include="Filters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\MathCity.Infrastructure\MathCity.Infrastructure.csproj" />
+    <ProjectReference Include="..\src\MathCity.Shared\MathCity.Shared.csproj" />
   </ItemGroup>
 
 </Project>
