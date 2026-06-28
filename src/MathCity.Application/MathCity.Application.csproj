@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Features\Auth\" />
+    <Folder Include="Features\Chapters\" />
+    <Folder Include="Features\Lessons\" />
+    <Folder Include="Features\Comments\" />
+    <Folder Include="Features\Bookmarks\" />
+    <Folder Include="Features\Questions\" />
+    <Folder Include="Features\Notes\" />
+    <Folder Include="Features\Topics\" />
+    <Folder Include="Features\Subjects\" />
+    <Folder Include="Features\Users\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MathCity\MathCity.API.csproj" />
+    <ProjectReference Include="..\MathCity.Domain\MathCity.Domain.csproj" />
+    <ProjectReference Include="..\MathCity.Infrastructure\MathCity.Infrastructure.csproj" />
+    <ProjectReference Include="..\MathCity.Shared\MathCity.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
