@@ -1,18 +1,16 @@
-﻿using System;
+﻿using MathCity.Application.Features.Authentication.Interfaces;
+using MathCity.Infrastructure.Authentication;
+using MathCity.Infrastructure.Identity;
+using MathCity.Infrastructure.Persistence.Context;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Configuration;
-
-using MathCity.Infrastructure.Identity;
-using MathCity.Infrastructure.Persistence.Context;
-using Microsoft.AspNetCore.Identity;
-
-using MathCity.Infrastructure.Authentication;
 
 
 namespace MathCity.Infrastructure;
@@ -48,7 +46,8 @@ public static class DependencyInjection
      services.Configure<JwtSettings>(
         configuration.GetSection("Jwt"));
 
-     services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddScoped<IAuthService, AuthService>();
 
         return services;
 

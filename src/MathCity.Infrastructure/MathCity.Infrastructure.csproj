@@ -10,6 +10,7 @@
     <Folder Include="Configurations\" />
     <Folder Include="Extensions\" />
     <Folder Include="Repositories\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <ProjectReference Include="..\MathCity.Application\MathCity.Application.csproj" />
     <ProjectReference Include="..\MathCity.Domain\MathCity.Domain.csproj" />
 	  <ProjectReference Include="..\MathCity.Shared\MathCity.Shared.csproj" />
   </ItemGroup>
