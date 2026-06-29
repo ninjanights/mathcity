@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.28" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.28">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -23,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <ProjectReference Include="..\src\MathCity.Application\MathCity.Application.csproj" />
     <ProjectReference Include="..\src\MathCity.Infrastructure\MathCity.Infrastructure.csproj" />
     <ProjectReference Include="..\src\MathCity.Shared\MathCity.Shared.csproj" />
   </ItemGroup>

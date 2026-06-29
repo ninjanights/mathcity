@@ -12,6 +12,6 @@ public class ApplicationUser : IdentityUser<Guid>
     public string ProfilePictureUrl { get; set; } = string.Empty;
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-     public bool isActive { get; set; } = true;
+     public bool IsActive { get; set; } = true;
 }
 

@@ -9,8 +9,6 @@
   <ItemGroup>
     <Folder Include="Configurations\" />
     <Folder Include="Extensions\" />
-    <Folder Include="Seed\" />
-    <Folder Include="Services\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 
@@ -25,11 +23,15 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.19.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MathCity.Domain\MathCity.Domain.csproj" />
+	  <ProjectReference Include="..\MathCity.Shared\MathCity.Shared.csproj" />
   </ItemGroup>
 
 </Project>
