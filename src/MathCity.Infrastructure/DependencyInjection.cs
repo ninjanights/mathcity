@@ -12,6 +12,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using MathCity.Application.Features.Users.Interfaces;
+using MathCity.Infrastructure.Services;
+
 
 namespace MathCity.Infrastructure;
 
@@ -48,6 +51,7 @@ public static class DependencyInjection
 
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IUserService, UserService>();
 
         return services;
 
