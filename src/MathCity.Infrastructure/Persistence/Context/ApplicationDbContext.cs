@@ -41,4 +41,12 @@ public class ApplicationDbContext
     public DbSet<Tag> Tags => Set<Tag>();
 
     public DbSet<LessonTag> LessonTags => Set<LessonTag>();
+
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+    }
 }
