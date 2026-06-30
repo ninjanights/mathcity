@@ -1,5 +1,7 @@
-﻿using MathCity.Application.Features.Topics.DTOs;
+﻿using MathCity.Application.Features.Lessons.Interfaces;
+using MathCity.Application.Features.Topics.DTOs;
 using MathCity.Application.Features.Topics.Interfaces;
+using MathCity.Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,10 +12,14 @@ namespace MathCity.API.Controllers;
 public class TopicsController : ControllerBase
 {
     private readonly ITopicService _topicService;
+    private readonly ILessonService _lessonService;
 
-    public TopicsController(ITopicService topicService)
+    public TopicsController(ITopicService topicService,
+         ILessonService lessonService)
+
     {
         _topicService = topicService;
+        _lessonService = lessonService;
     }
 
     // POST: api/topics
@@ -64,5 +70,14 @@ public class TopicsController : ControllerBase
         await _topicService.DeleteAsync(id);
 
         return NoContent();
+    }
+
+    // GET: api/topics/{topicId}/lessons
+    [HttpGet("{topicId:guid}/lessons")]
+    public async Task<IActionResult> GetLessons(Guid topicId)
+    {
+        var result = await _lessonService.GetByTopicAsync(topicId);
+
+        return Ok(result);
     }
 }

@@ -32,7 +32,7 @@ public class LessonConfiguration : IEntityTypeConfiguration<Lesson>
         builder.Property(x => x.Summary)
                .HasMaxLength(1000);
 
-        builder.Property(x => x.MarkdownContent)
+        builder.Property(x => x.Content)
                .IsRequired();
 
         builder.Property(x => x.ReadingTimeMinutes)

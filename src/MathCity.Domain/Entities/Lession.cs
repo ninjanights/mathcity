@@ -20,13 +20,15 @@ public class Lesson : BaseEntity
 
     public string Summary { get; set; } = string.Empty;
 
-    public string MarkdownContent { get; set; } = string.Empty;
+    public string Content { get; set; } = string.Empty;
 
     public DifficultyLevel Difficulty { get; set; }
 
     public int ReadingTimeMinutes { get; set; }
 
     public bool IsPublished { get; set; } = true;
+
+    public int DisplayOrder { get; set; }
 
     public ICollection<LessonResource> Resources { get; set; } = new List<LessonResource>();
 

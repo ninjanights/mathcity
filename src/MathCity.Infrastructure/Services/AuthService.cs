@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Authentication.DTOs;
+﻿using MathCity.Application.Common.Exceptions;
+using MathCity.Application.Features.Authentication.DTOs;
 using MathCity.Application.Features.Authentication.Interfaces;
 using MathCity.Infrastructure.Identity;
 using MathCity.Shared.Constants;
@@ -26,7 +27,7 @@ public class AuthService : IAuthService
 
         if (existingUser != null)
         {
-            throw new Exception("Email already exists.");
+            throw new ConflictException("Email already exists.");
         }
 
         // Create new user
@@ -45,8 +46,8 @@ public class AuthService : IAuthService
 
         if (!result.Succeeded)
         {
-            throw new Exception(
-                string.Join(", ", result.Errors.Select(e => e.Description)));
+            throw new ValidationException(
+         string.Join(", ", result.Errors.Select(e => e.Description)));
         }
 
         // Assign Student role
@@ -79,7 +80,7 @@ public class AuthService : IAuthService
 
         if (user == null)
         {
-            throw new Exception("Invalid email or password.");
+            throw new UnauthorizedException("Invalid email or password.");
         }
 
         // Check if account is active

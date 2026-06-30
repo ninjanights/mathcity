@@ -9,14 +9,10 @@
   <ItemGroup>
     <Folder Include="DTOs\" />
     <Folder Include="Behaviors\" />
-    <Folder Include="Features\Chapters\" />
-    <Folder Include="Features\Lessons\" />
     <Folder Include="Features\Comments\" />
     <Folder Include="Features\Bookmarks\" />
     <Folder Include="Features\Questions\" />
     <Folder Include="Features\Notes\" />
-    <Folder Include="Features\Topics\" />
-    <Folder Include="Features\Subjects\" />
     <Folder Include="Mappings\" />
     <Folder Include="Validators\" />
   </ItemGroup>
@@ -24,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MathCity.Domain\MathCity.Domain.csproj" />
     <ProjectReference Include="..\MathCity.Shared\MathCity.Shared.csproj" />
+	  <PackageReference Include="FluentValidation" Version="12.*" />
   </ItemGroup>
 
 </Project>

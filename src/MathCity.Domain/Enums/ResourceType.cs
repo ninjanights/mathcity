@@ -12,5 +12,6 @@ public enum ResourceType
     Image = 1,
     Video = 2,
     Pdf = 3,
-    ExternalLink = 4
+    ExternalLink = 4,
+    Zip = 5
 }
