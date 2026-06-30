@@ -1,5 +1,7 @@
-﻿using MathCity.Application.Features.Lessons.DTOs;
+﻿using MathCity.Application.Features.LessonResources.Interfaces;
+using MathCity.Application.Features.Lessons.DTOs;
 using MathCity.Application.Features.Lessons.Interfaces;
+using MathCity.Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,10 +12,13 @@ namespace MathCity.API.Controllers;
 public class LessonsController : ControllerBase
 {
     private readonly ILessonService _lessonService;
+    private readonly ILessonResourceService _lessonResourceService;
 
-    public LessonsController(ILessonService lessonService)
+    public LessonsController(ILessonService lessonService,
+         ILessonResourceService lessonResourceService)
     {
         _lessonService = lessonService;
+        _lessonResourceService = lessonResourceService;
     }
 
     // POST: api/lessons
@@ -64,5 +69,14 @@ public class LessonsController : ControllerBase
         await _lessonService.DeleteAsync(id);
 
         return NoContent();
+    }
+
+    // GET: api/lessons/{lessonId}/resources
+    [HttpGet("{lessonId:guid}/resources")]
+    public async Task<IActionResult> GetResources(Guid lessonId)
+    {
+        var result = await _lessonResourceService.GetByLessonAsync(lessonId);
+
+        return Ok(result);
     }
 }

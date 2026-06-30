@@ -1,5 +1,6 @@
 ﻿using MathCity.Application.Features.Authentication.Interfaces;
 using MathCity.Application.Features.Chapters.Interfaces;
+using MathCity.Application.Features.LessonResources.Interfaces;
 using MathCity.Application.Features.Lessons.Interfaces;
 using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
@@ -59,6 +60,7 @@ public static class DependencyInjection
         services.AddScoped<IChapterService, ChapterService>();
         services.AddScoped<ITopicService, TopicService>();
         services.AddScoped<ILessonService, LessonService>();
+        services.AddScoped<ILessonResourceService, LessonResourceService>();
 
         return services;
 
