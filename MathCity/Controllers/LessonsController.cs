@@ -1,6 +1,7 @@
 ﻿using MathCity.Application.Features.LessonResources.Interfaces;
 using MathCity.Application.Features.Lessons.DTOs;
 using MathCity.Application.Features.Lessons.Interfaces;
+using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,12 +14,15 @@ public class LessonsController : ControllerBase
 {
     private readonly ILessonService _lessonService;
     private readonly ILessonResourceService _lessonResourceService;
+    private readonly IPracticeQuestionService _practiceQuestionService;
 
     public LessonsController(ILessonService lessonService,
-         ILessonResourceService lessonResourceService)
+         ILessonResourceService lessonResourceService,
+             IPracticeQuestionService practiceQuestionService)
     {
         _lessonService = lessonService;
         _lessonResourceService = lessonResourceService;
+        _practiceQuestionService = practiceQuestionService;
     }
 
     // POST: api/lessons
@@ -79,4 +83,14 @@ public class LessonsController : ControllerBase
 
         return Ok(result);
     }
+
+    // GET: api/lessons/{lessonId}/practicequestions
+    [HttpGet("{lessonId:guid}/practicequestions")]
+    public async Task<IActionResult> GetPracticeQuestions(Guid lessonId)
+    {
+        var result = await _practiceQuestionService.GetByLessonAsync(lessonId);
+
+        return Ok(result);
+    }
+
 }
