@@ -87,7 +87,7 @@ using (var scope = app.Services.CreateScope())
 {
     try
     {
-        Console.WriteLine("===== STARTING SEEDERS =====");
+        Console.WriteLine("Starting Seeders...");
 
         var services = scope.ServiceProvider;
 
@@ -100,7 +100,7 @@ using (var scope = app.Services.CreateScope())
         await AdminSeeder.SeedAsync(userManager);
         Console.WriteLine("✅ Admin seeded");
 
-        Console.WriteLine("===== SEEDERS FINISHED =====");
+        Console.WriteLine("Seeders Finished...");
     }
     catch (Exception ex)
     {
