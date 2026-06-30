@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Subjects.DTOs;
+﻿using MathCity.Application.Features.Chapters.Interfaces;
+using MathCity.Application.Features.Subjects.DTOs;
 using MathCity.Application.Features.Subjects.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,10 +11,14 @@ namespace MathCity.API.Controllers;
 public class SubjectsController : ControllerBase
 {
     private readonly ISubjectService _subjectService;
+    private readonly IChapterService _chapterService;
 
-    public SubjectsController(ISubjectService subjectService)
+    public SubjectsController(
+        ISubjectService subjectService,
+        IChapterService chapterService)
     {
         _subjectService = subjectService;
+        _chapterService = chapterService;
     }
 
     [HttpPost]
@@ -25,7 +30,16 @@ public class SubjectsController : ControllerBase
         return Ok(subject);
     }
 
-    // get all subjects
+    // GET: /api/subjects/{subjectId}/chapters
+    [HttpGet("{subjectId:guid}/chapters")]
+    public async Task<IActionResult> GetChapters(Guid subjectId)
+    {
+        var result = await _chapterService.GetBySubjectAsync(subjectId);
+
+        return Ok(result);
+    }
+
+    // GET: /api/subjects
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -34,7 +48,7 @@ public class SubjectsController : ControllerBase
         return Ok(subjects);
     }
 
-    // get by id
+    // GET: /api/subjects/{id}
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById(Guid id)
     {
@@ -43,19 +57,19 @@ public class SubjectsController : ControllerBase
         return Ok(subject);
     }
 
-    // update subject
+    // PUT: /api/subjects/{id}
     [HttpPut("{id:guid}")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(
-    Guid id,
-    UpdateSubjectRequest request)
+        Guid id,
+        UpdateSubjectRequest request)
     {
         var subject = await _subjectService.UpdateAsync(id, request);
 
         return Ok(subject);
     }
 
-    // delete subject
+    // DELETE: /api/subjects/{id}
     [HttpDelete("{id:guid}")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Delete(Guid id)

@@ -1,0 +1,68 @@
+﻿using MathCity.Application.Features.Topics.DTOs;
+using MathCity.Application.Features.Topics.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+
+namespace MathCity.API.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class TopicsController : ControllerBase
+{
+    private readonly ITopicService _topicService;
+
+    public TopicsController(ITopicService topicService)
+    {
+        _topicService = topicService;
+    }
+
+    // POST: api/topics
+    [HttpPost]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Create(CreateTopicRequest request)
+    {
+        var topic = await _topicService.CreateAsync(request);
+
+        return Ok(topic);
+    }
+
+    // GET: api/topics
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var topics = await _topicService.GetAllAsync();
+
+        return Ok(topics);
+    }
+
+    // GET: api/topics/{id}
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetById(Guid id)
+    {
+        var topic = await _topicService.GetByIdAsync(id);
+
+        return Ok(topic);
+    }
+
+    // PUT: api/topics/{id}
+    [HttpPut("{id:guid}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Update(
+        Guid id,
+        UpdateTopicRequest request)
+    {
+        var topic = await _topicService.UpdateAsync(id, request);
+
+        return Ok(topic);
+    }
+
+    // DELETE: api/topics/{id}
+    [HttpDelete("{id:guid}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        await _topicService.DeleteAsync(id);
+
+        return NoContent();
+    }
+}

@@ -1,5 +1,7 @@
 ﻿using MathCity.Application.Features.Chapters.DTOs;
 using MathCity.Application.Features.Chapters.Interfaces;
+using MathCity.Application.Features.Topics.Interfaces;
+using MathCity.Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,10 +12,13 @@ namespace MathCity.API.Controllers;
 public class ChaptersController : ControllerBase
 {
     private readonly IChapterService _chapterService;
+    private readonly ITopicService _topicService;
 
-    public ChaptersController(IChapterService chapterService)
+    public ChaptersController(IChapterService chapterService,
+         ITopicService topicService)
     {
         _chapterService = chapterService;
+        _topicService = topicService;
     }
 
     [HttpPost]
@@ -24,6 +29,8 @@ public class ChaptersController : ControllerBase
 
         return Ok(result);
     }
+
+
 
     [HttpGet]
     public async Task<IActionResult> GetAll()
@@ -60,4 +67,15 @@ public class ChaptersController : ControllerBase
 
         return NoContent();
     }
+
+    // GET: api/chapters/{chapterId}/topics
+    [HttpGet("{chapterId:guid}/topics")]
+    public async Task<IActionResult> GetTopics(Guid chapterId)
+    {
+        var result = await _topicService.GetByChapterAsync(chapterId);
+
+        return Ok(result);
+    }
+
+
 }
