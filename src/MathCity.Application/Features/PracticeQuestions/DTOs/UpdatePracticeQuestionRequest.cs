@@ -1,11 +1,7 @@
-﻿using MathCity.Domain.Common;
-using MathCity.Domain.Entities;
-public class PracticeQuestion : BaseEntity
+﻿namespace MathCity.Application.Features.PracticeQuestions.DTOs;
+
+public class UpdatePracticeQuestionRequest
 {
-    public Guid LessonId { get; set; }
-
-    public Lesson Lesson { get; set; } = null!;
-
     public string Question { get; set; } = string.Empty;
 
     public string OptionA { get; set; } = string.Empty;

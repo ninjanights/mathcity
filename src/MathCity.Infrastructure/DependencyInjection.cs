@@ -2,6 +2,8 @@
 using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.LessonResources.Interfaces;
 using MathCity.Application.Features.Lessons.Interfaces;
+using MathCity.Application.Features.PracticeQuestions.Interfaces;
+using MathCity.Application.Features.Progress.Interfaces;
 using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Application.Features.Users.Interfaces;
@@ -18,6 +20,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 
 namespace MathCity.Infrastructure;
@@ -61,6 +64,8 @@ public static class DependencyInjection
         services.AddScoped<ITopicService, TopicService>();
         services.AddScoped<ILessonService, LessonService>();
         services.AddScoped<ILessonResourceService, LessonResourceService>();
+        services.AddScoped<IPracticeQuestionService, PracticeQuestionService>();
+        services.AddScoped<IProgressService, ProgressService>();
 
         return services;
 

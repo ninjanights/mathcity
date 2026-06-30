@@ -1,10 +1,10 @@
-﻿using MathCity.Domain.Common;
-using MathCity.Domain.Entities;
-public class PracticeQuestion : BaseEntity
-{
-    public Guid LessonId { get; set; }
+﻿namespace MathCity.Application.Features.PracticeQuestions.DTOs;
 
-    public Lesson Lesson { get; set; } = null!;
+public class PracticeQuestionResponse
+{
+    public Guid Id { get; set; }
+
+    public Guid LessonId { get; set; }
 
     public string Question { get; set; } = string.Empty;
 
