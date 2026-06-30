@@ -1,3 +1,7 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using MathCity.API.Middleware;
+using MathCity.Application.Features.Subjects.Validators;
 using MathCity.Infrastructure;
 using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
@@ -7,6 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,9 +48,9 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateSubjectRequestValidator>();
 builder.Services.AddEndpointsApiExplorer();
-
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -112,6 +117,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 app.UseAuthentication();
 
