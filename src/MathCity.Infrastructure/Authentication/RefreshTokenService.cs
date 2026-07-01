@@ -48,7 +48,11 @@ public class RefreshTokenService : IRefreshTokenService
 
     public async Task RevokeRefreshTokenAsync(
         RefreshToken refreshToken)
+
     {
+        if (refreshToken.IsRevoked)
+            return;
+
         refreshToken.RevokedAt = DateTime.UtcNow;
 
         _context.RefreshTokens.Update(refreshToken);
@@ -68,6 +72,23 @@ public class RefreshTokenService : IRefreshTokenService
             return;
 
         _context.RefreshTokens.RemoveRange(tokens);
+
+        await _context.SaveChangesAsync();
+    }
+
+    // Revoke all active refresh tokens for a user
+    public async Task RevokeAllUserTokensAsync(Guid userId)
+    {
+        var tokens = await _context.RefreshTokens
+            .Where(x => x.UserId == userId && x.IsActive)
+            .ToListAsync();
+
+        var now = DateTime.UtcNow;
+
+        foreach (var token in tokens)
+        {
+            token.RevokedAt = now;
+        }
 
         await _context.SaveChangesAsync();
     }

@@ -53,6 +53,8 @@ public class AuthService : IAuthService
 
         await _userManager.AddToRoleAsync(user, "Student");
 
+        await _refreshTokenService.DeleteExpiredTokensAsync(user.Id);
+
         var roles = await _userManager.GetRolesAsync(user);
 
         var accessToken = await _jwtTokenGenerator.GenerateTokenAsync(
@@ -93,6 +95,8 @@ public class AuthService : IAuthService
 
         if (!result.Succeeded)
             throw new Exception("Invalid credentials.");
+
+        await _refreshTokenService.DeleteExpiredTokensAsync(user.Id);
 
         var roles = await _userManager.GetRolesAsync(user);
 
@@ -148,13 +152,21 @@ public class AuthService : IAuthService
 
         // 5. Validate state
         if (!storedRefreshToken.IsActive)
-            throw new Exception("Refresh token expired or revoked.");
+        {
+            await _refreshTokenService
+                .RevokeAllUserTokensAsync(storedRefreshToken.UserId);
+
+            throw new Exception(
+                "Refresh token reuse detected. Please login again.");
+        }
 
         // 6. Load user
         var user = await _userManager.FindByIdAsync(userId.ToString());
 
         if (user == null)
             throw new Exception("User not found.");
+
+        await _refreshTokenService.DeleteExpiredTokensAsync(user.Id);
 
         // 7. Roles
         var roles = await _userManager.GetRolesAsync(user);
@@ -168,12 +180,12 @@ public class AuthService : IAuthService
                 roles);
 
         // 9. Generate new refresh token
-        var refreshToken =
-            _refreshTokenService.GenerateRefreshToken();
+        var refreshToken = _refreshTokenService.GenerateRefreshToken();
+
+        storedRefreshToken.ReplacedByToken = refreshToken.Token;
 
         // 10. Revoke old refresh token
-        await _refreshTokenService.RevokeRefreshTokenAsync(
-            storedRefreshToken);
+        await _refreshTokenService.RevokeRefreshTokenAsync(storedRefreshToken);
 
         // 11. Save new refresh token
         await _refreshTokenService.SaveRefreshTokenAsync(

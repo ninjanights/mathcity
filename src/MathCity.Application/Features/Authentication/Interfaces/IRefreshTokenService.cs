@@ -15,4 +15,6 @@ public interface IRefreshTokenService
 
     Task RevokeRefreshTokenAsync(RefreshToken refreshToken);
     Task DeleteExpiredTokensAsync(Guid userId);
+
+    Task RevokeAllUserTokensAsync(Guid userId);
 }
