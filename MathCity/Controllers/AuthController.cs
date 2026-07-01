@@ -30,4 +30,16 @@ public class AuthController : ControllerBase
 
         return Ok(response);
     }
+
+    // POST: api/auth/refresh
+    [HttpPost("refresh")]
+    public async Task<IActionResult> Refresh(
+    RefreshTokenRequest request)
+    {
+        var result = await _authService.RefreshTokenAsync(request);
+
+        return Ok(result);
+    }
+
+
 }

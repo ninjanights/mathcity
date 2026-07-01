@@ -1,6 +1,7 @@
 ﻿using MathCity.Application.Features.LessonResources.Interfaces;
 using MathCity.Application.Features.Lessons.DTOs;
 using MathCity.Application.Features.Lessons.Interfaces;
+using MathCity.Application.Features.Lessons.Queries;
 using MathCity.Application.Features.LessonTags.DTOs;
 using MathCity.Application.Features.LessonTags.Interfaces;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
@@ -43,9 +44,10 @@ public class LessonsController : ControllerBase
 
     // GET: api/lessons
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll(
+    [FromQuery] LessonQuery query)
     {
-        var result = await _lessonService.GetAllAsync();
+        var result = await _lessonService.GetAllAsync(query);
 
         return Ok(result);
     }
