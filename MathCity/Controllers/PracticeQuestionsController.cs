@@ -1,5 +1,6 @@
 ﻿using MathCity.Application.Features.PracticeQuestions.DTOs;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +25,7 @@ public class PracticeQuestionsController : ControllerBase
     {
         var result = await _practiceQuestionService.CreateAsync(request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/practicequestions
@@ -33,7 +34,7 @@ public class PracticeQuestionsController : ControllerBase
     {
         var result = await _practiceQuestionService.GetAllAsync();
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/practicequestions/{id}
@@ -42,7 +43,7 @@ public class PracticeQuestionsController : ControllerBase
     {
         var result = await _practiceQuestionService.GetByIdAsync(id);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // PUT: api/practicequestions/{id}
@@ -54,7 +55,7 @@ public class PracticeQuestionsController : ControllerBase
     {
         var result = await _practiceQuestionService.UpdateAsync(id, request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // DELETE: api/practicequestions/{id}

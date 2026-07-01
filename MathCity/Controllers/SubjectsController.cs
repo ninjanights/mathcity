@@ -1,6 +1,7 @@
 ﻿using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.Subjects.DTOs;
 using MathCity.Application.Features.Subjects.Interfaces;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,7 +28,7 @@ public class SubjectsController : ControllerBase
     {
         var subject = await _subjectService.CreateAsync(request);
 
-        return Ok(subject);
+        return Ok(ApiResponse<object?>.Ok(subject));
     }
 
     // GET: /api/subjects/{subjectId}/chapters
@@ -36,7 +37,7 @@ public class SubjectsController : ControllerBase
     {
         var result = await _chapterService.GetBySubjectAsync(subjectId);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: /api/subjects
@@ -46,7 +47,7 @@ public class SubjectsController : ControllerBase
     {
         var result = await _subjectService.GetAllAsync(search);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: /api/subjects/{id}
@@ -55,7 +56,7 @@ public class SubjectsController : ControllerBase
     {
         var subject = await _subjectService.GetByIdAsync(id);
 
-        return Ok(subject);
+        return Ok(ApiResponse<object?>.Ok(subject));
     }
 
     // PUT: /api/subjects/{id}
@@ -67,7 +68,7 @@ public class SubjectsController : ControllerBase
     {
         var subject = await _subjectService.UpdateAsync(id, request);
 
-        return Ok(subject);
+        return Ok(ApiResponse<object?>.Ok(subject));
     }
 
     // DELETE: /api/subjects/{id}

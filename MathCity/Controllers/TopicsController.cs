@@ -2,6 +2,7 @@
 using MathCity.Application.Features.Topics.DTOs;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Infrastructure.Services;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -29,7 +30,7 @@ public class TopicsController : ControllerBase
     {
         var topic = await _topicService.CreateAsync(request);
 
-        return Ok(topic);
+        return Ok(ApiResponse<object?>.Ok(topic));
     }
 
     // GET: api/topics
@@ -79,6 +80,6 @@ public class TopicsController : ControllerBase
     {
         var result = await _lessonService.GetByTopicAsync(topicId);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 }

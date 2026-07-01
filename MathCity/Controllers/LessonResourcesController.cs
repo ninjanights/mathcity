@@ -1,5 +1,6 @@
 ﻿using MathCity.Application.Features.LessonResources.DTOs;
 using MathCity.Application.Features.LessonResources.Interfaces;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,7 +25,7 @@ public class LessonResourcesController : ControllerBase
     {
         var result = await _lessonResourceService.CreateAsync(request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/lessonresources
@@ -54,7 +55,7 @@ public class LessonResourcesController : ControllerBase
     {
         var result = await _lessonResourceService.UpdateAsync(id, request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // DELETE: api/lessonresources/{id}

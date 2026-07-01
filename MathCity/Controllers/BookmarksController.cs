@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using MathCity.Application.Features.Bookmarks.DTOs;
 using MathCity.Application.Features.Bookmarks.Interfaces;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

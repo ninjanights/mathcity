@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using MathCity.Application.Features.Progress.DTOs;
 using MathCity.Application.Features.Progress.Interfaces;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

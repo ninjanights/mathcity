@@ -2,6 +2,7 @@
 using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Infrastructure.Services;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,7 +28,7 @@ public class ChaptersController : ControllerBase
     {
         var result = await _chapterService.CreateAsync(request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
 
@@ -38,7 +39,7 @@ public class ChaptersController : ControllerBase
     {
         var result = await _chapterService.GetAllAsync(search);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     [HttpGet("{id:guid}")]
@@ -46,7 +47,7 @@ public class ChaptersController : ControllerBase
     {
         var result = await _chapterService.GetByIdAsync(id);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     [HttpPut("{id:guid}")]
@@ -57,7 +58,7 @@ public class ChaptersController : ControllerBase
     {
         var result = await _chapterService.UpdateAsync(id, request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     [HttpDelete("{id:guid}")]

@@ -1,5 +1,6 @@
 ﻿using MathCity.Application.Features.Tags.DTOs;
 using MathCity.Application.Features.Tags.Interfaces;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,7 +24,7 @@ public class TagsController : ControllerBase
     {
         var result = await _tagService.CreateAsync(request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/tags
@@ -54,7 +55,7 @@ public class TagsController : ControllerBase
     {
         var result = await _tagService.UpdateAsync(id, request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // DELETE: api/tags/{id}

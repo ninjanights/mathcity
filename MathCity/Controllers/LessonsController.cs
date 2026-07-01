@@ -8,6 +8,7 @@ using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Infrastructure.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MathCity.Shared.Responses;
 using System.Security.Claims;
 
 namespace MathCity.API.Controllers;
@@ -39,7 +40,7 @@ public class LessonsController : ControllerBase
     {
         var result = await _lessonService.CreateAsync(request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/lessons
@@ -78,7 +79,7 @@ public class LessonsController : ControllerBase
     {
         var result = await _lessonService.UpdateAsync(id, request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // DELETE: api/lessons/{id}

@@ -1,5 +1,6 @@
 ﻿using MathCity.Application.Features.Authentication.DTOs;
 using MathCity.Application.Features.Authentication.Interfaces;
+using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MathCity.API.Controllers;
@@ -40,7 +41,7 @@ public class AuthController : ControllerBase
     {
         var result = await _authService.RefreshTokenAsync(request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // POST: api/auth/logout
