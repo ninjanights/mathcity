@@ -85,17 +85,27 @@ public class LessonService : ILessonService
             .ToListAsync();
     }
 
-    public async Task<LessonResponse> GetByIdAsync(Guid id)
+    public async Task<LessonResponse> GetByIdAsync(
+        Guid lessonId,
+        Guid? userId = null)
     {
         var lesson = await _context.Lessons
-            .FirstOrDefaultAsync(x => x.Id == id);
+            .FirstOrDefaultAsync(x => x.Id == lessonId);
 
         if (lesson == null)
             throw new NotFoundException("Lesson not found.");
 
-        return MapToResponse(lesson);
-    }
+        bool IsBookmarked = false;
 
+        if (userId.HasValue)
+        {
+            IsBookmarked = await _context.Bookmarks.AnyAsync(x =>
+                x.UserId == userId.Value &&
+                x.LessonId == lessonId);
+        }
+
+        return MapToResponse(lesson, IsBookmarked);
+    }
     public async Task<LessonResponse> UpdateAsync(Guid id, UpdateLessonRequest request)
     {
         var lesson = await _context.Lessons
@@ -131,7 +141,9 @@ public class LessonService : ILessonService
         await _context.SaveChangesAsync();
     }
 
-    private static LessonResponse MapToResponse(Lesson lesson)
+    private static LessonResponse MapToResponse(
+     Lesson lesson,
+     bool isBookmarked = false)
     {
         return new LessonResponse
         {
@@ -143,7 +155,9 @@ public class LessonService : ILessonService
             MarkdownContent = lesson.Content,
             Difficulty = lesson.Difficulty,
             ReadingTimeMinutes = lesson.ReadingTimeMinutes,
-            IsPublished = lesson.IsPublished
+            IsPublished = lesson.IsPublished,
+
+            IsBookmarked = isBookmarked
         };
     }
 

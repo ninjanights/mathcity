@@ -33,6 +33,8 @@ public class Lesson : BaseEntity
     public ICollection<LessonResource> Resources { get; set; } = new List<LessonResource>();
 
     public ICollection<PracticeQuestion> PracticeQuestions { get; set; } = new List<PracticeQuestion>();
+    public ICollection<Bookmark> Bookmarks { get; set; }
+    = new List<Bookmark>();
 
 }
 

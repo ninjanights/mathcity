@@ -1,10 +1,13 @@
 ﻿using MathCity.Application.Features.Authentication.Interfaces;
+using MathCity.Application.Features.Bookmarks.Interfaces;
 using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.LessonResources.Interfaces;
 using MathCity.Application.Features.Lessons.Interfaces;
+using MathCity.Application.Features.LessonTags.Interfaces;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Application.Features.Progress.Interfaces;
 using MathCity.Application.Features.Subjects.Interfaces;
+using MathCity.Application.Features.Tags.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Application.Features.Users.Interfaces;
 using MathCity.Infrastructure.Authentication;
@@ -66,6 +69,9 @@ public static class DependencyInjection
         services.AddScoped<ILessonResourceService, LessonResourceService>();
         services.AddScoped<IPracticeQuestionService, PracticeQuestionService>();
         services.AddScoped<IProgressService, ProgressService>();
+        services.AddScoped<IBookmarkService, BookmarkService>();
+        services.AddScoped<ITagService, TagService>();
+        services.AddScoped<ILessonTagService, LessonTagService>();
 
         return services;
 

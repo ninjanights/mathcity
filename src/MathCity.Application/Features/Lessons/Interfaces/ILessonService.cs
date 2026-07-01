@@ -8,7 +8,9 @@ public interface ILessonService
 
     Task<IReadOnlyList<LessonListResponse>> GetAllAsync();
 
-    Task<LessonResponse> GetByIdAsync(Guid id);
+    Task<LessonResponse> GetByIdAsync(
+        Guid lessonId,
+        Guid? userId = null);
 
     Task<IReadOnlyList<LessonListResponse>> GetByTopicAsync(Guid topicId);
 

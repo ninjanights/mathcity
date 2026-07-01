@@ -21,4 +21,6 @@ public class LessonResponse
     public int ReadingTimeMinutes { get; set; }
 
     public bool IsPublished { get; set; }
+
+    public bool IsBookmarked { get; set; }
 }
