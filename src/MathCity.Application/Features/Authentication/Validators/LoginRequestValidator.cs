@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MathCity.Infrastructure.Authentication
+namespace MathCity.Application.Features.Authentication.Validators
 {
-    internal class JwtTokenGeneration
+    internal class LoginRequestValidator
     {
     }
 }

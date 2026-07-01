@@ -9,15 +9,15 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using MathCity.Application.Features.Authentication.Interfaces;
+
+
+using MathCity.Application.Common.Settings;
+
 
 namespace MathCity.Infrastructure.Authentication;
-
-
-
 public class JwtTokenGenerator : IJwtTokenGenerator
 {
-
-
 
     private readonly JwtSettings _jwtSettings;
 
@@ -26,15 +26,56 @@ public class JwtTokenGenerator : IJwtTokenGenerator
         _jwtSettings = jwtSettings.Value;
     }
 
+
+    public ClaimsPrincipal? GetPrincipalFromExpiredToken(string token)
+    {
+        var tokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateAudience = true,
+            ValidateIssuer = true,
+            ValidateIssuerSigningKey = true,
+
+            ValidAudience = _jwtSettings.Audience,
+            ValidIssuer = _jwtSettings.Issuer,
+
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(_jwtSettings.Key)),
+
+            // IMPORTANT
+            ValidateLifetime = false
+        };
+
+        var tokenHandler = new JwtSecurityTokenHandler();
+
+        var principal = tokenHandler.ValidateToken(
+            token,
+            tokenValidationParameters,
+            out SecurityToken securityToken);
+
+        if (securityToken is not JwtSecurityToken jwtToken)
+            throw new SecurityTokenException("Invalid token.");
+
+        if (!jwtToken.Header.Alg.Equals(
+                SecurityAlgorithms.HmacSha256,
+                StringComparison.InvariantCultureIgnoreCase))
+        {
+            throw new SecurityTokenException("Invalid token.");
+        }
+
+        return principal;
+    }
+
     public Task<string> GenerateTokenAsync(
-        ApplicationUser user,
-        IList<string> roles)
+     Guid userId,
+     string email,
+     string fullName,
+     IList<string> roles)
     {
         var claims = new List<Claim>
         {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
-            new Claim(JwtRegisteredClaimNames.Email, user.Email!),
-            new Claim(JwtRegisteredClaimNames.UniqueName, user.FullName),
+            new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
+            new Claim(JwtRegisteredClaimNames.Email, email!),
+            new Claim(JwtRegisteredClaimNames.UniqueName, fullName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
         };
 
@@ -62,6 +103,10 @@ public class JwtTokenGenerator : IJwtTokenGenerator
 
         return Task.FromResult(jwt);
     }
+
+
+
+
 }
 
 

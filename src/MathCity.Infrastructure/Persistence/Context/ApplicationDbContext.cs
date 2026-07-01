@@ -8,8 +8,10 @@ using MathCity.Domain.Entities;
 using MathCity.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MathCity.Infrastructure.Authentication;
 
 namespace MathCity.Infrastructure.Persistence.Context;
+
 
 public class ApplicationDbContext
     : IdentityDbContext<ApplicationUser , ApplicationRole, Guid>
@@ -41,6 +43,8 @@ public class ApplicationDbContext
     public DbSet<Tag> Tags => Set<Tag>();
 
     public DbSet<LessonTag> LessonTags => Set<LessonTag>();
+
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
 
     protected override void OnModelCreating(ModelBuilder builder)

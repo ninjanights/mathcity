@@ -1,10 +1,12 @@
 ﻿using MathCity.Application.Common.Exceptions;
+using MathCity.Application.Common.Models;
 using MathCity.Application.Features.Lessons.DTOs;
 using MathCity.Application.Features.Lessons.Interfaces;
+using MathCity.Application.Features.Lessons.Queries;
 using MathCity.Domain.Entities;
+using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
-using MathCity.Domain.Enums;
 
 namespace MathCity.Infrastructure.Services;
 
@@ -52,10 +54,59 @@ public class LessonService : ILessonService
         return MapToResponse(lesson);
     }
 
-    public async Task<IReadOnlyList<LessonListResponse>> GetAllAsync()
+    public async Task<PagedResult<LessonListResponse>> GetAllAsync(
+     LessonQuery query)
     {
-        return await _context.Lessons
+        var lessons = _context.Lessons
+            .AsQueryable();
+
+        // Search by title
+        if (!string.IsNullOrWhiteSpace(query.Search))
+        {
+            var search = query.Search.Trim().ToLower();
+
+            lessons = lessons.Where(x =>
+                x.Title.ToLower().Contains(search));
+        }
+
+        // Filter by Topic
+        if (query.TopicId.HasValue)
+        {
+            lessons = lessons.Where(x =>
+                x.TopicId == query.TopicId.Value);
+        }
+
+        // Filter by Difficulty
+        if (query.Difficulty.HasValue)
+        {
+            lessons = lessons.Where(x =>
+                x.Difficulty == query.Difficulty.Value);
+        }
+
+        // Filter by Published
+        if (query.Published.HasValue)
+        {
+            lessons = lessons.Where(x =>
+                x.IsPublished == query.Published.Value);
+        }
+
+        // Filter by Tag
+        if (!string.IsNullOrWhiteSpace(query.Tag))
+        {
+            var tag = query.Tag.Trim().ToLower();
+
+            lessons = lessons.Where(x =>
+                x.LessonTags.Any(t =>
+                    t.Tag.Slug == tag ||
+                    t.Tag.Name.ToLower() == tag));
+        }
+
+        var totalCount = await lessons.CountAsync();
+
+        var items = await lessons
             .OrderBy(x => x.Title)
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
             .Select(x => new LessonListResponse
             {
                 Id = x.Id,
@@ -66,6 +117,15 @@ public class LessonService : ILessonService
                 IsPublished = x.IsPublished
             })
             .ToListAsync();
+
+        return new PagedResult<LessonListResponse> {
+            Items = items,
+            Page = query.Page,
+            PageSize = query.PageSize,
+            TotalCount = totalCount,
+            TotalPages = (int)Math.Ceiling(
+                totalCount / (double)query.PageSize)
+        };
     }
 
     public async Task<IReadOnlyList<LessonListResponse>> GetByTopicAsync(Guid topicId)

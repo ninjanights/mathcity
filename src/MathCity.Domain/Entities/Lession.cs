@@ -36,5 +36,8 @@ public class Lesson : BaseEntity
     public ICollection<Bookmark> Bookmarks { get; set; }
     = new List<Bookmark>();
 
+    public ICollection<LessonTag> LessonTags { get; set; }
+    = new List<LessonTag>();
+
 }
 

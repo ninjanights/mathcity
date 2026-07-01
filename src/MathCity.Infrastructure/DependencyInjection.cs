@@ -41,25 +41,26 @@ public static class DependencyInjection
 
 
         });
+
+
         services
+.AddIdentity<ApplicationUser, ApplicationRole>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireNonAlphanumeric = false;
 
+    options.Password.RequiredLength = 6;
+})
+.AddEntityFrameworkStores<ApplicationDbContext>()
+.AddDefaultTokenProviders();
 
-    .AddIdentityCore<ApplicationUser>(options =>
-    {
-        options.Password.RequireDigit = false;
-        options.Password.RequireUppercase = false;
-        options.Password.RequireLowercase = false;
-        options.Password.RequireNonAlphanumeric = false;
-
-        options.Password.RequiredLength = 6;
-    })
-     .AddRoles<ApplicationRole>()
-     .AddEntityFrameworkStores<ApplicationDbContext>();
-
-     services.Configure<JwtSettings>(
+        services.Configure<JwtSettings>(
         configuration.GetSection("Jwt"));
 
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
+
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<ISubjectService, SubjectService>();
@@ -72,6 +73,8 @@ public static class DependencyInjection
         services.AddScoped<IBookmarkService, BookmarkService>();
         services.AddScoped<ITagService, TagService>();
         services.AddScoped<ILessonTagService, LessonTagService>();
+        services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+
 
         return services;
 

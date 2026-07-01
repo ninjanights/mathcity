@@ -1,4 +1,6 @@
-﻿using MathCity.Application.Features.Lessons.DTOs;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.Lessons.DTOs;
+using MathCity.Application.Features.Lessons.Queries;
 
 namespace MathCity.Application.Features.Lessons.Interfaces;
 
@@ -6,7 +8,8 @@ public interface ILessonService
 {
     Task<LessonResponse> CreateAsync(CreateLessonRequest request);
 
-    Task<IReadOnlyList<LessonListResponse>> GetAllAsync();
+    Task<PagedResult<LessonListResponse>> GetAllAsync(
+     LessonQuery query);
 
     Task<LessonResponse> GetByIdAsync(
         Guid lessonId,
