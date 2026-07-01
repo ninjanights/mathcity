@@ -193,4 +193,18 @@ public class AuthService : IAuthService
         };
     }
 
+
+    public async Task LogoutAsync(RefreshTokenRequest request)
+    {
+        var refreshToken = await _refreshTokenService
+            .GetRefreshTokenAsync(request.RefreshToken);
+
+        if (refreshToken == null)
+            throw new Exception("Refresh token not found.");
+
+        if (!refreshToken.IsActive)
+            throw new Exception("Refresh token already revoked or expired.");
+
+        await _refreshTokenService.RevokeRefreshTokenAsync(refreshToken);
+    }
 }
