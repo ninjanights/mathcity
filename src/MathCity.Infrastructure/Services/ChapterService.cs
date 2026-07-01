@@ -42,9 +42,20 @@ public class ChapterService : IChapterService
         return MapToResponse(chapter);
     }
 
-    public async Task<IReadOnlyList<ChapterListResponse>> GetAllAsync()
+    public async Task<IReadOnlyList<ChapterListResponse>> GetAllAsync(
+      string? search = null)
     {
-        return await _context.Chapters
+        var query = _context.Chapters.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            query = query.Where(x =>
+                EF.Functions.ILike(
+                    x.Title,
+                    $"%{search}%"));
+        }
+
+        return await query
             .OrderBy(x => x.DisplayOrder)
             .Select(x => new ChapterListResponse
             {

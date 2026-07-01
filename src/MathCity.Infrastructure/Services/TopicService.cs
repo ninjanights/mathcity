@@ -40,9 +40,20 @@ public class TopicService : ITopicService
         return MapToResponse(topic);
     }
 
-    public async Task<IReadOnlyList<TopicListResponse>> GetAllAsync()
+    public async Task<IReadOnlyList<TopicListResponse>> GetAllAsync(
+    string? search = null)
     {
-        return await _context.Topics
+        var query = _context.Topics.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            query = query.Where(x =>
+                EF.Functions.ILike(
+                    x.Title,
+                    $"%{search}%"));
+        }
+
+        return await query
             .OrderBy(x => x.DisplayOrder)
             .Select(x => new TopicListResponse
             {

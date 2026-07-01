@@ -33,9 +33,10 @@ public class ChaptersController : ControllerBase
 
 
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll(
+     [FromQuery] string? search)
     {
-        var result = await _chapterService.GetAllAsync();
+        var result = await _chapterService.GetAllAsync(search);
 
         return Ok(result);
     }

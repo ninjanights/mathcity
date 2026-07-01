@@ -20,5 +20,6 @@ public interface ISubjectService
 
     Task<SubjectResponse> GetByIdAsync(Guid id);
 
-    Task<IReadOnlyList<SubjectListResponse>> GetAllAsync();
+    Task<IReadOnlyList<SubjectListResponse>> GetAllAsync(
+    string? search = null);
 }

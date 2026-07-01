@@ -6,7 +6,9 @@ public interface ITopicService
 {
     Task<TopicResponse> CreateAsync(CreateTopicRequest request);
 
-    Task<IReadOnlyList<TopicListResponse>> GetAllAsync();
+    Task<IReadOnlyList<TopicListResponse>> GetAllAsync(
+    string? search = null);
+
 
     Task<IReadOnlyList<TopicListResponse>> GetByChapterAsync(Guid chapterId);
 

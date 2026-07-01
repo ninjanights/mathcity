@@ -6,7 +6,8 @@ public interface IChapterService
 {
     Task<ChapterResponse> CreateAsync(CreateChapterRequest request);
 
-    Task<IReadOnlyList<ChapterListResponse>> GetAllAsync();
+    Task<IReadOnlyList<ChapterListResponse>> GetAllAsync(
+     string? search = null);
 
     Task<IReadOnlyList<ChapterListResponse>> GetBySubjectAsync(Guid subjectId);
 

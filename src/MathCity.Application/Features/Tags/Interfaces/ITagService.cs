@@ -6,7 +6,8 @@ public interface ITagService
 {
     Task<TagResponse> CreateAsync(CreateTagRequest request);
 
-    Task<IReadOnlyList<TagListResponse>> GetAllAsync();
+    Task<IReadOnlyList<TagListResponse>> GetAllAsync(
+    string? search = null);
 
     Task<TagResponse> GetByIdAsync(Guid id);
 

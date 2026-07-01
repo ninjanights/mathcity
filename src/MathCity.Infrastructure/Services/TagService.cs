@@ -40,9 +40,21 @@ public class TagService : ITagService
         return MapToResponse(tag);
     }
 
-    public async Task<IReadOnlyList<TagListResponse>> GetAllAsync()
+    // Get all tags with optional search
+    public async Task<IReadOnlyList<TagListResponse>> GetAllAsync(
+       string? search = null)
     {
-        return await _context.Tags
+        var query = _context.Tags.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            query = query.Where(x =>
+                EF.Functions.ILike(
+                    x.Name,
+                    $"%{search}%"));
+        }
+
+        return await query
             .OrderBy(x => x.Name)
             .Select(x => new TagListResponse
             {

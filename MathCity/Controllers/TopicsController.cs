@@ -34,11 +34,12 @@ public class TopicsController : ControllerBase
 
     // GET: api/topics
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll(
+    [FromQuery] string? search)
     {
-        var topics = await _topicService.GetAllAsync();
+        var result = await _topicService.GetAllAsync(search);
 
-        return Ok(topics);
+        return Ok(result);
     }
 
     // GET: api/topics/{id}

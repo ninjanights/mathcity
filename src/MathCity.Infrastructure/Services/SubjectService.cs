@@ -74,9 +74,20 @@ public class SubjectService : ISubjectService
     }
 
     // Implement the GetAllAsync method to retrieve all subjects
-    public async Task<IReadOnlyList<SubjectListResponse>> GetAllAsync()
+    public async Task<IReadOnlyList<SubjectListResponse>> GetAllAsync(
+      string? search = null)
     {
-        return await _context.Subjects
+        var query = _context.Subjects.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            query = query.Where(x =>
+                EF.Functions.ILike(
+                    x.Name,
+                    $"%{search}%"));
+        }
+
+        return await query
             .OrderBy(x => x.DisplayOrder)
             .Select(x => new SubjectListResponse
             {
