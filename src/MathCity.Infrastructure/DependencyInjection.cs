@@ -6,6 +6,7 @@ using MathCity.Application.Features.Lessons.Interfaces;
 using MathCity.Application.Features.LessonTags.Interfaces;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Application.Features.Progress.Interfaces;
+using MathCity.Application.Features.Storage.Interfaces;
 using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Application.Features.Tags.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
@@ -14,10 +15,15 @@ using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
 using MathCity.Infrastructure.Persistence.Context;
 using MathCity.Infrastructure.Services;
+using MathCity.Infrastructure.Settings;
+using MathCity.Infrastructure.Storage;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
+
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -74,11 +80,11 @@ public static class DependencyInjection
         services.AddScoped<ITagService, TagService>();
         services.AddScoped<ILessonTagService, LessonTagService>();
         services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+        services.Configure<SupabaseSettings>(configuration.GetSection(SupabaseSettings.SectionName));
+        services.AddHttpClient<IFileStorageService, SupabaseStorageService>();
 
+        services.Configure<UploadOptions>(configuration.GetSection(UploadOptions.SectionName));
 
         return services;
-
-
-
     }
 }
