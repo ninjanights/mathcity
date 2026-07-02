@@ -4,6 +4,8 @@ using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
+using System.Security.Claims;
+
 namespace MathCity.API.Controllers;
 
 [ApiController]
@@ -41,9 +43,16 @@ public class PracticeQuestionsController : ControllerBase
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById(Guid id)
     {
-        var result = await _practiceQuestionService.GetByIdAsync(id);
+        // If admin, return full response including correct answer & explanation
+        if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+        {
+            var result = await _practiceQuestionService.GetByIdAsync(id);
+            return Ok(ApiResponse<PracticeQuestionResponse>.Ok(result));
+        }
 
-        return Ok(ApiResponse<object?>.Ok(result));
+        // Student or anonymous: hide correct answer & explanation
+        var studentResult = await _practiceQuestionService.GetByIdForStudentAsync(id);
+        return Ok(ApiResponse<StudentPracticeQuestionResponse>.Ok(studentResult));
     }
 
     // PUT: api/practicequestions/{id}
@@ -67,4 +76,47 @@ public class PracticeQuestionsController : ControllerBase
 
         return NoContent();
     }
+
+    // POST: api/practicequestions/submit
+    [HttpPost("submit")]
+    public async Task<IActionResult> Submit(
+        SubmitPracticeQuestionsRequest request)
+    {
+        Guid? userId = null;
+
+        if (User.Identity?.IsAuthenticated == true)
+        {
+            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (!string.IsNullOrWhiteSpace(userIdClaim))
+            {
+                userId = Guid.Parse(userIdClaim);
+            }
+        }
+
+        var result = await _practiceQuestionService.SubmitAsync(
+            userId,
+            request);
+
+        return Ok(ApiResponse<PracticeQuestionSubmissionResponse>.Ok(result));
+    }
+
+    // GET: api/practicequestions/lesson/{lessonId}
+    [HttpGet("lesson/{lessonId:guid}")]
+    public async Task<IActionResult> GetByLesson(Guid lessonId)
+    {
+        // If admin, return full list response
+        if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+        {
+            var result = await _practiceQuestionService.GetByLessonAsync(lessonId);
+            return Ok(ApiResponse<object?>.Ok(result));
+        }
+
+        // Student / anonymous: return student-facing DTOs
+        var studentResult = await _practiceQuestionService.GetByLessonForStudentAsync(lessonId);
+        return Ok(ApiResponse<object?>.Ok(studentResult));
+    }
+
+
 }
+

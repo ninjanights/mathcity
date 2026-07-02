@@ -1,8 +1,8 @@
-﻿using MathCity.Domain.Enums;
+using MathCity.Domain.Enums;
 
 namespace MathCity.Application.Features.PracticeQuestions.DTOs;
 
-public class PracticeQuestionResponse
+public class StudentPracticeQuestionResponse
 {
     public Guid Id { get; set; }
 
@@ -17,10 +17,6 @@ public class PracticeQuestionResponse
     public string OptionC { get; set; } = string.Empty;
 
     public string OptionD { get; set; } = string.Empty;
-
-    public string CorrectAnswer { get; set; } = string.Empty;
-
-    public string Explanation { get; set; } = string.Empty;
 
     public DifficultyLevel Difficulty { get; set; }
 

@@ -25,10 +25,7 @@ public static class RoleSeeder
 
             if (!result.Succeeded)
             {
-                foreach (var error in result.Errors)
-                {
-                    Console.WriteLine($"Role Error: {error.Code} - {error.Description}");
-                }
+                // Seeding failed; errors intentionally not written to console in production.
             }
         }
 

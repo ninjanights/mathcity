@@ -105,9 +105,16 @@ public class LessonsController : ControllerBase
     [HttpGet("{lessonId:guid}/practicequestions")]
     public async Task<IActionResult> GetPracticeQuestions(Guid lessonId)
     {
-        var result = await _practiceQuestionService.GetByLessonAsync(lessonId);
+        // If the user is authenticated and in the Admin role, return full question DTOs
+        if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
+        {
+            var result = await _practiceQuestionService.GetByLessonAsync(lessonId);
+            return Ok(result);
+        }
 
-        return Ok(result);
+        // For students (unauthenticated or non-admin), return student-facing DTOs
+        var studentResult = await _practiceQuestionService.GetByLessonForStudentAsync(lessonId);
+        return Ok(studentResult);
     }
 
     // POST: api/lessons/{lessonId}/tags

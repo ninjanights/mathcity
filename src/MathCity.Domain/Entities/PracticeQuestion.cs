@@ -1,5 +1,6 @@
 ﻿using MathCity.Domain.Common;
 using MathCity.Domain.Entities;
+using MathCity.Domain.Enums;
 public class PracticeQuestion : BaseEntity
 {
     public Guid LessonId { get; set; }
@@ -19,6 +20,8 @@ public class PracticeQuestion : BaseEntity
     public string CorrectAnswer { get; set; } = string.Empty;
 
     public string Explanation { get; set; } = string.Empty;
+
+    public DifficultyLevel Difficulty { get; set; }
 
     public int DisplayOrder { get; set; }
 }

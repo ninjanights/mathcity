@@ -36,11 +36,7 @@ public static class AdminSeeder
 
         if (!result.Succeeded)
         {
-            foreach (var error in result.Errors)
-            {
-                Console.WriteLine($"Identity Error: {error.Code} - {error.Description}");
-            }
-
+            // Seeding failed; errors intentionally not written to console in production.
             return;
         }
 

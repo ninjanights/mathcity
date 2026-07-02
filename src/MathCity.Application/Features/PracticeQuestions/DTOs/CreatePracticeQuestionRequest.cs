@@ -1,4 +1,6 @@
-﻿namespace MathCity.Application.Features.PracticeQuestions.DTOs;
+﻿using MathCity.Domain.Enums;
+
+namespace MathCity.Application.Features.PracticeQuestions.DTOs;
 
 public class CreatePracticeQuestionRequest
 {
@@ -17,6 +19,8 @@ public class CreatePracticeQuestionRequest
     public string CorrectAnswer { get; set; } = string.Empty;
 
     public string Explanation { get; set; } = string.Empty;
+
+    public DifficultyLevel Difficulty { get; set; }
 
     public int DisplayOrder { get; set; }
 }

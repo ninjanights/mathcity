@@ -1,19 +1,25 @@
 ﻿using MathCity.Application.Common.Exceptions;
 using MathCity.Application.Features.PracticeQuestions.DTOs;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
+using MathCity.Application.Features.Progress.Interfaces;
 using MathCity.Domain.Entities;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace MathCity.Infrastructure.Services;
 
 public class PracticeQuestionService : IPracticeQuestionService
 {
     private readonly ApplicationDbContext _context;
+    private readonly IProgressService _progressService;
 
-    public PracticeQuestionService(ApplicationDbContext context)
+    public PracticeQuestionService(
+    ApplicationDbContext context,
+    IProgressService progressService)
     {
         _context = context;
+        _progressService = progressService;
     }
 
     public async Task<PracticeQuestionResponse> CreateAsync(CreatePracticeQuestionRequest request)
@@ -34,6 +40,7 @@ public class PracticeQuestionService : IPracticeQuestionService
             OptionD = request.OptionD,
             CorrectAnswer = request.CorrectAnswer,
             Explanation = request.Explanation,
+            Difficulty = request.Difficulty,
             DisplayOrder = request.DisplayOrder
         };
 
@@ -44,6 +51,28 @@ public class PracticeQuestionService : IPracticeQuestionService
         return MapToResponse(question);
     }
 
+    public async Task<StudentPracticeQuestionResponse> GetByIdForStudentAsync(Guid id)
+    {
+        var question = await _context.PracticeQuestions
+            .FirstOrDefaultAsync(x => x.Id == id);
+
+        if (question == null)
+            throw new NotFoundException("Practice question not found.");
+
+        return new StudentPracticeQuestionResponse
+        {
+            Id = question.Id,
+            LessonId = question.LessonId,
+            Question = question.Question,
+            OptionA = question.OptionA,
+            OptionB = question.OptionB,
+            OptionC = question.OptionC,
+            OptionD = question.OptionD,
+            Difficulty = question.Difficulty,
+            DisplayOrder = question.DisplayOrder
+        };
+    }
+
     public async Task<IReadOnlyList<PracticeQuestionListResponse>> GetAllAsync()
     {
         return await _context.PracticeQuestions
@@ -52,6 +81,7 @@ public class PracticeQuestionService : IPracticeQuestionService
             {
                 Id = x.Id,
                 Question = x.Question,
+                Difficulty = x.Difficulty,
                 DisplayOrder = x.DisplayOrder
             })
             .ToListAsync();
@@ -66,6 +96,27 @@ public class PracticeQuestionService : IPracticeQuestionService
             {
                 Id = x.Id,
                 Question = x.Question,
+                Difficulty = x.Difficulty,
+                DisplayOrder = x.DisplayOrder
+            })
+            .ToListAsync();
+    }
+
+    public async Task<IReadOnlyList<StudentPracticeQuestionResponse>> GetByLessonForStudentAsync(Guid lessonId)
+    {
+        return await _context.PracticeQuestions
+            .Where(x => x.LessonId == lessonId)
+            .OrderBy(x => x.DisplayOrder)
+            .Select(x => new StudentPracticeQuestionResponse
+            {
+                Id = x.Id,
+                LessonId = x.LessonId,
+                Question = x.Question,
+                OptionA = x.OptionA,
+                OptionB = x.OptionB,
+                OptionC = x.OptionC,
+                OptionD = x.OptionD,
+                Difficulty = x.Difficulty,
                 DisplayOrder = x.DisplayOrder
             })
             .ToListAsync();
@@ -99,6 +150,7 @@ public class PracticeQuestionService : IPracticeQuestionService
         question.OptionD = request.OptionD;
         question.CorrectAnswer = request.CorrectAnswer;
         question.Explanation = request.Explanation;
+        question.Difficulty = request.Difficulty;
         question.DisplayOrder = request.DisplayOrder;
 
         await _context.SaveChangesAsync();
@@ -119,6 +171,101 @@ public class PracticeQuestionService : IPracticeQuestionService
         await _context.SaveChangesAsync();
     }
 
+    public async Task<PracticeQuestionSubmissionResponse> SubmitAsync(
+       Guid? userId,
+       SubmitPracticeQuestionsRequest request)
+    {
+
+
+
+
+        var questions = await _context.PracticeQuestions
+            .Where(x => x.LessonId == request.LessonId)
+            .OrderBy(x => x.DisplayOrder)
+            .ToListAsync();
+
+        if (!questions.Any())
+            throw new NotFoundException("No practice questions found for this lesson.");
+
+        // Validate submission: ensure all questions are answered
+        if (request?.Answers == null || request.Answers.Count != questions.Count)
+            throw new ValidationException(
+                "Please answer all questions before submitting.");
+
+        // Ensure there are no duplicate answers for the same question
+        if (request.Answers
+            .GroupBy(x => x.QuestionId)
+            .Any(g => g.Count() > 1))
+        {
+            throw new ValidationException(
+                "Duplicate answers detected.");
+        }
+
+        var results = new List<QuestionResultResponse>();
+
+        var correctAnswers = 0;
+
+        foreach (var answer in request.Answers)
+        {
+            var question = questions.FirstOrDefault(x => x.Id == answer.QuestionId);
+
+            if (question == null)
+                continue;
+
+            var isCorrect = string.Equals(
+                question.CorrectAnswer.Trim(),
+                answer.SelectedAnswer.Trim(),
+                StringComparison.OrdinalIgnoreCase);
+
+            if (isCorrect)
+                correctAnswers++;
+
+            results.Add(new QuestionResultResponse
+            {
+                QuestionId = question.Id,
+                SelectedAnswer = answer.SelectedAnswer,
+                CorrectAnswer = question.CorrectAnswer,
+                IsCorrect = isCorrect,
+                Explanation = question.Explanation
+            });
+        }
+
+        var totalQuestions = questions.Count;
+
+        var scorePercentage = totalQuestions == 0
+            ? 0
+            : (correctAnswers * 100) / totalQuestions;
+
+        var passed = scorePercentage >= 70;
+
+        // Save progress only for logged-in users
+        if (userId.HasValue)
+        {
+            if (passed)
+            {
+                await _progressService.CompleteLessonAsync(
+                    userId.Value,
+                    request.LessonId);
+            }
+            else
+            {
+                await _progressService.StartLessonAsync(
+                    userId.Value,
+                    request.LessonId);
+            }
+        }
+
+        return new PracticeQuestionSubmissionResponse
+        {
+            LessonId = request.LessonId,
+            TotalQuestions = totalQuestions,
+            CorrectAnswers = correctAnswers,
+            ScorePercentage = scorePercentage,
+            Passed = passed,
+            Results = results
+        };
+    }
+
     private static PracticeQuestionResponse MapToResponse(PracticeQuestion question)
     {
         return new PracticeQuestionResponse
@@ -132,6 +279,7 @@ public class PracticeQuestionService : IPracticeQuestionService
             OptionD = question.OptionD,
             CorrectAnswer = question.CorrectAnswer,
             Explanation = question.Explanation,
+            Difficulty = question.Difficulty,
             DisplayOrder = question.DisplayOrder
         };
     }

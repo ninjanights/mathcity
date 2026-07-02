@@ -87,7 +87,7 @@ using (var scope = app.Services.CreateScope())
 {
     try
     {
-        Console.WriteLine("Starting Seeders...");
+        app.Logger.LogInformation("Starting Seeders...");
 
         var services = scope.ServiceProvider;
 
@@ -95,17 +95,16 @@ using (var scope = app.Services.CreateScope())
         var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 
         await RoleSeeder.SeedAsync(roleManager);
-        Console.WriteLine("✅ Roles seeded");
+        app.Logger.LogInformation("Roles seeded");
 
         await AdminSeeder.SeedAsync(userManager);
-        Console.WriteLine("✅ Admin seeded");
+        app.Logger.LogInformation("Admin seeded");
 
-        Console.WriteLine("Seeders Finished...");
+        app.Logger.LogInformation("Seeders finished");
     }
     catch (Exception ex)
     {
-        Console.WriteLine("❌ Seeder Exception:");
-        Console.WriteLine(ex);
+        app.Logger.LogError(ex, "Seeder exception");
     }
 }
 

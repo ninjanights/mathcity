@@ -12,9 +12,17 @@ public interface IPracticeQuestionService
 
     Task<IReadOnlyList<PracticeQuestionListResponse>> GetByLessonAsync(Guid lessonId);
 
+    Task<StudentPracticeQuestionResponse> GetByIdForStudentAsync(Guid id);
+
+    Task<IReadOnlyList<StudentPracticeQuestionResponse>> GetByLessonForStudentAsync(Guid lessonId);
+
     Task<PracticeQuestionResponse> UpdateAsync(
         Guid id,
         UpdatePracticeQuestionRequest request);
 
     Task DeleteAsync(Guid id);
+
+   Task<PracticeQuestionSubmissionResponse> SubmitAsync(
+    Guid? userId,
+    SubmitPracticeQuestionsRequest request);
 }
