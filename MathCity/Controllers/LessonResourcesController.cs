@@ -1,5 +1,6 @@
 ﻿using MathCity.Application.Features.LessonResources.DTOs;
 using MathCity.Application.Features.LessonResources.Interfaces;
+using MathCity.Application.Features.Storage.Interfaces;
 using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -11,19 +12,32 @@ namespace MathCity.API.Controllers;
 public class LessonResourcesController : ControllerBase
 {
     private readonly ILessonResourceService _lessonResourceService;
+    private readonly IFileStorageService _fileStorageService;
 
     public LessonResourcesController(
-        ILessonResourceService lessonResourceService)
+        ILessonResourceService lessonResourceService,
+        IFileStorageService fileStorageService)
     {
         _lessonResourceService = lessonResourceService;
+        _fileStorageService = fileStorageService;
     }
 
-    // POST: api/lessonresources
     [HttpPost]
     [Authorize(Roles = "Admin")]
-    public async Task<IActionResult> Create(CreateLessonResourceRequest request)
+    public async Task<IActionResult> Create(
+    [FromForm] CreateLessonResourceRequest request,
+    IFormFile file)
     {
-        var result = await _lessonResourceService.CreateAsync(request);
+        var upload = await _fileStorageService.UploadAsync(
+            file.OpenReadStream(),
+            file.FileName,
+            file.ContentType,
+            "resources");
+
+        var result =
+     await _lessonResourceService.CreateAsync(
+         request,
+         upload);
 
         return Ok(ApiResponse<object?>.Ok(result));
     }

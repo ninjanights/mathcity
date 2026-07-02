@@ -22,5 +22,7 @@ public class LessonResponse
 
     public bool IsPublished { get; set; }
 
+    public string ThumbnailUrl { get; set; } = string.Empty;
+
     public bool IsBookmarked { get; set; }
 }

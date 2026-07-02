@@ -143,6 +143,90 @@ public class ProgressService : IProgressService
         await _context.SaveChangesAsync();
     }
 
+
+    public async Task StartLessonAsync(
+    Guid userId,
+    Guid lessonId)
+    {
+
+        var lessonExists = await _context.Lessons
+    .AnyAsync(x => x.Id == lessonId);
+
+        if (!lessonExists)
+            throw new NotFoundException("Lesson not found.");
+
+        var progress = await _context.Progress
+            .FirstOrDefaultAsync(x =>
+                x.UserId == userId &&
+                x.LessonId == lessonId);
+
+        if (progress != null)
+        {
+            progress.LastAccessedAt = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync();
+            return;
+        }
+
+        progress = new Progress
+        {
+            UserId = userId,
+            LessonId = lessonId,
+            ProgressPercentage = 0,
+            IsCompleted = false,
+            LastAccessedAt = DateTime.UtcNow
+        };
+
+        _context.Progress.Add(progress);
+
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task CompleteLessonAsync(
+    Guid userId,
+    Guid lessonId)
+
+
+    {
+        var progress = await _context.Progress
+            .FirstOrDefaultAsync(x =>
+                x.UserId == userId &&
+                x.LessonId == lessonId);
+
+      
+
+        if (progress == null)
+            throw new NotFoundException("Progress not found.");
+
+        if (progress.IsCompleted)
+            return;
+
+        progress.ProgressPercentage = 100;
+        progress.IsCompleted = true;
+        progress.CompletedAt = DateTime.UtcNow;
+        progress.LastAccessedAt = DateTime.UtcNow;
+
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task<ProgressResponse?> GetLessonProgressAsync(
+    Guid userId,
+    Guid lessonId)
+    {
+
+
+        var progress = await _context.Progress
+            .Include(x => x.Lesson)
+            .FirstOrDefaultAsync(x =>
+                x.UserId == userId &&
+                x.LessonId == lessonId);
+
+        if (progress == null)
+            return null;
+
+        return MapToResponse(progress);
+    }
+
     private static ProgressResponse MapToResponse(Progress progress)
     {
         return new ProgressResponse

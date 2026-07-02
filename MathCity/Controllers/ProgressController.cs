@@ -83,4 +83,43 @@ public class ProgressController : ControllerBase
 
         return NoContent();
     }
+
+    // POST: api/progress/start/{lessonId} for starting a lesson of a user/student
+    [HttpPost("start/{lessonId:guid}")]
+    public async Task<IActionResult> StartLesson(Guid lessonId)
+    {
+        var userId = Guid.Parse(
+            User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+
+        await _progressService.StartLessonAsync(userId, lessonId);
+
+        return Ok(ApiResponse<string>.Ok("Lesson started."));
+    }
+
+    // POST: api/progress/complete/{lessonId} for completing a lesson
+    [HttpPost("complete/{lessonId:guid}")]
+    public async Task<IActionResult> CompleteLesson(Guid lessonId)
+    {
+        var userId = Guid.Parse(
+            User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+
+
+
+        await _progressService.CompleteLessonAsync(userId, lessonId);
+
+        return Ok(ApiResponse<string>.Ok("Lesson completed."));
+    }
+
+    // GET: api/progress/lesson/{lessonId} for getting the progress of a lesson of a user/student
+    [HttpGet("lesson/{lessonId:guid}")]
+    public async Task<IActionResult> GetLessonProgress(Guid lessonId)
+    {
+        var userId = Guid.Parse(
+            User.FindFirstValue(ClaimTypes.NameIdentifier)!);
+
+        var result =
+            await _progressService.GetLessonProgressAsync(userId, lessonId);
+
+        return Ok(ApiResponse<ProgressResponse?>.Ok(result));
+    }
 }

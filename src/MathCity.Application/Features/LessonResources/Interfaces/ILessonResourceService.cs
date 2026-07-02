@@ -1,10 +1,13 @@
 ﻿using MathCity.Application.Features.LessonResources.DTOs;
+using MathCity.Application.Features.Storage.DTOs;
 
 namespace MathCity.Application.Features.LessonResources.Interfaces;
 
 public interface ILessonResourceService
 {
-    Task<LessonResourceResponse> CreateAsync(CreateLessonResourceRequest request);
+    Task<LessonResourceResponse> CreateAsync(
+    CreateLessonResourceRequest request,
+    FileUploadResponse upload);
 
     Task<IReadOnlyList<LessonResourceListResponse>> GetAllAsync();
 

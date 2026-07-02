@@ -14,5 +14,7 @@ public class LessonListResponse
 
     public int ReadingTimeMinutes { get; set; }
 
+    public string ThumbnailUrl { get; set; } = string.Empty;
+
     public bool IsPublished { get; set; }
 }

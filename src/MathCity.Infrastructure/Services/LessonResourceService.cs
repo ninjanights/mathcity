@@ -1,6 +1,7 @@
 ﻿using MathCity.Application.Common.Exceptions;
 using MathCity.Application.Features.LessonResources.DTOs;
 using MathCity.Application.Features.LessonResources.Interfaces;
+using MathCity.Application.Features.Storage.DTOs;
 using MathCity.Domain.Entities;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +17,9 @@ public class LessonResourceService : ILessonResourceService
         _context = context;
     }
 
-    public async Task<LessonResourceResponse> CreateAsync(CreateLessonResourceRequest request)
+    public async Task<LessonResourceResponse> CreateAsync(
+    CreateLessonResourceRequest request,
+    FileUploadResponse upload)
     {
         var lessonExists = await _context.Lessons
             .AnyAsync(x => x.Id == request.LessonId);
@@ -28,7 +31,13 @@ public class LessonResourceService : ILessonResourceService
         {
             LessonId = request.LessonId,
             Title = request.Title,
-            Url = request.Url,
+
+            FileName = upload.FileName,
+            FilePath = upload.FilePath,
+            FileUrl = upload.PublicUrl,
+            FileSize = upload.Size,
+            ContentType = upload.ContentType,
+
             Type = request.ResourceType,
             DisplayOrder = request.DisplayOrder
         };
@@ -91,7 +100,7 @@ public class LessonResourceService : ILessonResourceService
             throw new NotFoundException("Lesson resource not found.");
 
         resource.Title = request.Title;
-        resource.Url = request.Url;
+        resource.FileUrl = resource.FileUrl;
         resource.Type = request.ResourceType;
         resource.DisplayOrder = request.DisplayOrder;
 
@@ -120,7 +129,6 @@ public class LessonResourceService : ILessonResourceService
             Id = resource.Id,
             LessonId = resource.LessonId,
             Title = resource.Title,
-            Url = resource.Url,
             ResourceType = resource.Type,
             DisplayOrder = resource.DisplayOrder
         };

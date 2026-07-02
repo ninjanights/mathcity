@@ -8,8 +8,6 @@ public class CreateLessonResourceRequest
 
     public string Title { get; set; } = string.Empty;
 
-    public string Url { get; set; } = string.Empty;
-
     public ResourceType ResourceType { get; set; }
 
     public int DisplayOrder { get; set; }

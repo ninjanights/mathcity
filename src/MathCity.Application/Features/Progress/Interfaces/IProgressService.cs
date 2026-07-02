@@ -24,4 +24,16 @@ public interface IProgressService
     Task DeleteAsync(
     Guid userId,
     Guid progressId);
+
+    Task StartLessonAsync(
+    Guid userId,
+    Guid lessonId);
+
+    Task CompleteLessonAsync(
+        Guid userId,
+        Guid lessonId);
+
+    Task<ProgressResponse?> GetLessonProgressAsync(
+        Guid userId,
+        Guid lessonId);
 }

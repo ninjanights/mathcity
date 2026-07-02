@@ -30,6 +30,8 @@ public class Lesson : BaseEntity
 
     public int DisplayOrder { get; set; }
 
+    public string ThumbnailUrl { get; set; } = string.Empty;
+
     public ICollection<LessonResource> Resources { get; set; } = new List<LessonResource>();
 
     public ICollection<PracticeQuestion> PracticeQuestions { get; set; } = new List<PracticeQuestion>();

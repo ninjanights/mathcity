@@ -29,6 +29,7 @@ public class LessonService : ILessonService
 
         var slug = GenerateSlug(request.Title);
 
+
         var exists = await _context.Lessons
             .AnyAsync(x => x.Slug == slug);
 
@@ -44,6 +45,7 @@ public class LessonService : ILessonService
             Content = request.MarkdownContent,
             Difficulty = request.Difficulty,
             ReadingTimeMinutes = request.ReadingTimeMinutes,
+            ThumbnailUrl = request.ThumbnailUrl,
             IsPublished = request.IsPublished
         };
 
@@ -140,6 +142,7 @@ public class LessonService : ILessonService
                 Slug = x.Slug,
                 Difficulty = x.Difficulty,
                 ReadingTimeMinutes = x.ReadingTimeMinutes,
+                ThumbnailUrl = x.ThumbnailUrl,
                 IsPublished = x.IsPublished
             })
             .ToListAsync();
@@ -179,6 +182,7 @@ public class LessonService : ILessonService
         lesson.Content = request.MarkdownContent;
         lesson.Difficulty = request.Difficulty;
         lesson.ReadingTimeMinutes = request.ReadingTimeMinutes;
+        lesson.ThumbnailUrl = request.ThumbnailUrl;
         lesson.IsPublished = request.IsPublished;
 
         lesson.Slug = GenerateSlug(request.Title);
@@ -215,6 +219,7 @@ public class LessonService : ILessonService
             MarkdownContent = lesson.Content,
             Difficulty = lesson.Difficulty,
             ReadingTimeMinutes = lesson.ReadingTimeMinutes,
+            ThumbnailUrl = lesson.ThumbnailUrl,
             IsPublished = lesson.IsPublished,
 
             IsBookmarked = isBookmarked
