@@ -62,13 +62,15 @@ public class RefreshTokenService : IRefreshTokenService
 
     public async Task DeleteExpiredTokensAsync(Guid userId)
     {
+        var now = DateTime.UtcNow;
+
         var tokens = await _context.RefreshTokens
             .Where(x =>
                 x.UserId == userId &&
-                (x.IsExpired || x.IsRevoked))
+                (x.ExpiresAt <= now || x.RevokedAt != null))
             .ToListAsync();
 
-        if (tokens.Count == 0)
+        if (!tokens.Any())
             return;
 
         _context.RefreshTokens.RemoveRange(tokens);
