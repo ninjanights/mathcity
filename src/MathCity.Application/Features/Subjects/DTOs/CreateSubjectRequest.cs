@@ -17,4 +17,6 @@ public class CreateSubjectRequest
     public string Color { get; set; } = "#2563EB";
 
     public int DisplayOrder { get; set; }
+
+    public bool IsPublished { get; set; } = true;
 }

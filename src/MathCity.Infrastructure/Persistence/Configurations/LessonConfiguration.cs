@@ -26,8 +26,18 @@ public class LessonConfiguration : IEntityTypeConfiguration<Lesson>
                .HasMaxLength(200)
                .IsRequired();
 
+        builder.Property(x => x.DisplayOrder)
+       .IsRequired();
+
+
         builder.HasIndex(x => x.Slug)
                .IsUnique();
+
+        builder.HasIndex(x => new
+        {
+            x.TopicId,
+            x.DisplayOrder
+        }).IsUnique();
 
         builder.Property(x => x.Summary)
                .HasMaxLength(1000);

@@ -16,5 +16,9 @@ public class SubjectListResponse
 
     public string Icon { get; set; } = string.Empty;
 
+    public string Description {  get; set; } = string.Empty;
+
+    public bool IsPublished { get; set; } 
+
     public string Color { get; set; } = string.Empty;
 }

@@ -37,7 +37,8 @@ public class SubjectService : ISubjectService
             Icon = request.Icon,
             Color = request.Color,
             DisplayOrder = request.DisplayOrder,
-            IsPublished = true
+            IsPublished = false
+
         };
 
         _context.Subjects.Add(subject);
@@ -95,7 +96,9 @@ public class SubjectService : ISubjectService
                 Name = x.Name,
                 Slug = x.Slug,
                 Icon = x.Icon,
-                Color = x.Color
+                Color = x.Color,
+                Description = x.Description,
+                IsPublished = x.IsPublished
             })
             .ToListAsync();
     }
@@ -124,6 +127,60 @@ public class SubjectService : ISubjectService
         };
     }
 
+   public async Task MoveAsync(
+    Guid id,
+    MoveSubjectRequest request)
+{
+    var subject = await _context.Subjects
+        .FirstOrDefaultAsync(x => x.Id == id);
+
+    if (subject == null)
+        throw new NotFoundException("Subject not found.");
+
+    var totalSubjects = await _context.Subjects.CountAsync();
+
+    // Clamp position between 1 and total subjects
+    var newPosition = Math.Max(1, Math.Min(request.Position, totalSubjects));
+
+    var oldPosition = subject.DisplayOrder;
+
+    if (oldPosition == newPosition)
+        return;
+
+    if (newPosition < oldPosition)
+    {
+        // Moving up
+        var subjectsToShift = await _context.Subjects
+            .Where(x =>
+                x.DisplayOrder >= newPosition &&
+                x.DisplayOrder < oldPosition)
+            .ToListAsync();
+
+        foreach (var item in subjectsToShift)
+        {
+            item.DisplayOrder++;
+        }
+    }
+    else
+    {
+        // Moving down
+        var subjectsToShift = await _context.Subjects
+            .Where(x =>
+                x.DisplayOrder <= newPosition &&
+                x.DisplayOrder > oldPosition)
+            .ToListAsync();
+
+        foreach (var item in subjectsToShift)
+        {
+            item.DisplayOrder--;
+        }
+    }
+
+    subject.DisplayOrder = newPosition;
+
+    await _context.SaveChangesAsync();
+}
+
     // Implement the UpdateAsync method to update an existing subject
     public async Task<SubjectResponse> UpdateAsync(
      Guid id,
@@ -142,7 +199,6 @@ public class SubjectService : ISubjectService
         subject.Description = request.Description;
         subject.Icon = request.Icon;
         subject.Color = request.Color;
-        subject.DisplayOrder = request.DisplayOrder;
         subject.IsPublished = request.IsPublished;
 
         await _context.SaveChangesAsync();
@@ -167,6 +223,5 @@ public class SubjectService : ISubjectService
             .ToLowerInvariant()
             .Replace(" ", "-");
     }
-
 
 }

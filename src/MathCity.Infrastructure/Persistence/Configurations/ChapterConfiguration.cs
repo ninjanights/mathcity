@@ -28,7 +28,13 @@ public class ChapterConfiguration : IEntityTypeConfiguration<Chapter>
             builder.Property(x => x.DisplayOrder)
                    .IsRequired();
 
-            builder.HasOne(x => x.Subject)
+        builder.HasIndex(x => new
+        {
+            x.SubjectId,
+            x.DisplayOrder
+        }).IsUnique();
+
+        builder.HasOne(x => x.Subject)
                    .WithMany(x => x.Chapters)
                    .HasForeignKey(x => x.SubjectId)
                    .OnDelete(DeleteBehavior.Cascade);

@@ -16,5 +16,11 @@ public class LessonResourceConfiguration : IEntityTypeConfiguration<LessonResour
                .WithMany(x => x.Resources)
                .HasForeignKey(x => x.LessonId)
                .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasIndex(x => new
+        {
+            x.LessonId,
+            x.DisplayOrder
+        }).IsUnique();
     }
 }

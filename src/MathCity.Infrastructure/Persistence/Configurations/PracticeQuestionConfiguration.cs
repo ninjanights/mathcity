@@ -16,5 +16,11 @@ public class PracticeQuestionConfiguration : IEntityTypeConfiguration<PracticeQu
                .WithMany(x => x.PracticeQuestions)
                .HasForeignKey(x => x.LessonId)
                .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasIndex(x => new
+        {
+            x.LessonId,
+            x.DisplayOrder
+        }).IsUnique();
     }
 }

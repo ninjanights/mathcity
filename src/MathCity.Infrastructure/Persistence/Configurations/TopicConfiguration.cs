@@ -25,6 +25,12 @@ public class TopicConfiguration : IEntityTypeConfiguration<Topic>
         builder.Property(x => x.DisplayOrder)
                .IsRequired();
 
+        builder.HasIndex(x => new
+        {
+            x.ChapterId,
+            x.DisplayOrder
+        }).IsUnique();
+
         builder.HasOne(x => x.Chapter)
                .WithMany(x => x.Topics)
                .HasForeignKey(x => x.ChapterId)

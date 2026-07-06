@@ -18,6 +18,10 @@ public interface ISubjectService
 
     Task DeleteAsync(Guid id);
 
+    Task MoveAsync(
+      Guid id,
+      MoveSubjectRequest request);
+
     Task<SubjectResponse> GetByIdAsync(Guid id);
 
     Task<IReadOnlyList<SubjectListResponse>> GetAllAsync(

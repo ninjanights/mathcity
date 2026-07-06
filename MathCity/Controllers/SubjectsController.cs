@@ -80,4 +80,16 @@ public class SubjectsController : ControllerBase
 
         return NoContent();
     }
+
+    // PATCH: /api/subjects/{id}/position
+    [HttpPatch("{id:guid}/position")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Move(
+        Guid id,
+        MoveSubjectRequest request)
+    {
+        await _subjectService.MoveAsync(id, request);
+
+        return NoContent();
+    }
 }
