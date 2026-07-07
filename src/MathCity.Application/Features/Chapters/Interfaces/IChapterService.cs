@@ -13,7 +13,9 @@ public interface IChapterService
 
     Task<ChapterResponse> GetByIdAsync(Guid id);
 
-
+    Task MoveAsync(
+    Guid id,
+    MoveChapterRequest request);
 
     Task<ChapterResponse> UpdateAsync(
         Guid id,

@@ -79,6 +79,18 @@ public class ChaptersController : ControllerBase
         return Ok(result);
     }
 
+    // move order
+    [HttpPatch("{id:guid}/move")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Move(
+    Guid id,
+    MoveChapterRequest request)
+    {
+        await _chapterService.MoveAsync(id, request);
+
+        return NoContent();
+    }
+
 
 
 

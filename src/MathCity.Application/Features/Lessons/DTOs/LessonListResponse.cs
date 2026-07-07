@@ -16,5 +16,7 @@ public class LessonListResponse
 
     public string ThumbnailUrl { get; set; } = string.Empty;
 
+    public int DisplayOrder { get; set; }
+
     public bool IsPublished { get; set; }
 }

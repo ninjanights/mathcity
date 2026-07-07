@@ -21,5 +21,9 @@ public interface ILessonService
         Guid id,
         UpdateLessonRequest request);
 
+    Task MoveAsync(
+    Guid id,
+    MoveLessonRequest request);
+
     Task DeleteAsync(Guid id);
 }

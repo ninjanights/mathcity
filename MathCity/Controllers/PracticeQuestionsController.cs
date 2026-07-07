@@ -117,6 +117,16 @@ public class PracticeQuestionsController : ControllerBase
         return Ok(ApiResponse<object?>.Ok(studentResult));
     }
 
+    [HttpPatch("{id:guid}/move")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Move(
+    Guid id,
+    MovePracticeQuestionRequest request)
+    {
+        await _practiceQuestionService.MoveAsync(id, request);
+
+        return NoContent();
+    }
 
 }
 

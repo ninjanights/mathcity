@@ -24,5 +24,7 @@ public class LessonResponse
 
     public string ThumbnailUrl { get; set; } = string.Empty;
 
+    public int DisplayOrder { get; set; }
+
     public bool IsBookmarked { get; set; }
 }

@@ -12,6 +12,7 @@
     <Folder Include="Features\Comments\" />
     <Folder Include="Features\Questions\" />
     <Folder Include="Features\Notes\" />
+    <Folder Include="Features\Topics\DTOs\NewFolder\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Mappings\" />
     <Folder Include="Validators\" />

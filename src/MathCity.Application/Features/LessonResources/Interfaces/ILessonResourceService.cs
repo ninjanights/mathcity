@@ -19,5 +19,9 @@ public interface ILessonResourceService
         Guid id,
         UpdateLessonResourceRequest request);
 
+    Task MoveAsync(
+    Guid id,
+    MoveLessonResourceRequest request);
+
     Task DeleteAsync(Guid id);
 }

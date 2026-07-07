@@ -22,7 +22,11 @@ public interface IPracticeQuestionService
 
     Task DeleteAsync(Guid id);
 
-   Task<PracticeQuestionSubmissionResponse> SubmitAsync(
+    Task MoveAsync(
+    Guid id,
+    MovePracticeQuestionRequest request);
+
+    Task<PracticeQuestionSubmissionResponse> SubmitAsync(
     Guid? userId,
     SubmitPracticeQuestionsRequest request);
 }

@@ -18,5 +18,7 @@ public interface ITopicService
         Guid id,
         UpdateTopicRequest request);
 
+    Task MoveAsync(Guid id, MoveTopicRequest request);
+
     Task DeleteAsync(Guid id);
 }

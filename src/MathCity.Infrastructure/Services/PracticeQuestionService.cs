@@ -30,6 +30,10 @@ public class PracticeQuestionService : IPracticeQuestionService
         if (!lessonExists)
             throw new NotFoundException("Lesson not found.");
 
+        await MoveDisplayOrderAsync(
+    request.LessonId,
+    request.DisplayOrder);
+
         var question = new PracticeQuestion
         {
             LessonId = request.LessonId,
@@ -137,11 +141,23 @@ public class PracticeQuestionService : IPracticeQuestionService
         Guid id,
         UpdatePracticeQuestionRequest request)
     {
+
+
+
         var question = await _context.PracticeQuestions
             .FirstOrDefaultAsync(x => x.Id == id);
 
         if (question == null)
             throw new NotFoundException("Practice question not found.");
+
+        if (question.DisplayOrder != request.DisplayOrder)
+        {
+            await MoveDisplayOrderAsync(
+                question.LessonId,
+                request.DisplayOrder,
+                question.Id);
+        }
+
 
         question.Question = request.Question;
         question.OptionA = request.OptionA;
@@ -158,6 +174,22 @@ public class PracticeQuestionService : IPracticeQuestionService
         return MapToResponse(question);
     }
 
+    public async Task MoveAsync(
+    Guid id,
+    MovePracticeQuestionRequest request)
+    {
+        var question = await _context.PracticeQuestions
+            .FirstOrDefaultAsync(x => x.Id == id);
+
+        if (question == null)
+            throw new NotFoundException("Practice question not found.");
+
+        await MoveDisplayOrderAsync(
+            question.LessonId,
+            request.Position,
+            question.Id);
+    }
+
     public async Task DeleteAsync(Guid id)
     {
         var question = await _context.PracticeQuestions
@@ -167,6 +199,58 @@ public class PracticeQuestionService : IPracticeQuestionService
             throw new NotFoundException("Practice question not found.");
 
         _context.PracticeQuestions.Remove(question);
+
+        await _context.SaveChangesAsync();
+
+        var questions = await _context.PracticeQuestions
+            .Where(x => x.LessonId == question.LessonId)
+            .OrderBy(x => x.DisplayOrder)
+            .ToListAsync();
+
+        for (int i = 0; i < questions.Count; i++)
+        {
+            questions[i].DisplayOrder = i + 1;
+        }
+
+        await _context.SaveChangesAsync();
+    }
+
+    private async Task MoveDisplayOrderAsync(
+    Guid lessonId,
+    int newPosition,
+    Guid? questionId = null)
+    {
+        var questions = await _context.PracticeQuestions
+            .Where(x => x.LessonId == lessonId)
+            .OrderBy(x => x.DisplayOrder)
+            .ToListAsync();
+
+        PracticeQuestion? moving = null;
+
+        if (questionId.HasValue)
+        {
+            moving = questions.First(x => x.Id == questionId.Value);
+            questions.Remove(moving);
+        }
+
+        newPosition = Math.Clamp(newPosition, 1, questions.Count + 1);
+
+        if (moving != null)
+        {
+            questions.Insert(newPosition - 1, moving);
+        }
+
+        for (int i = 0; i < questions.Count; i++)
+        {
+            questions[i].DisplayOrder = i + 1000;
+        }
+
+        await _context.SaveChangesAsync();
+
+        for (int i = 0; i < questions.Count; i++)
+        {
+            questions[i].DisplayOrder = i + 1;
+        }
 
         await _context.SaveChangesAsync();
     }

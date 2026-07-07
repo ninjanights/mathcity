@@ -46,7 +46,8 @@ public class LessonService : ILessonService
             Difficulty = request.Difficulty,
             ReadingTimeMinutes = request.ReadingTimeMinutes,
             ThumbnailUrl = request.ThumbnailUrl,
-            IsPublished = request.IsPublished
+            IsPublished = request.IsPublished,
+            DisplayOrder = request.DisplayOrder
         };
 
         _context.Lessons.Add(lesson);
@@ -106,7 +107,7 @@ public class LessonService : ILessonService
         var totalCount = await lessons.CountAsync();
 
         var items = await lessons
-            .OrderBy(x => x.Title)
+.OrderBy(x => x.DisplayOrder)
             .Skip((query.Page - 1) * query.PageSize)
             .Take(query.PageSize)
             .Select(x => new LessonListResponse
@@ -116,7 +117,8 @@ public class LessonService : ILessonService
                 Slug = x.Slug,
                 Difficulty = x.Difficulty,
                 ReadingTimeMinutes = x.ReadingTimeMinutes,
-                IsPublished = x.IsPublished
+                IsPublished = x.IsPublished,
+                DisplayOrder = x.DisplayOrder
             })
             .ToListAsync();
 
@@ -134,7 +136,7 @@ public class LessonService : ILessonService
     {
         return await _context.Lessons
             .Where(x => x.TopicId == topicId)
-            .OrderBy(x => x.Title)
+            .OrderBy(x => x.DisplayOrder)
             .Select(x => new LessonListResponse
             {
                 Id = x.Id,
@@ -143,6 +145,7 @@ public class LessonService : ILessonService
                 Difficulty = x.Difficulty,
                 ReadingTimeMinutes = x.ReadingTimeMinutes,
                 ThumbnailUrl = x.ThumbnailUrl,
+                DisplayOrder = x.DisplayOrder,
                 IsPublished = x.IsPublished
             })
             .ToListAsync();
@@ -184,7 +187,7 @@ public class LessonService : ILessonService
         lesson.ReadingTimeMinutes = request.ReadingTimeMinutes;
         lesson.ThumbnailUrl = request.ThumbnailUrl;
         lesson.IsPublished = request.IsPublished;
-
+        lesson.DisplayOrder = request.DisplayOrder;
         lesson.Slug = GenerateSlug(request.Title);
 
         await _context.SaveChangesAsync();
@@ -221,7 +224,7 @@ public class LessonService : ILessonService
             ReadingTimeMinutes = lesson.ReadingTimeMinutes,
             ThumbnailUrl = lesson.ThumbnailUrl,
             IsPublished = lesson.IsPublished,
-
+            DisplayOrder = lesson.DisplayOrder,
             IsBookmarked = isBookmarked
         };
     }
@@ -232,4 +235,56 @@ public class LessonService : ILessonService
             .ToLowerInvariant()
             .Replace(" ", "-");
     }
+
+    public async Task MoveAsync(
+    Guid id,
+    MoveLessonRequest request)
+    {
+        var lesson = await _context.Lessons
+            .FirstOrDefaultAsync(x => x.Id == id);
+
+        if (lesson == null)
+            throw new NotFoundException("Lesson not found.");
+
+        var total = await _context.Lessons
+            .CountAsync(x => x.TopicId == lesson.TopicId);
+
+        var newPosition = Math.Clamp(request.Position, 1, total);
+
+        var oldPosition = lesson.DisplayOrder;
+
+        if (oldPosition == newPosition)
+            return;
+
+        if (newPosition < oldPosition)
+        {
+            var lessons = await _context.Lessons
+                .Where(x =>
+                    x.TopicId == lesson.TopicId &&
+                    x.DisplayOrder >= newPosition &&
+                    x.DisplayOrder < oldPosition)
+                .ToListAsync();
+
+            foreach (var item in lessons)
+                item.DisplayOrder++;
+        }
+        else
+        {
+            var lessons = await _context.Lessons
+                .Where(x =>
+                    x.TopicId == lesson.TopicId &&
+                    x.DisplayOrder <= newPosition &&
+                    x.DisplayOrder > oldPosition)
+                .ToListAsync();
+
+            foreach (var item in lessons)
+                item.DisplayOrder--;
+        }
+
+        lesson.DisplayOrder = newPosition;
+
+        await _context.SaveChangesAsync();
+    }
+
+
 }

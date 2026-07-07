@@ -26,18 +26,101 @@ public class TopicService : ITopicService
             throw new NotFoundException("Chapter not found.");
         }
 
+        //var topic = new Topic
+        //{
+        //    ChapterId = request.ChapterId,
+        //    Title = request.Title,
+        //    DisplayOrder = request.DisplayOrder
+        //};
+
+        //_context.Topics.Add(topic);
+
+        //await _context.SaveChangesAsync();
+
+        var totalTopics = await _context.Topics
+    .CountAsync(x => x.ChapterId == request.ChapterId);
+
+        var position = Math.Max(
+            1,
+            Math.Min(request.DisplayOrder, totalTopics + 1));
+
         var topic = new Topic
         {
             ChapterId = request.ChapterId,
             Title = request.Title,
-            DisplayOrder = request.DisplayOrder
+            DisplayOrder = position
         };
 
         _context.Topics.Add(topic);
 
         await _context.SaveChangesAsync();
 
+        await MoveAsync(
+            topic.Id,
+            new MoveTopicRequest
+            {
+                Position = position
+            });
+
+
         return MapToResponse(topic);
+    }
+
+    // move scoped topic
+    public async Task MoveAsync(
+    Guid id,
+    MoveTopicRequest request)
+    {
+        var topic = await _context.Topics
+            .FirstOrDefaultAsync(x => x.Id == id);
+
+        if (topic == null)
+            throw new NotFoundException("Topic not found.");
+
+        var totalTopics = await _context.Topics
+            .CountAsync(x => x.ChapterId == topic.ChapterId);
+
+        var newPosition = Math.Max(
+            1,
+            Math.Min(request.Position, totalTopics));
+
+        var oldPosition = topic.DisplayOrder;
+
+        if (oldPosition == newPosition)
+            return;
+
+        if (newPosition < oldPosition)
+        {
+            var topicsToShift = await _context.Topics
+                .Where(x =>
+                    x.ChapterId == topic.ChapterId &&
+                    x.DisplayOrder >= newPosition &&
+                    x.DisplayOrder < oldPosition)
+                .ToListAsync();
+
+            foreach (var item in topicsToShift)
+            {
+                item.DisplayOrder++;
+            }
+        }
+        else
+        {
+            var topicsToShift = await _context.Topics
+                .Where(x =>
+                    x.ChapterId == topic.ChapterId &&
+                    x.DisplayOrder <= newPosition &&
+                    x.DisplayOrder > oldPosition)
+                .ToListAsync();
+
+            foreach (var item in topicsToShift)
+            {
+                item.DisplayOrder--;
+            }
+        }
+
+        topic.DisplayOrder = newPosition;
+
+        await _context.SaveChangesAsync();
     }
 
     public async Task<IReadOnlyList<TopicListResponse>> GetAllAsync(
@@ -114,9 +197,15 @@ public class TopicService : ITopicService
         }
 
         topic.Title = request.Title;
-        topic.DisplayOrder = request.DisplayOrder;
 
         await _context.SaveChangesAsync();
+
+        await MoveAsync(
+            topic.Id,
+            new MoveTopicRequest
+            {
+                Position = request.DisplayOrder
+            });
 
         return MapToResponse(topic);
     }

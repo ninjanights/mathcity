@@ -81,4 +81,15 @@ public class LessonResourcesController : ControllerBase
 
         return NoContent();
     }
+
+    [HttpPatch("{id:guid}/move")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Move(
+    Guid id,
+    MoveLessonResourceRequest request)
+    {
+        await _lessonResourceService.MoveAsync(id, request);
+
+        return NoContent();
+    }
 }

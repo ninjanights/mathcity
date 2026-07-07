@@ -82,4 +82,16 @@ public class TopicsController : ControllerBase
 
         return Ok(ApiResponse<object?>.Ok(result));
     }
+
+    [HttpPatch("{id:guid}/move")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> Move(
+    Guid id,
+    MoveTopicRequest request)
+    {
+        await _topicService.MoveAsync(id, request);
+
+        return NoContent();
+    }
+
 }
