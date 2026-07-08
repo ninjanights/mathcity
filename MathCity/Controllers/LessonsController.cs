@@ -5,10 +5,8 @@ using MathCity.Application.Features.Lessons.Queries;
 using MathCity.Application.Features.LessonTags.DTOs;
 using MathCity.Application.Features.LessonTags.Interfaces;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
-using MathCity.Infrastructure.Services;
 using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
@@ -37,9 +35,25 @@ public class LessonsController : ControllerBase
     // POST: api/lessons
     [HttpPost]
     [Authorize(Roles = "Admin")]
-    public async Task<IActionResult> Create(CreateLessonRequest request)
+    public async Task<IActionResult> Create(
+    [FromForm] CreateLessonRequest request, IFormFile? thumbnail)
     {
-        var result = await _lessonService.CreateAsync(request);
+
+        using var stream = thumbnail?.OpenReadStream();
+
+        var result = await _lessonService.CreateAsync(
+    request,
+   stream,
+    thumbnail?.FileName,
+    thumbnail?.ContentType);
+
+
+
+      
+      
+
+
+
 
         return Ok(ApiResponse<object?>.Ok(result));
     }
@@ -75,10 +89,18 @@ public class LessonsController : ControllerBase
     [HttpPut("{id:guid}")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(
-        Guid id,
-        UpdateLessonRequest request)
+       Guid id,
+       [FromForm] UpdateLessonRequest request,
+       IFormFile? thumbnail)
     {
-        var result = await _lessonService.UpdateAsync(id, request);
+
+        using var stream = thumbnail?.OpenReadStream();
+        var result = await _lessonService.UpdateAsync(
+      id,
+      request,
+      stream,
+      thumbnail?.FileName,
+      thumbnail?.ContentType);
 
         return Ok(ApiResponse<object?>.Ok(result));
     }

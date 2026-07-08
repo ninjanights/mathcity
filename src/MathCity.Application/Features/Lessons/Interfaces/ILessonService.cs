@@ -6,7 +6,11 @@ namespace MathCity.Application.Features.Lessons.Interfaces;
 
 public interface ILessonService
 {
-    Task<LessonResponse> CreateAsync(CreateLessonRequest request);
+    Task<LessonResponse> CreateAsync(
+     CreateLessonRequest request,
+     Stream? thumbnailStream,
+     string? fileName,
+     string? contentType);
 
     Task<PagedResult<LessonListResponse>> GetAllAsync(
      LessonQuery query);
@@ -18,12 +22,17 @@ public interface ILessonService
     Task<IReadOnlyList<LessonListResponse>> GetByTopicAsync(Guid topicId);
 
     Task<LessonResponse> UpdateAsync(
-        Guid id,
-        UpdateLessonRequest request);
+    Guid id,
+    UpdateLessonRequest request,
+    Stream? thumbnailStream,
+    string? fileName,
+    string? contentType);
 
     Task MoveAsync(
     Guid id,
     MoveLessonRequest request);
 
     Task DeleteAsync(Guid id);
+
+
 }

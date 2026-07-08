@@ -3,6 +3,7 @@ using MathCity.Application.Common.Models;
 using MathCity.Application.Features.Lessons.DTOs;
 using MathCity.Application.Features.Lessons.Interfaces;
 using MathCity.Application.Features.Lessons.Queries;
+using MathCity.Application.Features.Storage.Interfaces;
 using MathCity.Domain.Entities;
 using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
@@ -13,13 +14,20 @@ namespace MathCity.Infrastructure.Services;
 public class LessonService : ILessonService
 {
     private readonly ApplicationDbContext _context;
+    private readonly IFileStorageService _storage;
 
-    public LessonService(ApplicationDbContext context)
+    public LessonService(ApplicationDbContext context,
+          IFileStorageService storage)
     {
         _context = context;
+        _storage = storage;
     }
 
-    public async Task<LessonResponse> CreateAsync(CreateLessonRequest request)
+    public async Task<LessonResponse> CreateAsync(
+        CreateLessonRequest request,
+        Stream? thumbnailStream,
+        string? fileName,
+        string? contentType)
     {
         var topicExists = await _context.Topics
             .AnyAsync(x => x.Id == request.TopicId);
@@ -28,7 +36,6 @@ public class LessonService : ILessonService
             throw new NotFoundException("Topic not found.");
 
         var slug = GenerateSlug(request.Title);
-
 
         var exists = await _context.Lessons
             .AnyAsync(x => x.Slug == slug);
@@ -45,17 +52,32 @@ public class LessonService : ILessonService
             Content = request.MarkdownContent,
             Difficulty = request.Difficulty,
             ReadingTimeMinutes = request.ReadingTimeMinutes,
-            ThumbnailUrl = request.ThumbnailUrl,
             IsPublished = request.IsPublished,
             DisplayOrder = request.DisplayOrder
         };
 
         _context.Lessons.Add(lesson);
 
+        // Generate Lesson Id
+        await _context.SaveChangesAsync();
+
+        if (thumbnailStream != null &&
+            fileName != null &&
+            contentType != null)
+        {
+            lesson.ThumbnailUrl =
+                await _storage.UploadLessonThumbnailAsync(
+                    lesson.Id,
+                    thumbnailStream,
+                    fileName,
+                    contentType);
+        }
+
         await _context.SaveChangesAsync();
 
         return MapToResponse(lesson);
     }
+
 
     public async Task<PagedResult<LessonListResponse>> GetAllAsync(
      LessonQuery query)
@@ -172,29 +194,68 @@ public class LessonService : ILessonService
 
         return MapToResponse(lesson, IsBookmarked);
     }
-    public async Task<LessonResponse> UpdateAsync(Guid id, UpdateLessonRequest request)
+    public async Task<LessonResponse> UpdateAsync(
+     Guid id,
+     UpdateLessonRequest request,
+     Stream? thumbnailStream,
+     string? fileName,
+     string? contentType)
     {
         var lesson = await _context.Lessons
             .FirstOrDefaultAsync(x => x.Id == id);
 
         if (lesson == null)
             throw new NotFoundException("Lesson not found.");
+        var slug = GenerateSlug(request.Title);
+
+        var slugExists = await _context.Lessons.AnyAsync(x =>
+            x.Id != id &&
+            x.Slug == slug);
+
+        if (slugExists)
+            throw new ConflictException("Lesson already exists.");
 
         lesson.Title = request.Title;
         lesson.Summary = request.Summary;
         lesson.Content = request.MarkdownContent;
         lesson.Difficulty = request.Difficulty;
         lesson.ReadingTimeMinutes = request.ReadingTimeMinutes;
-        lesson.ThumbnailUrl = request.ThumbnailUrl;
         lesson.IsPublished = request.IsPublished;
-        lesson.DisplayOrder = request.DisplayOrder;
-        lesson.Slug = GenerateSlug(request.Title);
+        lesson.Slug = slug;
+        if (lesson.DisplayOrder != request.DisplayOrder)
+        {
+            await MoveAsync(id, new MoveLessonRequest
+            {
+                Position = request.DisplayOrder
+            });
+
+            lesson = await _context.Lessons
+                .FirstAsync(x => x.Id == id);
+        }
+
+        if (thumbnailStream != null &&
+     fileName != null &&
+     contentType != null)
+        {
+            var oldThumbnail = lesson.ThumbnailUrl;
+
+            lesson.ThumbnailUrl =
+                await _storage.UploadLessonThumbnailAsync(
+                    lesson.Id,
+                    thumbnailStream,
+                    fileName,
+                    contentType);
+
+            if (!string.IsNullOrWhiteSpace(oldThumbnail))
+            {
+                await _storage.DeleteAsync(oldThumbnail);
+            }
+        }
 
         await _context.SaveChangesAsync();
 
         return MapToResponse(lesson);
     }
-
     public async Task DeleteAsync(Guid id)
     {
         var lesson = await _context.Lessons
@@ -202,6 +263,11 @@ public class LessonService : ILessonService
 
         if (lesson == null)
             throw new NotFoundException("Lesson not found.");
+
+        if (!string.IsNullOrWhiteSpace(lesson.ThumbnailUrl))
+        {
+            await _storage.DeleteAsync(lesson.ThumbnailUrl);
+        }
 
         _context.Lessons.Remove(lesson);
 

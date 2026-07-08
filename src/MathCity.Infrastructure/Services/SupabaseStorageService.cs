@@ -3,6 +3,7 @@ using MathCity.Application.Features.Storage.Interfaces;
 using MathCity.Infrastructure.Settings;
 using Microsoft.Extensions.Options;
 using System.Net.Http.Headers;
+using SkiaSharp;
 
 namespace MathCity.Infrastructure.Storage;
 
@@ -32,11 +33,12 @@ public class SupabaseStorageService : IFileStorageService
 
 
     public async Task<FileUploadResponse> UploadAsync(
-    Stream stream,
-    string fileName,
-    string contentType,
-    string folder,
-    CancellationToken cancellationToken = default)
+        Stream stream,
+        string fileName,
+        string contentType,
+        string folder,
+        bool generateUniqueName = true,
+        CancellationToken cancellationToken = default)
     {
         // sanitize folder - disallow path separators
         if (string.IsNullOrWhiteSpace(folder) ||
@@ -84,8 +86,10 @@ public class SupabaseStorageService : IFileStorageService
             throw new InvalidOperationException("File exceeds the maximum allowed size.");
         }
 
-        var uniqueName = $"{Guid.NewGuid()}{extension}";
-        var storagePath = $"{folder}/{uniqueName}";
+        var finalName = generateUniqueName
+      ? $"{Guid.NewGuid()}{extension}"
+      : fileName;
+        var storagePath = $"{folder}/{finalName}";
 
         using var request = new HttpRequestMessage(
             HttpMethod.Post,
@@ -113,7 +117,7 @@ public class SupabaseStorageService : IFileStorageService
 
         var result = new FileUploadResponse
         {
-            FileName = uniqueName,
+            FileName = finalName,
             FilePath = storagePath,
             PublicUrl = publicUrl,
             Size = size,
@@ -124,14 +128,86 @@ public class SupabaseStorageService : IFileStorageService
         return result;
     }
 
-    public async Task DeleteAsync(string filePath, CancellationToken cancellationToken = default)
+
+    public async Task<string> UploadLessonThumbnailAsync(
+        Guid lessonId,
+        Stream stream,
+        string fileName,
+        string contentType,
+        CancellationToken cancellationToken = default)
     {
-        var response = await _httpClient.DeleteAsync($"/storage/v1/object/{_settings.BucketName}/{filePath}", cancellationToken);
+        stream.Position = 0;
+
+        using var bitmap = SKBitmap.Decode(stream);
+
+        if (bitmap == null)
+            throw new InvalidOperationException("Invalid image.");
+
+        // 4:3 validation
+        var ratio = (double)bitmap.Width / bitmap.Height;
+
+        if (Math.Abs(ratio - (4d / 3d)) > 0.05)
+            throw new InvalidOperationException("Thumbnail must have a 4:3 aspect ratio.");
+
+        // Resize
+        using var resizedBitmap = bitmap.Resize(
+            new SKImageInfo(800, 600),
+            SKSamplingOptions.Default);
+
+        if (resizedBitmap == null)
+            throw new InvalidOperationException("Failed to resize image.");
+
+        using var image = SKImage.FromBitmap(resizedBitmap);
+
+        using var data = image.Encode(SKEncodedImageFormat.Webp, 80);
+
+        using var output = new MemoryStream();
+
+        data.SaveTo(output);
+
+        output.Position = 0;
+
+        var upload = await UploadAsync(
+            output,
+            $"{lessonId}.webp",
+            "image/webp",
+            "lesson-thumbnails",
+            generateUniqueName: false,
+            cancellationToken);
+
+        return upload.PublicUrl;
+    }
+
+    public async Task DeleteAsync(
+       string filePath,
+       CancellationToken cancellationToken = default)
+    {
+        if (string.IsNullOrWhiteSpace(filePath))
+            return;
+
+        // Convert public URL to storage path if needed
+        if (Uri.TryCreate(filePath, UriKind.Absolute, out var uri))
+        {
+            var prefix = $"/storage/v1/object/public/{_settings.BucketName}/";
+
+            var index = uri.AbsolutePath.IndexOf(prefix, StringComparison.OrdinalIgnoreCase);
+
+            if (index >= 0)
+            {
+                filePath = uri.AbsolutePath[(index + prefix.Length)..];
+            }
+        }
+
+        var response = await _httpClient.DeleteAsync(
+            $"/storage/v1/object/{_settings.BucketName}/{filePath}",
+            cancellationToken);
 
         if (!response.IsSuccessStatusCode)
         {
             var error = await response.Content.ReadAsStringAsync(cancellationToken);
-            throw new HttpRequestException($"Supabase delete failed ({response.StatusCode}): {error}");
+
+            throw new HttpRequestException(
+                $"Supabase delete failed ({response.StatusCode}): {error}");
         }
     }
 

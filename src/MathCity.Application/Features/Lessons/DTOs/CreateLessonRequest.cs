@@ -16,8 +16,6 @@ public class CreateLessonRequest
 
     public int ReadingTimeMinutes { get; set; }
 
-    public string ThumbnailUrl { get; set; } = string.Empty;
-
     public int DisplayOrder { get; set; }
 
     public bool IsPublished { get; set; } = true;

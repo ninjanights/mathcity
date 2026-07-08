@@ -1,5 +1,4 @@
 ﻿using MathCity.Domain.Enums;
-
 namespace MathCity.Application.Features.Lessons.DTOs;
 
 public class UpdateLessonRequest
@@ -13,8 +12,6 @@ public class UpdateLessonRequest
     public DifficultyLevel Difficulty { get; set; }
 
     public int ReadingTimeMinutes { get; set; }
-
-    public string ThumbnailUrl { get; set; } = string.Empty;
 
     public int DisplayOrder { get; set; }
 
