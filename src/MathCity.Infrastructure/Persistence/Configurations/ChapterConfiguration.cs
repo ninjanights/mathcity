@@ -28,11 +28,10 @@ public class ChapterConfiguration : IEntityTypeConfiguration<Chapter>
             builder.Property(x => x.DisplayOrder)
                    .IsRequired();
 
-        builder.HasIndex(x => new
-        {
-            x.SubjectId,
-            x.DisplayOrder
-        }).IsUnique();
+            builder.HasIndex(x => new
+                    {x.SubjectId,
+                     x.DisplayOrder
+                    }).IsUnique();
 
         builder.HasOne(x => x.Subject)
                    .WithMany(x => x.Chapters)

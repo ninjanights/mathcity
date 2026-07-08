@@ -34,7 +34,7 @@ public class TagsController : ControllerBase
     {
         var result = await _tagService.GetAllAsync(search);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/tags/{id}
@@ -43,7 +43,7 @@ public class TagsController : ControllerBase
     {
         var result = await _tagService.GetByIdAsync(id);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // PUT: api/tags/{id}

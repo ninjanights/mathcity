@@ -4,6 +4,7 @@ using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Infrastructure.Services;
 using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MathCity.API.Controllers;
@@ -40,7 +41,7 @@ public class TopicsController : ControllerBase
     {
         var result = await _topicService.GetAllAsync(search);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/topics/{id}
@@ -49,7 +50,7 @@ public class TopicsController : ControllerBase
     {
         var topic = await _topicService.GetByIdAsync(id);
 
-        return Ok(topic);
+        return Ok(ApiResponse<object?>.Ok(topic));
     }
 
     // PUT: api/topics/{id}
@@ -61,7 +62,7 @@ public class TopicsController : ControllerBase
     {
         var topic = await _topicService.UpdateAsync(id, request);
 
-        return Ok(topic);
+        return Ok(ApiResponse<object?>.Ok(topic));
     }
 
     // DELETE: api/topics/{id}

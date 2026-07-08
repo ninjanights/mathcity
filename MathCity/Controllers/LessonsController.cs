@@ -6,9 +6,10 @@ using MathCity.Application.Features.LessonTags.DTOs;
 using MathCity.Application.Features.LessonTags.Interfaces;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Infrastructure.Services;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using MathCity.Shared.Responses;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 
 namespace MathCity.API.Controllers;
@@ -50,7 +51,7 @@ public class LessonsController : ControllerBase
     {
         var result = await _lessonService.GetAllAsync(query);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/lessons/{id}
@@ -67,7 +68,7 @@ public class LessonsController : ControllerBase
 
         var result = await _lessonService.GetByIdAsync(id, userId);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // PUT: api/lessons/{id}
@@ -98,7 +99,7 @@ public class LessonsController : ControllerBase
     {
         var result = await _lessonResourceService.GetByLessonAsync(lessonId);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/lessons/{lessonId}/practicequestions
@@ -109,12 +110,12 @@ public class LessonsController : ControllerBase
         if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
         {
             var result = await _practiceQuestionService.GetByLessonAsync(lessonId);
-            return Ok(result);
+            return Ok(ApiResponse<object?>.Ok(result));
         }
 
         // For students (unauthenticated or non-admin), return student-facing DTOs
         var studentResult = await _practiceQuestionService.GetByLessonForStudentAsync(lessonId);
-        return Ok(studentResult);
+        return Ok(ApiResponse<object?>.Ok(studentResult));
     }
 
     // POST: api/lessons/{lessonId}/tags
@@ -128,7 +129,7 @@ public class LessonsController : ControllerBase
             lessonId,
             request);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/lessons/{lessonId}/tags
@@ -138,7 +139,7 @@ public class LessonsController : ControllerBase
         var result = await _lessonTagService.GetByLessonAsync(
             lessonId);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
 

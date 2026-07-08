@@ -17,51 +17,51 @@ public class ChapterService : IChapterService
         _context = context;
     }
 
-public async Task<ChapterResponse> CreateAsync(CreateChapterRequest request)
-{
-    var subjectExists = await _context.Subjects
-        .AnyAsync(x => x.Id == request.SubjectId);
-
-    if (!subjectExists)
+    public async Task<ChapterResponse> CreateAsync(CreateChapterRequest request)
     {
-        throw new NotFoundException("Subject not found.");
+        var subjectExists = await _context.Subjects
+            .AnyAsync(x => x.Id == request.SubjectId);
+
+        if (!subjectExists)
+        {
+            throw new NotFoundException("Subject not found.");
+        }
+
+        // Total chapters inside this subject
+        var total = await _context.Chapters
+            .CountAsync(x => x.SubjectId == request.SubjectId);
+
+        // Clamp position
+        var newPosition = Math.Max(
+            1,
+            Math.Min(request.DisplayOrder, total + 1));
+
+        // Shift all chapters at or after this position
+        var chaptersToShift = await _context.Chapters
+            .Where(x =>
+                x.SubjectId == request.SubjectId &&
+                x.DisplayOrder >= newPosition)
+            .ToListAsync();
+
+        foreach (var chapter in chaptersToShift)
+        {
+            chapter.DisplayOrder++;
+        }
+
+        var chapterEntity = new Chapter
+        {
+            SubjectId = request.SubjectId,
+            Title = request.Title,
+            Description = request.Description,
+            DisplayOrder = newPosition
+        };
+
+        _context.Chapters.Add(chapterEntity);
+
+        await _context.SaveChangesAsync();
+
+        return MapToResponse(chapterEntity);
     }
-
-    // Total chapters inside this subject
-    var total = await _context.Chapters
-        .CountAsync(x => x.SubjectId == request.SubjectId);
-
-    // Clamp position
-    var newPosition = Math.Max(
-        1,
-        Math.Min(request.DisplayOrder, total + 1));
-
-    // Shift all chapters at or after this position
-    var chaptersToShift = await _context.Chapters
-        .Where(x =>
-            x.SubjectId == request.SubjectId &&
-            x.DisplayOrder >= newPosition)
-        .ToListAsync();
-
-    foreach (var chapter in chaptersToShift)
-    {
-        chapter.DisplayOrder++;
-    }
-
-    var chapterEntity = new Chapter
-    {
-        SubjectId = request.SubjectId,
-        Title = request.Title,
-        Description = request.Description,
-        DisplayOrder = newPosition
-    };
-
-    _context.Chapters.Add(chapterEntity);
-
-    await _context.SaveChangesAsync();
-
-    return MapToResponse(chapterEntity);
-}
 
 
 
@@ -228,18 +228,29 @@ public async Task<ChapterResponse> CreateAsync(CreateChapterRequest request)
         var chapter = await _context.Chapters
             .FirstOrDefaultAsync(x => x.Id == id);
 
-        if (chapter is null)
-        {
+        if (chapter == null)
             throw new NotFoundException("Chapter not found.");
-        }
+
+        var deletedPosition = chapter.DisplayOrder;
 
         _context.Chapters.Remove(chapter);
+
+        var chaptersToShift = await _context.Chapters
+            .Where(x =>
+                x.SubjectId == chapter.SubjectId &&
+                x.DisplayOrder > deletedPosition)
+            .ToListAsync();
+
+        foreach (var item in chaptersToShift)
+        {
+            item.DisplayOrder--;
+        }
 
         await _context.SaveChangesAsync();
     }
 
 
-  
+
 
     private static ChapterResponse MapToResponse(Chapter chapter)
     {
