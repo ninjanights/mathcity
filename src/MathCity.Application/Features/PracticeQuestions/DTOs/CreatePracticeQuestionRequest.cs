@@ -16,7 +16,7 @@ public class CreatePracticeQuestionRequest
 
     public string OptionD { get; set; } = string.Empty;
 
-    public string CorrectAnswer { get; set; } = string.Empty;
+    public QuestionOption CorrectAnswer { get; set; }
 
     public string Explanation { get; set; } = string.Empty;
 

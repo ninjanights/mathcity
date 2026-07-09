@@ -258,12 +258,7 @@ public class PracticeQuestionService : IPracticeQuestionService
     public async Task<PracticeQuestionSubmissionResponse> SubmitAsync(
        Guid? userId,
        SubmitPracticeQuestionsRequest request)
-    {
-
-
-
-
-        var questions = await _context.PracticeQuestions
+    {   var questions = await _context.PracticeQuestions
             .Where(x => x.LessonId == request.LessonId)
             .OrderBy(x => x.DisplayOrder)
             .ToListAsync();
@@ -296,10 +291,8 @@ public class PracticeQuestionService : IPracticeQuestionService
             if (question == null)
                 continue;
 
-            var isCorrect = string.Equals(
-                question.CorrectAnswer.Trim(),
-                answer.SelectedAnswer.Trim(),
-                StringComparison.OrdinalIgnoreCase);
+            var isCorrect =
+               question.CorrectAnswer == answer.SelectedAnswer;
 
             if (isCorrect)
                 correctAnswers++;
@@ -343,7 +336,6 @@ public class PracticeQuestionService : IPracticeQuestionService
         {
             LessonId = request.LessonId,
             TotalQuestions = totalQuestions,
-            CorrectAnswers = correctAnswers,
             ScorePercentage = scorePercentage,
             Passed = passed,
             Results = results

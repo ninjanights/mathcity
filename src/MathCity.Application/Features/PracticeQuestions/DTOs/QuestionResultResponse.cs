@@ -1,12 +1,15 @@
-﻿namespace MathCity.Application.Features.PracticeQuestions.DTOs;
+﻿using MathCity.Domain.Enums;
+
+namespace MathCity.Application.Features.PracticeQuestions.DTOs;
 
 public class QuestionResultResponse
 {
     public Guid QuestionId { get; set; }
 
-    public string SelectedAnswer { get; set; } = string.Empty;
+    public QuestionOption SelectedAnswer { get; set; }
 
-    public string CorrectAnswer { get; set; } = string.Empty;
+
+    public QuestionOption CorrectAnswer { get; set; }
 
     public bool IsCorrect { get; set; }
 

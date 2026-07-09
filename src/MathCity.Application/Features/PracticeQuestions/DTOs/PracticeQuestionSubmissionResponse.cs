@@ -1,4 +1,6 @@
-﻿namespace MathCity.Application.Features.PracticeQuestions.DTOs;
+﻿using MathCity.Domain.Enums;
+
+namespace MathCity.Application.Features.PracticeQuestions.DTOs;
 
 public class PracticeQuestionSubmissionResponse
 {
@@ -6,7 +8,7 @@ public class PracticeQuestionSubmissionResponse
 
     public int TotalQuestions { get; set; }
 
-    public int CorrectAnswers { get; set; }
+    public QuestionOption CorrectAnswer { get; set; }
 
     public int ScorePercentage { get; set; }
 

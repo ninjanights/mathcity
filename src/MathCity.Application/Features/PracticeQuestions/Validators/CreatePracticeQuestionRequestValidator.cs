@@ -21,9 +21,7 @@ public class CreatePracticeQuestionRequestValidator
         RuleFor(x => x.OptionD).NotEmpty();
 
         RuleFor(x => x.CorrectAnswer)
-            .NotEmpty()
-            .Must(x => new[] { "A", "B", "C", "D" }.Contains(x.ToUpper()))
-            .WithMessage("Correct answer must be A, B, C or D.");
+            .IsInEnum();
 
         RuleFor(x => x.DisplayOrder)
             .GreaterThanOrEqualTo(0);

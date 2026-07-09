@@ -13,4 +13,10 @@ public enum DifficultyLevel
     Intermediate = 2,
     Advance = 3
 }
-
+public enum QuestionOption
+{
+    A,
+    B,
+    C,
+    D
+}

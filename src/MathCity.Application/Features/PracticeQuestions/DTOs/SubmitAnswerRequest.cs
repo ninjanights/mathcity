@@ -1,6 +1,8 @@
-﻿public class SubmitAnswerRequest
+﻿using MathCity.Domain.Enums;
+
+public class SubmitAnswerRequest
 {
     public Guid QuestionId { get; set; }
 
-    public string SelectedAnswer { get; set; } = string.Empty;
+    public QuestionOption SelectedAnswer { get; set; }
 }
