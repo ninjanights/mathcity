@@ -28,11 +28,17 @@ public class LessonResourcesController : ControllerBase
     [FromForm] CreateLessonResourceRequest request,
     IFormFile file)
     {
-        var upload = await _fileStorageService.UploadAsync(
-            file.OpenReadStream(),
-            file.FileName,
-            file.ContentType,
-            "resources");
+        if (file == null || file.Length == 0)
+            return BadRequest("No file selected."); 
+
+        var upload = await _fileStorageService.UploadLessonResourceAsync(
+    request.LessonId,
+    request.Title,
+    request.DisplayOrder,
+    request.ResourceType,
+    file.OpenReadStream(),
+    file.FileName,
+    file.ContentType);
 
         var result =
      await _lessonResourceService.CreateAsync(
@@ -64,8 +70,9 @@ public class LessonResourcesController : ControllerBase
     [HttpPut("{id:guid}")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(
-        Guid id,
-        UpdateLessonResourceRequest request)
+    Guid id,
+    [FromForm] UpdateLessonResourceRequest request,
+    IFormFile? file)
     {
         var result = await _lessonResourceService.UpdateAsync(id, request);
 

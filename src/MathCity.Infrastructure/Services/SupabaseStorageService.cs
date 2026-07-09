@@ -4,6 +4,7 @@ using MathCity.Infrastructure.Settings;
 using Microsoft.Extensions.Options;
 using System.Net.Http.Headers;
 using SkiaSharp;
+using MathCity.Domain.Enums;
 
 namespace MathCity.Infrastructure.Storage;
 
@@ -41,14 +42,16 @@ public class SupabaseStorageService : IFileStorageService
         CancellationToken cancellationToken = default)
     {
         // sanitize folder - disallow path separators
-        if (string.IsNullOrWhiteSpace(folder) ||
-            folder.Contains(Path.DirectorySeparatorChar) ||
-            folder.Contains(Path.AltDirectorySeparatorChar))
+        if (string.IsNullOrWhiteSpace(folder))
             throw new InvalidOperationException("Invalid upload folder.");
 
-        // prepare allowed sets (case-insensitive)
-        var allowedFolders = new HashSet<string>(_uploadOptions.AllowedFolders ?? new List<string>(), StringComparer.OrdinalIgnoreCase);
-        if (!allowedFolders.Contains(folder))
+        var allowedFolders = new HashSet<string>(
+            _uploadOptions.AllowedFolders ?? new List<string>(),
+            StringComparer.OrdinalIgnoreCase);
+
+        var rootFolder = folder.Split('/')[0];
+
+        if (!allowedFolders.Contains(rootFolder))
             throw new InvalidOperationException("Invalid upload folder.");
 
         // ensure extension and validate
@@ -167,6 +170,8 @@ public class SupabaseStorageService : IFileStorageService
 
         output.Position = 0;
 
+
+
         var upload = await UploadAsync(
             output,
             $"{lessonId}.webp",
@@ -176,6 +181,204 @@ public class SupabaseStorageService : IFileStorageService
             cancellationToken);
 
         return upload.PublicUrl;
+    }
+
+
+
+    public async Task<FileUploadResponse> UploadLessonResourceAsync(
+    Guid lessonId,
+    string resourceTitle,
+    int displayOrder,
+    ResourceType resourceType,
+    Stream stream,
+    string fileName,
+    string contentType,
+    CancellationToken cancellationToken = default)
+    {
+        var folder = $"resources/{lessonId}";
+
+        var finalName = GenerateResourceFileName(
+        displayOrder,
+        resourceTitle,
+        Path.GetExtension(fileName));
+
+        var extension = Path.GetExtension(fileName).ToLowerInvariant();
+
+        ValidateResource(
+            resourceType,
+            extension,
+            contentType);
+
+        return await UploadAsync(
+    stream,
+    finalName,
+    contentType,
+    folder,
+    generateUniqueName: false,
+    cancellationToken);
+
+
+    }
+
+
+    private static readonly string[] ImageExtensions =
+[
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".webp",
+    ".gif",
+    ".svg"
+];
+
+    private static readonly string[] ImageContentTypes =
+    [
+        "image/jpeg",
+    "image/png",
+    "image/webp",
+    "image/gif",
+    "image/svg+xml"
+    ];
+
+    private static readonly string[] PdfExtensions =
+[
+    ".pdf"
+];
+
+    private static readonly string[] PdfContentTypes =
+    [
+        "application/pdf"
+    ];
+
+    private static readonly string[] VideoExtensions =
+[
+    ".mp4",
+    ".mov",
+    ".webm"
+];
+
+    private static readonly string[] VideoContentTypes =
+    [
+        "video/mp4",
+    "video/quicktime",
+    "video/webm"
+    ];
+
+    private static readonly string[] ArchiveExtensions =
+[
+    ".zip",
+    ".rar",
+    ".7z"
+];
+
+    private static readonly string[] ArchiveContentTypes =
+    [
+        "application/zip",
+    "application/x-zip-compressed",
+    "application/x-rar-compressed",
+    "application/x-7z-compressed"
+    ];
+
+
+    private static void Validate(
+    string extension,
+    string contentType,
+    IEnumerable<string> allowedExtensions,
+    IEnumerable<string> allowedContentTypes,
+    string name)
+    {
+        if (!allowedExtensions.Contains(extension))
+        {
+            throw new InvalidOperationException(
+                $"Invalid {name} extension.");
+        }
+
+        if (!allowedContentTypes.Contains(
+            contentType,
+            StringComparer.OrdinalIgnoreCase))
+        {
+            throw new InvalidOperationException(
+                $"Invalid {name} content type.");
+        }
+    }
+
+    private static void ValidateResource(
+    ResourceType type,
+    string extension,
+    string contentType)
+    {
+        extension = extension.ToLowerInvariant();
+
+        switch (type)
+        {
+            case ResourceType.Image:
+
+                Validate(
+                    extension,
+                    contentType,
+                    ImageExtensions,
+                    ImageContentTypes,
+                    "image");
+
+                break;
+
+            case ResourceType.Pdf:
+
+                Validate(
+                    extension,
+                    contentType,
+                    PdfExtensions,
+                    PdfContentTypes,
+                    "PDF");
+
+                break;
+
+            case ResourceType.Video:
+
+                Validate(
+                    extension,
+                    contentType,
+                    VideoExtensions,
+                    VideoContentTypes,
+                    "video");
+
+                break;
+
+            case ResourceType.Zip:
+
+                Validate(
+                    extension,
+                    contentType,
+                    ArchiveExtensions,
+                    ArchiveContentTypes,
+                    "archive");
+
+                break;
+
+            default:
+
+                throw new InvalidOperationException(
+                    $"Unsupported resource type '{type}'.");
+        }
+    }
+
+
+    
+
+
+
+
+    private static string GenerateResourceFileName(
+        int displayOrder,
+        string resourceTitle,
+        string extension)
+    {
+        var slug = resourceTitle
+            .Trim()
+            .ToLowerInvariant()
+            .Replace(" ", "-");
+
+        return $"{displayOrder:D3}_{slug}{extension}";
     }
 
     public async Task DeleteAsync(
