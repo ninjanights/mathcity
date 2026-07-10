@@ -4,6 +4,7 @@ using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.LessonResources.Interfaces;
 using MathCity.Application.Features.Lessons.Interfaces;
 using MathCity.Application.Features.LessonTags.Interfaces;
+using MathCity.Application.Features.LessonVectorEmbeddings.Interfaces;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Application.Features.Progress.Interfaces;
 using MathCity.Application.Features.Storage.Interfaces;
@@ -11,6 +12,8 @@ using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Application.Features.Tags.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Application.Features.Users.Interfaces;
+using MathCity.Infrastructure.AI.Embeddings;
+using MathCity.Infrastructure.AI.Search;
 using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
 using MathCity.Infrastructure.Persistence.Context;
@@ -52,6 +55,9 @@ public static class DependencyInjection
                 
                 
                 );
+
+            services.AddHttpClient<IEmbeddingGenerator, EmbeddingGenerator>();
+            services.AddScoped<ILessonEmbeddingService, LessonEmbeddingService>();
 
 
 
@@ -95,6 +101,7 @@ public static class DependencyInjection
         services.AddHttpClient<IFileStorageService, SupabaseStorageService>();
 
         services.Configure<UploadOptions>(configuration.GetSection(UploadOptions.SectionName));
+        services.Configure<AISettings>(configuration.GetSection(AISettings.SectionName));
 
         return services;
     }

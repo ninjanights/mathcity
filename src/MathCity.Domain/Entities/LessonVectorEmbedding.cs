@@ -16,6 +16,10 @@ public class LessonVectorEmbedding : BaseEntity
 
     public Guid? SourceId { get; set; }
 
+    public string Model { get; set; } = string.Empty;
+
+    public int Dimensions { get; set; }
+
     public EmbeddingChunkType ChunkType { get; set; }
 
     public int ChunkIndex { get; set; }

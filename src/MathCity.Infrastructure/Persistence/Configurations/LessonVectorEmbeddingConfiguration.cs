@@ -30,7 +30,10 @@ public class LessonVectorEmbeddingConfiguration
             .IsRequired();
 
         builder.Property(x => x.Embedding)
-    .HasColumnType("vector(1536)")
+    .HasColumnType("vector(768)")
+    .IsRequired();
+
+        builder.Property(x => x.Dimensions)
     .IsRequired();
 
 
