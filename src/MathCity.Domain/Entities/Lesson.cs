@@ -32,6 +32,8 @@ public class Lesson : BaseEntity
 
     public string ThumbnailUrl { get; set; } = string.Empty;
 
+    public DateTime? EmbeddingsGeneratedAt { get; set; }
+
     public ICollection<LessonResource> Resources { get; set; } = new List<LessonResource>();
 
     public ICollection<PracticeQuestion> PracticeQuestions { get; set; } = new List<PracticeQuestion>();
@@ -40,6 +42,9 @@ public class Lesson : BaseEntity
 
     public ICollection<LessonTag> LessonTags { get; set; }
     = new List<LessonTag>();
+
+    public ICollection<LessonVectorEmbedding> VectorEmbeddings
+    = new List<LessonVectorEmbedding>();
 
 }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Pgvector;
 
 using MathCity.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -50,6 +51,8 @@ public class LessonConfiguration : IEntityTypeConfiguration<Lesson>
 
         builder.Property(x => x.IsPublished)
                .IsRequired();
+        builder.Property(x => x.EmbeddingsGeneratedAt)
+       .IsRequired(false);
 
         builder.HasOne(x => x.Topic)
                .WithMany(x => x.Lessons)

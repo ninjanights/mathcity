@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MathCity.Domain.Entities;
-
+using Pgvector.EntityFrameworkCore;
 using MathCity.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -46,11 +46,15 @@ public class ApplicationDbContext
 
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
+    public DbSet<LessonVectorEmbedding> LessonVectorEmbeddings
+     => Set<LessonVectorEmbedding>();
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
+        builder.HasPostgresExtension("vector");
         base.OnModelCreating(builder);
-
         builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+
     }
 }
