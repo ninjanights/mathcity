@@ -12,5 +12,5 @@ public class AISettings
     public string Model { get; set; } = string.Empty;
     public string BaseUrl { get; set; } = "http://localhost:11434";
 
-    public int Dimention { get; set; } = 764;
+    public int Dimention { get; set; } = 768;
 }

@@ -56,13 +56,23 @@ public static class DependencyInjection
                 
                 );
 
-            services.AddHttpClient<IEmbeddingGenerator, EmbeddingGenerator>();
-            services.AddScoped<ILessonEmbeddingService, LessonEmbeddingService>();
+     
 
 
 
 
         });
+
+
+        services.AddHttpClient<IEmbeddingGenerator, EmbeddingGenerator>(
+client =>
+{
+ client.BaseAddress = new Uri(
+     configuration["AI:BaseUrl"]!
+ );
+});
+        services.AddScoped<ILessonEmbeddingService, LessonEmbeddingService>();
+
 
 
         services
