@@ -8,12 +8,14 @@ namespace MathCity.API.Controllers;
 public class TestEmbeddingController : ControllerBase
 {
     private readonly IEmbeddingGenerator _embeddingGenerator;
+    private readonly ILessonEmbeddingService _lessonEmbeddingService;
 
 
     public TestEmbeddingController(
-        IEmbeddingGenerator embeddingGenerator)
+        IEmbeddingGenerator embeddingGenerator, ILessonEmbeddingService lessonEmbeddingService)
     {
         _embeddingGenerator = embeddingGenerator;
+        _lessonEmbeddingService = lessonEmbeddingService;
     }
 
 
@@ -24,12 +26,20 @@ public class TestEmbeddingController : ControllerBase
         var vector = await _embeddingGenerator.GenerateAsync(
             "A quadratic equation is an equation of degree two."
         );
-
-
         return Ok(new
         {
             Dimension = vector.ToArray().Length,
             FirstValues = vector.ToArray().Take(5)
         });
     }
+
+    [HttpPost("generate/{lessonId:guid}")]
+    public async Task<IActionResult> Generate(Guid lessonId)
+    {
+        var result = await _lessonEmbeddingService.GenerateAsync(lessonId);
+
+        return Ok(result);
+    } 
+
+
 }

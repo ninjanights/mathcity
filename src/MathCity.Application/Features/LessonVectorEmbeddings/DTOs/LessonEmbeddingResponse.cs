@@ -13,4 +13,6 @@ public class LessonEmbeddingResponse
     public int ChunksCreated { get; set; }
 
     public DateTime GeneratedAt { get; set; }
+
+
 }
