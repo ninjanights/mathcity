@@ -4,11 +4,10 @@ using MathCity.Domain.Entities;
 using MathCity.Domain.Enums;
 using MathCity.Infrastructure.AI.Embeddings;
 using MathCity.Infrastructure.Persistence.Context;
-using Microsoft.EntityFrameworkCore;
-
 using MathCity.Infrastructure.Settings;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-
+using Pgvector.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -128,7 +127,35 @@ public class LessonEmbeddingService : ILessonEmbeddingService
     public async Task<IReadOnlyList<SemanticSearchResult>> SearchAsync(
         SemanticSearchRequest request)
     {
-        throw new NotImplementedException();
+
+        var queryVector = await _embeddingGenerator.GenerateAsync(request.Query);
+
+        var results = await _context.LessonVectorEmbeddings
+            .OrderBy(x => x.Embedding.CosineDistance(queryVector))
+            .Take(request.TopK)
+            .Select(x => new SemanticSearchResult
+            {
+                LessonId = x.LessonId,
+                SourceId = x.SourceId,
+
+                LessonTitle = x.Lesson.Title,
+
+                ChunkTitle = x.Title,
+
+                Content = x.Content,
+
+                ChunkType = x.ChunkType,
+
+                ChunkIndex = x.ChunkIndex,
+
+                Score = 
+                1 - x.Embedding.CosineDistance(queryVector)
+
+
+            }).ToListAsync();
+
+        return results;
+
     }
 
 

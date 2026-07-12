@@ -33,13 +33,4 @@ public class TestEmbeddingController : ControllerBase
         });
     }
 
-    [HttpPost("generate/{lessonId:guid}")]
-    public async Task<IActionResult> Generate(Guid lessonId)
-    {
-        var result = await _lessonEmbeddingService.GenerateAsync(lessonId);
-
-        return Ok(result);
-    } 
-
-
 }

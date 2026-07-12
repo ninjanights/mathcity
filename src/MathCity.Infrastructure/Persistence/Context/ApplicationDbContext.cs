@@ -9,7 +9,6 @@ using MathCity.Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MathCity.Infrastructure.Authentication;
-
 namespace MathCity.Infrastructure.Persistence.Context;
 
 
