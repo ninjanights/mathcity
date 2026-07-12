@@ -42,7 +42,7 @@ public class LessonResourceService : ILessonResourceService
             FileUrl = upload.PublicUrl,
             FileSize = upload.Size,
             ContentType = upload.ContentType,
-
+            Description = request.Description,
             Type = request.ResourceType,
             DisplayOrder = request.DisplayOrder
         };
@@ -63,6 +63,7 @@ public class LessonResourceService : ILessonResourceService
                 Id = x.Id,
                 Title = x.Title,
                 ResourceType = x.Type,
+                Description = x.Description,
                 DisplayOrder = x.DisplayOrder
             })
             .ToListAsync();
@@ -78,6 +79,7 @@ public class LessonResourceService : ILessonResourceService
                 Id = x.Id,
                 Title = x.Title,
                 ResourceType = x.Type,
+                Description = x.Description,
                 DisplayOrder = x.DisplayOrder
             })
             .ToListAsync();
@@ -113,7 +115,7 @@ public class LessonResourceService : ILessonResourceService
         }
 
         resource.Title = request.Title;
-        resource.FileUrl = resource.FileUrl;
+        resource.Description = request.Description;
         resource.Type = request.ResourceType;
         resource.DisplayOrder = request.DisplayOrder;
 
@@ -215,6 +217,7 @@ public class LessonResourceService : ILessonResourceService
             LessonId = resource.LessonId,
             Title = resource.Title,
             ResourceType = resource.Type,
+            Description = resource.Description,
             DisplayOrder = resource.DisplayOrder
         };
     }

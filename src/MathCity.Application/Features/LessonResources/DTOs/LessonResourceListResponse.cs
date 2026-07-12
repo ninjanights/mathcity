@@ -10,5 +10,7 @@ public class LessonResourceListResponse
 
     public ResourceType ResourceType { get; set; }
 
+    public string? Description { get; set; }
+
     public int DisplayOrder { get; set; }
 }
