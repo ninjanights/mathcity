@@ -117,8 +117,9 @@ using (var scope = app.Services.CreateScope())
         await context.Database.MigrateAsync();
         await SeedData.InitializeAsync(
             context,
-            roleManager,
-            userManager);
+            userManager,
+            roleManager
+            );
 
         app.Logger.LogInformation("Database seeded successfully.");
     }

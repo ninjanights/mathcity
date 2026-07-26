@@ -11,9 +11,9 @@ public static class ChapterSeeder
         var math = await context.Subjects
             .SingleAsync(x => x.Slug == "mathematics");
 
+
+
         var chapters = new List<Chapter>
-        {
-            var chapters = new List<Chapter>
 {
     new()
     {
@@ -135,7 +135,7 @@ public static class ChapterSeeder
         DisplayOrder = 15
     }
 };
-        };
+        
 
         foreach (var chapter in chapters)
         {

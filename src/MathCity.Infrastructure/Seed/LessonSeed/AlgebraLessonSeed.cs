@@ -101,6 +101,11 @@ public static class AlgebraLessonSeed
         DisplayOrder = 3,
         ThumbnailUrl = ""
     },
+
+
+
+
+
 // Simultaneous Equations
 
     new Lesson

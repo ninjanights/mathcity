@@ -22,9 +22,17 @@ public static class SeedData
         // Learning Content
         await SubjectSeeder.SeedAsync(context);
         await ChapterSeeder.SeedAsync(context);
-        await TopicSeeder.SeedAsync(context);
-        await LessonSeeder.SeedAsync(context);
-        await PracticeQuestionSeeder.SeedAsync(context);
-        await TagSeeder.SeedAsync(context);
+        await TopicSeed.SeedAsync(context);
+        await AlgebraLessonSeed.SeedAsync(context);
+
+        await TagSeed.SeedAsync(context);
+
+
+
+        // Depends on Lesson + Tag
+        await LessonTagSeeder.SeedAsync(context);
+
+        // Depends on Lesson
+        //await PracticeQuestionSeeder.SeedAsync(context);
     }
 }
