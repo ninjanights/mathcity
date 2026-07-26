@@ -46,7 +46,7 @@ public class LessonService : ILessonService
         var lesson = new Lesson
         {
             TopicId = request.TopicId,
-            Title = request.Title,
+            Title = request.Title, 
             Slug = slug,
             Summary = request.Summary,
             Content = request.MarkdownContent,

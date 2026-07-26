@@ -5,9 +5,11 @@ using MathCity.Application.Features.Subjects.Validators;
 using MathCity.Infrastructure;
 using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
+using MathCity.Infrastructure.Persistence.Context;
 using MathCity.Infrastructure.Seed;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -105,16 +107,20 @@ using (var scope = app.Services.CreateScope())
 
         var services = scope.ServiceProvider;
 
-        var roleManager = services.GetRequiredService<RoleManager<ApplicationRole>>();
-        var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+        var context = services.GetRequiredService<ApplicationDbContext>();
 
-        await RoleSeeder.SeedAsync(roleManager);
-        app.Logger.LogInformation("Roles seeded");
+        var roleManager =
+            services.GetRequiredService<RoleManager<ApplicationRole>>();
 
-        await AdminSeeder.SeedAsync(userManager);
-        app.Logger.LogInformation("Admin seeded");
+        var userManager =
+            services.GetRequiredService<UserManager<ApplicationUser>>();
+        await context.Database.MigrateAsync();
+        await SeedData.InitializeAsync(
+            context,
+            roleManager,
+            userManager);
 
-        app.Logger.LogInformation("Seeders finished");
+        app.Logger.LogInformation("Database seeded successfully.");
     }
     catch (Exception ex)
     {

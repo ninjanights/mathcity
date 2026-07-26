@@ -165,7 +165,7 @@ public class LessonEmbeddingService : ILessonEmbeddingService
     {
         var chunks = new List<EmbeddingChunk>();
 
-
+        
         chunks.Add(new EmbeddingChunk
         {
             Title = lesson.Title + " Summary",
