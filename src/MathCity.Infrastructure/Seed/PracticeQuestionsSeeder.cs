@@ -107,9 +107,138 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        
+        // ==========================================================
+        // Simplifying and Evaluating Algebraic Expressions
+        // ==========================================================
+
+        AddQuestion(
+            "Simplifying and Evaluating Algebraic Expressions",
+            "What is the simplified form of 3x + 2x?",
+            "5x",
+            "6x",
+            "5",
+            "x²",
+            QuestionOption.A,
+            "Like terms can be combined by adding their coefficients. 3x + 2x = 5x.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Simplifying and Evaluating Algebraic Expressions",
+            "Simplify: 4a + 3 - 2a + 5",
+            "6a + 8",
+            "2a + 8",
+            "2a + 2",
+            "6a + 2",
+            QuestionOption.B,
+            "Combine like terms: 4a - 2a = 2a and 3 + 5 = 8, giving 2a + 8.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Simplifying and Evaluating Algebraic Expressions",
+            "Evaluate 2x + 5 when x = 3.",
+            "8",
+            "10",
+            "11",
+            "13",
+            QuestionOption.C,
+            "Substitute x = 3: 2(3) + 5 = 6 + 5 = 11.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Simplifying and Evaluating Algebraic Expressions",
+            "Which expression is equivalent to 5(x + 2)?",
+            "5x + 2",
+            "5x + 10",
+            "x + 10",
+            "5x + 5",
+            QuestionOption.B,
+            "Using the distributive property: 5(x + 2) = 5x + 10.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Simplifying and Evaluating Algebraic Expressions",
+            "Why is simplifying algebraic expressions important?",
+            "It makes expressions easier to understand, compare, and solve.",
+            "It removes all variables from mathematics.",
+            "It only works for numbers without variables.",
+            "It changes equations into shapes.",
+            QuestionOption.A,
+            "Simplification reduces complex expressions into simpler forms, making further calculations and problem-solving easier.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Algebraic Expressions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Expressions",
+            "A pencil costs ₹x and a notebook costs ₹20. Which expression represents the total cost of 3 pencils and 2 notebooks?",
+            "3x + 20",
+            "3x + 40",
+            "5x + 20",
+            "3(x + 20)",
+            QuestionOption.B,
+            "The cost of 3 pencils is 3x and the cost of 2 notebooks is 2 × 20 = 40, so the total is 3x + 40.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Expressions",
+            "If the length of a rectangle is x + 5 and the width is x, which expression represents its perimeter?",
+            "2x + 5",
+            "x² + 5",
+            "4x + 10",
+            "2x + 10",
+            QuestionOption.C,
+            "Perimeter of a rectangle = 2(length + width). So 2((x + 5) + x) = 2(2x + 5) = 4x + 10.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Expressions",
+            "A student has x books and receives 7 more books. Which expression represents the new number of books?",
+            "x - 7",
+            "7x",
+            "x + 7",
+            "x ÷ 7",
+            QuestionOption.C,
+            "Receiving 7 more books means adding 7 to the original number, giving x + 7.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Expressions",
+            "The cost of a trip is represented by 50 + 10d, where d is the number of days. What does 10d represent?",
+            "The fixed starting cost",
+            "The cost added for each day",
+            "The total number of days",
+            "A variable with no meaning",
+            QuestionOption.B,
+            "10d represents the daily cost multiplied by the number of days.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Expressions",
+            "Why are algebraic expressions useful in real-world situations?",
+            "They help represent unknown values and relationships using mathematical models.",
+            "They only work for classroom exercises.",
+            "They remove the need for calculations.",
+            "They cannot represent real situations.",
+            QuestionOption.A,
+            "Algebraic expressions allow us to model situations involving costs, distances, quantities, and changing values.",
+            DifficultyLevel.Advance,
+            5);
+
+
         // Introduction to Linear Equations
-        
+
 
         AddQuestion(
             "Introduction to Linear Equations",
@@ -168,6 +297,138 @@ public static class PracticeQuestionSeeder
             "They cannot be represented graphically.",
             QuestionOption.B,
             "Linear equations are used to represent relationships between quantities and are widely applied in science, engineering, economics, and everyday problem-solving.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Solving Linear Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Linear Equations",
+            "Solve: x + 5 = 12",
+            "x = 5",
+            "x = 7",
+            "x = 12",
+            "x = 17",
+            QuestionOption.B,
+            "Subtract 5 from both sides: x + 5 - 5 = 12 - 5, so x = 7.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Linear Equations",
+            "Solve: 3x = 15",
+            "x = 3",
+            "x = 5",
+            "x = 10",
+            "x = 45",
+            QuestionOption.B,
+            "Divide both sides by 3: 3x ÷ 3 = 15 ÷ 3, so x = 5.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Linear Equations",
+            "Solve: 2x + 4 = 10",
+            "x = 2",
+            "x = 3",
+            "x = 4",
+            "x = 7",
+            QuestionOption.B,
+            "Subtract 4 from both sides: 2x = 6. Divide by 2: x = 3.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Linear Equations",
+            "Which method is used to keep both sides of an equation balanced while solving?",
+            "Changing the answer randomly",
+            "Performing the same operation on both sides",
+            "Removing variables without calculation",
+            "Ignoring numbers on one side",
+            QuestionOption.B,
+            "The balance method requires applying the same operation to both sides so the equation remains equal.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Linear Equations",
+            "Why are linear equations useful in real-world problems?",
+            "They help model relationships involving unknown values such as cost, distance, and time.",
+            "They only solve geometry problems.",
+            "They cannot represent real situations.",
+            "They remove the need for variables.",
+            QuestionOption.A,
+            "Linear equations are used to represent and solve problems involving relationships between quantities.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Applications and Practice of Linear Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Linear Equations",
+            "A taxi charges a fixed fee of ₹50 and ₹10 per kilometer. Which equation represents the total cost C for k kilometers?",
+            "C = 50k + 10",
+            "C = 50 + 10k",
+            "C = 10 + k",
+            "C = 50 - 10k",
+            QuestionOption.B,
+            "The fixed fee is ₹50 and the additional cost is ₹10 multiplied by the number of kilometers, so C = 50 + 10k.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Linear Equations",
+            "A student has ₹100 and saves ₹20 every week. Which equation represents the total money M after w weeks?",
+            "M = 100 + 20w",
+            "M = 100w + 20",
+            "M = 20 - 100w",
+            "M = 100 - 20",
+            QuestionOption.A,
+            "The starting amount is ₹100 and ₹20 is added each week, giving M = 100 + 20w.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Linear Equations",
+            "A car travels at a constant speed of 60 km/h. Which equation represents distance d after t hours?",
+            "d = 60 + t",
+            "d = 60t",
+            "d = t ÷ 60",
+            "d = 60 - t",
+            QuestionOption.B,
+            "Distance = speed × time, so d = 60t.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Linear Equations",
+            "A phone plan costs ₹200 per month plus ₹5 per GB of data used. If the total bill is ₹350, how many GB were used?",
+            "20 GB",
+            "30 GB",
+            "40 GB",
+            "50 GB",
+            QuestionOption.B,
+            "The equation is 200 + 5x = 350. Subtract 200: 5x = 150. Divide by 5: x = 30 GB.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Linear Equations",
+            "Why are linear equations useful for modelling real-world situations?",
+            "They represent relationships between changing quantities and help predict unknown values.",
+            "They only work with numbers without variables.",
+            "They cannot describe real-life relationships.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Linear equations are widely used in finance, science, engineering, business, and everyday decision-making to model relationships between quantities.",
             DifficultyLevel.Advance,
             5);
         // ==========================================================
@@ -236,6 +497,135 @@ public static class PracticeQuestionSeeder
 
 
         // ==========================================================
+        // Methods for Solving Simultaneous Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Methods for Solving Simultaneous Equations",
+            "Which method involves replacing one variable with an expression from another equation?",
+            "Elimination method",
+            "Substitution method",
+            "Graphical method",
+            "Factorization method",
+            QuestionOption.B,
+            "The substitution method solves simultaneous equations by expressing one variable in terms of another and substituting it into the second equation.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods for Solving Simultaneous Equations",
+            "Which method eliminates one variable by adding or subtracting equations?",
+            "Substitution",
+            "Graphical",
+            "Elimination",
+            "Division",
+            QuestionOption.C,
+            "The elimination method combines equations to cancel one variable and find the remaining unknown.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods for Solving Simultaneous Equations",
+            "Solve using elimination: x + y = 10 and x - y = 2. What is the value of x?",
+            "4",
+            "5",
+            "6",
+            "8",
+            QuestionOption.C,
+            "Adding both equations gives 2x = 12, so x = 6.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods for Solving Simultaneous Equations",
+            "In the graphical method, what represents the solution of two simultaneous equations?",
+            "The point where both lines intersect",
+            "The highest point on a line",
+            "The y-axis only",
+            "The distance between lines",
+            QuestionOption.A,
+            "The intersection point of two graphs represents the values of x and y that satisfy both equations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods for Solving Simultaneous Equations",
+            "Why are different methods used for solving simultaneous equations?",
+            "Different methods provide efficient ways to solve systems depending on the form of equations.",
+            "Each method gives a different answer.",
+            "Only one method is mathematically correct.",
+            "Methods are used only for drawing graphs.",
+            QuestionOption.A,
+            "Substitution, elimination, and graphical methods are different approaches that help solve systems efficiently.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Simultaneous Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Simultaneous Equations",
+            "A notebook costs ₹x and a pen costs ₹y. If 2 notebooks and 3 pens cost ₹160, which equation represents this situation?",
+            "2x + 3y = 160",
+            "x + y = 160",
+            "2x - 3y = 160",
+            "x × y = 160",
+            QuestionOption.A,
+            "The total cost is found by multiplying each item's price by its quantity and adding them together.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Simultaneous Equations",
+            "Two numbers have a sum of 20 and their difference is 4. Which pair represents these numbers?",
+            "8 and 12",
+            "10 and 10",
+            "5 and 15",
+            "6 and 14",
+            QuestionOption.A,
+            "Let the numbers be x and y. Solving x + y = 20 and x - y = 4 gives x = 12 and y = 8.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Simultaneous Equations",
+            "A farm has chickens and cows. There are 20 animals and 56 legs in total. How many cows are there?",
+            "6",
+            "8",
+            "10",
+            "12",
+            QuestionOption.B,
+            "Let chickens = x and cows = y. x + y = 20 and 2x + 4y = 56. Solving gives y = 8 cows.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Simultaneous Equations",
+            "Why are simultaneous equations useful in real-life problems?",
+            "They help find unknown values when multiple conditions are connected.",
+            "They only solve single-variable problems.",
+            "They are only used for drawing graphs.",
+            "They cannot represent real situations.",
+            QuestionOption.A,
+            "Many real-world problems involve multiple unknown quantities that are related through different conditions.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Simultaneous Equations",
+            "Which field commonly uses simultaneous equations for solving complex problems?",
+            "Engineering and economics",
+            "Only handwriting practice",
+            "Only basic counting",
+            "Only shape drawing",
+            QuestionOption.A,
+            "Engineers, economists, scientists, and analysts use simultaneous equations to model relationships between multiple variables.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
         // Introduction to Inequalities
         // ==========================================================
 
@@ -298,6 +688,331 @@ public static class PracticeQuestionSeeder
             "Inequalities are used to represent conditions, limits, and ranges in areas such as budgeting, science, engineering, and optimization problems.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Solving and Graphing Inequalities
+        // ==========================================================
+
+        AddQuestion(
+            "Solving and Graphing Inequalities",
+            "Solve: x + 3 > 7",
+            "x > 3",
+            "x > 4",
+            "x < 4",
+            "x < 3",
+            QuestionOption.B,
+            "Subtract 3 from both sides: x + 3 - 3 > 7 - 3, so x > 4.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving and Graphing Inequalities",
+            "Which symbol represents 'less than or equal to'?",
+            ">",
+            "<",
+            "≥",
+            "≤",
+            QuestionOption.D,
+            "The symbol ≤ means a value is less than or equal to another value.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving and Graphing Inequalities",
+            "Solve: 2x ≤ 10",
+            "x ≤ 2",
+            "x ≤ 5",
+            "x ≥ 5",
+            "x ≥ 2",
+            QuestionOption.B,
+            "Divide both sides by 2: 2x ÷ 2 ≤ 10 ÷ 2, so x ≤ 5.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving and Graphing Inequalities",
+            "What happens when an inequality is divided by a negative number?",
+            "The inequality sign reverses direction",
+            "The inequality disappears",
+            "The answer becomes zero",
+            "The variable is removed",
+            QuestionOption.A,
+            "When multiplying or dividing both sides of an inequality by a negative number, the inequality sign must be reversed.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving and Graphing Inequalities",
+            "Why are inequalities represented on number lines?",
+            "They show a range of possible solutions instead of a single value.",
+            "They remove the need for solving.",
+            "They only show positive numbers.",
+            "They are used only for equations.",
+            QuestionOption.A,
+            "Unlike equations that usually have specific solutions, inequalities represent sets or ranges of values.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Applications and Practice of Inequalities
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Inequalities",
+            "A student must score at least 50 marks to pass an exam. Which inequality represents this situation if x is the student's score?",
+            "x < 50",
+            "x > 50",
+            "x ≥ 50",
+            "x ≤ 50",
+            QuestionOption.C,
+            "The phrase 'at least 50' means the score can be 50 or more, so x ≥ 50.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Inequalities",
+            "A bus can carry a maximum of 40 passengers. Which inequality represents the number of passengers p?",
+            "p ≥ 40",
+            "p ≤ 40",
+            "p = 40",
+            "p > 40",
+            QuestionOption.B,
+            "Maximum means the number cannot exceed 40, so p ≤ 40.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Inequalities",
+            "A mobile data plan allows up to 20 GB of data usage. If x represents used data, which inequality is correct?",
+            "x < 20",
+            "x ≤ 20",
+            "x ≥ 20",
+            "x = 20",
+            QuestionOption.B,
+            "Up to 20 GB means the usage can be 20 or any smaller amount, so x ≤ 20.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Inequalities",
+            "A shopkeeper wants to spend less than ₹500 on supplies. Which inequality represents the spending amount s?",
+            "s > 500",
+            "s < 500",
+            "s ≥ 500",
+            "s = 500",
+            QuestionOption.B,
+            "The phrase 'less than ₹500' means the amount must be smaller than 500, so s < 500.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Inequalities",
+            "Why are inequalities useful for solving real-world problems?",
+            "They help represent limits, conditions, and possible ranges of values.",
+            "They only work with exact answers.",
+            "They cannot represent practical situations.",
+            "They are only used for drawing graphs.",
+            QuestionOption.A,
+            "Inequalities are used in budgeting, engineering limits, speed restrictions, capacity problems, and many other situations where ranges matter.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Quadratic Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Quadratic Equations",
+            "What is the standard form of a quadratic equation?",
+            "ax + b = 0",
+            "ax² + bx + c = 0",
+            "a + b + c = 0",
+            "x² + x = 1",
+            QuestionOption.B,
+            "A quadratic equation is written in the standard form ax² + bx + c = 0, where a is not equal to zero.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Quadratic Equations",
+            "What is the highest power of the variable in a quadratic equation?",
+            "1",
+            "2",
+            "3",
+            "4",
+            QuestionOption.B,
+            "Quadratic equations contain a variable raised to the power of 2, which is why they are called quadratic.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Quadratic Equations",
+            "Which part of the equation ax² + bx + c = 0 is the quadratic term?",
+            "a",
+            "bx",
+            "ax²",
+            "c",
+            QuestionOption.C,
+            "The term ax² is the quadratic term because it contains the variable with exponent 2.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Quadratic Equations",
+            "How are quadratic equations different from linear equations?",
+            "Quadratic equations have a squared variable term, while linear equations have only a first-degree variable.",
+            "Quadratic equations have no variables.",
+            "Linear equations always have x² terms.",
+            "There is no difference between them.",
+            QuestionOption.A,
+            "Linear equations have degree 1, while quadratic equations have degree 2 because of the x² term.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Quadratic Equations",
+            "Why are quadratic equations important in mathematics and real-world applications?",
+            "They help model situations involving areas, motion, optimization, and many scientific problems.",
+            "They are only used for simple calculations.",
+            "They cannot represent real situations.",
+            "They are only used for naming shapes.",
+            QuestionOption.A,
+            "Quadratic equations are used in physics, engineering, economics, architecture, and many other fields to model curved relationships.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Methods for Solving Quadratic Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Methods for Solving Quadratic Equations",
+            "Which method solves a quadratic equation by expressing it as a product of two factors?",
+            "Graphing",
+            "Factorization",
+            "Substitution",
+            "Division",
+            QuestionOption.B,
+            "Factorization involves rewriting a quadratic expression as a product of two or more factors and finding the values that make each factor zero.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods for Solving Quadratic Equations",
+            "What is the quadratic formula used for?",
+            "To solve quadratic equations of the form ax² + bx + c = 0",
+            "To solve only linear equations",
+            "To calculate areas of shapes",
+            "To simplify fractions only",
+            QuestionOption.A,
+            "The quadratic formula provides solutions for any quadratic equation where a is not zero.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods for Solving Quadratic Equations",
+            "Which expression appears inside the square root of the quadratic formula?",
+            "a + b + c",
+            "b² - 4ac",
+            "2a + b",
+            "x² + y²",
+            QuestionOption.B,
+            "The expression b² - 4ac is called the discriminant and determines the nature of the roots.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods for Solving Quadratic Equations",
+            "What is the purpose of completing the square method?",
+            "To rewrite a quadratic equation into a perfect square form",
+            "To remove all variables",
+            "To convert it into a linear equation",
+            "To multiply both sides randomly",
+            QuestionOption.A,
+            "Completing the square transforms a quadratic expression into a form that can be solved using square roots.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods for Solving Quadratic Equations",
+            "Why is it useful to have multiple methods for solving quadratic equations?",
+            "Different methods are suitable for different equations and problem situations.",
+            "Each method always gives a different answer.",
+            "Only one method is mathematically valid.",
+            "Methods are used only for graph drawing.",
+            QuestionOption.A,
+            "Factorization, completing the square, and the quadratic formula provide different approaches depending on the structure of the equation.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Applications and Practice of Quadratic Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Quadratic Equations",
+            "A ball is thrown upward and its height is represented by h = -5t² + 20t. What type of equation represents this situation?",
+            "Linear equation",
+            "Quadratic equation",
+            "Constant equation",
+            "Fraction equation",
+            QuestionOption.B,
+            "The equation contains t², making it a quadratic equation. Quadratic equations are commonly used to model projectile motion.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Quadratic Equations",
+            "Why are quadratic equations used to model projectile motion?",
+            "Because the height changes in a curved path due to gravity.",
+            "Because motion always follows a straight line.",
+            "Because they cannot contain variables.",
+            "Because they only represent fixed values.",
+            QuestionOption.A,
+            "Objects thrown into the air follow a parabolic path, which can be represented using quadratic equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Quadratic Equations",
+            "The area of a rectangular garden is represented by x(x + 5) = 150. Why can this be solved using a quadratic equation?",
+            "Because multiplying the expressions creates an x² term.",
+            "Because it contains no variables.",
+            "Because it is always a linear equation.",
+            "Because area cannot be calculated.",
+            QuestionOption.A,
+            "Expanding x(x + 5) gives x² + 5x = 150, which is a quadratic equation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Quadratic Equations",
+            "What does the graph of a quadratic equation look like?",
+            "A parabola",
+            "A straight line",
+            "A circle",
+            "A rectangle",
+            QuestionOption.A,
+            "The graph of a quadratic equation forms a parabola, which can open upward or downward depending on the coefficient of x².",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Quadratic Equations",
+            "Why are quadratic equations important in real-world applications?",
+            "They help solve problems involving optimization, motion, area, and changing relationships.",
+            "They are only used for basic arithmetic.",
+            "They cannot represent practical situations.",
+            "They are only useful for drawing graphs.",
+            QuestionOption.A,
+            "Quadratic equations are widely used in physics, engineering, economics, architecture, and computer science for modelling complex relationships.",
+            DifficultyLevel.Advance,
+            5);
+
+
 
 
         // ==========================================================
@@ -361,6 +1076,136 @@ public static class PracticeQuestionSeeder
             "They are only applicable in geometry.",
             QuestionOption.B,
             "Polynomials are widely used in algebra, calculus, physics, engineering, economics, computer graphics, and many other fields to model and solve real-world problems.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Polynomial Operations and Factorization
+        // ==========================================================
+
+        AddQuestion(
+            "Polynomial Operations and Factorization",
+            "What is the result of adding 3x² + 2x and 5x² + 4x?",
+            "8x² + 6x",
+            "15x² + 8x",
+            "8x² + 8",
+            "2x² + 2x",
+            QuestionOption.A,
+            "Add like terms: 3x² + 5x² = 8x² and 2x + 4x = 6x.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Polynomial Operations and Factorization",
+            "Simplify: (4x² + 3x) - (2x² + x)",
+            "2x² + 2x",
+            "6x² + 4x",
+            "2x² + 4x",
+            "6x² + 2x",
+            QuestionOption.A,
+            "Subtract corresponding terms: 4x² - 2x² = 2x² and 3x - x = 2x.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Polynomial Operations and Factorization",
+            "Which method is used to rewrite a polynomial as a product of simpler expressions?",
+            "Expansion",
+            "Factorization",
+            "Addition",
+            "Division",
+            QuestionOption.B,
+            "Factorization breaks a polynomial into factors that multiply together to give the original expression.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Polynomial Operations and Factorization",
+            "Factorize: x² + 5x + 6",
+            "(x + 2)(x + 3)",
+            "(x + 1)(x + 6)",
+            "(x + 5)(x + 6)",
+            "(x + 2)(x + 4)",
+            QuestionOption.A,
+            "Find two numbers whose product is 6 and sum is 5. These are 2 and 3, so x² + 5x + 6 = (x + 2)(x + 3).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Polynomial Operations and Factorization",
+            "Why are polynomial operations and factorization important?",
+            "They simplify expressions and help solve mathematical problems involving variables.",
+            "They only apply to numbers without variables.",
+            "They remove the need for calculations.",
+            "They are only used for drawing graphs.",
+            QuestionOption.A,
+            "Polynomial operations are essential in algebra, calculus, physics, engineering, and many mathematical applications.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Polynomials
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Polynomials",
+            "The area of a rectangle is represented by x² + 5x + 6. Which polynomial form represents its factored dimensions?",
+            "(x + 2)(x + 3)",
+            "(x + 1)(x + 6)",
+            "(x + 5)(x + 6)",
+            "(x + 2)(x + 4)",
+            QuestionOption.A,
+            "Factoring x² + 5x + 6 gives (x + 2)(x + 3), which can represent the length and width of the rectangle.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Polynomials",
+            "A company models its profit using a polynomial function. Why are polynomials useful in such situations?",
+            "They can represent changing relationships between quantities.",
+            "They only represent fixed numbers.",
+            "They cannot include variables.",
+            "They are only used for geometry.",
+            QuestionOption.A,
+            "Polynomial functions can model real-world changes such as profit, growth, motion, and cost relationships.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Polynomials",
+            "If a polynomial function gives the height of an object over time, what can its graph help determine?",
+            "Important values such as maximum height and when the object reaches certain positions.",
+            "Only the colour of the object.",
+            "The object's weight only.",
+            "The number of variables used.",
+            QuestionOption.A,
+            "Graphs of polynomial functions help analyze behaviour, turning points, intercepts, and changes over time.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Polynomials",
+            "Which operation is commonly used to simplify polynomial expressions before solving problems?",
+            "Combining like terms",
+            "Changing variables randomly",
+            "Removing all coefficients",
+            "Ignoring negative values",
+            QuestionOption.A,
+            "Combining like terms reduces polynomial expressions into simpler forms.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Polynomials",
+            "Why are polynomial concepts important in advanced mathematics and science?",
+            "They are used to model complex systems in engineering, physics, computing, and data analysis.",
+            "They are only useful for basic calculations.",
+            "They cannot describe real-world patterns.",
+            "They are unrelated to scientific fields.",
+            QuestionOption.A,
+            "Polynomials are fundamental tools used in many fields to approximate and analyze real-world phenomena.",
             DifficultyLevel.Advance,
             5);
 
@@ -430,6 +1275,137 @@ public static class PracticeQuestionSeeder
 
 
         // ==========================================================
+        // Methods of Factorization
+        // ==========================================================
+
+        AddQuestion(
+            "Methods of Factorization",
+            "What is the first step when factoring an algebraic expression using the common factor method?",
+            "Find the greatest common factor of all terms",
+            "Multiply all terms together",
+            "Remove all variables",
+            "Convert it into a graph",
+            QuestionOption.A,
+            "The common factor method begins by identifying the greatest factor shared by all terms and taking it outside the brackets.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods of Factorization",
+            "Factorize: 6x + 12",
+            "6(x + 2)",
+            "3(2x + 12)",
+            "2(3x + 12)",
+            "6(x + 12)",
+            QuestionOption.A,
+            "The greatest common factor of 6x and 12 is 6, so 6x + 12 = 6(x + 2).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods of Factorization",
+            "Which identity is used to factorize a² - b²?",
+            "(a + b)²",
+            "(a - b)(a + b)",
+            "a² + b²",
+            "(a + b)(a + b)",
+            QuestionOption.B,
+            "The difference of squares identity states that a² - b² = (a - b)(a + b).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods of Factorization",
+            "Which method is commonly used to factorize expressions with four terms by grouping them?",
+            "Grouping method",
+            "Division method",
+            "Graphing method",
+            "Substitution method",
+            QuestionOption.A,
+            "The grouping method separates terms into groups and finds common factors from each group.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods of Factorization",
+            "Why is factorization important in algebra?",
+            "It simplifies expressions and helps solve equations by breaking them into simpler factors.",
+            "It removes all mathematical operations.",
+            "It only changes numbers into decimals.",
+            "It is only useful for drawing graphs.",
+            QuestionOption.A,
+            "Factorization is used extensively in solving equations, simplifying expressions, and understanding algebraic structures.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Factorization
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Factorization",
+            "Factorize x² + 7x + 12.",
+            "(x + 3)(x + 4)",
+            "(x + 2)(x + 6)",
+            "(x + 1)(x + 12)",
+            "(x + 5)(x + 7)",
+            QuestionOption.A,
+            "Find two numbers whose product is 12 and sum is 7. The numbers are 3 and 4, so x² + 7x + 12 = (x + 3)(x + 4).",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Factorization",
+            "A rectangular garden has an area represented by x² + 10x + 24. Which expression represents its possible dimensions?",
+            "(x + 4)(x + 6)",
+            "(x + 2)(x + 12)",
+            "(x + 1)(x + 24)",
+            "(x + 5)(x + 5)",
+            QuestionOption.A,
+            "Factorizing x² + 10x + 24 gives (x + 4)(x + 6), which can represent the length and width.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Factorization",
+            "Solve the equation x² - 9 = 0 using factorization.",
+            "x = 3 only",
+            "x = -3 only",
+            "x = ±3",
+            "x = 9",
+            QuestionOption.C,
+            "Using difference of squares: x² - 9 = (x - 3)(x + 3). Therefore, x = 3 or x = -3.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Factorization",
+            "Which real-world area commonly uses factorization?",
+            "Engineering and mathematical modelling",
+            "Only handwriting improvement",
+            "Only counting objects",
+            "Only naming shapes",
+            QuestionOption.A,
+            "Factorization is used in engineering, physics, computer science, and many areas where mathematical expressions need to be simplified.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Factorization",
+            "Why is factorization useful when solving algebraic equations?",
+            "It transforms complex expressions into simpler factors that are easier to analyze and solve.",
+            "It removes variables from every equation.",
+            "It prevents equations from being solved.",
+            "It only changes the appearance of numbers.",
+            QuestionOption.A,
+            "Factorization helps identify possible solutions by rewriting expressions as products of simpler terms.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
         // Introduction to Rational Expressions
         // ==========================================================
 
@@ -490,6 +1466,137 @@ public static class PracticeQuestionSeeder
             "They always have a denominator of one.",
             QuestionOption.A,
             "Rational expressions extend the idea of fractions by replacing numbers with polynomials while following many of the same mathematical rules.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Simplifying and Operating on Rational Expressions
+        // ==========================================================
+
+        AddQuestion(
+            "Simplifying and Operating on Rational Expressions",
+            "What is the first step when simplifying a rational expression?",
+            "Factor the numerator and denominator",
+            "Add the numerator and denominator",
+            "Remove all variables",
+            "Multiply all terms randomly",
+            QuestionOption.A,
+            "To simplify rational expressions, factor the numerator and denominator first, then cancel common factors.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Simplifying and Operating on Rational Expressions",
+            "Simplify: 6x / 3",
+            "2x",
+            "3x",
+            "6x",
+            "x/2",
+            QuestionOption.A,
+            "Divide the coefficient 6 by 3 to get 2, so 6x/3 = 2x.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Simplifying and Operating on Rational Expressions",
+            "When adding rational expressions with different denominators, what must be found first?",
+            "A common denominator",
+            "A common numerator",
+            "A square root",
+            "A factor of zero",
+            QuestionOption.A,
+            "Fractions with different denominators must be converted to equivalent forms using a common denominator before adding.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Simplifying and Operating on Rational Expressions",
+            "Simplify: x² / x",
+            "x",
+            "x²",
+            "1/x",
+            "2x",
+            QuestionOption.A,
+            "Cancel the common factor x from numerator and denominator, leaving x (where x ≠ 0).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Simplifying and Operating on Rational Expressions",
+            "Why are operations on rational expressions important in algebra?",
+            "They help simplify complex expressions and solve equations involving fractions and variables.",
+            "They only work with whole numbers.",
+            "They remove the need for algebraic rules.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Rational expressions are used in advanced algebra, calculus, physics, engineering, and many mathematical models.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Applications and Practice of Rational Expressions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Rational Expressions",
+            "A car travels a distance of d kilometers in t hours. Which rational expression represents its average speed?",
+            "d + t",
+            "d / t",
+            "d × t",
+            "t / d",
+            QuestionOption.B,
+            "Average speed is calculated using the formula distance divided by time, so speed = d/t.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Rational Expressions",
+            "A worker completes a job in x hours. Which expression represents the work rate?",
+            "x",
+            "1/x",
+            "x²",
+            "x + 1",
+            QuestionOption.B,
+            "Rate is the amount of work divided by time. If one job is completed in x hours, the rate is 1/x.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Rational Expressions",
+            "A formula contains the expression (x² - 9)/(x - 3). What is the simplified form?",
+            "x - 3",
+            "x + 3",
+            "x² + 3",
+            "1",
+            QuestionOption.B,
+            "Factor the numerator: x² - 9 = (x - 3)(x + 3). Cancel the common factor (x - 3), leaving x + 3 (where x ≠ 3).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Rational Expressions",
+            "Which real-world situation can be represented using rational expressions?",
+            "Calculating speed, rates, and proportions",
+            "Only naming geometric shapes",
+            "Only counting objects",
+            "Only drawing graphs",
+            QuestionOption.A,
+            "Rational expressions are commonly used for rates, ratios, speed, and relationships involving division.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Rational Expressions",
+            "Why are rational expressions important in advanced mathematics?",
+            "They help model relationships involving rates, variables, and changing quantities.",
+            "They are only used for simple arithmetic.",
+            "They cannot represent real-world problems.",
+            "They eliminate the need for equations.",
+            QuestionOption.A,
+            "Rational expressions are widely used in algebra, calculus, physics, engineering, and scientific modelling.",
             DifficultyLevel.Advance,
             5);
         // ==========================================================
@@ -556,7 +1663,132 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+        // ==========================================================
+        // Laws and Operations of Exponents
+        // ==========================================================
 
+        AddQuestion(
+            "Laws and Operations of Exponents",
+            "Which exponent law is used when multiplying powers with the same base?",
+            "Add the exponents",
+            "Subtract the exponents",
+            "Multiply the bases only",
+            "Divide the exponents",
+            QuestionOption.A,
+            "When multiplying powers with the same base, the exponents are added: aᵐ × aⁿ = aᵐ⁺ⁿ.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Laws and Operations of Exponents",
+            "Simplify: x³ × x²",
+            "x⁵",
+            "x⁶",
+            "x",
+            "x²",
+            QuestionOption.A,
+            "Using the product rule of exponents, add the powers: x³ × x² = x³⁺² = x⁵.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Laws and Operations of Exponents",
+            "What is the value of any non-zero number raised to the power of zero?",
+            "The number itself",
+            "Zero",
+            "One",
+            "Undefined",
+            QuestionOption.C,
+            "The zero exponent rule states that a⁰ = 1 for any non-zero value of a.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Laws and Operations of Exponents",
+            "Simplify: (x²)³",
+            "x⁵",
+            "x⁶",
+            "x⁹",
+            "x²",
+            QuestionOption.B,
+            "Using the power of a power rule, multiply the exponents: (x²)³ = x²×³ = x⁶.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Laws and Operations of Exponents",
+            "Why are exponent laws important in mathematics?",
+            "They simplify calculations and help solve complex expressions efficiently.",
+            "They remove variables from equations.",
+            "They only apply to geometry.",
+            "They are only used for counting numbers.",
+            QuestionOption.A,
+            "Exponent rules are essential for simplifying expressions in algebra, calculus, science, engineering, and computing.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Applications and Practice of Exponents
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Exponents",
+            "Scientific notation is mainly used to represent which type of numbers?",
+            "Very large or very small numbers",
+            "Only whole numbers",
+            "Only negative numbers",
+            "Only fractions",
+            QuestionOption.A,
+            "Scientific notation uses powers of 10 to represent extremely large or small values in a compact form.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Exponents",
+            "Express 1,000,000 using scientific notation.",
+            "1 × 10⁶",
+            "1 × 10³",
+            "10 × 10⁶",
+            "100 × 10²",
+            QuestionOption.A,
+            "1,000,000 has six zeros, so it can be written as 1 × 10⁶.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Exponents",
+            "A population doubles every year. Which mathematical concept can represent this growth?",
+            "Exponential growth",
+            "Linear growth",
+            "Constant value",
+            "Factorization",
+            QuestionOption.A,
+            "When a quantity grows by a constant multiplier over time, it is represented using exponential growth.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Exponents",
+            "Simplify: 2³ × 2⁴",
+            "2⁷",
+            "2¹²",
+            "4⁷",
+            "2¹",
+            QuestionOption.A,
+            "Using the exponent multiplication rule, add the powers: 2³ × 2⁴ = 2³⁺⁴ = 2⁷.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Exponents",
+            "Why are exponent concepts important in science and technology?",
+            "They help model growth, decay, measurements, and extremely large or small quantities.",
+            "They are only used for simple addition.",
+            "They cannot represent real-world situations.",
+            "They are only useful in geometry.",
+            QuestionOption.A,
+            "Exponents are widely used in physics, computing, biology, finance, and scientific calculations.",
+            DifficultyLevel.Advance,
+            5);
         // ==========================================================
         // Introduction to Radicals and Surds
         // ==========================================================
@@ -621,6 +1853,136 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+
+        // ==========================================================
+        // Simplifying and Operating on Radicals
+        // ==========================================================
+
+        AddQuestion(
+            "Simplifying and Operating on Radicals",
+            "Simplify: √16",
+            "2",
+            "4",
+            "8",
+            "16",
+            QuestionOption.B,
+            "The square root of 16 is 4 because 4 × 4 = 16.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Simplifying and Operating on Radicals",
+            "What is the first step when simplifying a radical expression?",
+            "Find perfect square factors inside the radical",
+            "Remove all variables",
+            "Multiply all numbers together",
+            "Convert it into a fraction",
+            QuestionOption.A,
+            "To simplify radicals, identify perfect square factors that can be taken outside the radical symbol.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Simplifying and Operating on Radicals",
+            "Simplify: √50",
+            "5√2",
+            "2√5",
+            "5√10",
+            "10√5",
+            QuestionOption.B,
+            "√50 = √(25 × 2) = √25 × √2 = 5√2.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Simplifying and Operating on Radicals",
+            "Which condition allows two radical terms to be added or subtracted directly?",
+            "They must have the same radicand",
+            "They must have different variables",
+            "They must have different square roots",
+            "They must always be integers",
+            QuestionOption.A,
+            "Only like radicals, which have the same radicand, can be combined by addition or subtraction.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Simplifying and Operating on Radicals",
+            "Why is rationalizing the denominator used in radical expressions?",
+            "To remove radicals from the denominator and make expressions simpler.",
+            "To increase the number of radicals.",
+            "To remove all variables.",
+            "To convert every expression into a decimal.",
+            QuestionOption.A,
+            "Rationalizing the denominator creates an equivalent expression with a rational denominator, making calculations easier.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Applications and Practice of Radicals and Surds
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Radicals and Surds",
+            "Which real-world field commonly uses radicals and surds?",
+            "Geometry and engineering",
+            "Only basic counting",
+            "Only alphabetical sorting",
+            "Only data storage",
+            QuestionOption.A,
+            "Radicals are used in geometry, physics, engineering, and measurement calculations involving distances and lengths.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Radicals and Surds",
+            "The distance formula uses square roots. Why are radicals useful in this situation?",
+            "They help calculate exact distances between points.",
+            "They remove the need for measurements.",
+            "They only work with whole numbers.",
+            "They convert all values to zero.",
+            QuestionOption.A,
+            "Distance calculations often involve square roots, making radicals useful for finding exact lengths.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Radicals and Surds",
+            "Simplify: √9 + √16",
+            "5",
+            "7",
+            "25",
+            "√25",
+            QuestionOption.B,
+            "√9 = 3 and √16 = 4, so √9 + √16 = 3 + 4 = 7.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Radicals and Surds",
+            "A square has an area of 50 cm². Which expression represents the length of one side?",
+            "√50 cm",
+            "50² cm",
+            "25 cm",
+            "50 + 50 cm",
+            QuestionOption.A,
+            "The side length of a square is the square root of its area, so the side is √50 cm.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Radicals and Surds",
+            "Why are radicals and surds important in advanced mathematics?",
+            "They allow exact representation of values that cannot always be written as simple integers or fractions.",
+            "They only work for basic arithmetic.",
+            "They eliminate mathematical formulas.",
+            "They are only used for drawing shapes.",
+            QuestionOption.A,
+            "Radicals appear throughout algebra, geometry, calculus, physics, and engineering when exact values are required.",
+            DifficultyLevel.Advance,
+            5);
         // ==========================================================
         // Introduction to Logarithms
         // ==========================================================
@@ -684,7 +2046,134 @@ public static class PracticeQuestionSeeder
             "Logarithms simplify calculations involving exponential relationships and are widely used in mathematics, engineering, physics, chemistry, finance, and computer science.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Laws and Properties of Logarithms
+        // ==========================================================
 
+        AddQuestion(
+            "Laws and Properties of Logarithms",
+            "Which logarithm property is used when multiplying two numbers inside a logarithm?",
+            "Product rule",
+            "Quotient rule",
+            "Power rule",
+            "Zero rule",
+            QuestionOption.A,
+            "The product rule states that log(ab) = log(a) + log(b), allowing multiplication to be converted into addition.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Laws and Properties of Logarithms",
+            "Which property states that log(a/b) = log(a) - log(b)?",
+            "Product rule",
+            "Quotient rule",
+            "Power rule",
+            "Inverse rule",
+            QuestionOption.B,
+            "The quotient rule converts division inside a logarithm into subtraction of logarithms.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Laws and Properties of Logarithms",
+            "Simplify using the power rule: log(x³)",
+            "3log(x)",
+            "log(x)³",
+            "xlog(3)",
+            "log(x + 3)",
+            QuestionOption.A,
+            "The power rule states that log(xⁿ) = n log(x), so log(x³) = 3log(x).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Laws and Properties of Logarithms",
+            "What is the relationship between exponential and logarithmic forms?",
+            "They are inverse operations.",
+            "They are unrelated operations.",
+            "They always produce the same value.",
+            "They only work with negative numbers.",
+            QuestionOption.A,
+            "Logarithms undo exponentiation, making them inverse operations of exponential functions.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Laws and Properties of Logarithms",
+            "Why are logarithm properties important in mathematics?",
+            "They simplify complex expressions and help solve exponential equations.",
+            "They remove all mathematical operations.",
+            "They are only used for geometry.",
+            "They only apply to whole numbers.",
+            QuestionOption.A,
+            "Logarithm laws are essential in algebra, calculus, computer science, finance, and scientific modelling.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Logarithms
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Logarithms",
+            "Which real-world situation commonly uses logarithms?",
+            "Measuring earthquake intensity and sound levels",
+            "Counting simple objects",
+            "Naming geometric shapes",
+            "Drawing straight lines",
+            QuestionOption.A,
+            "Logarithms are used in scales such as the Richter scale for earthquakes, decibel scale for sound, and many scientific measurements.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Logarithms",
+            "Why are logarithms useful for representing very large numbers?",
+            "They compress large values into smaller, manageable scales.",
+            "They remove all numbers completely.",
+            "They only work with negative values.",
+            "They convert numbers into fractions only.",
+            QuestionOption.A,
+            "Logarithmic scales make it easier to compare extremely large or small quantities.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Logarithms",
+            "If log₁₀(1000) = x, what is the value of x?",
+            "2",
+            "3",
+            "10",
+            "1000",
+            QuestionOption.B,
+            "Since 10³ = 1000, log₁₀(1000) = 3.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Logarithms",
+            "A scientist uses logarithms to analyze population growth. Why are logarithms helpful?",
+            "They help study exponential relationships and growth patterns.",
+            "They remove the need for calculations.",
+            "They only represent linear changes.",
+            "They cannot be used with variables.",
+            QuestionOption.A,
+            "Logarithms are useful when working with exponential growth, decay, and changing quantities over time.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Logarithms",
+            "Why are logarithms important in advanced mathematics and technology?",
+            "They are used in algorithms, data analysis, scientific modelling, and solving exponential problems.",
+            "They are only used for basic arithmetic.",
+            "They have no practical applications.",
+            "They only apply to geometry.",
+            QuestionOption.A,
+            "Logarithms are widely used in computer science, engineering, physics, finance, and information theory.",
+            DifficultyLevel.Advance,
+            5);
         // ==========================================================
         // Introduction to Absolute Value
         // ==========================================================
@@ -751,6 +2240,135 @@ public static class PracticeQuestionSeeder
 
 
         // ==========================================================
+        // Operations and Equations with Absolute Value
+        // ==========================================================
+
+        AddQuestion(
+            "Operations and Equations with Absolute Value",
+            "What does the absolute value of a number represent?",
+            "Its distance from zero on the number line",
+            "Its opposite value",
+            "Its decimal form",
+            "Its square value",
+            QuestionOption.A,
+            "Absolute value represents the distance of a number from zero, so it is always non-negative.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Operations and Equations with Absolute Value",
+            "Solve: |x| = 5",
+            "x = 5 only",
+            "x = -5 only",
+            "x = ±5",
+            "x = 0",
+            QuestionOption.C,
+            "Since both 5 and -5 are 5 units away from zero, |x| = 5 gives x = ±5.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Operations and Equations with Absolute Value",
+            "Simplify: |-8| + |3|",
+            "5",
+            "11",
+            "-5",
+            "-11",
+            QuestionOption.B,
+            "The absolute values are |-8| = 8 and |3| = 3, so the sum is 8 + 3 = 11.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Operations and Equations with Absolute Value",
+            "When solving an absolute value equation |x| = a where a is positive, how many solutions are usually possible?",
+            "One solution",
+            "Two solutions",
+            "No solutions",
+            "Infinite solutions",
+            QuestionOption.B,
+            "For a positive value of a, both x = a and x = -a satisfy the equation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Operations and Equations with Absolute Value",
+            "Why are absolute value equations useful in real-world problems?",
+            "They help model situations involving distance, error, and differences without considering direction.",
+            "They only work with negative numbers.",
+            "They remove all variables from equations.",
+            "They are only used for geometry.",
+            QuestionOption.A,
+            "Absolute value is widely used in measurements, statistics, computer science, and engineering to represent magnitude or distance.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Applications and Practice of Absolute Value
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Absolute Value",
+            "A person walks 5 km east and another person walks 5 km west from the same point. How can absolute value describe their distances?",
+            "Both distances are represented as 5 km because direction is ignored.",
+            "The west distance becomes negative.",
+            "The east distance becomes zero.",
+            "Absolute value cannot represent distance.",
+            QuestionOption.A,
+            "Absolute value represents distance from a reference point without considering direction.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Absolute Value",
+            "A temperature changes from 20°C to 15°C. What is the absolute change in temperature?",
+            "5°C",
+            "-5°C",
+            "35°C",
+            "0°C",
+            QuestionOption.A,
+            "The difference is 15 - 20 = -5, and the absolute value gives |-5| = 5°C.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Absolute Value",
+            "A machine has an error of ±0.02 cm in measurement. Why is absolute value useful here?",
+            "It represents the size of the error regardless of whether it is positive or negative.",
+            "It removes the measurement completely.",
+            "It makes all values negative.",
+            "It only works with whole numbers.",
+            QuestionOption.A,
+            "Absolute value is used to represent magnitude of error without considering the direction of deviation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Absolute Value",
+            "Solve: |2x| = 10",
+            "x = ±5",
+            "x = ±10",
+            "x = 5 only",
+            "x = 10 only",
+            QuestionOption.A,
+            "Since |2x| = 10, divide both sides by 2 to get |x| = 5, so x = ±5.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Absolute Value",
+            "Why is absolute value important in advanced mathematics and technology?",
+            "It helps model distance, optimization, errors, and differences between values.",
+            "It only applies to simple arithmetic.",
+            "It removes the need for mathematical models.",
+            "It is only used for geometry.",
+            QuestionOption.A,
+            "Absolute value is widely used in statistics, computer science, engineering, optimization, and data analysis.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
         // Introduction to Algebraic Identities
         // ==========================================================
 
@@ -814,14 +2432,901 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+        // ==========================================================
+        // Applying Algebraic Identities
+        // ==========================================================
+
+        AddQuestion(
+            "Applying Algebraic Identities",
+            "Which identity is used to expand (a + b)²?",
+            "a² + 2ab + b²",
+            "a² - b²",
+            "a² + b²",
+            "a² - 2ab + b²",
+            QuestionOption.A,
+            "The square of a sum identity is (a + b)² = a² + 2ab + b².",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applying Algebraic Identities",
+            "Expand: (x + 3)²",
+            "x² + 6x + 9",
+            "x² + 9",
+            "x² + 3x + 9",
+            "x² - 6x + 9",
+            QuestionOption.A,
+            "Using (a + b)² = a² + 2ab + b², we get x² + 2(x)(3) + 3² = x² + 6x + 9.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applying Algebraic Identities",
+            "Which identity is used to simplify a² - b²?",
+            "(a - b)(a + b)",
+            "(a + b)²",
+            "(a - b)²",
+            "a² + b²",
+            QuestionOption.A,
+            "The difference of squares identity states that a² - b² = (a - b)(a + b).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applying Algebraic Identities",
+            "Simplify: (x + y)(x - y)",
+            "x² - y²",
+            "x² + y²",
+            "x² + 2xy + y²",
+            "x² - 2xy + y²",
+            QuestionOption.A,
+            "Using the difference of squares identity, (x + y)(x - y) = x² - y².",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applying Algebraic Identities",
+            "Why are algebraic identities useful?",
+            "They provide shortcuts for expanding, simplifying, and factoring expressions.",
+            "They remove all variables from equations.",
+            "They only work with numbers.",
+            "They replace all algebraic operations.",
+            QuestionOption.A,
+            "Algebraic identities make complex calculations faster and are widely used in algebra, calculus, and applied mathematics.",
+            DifficultyLevel.Advance,
+            5);
 
 
+        // ==========================================================
+        // Applications and Practice of Algebraic Identities
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Identities",
+            "A square garden has side length (x + 5). Which algebraic identity can be used to find its area?",
+            "(a + b)² = a² + 2ab + b²",
+            "a² - b² = (a - b)(a + b)",
+            "a³ + b³",
+            "a² + b² = c²",
+            QuestionOption.A,
+            "The area of a square is side², so (x + 5)² can be expanded using the square of a sum identity.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Identities",
+            "Simplify: (2x + 3)²",
+            "4x² + 12x + 9",
+            "4x² + 9",
+            "2x² + 6x + 3",
+            "4x² - 12x + 9",
+            QuestionOption.A,
+            "Using (a + b)² = a² + 2ab + b², we get (2x)² + 2(2x)(3) + 3² = 4x² + 12x + 9.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Identities",
+            "An engineer uses algebraic identities to simplify design calculations. Why are identities useful?",
+            "They reduce complex expressions and make calculations faster.",
+            "They remove all variables from formulas.",
+            "They only work with numbers.",
+            "They prevent equations from being solved.",
+            QuestionOption.A,
+            "Algebraic identities provide standard patterns that simplify calculations in engineering and science.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Identities",
+            "Factorize: x² - 25",
+            "(x - 5)(x + 5)",
+            "(x - 25)(x + 25)",
+            "(x - 5)²",
+            "(x + 5)²",
+            QuestionOption.A,
+            "Using the difference of squares identity, x² - 25 = x² - 5² = (x - 5)(x + 5).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Algebraic Identities",
+            "Why are algebraic identities important in higher mathematics?",
+            "They help simplify expressions, prove relationships, and solve complex problems efficiently.",
+            "They only apply to basic arithmetic.",
+            "They replace all mathematical concepts.",
+            "They cannot be used in real-world applications.",
+            QuestionOption.A,
+            "Algebraic identities are fundamental in algebra, calculus, physics, engineering, and computer science.",
+            DifficultyLevel.Advance,
+            5);
 
 
+        // Geometry PQ. 2
+        // ==========================================================
+        // Introduction to Points, Lines & Angles
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Points, Lines & Angles",
+            "What is a point in geometry?",
+            "A figure with length and width",
+            "An exact location with no size or dimensions",
+            "A straight path extending infinitely",
+            "A closed geometric shape",
+            QuestionOption.B,
+            "A point represents an exact location in space and has no length, width, or thickness.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Points, Lines & Angles",
+            "Which geometric figure extends infinitely in both directions?",
+            "Line Segment",
+            "Ray",
+            "Line",
+            "Point",
+            QuestionOption.C,
+            "A line has no endpoints and extends infinitely in both directions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Points, Lines & Angles",
+            "What is the main difference between a ray and a line segment?",
+            "A ray has two endpoints.",
+            "A line segment extends infinitely.",
+            "A ray has one endpoint and extends infinitely in one direction.",
+            "A line segment has no endpoints.",
+            QuestionOption.C,
+            "A ray begins at one endpoint and continues infinitely in one direction, whereas a line segment has two endpoints.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Points, Lines & Angles",
+            "Which instrument is commonly used to measure angles?",
+            "Compass",
+            "Ruler",
+            "Protractor",
+            "Divider",
+            QuestionOption.C,
+            "A protractor is used to measure the size of angles in degrees.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Points, Lines & Angles",
+            "Why are points, lines, and angles considered the foundation of geometry?",
+            "Because they are only used to draw circles.",
+            "Because every geometric figure is built from these basic elements.",
+            "Because they only exist in coordinate geometry.",
+            "Because they replace algebraic equations.",
+            QuestionOption.B,
+            "Points, lines, and angles are the fundamental building blocks from which all geometric shapes and structures are formed.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Triangles
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Triangles",
+            "What is a triangle?",
+            "A polygon with four sides",
+            "A polygon with three sides",
+            "A shape with one curved side",
+            "A polygon with five sides",
+            QuestionOption.B,
+            "A triangle is a polygon that has exactly three sides and three angles.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Triangles",
+            "How many interior angles does a triangle have?",
+            "2",
+            "3",
+            "4",
+            "5",
+            QuestionOption.B,
+            "Every triangle has three interior angles formed by its three sides.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Triangles",
+            "What is the sum of the interior angles of any triangle?",
+            "90°",
+            "180°",
+            "270°",
+            "360°",
+            QuestionOption.B,
+            "The sum of the three interior angles of every triangle is always 180°.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Triangles",
+            "Which of the following is NOT a type of triangle based on its sides?",
+            "Equilateral",
+            "Isosceles",
+            "Scalene",
+            "Rectangle",
+            QuestionOption.D,
+            "A rectangle is a quadrilateral, not a type of triangle.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Triangles",
+            "Why are triangles widely used in engineering and construction?",
+            "They always have equal sides.",
+            "They are the only shapes with three angles.",
+            "They provide strength and structural stability.",
+            "They can only be drawn with a compass.",
+            QuestionOption.C,
+            "Triangles are rigid shapes that distribute forces efficiently, making them ideal for bridges, roofs, towers, and other structures.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Congruence
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Congruence",
+            "What does it mean for two geometric figures to be congruent?",
+            "They have the same shape only.",
+            "They have the same size only.",
+            "They have the same shape and the same size.",
+            "They have the same area only.",
+            QuestionOption.C,
+            "Congruent figures have exactly the same shape and size, even if they are positioned differently.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Congruence",
+            "Which symbol is commonly used to represent congruence?",
+            "=",
+            "≈",
+            "∼",
+            "≅",
+            QuestionOption.D,
+            "The symbol '≅' is used to indicate that two geometric figures are congruent.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Congruence",
+            "If two triangles are congruent, which statement is always true?",
+            "Only their areas are equal.",
+            "Their corresponding sides and angles are equal.",
+            "Only their perimeters are equal.",
+            "They must be equilateral triangles.",
+            QuestionOption.B,
+            "Congruent triangles have all corresponding sides and corresponding angles equal.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Congruence",
+            "Which of the following is NOT sufficient by itself to prove two figures are congruent?",
+            "They have the same shape.",
+            "Their corresponding sides and angles are equal.",
+            "One can be placed exactly over the other.",
+            "They have identical dimensions.",
+            QuestionOption.A,
+            "Having the same shape alone indicates similarity, not congruence, because the sizes may differ.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Congruence",
+            "Why is congruence important in engineering and construction?",
+            "It ensures components fit together accurately.",
+            "It eliminates the need for measurements.",
+            "It guarantees every structure is symmetrical.",
+            "It is only used in classroom geometry.",
+            QuestionOption.A,
+            "Congruence ensures manufactured parts and structural components have identical dimensions so they fit and function correctly.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Similarity
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Similarity",
+            "What does it mean for two geometric figures to be similar?",
+            "They have the same size only.",
+            "They have the same shape but may have different sizes.",
+            "They have the same perimeter only.",
+            "They have equal angles only.",
+            QuestionOption.B,
+            "Similar figures have the same shape, while their corresponding sides are proportional and their sizes may differ.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Similarity",
+            "Which of the following is always true for similar figures?",
+            "Their corresponding angles are equal.",
+            "Their corresponding sides are equal.",
+            "Their areas are equal.",
+            "Their perimeters are always equal.",
+            QuestionOption.A,
+            "In similar figures, corresponding angles are equal, while corresponding sides are proportional.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Similarity",
+            "What is the relationship between the corresponding sides of similar figures?",
+            "They are always equal.",
+            "They are always perpendicular.",
+            "They are proportional.",
+            "They have no relationship.",
+            QuestionOption.C,
+            "The lengths of corresponding sides in similar figures have the same ratio, known as the scale factor.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Similarity",
+            "Which statement correctly distinguishes similarity from congruence?",
+            "Similar figures must have the same size.",
+            "Congruent figures may have different sizes.",
+            "Similar figures have the same shape, while congruent figures have the same shape and size.",
+            "Similarity and congruence mean the same thing.",
+            QuestionOption.C,
+            "Congruence requires identical shape and size, whereas similarity requires only the same shape with proportional dimensions.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Similarity",
+            "Why is the concept of similarity important in real-world applications?",
+            "It is only useful for drawing geometric figures.",
+            "It helps create scaled models, maps, blueprints, and architectural designs.",
+            "It replaces the need for measurements.",
+            "It is only used in triangle problems.",
+            QuestionOption.B,
+            "Similarity is widely used to create accurate scale models, maps, engineering drawings, and architectural plans.",
+            DifficultyLevel.Advance,
+            5);
 
 
+        // ==========================================================
+        // Introduction to Quadrilaterals
+        // ==========================================================
 
+        AddQuestion(
+            "Introduction to Quadrilaterals",
+            "What is a quadrilateral?",
+            "A polygon with three sides",
+            "A polygon with four sides",
+            "A polygon with five sides",
+            "A shape with one curved side",
+            QuestionOption.B,
+            "A quadrilateral is a closed polygon that has exactly four sides and four angles.",
+            DifficultyLevel.Begineer,
+            1);
 
+        AddQuestion(
+            "Introduction to Quadrilaterals",
+            "How many interior angles does every quadrilateral have?",
+            "Three",
+            "Four",
+            "Five",
+            "Six",
+            QuestionOption.B,
+            "Every quadrilateral has four interior angles because it has four sides.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Quadrilaterals",
+            "What is the sum of the interior angles of any quadrilateral?",
+            "180°",
+            "270°",
+            "360°",
+            "540°",
+            QuestionOption.C,
+            "The sum of the interior angles of every quadrilateral is always 360°.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Quadrilaterals",
+            "Which of the following is NOT a type of quadrilateral?",
+            "Rectangle",
+            "Rhombus",
+            "Pentagon",
+            "Trapezium",
+            QuestionOption.C,
+            "A pentagon has five sides, whereas a quadrilateral has exactly four sides.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Quadrilaterals",
+            "Why are quadrilaterals widely used in architecture and engineering?",
+            "They can only be drawn using a compass.",
+            "They form the basis of many stable structures, floor plans, windows, and mechanical designs.",
+            "They always have four equal sides.",
+            "They are only used in mathematics textbooks.",
+            QuestionOption.B,
+            "Quadrilaterals such as rectangles and squares are commonly used in construction, engineering, manufacturing, and design because of their practical shapes and properties.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Polygons
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Polygons",
+            "What is a polygon?",
+            "A closed figure made of curved lines",
+            "A closed plane figure formed by straight line segments",
+            "A three-dimensional shape",
+            "A figure with only one side",
+            QuestionOption.B,
+            "A polygon is a closed two-dimensional figure made up entirely of straight line segments.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Polygons",
+            "Which of the following is NOT a polygon?",
+            "Triangle",
+            "Rectangle",
+            "Circle",
+            "Pentagon",
+            QuestionOption.C,
+            "A circle has a curved boundary, while polygons are made only of straight sides.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Polygons",
+            "How are polygons commonly classified?",
+            "By their colour",
+            "By the number of their sides",
+            "By their area only",
+            "By their perimeter only",
+            QuestionOption.B,
+            "Polygons are primarily classified according to the number of sides they have, such as triangles, quadrilaterals, pentagons, and hexagons.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Polygons",
+            "Which statement about a regular polygon is correct?",
+            "Only its sides are equal.",
+            "Only its angles are equal.",
+            "All its sides and all its interior angles are equal.",
+            "It must have exactly six sides.",
+            QuestionOption.C,
+            "A regular polygon has all sides of equal length and all interior angles equal.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Polygons",
+            "Why are polygons important in engineering, architecture, and computer graphics?",
+            "They are only used for classroom exercises.",
+            "They provide the foundation for designing structures, models, and digital objects.",
+            "They can only represent two-dimensional drawings.",
+            "They eliminate the need for measurements.",
+            QuestionOption.B,
+            "Polygons are fundamental in construction, CAD software, computer graphics, and engineering because complex shapes are often built from polygonal components.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Circles
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Circles",
+            "What is a circle?",
+            "A polygon with four sides",
+            "A closed two-dimensional shape where all points are the same distance from the center",
+            "A three-dimensional solid shape",
+            "A shape made only of straight lines",
+            QuestionOption.B,
+            "A circle is a closed two-dimensional figure where every point on its boundary is at an equal distance from the center.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Circles",
+            "What is the fixed point inside a circle called?",
+            "Radius",
+            "Diameter",
+            "Center",
+            "Chord",
+            QuestionOption.C,
+            "The center is the fixed point from which all points on the circle are equally distant.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Circles",
+            "What is the distance from the center of a circle to any point on its boundary called?",
+            "Diameter",
+            "Radius",
+            "Circumference",
+            "Arc",
+            QuestionOption.B,
+            "The radius is the distance between the center of a circle and any point on its circumference.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Circles",
+            "Which part of a circle passes through the center and connects two points on the circle?",
+            "Chord",
+            "Arc",
+            "Diameter",
+            "Sector",
+            QuestionOption.C,
+            "A diameter is a line segment that passes through the center and connects two points on the circle. It is twice the length of the radius.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Circles",
+            "Why are circles important in real-world applications?",
+            "They are only used in mathematics textbooks.",
+            "They are used in wheels, machines, architecture, engineering, and design.",
+            "They cannot represent real objects.",
+            "They only help calculate angles.",
+            QuestionOption.B,
+            "Circles are widely used in engineering, transportation, mechanical systems, architecture, and many everyday objects because of their symmetry and properties.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Geometric Constructions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Geometric Constructions",
+            "What are geometric constructions?",
+            "Drawing random shapes without measurements",
+            "Creating accurate geometric figures using specific tools and methods",
+            "Calculating only the area of shapes",
+            "Measuring temperature using instruments",
+            QuestionOption.B,
+            "Geometric constructions involve creating accurate geometric figures using tools such as a compass and straightedge following specific rules.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Geometric Constructions",
+            "Which two tools are traditionally used for geometric constructions?",
+            "Calculator and ruler",
+            "Compass and straightedge",
+            "Protractor and calculator",
+            "Pencil and eraser only",
+            QuestionOption.B,
+            "A compass and straightedge are the traditional tools used to create precise geometric constructions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Geometric Constructions",
+            "What is the main purpose of using a compass in geometric constructions?",
+            "To measure angles directly",
+            "To draw circles and arcs with a fixed radius",
+            "To calculate areas",
+            "To create curved equations",
+            QuestionOption.B,
+            "A compass is used to draw circles and arcs while maintaining a fixed distance from a point.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Geometric Constructions",
+            "Which of the following can be constructed using geometric methods?",
+            "A perfectly measured angle bisector",
+            "A random freehand drawing",
+            "A photograph",
+            "A digital animation only",
+            QuestionOption.A,
+            "Geometric construction methods can accurately create objects such as angle bisectors, perpendicular lines, and triangles.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Geometric Constructions",
+            "Why are geometric constructions important in real-world fields?",
+            "They remove the need for precision.",
+            "They help create accurate designs in architecture, engineering, and technical drawings.",
+            "They are only useful for solving puzzles.",
+            "They are only used to draw circles.",
+            QuestionOption.B,
+            "Geometric constructions provide accuracy and precision, making them useful in architecture, engineering, design, and manufacturing.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Area
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Area",
+            "What does area measure in geometry?",
+            "The distance around a shape",
+            "The space enclosed inside a two-dimensional shape",
+            "The number of sides of a shape",
+            "The angle between two lines",
+            QuestionOption.B,
+            "Area measures the amount of space covered or enclosed by a two-dimensional shape.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Area",
+            "What is the standard unit used to measure area?",
+            "Metres (m)",
+            "Square metres (m²)",
+            "Cubic metres (m³)",
+            "Degrees (°)",
+            QuestionOption.B,
+            "Area is measured in square units such as square metres (m²), square centimetres (cm²), and square kilometres (km²).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Area",
+            "Which formula is used to calculate the area of a rectangle?",
+            "Length + Width",
+            "2 × (Length + Width)",
+            "Length × Width",
+            "Length ÷ Width",
+            QuestionOption.C,
+            "The area of a rectangle is calculated by multiplying its length by its width.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Area",
+            "If a square has a side length of 5 cm, what is its area?",
+            "10 cm²",
+            "20 cm²",
+            "25 cm²",
+            "30 cm²",
+            QuestionOption.C,
+            "The area of a square is side × side. Therefore, 5 × 5 = 25 cm².",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Area",
+            "Why is understanding area important in real-world applications?",
+            "It helps measure spaces needed for construction, design, and planning.",
+            "It only helps draw geometric shapes.",
+            "It replaces all other mathematical measurements.",
+            "It is only used in classroom exercises.",
+            QuestionOption.A,
+            "Area calculations are used in architecture, engineering, construction, land measurement, interior design, and many practical situations.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Perimeter
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Perimeter",
+            "What does perimeter measure in geometry?",
+            "The space inside a shape",
+            "The total distance around the boundary of a shape",
+            "The number of angles in a shape",
+            "The height of a shape",
+            QuestionOption.B,
+            "Perimeter measures the total distance around the outside boundary of a two-dimensional shape.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Perimeter",
+            "What unit is commonly used to measure perimeter?",
+            "Square units",
+            "Cubic units",
+            "Linear units",
+            "Degrees",
+            QuestionOption.C,
+            "Perimeter is a length measurement, so it is measured using linear units such as metres (m) or centimetres (cm).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Perimeter",
+            "How do you find the perimeter of a rectangle?",
+            "Length × Width",
+            "Add all four sides together",
+            "Length ÷ Width",
+            "Side × Side",
+            QuestionOption.B,
+            "The perimeter of a rectangle is found by adding the lengths of all four sides, or using 2 × (length + width).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Perimeter",
+            "A square has sides of length 6 cm. What is its perimeter?",
+            "12 cm",
+            "18 cm",
+            "24 cm",
+            "36 cm",
+            QuestionOption.C,
+            "A square has four equal sides, so the perimeter is 4 × 6 = 24 cm.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Perimeter",
+            "Why is understanding perimeter useful in real-world applications?",
+            "It helps calculate boundaries for fencing, construction, and design.",
+            "It is only used to find the area of shapes.",
+            "It removes the need for measurements.",
+            "It is only useful for circles.",
+            QuestionOption.A,
+            "Perimeter is used in practical situations such as finding the amount of fencing needed, measuring borders, and planning construction layouts.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Transformations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Transformations",
+            "What are geometric transformations?",
+            "Methods used to calculate the area of shapes",
+            "Operations that move, flip, turn, or resize geometric figures",
+            "Ways to measure angles only",
+            "Techniques used to draw circles",
+            QuestionOption.B,
+            "Geometric transformations are operations that change the position, orientation, or size of a figure while maintaining its geometric properties.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Transformations",
+            "Which transformation moves a shape from one location to another without changing its size or orientation?",
+            "Rotation",
+            "Reflection",
+            "Translation",
+            "Dilation",
+            QuestionOption.C,
+            "A translation slides a figure from one position to another while keeping the same shape, size, and orientation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Transformations",
+            "What happens to a figure during a reflection?",
+            "It becomes larger",
+            "It flips over a line to create a mirror image",
+            "It changes into a different shape",
+            "It loses all measurements",
+            QuestionOption.B,
+            "A reflection creates a mirror image of a figure across a line called the line of reflection.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Transformations",
+            "Which transformation changes the size of a figure while keeping the same shape?",
+            "Rotation",
+            "Translation",
+            "Reflection",
+            "Dilation",
+            QuestionOption.D,
+            "A dilation enlarges or reduces a figure by a scale factor while preserving its shape.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Transformations",
+            "Why are geometric transformations important in real-world applications?",
+            "They are only used for solving textbook problems.",
+            "They are used in computer graphics, animation, engineering, robotics, and design.",
+            "They eliminate the need for measurements.",
+            "They only apply to triangles.",
+            QuestionOption.B,
+            "Transformations are widely used in digital graphics, games, animation, architecture, robotics, and engineering to manipulate objects accurately.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Coordinate Proofs
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Coordinate Proofs",
+            "What is a coordinate proof?",
+            "A proof that uses only geometric drawings",
+            "A method of proving geometric statements using coordinates and algebra",
+            "A way to calculate only the area of shapes",
+            "A technique used only for measuring angles",
+            QuestionOption.B,
+            "Coordinate proofs use points on a coordinate plane and algebraic methods to prove geometric properties.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Coordinate Proofs",
+            "Which mathematical system is mainly used in coordinate proofs?",
+            "Number line only",
+            "Coordinate plane with x and y axes",
+            "Clock system",
+            "Three-dimensional model only",
+            QuestionOption.B,
+            "Coordinate proofs use the coordinate plane, which consists of horizontal x-axis and vertical y-axis, to represent geometric figures.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Coordinate Proofs",
+            "Which formula can be used to find the distance between two points in a coordinate plane?",
+            "Area formula",
+            "Distance formula",
+            "Quadratic formula",
+            "Slope formula only",
+            QuestionOption.B,
+            "The distance formula calculates the length between two points using their coordinates.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Coordinate Proofs",
+            "How can the slope of a line help in coordinate proofs?",
+            "It can determine relationships such as parallel or perpendicular lines.",
+            "It calculates the area of every shape.",
+            "It changes a shape into a circle.",
+            "It removes the need for coordinates.",
+            QuestionOption.A,
+            "Slope helps prove geometric relationships by showing whether lines are parallel, perpendicular, or have the same direction.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Coordinate Proofs",
+            "Why are coordinate proofs useful in mathematics and real-world fields?",
+            "They combine algebra and geometry to verify designs and relationships accurately.",
+            "They are only used for drawing pictures.",
+            "They replace all mathematical formulas.",
+            "They only work with circles.",
+            QuestionOption.A,
+            "Coordinate proofs connect algebra with geometry and are useful in engineering, computer graphics, architecture, and analytical problem-solving.",
+            DifficultyLevel.Advance,
+            5);
 
 
 

@@ -21,13 +21,18 @@ public static class LessonTagSeeder
 
         void AddTag(string lessonTitle, string tagName)
         {
+            if (!lessons.TryGetValue(lessonTitle, out var lesson))
+                return;
+
+            if (!tags.TryGetValue(tagName, out var tag))
+                return;
+
             lessonTags.Add(new LessonTag
             {
-                LessonId = lessons[lessonTitle].Id,
-                TagId = tags[tagName].Id
+                LessonId = lesson.Id,
+                TagId = tag.Id
             });
         }
-
         // Algebraic Expressions
         // Lesson 1
         AddTag("Introduction to Algebraic Expressions", "Introduction");
@@ -46,6 +51,25 @@ public static class LessonTagSeeder
         AddTag("Applications and Practice of Algebraic Expressions", "Application");
         AddTag("Applications and Practice of Algebraic Expressions", "Real World");
         AddTag("Applications and Practice of Algebraic Expressions", "Revision");
+
+        // Geometry
+        AddTag("Introduction to Triangles", "Introduction");
+        AddTag("Introduction to Triangles", "Concept");
+        AddTag("Introduction to Triangles", "Definition");
+        AddTag("Introduction to Triangles", "Visualization");
+
+        AddTag("Types of Triangles", "Concept");
+        AddTag("Types of Triangles", "Formula");
+        AddTag("Types of Triangles", "Worked Example");
+        AddTag("Types of Triangles", "Step-by-Step");
+
+        AddTag("Applications of Triangles", "Application");
+        AddTag("Applications of Triangles", "Practice");
+        AddTag("Applications of Triangles", "Real World");
+        AddTag("Applications of Triangles", "Revision");
+
+
+
 
         context.LessonTags.AddRange(lessonTags);
         await context.SaveChangesAsync();
