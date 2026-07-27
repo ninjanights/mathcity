@@ -9065,9 +9065,582 @@ public static class PracticeQuestionSeeder
             "Conic sections have numerous practical applications in science, engineering, physics, navigation, and technology.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Introduction to Trigonometric Ratios
+        // ==========================================================
 
+        AddQuestion(
+            "Introduction to Trigonometric Ratios",
+            "What are trigonometric ratios used for?",
+            "To measure probability",
+            "To relate the angles and sides of a right-angled triangle",
+            "To calculate the area of circles",
+            "To solve quadratic equations",
+            QuestionOption.B,
+            "Trigonometric ratios describe the relationship between the sides and angles of a right-angled triangle.",
+            DifficultyLevel.Begineer,
+            1);
 
+        AddQuestion(
+            "Introduction to Trigonometric Ratios",
+            "Which trigonometric ratio is defined as opposite side divided by hypotenuse?",
+            "Cosine",
+            "Tangent",
+            "Sine",
+            "Cotangent",
+            QuestionOption.C,
+            "The sine of an angle is the ratio of the opposite side to the hypotenuse.",
+            DifficultyLevel.Begineer,
+            2);
 
+        AddQuestion(
+            "Introduction to Trigonometric Ratios",
+            "Which side of a right triangle is always the longest?",
+            "Adjacent side",
+            "Opposite side",
+            "Hypotenuse",
+            "Base",
+            QuestionOption.C,
+            "The hypotenuse is opposite the right angle and is always the longest side.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Trigonometric Ratios",
+            "Which trigonometric ratio is equal to adjacent side divided by hypotenuse?",
+            "Sine",
+            "Cosine",
+            "Tangent",
+            "Secant",
+            QuestionOption.B,
+            "Cosine is defined as adjacent divided by hypotenuse.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Trigonometric Ratios",
+            "Why are trigonometric ratios important?",
+            "They help determine unknown sides and angles in right triangles.",
+            "They are only useful for drawing graphs.",
+            "They replace algebra completely.",
+            "They are only used in geometry exams.",
+            QuestionOption.A,
+            "Trigonometric ratios are fundamental for solving problems involving right-angled triangles.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Understanding and Solving Trigonometric Ratios
+        // ==========================================================
+
+        AddQuestion(
+            "Understanding and Solving Trigonometric Ratios",
+            "The tangent of an angle is equal to:",
+            "Opposite ÷ Hypotenuse",
+            "Adjacent ÷ Hypotenuse",
+            "Opposite ÷ Adjacent",
+            "Hypotenuse ÷ Opposite",
+            QuestionOption.C,
+            "Tangent is the ratio of the opposite side to the adjacent side.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Understanding and Solving Trigonometric Ratios",
+            "If the opposite side is 6 units and the hypotenuse is 10 units, what is sin θ?",
+            "0.4",
+            "0.5",
+            "0.6",
+            "0.8",
+            QuestionOption.C,
+            "sin θ = opposite ÷ hypotenuse = 6 ÷ 10 = 0.6.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Understanding and Solving Trigonometric Ratios",
+            "If the adjacent side is 8 units and the hypotenuse is 10 units, what is cos θ?",
+            "0.6",
+            "0.8",
+            "1.0",
+            "0.2",
+            QuestionOption.B,
+            "cos θ = adjacent ÷ hypotenuse = 8 ÷ 10 = 0.8.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Understanding and Solving Trigonometric Ratios",
+            "If the opposite side is 9 units and the adjacent side is 3 units, what is tan θ?",
+            "2",
+            "3",
+            "4",
+            "6",
+            QuestionOption.B,
+            "tan θ = opposite ÷ adjacent = 9 ÷ 3 = 3.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Understanding and Solving Trigonometric Ratios",
+            "Which trigonometric ratio uses only the opposite and adjacent sides?",
+            "Sine",
+            "Cosine",
+            "Tangent",
+            "Secant",
+            QuestionOption.C,
+            "Tangent is calculated using the opposite and adjacent sides only.",
+            DifficultyLevel.Advance,
+            5);
+
+        // PQ. 4
+
+        // ==========================================================
+        // Applications and Practice of Trigonometric Ratios
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Ratios",
+            "Trigonometric ratios are commonly used to measure:",
+            "Heights and distances",
+            "Temperature",
+            "Population",
+            "Speed only",
+            QuestionOption.A,
+            "Trigonometry is widely used to calculate heights and distances that cannot be measured directly.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Ratios",
+            "Which profession frequently uses trigonometry?",
+            "Engineer",
+            "Chef",
+            "Novelist",
+            "Singer",
+            QuestionOption.A,
+            "Engineers use trigonometry in surveying, construction, and structural design.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Ratios",
+            "Navigation systems use trigonometric ratios to:",
+            "Determine positions and distances",
+            "Write documents",
+            "Store files",
+            "Create databases",
+            QuestionOption.A,
+            "Navigation relies on trigonometric calculations to determine locations and routes.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Ratios",
+            "In physics, trigonometric ratios help analyze:",
+            "Forces and motion",
+            "Grammar",
+            "Chemical names",
+            "Literature",
+            QuestionOption.A,
+            "Physics uses trigonometry to resolve vectors and analyze motion.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Ratios",
+            "Why are trigonometric ratios important in real life?",
+            "They help solve practical problems involving heights, distances, engineering, navigation, and science.",
+            "They are only useful for classroom exercises.",
+            "They replace geometry completely.",
+            "They are only used to draw triangles.",
+            QuestionOption.A,
+            "Trigonometric ratios are essential tools in engineering, architecture, surveying, navigation, physics, and many other real-world applications.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Trigonometric Identities
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Trigonometric Identities",
+            "What is a trigonometric identity?",
+            "An equation true only for specific angles",
+            "An equation that is true for all values where it is defined",
+            "A formula used only for right triangles",
+            "An equation with no solution",
+            QuestionOption.B,
+            "A trigonometric identity is an equation that holds true for every value of the variable for which both sides are defined.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Trigonometric Identities",
+            "Which of the following is a Pythagorean identity?",
+            "sin²θ + cos²θ = 1",
+            "sinθ + cosθ = 1",
+            "tanθ = sinθ + cosθ",
+            "secθ = sinθ/cosθ",
+            QuestionOption.A,
+            "The identity sin²θ + cos²θ = 1 is one of the fundamental Pythagorean identities.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Trigonometric Identities",
+            "Which trigonometric function is the reciprocal of cosine?",
+            "Cosecant",
+            "Cotangent",
+            "Secant",
+            "Tangent",
+            QuestionOption.C,
+            "Secant (sec) is the reciprocal of cosine (cos).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Trigonometric Identities",
+            "The quotient identity for tangent is:",
+            "tanθ = cosθ/sinθ",
+            "tanθ = sinθ/cosθ",
+            "tanθ = secθ/cosecθ",
+            "tanθ = sin²θ + cos²θ",
+            QuestionOption.B,
+            "The tangent function is defined as sinθ divided by cosθ.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Trigonometric Identities",
+            "Why are trigonometric identities important?",
+            "They help simplify expressions and prove mathematical relationships.",
+            "They only calculate triangle areas.",
+            "They replace trigonometric ratios.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Trigonometric identities simplify calculations and help prove mathematical equations.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Simplifying Expressions Using Trigonometric Identities
+        // ==========================================================
+
+        AddQuestion(
+            "Simplifying Expressions Using Trigonometric Identities",
+            "Using identities, sin²θ + cos²θ is equal to:",
+            "0",
+            "1",
+            "2",
+            "sinθ",
+            QuestionOption.B,
+            "According to the Pythagorean identity, sin²θ + cos²θ = 1.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Simplifying Expressions Using Trigonometric Identities",
+            "Which identity expresses sec²θ?",
+            "1 + tan²θ",
+            "1 - tan²θ",
+            "sin²θ + cos²θ",
+            "1 + cot²θ",
+            QuestionOption.A,
+            "The Pythagorean identity states sec²θ = 1 + tan²θ.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Simplifying Expressions Using Trigonometric Identities",
+            "Which reciprocal identity is correct?",
+            "sinθ = 1/secθ",
+            "cosθ = 1/cosecθ",
+            "cosecθ = 1/sinθ",
+            "tanθ = 1/cosθ",
+            QuestionOption.C,
+            "Cosecant is the reciprocal of sine.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Simplifying Expressions Using Trigonometric Identities",
+            "Which identity helps express cotθ in terms of sine and cosine?",
+            "cotθ = sinθ/cosθ",
+            "cotθ = cosθ/sinθ",
+            "cotθ = secθ/cosecθ",
+            "cotθ = sin²θ",
+            QuestionOption.B,
+            "Cotangent is equal to cosine divided by sine.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Simplifying Expressions Using Trigonometric Identities",
+            "The main purpose of trigonometric identities is to:",
+            "Simplify expressions and verify equations",
+            "Find the area of circles",
+            "Measure probability",
+            "Convert units",
+            QuestionOption.A,
+            "Identities make complex trigonometric expressions easier to solve and verify.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Trigonometric Identities
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Identities",
+            "Trigonometric identities are widely used in:",
+            "Physics",
+            "Grammar",
+            "Cooking",
+            "History",
+            QuestionOption.A,
+            "Physics frequently uses trigonometric identities in wave and motion analysis.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Identities",
+            "Engineers use trigonometric identities mainly to:",
+            "Analyze structures and signals",
+            "Write essays",
+            "Design books",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Engineering applications include structural analysis, electrical signals, and mechanical design.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Identities",
+            "Which field commonly applies trigonometric identities to study sound and light waves?",
+            "Physics",
+            "Literature",
+            "Biology",
+            "Economics",
+            QuestionOption.A,
+            "Wave motion in physics is commonly analyzed using trigonometric identities.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Identities",
+            "Computer graphics use trigonometric identities to:",
+            "Perform rotations and animations",
+            "Store files",
+            "Compress images only",
+            "Manage databases",
+            QuestionOption.A,
+            "Trigonometric identities are essential for transformations, rotations, and animations in graphics.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Identities",
+            "Why are trigonometric identities important in mathematics and science?",
+            "They simplify complex calculations and support problem-solving in engineering, physics, and technology.",
+            "They are only useful in school examinations.",
+            "They replace trigonometric ratios completely.",
+            "They are only used to draw graphs.",
+            QuestionOption.A,
+            "Trigonometric identities are fundamental tools used across mathematics, engineering, computer graphics, navigation, and physics.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Compound Angles
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Compound Angles",
+            "What is a compound angle?",
+            "An angle greater than 360°",
+            "An angle formed by adding or subtracting two angles",
+            "An angle equal to 90°",
+            "An angle inside a triangle",
+            QuestionOption.B,
+            "A compound angle is formed by adding or subtracting two angles.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Compound Angles",
+            "Which operation is commonly used to form a compound angle?",
+            "Multiplication only",
+            "Division only",
+            "Addition or subtraction",
+            "Square root",
+            QuestionOption.C,
+            "Compound angles are created by adding or subtracting two angles.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Compound Angles",
+            "Which trigonometric functions have compound angle formulas?",
+            "Only sine",
+            "Only cosine",
+            "Only tangent",
+            "Sine, cosine, and tangent",
+            QuestionOption.D,
+            "Compound angle formulas exist for sine, cosine, and tangent.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Compound Angles",
+            "The formula sin(A + B) is used to:",
+            "Find the sine of the sum of two angles",
+            "Find the cosine of an angle",
+            "Find the tangent of an angle",
+            "Calculate the area of a triangle",
+            QuestionOption.A,
+            "The sine addition formula calculates the sine of the sum of two angles.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Compound Angles",
+            "Why are compound angle formulas important?",
+            "They simplify trigonometric calculations involving sums and differences of angles.",
+            "They only measure triangle areas.",
+            "They replace trigonometric identities.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Compound angle formulas are essential for solving many trigonometric problems efficiently.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Problems Using Compound Angle Formulas
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Problems Using Compound Angle Formulas",
+            "Which formula correctly represents sin(A + B)?",
+            "sinA cosB + cosA sinB",
+            "sinA cosB - cosA sinB",
+            "cosA cosB - sinA sinB",
+            "tanA + tanB",
+            QuestionOption.A,
+            "The sine addition formula is sin(A + B) = sinA cosB + cosA sinB.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Compound Angle Formulas",
+            "Which formula correctly represents cos(A + B)?",
+            "cosA cosB + sinA sinB",
+            "cosA cosB - sinA sinB",
+            "sinA cosB + cosA sinB",
+            "tanA tanB",
+            QuestionOption.B,
+            "The cosine addition formula is cos(A + B) = cosA cosB - sinA sinB.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Compound Angle Formulas",
+            "Which formula represents tan(A + B)?",
+            "(tanA + tanB)/(1 - tanA tanB)",
+            "(tanA - tanB)/(1 + tanA tanB)",
+            "tanA + tanB",
+            "sinA + cosB",
+            QuestionOption.A,
+            "The tangent addition formula is (tanA + tanB)/(1 - tanA tanB).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Compound Angle Formulas",
+            "The formula sin(A - B) differs from sin(A + B) because:",
+            "The second term changes from plus to minus",
+            "The first term changes sign",
+            "Both terms become negative",
+            "There is no difference",
+            QuestionOption.A,
+            "The subtraction formula is sin(A - B) = sinA cosB - cosA sinB.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Compound Angle Formulas",
+            "Compound angle formulas are mainly used to:",
+            "Simplify expressions and solve trigonometric equations",
+            "Find square roots",
+            "Calculate probability",
+            "Convert units",
+            QuestionOption.A,
+            "These formulas simplify complex trigonometric expressions and aid in solving equations.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Compound Angles
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Compound Angles",
+            "Compound angle formulas are commonly used in:",
+            "Physics",
+            "Grammar",
+            "Cooking",
+            "History",
+            QuestionOption.A,
+            "Physics uses compound angle formulas to analyze waves, oscillations, and forces.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Compound Angles",
+            "Engineers use compound angle formulas to:",
+            "Analyze structures and signals",
+            "Write essays",
+            "Create paintings",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Engineering applications include structural analysis, electronics, and signal processing.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Compound Angles",
+            "Which field commonly uses compound angle formulas to analyze wave motion?",
+            "Physics",
+            "Literature",
+            "Economics",
+            "Biology",
+            QuestionOption.A,
+            "Wave behavior is frequently analyzed using compound angle identities in physics.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Compound Angles",
+            "Computer graphics use compound angle formulas for:",
+            "Object rotation and animation",
+            "Database management",
+            "Text formatting",
+            "File compression",
+            QuestionOption.A,
+            "Rotating objects and performing transformations rely on trigonometric formulas.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Compound Angles",
+            "Why are compound angle formulas important in mathematics and engineering?",
+            "They simplify advanced calculations involving angles and are widely used in science, engineering, and technology.",
+            "They are only useful for examinations.",
+            "They replace trigonometric identities.",
+            "They are only used for drawing graphs.",
+            QuestionOption.A,
+            "Compound angle formulas are fundamental tools in mathematics, physics, engineering, computer graphics, and signal processing.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
