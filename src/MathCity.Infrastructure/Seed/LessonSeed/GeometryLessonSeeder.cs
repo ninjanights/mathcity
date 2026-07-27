@@ -587,7 +587,6 @@ new Lesson
 
 
 
-
         };
 
         foreach (var lesson in lessons)

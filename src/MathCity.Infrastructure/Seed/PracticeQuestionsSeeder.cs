@@ -2626,6 +2626,136 @@ public static class PracticeQuestionSeeder
             "Points, lines, and angles are the fundamental building blocks from which all geometric shapes and structures are formed.",
             DifficultyLevel.Advance,
             5);
+
+        // ==========================================================
+        // Types of Points, Lines & Angles
+        // ==========================================================
+
+        AddQuestion(
+            "Types of Points, Lines & Angles",
+            "Which type of geometric figure has a location but no size?",
+            "Point",
+            "Line",
+            "Angle",
+            "Plane",
+            QuestionOption.A,
+            "A point represents an exact location in geometry and has no length, width, or thickness.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types of Points, Lines & Angles",
+            "What is a line that extends infinitely in both directions called?",
+            "Line segment",
+            "Ray",
+            "Line",
+            "Angle",
+            QuestionOption.C,
+            "A line extends forever in both directions, while a ray has one endpoint and a line segment has two endpoints.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types of Points, Lines & Angles",
+            "What type of angle measures exactly 90 degrees?",
+            "Acute angle",
+            "Right angle",
+            "Obtuse angle",
+            "Straight angle",
+            QuestionOption.B,
+            "A right angle has a measure of exactly 90°, commonly seen at corners and perpendicular intersections.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types of Points, Lines & Angles",
+            "Two angles that add up to 180° are called what?",
+            "Complementary angles",
+            "Supplementary angles",
+            "Vertical angles",
+            "Adjacent angles",
+            QuestionOption.B,
+            "Supplementary angles have a combined measure of 180°.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types of Points, Lines & Angles",
+            "Why are different types of lines and angles important in geometry?",
+            "They help describe shapes, structures, measurements, and relationships between geometric figures.",
+            "They are only used for counting numbers.",
+            "They cannot describe real objects.",
+            "They only apply to algebra.",
+            QuestionOption.A,
+            "Lines and angles are fundamental concepts used in architecture, engineering, design, navigation, and mathematics.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications of Points, Lines & Angles
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Points, Lines & Angles",
+            "An architect uses lines and angles when designing buildings. Why are angles important in architecture?",
+            "They help create accurate structures and maintain proper measurements.",
+            "They remove the need for planning.",
+            "They only decorate buildings.",
+            "They cannot affect construction.",
+            QuestionOption.A,
+            "Angles are essential in architecture for designing stable structures, slopes, connections, and accurate layouts.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Points, Lines & Angles",
+            "A navigation system uses angles to determine direction. Which concept is being applied?",
+            "Angle measurement",
+            "Polynomial factorization",
+            "Number comparison",
+            "Algebraic expansion",
+            QuestionOption.A,
+            "Angles are used in navigation systems to calculate directions, bearings, and positions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Points, Lines & Angles",
+            "Engineers use perpendicular lines when designing structures. What does perpendicular mean?",
+            "Two lines intersect to form a 90° angle.",
+            "Two lines never meet.",
+            "Two lines have the same length.",
+            "Two lines are always curved.",
+            QuestionOption.A,
+            "Perpendicular lines meet at a right angle of 90°, which is important for stability and accurate construction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Points, Lines & Angles",
+            "Computer graphics use points, lines, and angles to create images. Why are these concepts useful?",
+            "They help define shapes, positions, and movements in digital environments.",
+            "They only work with physical objects.",
+            "They cannot represent digital objects.",
+            "They replace computer programming.",
+            QuestionOption.A,
+            "Geometry concepts are used in computer graphics, animation, games, and simulations to represent objects and movement.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Points, Lines & Angles",
+            "Why are points, lines, and angles considered fundamental concepts in mathematics?",
+            "They form the foundation for geometry, measurement, design, engineering, and spatial reasoning.",
+            "They are only used for basic drawings.",
+            "They have no real-world applications.",
+            "They are unrelated to other mathematical topics.",
+            QuestionOption.A,
+            "Points, lines, and angles are core building blocks used throughout geometry and many applied sciences.",
+            DifficultyLevel.Advance,
+            5);
+
+
         // ==========================================================
         // Introduction to Triangles
         // ==========================================================
@@ -2690,6 +2820,143 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+
+        // ==========================================================
+        // Types of Triangles
+        // ==========================================================
+
+        AddQuestion(
+            "Types of Triangles",
+            "A triangle with all three sides equal is called what?",
+            "Scalene triangle",
+            "Isosceles triangle",
+            "Equilateral triangle",
+            "Right triangle",
+            QuestionOption.C,
+            "An equilateral triangle has three equal sides and three equal angles of 60° each.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types of Triangles",
+            "A triangle with exactly two equal sides is called what?",
+            "Equilateral triangle",
+            "Isosceles triangle",
+            "Scalene triangle",
+            "Obtuse triangle",
+            QuestionOption.B,
+            "An isosceles triangle has at least two equal sides and two equal opposite angles.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types of Triangles",
+            "Which type of triangle has three different side lengths?",
+            "Equilateral triangle",
+            "Isosceles triangle",
+            "Scalene triangle",
+            "Right triangle",
+            QuestionOption.C,
+            "A scalene triangle has all three sides with different lengths and usually different angles.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types of Triangles",
+            "A triangle with one angle greater than 90° is called what?",
+            "Acute triangle",
+            "Right triangle",
+            "Obtuse triangle",
+            "Equilateral triangle",
+            QuestionOption.C,
+            "An obtuse triangle contains one angle that measures more than 90°.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types of Triangles",
+            "Why is classifying triangles important in geometry?",
+            "It helps identify properties, solve problems, and understand relationships between shapes.",
+            "It only changes the appearance of triangles.",
+            "It removes the need for measurements.",
+            "It is only useful for drawing pictures.",
+            QuestionOption.A,
+            "Triangle classification helps in geometry proofs, calculations, engineering, architecture, and design.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications of Triangles
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Triangles",
+            "Why are triangles commonly used in building structures and bridges?",
+            "They provide strength and stability because of their rigid shape.",
+            "They are the easiest shapes to draw.",
+            "They cannot change size.",
+            "They require no measurements.",
+            QuestionOption.A,
+            "Triangles are structurally stable because their shape does not easily deform under force.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Triangles",
+            "Surveyors use triangles to measure distances and locations. Which concept is applied?",
+            "Triangulation",
+            "Factorization",
+            "Polynomial division",
+            "Logarithmic scaling",
+            QuestionOption.A,
+            "Triangulation uses triangle relationships to calculate unknown distances and positions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Triangles",
+            "Which triangle property is useful in calculating unknown sides in engineering?",
+            "Side-angle relationships",
+            "Only the number of vertices",
+            "Color of the triangle",
+            "Position on a page",
+            QuestionOption.A,
+            "Properties such as the Pythagorean theorem and trigonometric relationships help calculate unknown measurements.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Triangles",
+            "Computer graphics use triangles to create 3D models. Why are triangles useful?",
+            "They can approximate complex surfaces and are easy to process computationally.",
+            "They cannot represent shapes.",
+            "They only work in two dimensions.",
+            "They replace all computer algorithms.",
+            QuestionOption.A,
+            "3D graphics engines use triangular meshes because triangles are simple, stable, and efficient to calculate.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Triangles",
+            "Why are triangles important in advanced mathematics and science?",
+            "They are used in geometry, physics, engineering, navigation, and mathematical modelling.",
+            "They are only used for basic drawings.",
+            "They have no practical applications.",
+            "They only apply to classroom exercises.",
+            QuestionOption.A,
+            "Triangles are fundamental in many fields including architecture, robotics, physics, and computer graphics.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+
+
+
+
+
         // ==========================================================
         // Introduction to Congruence
         // ==========================================================
@@ -2753,6 +3020,135 @@ public static class PracticeQuestionSeeder
             "Congruence ensures manufactured parts and structural components have identical dimensions so they fit and function correctly.",
             DifficultyLevel.Advance,
             5);
+
+        // ==========================================================
+        // Congruence Criteria
+        // ==========================================================
+
+        AddQuestion(
+            "Congruence Criteria",
+            "Which congruence criterion states that three corresponding sides of two triangles are equal?",
+            "SAS",
+            "ASA",
+            "SSS",
+            "RHS",
+            QuestionOption.C,
+            "SSS (Side-Side-Side) congruence states that two triangles are congruent if all three corresponding sides are equal.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Congruence Criteria",
+            "What does SAS stand for in triangle congruence?",
+            "Side-Angle-Side",
+            "Side-Area-Side",
+            "Sum-Angle-Sum",
+            "Side-Angle-Sum",
+            QuestionOption.A,
+            "SAS means Side-Angle-Side, where two sides and the included angle of one triangle match another triangle.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Congruence Criteria",
+            "Which criterion proves two right-angled triangles are congruent when the hypotenuse and one side are equal?",
+            "ASA",
+            "RHS",
+            "SSS",
+            "AAA",
+            QuestionOption.B,
+            "RHS (Right angle-Hypotenuse-Side) criterion is used specifically for right-angled triangles.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Congruence Criteria",
+            "Why can AAA not be used as a triangle congruence criterion?",
+            "It proves similarity but not equal size.",
+            "It only works for squares.",
+            "It cannot compare angles.",
+            "It proves all triangles are equal.",
+            QuestionOption.A,
+            "AAA only guarantees that triangles have the same shape, meaning they are similar, but their sizes may differ.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Congruence Criteria",
+            "Why are congruence criteria important in geometry?",
+            "They provide methods to prove that two shapes have the same size and shape.",
+            "They only help draw triangles.",
+            "They remove the need for measurements.",
+            "They are only used for calculations.",
+            QuestionOption.A,
+            "Congruence criteria are essential for geometric proofs, construction, engineering, and design.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications of Congruence
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Congruence",
+            "Why is congruence important in manufacturing?",
+            "It ensures identical parts are produced with the same size and shape.",
+            "It removes the need for measurements.",
+            "It only applies to drawings.",
+            "It prevents objects from being copied.",
+            QuestionOption.A,
+            "Manufacturing uses congruence to create identical components that fit together accurately.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Congruence",
+            "An engineer creates two identical bridge supports. Which geometric concept ensures they match?",
+            "Congruence",
+            "Similarity only",
+            "Perimeter only",
+            "Area only",
+            QuestionOption.A,
+            "Congruent figures have exactly the same shape and size, making them suitable for identical structures.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Congruence",
+            "In surveying, why are congruent triangles useful?",
+            "They help determine unknown distances and verify measurements accurately.",
+            "They eliminate all calculations.",
+            "They only measure angles.",
+            "They cannot represent real locations.",
+            QuestionOption.A,
+            "Surveyors use congruent triangles to compare measurements and establish accurate positions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Congruence",
+            "Which situation is an example of congruence in everyday life?",
+            "Two identical tiles placed in different locations.",
+            "Two shapes with the same color but different sizes.",
+            "Two objects with different shapes.",
+            "A circle and a triangle of the same area.",
+            QuestionOption.A,
+            "Objects that have the same shape and size are congruent, even if their positions are different.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Congruence",
+            "Why are congruence principles important in advanced mathematics and engineering?",
+            "They help prove geometric relationships and create accurate designs and models.",
+            "They only apply to simple drawings.",
+            "They cannot be used in technology.",
+            "They replace all mathematical calculations.",
+            QuestionOption.A,
+            "Congruence is used in geometry proofs, CAD design, engineering, architecture, and scientific modelling.",
+            DifficultyLevel.Advance,
+            5);
+
 
         // ==========================================================
         // Introduction to Similarity
@@ -2820,6 +3216,136 @@ public static class PracticeQuestionSeeder
 
 
         // ==========================================================
+        // Similarity Criteria
+        // ==========================================================
+
+        AddQuestion(
+            "Similarity Criteria",
+            "Which similarity criterion states that two triangles are similar if their corresponding angles are equal?",
+            "AA",
+            "SSS",
+            "SAS",
+            "RHS",
+            QuestionOption.A,
+            "AA (Angle-Angle) similarity states that if two corresponding angles of triangles are equal, the triangles are similar.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Similarity Criteria",
+            "What does SAS similarity compare between two triangles?",
+            "Two sides and the included angle",
+            "Three equal sides only",
+            "Three equal angles only",
+            "Only the areas",
+            QuestionOption.A,
+            "SAS similarity proves triangles are similar when two pairs of corresponding sides are proportional and the included angles are equal.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Similarity Criteria",
+            "Which similarity criterion uses all three pairs of corresponding sides being proportional?",
+            "AA",
+            "SSS",
+            "SAS",
+            "ASA",
+            QuestionOption.B,
+            "SSS similarity states that if all corresponding sides are in the same ratio, the triangles are similar.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Similarity Criteria",
+            "What is the main difference between congruent and similar triangles?",
+            "Congruent triangles have the same size and shape, while similar triangles have the same shape but may have different sizes.",
+            "Similar triangles always have different shapes.",
+            "Congruent triangles have different angles.",
+            "Similarity only applies to circles.",
+            QuestionOption.A,
+            "Similarity preserves shape while allowing size changes through proportional scaling.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Similarity Criteria",
+            "Why are similarity criteria important in geometry?",
+            "They help solve problems involving scale, measurements, proportions, and indirect calculations.",
+            "They only help draw triangles.",
+            "They remove the need for ratios.",
+            "They cannot be used in real-world applications.",
+            QuestionOption.A,
+            "Similarity is widely used in architecture, maps, engineering, photography, and measurement problems.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications of Similarity
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Similarity",
+            "Why is similarity useful in map making?",
+            "It allows large areas to be represented accurately at smaller scales.",
+            "It removes the need for measurements.",
+            "It changes the shape of locations.",
+            "It only works with circles.",
+            QuestionOption.A,
+            "Maps use similar figures because they maintain the same shape while reducing or enlarging size using a scale factor.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Similarity",
+            "Architects create small models of buildings before construction. Which concept is being applied?",
+            "Similarity",
+            "Factorization",
+            "Congruence only",
+            "Probability",
+            QuestionOption.A,
+            "Architectural models are scaled versions of real buildings that preserve the same shape through similarity.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Similarity",
+            "Surveyors use similar triangles to calculate distances that are difficult to measure directly. Why does this work?",
+            "Corresponding sides maintain proportional relationships.",
+            "All triangles have equal sizes.",
+            "Angles do not matter in triangles.",
+            "Similarity removes measurements completely.",
+            QuestionOption.A,
+            "Similar triangles allow unknown distances to be calculated using ratios between corresponding sides.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Similarity",
+            "A photograph is enlarged while keeping the same shape. Which geometric concept describes this?",
+            "Similarity",
+            "Congruence",
+            "Reflection",
+            "Rotation",
+            QuestionOption.A,
+            "Scaling an image changes its size while preserving its shape, which is a property of similar figures.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Similarity",
+            "Why are similarity principles important in engineering and computer graphics?",
+            "They allow accurate scaling, modelling, and representation of objects while preserving shape.",
+            "They only apply to classroom exercises.",
+            "They prevent objects from being resized.",
+            "They are unrelated to technology.",
+            QuestionOption.A,
+            "Similarity is used in CAD design, 3D modelling, simulations, engineering prototypes, and digital graphics.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
         // Introduction to Quadrilaterals
         // ==========================================================
 
@@ -2882,7 +3408,133 @@ public static class PracticeQuestionSeeder
             "Quadrilaterals such as rectangles and squares are commonly used in construction, engineering, manufacturing, and design because of their practical shapes and properties.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Types of Quadrilaterals
+        // ==========================================================
 
+        AddQuestion(
+            "Types of Quadrilaterals",
+            "A quadrilateral with four equal sides and four right angles is called what?",
+            "Rectangle",
+            "Square",
+            "Trapezium",
+            "Kite",
+            QuestionOption.B,
+            "A square has four equal sides and four right angles.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types of Quadrilaterals",
+            "Which quadrilateral has both pairs of opposite sides parallel?",
+            "Parallelogram",
+            "Kite",
+            "Trapezium",
+            "Pentagon",
+            QuestionOption.A,
+            "A parallelogram is a quadrilateral with two pairs of opposite sides that are parallel.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types of Quadrilaterals",
+            "Which property is unique to a rectangle?",
+            "All sides are always equal.",
+            "All angles are 90 degrees.",
+            "Only one pair of sides is parallel.",
+            "No sides are equal.",
+            QuestionOption.B,
+            "A rectangle has four right angles, although only opposite sides are equal in length.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types of Quadrilaterals",
+            "A rhombus is a quadrilateral where:",
+            "All four sides are equal.",
+            "All angles are different.",
+            "Only two sides are equal.",
+            "No sides are parallel.",
+            QuestionOption.A,
+            "A rhombus has four equal sides, while its angles do not necessarily have to be right angles.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types of Quadrilaterals",
+            "Why is classifying quadrilaterals important in geometry?",
+            "It helps identify properties, solve problems, and understand relationships between shapes.",
+            "It only changes the names of shapes.",
+            "It removes the need for measurements.",
+            "It only applies to drawings.",
+            QuestionOption.A,
+            "Understanding quadrilateral properties is important in geometry proofs, architecture, engineering, and design.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications of Quadrilaterals
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Quadrilaterals",
+            "Why are rectangles commonly used in architecture and construction?",
+            "They provide practical shapes for rooms, buildings, and structures.",
+            "They cannot be measured accurately.",
+            "They only exist in drawings.",
+            "They have no real-world applications.",
+            QuestionOption.A,
+            "Rectangles are widely used in construction because they provide efficient layouts and easy measurement.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Quadrilaterals",
+            "A floor tile has four equal sides and four right angles. Which quadrilateral shape is it?",
+            "Square",
+            "Trapezium",
+            "Kite",
+            "Parallelogram",
+            QuestionOption.A,
+            "A square has four equal sides and four right angles, making it common in tiles and designs.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Quadrilaterals",
+            "Engineers use parallelograms in designs because:",
+            "They help model forces, structures, and balanced shapes.",
+            "They cannot represent measurements.",
+            "They only work for circular objects.",
+            "They have no mathematical properties.",
+            QuestionOption.A,
+            "Parallelograms are useful in engineering because of their parallel sides and predictable geometric properties.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Quadrilaterals",
+            "Computer graphics use quadrilateral shapes in modelling. Why are they useful?",
+            "They help create surfaces and represent objects efficiently.",
+            "They cannot be displayed digitally.",
+            "They only represent numbers.",
+            "They prevent objects from being scaled.",
+            QuestionOption.A,
+            "Quadrilaterals are commonly used in graphics, CAD, and 3D modelling to represent surfaces and designs.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Quadrilaterals",
+            "Why are quadrilateral properties important in advanced fields?",
+            "They support accurate design, construction, engineering analysis, and mathematical modelling.",
+            "They are only useful for naming shapes.",
+            "They cannot be applied outside classrooms.",
+            "They replace all other geometric concepts.",
+            QuestionOption.A,
+            "Quadrilaterals are fundamental in architecture, engineering, computer graphics, and structural design.",
+            DifficultyLevel.Advance,
+            5);
         // ==========================================================
         // Introduction to Polygons
         // ==========================================================
@@ -2944,6 +3596,136 @@ public static class PracticeQuestionSeeder
             "They eliminate the need for measurements.",
             QuestionOption.B,
             "Polygons are fundamental in construction, CAD software, computer graphics, and engineering because complex shapes are often built from polygonal components.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Types of Polygons
+        // ==========================================================
+
+        AddQuestion(
+            "Types of Polygons",
+            "A polygon with three sides is called what?",
+            "Quadrilateral",
+            "Triangle",
+            "Pentagon",
+            "Hexagon",
+            QuestionOption.B,
+            "A triangle is a polygon with three sides and three angles.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types of Polygons",
+            "A polygon with all sides and angles equal is called what?",
+            "Irregular polygon",
+            "Concave polygon",
+            "Regular polygon",
+            "Open polygon",
+            QuestionOption.C,
+            "A regular polygon has equal side lengths and equal interior angles.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types of Polygons",
+            "How many sides does a hexagon have?",
+            "Five",
+            "Six",
+            "Seven",
+            "Eight",
+            QuestionOption.B,
+            "A hexagon is a polygon with six sides and six angles.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types of Polygons",
+            "What is the difference between a convex and concave polygon?",
+            "A convex polygon has no inward angles, while a concave polygon has at least one inward angle.",
+            "A convex polygon has curved sides.",
+            "A concave polygon always has equal sides.",
+            "They are exactly the same.",
+            QuestionOption.A,
+            "Convex polygons have all interior angles less than 180°, while concave polygons have at least one interior angle greater than 180°.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types of Polygons",
+            "Why is classifying polygons important in geometry?",
+            "It helps identify properties, calculate measurements, and solve geometric problems.",
+            "It only changes the names of shapes.",
+            "It removes the need for formulas.",
+            "It is only useful for drawing.",
+            QuestionOption.A,
+            "Polygon classification helps understand relationships between shapes and is used in mathematics, design, engineering, and architecture.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+        // ==========================================================
+        // Applications of Polygons
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Polygons",
+            "Why are polygons commonly used in architecture and construction?",
+            "They help design structures, patterns, and stable geometric layouts.",
+            "They cannot represent real objects.",
+            "They are only used for decoration.",
+            "They do not have measurable properties.",
+            QuestionOption.A,
+            "Polygons are used in architecture to create building designs, floor plans, patterns, and structural layouts.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Polygons",
+            "Computer graphics use polygons to create 3D models. Why are polygons useful?",
+            "They can represent complex surfaces using connected shapes.",
+            "They cannot be processed by computers.",
+            "They only work for 2D drawings.",
+            "They remove the need for calculations.",
+            QuestionOption.A,
+            "3D graphics use polygon meshes to represent objects efficiently by combining many small polygon surfaces.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Polygons",
+            "Maps and geographic systems use polygons to represent areas. What can a polygon represent on a map?",
+            "Regions, boundaries, and land areas.",
+            "Only individual points.",
+            "Only straight lines.",
+            "Only numerical values.",
+            QuestionOption.A,
+            "In mapping systems, polygons are used to represent countries, cities, properties, lakes, and other defined regions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Polygons",
+            "Why are regular polygons useful in design and engineering?",
+            "Their equal sides and angles create balanced and predictable patterns.",
+            "They cannot be measured.",
+            "They always have curved edges.",
+            "They cannot form structures.",
+            QuestionOption.A,
+            "Regular polygons provide symmetry and consistency, making them useful in engineering, design, and manufacturing.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Polygons",
+            "Why are polygons important in advanced mathematics and technology?",
+            "They help model shapes, analyze structures, create graphics, and solve geometric problems.",
+            "They are only used in basic drawings.",
+            "They have no connection to technology.",
+            "They cannot be used for measurements.",
+            QuestionOption.A,
+            "Polygons are fundamental in computer graphics, architecture, engineering, robotics, and mathematical modelling.",
             DifficultyLevel.Advance,
             5);
 
@@ -3011,6 +3793,138 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+
+
+        // ==========================================================
+        // Parts and Properties of Circles
+        // ==========================================================
+
+        AddQuestion(
+            "Parts and Properties of Circles",
+            "What is the fixed point at the center of a circle called?",
+            "Radius",
+            "Center",
+            "Chord",
+            "Arc",
+            QuestionOption.B,
+            "The center is the fixed point from which all points on the circle are at the same distance.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Parts and Properties of Circles",
+            "What is the distance from the center of a circle to any point on its circumference called?",
+            "Diameter",
+            "Radius",
+            "Tangent",
+            "Sector",
+            QuestionOption.B,
+            "The radius is the distance from the center to any point on the circle, and the diameter is twice the radius.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Parts and Properties of Circles",
+            "A line segment that passes through the center of a circle and connects two points on the circumference is called:",
+            "Chord",
+            "Arc",
+            "Diameter",
+            "Secant",
+            QuestionOption.C,
+            "A diameter is the longest chord of a circle and passes through the center.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Parts and Properties of Circles",
+            "What is a line that touches a circle at exactly one point called?",
+            "Secant",
+            "Chord",
+            "Tangent",
+            "Radius",
+            QuestionOption.C,
+            "A tangent touches the circle at one point, called the point of contact.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Parts and Properties of Circles",
+            "Why are understanding the parts and properties of circles important?",
+            "They help solve geometric problems involving measurements, angles, and circular structures.",
+            "They are only useful for drawing circles.",
+            "They cannot be applied outside mathematics.",
+            "They replace all geometry concepts.",
+            QuestionOption.A,
+            "Circle properties are used in engineering, architecture, physics, design, and many real-world applications involving circular objects.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications of Circles
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Circles",
+            "Why are circles commonly used in wheels and gears?",
+            "They provide smooth rotation around a fixed center.",
+            "They cannot be measured accurately.",
+            "They only work in drawings.",
+            "They prevent movement.",
+            QuestionOption.A,
+            "Circles are ideal for rotational motion because every point on the edge is equally distant from the center.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Circles",
+            "Astronomers use circular paths to describe the motion of planets. Which circle property is useful?",
+            "Distance from the center remains constant.",
+            "All circles have different centers.",
+            "Circles have no measurements.",
+            "Circles cannot represent movement.",
+            QuestionOption.A,
+            "Circular motion is based on the constant distance between an object and the center of rotation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Circles",
+            "Engineers use circles in mechanical designs. Why are circular shapes useful?",
+            "They allow efficient rotation and balanced distribution of forces.",
+            "They cannot be calculated.",
+            "They only represent flat objects.",
+            "They have no practical purpose.",
+            QuestionOption.A,
+            "Circular components such as wheels, bearings, and gears rely on circle properties for efficient operation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Circles",
+            "A satellite dish uses a circular shape. Which property helps it work effectively?",
+            "The circular design helps collect and focus signals symmetrically.",
+            "It prevents all signals from reaching the dish.",
+            "It removes the need for technology.",
+            "It only works for decoration.",
+            QuestionOption.A,
+            "Circular shapes are used in antennas and dishes because of their symmetry and reflective properties.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Circles",
+            "Why are circles important in advanced mathematics and technology?",
+            "They are used in engineering, physics, astronomy, graphics, and many mathematical models.",
+            "They are only used for classroom drawings.",
+            "They cannot represent real-world objects.",
+            "They are unrelated to measurements.",
+            QuestionOption.A,
+            "Circle concepts are fundamental in fields such as robotics, transportation, astronomy, mechanical design, and computer graphics.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
         // ==========================================================
         // Introduction to Geometric Constructions
         // ==========================================================
@@ -3076,6 +3990,144 @@ public static class PracticeQuestionSeeder
             5);
 
         // ==========================================================
+        // Common Geometric Constructions
+        // ==========================================================
+
+        AddQuestion(
+            "Common Geometric Constructions",
+            "Which two tools are traditionally used for geometric constructions?",
+            "Ruler and calculator",
+            "Compass and straightedge",
+            "Protractor and calculator",
+            "Computer and printer",
+            QuestionOption.B,
+            "Classical geometric constructions are performed using a compass and straightedge.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Common Geometric Constructions",
+            "What is the purpose of constructing an angle bisector?",
+            "To divide an angle into two equal parts.",
+            "To increase the size of an angle.",
+            "To remove an angle.",
+            "To create a circle.",
+            QuestionOption.A,
+            "An angle bisector divides an angle into two congruent angles.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Common Geometric Constructions",
+            "What does a perpendicular line form when it intersects another line?",
+            "A 90° angle",
+            "A 180° angle",
+            "A curved shape",
+            "An unequal angle only",
+            QuestionOption.A,
+            "Perpendicular lines intersect at a right angle of 90°.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Common Geometric Constructions",
+            "Why is a compass used in geometric constructions?",
+            "To draw arcs and create equal distances from points.",
+            "To measure temperature.",
+            "To calculate equations automatically.",
+            "To draw only straight lines.",
+            QuestionOption.A,
+            "A compass helps construct circles, arcs, and equal-length segments accurately.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Common Geometric Constructions",
+            "Why are geometric constructions important in mathematics and engineering?",
+            "They provide accurate methods for creating and analyzing geometric figures.",
+            "They only apply to simple drawings.",
+            "They cannot be used for real designs.",
+            "They replace all mathematical formulas.",
+            QuestionOption.A,
+            "Geometric constructions are used in design, architecture, engineering, and mathematical proofs.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications of Geometric Constructions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Geometric Constructions",
+            "Why are geometric constructions useful in architecture?",
+            "They help create accurate designs, layouts, and structural plans.",
+            "They remove the need for measurements.",
+            "They only work for drawings.",
+            "They cannot represent buildings.",
+            QuestionOption.A,
+            "Architects use geometric constructions to create precise designs, floor plans, and structural models.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Geometric Constructions",
+            "Surveyors use geometric constructions to determine locations and distances. Which concept is commonly applied?",
+            "Accurate geometric measurement and construction",
+            "Polynomial expansion",
+            "Probability calculation",
+            "Number classification",
+            QuestionOption.A,
+            "Surveying uses geometric methods to measure land, establish boundaries, and determine positions accurately.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Geometric Constructions",
+            "Technical drawings use geometric constructions because they:",
+            "Allow precise representation of objects and components.",
+            "Prevent accurate measurements.",
+            "Only create artistic sketches.",
+            "Remove the need for geometry.",
+            QuestionOption.A,
+            "Engineering and technical drawings require precise geometric constructions to represent real objects correctly.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Geometric Constructions",
+            "Computer-aided design (CAD) software uses geometric constructions to:",
+            "Create accurate digital models and engineering designs.",
+            "Avoid using mathematical principles.",
+            "Only draw random shapes.",
+            "Replace all engineering calculations.",
+            QuestionOption.A,
+            "CAD systems rely on geometric principles to create precise models used in engineering, manufacturing, and design.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Geometric Constructions",
+            "Why are geometric constructions important in advanced fields?",
+            "They provide accurate methods for designing, modelling, analysing, and solving geometric problems.",
+            "They are only useful in school exercises.",
+            "They cannot be applied in technology.",
+            "They only involve simple drawings.",
+            QuestionOption.A,
+            "Geometric constructions are fundamental in architecture, engineering, robotics, surveying, and computer modelling.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+
+
+
+
+
+
+
+
+        // ==========================================================
         // Introduction to Area
         // ==========================================================
 
@@ -3138,6 +4190,137 @@ public static class PracticeQuestionSeeder
             "Area calculations are used in architecture, engineering, construction, land measurement, interior design, and many practical situations.",
             DifficultyLevel.Advance,
             5);
+
+
+        // ==========================================================
+        // Area of Common Shapes
+        // ==========================================================
+
+        AddQuestion(
+            "Area of Common Shapes",
+            "What does the area of a shape represent?",
+            "The amount of space enclosed inside the shape.",
+            "The distance around the shape.",
+            "The number of sides of the shape.",
+            "The angles of the shape only.",
+            QuestionOption.A,
+            "Area measures the amount of surface enclosed within a two-dimensional shape.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Area of Common Shapes",
+            "What is the formula for finding the area of a rectangle?",
+            "Length × Width",
+            "2 × (Length + Width)",
+            "Side × Side × Side",
+            "Base + Height",
+            QuestionOption.A,
+            "The area of a rectangle is calculated by multiplying its length by its width.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Area of Common Shapes",
+            "Which formula is used to calculate the area of a triangle?",
+            "Base × Height",
+            "(1/2) × Base × Height",
+            "Side × Side",
+            "π × Radius",
+            QuestionOption.B,
+            "The area of a triangle is half the product of its base and perpendicular height.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Area of Common Shapes",
+            "The area of a circle depends on which measurements?",
+            "Radius",
+            "Diameter only",
+            "Number of sides",
+            "Perimeter only",
+            QuestionOption.A,
+            "The area of a circle is calculated using π multiplied by the square of its radius.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Area of Common Shapes",
+            "Why is calculating the area of different shapes important?",
+            "It helps solve problems in construction, design, engineering, and real-world measurements.",
+            "It is only used for naming shapes.",
+            "It removes the need for geometry.",
+            "It only applies to drawings.",
+            QuestionOption.A,
+            "Area calculations are essential in architecture, construction, land measurement, manufacturing, and many practical applications.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Applications of Area
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Area",
+            "Why is calculating area important in construction?",
+            "It helps determine the amount of materials needed for surfaces and structures.",
+            "It removes the need for measurements.",
+            "It only helps name shapes.",
+            "It cannot be applied to buildings.",
+            QuestionOption.A,
+            "Builders use area calculations to estimate materials such as flooring, paint, tiles, and land coverage.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Area",
+            "Farmers use area calculations mainly to determine:",
+            "The size of farmland and required resources.",
+            "The number of angles in a field.",
+            "The color of crops.",
+            "The shape of clouds.",
+            QuestionOption.A,
+            "Area helps farmers measure land size, plan cultivation, and estimate resource requirements.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Area",
+            "Architects calculate the area of rooms and surfaces to:",
+            "Design spaces and estimate material requirements accurately.",
+            "Avoid using measurements.",
+            "Remove geometric calculations.",
+            "Only create drawings.",
+            QuestionOption.A,
+            "Area calculations help architects plan floor spaces, wall surfaces, and building layouts.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Area",
+            "Computer graphics use area calculations for:",
+            "Rendering surfaces, textures, and visual elements.",
+            "Removing all geometry from graphics.",
+            "Only creating text.",
+            "Avoiding measurements.",
+            QuestionOption.A,
+            "Graphics systems use geometric area calculations when displaying and processing digital objects.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Area",
+            "Why is understanding area important in advanced fields?",
+            "It helps solve real-world problems involving space, resources, design, and measurement.",
+            "It only applies to basic geometry lessons.",
+            "It cannot be used outside mathematics.",
+            "It replaces all other calculations.",
+            QuestionOption.A,
+            "Area concepts are fundamental in engineering, architecture, science, geography, agriculture, and technology.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
         // ==========================================================
         // Introduction to Perimeter
         // ==========================================================
@@ -3201,6 +4384,137 @@ public static class PracticeQuestionSeeder
             "Perimeter is used in practical situations such as finding the amount of fencing needed, measuring borders, and planning construction layouts.",
             DifficultyLevel.Advance,
             5);
+
+
+        // ==========================================================
+        // Calculating the Perimeter of Shapes
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating the Perimeter of Shapes",
+            "What does the perimeter of a shape represent?",
+            "The total distance around the boundary of the shape.",
+            "The space inside the shape.",
+            "The number of angles in the shape.",
+            "The size of the shape's area.",
+            QuestionOption.A,
+            "Perimeter measures the complete distance around the outside edge of a two-dimensional shape.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating the Perimeter of Shapes",
+            "How is the perimeter of a rectangle calculated?",
+            "Length × Width",
+            "2 × (Length + Width)",
+            "Base × Height",
+            "π × Radius²",
+            QuestionOption.B,
+            "A rectangle has two equal lengths and two equal widths, so its perimeter is 2 × (Length + Width).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating the Perimeter of Shapes",
+            "What is the perimeter formula for a square?",
+            "4 × Side length",
+            "Side length²",
+            "2 × Side length",
+            "Length × Width",
+            QuestionOption.A,
+            "A square has four equal sides, so its perimeter is four times the length of one side.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating the Perimeter of Shapes",
+            "How is the perimeter of a circle calculated?",
+            "π × Radius²",
+            "2 × π × Radius",
+            "Length × Width",
+            "Base × Height",
+            QuestionOption.B,
+            "The perimeter of a circle is called circumference and is calculated using 2πr.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating the Perimeter of Shapes",
+            "Why is calculating perimeter important in real-world applications?",
+            "It helps measure boundaries, fencing, borders, construction materials, and object dimensions.",
+            "It only helps identify shapes.",
+            "It removes the need for measurements.",
+            "It is only useful for drawings.",
+            QuestionOption.A,
+            "Perimeter calculations are used in construction, land measurement, design, manufacturing, and everyday planning.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications of Perimeter
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Perimeter",
+            "Why is perimeter used when building a fence around a property?",
+            "It helps determine the total length of fencing material needed.",
+            "It calculates the area inside the property.",
+            "It determines the height of the fence only.",
+            "It removes the need for measurements.",
+            QuestionOption.A,
+            "Perimeter measures the boundary length, which helps calculate how much fencing material is required.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Perimeter",
+            "Landscapers use perimeter calculations to:",
+            "Measure boundaries of gardens, parks, and outdoor spaces.",
+            "Calculate the weight of plants.",
+            "Determine the colour of landscapes.",
+            "Replace all design planning.",
+            QuestionOption.A,
+            "Perimeter helps landscapers plan borders, pathways, fences, and decorative boundaries.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Perimeter",
+            "Architects and engineers calculate perimeter mainly to:",
+            "Design boundaries and estimate materials needed for structures.",
+            "Avoid using geometric measurements.",
+            "Only create drawings.",
+            "Calculate only the volume of objects.",
+            QuestionOption.A,
+            "Perimeter calculations help estimate materials for frames, borders, walls, and structural components.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Perimeter",
+            "A manufacturer creates a frame around a rectangular product. Which measurement is needed?",
+            "Perimeter of the rectangle.",
+            "Area of the rectangle only.",
+            "Number of angles only.",
+            "Diagonal length only.",
+            QuestionOption.A,
+            "The perimeter gives the total length of material required to create a border or frame.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Perimeter",
+            "Why is understanding perimeter important in advanced fields?",
+            "It helps solve real-world problems involving boundaries, construction, design, and measurement.",
+            "It is only useful for simple classroom exercises.",
+            "It has no connection with engineering.",
+            "It cannot be applied to real objects.",
+            QuestionOption.A,
+            "Perimeter is widely used in architecture, engineering, geography, manufacturing, and everyday planning.",
+            DifficultyLevel.Advance,
+            5);
+
         // ==========================================================
         // Introduction to Transformations
         // ==========================================================
@@ -3264,6 +4578,135 @@ public static class PracticeQuestionSeeder
             "Transformations are widely used in digital graphics, games, animation, architecture, robotics, and engineering to manipulate objects accurately.",
             DifficultyLevel.Advance,
             5);
+
+        // ==========================================================
+        // Types of Transformations
+        // ==========================================================
+
+        AddQuestion(
+            "Types of Transformations",
+            "Which transformation moves a figure from one position to another without changing its size or shape?",
+            "Translation",
+            "Reflection",
+            "Rotation",
+            "Dilation",
+            QuestionOption.A,
+            "A translation slides a figure to a new position while preserving its size, shape, and orientation.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types of Transformations",
+            "Which transformation creates a mirror image of a figure across a line?",
+            "Rotation",
+            "Reflection",
+            "Translation",
+            "Dilation",
+            QuestionOption.B,
+            "Reflection flips a figure over a line called the line of reflection, creating a mirror image.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types of Transformations",
+            "Which transformation turns a figure around a fixed point?",
+            "Translation",
+            "Dilation",
+            "Rotation",
+            "Reflection",
+            QuestionOption.C,
+            "Rotation turns a figure around a fixed point by a specific angle and direction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types of Transformations",
+            "What happens to a figure during dilation?",
+            "Its size changes while its shape remains the same.",
+            "Its shape changes completely.",
+            "It moves without changing position.",
+            "It disappears from the plane.",
+            QuestionOption.A,
+            "Dilation enlarges or reduces a figure using a scale factor while preserving its shape.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types of Transformations",
+            "Why are geometric transformations important in mathematics and technology?",
+            "They help describe movements, designs, graphics, and changes in geometric figures.",
+            "They are only used for naming shapes.",
+            "They cannot be applied outside geometry.",
+            "They remove the need for measurements.",
+            QuestionOption.A,
+            "Transformations are used in computer graphics, engineering, animation, architecture, and mathematical modelling.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications of Transformations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Transformations",
+            "Why are transformations used in computer graphics?",
+            "They help move, rotate, resize, and modify digital objects.",
+            "They prevent objects from being displayed.",
+            "They remove the need for calculations.",
+            "They only work with physical objects.",
+            QuestionOption.A,
+            "Computer graphics use transformations to position, scale, and animate objects in digital environments.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Transformations",
+            "Animation software uses transformations to create movement. Which transformation helps rotate an object?",
+            "Rotation",
+            "Translation",
+            "Reflection",
+            "Dilation",
+            QuestionOption.A,
+            "Rotation transformations allow objects to turn around a fixed point, which is essential in animation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Transformations",
+            "Robotics uses transformations mainly to:",
+            "Control positions, movements, and orientations of robotic parts.",
+            "Remove all movement from robots.",
+            "Avoid using geometry.",
+            "Only create drawings.",
+            QuestionOption.A,
+            "Robotics relies on transformations to calculate how objects move and change position in space.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Transformations",
+            "Image processing uses transformations to:",
+            "Resize, rotate, adjust, and analyze digital images.",
+            "Delete all image information.",
+            "Prevent image modification.",
+            "Only store text data.",
+            QuestionOption.A,
+            "Transformations are used in image editing, computer vision, and digital graphics processing.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Transformations",
+            "Why are transformations important in advanced fields such as engineering and game development?",
+            "They help model motion, create simulations, and represent changes in objects accurately.",
+            "They only apply to simple classroom drawings.",
+            "They cannot be used with technology.",
+            "They replace all mathematical concepts.",
+            QuestionOption.A,
+            "Transformations are fundamental in CAD systems, simulations, robotics, games, animation, and 3D modelling.",
+            DifficultyLevel.Advance,
+            5);
+
         // ==========================================================
         // Introduction to Coordinate Proofs
         // ==========================================================
@@ -3328,8 +4771,132 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+        // ==========================================================
+        // Methods of Coordinate Proofs
+        // ==========================================================
 
+        AddQuestion(
+            "Methods of Coordinate Proofs",
+            "What is the main purpose of a coordinate proof?",
+            "To use algebra and coordinates to prove geometric relationships.",
+            "To draw shapes without measurements.",
+            "To avoid using mathematical reasoning.",
+            "To only calculate areas.",
+            QuestionOption.A,
+            "Coordinate proofs combine geometry and algebra by representing figures on a coordinate plane and verifying properties mathematically.",
+            DifficultyLevel.Begineer,
+            1);
 
+        AddQuestion(
+            "Methods of Coordinate Proofs",
+            "Which formula is used to find the distance between two points on a coordinate plane?",
+            "Midpoint formula",
+            "Distance formula",
+            "Slope formula",
+            "Area formula",
+            QuestionOption.B,
+            "The distance formula calculates the length between two points using their coordinates.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods of Coordinate Proofs",
+            "What does the midpoint formula help determine?",
+            "The exact center point between two coordinates.",
+            "The angle between two lines.",
+            "The area of a circle.",
+            "The length of a triangle only.",
+            QuestionOption.A,
+            "The midpoint formula finds the point exactly halfway between two endpoints.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods of Coordinate Proofs",
+            "How is slope useful in coordinate proofs?",
+            "It helps determine the relationship between lines, such as parallel or perpendicular.",
+            "It calculates the area of any shape directly.",
+            "It replaces all geometric concepts.",
+            "It only measures distances.",
+            QuestionOption.A,
+            "Slope is used to compare line directions and prove relationships between geometric figures.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods of Coordinate Proofs",
+            "Why are coordinate proof methods important in advanced mathematics?",
+            "They provide systematic ways to verify geometric properties using algebraic reasoning.",
+            "They only apply to simple drawings.",
+            "They cannot be used in technology.",
+            "They remove the need for mathematical proofs.",
+            QuestionOption.A,
+            "Coordinate proofs are used in geometry, engineering, computer graphics, and analytical mathematics.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Applications of Coordinate Proofs
+        // ==========================================================
+
+        AddQuestion(
+            "Applications of Coordinate Proofs",
+            "Why are coordinate proofs useful in engineering?",
+            "They help verify designs, measurements, and geometric relationships accurately.",
+            "They remove the need for calculations.",
+            "They only create artistic drawings.",
+            "They cannot represent real structures.",
+            QuestionOption.A,
+            "Engineers use coordinate methods to analyze structures, positions, and geometric properties of designs.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications of Coordinate Proofs",
+            "Architects use coordinate proofs mainly to:",
+            "Analyze layouts, positions, and relationships between design elements.",
+            "Avoid using measurements.",
+            "Replace all building materials.",
+            "Only decorate drawings.",
+            QuestionOption.A,
+            "Coordinate systems help architects create accurate plans and verify geometric arrangements.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications of Coordinate Proofs",
+            "Computer graphics use coordinate geometry to:",
+            "Represent and manipulate objects using points and geometric relationships.",
+            "Prevent objects from being displayed.",
+            "Remove all mathematical calculations.",
+            "Only create text elements.",
+            QuestionOption.A,
+            "Graphics systems use coordinates to position, transform, and model digital objects.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications of Coordinate Proofs",
+            "Surveyors use coordinate methods to:",
+            "Determine accurate locations, distances, and boundaries of land.",
+            "Calculate only object colours.",
+            "Avoid measuring locations.",
+            "Replace maps completely.",
+            QuestionOption.A,
+            "Surveying relies on coordinate systems to record positions and measure real-world locations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications of Coordinate Proofs",
+            "Why are coordinate proofs important in advanced fields?",
+            "They connect algebra and geometry to solve complex design, modelling, and analysis problems.",
+            "They are only useful for basic geometry exercises.",
+            "They cannot be applied in technology.",
+            "They replace all mathematical concepts.",
+            QuestionOption.A,
+            "Coordinate proofs are fundamental in engineering, robotics, CAD, computer graphics, and analytical mathematics.",
+            DifficultyLevel.Advance,
+            5);
 
         context.PracticeQuestions.AddRange(questions);
         await context.SaveChangesAsync();
