@@ -9641,6 +9641,2501 @@ public static class PracticeQuestionSeeder
             "Compound angle formulas are fundamental tools in mathematics, physics, engineering, computer graphics, and signal processing.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Introduction to Trigonometric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "What is a trigonometric equation?",
+            "An equation containing one or more trigonometric functions",
+            "An equation containing only integers",
+            "An equation with no variables",
+            "An equation involving only logarithms",
+            QuestionOption.A,
+            "A trigonometric equation contains trigonometric functions such as sine, cosine, or tangent.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "Which of the following is a trigonometric function?",
+            "√x",
+            "sin x",
+            "x²",
+            "log x",
+            QuestionOption.B,
+            "Sine (sin) is one of the six basic trigonometric functions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "The solution of a trigonometric equation is usually expressed in terms of:",
+            "Angles",
+            "Areas",
+            "Volumes",
+            "Lengths only",
+            QuestionOption.A,
+            "Trigonometric equations are generally solved to find unknown angles.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "Which trigonometric functions commonly appear in trigonometric equations?",
+            "Only sine",
+            "Only cosine",
+            "Sine, cosine, and tangent",
+            "Only tangent",
+            QuestionOption.C,
+            "Most trigonometric equations involve sine, cosine, tangent, or combinations of them.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "Why are trigonometric equations important?",
+            "They help solve problems involving angles, waves, and periodic motion.",
+            "They are only used for drawing graphs.",
+            "They replace algebra completely.",
+            "They are only useful in geometry.",
+            QuestionOption.A,
+            "Trigonometric equations are essential in mathematics, engineering, and physics.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Trigonometric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "To solve sin x = 0, the first basic solution is:",
+            "0°",
+            "45°",
+            "60°",
+            "90°",
+            QuestionOption.A,
+            "The sine of 0° is equal to 0.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "To solve cos x = 1, the first basic solution is:",
+            "0°",
+            "30°",
+            "60°",
+            "90°",
+            QuestionOption.A,
+            "The cosine of 0° is equal to 1.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "Which identity is commonly used while solving trigonometric equations?",
+            "sin²θ + cos²θ = 1",
+            "a² + b² = c²",
+            "x² + y² = r²",
+            "E = mc²",
+            QuestionOption.A,
+            "Pythagorean identities are frequently used to simplify trigonometric equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "A common first step in solving trigonometric equations is to:",
+            "Rewrite the equation using identities",
+            "Differentiate the equation",
+            "Integrate the equation",
+            "Multiply by zero",
+            QuestionOption.A,
+            "Trigonometric identities often simplify equations into solvable forms.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "The objective of solving a trigonometric equation is to determine:",
+            "Unknown angle values",
+            "Circle radii only",
+            "Triangle areas only",
+            "Probability values",
+            QuestionOption.A,
+            "Solutions to trigonometric equations are the angle values that satisfy the equation.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Trigonometric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Trigonometric equations are widely used in:",
+            "Physics",
+            "Cooking",
+            "Grammar",
+            "History",
+            QuestionOption.A,
+            "Physics frequently uses trigonometric equations to model oscillations and waves.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Engineers use trigonometric equations to:",
+            "Analyze structures and signals",
+            "Write novels",
+            "Paint buildings",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Engineering applications include structural analysis, electronics, and signal processing.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Wave motion is commonly analyzed using:",
+            "Trigonometric equations",
+            "Only linear equations",
+            "Quadratic equations only",
+            "Arithmetic progression",
+            QuestionOption.A,
+            "Wave behavior is naturally represented by trigonometric equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Computer graphics use trigonometric equations for:",
+            "Rotation and animation",
+            "Spell checking",
+            "Database indexing",
+            "Text formatting",
+            QuestionOption.A,
+            "Object rotation and animation rely heavily on trigonometric calculations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Why are trigonometric equations important in mathematics and science?",
+            "They model periodic phenomena and solve real-world problems involving angles and waves.",
+            "They are only useful in examinations.",
+            "They replace algebra.",
+            "They are only used to draw triangles.",
+            QuestionOption.A,
+            "Trigonometric equations are fundamental in engineering, navigation, astronomy, physics, computer graphics, and many scientific applications.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Inverse Trigonometric Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Inverse Trigonometric Functions",
+            "What is the purpose of an inverse trigonometric function?",
+            "To find an angle from a given trigonometric ratio",
+            "To calculate the area of a triangle",
+            "To measure distances",
+            "To simplify algebraic expressions",
+            QuestionOption.A,
+            "Inverse trigonometric functions determine the angle corresponding to a given trigonometric ratio.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Inverse Trigonometric Functions",
+            "Which notation represents the inverse sine function?",
+            "sin²x",
+            "sin⁻¹x",
+            "1/sinx",
+            "sinx⁻²",
+            QuestionOption.B,
+            "The notation sin⁻¹x (also written as arcsin x) represents the inverse sine function.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Inverse Trigonometric Functions",
+            "The output of an inverse trigonometric function is usually:",
+            "A side length",
+            "A ratio",
+            "An angle",
+            "A coordinate",
+            QuestionOption.C,
+            "Inverse trigonometric functions return an angle whose trigonometric ratio is given.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Inverse Trigonometric Functions",
+            "Why are principal values used in inverse trigonometric functions?",
+            "To provide a unique angle for every valid input",
+            "To increase the size of angles",
+            "To avoid fractions",
+            "To simplify multiplication",
+            QuestionOption.A,
+            "Principal values ensure each inverse trigonometric function has a unique output.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Inverse Trigonometric Functions",
+            "Inverse trigonometric functions are most useful for:",
+            "Finding unknown angles from known ratios",
+            "Drawing circles",
+            "Calculating probabilities",
+            "Finding square roots",
+            QuestionOption.A,
+            "They are used whenever an angle must be determined from a trigonometric ratio.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Problems Using Inverse Trigonometric Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Problems Using Inverse Trigonometric Functions",
+            "What is sin⁻¹(0)?",
+            "0°",
+            "30°",
+            "45°",
+            "90°",
+            QuestionOption.A,
+            "Since sin(0°) = 0, the principal value of sin⁻¹(0) is 0°.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Inverse Trigonometric Functions",
+            "What is cos⁻¹(1)?",
+            "0°",
+            "45°",
+            "60°",
+            "90°",
+            QuestionOption.A,
+            "Since cos(0°) = 1, the principal value of cos⁻¹(1) is 0°.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Inverse Trigonometric Functions",
+            "What is tan⁻¹(1)?",
+            "30°",
+            "45°",
+            "60°",
+            "90°",
+            QuestionOption.B,
+            "Since tan(45°) = 1, tan⁻¹(1) = 45°.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Inverse Trigonometric Functions",
+            "Inverse trigonometric functions are commonly used to:",
+            "Determine unknown angles",
+            "Find the perimeter of circles",
+            "Convert units",
+            "Calculate factorials",
+            QuestionOption.A,
+            "They help determine angles when trigonometric ratios are known.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Inverse Trigonometric Functions",
+            "The first step in solving many inverse trigonometric problems is to:",
+            "Identify the given trigonometric ratio",
+            "Find the area",
+            "Square the expression",
+            "Multiply by zero",
+            QuestionOption.A,
+            "Recognizing the given trigonometric ratio allows the appropriate inverse function to be selected.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Inverse Trigonometric Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Inverse Trigonometric Functions",
+            "Inverse trigonometric functions are commonly used in:",
+            "Surveying",
+            "Cooking",
+            "Painting",
+            "Grammar",
+            QuestionOption.A,
+            "Surveyors use inverse trigonometric functions to calculate unknown angles.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Trigonometric Functions",
+            "Which profession frequently uses inverse trigonometric functions?",
+            "Engineer",
+            "Chef",
+            "Poet",
+            "Musician",
+            QuestionOption.A,
+            "Engineers use inverse trigonometric functions in design, analysis, and measurements.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Trigonometric Functions",
+            "Navigation systems use inverse trigonometric functions to:",
+            "Determine directions and angles",
+            "Store data",
+            "Edit documents",
+            "Compress files",
+            QuestionOption.A,
+            "Navigation relies on inverse trigonometric functions to compute bearings and directions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Trigonometric Functions",
+            "In physics, inverse trigonometric functions are often used to calculate:",
+            "Angles of forces and motion",
+            "Chemical formulas",
+            "Population growth",
+            "Currency exchange",
+            QuestionOption.A,
+            "They help determine the direction of vectors and forces from known components.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Trigonometric Functions",
+            "Why are inverse trigonometric functions important in mathematics and science?",
+            "They allow unknown angles to be determined from known ratios in engineering, navigation, physics, and geometry.",
+            "They are only useful for examinations.",
+            "They replace ordinary trigonometric functions.",
+            "They are only used for drawing graphs.",
+            QuestionOption.A,
+            "Inverse trigonometric functions are essential for solving practical problems involving unknown angles in many scientific and engineering fields.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Trigonometric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "What is a trigonometric equation?",
+            "An equation containing one or more trigonometric functions",
+            "An equation containing only integers",
+            "An equation involving only logarithms",
+            "An equation with no variables",
+            QuestionOption.A,
+            "A trigonometric equation contains trigonometric functions such as sine, cosine, or tangent.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "Which of the following is a trigonometric equation?",
+            "sin x = 1/2",
+            "x² + 4 = 0",
+            "2x + 5 = 7",
+            "log x = 2",
+            QuestionOption.A,
+            "An equation involving trigonometric functions is called a trigonometric equation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "The solutions of a trigonometric equation are generally:",
+            "Angles",
+            "Areas",
+            "Volumes",
+            "Lengths",
+            QuestionOption.A,
+            "Trigonometric equations are solved to determine unknown angles.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "Which trigonometric functions commonly appear in trigonometric equations?",
+            "Only sine",
+            "Only cosine",
+            "Only tangent",
+            "Sine, cosine, and tangent",
+            QuestionOption.D,
+            "Most trigonometric equations involve one or more basic trigonometric functions.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Trigonometric Equations",
+            "Why are trigonometric equations important?",
+            "They help solve problems involving angles and periodic phenomena.",
+            "They replace algebra.",
+            "They are only used in geometry.",
+            "They calculate probabilities.",
+            QuestionOption.A,
+            "Trigonometric equations are fundamental in mathematics, science, and engineering.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Trigonometric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "What is the principal solution of sin x = 0?",
+            "0°",
+            "30°",
+            "45°",
+            "90°",
+            QuestionOption.A,
+            "Since sin 0° = 0, the principal solution is 0°.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "What is the principal solution of cos x = 1?",
+            "0°",
+            "45°",
+            "60°",
+            "90°",
+            QuestionOption.A,
+            "Since cos 0° = 1, the principal solution is 0°.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "Which identity is commonly used to simplify trigonometric equations?",
+            "sin²θ + cos²θ = 1",
+            "a² + b² = c²",
+            "x² + y² = r²",
+            "E = mc²",
+            QuestionOption.A,
+            "The Pythagorean identity is frequently used to simplify and solve trigonometric equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "A common first step in solving a trigonometric equation is to:",
+            "Rewrite it using identities",
+            "Differentiate it",
+            "Integrate it",
+            "Multiply by zero",
+            QuestionOption.A,
+            "Using identities often simplifies the equation into an easier form.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Trigonometric Equations",
+            "The objective of solving a trigonometric equation is to determine:",
+            "Unknown angle values",
+            "Circle radii",
+            "Triangle areas",
+            "Probability values",
+            QuestionOption.A,
+            "The goal is to find all angle values that satisfy the equation.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Trigonometric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Trigonometric equations are widely used in:",
+            "Physics",
+            "Cooking",
+            "Grammar",
+            "History",
+            QuestionOption.A,
+            "Physics uses trigonometric equations to model oscillations and waves.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Engineers use trigonometric equations to:",
+            "Analyze structures and signals",
+            "Write novels",
+            "Paint buildings",
+            "Prepare recipes",
+            QuestionOption.A,
+            "Engineering applications include structural analysis, signal processing, and mechanics.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Wave motion is commonly modeled using:",
+            "Trigonometric equations",
+            "Linear equations only",
+            "Quadratic equations only",
+            "Arithmetic sequences",
+            QuestionOption.A,
+            "Periodic wave motion is naturally represented by trigonometric equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Computer graphics use trigonometric equations for:",
+            "Rotation and animation",
+            "Spell checking",
+            "Database indexing",
+            "Text formatting",
+            QuestionOption.A,
+            "Rotating and animating objects requires trigonometric calculations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Equations",
+            "Why are trigonometric equations important in science and engineering?",
+            "They model periodic behaviour and solve real-world problems involving angles, waves, and motion.",
+            "They are only useful for examinations.",
+            "They replace algebra completely.",
+            "They are only used for drawing triangles.",
+            QuestionOption.A,
+            "Trigonometric equations are fundamental in physics, engineering, astronomy, navigation, computer graphics, and many other applications.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Heights & Distances
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Heights & Distances",
+            "What is the main purpose of studying heights and distances?",
+            "To measure inaccessible heights and distances using trigonometry",
+            "To calculate areas of circles",
+            "To solve quadratic equations",
+            "To draw coordinate graphs",
+            QuestionOption.A,
+            "Heights and distances use trigonometric ratios to find measurements that cannot be measured directly.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Heights & Distances",
+            "Which mathematical concept is mainly used to solve heights and distances problems?",
+            "Probability",
+            "Statistics",
+            "Trigonometric ratios",
+            "Logarithms",
+            QuestionOption.C,
+            "Trigonometric ratios such as sine, cosine, and tangent are used in these problems.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Heights & Distances",
+            "The angle between the horizontal and the line of sight to an object above eye level is called:",
+            "Angle of depression",
+            "Right angle",
+            "Angle of elevation",
+            "Acute angle",
+            QuestionOption.C,
+            "The angle of elevation is measured upward from the horizontal.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Heights & Distances",
+            "The angle between the horizontal and the line of sight to an object below eye level is called:",
+            "Angle of elevation",
+            "Angle of depression",
+            "Reflex angle",
+            "Obtuse angle",
+            QuestionOption.B,
+            "The angle of depression is measured downward from the horizontal.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Heights & Distances",
+            "Why are heights and distances important?",
+            "They allow indirect measurement of objects that are difficult to reach.",
+            "They replace coordinate geometry.",
+            "They are only useful in classrooms.",
+            "They eliminate the need for measurements.",
+            QuestionOption.A,
+            "They are widely used whenever direct measurement is impractical or impossible.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Problems Using Heights & Distances
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Problems Using Heights & Distances",
+            "Which trigonometric ratio is commonly used to calculate height when the opposite side and adjacent side are involved?",
+            "Sine",
+            "Cosine",
+            "Tangent",
+            "Secant",
+            QuestionOption.C,
+            "Tangent is equal to opposite divided by adjacent.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Heights & Distances",
+            "If the angle of elevation and the horizontal distance are known, the height can usually be found using:",
+            "Tangent",
+            "Cosine",
+            "Sine",
+            "Cotangent",
+            QuestionOption.A,
+            "Height = Distance × tan θ in a right triangle.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Heights & Distances",
+            "Before applying trigonometric ratios, a heights and distances problem is usually represented as:",
+            "A right-angled triangle",
+            "A circle",
+            "A rectangle",
+            "A parabola",
+            QuestionOption.A,
+            "Most problems are modeled using a right-angled triangle.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Heights & Distances",
+            "Angles of elevation and depression are always measured from the:",
+            "Vertical line",
+            "Horizontal line",
+            "Diagonal line",
+            "Hypotenuse",
+            QuestionOption.B,
+            "Both angles are measured relative to the horizontal.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Heights & Distances",
+            "The first step in solving a heights and distances problem is usually to:",
+            "Draw a labelled diagram",
+            "Differentiate the equation",
+            "Find the area",
+            "Square every value",
+            QuestionOption.A,
+            "Drawing a clear diagram makes it easier to identify known and unknown values.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Heights & Distances
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Heights & Distances",
+            "Surveyors use heights and distances to:",
+            "Measure land and building heights",
+            "Write software",
+            "Solve probability questions",
+            "Draw pie charts",
+            QuestionOption.A,
+            "Surveyors use trigonometry to determine heights and distances accurately.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Heights & Distances",
+            "Which profession commonly applies heights and distances in construction projects?",
+            "Engineer",
+            "Chef",
+            "Musician",
+            "Author",
+            QuestionOption.A,
+            "Civil and structural engineers frequently use these concepts during planning and construction.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Heights & Distances",
+            "Navigation uses heights and distances to determine:",
+            "Locations and positions",
+            "Food recipes",
+            "Book prices",
+            "Grammar rules",
+            QuestionOption.A,
+            "Navigation relies on trigonometric calculations to estimate positions and distances.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Heights & Distances",
+            "Architects use heights and distances mainly for:",
+            "Planning building dimensions",
+            "Writing novels",
+            "Studying biology",
+            "Preparing reports only",
+            QuestionOption.A,
+            "Architects use these calculations to design safe and accurate structures.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Heights & Distances",
+            "Why are heights and distances important in real-life applications?",
+            "They enable accurate indirect measurements in surveying, engineering, navigation, architecture, and construction.",
+            "They are only useful in mathematics examinations.",
+            "They replace ordinary measuring tools completely.",
+            "They are only used to draw triangles.",
+            QuestionOption.A,
+            "Heights and distances provide practical methods for measuring objects that are difficult or impossible to measure directly.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Graphs of Trigonometric Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Graphs of Trigonometric Functions",
+            "Which trigonometric function has a wave-shaped graph starting at the origin?",
+            "Cosine",
+            "Sine",
+            "Tangent",
+            "Secant",
+            QuestionOption.B,
+            "The sine graph starts at the origin (0,0) and forms a smooth wave.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Graphs of Trigonometric Functions",
+            "What is the amplitude of the basic sine function y = sin x?",
+            "0",
+            "1",
+            "2",
+            "π",
+            QuestionOption.B,
+            "The amplitude of y = sin x is 1.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Graphs of Trigonometric Functions",
+            "What is the period of the basic sine function?",
+            "π",
+            "2π",
+            "3π",
+            "4π",
+            QuestionOption.B,
+            "The sine function repeats every 2π radians.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Graphs of Trigonometric Functions",
+            "Which trigonometric graph starts at its maximum value when x = 0?",
+            "Sine",
+            "Tangent",
+            "Cosine",
+            "Cotangent",
+            QuestionOption.C,
+            "The cosine graph begins at y = 1 when x = 0.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Graphs of Trigonometric Functions",
+            "Why are graphs of trigonometric functions important?",
+            "They help visualize periodic behaviour and repeating patterns.",
+            "They are only used to draw circles.",
+            "They replace trigonometric identities.",
+            "They are only useful for examinations.",
+            QuestionOption.A,
+            "Trigonometric graphs make it easier to understand periodic functions and their applications.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Understanding and Analyzing Trigonometric Graphs
+        // ==========================================================
+
+        AddQuestion(
+            "Understanding and Analyzing Trigonometric Graphs",
+            "Which trigonometric function has vertical asymptotes?",
+            "Sine",
+            "Cosine",
+            "Tangent",
+            "None of these",
+            QuestionOption.C,
+            "The tangent graph contains vertical asymptotes where the cosine function equals zero.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Understanding and Analyzing Trigonometric Graphs",
+            "Changing the amplitude of a sine graph affects its:",
+            "Height",
+            "Period",
+            "Domain",
+            "Asymptotes",
+            QuestionOption.A,
+            "The amplitude determines the maximum height and depth of the graph.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Understanding and Analyzing Trigonometric Graphs",
+            "A horizontal shift of a trigonometric graph is also called a:",
+            "Phase shift",
+            "Reflection",
+            "Scaling",
+            "Rotation",
+            QuestionOption.A,
+            "Moving a graph left or right is known as a phase shift.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Understanding and Analyzing Trigonometric Graphs",
+            "Multiplying the input variable by a constant mainly changes the:",
+            "Period",
+            "Amplitude",
+            "Range",
+            "Maximum value",
+            QuestionOption.A,
+            "Changing the coefficient of x affects how quickly the graph repeats, altering its period.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Understanding and Analyzing Trigonometric Graphs",
+            "Which graph repeats indefinitely in both positive and negative directions?",
+            "Only the sine graph",
+            "Only the cosine graph",
+            "All basic trigonometric graphs",
+            "None of them",
+            QuestionOption.C,
+            "All trigonometric functions are periodic and continue repeating over their domains.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Trigonometric Graphs
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Graphs",
+            "Trigonometric graphs are commonly used to model:",
+            "Periodic motion",
+            "Population only",
+            "Book sales",
+            "Random numbers",
+            QuestionOption.A,
+            "Periodic phenomena such as waves and oscillations are modeled using trigonometric graphs.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Graphs",
+            "Which field frequently uses trigonometric graphs to study waves?",
+            "Physics",
+            "History",
+            "Grammar",
+            "Economics",
+            QuestionOption.A,
+            "Physics uses trigonometric graphs to represent sound, light, and other wave motions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Graphs",
+            "Electrical engineers use trigonometric graphs to analyze:",
+            "Alternating current (AC) signals",
+            "Food recipes",
+            "Book layouts",
+            "Weather forecasts",
+            QuestionOption.A,
+            "Alternating current and voltage are commonly represented using sine waves.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Graphs",
+            "Computer animation often uses trigonometric graphs to create:",
+            "Smooth periodic motion",
+            "Database queries",
+            "Text formatting",
+            "Image compression",
+            QuestionOption.A,
+            "Sine and cosine functions are used to generate natural-looking repetitive movements.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Trigonometric Graphs",
+            "Why are trigonometric graphs important in science and engineering?",
+            "They model repeating patterns such as waves, oscillations, signals, and rotations in many real-world systems.",
+            "They are only useful in classroom exercises.",
+            "They replace algebra completely.",
+            "They are only used to draw curves.",
+            QuestionOption.A,
+            "Trigonometric graphs are fundamental in engineering, physics, signal processing, astronomy, and computer graphics because they accurately describe periodic behaviour.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Relations",
+            "What is a relation in mathematics?",
+            "A connection between elements of two sets",
+            "A collection of numbers only",
+            "A type of equation",
+            "A geometric figure",
+            QuestionOption.A,
+            "A relation is a set of ordered pairs that connects elements of two sets.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "A relation is usually represented as a set of:",
+            "Matrices",
+            "Ordered pairs",
+            "Fractions",
+            "Polynomials",
+            QuestionOption.B,
+            "Relations are commonly represented using ordered pairs such as (a, b).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "If (2,5) belongs to a relation, then:",
+            "2 is related to 5",
+            "5 is always related to 2",
+            "2 equals 5",
+            "The relation is a function",
+            QuestionOption.A,
+            "The ordered pair (2,5) indicates that 2 is related to 5.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "Which of the following can be used to represent a relation?",
+            "Ordered pairs",
+            "Arrow diagrams",
+            "Cartesian diagrams",
+            "All of the above",
+            QuestionOption.D,
+            "Relations can be represented using ordered pairs, arrow diagrams, and Cartesian diagrams.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "Why are relations important?",
+            "They describe connections between elements of sets.",
+            "They only solve algebraic equations.",
+            "They replace functions.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Relations help describe and analyze relationships between objects in mathematics and computer science.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Types and Properties of Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Types and Properties of Relations",
+            "A relation R on a set A is reflexive if:",
+            "Every element is related to itself",
+            "Every element is related to every other element",
+            "No element is related to itself",
+            "The relation has only one ordered pair",
+            QuestionOption.A,
+            "A relation is reflexive when (a,a) belongs to the relation for every element a.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types and Properties of Relations",
+            "A relation is symmetric if:",
+            "Whenever (a,b) belongs to R, then (b,a) also belongs to R",
+            "Every element is related to itself",
+            "The relation contains only equal elements",
+            "The relation is always transitive",
+            QuestionOption.A,
+            "A symmetric relation satisfies the property that if aRb, then bRa.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types and Properties of Relations",
+            "A relation is transitive if:",
+            "Whenever aRb and bRc, then aRc",
+            "aRb implies bRa",
+            "Every element relates to itself",
+            "Every pair is unique",
+            QuestionOption.A,
+            "Transitivity means the relationship continues through intermediate elements.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types and Properties of Relations",
+            "An equivalence relation must be:",
+            "Only reflexive",
+            "Reflexive, symmetric, and transitive",
+            "Only symmetric",
+            "Only transitive",
+            QuestionOption.B,
+            "Equivalence relations satisfy all three properties: reflexive, symmetric, and transitive.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types and Properties of Relations",
+            "Which property ensures every element is related to itself?",
+            "Reflexive",
+            "Symmetric",
+            "Transitive",
+            "Antisymmetric",
+            QuestionOption.A,
+            "Reflexivity requires that every element is related to itself.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Relations are commonly used in:",
+            "Databases",
+            "Cooking",
+            "Painting",
+            "Music composition",
+            QuestionOption.A,
+            "Database tables often model relationships between different entities.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Which branch of computer science heavily uses relations?",
+            "Database management",
+            "Graphic design",
+            "Video editing",
+            "Animation only",
+            QuestionOption.A,
+            "Relational databases are built upon mathematical relation concepts.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Relations help represent:",
+            "Connections between objects",
+            "Only numerical calculations",
+            "Only geometric shapes",
+            "Only equations",
+            QuestionOption.A,
+            "Relations describe associations between different entities or objects.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Which real-world system commonly relies on relational concepts?",
+            "Student-course databases",
+            "Weather forecasting only",
+            "Painting software only",
+            "Word processors",
+            QuestionOption.A,
+            "Student-course enrollment is a common example of a many-to-many relation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Why are relations important in mathematics and computer science?",
+            "They model connections between objects and form the foundation of databases, logic, graphs, and many computational systems.",
+            "They are only useful for examinations.",
+            "They replace functions completely.",
+            "They are only used in coordinate geometry.",
+            QuestionOption.A,
+            "Relations provide a formal way to describe associations and are fundamental in mathematics, databases, graph theory, and logic.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Types of Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Types of Functions",
+            "What is a function in mathematics?",
+            "A relation where each input has exactly one output",
+            "A set containing only numbers",
+            "A collection of equations",
+            "A geometric shape",
+            QuestionOption.A,
+            "A function assigns exactly one output to every input in its domain.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Types of Functions",
+            "Which type of function maps different elements of the domain to different elements of the codomain?",
+            "One-one function",
+            "Many-one function",
+            "Constant function",
+            "Identity function",
+            QuestionOption.A,
+            "A one-one (injective) function maps distinct inputs to distinct outputs.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Types of Functions",
+            "In a constant function, every input maps to:",
+            "A different output",
+            "The same output",
+            "No output",
+            "Two outputs",
+            QuestionOption.B,
+            "A constant function assigns the same value to every element of the domain.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Types of Functions",
+            "An identity function maps every element to:",
+            "Its square",
+            "Its inverse",
+            "Itself",
+            "Zero",
+            QuestionOption.C,
+            "For an identity function, f(x) = x for every element in the domain.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Types of Functions",
+            "Why are different types of functions important?",
+            "They help describe different relationships between inputs and outputs.",
+            "They replace relations completely.",
+            "They are only used in geometry.",
+            "They are only useful in examinations.",
+            QuestionOption.A,
+            "Different function types model different mathematical and real-world relationships.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Understanding and Classifying Types of Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Understanding and Classifying Types of Functions",
+            "A function is onto (surjective) if:",
+            "Every element of the codomain has at least one pre-image",
+            "Every input has two outputs",
+            "No element is repeated",
+            "The domain equals the range",
+            QuestionOption.A,
+            "In an onto function, every codomain element is mapped by at least one domain element.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Understanding and Classifying Types of Functions",
+            "A function is into if:",
+            "Some elements of the codomain are not mapped",
+            "Every codomain element is mapped",
+            "Every input has two outputs",
+            "The domain is empty",
+            QuestionOption.A,
+            "In an into function, at least one codomain element has no pre-image.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Understanding and Classifying Types of Functions",
+            "A function that is both one-one and onto is called:",
+            "Constant function",
+            "Identity function",
+            "Bijective function",
+            "Many-one function",
+            QuestionOption.C,
+            "A bijective function is both injective and surjective.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Understanding and Classifying Types of Functions",
+            "An inverse function exists only if the original function is:",
+            "Many-one",
+            "Bijective",
+            "Constant",
+            "Into",
+            QuestionOption.B,
+            "Only bijective functions have inverses.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Understanding and Classifying Types of Functions",
+            "The set of all possible outputs of a function is called its:",
+            "Domain",
+            "Codomain",
+            "Range",
+            "Relation",
+            QuestionOption.C,
+            "The range consists of all actual output values produced by the function.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Types of Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Types of Functions",
+            "Functions are widely used in:",
+            "Computer science",
+            "Cooking",
+            "Painting",
+            "Music composition",
+            QuestionOption.A,
+            "Functions are fundamental in algorithms, programming, and data processing.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Types of Functions",
+            "Which field commonly uses functions to model supply and demand?",
+            "Economics",
+            "History",
+            "Literature",
+            "Geography",
+            QuestionOption.A,
+            "Economics uses functions to represent relationships between variables.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Types of Functions",
+            "Engineers use functions mainly to:",
+            "Model relationships between variables",
+            "Write novels",
+            "Draw paintings",
+            "Translate languages",
+            QuestionOption.A,
+            "Engineering calculations frequently involve mathematical functions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Types of Functions",
+            "In computer programming, a function generally:",
+            "Takes input and produces output",
+            "Stores only images",
+            "Creates databases only",
+            "Deletes files automatically",
+            QuestionOption.A,
+            "Programming functions accept inputs, process them, and return outputs.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Types of Functions",
+            "Why are functions important in mathematics and real-world applications?",
+            "They model relationships between variables and are essential in science, engineering, economics, programming, and data analysis.",
+            "They are only useful for solving textbook problems.",
+            "They replace all mathematical concepts.",
+            "They are only used in graph drawing.",
+            QuestionOption.A,
+            "Functions provide a mathematical framework for describing how one quantity depends on another across many disciplines.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Domain & Range
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Domain & Range",
+            "What is the domain of a function?",
+            "The set of all possible input values",
+            "The set of all output values",
+            "The graph of the function",
+            "The slope of the function",
+            QuestionOption.A,
+            "The domain consists of all valid input values for which the function is defined.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Domain & Range",
+            "What is the range of a function?",
+            "The set of all possible input values",
+            "The set of all possible output values",
+            "The x-axis of the graph",
+            "The equation of the function",
+            QuestionOption.B,
+            "The range is the set of all output values produced by the function.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Domain & Range",
+            "In the function y = x², which variable represents the input?",
+            "x",
+            "y",
+            "Both x and y",
+            "Neither x nor y",
+            QuestionOption.A,
+            "The variable x is the independent variable or input.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Domain & Range",
+            "Which of the following best describes the range?",
+            "All values x can take",
+            "All values produced by the function",
+            "Only positive values",
+            "Only integer values",
+            QuestionOption.B,
+            "The range contains every output value corresponding to the domain.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Domain & Range",
+            "Why are domain and range important?",
+            "They define where a function is valid and the outputs it can produce.",
+            "They replace equations.",
+            "They are only used for graphing.",
+            "They determine the slope only.",
+            QuestionOption.A,
+            "Knowing the domain and range helps understand and analyze functions correctly.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Finding Domain & Range of Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Finding Domain & Range of Functions",
+            "For a rational function, the domain excludes values that make the:",
+            "Numerator zero",
+            "Denominator zero",
+            "Function positive",
+            "Function negative",
+            QuestionOption.B,
+            "Division by zero is undefined, so such values are excluded from the domain.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Finding Domain & Range of Functions",
+            "For an even root function such as √x, the domain is:",
+            "x ≥ 0",
+            "x ≤ 0",
+            "All real numbers",
+            "x ≠ 0",
+            QuestionOption.A,
+            "The expression inside an even root must be non-negative.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Finding Domain & Range of Functions",
+            "The graph of a function can help determine its:",
+            "Domain and range",
+            "Area only",
+            "Perimeter only",
+            "Slope only",
+            QuestionOption.A,
+            "Graphs visually show the allowable inputs and resulting outputs.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding Domain & Range of Functions",
+            "The domain of the polynomial function y = x³ is:",
+            "All real numbers",
+            "x ≥ 0",
+            "x ≤ 0",
+            "x ≠ 0",
+            QuestionOption.A,
+            "Polynomial functions are defined for every real number.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding Domain & Range of Functions",
+            "When finding the domain of a function, the first step is to:",
+            "Identify values that make the function undefined",
+            "Find the derivative",
+            "Calculate the area",
+            "Find the midpoint",
+            QuestionOption.A,
+            "Check for restrictions such as division by zero or invalid square roots.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Domain & Range
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Domain & Range",
+            "In computer programming, domain restrictions help:",
+            "Validate user input",
+            "Increase screen brightness",
+            "Print documents",
+            "Create folders",
+            QuestionOption.A,
+            "Input validation ensures only acceptable values are processed.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Domain & Range",
+            "Engineers use domain and range to:",
+            "Model practical systems with valid input and output values",
+            "Write novels",
+            "Compose music",
+            "Edit videos",
+            QuestionOption.A,
+            "Engineering models require realistic input and output constraints.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Domain & Range",
+            "Economists use functions with appropriate domains to represent:",
+            "Realistic business conditions",
+            "Chemical reactions",
+            "Language grammar",
+            "Painting techniques",
+            QuestionOption.A,
+            "Economic models use valid input values such as prices and demand.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Domain & Range",
+            "In physics, domain restrictions often represent:",
+            "Physically meaningful values",
+            "Random values only",
+            "Negative time always",
+            "Impossible measurements",
+            QuestionOption.A,
+            "Many physical quantities have practical limitations on their values.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Domain & Range",
+            "Why are domain and range essential in mathematics and real-world applications?",
+            "They ensure functions are used only with valid inputs and meaningful outputs in science, engineering, economics, and computing.",
+            "They are only useful for drawing graphs.",
+            "They replace algebraic equations.",
+            "They are only required in examinations.",
+            QuestionOption.A,
+            "Understanding domain and range ensures mathematical models accurately represent real-world situations.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Composite Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Composite Functions",
+            "What is a composite function?",
+            "A function formed by applying one function to the output of another",
+            "A function with two variables",
+            "A constant function",
+            "An inverse function",
+            QuestionOption.A,
+            "A composite function is created when the output of one function becomes the input of another.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Composite Functions",
+            "The notation (f ∘ g)(x) means:",
+            "f(g(x))",
+            "g(f(x))",
+            "f(x) + g(x)",
+            "f(x) × g(x)",
+            QuestionOption.A,
+            "The composition (f ∘ g)(x) means apply g first, then apply f to the result.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Composite Functions",
+            "In the composite function f(g(x)), which function is evaluated first?",
+            "f",
+            "g",
+            "Both together",
+            "Neither",
+            QuestionOption.B,
+            "The inner function g is evaluated first, followed by the outer function f.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Composite Functions",
+            "Composite functions involve:",
+            "Combining two or more functions",
+            "Only quadratic equations",
+            "Only trigonometric functions",
+            "Only graphs",
+            QuestionOption.A,
+            "Function composition combines functions into a new function.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Composite Functions",
+            "Why are composite functions important?",
+            "They describe multi-step mathematical processes.",
+            "They replace inverse functions.",
+            "They are only used in geometry.",
+            "They only simplify fractions.",
+            QuestionOption.A,
+            "Composite functions model situations where one operation follows another.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Evaluating and Solving Composite Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Evaluating and Solving Composite Functions",
+            "To evaluate (f ∘ g)(x), you first:",
+            "Find g(x)",
+            "Find f(x)",
+            "Find both separately",
+            "Differentiate f(x)",
+            QuestionOption.A,
+            "Always evaluate the inner function first.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Evaluating and Solving Composite Functions",
+            "If g(x) is not defined for a value of x, then f(g(x)) is:",
+            "Undefined",
+            "Always zero",
+            "Always one",
+            "Always positive",
+            QuestionOption.A,
+            "The composite function exists only where the inner function is defined.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Evaluating and Solving Composite Functions",
+            "The domain of a composite function depends on:",
+            "The domains of both functions",
+            "Only the first function",
+            "Only the second function",
+            "Neither function",
+            QuestionOption.A,
+            "The input must satisfy the domain of the inner function and produce outputs valid for the outer function.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Evaluating and Solving Composite Functions",
+            "Which notation represents applying g after f?",
+            "(g ∘ f)(x)",
+            "(f ∘ g)(x)",
+            "f + g",
+            "fg",
+            QuestionOption.A,
+            "The notation (g ∘ f)(x) means evaluate f first and then apply g.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Evaluating and Solving Composite Functions",
+            "Before simplifying a composite function, you should:",
+            "Substitute the inner function into the outer function",
+            "Differentiate the function",
+            "Find the graph",
+            "Multiply both functions",
+            QuestionOption.A,
+            "Composition is evaluated by replacing the variable in the outer function with the inner function.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Composite Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Composite Functions",
+            "Composite functions are widely used in:",
+            "Computer science",
+            "Painting",
+            "Cooking",
+            "Music",
+            QuestionOption.A,
+            "Programming often involves applying one function after another.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Composite Functions",
+            "Engineers use composite functions to:",
+            "Model multi-stage systems",
+            "Write novels",
+            "Design paintings",
+            "Translate languages",
+            QuestionOption.A,
+            "Engineering processes often involve several mathematical operations performed sequentially.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Composite Functions",
+            "Composite functions are useful when:",
+            "One process depends on the output of another",
+            "Only one variable exists",
+            "No calculations are required",
+            "Graphs are unavailable",
+            QuestionOption.A,
+            "Many practical systems involve chained operations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Composite Functions",
+            "In economics, composite functions can model:",
+            "Multiple dependent business processes",
+            "Only population growth",
+            "Only weather conditions",
+            "Only geometry problems",
+            QuestionOption.A,
+            "Economic models often combine several functions to describe real-world behaviour.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Composite Functions",
+            "Why are composite functions important in mathematics and real-world applications?",
+            "They model sequences of operations used in science, engineering, programming, economics, and data analysis.",
+            "They are only useful in examinations.",
+            "They replace algebra completely.",
+            "They are only used for graph sketching.",
+            QuestionOption.A,
+            "Composite functions allow complex systems to be represented by combining simpler functions, making them fundamental in many fields.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Inverse Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Inverse Functions",
+            "What is the purpose of an inverse function?",
+            "To reverse the effect of a function",
+            "To square every input",
+            "To find the derivative",
+            "To graph a function",
+            QuestionOption.A,
+            "An inverse function reverses the mapping of the original function, taking outputs back to their corresponding inputs.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Inverse Functions",
+            "The inverse of a function f is commonly denoted by:",
+            "f²(x)",
+            "f⁻¹(x)",
+            "1/f(x)",
+            "f'(x)",
+            QuestionOption.B,
+            "The notation f⁻¹(x) represents the inverse function, not the reciprocal or derivative.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Inverse Functions",
+            "A function must be ______ to have an inverse function.",
+            "One-to-one",
+            "Constant",
+            "Many-one",
+            "Periodic",
+            QuestionOption.A,
+            "Only one-to-one (injective) functions have inverses over their domains.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Inverse Functions",
+            "Applying a function and then its inverse results in:",
+            "The original input",
+            "Zero",
+            "One",
+            "A different output",
+            QuestionOption.A,
+            "For an inverse function, f⁻¹(f(x)) = x.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Inverse Functions",
+            "Why are inverse functions important?",
+            "They allow original input values to be recovered from outputs.",
+            "They replace composite functions.",
+            "They are only used in graphing.",
+            "They are only useful in geometry.",
+            QuestionOption.A,
+            "Inverse functions help reverse mathematical processes and solve equations.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Finding and Verifying Inverse Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Finding and Verifying Inverse Functions",
+            "The first step in finding the inverse of a function is to:",
+            "Replace f(x) with y",
+            "Differentiate the function",
+            "Find the graph",
+            "Square the function",
+            QuestionOption.A,
+            "The process begins by writing the function as y = f(x).",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Functions",
+            "After interchanging x and y, the next step is to:",
+            "Solve for y",
+            "Find the derivative",
+            "Multiply by x",
+            "Draw the graph",
+            QuestionOption.A,
+            "Solving for y gives the inverse function.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Functions",
+            "How can two functions be verified as inverses?",
+            "Their composition equals the identity function",
+            "Their graphs never intersect",
+            "They have the same equation",
+            "They have different domains",
+            QuestionOption.A,
+            "If f(g(x)) = x and g(f(x)) = x, the functions are inverses.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Functions",
+            "Which composition confirms that f⁻¹ is the inverse of f?",
+            "f(f⁻¹(x)) = x",
+            "f(x) + f⁻¹(x) = 0",
+            "f(x) = f⁻¹(x)",
+            "f(x) × f⁻¹(x) = 1",
+            QuestionOption.A,
+            "A composition resulting in x confirms the inverse relationship.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Functions",
+            "A many-one function generally:",
+            "Does not have an inverse function",
+            "Always has an inverse",
+            "Is always constant",
+            "Is always onto",
+            QuestionOption.A,
+            "Multiple inputs producing the same output prevent a unique inverse.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Inverse Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Inverse Functions",
+            "Inverse functions are commonly used in:",
+            "Computer science",
+            "Painting",
+            "Cooking",
+            "Music",
+            QuestionOption.A,
+            "Many algorithms use inverse operations to recover original data.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Functions",
+            "Which field uses inverse functions for encoding and decoding information?",
+            "Cryptography",
+            "Agriculture",
+            "Literature",
+            "Botany",
+            QuestionOption.A,
+            "Cryptography relies on inverse mathematical operations for encryption and decryption.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Functions",
+            "Engineers use inverse functions mainly to:",
+            "Recover unknown input values from outputs",
+            "Write reports",
+            "Create animations only",
+            "Draw geometric figures",
+            QuestionOption.A,
+            "Inverse functions help determine original values in engineering models.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Functions",
+            "Computer graphics often use inverse functions to:",
+            "Reverse transformations",
+            "Delete files",
+            "Compress text",
+            "Store databases",
+            QuestionOption.A,
+            "Inverse transformations are essential in image processing and graphics.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Functions",
+            "Why are inverse functions important in mathematics and real-world applications?",
+            "They reverse mathematical operations and are widely used in science, engineering, cryptography, computer graphics, and data analysis.",
+            "They are only useful in examinations.",
+            "They replace all other functions.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Inverse functions are fundamental for recovering original values and reversing processes across many scientific and technological fields.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Graphing Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Graphing Functions",
+            "What is the graph of a function?",
+            "A visual representation of the relationship between inputs and outputs",
+            "A table of numbers only",
+            "A mathematical proof",
+            "A geometric construction",
+            QuestionOption.A,
+            "A graph shows how the output of a function changes with different input values.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Graphing Functions",
+            "Functions are commonly graphed on the:",
+            "Number line",
+            "Cartesian plane",
+            "Pie chart",
+            "Bar graph",
+            QuestionOption.B,
+            "The Cartesian plane uses x and y axes to plot functions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Graphing Functions",
+            "The horizontal axis on a graph is called the:",
+            "y-axis",
+            "x-axis",
+            "Origin",
+            "Quadrant",
+            QuestionOption.B,
+            "The x-axis represents the independent variable.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Graphing Functions",
+            "A point on a graph is represented as:",
+            "An ordered pair (x, y)",
+            "A fraction",
+            "A matrix",
+            "A vector only",
+            QuestionOption.A,
+            "Each point on a graph is written as an ordered pair (x, y).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Graphing Functions",
+            "Why are function graphs useful?",
+            "They help visualize relationships between variables.",
+            "They replace equations completely.",
+            "They are only used in geometry.",
+            "They eliminate calculations.",
+            QuestionOption.A,
+            "Graphs make it easier to understand patterns and trends in functions.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Analyzing and Sketching Function Graphs
+        // ==========================================================
+
+        AddQuestion(
+            "Analyzing and Sketching Function Graphs",
+            "The graph of a linear function is a:",
+            "Circle",
+            "Straight line",
+            "Parabola",
+            "Hyperbola",
+            QuestionOption.B,
+            "Linear functions always produce straight-line graphs.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Analyzing and Sketching Function Graphs",
+            "The graph of a quadratic function is called a:",
+            "Circle",
+            "Ellipse",
+            "Parabola",
+            "Straight line",
+            QuestionOption.C,
+            "Quadratic functions produce parabolic graphs.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Analyzing and Sketching Function Graphs",
+            "To sketch a graph accurately, it is helpful to first:",
+            "Plot key points",
+            "Find the area",
+            "Calculate the midpoint",
+            "Differentiate the equation",
+            QuestionOption.A,
+            "Plotting important points helps determine the shape of the graph.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Analyzing and Sketching Function Graphs",
+            "The point where a graph crosses the y-axis is called the:",
+            "x-intercept",
+            "Vertex",
+            "y-intercept",
+            "Origin",
+            QuestionOption.C,
+            "The y-intercept occurs where x = 0.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Analyzing and Sketching Function Graphs",
+            "When analyzing a graph, intercepts help determine:",
+            "Where the graph crosses the axes",
+            "Only the slope",
+            "Only the domain",
+            "Only the range",
+            QuestionOption.A,
+            "Intercepts provide important information about the behaviour of the function.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Graphing Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Graphing Functions",
+            "Graphing functions is widely used in:",
+            "Science and engineering",
+            "Cooking",
+            "Painting",
+            "Poetry",
+            QuestionOption.A,
+            "Graphs help visualize and analyze scientific and engineering data.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Graphing Functions",
+            "Economists use graphs mainly to:",
+            "Analyze trends and relationships",
+            "Draw geometric figures",
+            "Write programs",
+            "Measure angles",
+            QuestionOption.A,
+            "Graphs help economists study growth, demand, and other trends.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Graphing Functions",
+            "Engineers often use graphs to:",
+            "Interpret experimental and system data",
+            "Write novels",
+            "Translate languages",
+            "Compose music",
+            QuestionOption.A,
+            "Engineering relies on graphs to understand and optimize system performance.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Graphing Functions",
+            "Computer graphics use function graphs to:",
+            "Model curves and animations",
+            "Prepare recipes",
+            "Store passwords",
+            "Print documents",
+            QuestionOption.A,
+            "Functions are used to generate smooth curves and animations in computer graphics.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Graphing Functions",
+            "Why is graphing functions important in mathematics and real-world applications?",
+            "It provides a visual understanding of relationships between variables and supports analysis in science, engineering, economics, and data modelling.",
+            "It is only useful for examinations.",
+            "It replaces algebra completely.",
+            "It is only used in coordinate geometry.",
+            QuestionOption.A,
+            "Graphing functions helps interpret data, identify patterns, make predictions, and solve practical problems across many disciplines.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Piecewise Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Piecewise Functions",
+            "What is a piecewise function?",
+            "A function defined by different rules on different intervals",
+            "A function with only one equation",
+            "A constant function",
+            "A quadratic function",
+            QuestionOption.A,
+            "A piecewise function uses different formulas depending on the value of the input.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Piecewise Functions",
+            "In a piecewise function, the applicable rule depends on the:",
+            "Input value",
+            "Output value",
+            "Graph colour",
+            "Equation number",
+            QuestionOption.A,
+            "The interval containing the input determines which rule is used.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Piecewise Functions",
+            "A piecewise function may contain:",
+            "Multiple equations",
+            "Only one equation",
+            "Only constants",
+            "No variables",
+            QuestionOption.A,
+            "Each interval of the domain can have its own equation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Piecewise Functions",
+            "The intervals in a piecewise function are usually determined using:",
+            "Conditions on x",
+            "Conditions on y",
+            "Only positive numbers",
+            "Only negative numbers",
+            QuestionOption.A,
+            "Conditions such as x < 0 or x ≥ 2 determine which formula applies.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Piecewise Functions",
+            "Why are piecewise functions useful?",
+            "They model situations where different rules apply in different cases.",
+            "They replace all other functions.",
+            "They are only used in geometry.",
+            "They eliminate the need for graphs.",
+            QuestionOption.A,
+            "Many real-world situations require different formulas over different intervals.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Evaluating and Graphing Piecewise Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Evaluating and Graphing Piecewise Functions",
+            "To evaluate a piecewise function, you first:",
+            "Determine which interval contains the input",
+            "Find the derivative",
+            "Calculate the midpoint",
+            "Square the input",
+            QuestionOption.A,
+            "The correct formula depends on the interval containing the given input.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Evaluating and Graphing Piecewise Functions",
+            "When graphing a piecewise function, each equation is drawn over:",
+            "Its specified interval",
+            "The entire x-axis",
+            "Only positive values",
+            "Only negative values",
+            QuestionOption.A,
+            "Each rule is graphed only where its condition is satisfied.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Evaluating and Graphing Piecewise Functions",
+            "An open circle on a graph indicates that the endpoint is:",
+            "Not included",
+            "Included",
+            "The highest point",
+            "The origin",
+            QuestionOption.A,
+            "An open circle means the endpoint does not belong to that interval.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Evaluating and Graphing Piecewise Functions",
+            "A closed circle on a graph indicates that the endpoint is:",
+            "Included",
+            "Not included",
+            "Always positive",
+            "Always negative",
+            QuestionOption.A,
+            "A closed circle shows the endpoint is part of the graph.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Evaluating and Graphing Piecewise Functions",
+            "When analyzing a piecewise function, continuity depends on:",
+            "How the function behaves at interval boundaries",
+            "The graph colour",
+            "The number of equations",
+            "The slope only",
+            QuestionOption.A,
+            "A function is continuous if the pieces connect correctly at their boundaries.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Piecewise Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Piecewise Functions",
+            "Piecewise functions are commonly used to model:",
+            "Tax brackets",
+            "Planet orbits only",
+            "Prime numbers only",
+            "Circle geometry only",
+            QuestionOption.A,
+            "Tax systems often use different rates for different income ranges.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Piecewise Functions",
+            "Shipping companies often use piecewise functions because:",
+            "Different charges apply to different weight ranges",
+            "All parcels cost the same",
+            "Only distance matters",
+            "Weight is ignored",
+            QuestionOption.A,
+            "Shipping fees frequently change according to weight intervals.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Piecewise Functions",
+            "Utility companies use piecewise functions to calculate:",
+            "Electricity or water bills",
+            "Triangle areas",
+            "Circle radii",
+            "Square roots",
+            QuestionOption.A,
+            "Many utility providers charge different rates for different levels of usage.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Piecewise Functions",
+            "Signal processing often uses piecewise functions to model:",
+            "Changing signal behaviour",
+            "Constant temperatures only",
+            "Only straight lines",
+            "Only quadratic curves",
+            QuestionOption.A,
+            "Signals may follow different equations over different time intervals.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Piecewise Functions",
+            "Why are piecewise functions important in mathematics and real-world applications?",
+            "They model situations where different mathematical rules apply over different intervals, making them useful in economics, engineering, computing, and data analysis.",
+            "They are only useful in examinations.",
+            "They replace all algebraic functions.",
+            "They are only used for graph sketching.",
+            QuestionOption.A,
+            "Piecewise functions accurately represent systems whose behaviour changes under different conditions.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Transformations of Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Transformations of Functions",
+            "What is a transformation of a function?",
+            "A change in the position, size, or orientation of its graph",
+            "A method of solving equations",
+            "A way to find derivatives",
+            "A type of inverse function",
+            QuestionOption.A,
+            "Function transformations modify the appearance of a graph without changing its basic shape.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Transformations of Functions",
+            "Which transformation moves a graph without changing its shape?",
+            "Translation",
+            "Reflection",
+            "Stretch",
+            "Compression",
+            QuestionOption.A,
+            "A translation shifts a graph horizontally or vertically while preserving its shape.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Transformations of Functions",
+            "Reflecting a graph across the x-axis changes:",
+            "The sign of the y-values",
+            "The sign of the x-values",
+            "The domain",
+            "The range only",
+            QuestionOption.A,
+            "Reflection across the x-axis changes every y-value to its opposite.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Transformations of Functions",
+            "A vertical stretch makes a graph appear:",
+            "Taller",
+            "Shorter",
+            "Wider",
+            "Unchanged",
+            QuestionOption.A,
+            "A vertical stretch increases the distance of points from the x-axis.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Transformations of Functions",
+            "Why are function transformations important?",
+            "They help generate and analyse new graphs from existing functions.",
+            "They replace graphing completely.",
+            "They are only used in geometry.",
+            "They remove the need for equations.",
+            QuestionOption.A,
+            "Transformations make it easy to understand relationships between different functions.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Graphing and Analyzing Function Transformations
+        // ==========================================================
+
+        AddQuestion(
+            "Graphing and Analyzing Function Transformations",
+            "Adding a constant to f(x), as in f(x) + c, causes a:",
+            "Vertical shift",
+            "Horizontal shift",
+            "Reflection",
+            "Rotation",
+            QuestionOption.A,
+            "Adding a constant moves the graph up or down.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Graphing and Analyzing Function Transformations",
+            "Replacing x with x - c in f(x) causes a:",
+            "Shift to the right",
+            "Shift to the left",
+            "Reflection across the x-axis",
+            "Vertical stretch",
+            QuestionOption.A,
+            "Replacing x with x - c shifts the graph c units to the right.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Graphing and Analyzing Function Transformations",
+            "Multiplying f(x) by a number greater than 1 results in a:",
+            "Vertical stretch",
+            "Horizontal compression",
+            "Reflection",
+            "Translation",
+            QuestionOption.A,
+            "Multiplying the output enlarges the graph vertically.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Graphing and Analyzing Function Transformations",
+            "The graph of y = -f(x) is obtained by reflecting the graph across the:",
+            "x-axis",
+            "y-axis",
+            "Origin",
+            "Line y = x",
+            QuestionOption.A,
+            "Multiplying the output by -1 reflects the graph across the x-axis.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Graphing and Analyzing Function Transformations",
+            "Understanding transformations helps you:",
+            "Predict graph changes without plotting every point",
+            "Eliminate equations",
+            "Ignore domains and ranges",
+            "Replace coordinate geometry",
+            QuestionOption.A,
+            "Transformation rules allow quick sketching and analysis of graphs.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Function Transformations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Function Transformations",
+            "Function transformations are widely used in:",
+            "Computer graphics",
+            "Cooking",
+            "Poetry",
+            "History",
+            QuestionOption.A,
+            "Computer graphics rely on transformations to move and resize objects.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Function Transformations",
+            "Engineers use function transformations to:",
+            "Model changing systems",
+            "Write stories",
+            "Translate languages",
+            "Draw maps only",
+            QuestionOption.A,
+            "Engineering models often require shifting and scaling mathematical functions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Function Transformations",
+            "In physics, graph transformations help describe:",
+            "Changing motion and wave behaviour",
+            "Grammar rules",
+            "Historical events",
+            "Book classifications",
+            QuestionOption.A,
+            "Physical phenomena often involve translated or scaled mathematical functions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Function Transformations",
+            "Animation software uses transformations to:",
+            "Move and resize objects smoothly",
+            "Store databases",
+            "Solve equations only",
+            "Generate passwords",
+            QuestionOption.A,
+            "Graphical transformations are fundamental in animation and game development.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Function Transformations",
+            "Why are function transformations important in mathematics and real-world applications?",
+            "They allow existing mathematical models to be shifted, reflected, stretched, or compressed, making them useful in graphics, engineering, physics, animation, and data modelling.",
+            "They are only useful in examinations.",
+            "They replace all graphing techniques.",
+            "They are only used for quadratic functions.",
+            QuestionOption.A,
+            "Function transformations provide an efficient way to analyse and model changing relationships across many scientific and technological fields.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+
+
+
+
+
+
 
 
 
