@@ -15369,6 +15369,1482 @@ public static class PracticeQuestionSeeder
             "Eigenvectors have broad applications across mathematics, science, and engineering.",
             DifficultyLevel.Advance,
             5);
+        // ------------------------------------------------------------
+        // Introduction to Vector Basics
+        // ------------------------------------------------------------
+
+        AddQuestion(
+            "Introduction to Vector Basics",
+            "Which of the following quantities has both magnitude and direction?",
+            "Mass",
+            "Temperature",
+            "Velocity",
+            "Time",
+            QuestionOption.C,
+            "Velocity is a vector because it has both magnitude (speed) and direction.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Vector Basics",
+            "Which of the following is a scalar quantity?",
+            "Force",
+            "Displacement",
+            "Acceleration",
+            "Distance",
+            QuestionOption.D,
+            "Distance has only magnitude and no direction, making it a scalar quantity.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Vector Basics",
+            "A vector is completely described by:",
+            "Magnitude only",
+            "Direction only",
+            "Magnitude and direction",
+            "Size and colour",
+            QuestionOption.C,
+            "A vector always contains both magnitude and direction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Vector Basics",
+            "Which of the following is NOT a vector?",
+            "Momentum",
+            "Force",
+            "Speed",
+            "Weight",
+            QuestionOption.C,
+            "Speed tells only how fast something moves. It does not include direction.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Vector Basics",
+            "Why are vectors important in navigation?",
+            "They measure colour.",
+            "They show both distance and direction.",
+            "They measure temperature.",
+            "They calculate time only.",
+            QuestionOption.B,
+            "Navigation requires knowing both how far and in which direction to travel.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ------------------------------------------------------------
+        // Representation and Components of Vectors
+        // ------------------------------------------------------------
+
+        AddQuestion(
+            "Representation and Components of Vectors",
+            "Vectors are commonly represented by:",
+            "A square",
+            "An arrow",
+            "A circle",
+            "A rectangle",
+            QuestionOption.B,
+            "The arrow length represents magnitude while the arrow head represents direction.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Representation and Components of Vectors",
+            "Resolving a vector means:",
+            "Increasing its magnitude",
+            "Breaking it into components",
+            "Changing its direction",
+            "Removing its magnitude",
+            QuestionOption.B,
+            "Vector resolution breaks a vector into horizontal and vertical components.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Representation and Components of Vectors",
+            "Which axis usually represents the horizontal component?",
+            "Y-axis",
+            "Z-axis",
+            "X-axis",
+            "Origin",
+            QuestionOption.C,
+            "The X-axis is generally used for horizontal movement.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Representation and Components of Vectors",
+            "Why do we use vector components?",
+            "To make calculations easier",
+            "To increase vector size",
+            "To remove direction",
+            "To convert vectors into scalars",
+            QuestionOption.A,
+            "Breaking vectors into components simplifies mathematical calculations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Representation and Components of Vectors",
+            "Game developers use vector components mainly to:",
+            "Store images",
+            "Calculate movement in different directions",
+            "Increase screen brightness",
+            "Compress files",
+            QuestionOption.B,
+            "Game engines calculate character movement using vector components.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ------------------------------------------------------------
+        // Applications and Practice of Vector Basics
+        // ------------------------------------------------------------
+
+        AddQuestion(
+            "Applications and Practice of Vector Basics",
+            "Which profession frequently uses vectors to calculate forces?",
+            "Chef",
+            "Engineer",
+            "Singer",
+            "Photographer",
+            QuestionOption.B,
+            "Engineers use vectors to analyse forces, structures, and motion.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Vector Basics",
+            "Robots use vectors to:",
+            "Cook food",
+            "Move accurately in different directions",
+            "Store electricity",
+            "Generate sound",
+            QuestionOption.B,
+            "Robotic systems calculate movement using vectors.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Vector Basics",
+            "Aircraft navigation depends on vectors because they describe:",
+            "Colour",
+            "Temperature",
+            "Direction and speed",
+            "Fuel consumption",
+            QuestionOption.C,
+            "Pilots use vectors to determine flight paths and wind direction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Vector Basics",
+            "Which technology uses vectors extensively?",
+            "Artificial Intelligence",
+            "Computer Graphics",
+            "GPS Navigation",
+            "All of the above",
+            QuestionOption.D,
+            "Vectors are fundamental in AI, graphics, robotics, simulations, and navigation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Vector Basics",
+            "Learning vectors is valuable because they are used in:",
+            "Only mathematics",
+            "Only physics",
+            "Only engineering",
+            "Science, engineering, AI, games, and navigation",
+            QuestionOption.D,
+            "Vectors are one of the most important mathematical tools across many modern technologies.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Vector Operations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Vector Operations",
+            "Which operation combines two vectors into a single vector?",
+            "Vector Addition",
+            "Scalar Multiplication",
+            "Vector Division",
+            "Vector Rotation",
+            QuestionOption.A,
+            "Vector addition combines two vectors into one resulting vector.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Vector Operations",
+            "Subtracting one vector from another helps determine:",
+            "The average vector",
+            "The difference in magnitude and direction",
+            "The colour of the vector",
+            "The speed only",
+            QuestionOption.B,
+            "Vector subtraction finds the difference between two vectors.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Vector Operations",
+            "What happens when a vector is multiplied by a scalar greater than 1?",
+            "Its direction changes",
+            "Its magnitude increases",
+            "It becomes a scalar",
+            "It disappears",
+            QuestionOption.B,
+            "Scalar multiplication changes the magnitude while keeping the direction the same (if the scalar is positive).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Vector Operations",
+            "A negative scalar multiplication will:",
+            "Keep the same direction",
+            "Reverse the vector's direction",
+            "Remove the vector",
+            "Double its magnitude only",
+            QuestionOption.B,
+            "A negative scalar reverses the vector's direction.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Vector Operations",
+            "Vector operations are widely used in:",
+            "Physics and Engineering",
+            "Computer Graphics",
+            "Robotics and Artificial Intelligence",
+            "All of the above",
+            QuestionOption.D,
+            "Vector operations are fundamental in science, engineering, AI, games, and robotics.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Performing Vector Operations
+        // ==========================================================
+
+        AddQuestion(
+            "Performing Vector Operations",
+            "Which graphical method is commonly used for vector addition?",
+            "Pie Chart Method",
+            "Head-to-Tail Method",
+            "Bar Graph Method",
+            "Circle Method",
+            QuestionOption.B,
+            "The Head-to-Tail method places one vector after another to find the resultant.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Performing Vector Operations",
+            "When adding vectors using components, which components are added together?",
+            "Only magnitudes",
+            "Horizontal with horizontal and vertical with vertical",
+            "Horizontal with vertical",
+            "Directions only",
+            QuestionOption.B,
+            "Each corresponding component is added independently.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Performing Vector Operations",
+            "Scalar multiplication affects which property of a vector?",
+            "Magnitude",
+            "Colour",
+            "Position",
+            "Shape",
+            QuestionOption.A,
+            "Scalar multiplication changes the vector's magnitude while preserving direction if the scalar is positive.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Performing Vector Operations",
+            "The resultant vector represents:",
+            "The final vector after performing operations",
+            "The largest vector",
+            "The shortest vector",
+            "The average vector",
+            QuestionOption.A,
+            "The resultant is the single vector equivalent to multiple vector operations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Performing Vector Operations",
+            "Why do engineers often perform vector operations using components?",
+            "It makes calculations more accurate and simpler",
+            "It removes direction",
+            "It converts vectors into scalars",
+            "It increases vector size",
+            QuestionOption.A,
+            "Resolving vectors into components simplifies complex engineering calculations.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Vector Operations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Vector Operations",
+            "Which field frequently uses vector addition to calculate forces?",
+            "Physics",
+            "Cooking",
+            "History",
+            "Music",
+            QuestionOption.A,
+            "Physics combines multiple forces using vector addition.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Vector Operations",
+            "In robotics, vector operations help robots:",
+            "Play music",
+            "Move accurately and calculate paths",
+            "Store files",
+            "Print documents",
+            QuestionOption.B,
+            "Robots rely on vector calculations for movement and navigation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Vector Operations",
+            "Computer graphics uses vector operations mainly to:",
+            "Move and rotate objects",
+            "Store passwords",
+            "Compress videos",
+            "Generate internet signals",
+            QuestionOption.A,
+            "Vectors control object movement, transformations, and animation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Vector Operations",
+            "GPS navigation uses vector operations to:",
+            "Calculate routes and directions",
+            "Measure humidity",
+            "Record sound",
+            "Display advertisements",
+            QuestionOption.A,
+            "GPS systems calculate routes using vector mathematics.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Vector Operations",
+            "Artificial Intelligence uses vector operations for:",
+            "Representing and comparing data mathematically",
+            "Cooking recipes",
+            "Charging batteries",
+            "Printing books",
+            QuestionOption.A,
+            "Modern AI represents text, images, and knowledge as vectors to perform similarity search and machine learning.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Dot Product
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Dot Product",
+            "The dot product of two vectors always produces:",
+            "Another vector",
+            "A scalar",
+            "A matrix",
+            "A graph",
+            QuestionOption.B,
+            "Unlike vector addition, the dot product always results in a scalar value.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Dot Product",
+            "The dot product helps measure the:",
+            "Similarity of two vectors",
+            "Colour of a vector",
+            "Speed of a vector",
+            "Shape of a vector",
+            QuestionOption.A,
+            "The dot product tells how closely two vectors point in the same direction.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Dot Product",
+            "If two vectors point in the same direction, their dot product is generally:",
+            "Positive",
+            "Negative",
+            "Always zero",
+            "Undefined",
+            QuestionOption.A,
+            "Vectors pointing in similar directions produce a positive dot product.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Dot Product",
+            "If two vectors are perpendicular, their dot product is:",
+            "1",
+            "-1",
+            "0",
+            "Infinity",
+            QuestionOption.C,
+            "Perpendicular vectors have a dot product of zero.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Dot Product",
+            "Which field commonly uses the dot product?",
+            "Computer Graphics",
+            "Machine Learning",
+            "Physics",
+            "All of the above",
+            QuestionOption.D,
+            "The dot product is widely used across science, graphics, robotics, AI, and engineering.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating and Interpreting Dot Product
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating and Interpreting Dot Product",
+            "The dot product can be calculated using:",
+            "Vector components",
+            "Angles between vectors",
+            "Both vector components and angles",
+            "Neither",
+            QuestionOption.C,
+            "Both the component formula and angle formula can be used to calculate the dot product.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating and Interpreting Dot Product",
+            "The angle between perpendicular vectors is:",
+            "45°",
+            "60°",
+            "90°",
+            "180°",
+            QuestionOption.C,
+            "Perpendicular vectors always meet at 90 degrees.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating and Interpreting Dot Product",
+            "A positive dot product indicates:",
+            "Vectors point in roughly the same direction",
+            "Vectors are perpendicular",
+            "Vectors point in opposite directions",
+            "The vectors are equal",
+            QuestionOption.A,
+            "Positive values mean the vectors have a similar direction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating and Interpreting Dot Product",
+            "A negative dot product usually means:",
+            "Vectors point in opposite directions",
+            "Vectors are equal",
+            "Vectors are perpendicular",
+            "The vectors disappear",
+            QuestionOption.A,
+            "Opposite directions produce a negative dot product.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating and Interpreting Dot Product",
+            "The dot product is useful for checking whether vectors are:",
+            "Parallel or perpendicular",
+            "Circular",
+            "Random",
+            "Curved",
+            QuestionOption.A,
+            "The dot product helps determine angular relationships between vectors.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Dot Product
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Dot Product",
+            "In physics, the dot product is commonly used to calculate:",
+            "Work Done",
+            "Temperature",
+            "Mass",
+            "Pressure",
+            QuestionOption.A,
+            "Work is calculated using the dot product of force and displacement.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Dot Product",
+            "Computer graphics uses the dot product mainly for:",
+            "Lighting calculations",
+            "Playing sound",
+            "Saving files",
+            "Compressing images",
+            QuestionOption.A,
+            "Lighting and shading depend heavily on the dot product.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Dot Product",
+            "Machine Learning uses the dot product to:",
+            "Measure similarity between vectors",
+            "Draw circles",
+            "Create databases",
+            "Print documents",
+            QuestionOption.A,
+            "Embeddings and similarity search rely heavily on the dot product.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Dot Product",
+            "Robotics uses the dot product to:",
+            "Analyse movement and orientation",
+            "Store electricity",
+            "Generate heat",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Robotic systems use vector mathematics to understand movement and positioning.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Dot Product",
+            "Why is the dot product important in modern AI systems?",
+            "It compares embedding vectors efficiently",
+            "It increases processor speed",
+            "It compresses videos",
+            "It stores passwords",
+            QuestionOption.A,
+            "Modern AI models compare text and image embeddings using the dot product or cosine similarity.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Calculating and Interpreting Cross Product
+               // ==========================================================
+
+        AddQuestion(
+            "Calculating and Interpreting Cross Product",
+            "The cross product of two vectors always results in:",
+            "A scalar",
+            "Another vector",
+            "A matrix",
+            "A number line",
+            QuestionOption.B,
+            "Unlike the dot product, the cross product always produces another vector.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating and Interpreting Cross Product",
+            "Which rule is commonly used to determine the direction of the cross product?",
+            "Left-Hand Rule",
+            "Clock Rule",
+            "Right-Hand Rule",
+            "Compass Rule",
+            QuestionOption.C,
+            "The Right-Hand Rule determines the direction of the resulting vector.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating and Interpreting Cross Product",
+            "If two vectors are parallel, their cross product is:",
+            "Positive",
+            "Negative",
+            "Zero",
+            "Undefined",
+            QuestionOption.C,
+            "Parallel vectors produce a cross product of zero because the angle between them is 0° or 180°.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating and Interpreting Cross Product",
+            "The magnitude of the cross product depends on:",
+            "Only the magnitudes of the vectors",
+            "Only the angle between vectors",
+            "Both the magnitudes and the angle",
+            "Neither",
+            QuestionOption.C,
+            "The magnitude depends on both vector lengths and the sine of the angle between them.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating and Interpreting Cross Product",
+            "The cross product is mainly useful because it finds:",
+            "A vector perpendicular to both vectors",
+            "The average vector",
+            "The smallest vector",
+            "The scalar projection",
+            QuestionOption.A,
+            "The resulting vector is always perpendicular to the two original vectors.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Cross Product
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Cross Product",
+            "The cross product is commonly used to calculate:",
+            "Area of a parallelogram",
+            "Temperature",
+            "Mass",
+            "Density",
+            QuestionOption.A,
+            "The magnitude of the cross product gives the area of the parallelogram formed by two vectors.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Cross Product",
+            "In physics, the cross product is used to calculate:",
+            "Torque",
+            "Distance",
+            "Pressure",
+            "Volume",
+            QuestionOption.A,
+            "Torque is calculated using the cross product of position and force vectors.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Cross Product",
+            "Computer graphics uses the cross product to:",
+            "Find surface normals",
+            "Store files",
+            "Compress images",
+            "Increase brightness",
+            QuestionOption.A,
+            "Surface normals are calculated using the cross product for lighting and rendering.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Cross Product",
+            "Robotics uses the cross product mainly for:",
+            "Motion and rotational calculations",
+            "Saving data",
+            "Measuring humidity",
+            "Generating sound",
+            QuestionOption.A,
+            "Robotic systems use the cross product when calculating rotations and orientations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Cross Product",
+            "Which modern field relies heavily on the cross product for 3D calculations?",
+            "3D Game Development and Engineering",
+            "Accounting",
+            "Cooking",
+            "Writing",
+            QuestionOption.A,
+            "3D graphics, game engines, CAD software, robotics, and engineering all depend on cross product calculations.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Vector Projection
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Vector Projection",
+            "Vector projection is used to:",
+            "Find how much one vector lies in the direction of another",
+            "Multiply two vectors",
+            "Rotate a vector",
+            "Reverse a vector",
+            QuestionOption.A,
+            "Projection measures the part of one vector that acts in the direction of another vector.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Vector Projection",
+            "Vector projection is based primarily on which vector operation?",
+            "Cross Product",
+            "Dot Product",
+            "Vector Addition",
+            "Vector Subtraction",
+            QuestionOption.B,
+            "The dot product is used to calculate both scalar and vector projections.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Vector Projection",
+            "The projection of one vector onto another represents:",
+            "The perpendicular distance",
+            "The component along the second vector",
+            "The average of two vectors",
+            "The angle only",
+            QuestionOption.B,
+            "Projection gives the component of one vector in the direction of another.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Vector Projection",
+            "If two vectors are perpendicular, their projection is:",
+            "Maximum",
+            "Minimum",
+            "Zero",
+            "Infinite",
+            QuestionOption.C,
+            "Perpendicular vectors have a dot product of zero, so the projection is also zero.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Vector Projection",
+            "Vector projection is useful because it tells us:",
+            "How much one vector contributes in another's direction",
+            "How to rotate vectors",
+            "How to change vector colours",
+            "How to find vector volume",
+            QuestionOption.A,
+            "Projection isolates the useful component of a vector along a chosen direction.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Vector Projection
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Vector Projection",
+            "Scalar projection gives:",
+            "A vector",
+            "A scalar value",
+            "A matrix",
+            "An angle",
+            QuestionOption.B,
+            "Scalar projection measures the length of the projected component.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Vector Projection",
+            "Vector projection gives:",
+            "Only a number",
+            "A vector in the direction of another vector",
+            "A matrix",
+            "A graph",
+            QuestionOption.B,
+            "Vector projection returns the projected vector itself.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Vector Projection",
+            "Which operation is required when calculating vector projection?",
+            "Dot Product",
+            "Cross Product",
+            "Division",
+            "Matrix Multiplication",
+            QuestionOption.A,
+            "Vector projection is calculated using the dot product formula.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Vector Projection",
+            "The projected vector always points:",
+            "Perpendicular to the reference vector",
+            "In the same or opposite direction as the reference vector",
+            "Randomly",
+            "At 45 degrees",
+            QuestionOption.B,
+            "The projected vector lies along the reference vector's line.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Vector Projection",
+            "Why do engineers calculate vector projections?",
+            "To simplify force and motion calculations",
+            "To change vector colours",
+            "To create animations only",
+            "To measure temperature",
+            QuestionOption.A,
+            "Projection allows engineers to isolate forces and motion along specific directions.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Vector Projection
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Vector Projection",
+            "In physics, vector projection is commonly used to:",
+            "Resolve forces into components",
+            "Calculate temperature",
+            "Measure density",
+            "Find pressure only",
+            QuestionOption.A,
+            "Projection helps separate forces acting in different directions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Vector Projection",
+            "Navigation systems use vector projection to:",
+            "Determine movement along a chosen path",
+            "Increase internet speed",
+            "Compress maps",
+            "Store coordinates",
+            QuestionOption.A,
+            "Projection determines how much movement occurs toward the destination.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Vector Projection",
+            "Computer graphics uses vector projection mainly for:",
+            "Lighting and shadow calculations",
+            "Playing music",
+            "Saving files",
+            "Printing images",
+            QuestionOption.A,
+            "Projection is used in lighting models to calculate how light falls on surfaces.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Vector Projection",
+            "Robotics uses vector projection to:",
+            "Calculate motion along specific directions",
+            "Increase battery life",
+            "Store programs",
+            "Generate sound",
+            QuestionOption.A,
+            "Robots project movement and forces along desired directions for precise control.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Vector Projection",
+            "Machine Learning uses vector projection to:",
+            "Compare high-dimensional embeddings and extract useful information",
+            "Print documents",
+            "Charge processors",
+            "Store passwords",
+            QuestionOption.A,
+            "Projection is widely used in embeddings, dimensionality reduction, similarity search, and recommendation systems.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Direction Cosines
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Direction Cosines",
+            "Direction cosines describe the:",
+            "Magnitude of a vector",
+            "Orientation of a vector in 3D space",
+            "Length of a line",
+            "Area of a surface",
+            QuestionOption.B,
+            "Direction cosines describe how a vector is oriented with respect to the x, y, and z axes.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Direction Cosines",
+            "Direction cosines are the cosines of the angles a vector makes with the:",
+            "Coordinate axes",
+            "Coordinate planes",
+            "Origin only",
+            "Diagonal line",
+            QuestionOption.A,
+            "They are the cosines of the angles formed with the x-, y-, and z-axes.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Direction Cosines",
+            "How many direction cosines does a vector in 3D space have?",
+            "One",
+            "Two",
+            "Three",
+            "Four",
+            QuestionOption.C,
+            "A three-dimensional vector has one direction cosine for each coordinate axis.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Direction Cosines",
+            "Direction cosines mainly help us understand a vector's:",
+            "Weight",
+            "Direction",
+            "Temperature",
+            "Colour",
+            QuestionOption.B,
+            "They describe the orientation of the vector rather than its magnitude.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Direction Cosines",
+            "Direction cosines are especially useful when working in:",
+            "One-dimensional geometry",
+            "Two-dimensional geometry",
+            "Three-dimensional geometry",
+            "Circular geometry",
+            QuestionOption.C,
+            "They are fundamental for describing vectors in three-dimensional space.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Direction Cosines and Ratios
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Direction Cosines and Ratios",
+            "Direction ratios represent:",
+            "Numbers proportional to the components of a vector",
+            "Only the magnitude of a vector",
+            "The area of a vector",
+            "The angle between vectors",
+            QuestionOption.A,
+            "Direction ratios are values proportional to the vector's x, y, and z components.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Direction Cosines and Ratios",
+            "Direction cosines are obtained by dividing each vector component by its:",
+            "Area",
+            "Magnitude",
+            "Angle",
+            "Length of the x-axis",
+            QuestionOption.B,
+            "Each component is divided by the vector's magnitude to obtain its direction cosine.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Direction Cosines and Ratios",
+            "The sum of the squares of the direction cosines is always:",
+            "0",
+            "1",
+            "2",
+            "3",
+            QuestionOption.B,
+            "Direction cosines satisfy the identity l² + m² + n² = 1.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Direction Cosines and Ratios",
+            "Direction ratios can be converted into direction cosines by:",
+            "Multiplying by the magnitude",
+            "Dividing by the vector's magnitude",
+            "Adding all components",
+            "Subtracting the largest component",
+            QuestionOption.B,
+            "Normalising the direction ratios gives the direction cosines.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Direction Cosines and Ratios",
+            "Why are direction ratios useful?",
+            "They simplify describing vector directions before normalization",
+            "They calculate vector area",
+            "They measure temperature",
+            "They determine speed",
+            QuestionOption.A,
+            "Direction ratios provide a convenient way to represent vector directions before converting them into unit values.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Direction Cosines
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Direction Cosines",
+            "Direction cosines are widely used in:",
+            "Three-dimensional geometry",
+            "Cooking",
+            "Painting",
+            "Music",
+            QuestionOption.A,
+            "They are essential for solving problems involving vectors in 3D space.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Direction Cosines",
+            "Engineers use direction cosines mainly to:",
+            "Describe the orientation of forces and structures",
+            "Calculate food recipes",
+            "Store electrical energy",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Direction cosines help engineers describe directions accurately in three dimensions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Direction Cosines",
+            "Robotics uses direction cosines to:",
+            "Determine the orientation of robotic arms",
+            "Print documents",
+            "Compress images",
+            "Store files",
+            QuestionOption.A,
+            "Robotic systems rely on orientation calculations for accurate movement.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Direction Cosines",
+            "Aircraft and spacecraft navigation use direction cosines to:",
+            "Track orientation in 3D space",
+            "Increase fuel capacity",
+            "Generate electricity",
+            "Reduce gravity",
+            QuestionOption.A,
+            "Navigation systems constantly calculate orientation using direction information.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Direction Cosines",
+            "Modern computer graphics uses direction cosines to:",
+            "Represent object orientation, camera movement, and lighting calculations",
+            "Store databases",
+            "Compress videos",
+            "Generate passwords",
+            QuestionOption.A,
+            "3D graphics engines use direction information for rendering, animation, lighting, and camera control.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Lines in Space
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Lines in Space",
+            "A line in three-dimensional space extends:",
+            "In one direction only",
+            "Infinitely in both directions",
+            "Only between two points",
+            "Around a circle",
+            QuestionOption.B,
+            "Like a line in 2D, a line in 3D extends infinitely in both directions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Lines in Space",
+            "Which equation is commonly used to represent a line in 3D space?",
+            "Vector equation",
+            "Quadratic equation",
+            "Circle equation",
+            "Linear inequality",
+            QuestionOption.A,
+            "The vector equation is one of the standard ways to represent a line in three-dimensional space.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Lines in Space",
+            "A line in space requires a point and a:",
+            "Radius",
+            "Direction vector",
+            "Plane",
+            "Matrix",
+            QuestionOption.B,
+            "A point and a direction vector uniquely determine a line in space.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Lines in Space",
+            "A direction vector determines the line's:",
+            "Length",
+            "Orientation",
+            "Area",
+            "Volume",
+            QuestionOption.B,
+            "The direction vector tells us the direction in which the line extends.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Lines in Space",
+            "Studying lines in space is important for:",
+            "Understanding three-dimensional geometry",
+            "Learning fractions",
+            "Drawing circles only",
+            "Measuring temperature",
+            QuestionOption.A,
+            "Lines in space form the foundation of 3D geometry and engineering applications.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Equations and Relationships of Lines in Space
+        // ==========================================================
+
+        AddQuestion(
+            "Equations and Relationships of Lines in Space",
+            "Which form expresses a line using a point and a direction vector?",
+            "Vector equation",
+            "Quadratic equation",
+            "Exponential equation",
+            "Logarithmic equation",
+            QuestionOption.A,
+            "The vector equation represents a line using a position vector and a direction vector.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Equations and Relationships of Lines in Space",
+            "Parallel lines have:",
+            "The same direction",
+            "The same starting point only",
+            "The same length",
+            "The same magnitude",
+            QuestionOption.A,
+            "Parallel lines have proportional direction vectors.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Equations and Relationships of Lines in Space",
+            "Skew lines are lines that:",
+            "Intersect each other",
+            "Are parallel",
+            "Neither intersect nor are parallel",
+            "Always lie in the same plane",
+            QuestionOption.C,
+            "Skew lines exist only in three dimensions and never meet.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Relationships of Lines in Space",
+            "The angle between two lines is determined using their:",
+            "Direction vectors",
+            "Lengths",
+            "Areas",
+            "Starting points",
+            QuestionOption.A,
+            "The angle between lines is calculated from the angle between their direction vectors.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Relationships of Lines in Space",
+            "Parametric equations are useful because they:",
+            "Represent every point on a line using a parameter",
+            "Calculate only line length",
+            "Find circle areas",
+            "Measure speed",
+            QuestionOption.A,
+            "Changing the parameter generates every point lying on the line.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Lines in Space
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Lines in Space",
+            "Architects use lines in space mainly to:",
+            "Design buildings and structures",
+            "Cook food",
+            "Edit videos",
+            "Write books",
+            QuestionOption.A,
+            "Three-dimensional lines help architects accurately model buildings.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Lines in Space",
+            "Navigation systems use lines in space to:",
+            "Calculate movement paths",
+            "Increase internet speed",
+            "Generate electricity",
+            "Compress files",
+            QuestionOption.A,
+            "Navigation software models routes and movement using spatial geometry.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Lines in Space",
+            "Robotics uses lines in space to:",
+            "Plan robotic arm movement",
+            "Store batteries",
+            "Generate music",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Robotic motion planning relies on three-dimensional line geometry.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Lines in Space",
+            "Computer graphics uses lines in space for:",
+            "3D modelling and rendering",
+            "Cooking recipes",
+            "Printing documents",
+            "Weather forecasting",
+            QuestionOption.A,
+            "Every 3D object is built using points, lines, and surfaces.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Lines in Space",
+            "Engineers and physicists study lines in space because they help model:",
+            "Motion, structures, trajectories, and three-dimensional systems",
+            "Food nutrition",
+            "Music composition",
+            "Plant growth",
+            QuestionOption.A,
+            "Modern engineering, aerospace, robotics, CAD software, and physics all rely heavily on three-dimensional line geometry.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Planes
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Planes",
+            "A plane is a:",
+            "One-dimensional figure",
+            "Two-dimensional flat surface",
+            "Three-dimensional solid",
+            "Curved surface",
+            QuestionOption.B,
+            "A plane is a flat surface that extends infinitely in all directions within two dimensions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Planes",
+            "A plane extends infinitely in:",
+            "One direction",
+            "Two dimensions",
+            "Three dimensions",
+            "Four dimensions",
+            QuestionOption.B,
+            "A plane has length and width, but no thickness.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Planes",
+            "A plane can be uniquely determined by:",
+            "Three non-collinear points",
+            "One point",
+            "Two parallel lines only",
+            "A single vector",
+            QuestionOption.A,
+            "Three points that do not lie on the same line uniquely define a plane.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Planes",
+            "Which vector is perpendicular to a plane?",
+            "Direction vector",
+            "Unit vector",
+            "Normal vector",
+            "Position vector",
+            QuestionOption.C,
+            "The normal vector is always perpendicular to the plane.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Planes",
+            "Studying planes helps us understand:",
+            "Three-dimensional geometry",
+            "Only arithmetic",
+            "Only circles",
+            "Only graphs",
+            QuestionOption.A,
+            "Planes form the basis of many concepts in 3D geometry, engineering, and graphics.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Equations and Properties of Planes
+        // ==========================================================
+
+        AddQuestion(
+            "Equations and Properties of Planes",
+            "Which vector is essential when writing the equation of a plane?",
+            "Normal vector",
+            "Velocity vector",
+            "Force vector",
+            "Position vector only",
+            QuestionOption.A,
+            "A normal vector determines the orientation of the plane.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Planes",
+            "Two planes are parallel if their:",
+            "Normal vectors are parallel",
+            "Areas are equal",
+            "Points are identical",
+            "Distances are zero",
+            QuestionOption.A,
+            "Parallel planes have proportional normal vectors.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Planes",
+            "The angle between two planes is determined by the angle between their:",
+            "Edges",
+            "Normal vectors",
+            "Areas",
+            "Lengths",
+            QuestionOption.B,
+            "The angle between planes equals the angle between their normal vectors.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Planes",
+            "A line is perpendicular to a plane if it is parallel to the plane's:",
+            "Direction vector",
+            "Normal vector",
+            "Position vector",
+            "Unit vector",
+            QuestionOption.B,
+            "The line follows the same direction as the plane's normal vector.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Planes",
+            "Cartesian equations of planes are mainly used to:",
+            "Represent planes algebraically",
+            "Calculate circle areas",
+            "Measure temperature",
+            "Draw graphs only",
+            QuestionOption.A,
+            "Cartesian equations allow planes to be represented and solved mathematically.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Planes
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Planes",
+            "Architects use planes to:",
+            "Design walls, floors, and roofs",
+            "Measure rainfall",
+            "Write software",
+            "Generate music",
+            QuestionOption.A,
+            "Buildings are designed using planes to represent flat surfaces.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Planes",
+            "Computer graphics uses planes for:",
+            "Representing surfaces of 3D objects",
+            "Compressing files",
+            "Sending emails",
+            "Printing books",
+            QuestionOption.A,
+            "3D models are built from many flat surfaces called planes.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Planes",
+            "Engineers use planes when designing:",
+            "Machines and structures",
+            "Recipes",
+            "Music players",
+            "Paintings",
+            QuestionOption.A,
+            "Engineering drawings rely heavily on plane geometry.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Planes",
+            "Robotics uses planes to:",
+            "Understand object orientation and movement",
+            "Store batteries",
+            "Generate electricity",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Robots use plane geometry for navigation, vision, and object manipulation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Planes",
+            "Modern aerospace, CAD software, computer graphics, and physics all rely on planes because they help model:",
+            "Real-world three-dimensional surfaces and environments",
+            "Only two-dimensional drawings",
+            "Food recipes",
+            "Internet connections",
+            QuestionOption.A,
+            "Plane geometry is fundamental for modelling aircraft, buildings, robots, simulations, games, and scientific systems.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
