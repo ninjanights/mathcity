@@ -18195,6 +18195,1933 @@ AddQuestion(
             "It is used throughout statistics, artificial intelligence, machine learning, finance, medicine, engineering, quality control, psychology, and scientific research because many naturally occurring measurements approximately follow a normal distribution.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Introduction to Data Collection
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Data Collection",
+            "Data collection is the process of:",
+            "Drawing graphs",
+            "Deleting information",
+            "Gathering information for analysis",
+            "Creating formulas",
+            QuestionOption.C,
+            "Data collection involves gathering information that can later be analysed to answer questions or solve problems.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Data Collection",
+            "Which of the following is an example of data?",
+            "A triangle",
+            "A calculator",
+            "Students' exam scores",
+            "A compass",
+            QuestionOption.C,
+            "Exam scores are observations that can be collected and analysed statistically.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Data Collection",
+            "Primary data is data that is:",
+            "Collected directly by the researcher",
+            "Copied from books",
+            "Downloaded from the internet",
+            "Taken from newspapers",
+            QuestionOption.A,
+            "Primary data is gathered firsthand for a specific purpose.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Data Collection",
+            "Secondary data comes from:",
+            "Direct experiments only",
+            "Only interviews",
+            "Only observations",
+            "Existing sources such as books, reports, and websites",
+            QuestionOption.D,
+            "Secondary data has already been collected by someone else.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Data Collection",
+            "Why is good data collection important?",
+            "It produces reliable results for decision-making",
+            "It makes calculations impossible",
+            "It guarantees perfect conclusions",
+            "It removes all uncertainty",
+            QuestionOption.A,
+            "Reliable data leads to more accurate analysis and better decisions.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Methods and Techniques of Data Collection
+        // ==========================================================
+
+        AddQuestion(
+            "Methods and Techniques of Data Collection",
+            "Which method collects information by asking people questions?",
+            "Survey",
+            "Simulation",
+            "Prediction",
+            "Calculation",
+            QuestionOption.A,
+            "Surveys gather information directly from people using questionnaires or interviews.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods and Techniques of Data Collection",
+            "A sample is:",
+            "The entire population",
+            "A smaller group selected from a population",
+            "Only the largest group",
+            "A mathematical formula",
+            QuestionOption.B,
+            "A sample is a subset of the population used for statistical studies.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods and Techniques of Data Collection",
+            "Which method involves carefully watching and recording events?",
+            "Prediction",
+            "Classification",
+            "Observation",
+            "Multiplication",
+            QuestionOption.C,
+            "Observation collects data by directly watching people, objects, or events.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods and Techniques of Data Collection",
+            "Experiments are mainly used to:",
+            "Store databases",
+            "Draw bar charts",
+            "Calculate averages only",
+            "Test hypotheses under controlled conditions",
+            QuestionOption.D,
+            "Experiments allow researchers to study cause-and-effect relationships.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods and Techniques of Data Collection",
+            "Random sampling is preferred because it:",
+            "Reduces bias and improves fairness",
+            "Guarantees perfect accuracy",
+            "Always includes everyone",
+            "Eliminates all errors",
+            QuestionOption.A,
+            "Random sampling gives each member of the population an equal chance of being selected.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Data Collection
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Data Collection",
+            "Businesses collect customer data mainly to:",
+            "Improve products and services",
+            "Measure gravity",
+            "Find prime numbers",
+            "Solve geometry problems",
+            QuestionOption.A,
+            "Customer feedback helps businesses improve products, services, and customer satisfaction.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Data Collection",
+            "Hospitals collect patient data to:",
+            "Calculate vectors",
+            "Improve healthcare and treatments",
+            "Design buildings",
+            "Study planets",
+            QuestionOption.B,
+            "Medical professionals analyse patient data to improve diagnosis and treatment.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Data Collection",
+            "Machine learning systems depend on data collection because:",
+            "Algorithms never use examples",
+            "Computers do not need data",
+            "Models learn patterns from collected data",
+            "Only formulas are required",
+            QuestionOption.C,
+            "AI models become more accurate when trained with high-quality data.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Data Collection",
+            "Scientists collect experimental data mainly to:",
+            "Decorate reports",
+            "Reduce computer memory",
+            "Increase internet speed",
+            "Test theories and validate research",
+            QuestionOption.D,
+            "Scientific discoveries rely on carefully collected evidence.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Data Collection",
+            "Data collection forms the foundation of statistics, AI, and data science because it:",
+            "Provides reliable information for analysis, prediction, and decision-making",
+            "Eliminates all uncertainty",
+            "Replaces mathematical models",
+            "Guarantees every prediction is correct",
+            QuestionOption.A,
+            "High-quality data enables meaningful analysis in business, healthcare, scientific research, artificial intelligence, machine learning, government planning, finance, and data science.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Measures of Central Tendency
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Measures of Central Tendency",
+            "What is the main purpose of measures of central tendency?",
+            "To calculate probability",
+            "To represent the central or typical value of a dataset",
+            "To find the largest number only",
+            "To arrange data alphabetically",
+            QuestionOption.B,
+            "Measures of central tendency summarise a dataset using a single value that best represents it.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Measures of Central Tendency",
+            "Which of the following is NOT a measure of central tendency?",
+            "Mean",
+            "Median",
+            "Variance",
+            "Mode",
+            QuestionOption.C,
+            "Variance measures data spread, while mean, median, and mode describe the centre of the data.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Measures of Central Tendency",
+            "The mean is commonly known as the:",
+            "Middle value",
+            "Average",
+            "Most frequent value",
+            "Largest value",
+            QuestionOption.B,
+            "The arithmetic mean is commonly referred to as the average.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Measures of Central Tendency",
+            "The median is:",
+            "The average of all values",
+            "The most frequent value",
+            "The largest value",
+            "The middle value after arranging the data",
+            QuestionOption.D,
+            "The median divides an ordered dataset into two equal halves.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Measures of Central Tendency",
+            "The mode of a dataset is the value that:",
+            "Appears most frequently",
+            "Is always the smallest",
+            "Is always the average",
+            "Is the last number",
+            QuestionOption.A,
+            "The mode is the observation that occurs most often.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Mean, Median, and Mode
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Mean, Median, and Mode",
+            "To calculate the mean, you should:",
+            "Add all values and divide by the total number of values",
+            "Choose the middle value",
+            "Choose the most frequent value",
+            "Subtract the largest value",
+            QuestionOption.A,
+            "The mean equals the sum of all observations divided by the number of observations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Mean, Median, and Mode",
+            "When finding the median, the first step is to:",
+            "Multiply all values",
+            "Arrange the data in order",
+            "Find the average",
+            "Remove duplicate values",
+            QuestionOption.B,
+            "The data must first be arranged in ascending or descending order.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Mean, Median, and Mode",
+            "If every value in a dataset appears exactly once, the dataset has:",
+            "No mode",
+            "Two modes",
+            "One mode",
+            "Three modes",
+            QuestionOption.A,
+            "If no value repeats, there is no mode.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Mean, Median, and Mode",
+            "For an even number of observations, the median is:",
+            "The first value",
+            "The last value",
+            "The most common value",
+            "The average of the two middle values",
+            QuestionOption.D,
+            "For even-sized datasets, the median is the average of the two central observations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Mean, Median, and Mode",
+            "Which measure is least affected by extremely large or small values?",
+            "Median",
+            "Mean",
+            "Mode",
+            "Range",
+            QuestionOption.A,
+            "The median is resistant to outliers, unlike the mean.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Central Tendency
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Central Tendency",
+            "Schools often calculate students' average marks using the:",
+            "Mean",
+            "Median",
+            "Mode",
+            "Range",
+            QuestionOption.A,
+            "Average marks are generally calculated using the arithmetic mean.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Central Tendency",
+            "Which measure is commonly used to report house prices because extreme values may exist?",
+            "Mode",
+            "Median",
+            "Mean",
+            "Range",
+            QuestionOption.B,
+            "The median better represents typical house prices when there are expensive outliers.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Central Tendency",
+            "Retail stores often use the mode to determine:",
+            "The most commonly purchased product",
+            "The total number of customers",
+            "The shop's location",
+            "The store size",
+            QuestionOption.A,
+            "The mode identifies the most frequently sold product.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Central Tendency",
+            "Doctors may use the mean to analyse:",
+            "Average patient blood pressure",
+            "Hospital building height",
+            "Parking spaces",
+            "Room numbers",
+            QuestionOption.A,
+            "Healthcare professionals often use averages to analyse medical measurements.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Central Tendency",
+            "Data scientists use measures of central tendency mainly to:",
+            "Summarise datasets before deeper analysis",
+            "Replace all statistical methods",
+            "Eliminate all errors",
+            "Predict the future perfectly",
+            QuestionOption.A,
+            "Mean, median, and mode provide a quick summary before performing advanced statistical analysis or machine learning.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Measures of Dispersion
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Measures of Dispersion",
+            "Measures of dispersion describe:",
+            "The centre of a dataset",
+            "The spread or variability of data",
+            "The largest value only",
+            "The total number of observations",
+            QuestionOption.B,
+            "Measures of dispersion show how widely the data values are spread around the centre.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Measures of Dispersion",
+            "Which of the following is a measure of dispersion?",
+            "Median",
+            "Mode",
+            "Range",
+            "Mean",
+            QuestionOption.C,
+            "The range measures the difference between the largest and smallest values.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Measures of Dispersion",
+            "The range of a dataset is calculated by:",
+            "Adding all values",
+            "Subtracting the smallest value from the largest value",
+            "Finding the average",
+            "Finding the middle value",
+            QuestionOption.B,
+            "Range = Maximum value − Minimum value.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Measures of Dispersion",
+            "If a dataset has a small dispersion, the values are:",
+            "Widely spread apart",
+            "Randomly arranged",
+            "Very different from each other",
+            "Close to one another",
+            QuestionOption.D,
+            "Small dispersion means the observations are clustered together.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Measures of Dispersion",
+            "Why do statisticians study dispersion?",
+            "To understand how consistent or varied the data is",
+            "To calculate percentages only",
+            "To sort data alphabetically",
+            "To remove data values",
+            QuestionOption.A,
+            "Dispersion helps determine how reliable, consistent, or variable a dataset is.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Variance and Standard Deviation
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Variance and Standard Deviation",
+            "Variance measures:",
+            "The spread of data around the mean",
+            "The middle value",
+            "The largest value",
+            "The number of observations",
+            QuestionOption.A,
+            "Variance measures how far data values are from the mean on average.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Variance and Standard Deviation",
+            "Standard deviation is:",
+            "The square root of variance",
+            "The cube of variance",
+            "Twice the variance",
+            "The average of the data",
+            QuestionOption.A,
+            "Standard deviation is obtained by taking the square root of the variance.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Variance and Standard Deviation",
+            "A higher standard deviation indicates:",
+            "Less variation",
+            "Greater variation in the data",
+            "No variation",
+            "The smallest value",
+            QuestionOption.B,
+            "A larger standard deviation means the data points are more spread out.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Variance and Standard Deviation",
+            "If every value in a dataset is identical, the standard deviation is:",
+            "1",
+            "Equal to the mean",
+            "The largest value",
+            "0",
+            QuestionOption.D,
+            "When all observations are the same, there is no variation, so the standard deviation is zero.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Variance and Standard Deviation",
+            "Which measure is most commonly used to describe data spread in statistics?",
+            "Standard deviation",
+            "Median",
+            "Mode",
+            "Frequency",
+            QuestionOption.A,
+            "Standard deviation is one of the most widely used measures of dispersion.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Measures of Dispersion
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Measures of Dispersion",
+            "Investors use standard deviation mainly to measure:",
+            "Investment risk",
+            "Interest rates only",
+            "Company age",
+            "Currency symbols",
+            QuestionOption.A,
+            "A higher standard deviation usually indicates greater investment risk.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Measures of Dispersion",
+            "Manufacturers monitor dispersion to:",
+            "Improve product consistency",
+            "Increase product weight",
+            "Reduce factory size",
+            "Count employees",
+            QuestionOption.A,
+            "Quality control relies on keeping variation as small as possible.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Measures of Dispersion",
+            "Machine learning algorithms use measures of dispersion to:",
+            "Understand data variability before training models",
+            "Replace all datasets",
+            "Delete incorrect values automatically",
+            "Generate passwords",
+            QuestionOption.A,
+            "Understanding data spread helps prepare features and improve model performance.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Measures of Dispersion",
+            "Scientists compare dispersion between experiments to:",
+            "Evaluate the consistency of results",
+            "Increase sample size automatically",
+            "Change the units of measurement",
+            "Find the maximum value only",
+            QuestionOption.A,
+            "Lower dispersion often indicates more consistent experimental results.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Measures of Dispersion",
+            "Measures of dispersion are important because they:",
+            "Describe how reliable and consistent data is alongside measures of central tendency",
+            "Always predict future events perfectly",
+            "Replace averages completely",
+            "Eliminate all uncertainty",
+            QuestionOption.A,
+            "Mean, median, and mode describe the centre, while dispersion explains how spread out the data is, giving a more complete understanding of the dataset.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Frequency Distribution
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Frequency Distribution",
+            "What is the main purpose of a frequency distribution?",
+            "To find the area under a graph",
+            "To organize data by showing how often values occur",
+            "To calculate probabilities only",
+            "To measure angles",
+            QuestionOption.B,
+            "A frequency distribution organizes raw data by showing how many times each value or group of values appears.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Frequency Distribution",
+            "What does 'frequency' represent in statistics?",
+            "The number of times a value occurs",
+            "The average of the data",
+            "The highest value",
+            "The total number of classes",
+            QuestionOption.A,
+            "Frequency simply means the count of occurrences of a value.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Frequency Distribution",
+            "Large datasets are easier to understand after they are:",
+            "Sorted alphabetically",
+            "Converted into equations",
+            "Organized into a frequency distribution",
+            "Multiplied by 10",
+            QuestionOption.C,
+            "Frequency distributions summarize large datasets in an organized way.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Frequency Distribution",
+            "Which type of data presentation is most useful for summarizing repeated observations?",
+            "Random notes",
+            "Paragraphs",
+            "Equations",
+            "Frequency tables",
+            QuestionOption.D,
+            "Frequency tables efficiently summarize repeated observations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Frequency Distribution",
+            "A frequency distribution is commonly used before creating:",
+            "Statistical graphs and charts",
+            "Computer games",
+            "Programming languages",
+            "Chemical formulas",
+            QuestionOption.A,
+            "Frequency distributions are often used to create histograms, bar charts, and other statistical graphs.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Creating and Analyzing Frequency Distributions
+        // ==========================================================
+
+        AddQuestion(
+            "Creating and Analyzing Frequency Distributions",
+            "What is a class interval?",
+            "The gap between two graphs",
+            "A range of values grouped together",
+            "The largest observation",
+            "The average frequency",
+            QuestionOption.B,
+            "A class interval groups a range of values into one category.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Creating and Analyzing Frequency Distributions",
+            "Which frequency keeps adding previous frequencies together?",
+            "Relative frequency",
+            "Simple frequency",
+            "Cumulative frequency",
+            "Percentage frequency",
+            QuestionOption.C,
+            "Cumulative frequency is the running total of frequencies.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Creating and Analyzing Frequency Distributions",
+            "Relative frequency represents:",
+            "The total number of observations",
+            "The largest class interval",
+            "The percentage or proportion of observations",
+            "The difference between two values",
+            QuestionOption.C,
+            "Relative frequency expresses frequency as a fraction or percentage of the total.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Creating and Analyzing Frequency Distributions",
+            "Which type of data usually requires class intervals?",
+            "Small datasets with only two values",
+            "Ungrouped categorical data",
+            "Very small samples",
+            "Large grouped numerical datasets",
+            QuestionOption.D,
+            "Large numerical datasets are easier to analyze using grouped class intervals.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Creating and Analyzing Frequency Distributions",
+            "Why are frequency tables useful?",
+            "They make large datasets easier to analyze",
+            "They increase sample size",
+            "They eliminate errors completely",
+            "They replace calculations",
+            QuestionOption.A,
+            "Frequency tables organize information so patterns become easier to identify.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Frequency Distribution
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Frequency Distribution",
+            "Hospitals use frequency distributions to:",
+            "Track patient statistics",
+            "Repair medical equipment",
+            "Write prescriptions",
+            "Design buildings",
+            QuestionOption.A,
+            "Hospitals analyze patient records using frequency distributions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Frequency Distribution",
+            "Businesses use frequency distributions mainly to:",
+            "Organize sales and customer data",
+            "Build roads",
+            "Generate electricity",
+            "Measure rainfall",
+            QuestionOption.B,
+            "Businesses summarize sales and customer information using frequency distributions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Frequency Distribution",
+            "Researchers use frequency distributions to:",
+            "Predict earthquakes directly",
+            "Replace experiments",
+            "Summarize collected data before analysis",
+            "Create programming languages",
+            QuestionOption.C,
+            "Researchers first organize collected data before performing statistical analysis.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Frequency Distribution",
+            "Data scientists use frequency distributions to:",
+            "Improve internet speed",
+            "Generate passwords",
+            "Charge batteries",
+            "Understand patterns in datasets before modelling",
+            QuestionOption.D,
+            "Frequency distributions help identify trends before building machine learning models.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Frequency Distribution",
+            "One major advantage of frequency distributions is that they:",
+            "Reveal patterns and trends hidden in raw data",
+            "Guarantee perfect predictions",
+            "Reduce the need for statistics",
+            "Eliminate missing values",
+            QuestionOption.A,
+            "Organized data makes trends, clusters, and unusual values much easier to detect.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Histograms
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Histograms",
+            "What is the main purpose of a histogram?",
+            "To display continuous data using adjacent bars",
+            "To compare categories with gaps",
+            "To calculate averages",
+            "To solve algebraic equations",
+            QuestionOption.A,
+            "A histogram represents the frequency distribution of continuous numerical data using bars that touch each other.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Histograms",
+            "Unlike a bar chart, the bars in a histogram are:",
+            "Always coloured differently",
+            "Connected without gaps",
+            "Displayed horizontally",
+            "Ordered alphabetically",
+            QuestionOption.B,
+            "Histogram bars touch because they represent continuous intervals of data.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Histograms",
+            "A histogram is mainly used to visualize:",
+            "Categorical data",
+            "Names of objects",
+            "Continuous numerical data",
+            "Written observations",
+            QuestionOption.C,
+            "Histograms are designed for continuous numerical datasets grouped into intervals.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Histograms",
+            "The height of each histogram bar represents the:",
+            "Average value",
+            "Median",
+            "Class width",
+            "Frequency of observations",
+            QuestionOption.D,
+            "Each bar's height shows how many observations fall within that interval.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Histograms",
+            "Histograms help us understand the:",
+            "Shape and distribution of data",
+            "Programming syntax",
+            "Chemical reactions",
+            "Geographical locations",
+            QuestionOption.A,
+            "Histograms reveal the overall distribution, spread, and concentration of data.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Creating and Interpreting Histograms
+        // ==========================================================
+
+        AddQuestion(
+            "Creating and Interpreting Histograms",
+            "Before drawing a histogram, data is first grouped into:",
+            "Sentences",
+            "Class intervals",
+            "Equations",
+            "Coordinates",
+            QuestionOption.B,
+            "Continuous data is grouped into class intervals before plotting.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Creating and Interpreting Histograms",
+            "A histogram that is balanced on both sides is called:",
+            "Random",
+            "Uniform",
+            "Symmetric",
+            "Incomplete",
+            QuestionOption.C,
+            "A symmetric histogram has approximately equal shapes on both sides of the centre.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Creating and Interpreting Histograms",
+            "A distribution with a long tail on the right is called:",
+            "Left-skewed",
+            "Normal",
+            "Uniform",
+            "Right-skewed",
+            QuestionOption.D,
+            "A right-skewed distribution has most data on the left with a long tail extending to the right.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Creating and Interpreting Histograms",
+            "The width of each histogram bar represents:",
+            "The class interval",
+            "The average value",
+            "The frequency",
+            "The median",
+            QuestionOption.A,
+            "Each bar spans one class interval on the horizontal axis.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Creating and Interpreting Histograms",
+            "Interpreting a histogram helps identify:",
+            "Patterns, spread, and outliers",
+            "Programming errors",
+            "Grammar mistakes",
+            "Map locations",
+            QuestionOption.A,
+            "Histograms allow us to observe trends, variability, clusters, and unusual values.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Histograms
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Histograms",
+            "Manufacturing industries use histograms mainly for:",
+            "Quality control",
+            "Writing reports",
+            "Designing websites",
+            "Managing passwords",
+            QuestionOption.A,
+            "Quality engineers use histograms to monitor production consistency.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Histograms",
+            "Researchers use histograms to:",
+            "Summarize experimental data",
+            "Create animations",
+            "Store databases",
+            "Build robots",
+            QuestionOption.B,
+            "Histograms help researchers quickly understand collected numerical data.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Histograms",
+            "Machine learning practitioners often inspect histograms to:",
+            "Write code faster",
+            "Increase internet speed",
+            "Understand feature distributions",
+            "Reduce file sizes",
+            QuestionOption.C,
+            "Visualizing feature distributions helps during data preprocessing and model building.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Histograms",
+            "Businesses use histograms to analyze:",
+            "Computer hardware",
+            "Programming languages",
+            "Music playlists",
+            "Sales and customer behaviour",
+            QuestionOption.D,
+            "Histograms help businesses identify purchasing patterns and trends.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Histograms",
+            "One major advantage of histograms is that they:",
+            "Provide an easy visual understanding of data distribution",
+            "Guarantee accurate predictions",
+            "Replace statistical calculations",
+            "Remove incorrect data automatically",
+            QuestionOption.A,
+            "Histograms make it easier to visualize the shape, spread, and concentration of numerical data.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Box Plots
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Box Plots",
+            "A box plot is mainly used to:",
+            "Show the distribution of numerical data",
+            "Draw geometric figures",
+            "Display programming code",
+            "Compare colours",
+            QuestionOption.A,
+            "A box plot summarizes the distribution of numerical data using the five-number summary.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Box Plots",
+            "The line inside the box of a box plot represents the:",
+            "Mean",
+            "Median",
+            "Mode",
+            "Range",
+            QuestionOption.B,
+            "The line inside the box represents the median (Q2) of the dataset.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Box Plots",
+            "Which of the following is NOT part of the five-number summary?",
+            "Minimum",
+            "Maximum",
+            "Variance",
+            "Median",
+            QuestionOption.C,
+            "The five-number summary consists of minimum, Q1, median, Q3, and maximum. Variance is not included.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Box Plots",
+            "The box in a box plot represents:",
+            "The total range",
+            "The mean deviation",
+            "Only the median",
+            "The interquartile range (Q1 to Q3)",
+            QuestionOption.D,
+            "The box spans from the first quartile (Q1) to the third quartile (Q3), representing the interquartile range.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Box Plots",
+            "Box plots are especially useful for:",
+            "Comparing distributions of datasets",
+            "Writing algorithms",
+            "Creating databases",
+            "Drawing triangles",
+            QuestionOption.A,
+            "Box plots make it easy to compare spread, centre, and variability across multiple datasets.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Creating and Interpreting Box Plots
+        // ==========================================================
+
+        AddQuestion(
+            "Creating and Interpreting Box Plots",
+            "Before drawing a box plot, you first calculate the:",
+            "Five-number summary",
+            "Programming complexity",
+            "Equation of a line",
+            "Circle radius",
+            QuestionOption.A,
+            "The five-number summary forms the basis of every box plot.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Creating and Interpreting Box Plots",
+            "The interquartile range (IQR) is calculated as:",
+            "Maximum − Minimum",
+            "Q3 − Q1",
+            "Median − Mean",
+            "Q2 − Q1",
+            QuestionOption.B,
+            "The interquartile range measures the spread of the middle 50% of the data.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Creating and Interpreting Box Plots",
+            "Points lying far outside the whiskers are called:",
+            "Modes",
+            "Quartiles",
+            "Outliers",
+            "Frequencies",
+            QuestionOption.C,
+            "Outliers are unusually large or small values compared to the rest of the dataset.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Creating and Interpreting Box Plots",
+            "Longer whiskers generally indicate:",
+            "A higher median",
+            "A smaller dataset",
+            "Higher frequency",
+            "Greater spread of data",
+            QuestionOption.D,
+            "Long whiskers suggest greater variability outside the middle 50% of observations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Creating and Interpreting Box Plots",
+            "Comparing multiple box plots helps identify:",
+            "Differences in centre, spread, and outliers",
+            "Programming bugs",
+            "Chemical reactions",
+            "Network latency",
+            QuestionOption.A,
+            "Multiple box plots allow quick comparison of different datasets.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Box Plots
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Box Plots",
+            "Researchers commonly use box plots to:",
+            "Compare experimental datasets",
+            "Write essays",
+            "Design logos",
+            "Create passwords",
+            QuestionOption.A,
+            "Box plots allow researchers to compare distributions efficiently.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Box Plots",
+            "Healthcare professionals use box plots to analyse:",
+            "Patient measurement distributions",
+            "Computer hardware",
+            "Website layouts",
+            "Email messages",
+            QuestionOption.B,
+            "Medical researchers compare measurements such as blood pressure or recovery times using box plots.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Box Plots",
+            "Data scientists use box plots mainly to:",
+            "Visualize distributions and detect outliers",
+            "Increase processor speed",
+            "Write operating systems",
+            "Compress images",
+            QuestionOption.C,
+            "Box plots are a standard tool for exploratory data analysis.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Box Plots",
+            "Financial analysts may use box plots to compare:",
+            "Programming languages",
+            "File formats",
+            "Internet speeds",
+            "Investment returns",
+            QuestionOption.D,
+            "Investment returns are often compared using box plots to study variability and risk.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Box Plots",
+            "One major advantage of box plots is that they:",
+            "Summarize large datasets quickly while highlighting spread and outliers",
+            "Replace all statistical calculations",
+            "Guarantee perfect predictions",
+            "Automatically remove incorrect data",
+            QuestionOption.A,
+            "Box plots provide a compact summary of the centre, spread, and unusual values in a dataset.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Correlation
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Correlation",
+            "Correlation measures the:",
+            "Relationship between two variables",
+            "Area of a graph",
+            "Volume of a solid",
+            "Speed of an object",
+            QuestionOption.A,
+            "Correlation measures how two variables change in relation to each other.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Correlation",
+            "A positive correlation means:",
+            "One variable increases while the other decreases",
+            "Both variables tend to increase or decrease together",
+            "The variables are unrelated",
+            "The variables are always equal",
+            QuestionOption.B,
+            "Positive correlation means both variables move in the same direction.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Correlation",
+            "Which graph is commonly used to visualize correlation?",
+            "Pie chart",
+            "Histogram",
+            "Scatter plot",
+            "Box plot",
+            QuestionOption.C,
+            "Scatter plots help visualize relationships between two variables.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Correlation",
+            "Correlation mainly describes:",
+            "The colour of data",
+            "The size of data",
+            "The average value",
+            "The strength and direction of a relationship",
+            QuestionOption.D,
+            "Correlation indicates both how strong and in which direction two variables are related.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Correlation",
+            "Correlation is widely used in:",
+            "Statistics and data analysis",
+            "Cooking recipes",
+            "Drawing cartoons",
+            "Writing poetry",
+            QuestionOption.A,
+            "Correlation is one of the most important statistical tools for studying relationships.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating and Interpreting Correlation
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating and Interpreting Correlation",
+            "The Pearson correlation coefficient is commonly represented by:",
+            "r",
+            "π",
+            "Δ",
+            "λ",
+            QuestionOption.A,
+            "The symbol r is commonly used for Pearson's correlation coefficient.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating and Interpreting Correlation",
+            "A correlation coefficient close to +1 indicates:",
+            "A strong positive relationship",
+            "No relationship",
+            "A strong negative relationship",
+            "Random data",
+            QuestionOption.B,
+            "Values close to +1 indicate a very strong positive linear relationship.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating and Interpreting Correlation",
+            "A correlation coefficient close to -1 indicates:",
+            "A strong positive relationship",
+            "No relationship",
+            "A strong negative relationship",
+            "A perfect average",
+            QuestionOption.C,
+            "Values close to -1 indicate a strong negative linear relationship.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating and Interpreting Correlation",
+            "A correlation coefficient close to 0 generally indicates:",
+            "A perfect positive relationship",
+            "A perfect negative relationship",
+            "Equal variables",
+            "Little or no linear relationship",
+            QuestionOption.D,
+            "A value near zero suggests little or no linear correlation between variables.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating and Interpreting Correlation",
+            "Correlation helps analysts:",
+            "Understand relationships between variables",
+            "Predict lottery numbers",
+            "Replace experiments",
+            "Guarantee future outcomes",
+            QuestionOption.A,
+            "Correlation helps reveal relationships but does not guarantee predictions.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Correlation
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Correlation",
+            "Businesses often use correlation to analyse:",
+            "Sales and advertising relationships",
+            "Font styles",
+            "Keyboard layouts",
+            "File sizes",
+            QuestionOption.A,
+            "Businesses study whether advertising spending is related to sales performance.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Correlation",
+            "Healthcare researchers use correlation to study:",
+            "Relationships between health factors",
+            "Computer processors",
+            "Programming languages",
+            "Music genres",
+            QuestionOption.B,
+            "Correlation helps researchers examine links between variables such as exercise and blood pressure.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Correlation",
+            "Machine learning commonly uses correlation to:",
+            "Increase internet speed",
+            "Reduce monitor size",
+            "Identify relationships between features",
+            "Compress files",
+            QuestionOption.C,
+            "Correlation analysis helps select useful features and understand datasets.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Correlation",
+            "Economists may use correlation to study:",
+            "Programming bugs",
+            "Computer memory",
+            "Website themes",
+            "Relationships between inflation and unemployment",
+            QuestionOption.D,
+            "Economists frequently study relationships between important economic indicators.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Correlation",
+            "Which statement about correlation is TRUE?",
+            "Correlation does not necessarily imply causation",
+            "Correlation always proves one variable causes another",
+            "Correlation guarantees future results",
+            "Correlation only applies to finance",
+            QuestionOption.A,
+            "Two variables may be correlated without one causing the other. Correlation does not imply causation.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Regression
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Regression",
+            "Regression is primarily used to:",
+            "Model relationships and make predictions",
+            "Calculate probabilities",
+            "Find the median of a dataset",
+            "Draw histograms",
+            QuestionOption.A,
+            "Regression models the relationship between variables and helps predict future outcomes.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Regression",
+            "In regression analysis, the variable being predicted is called the:",
+            "Dependent variable",
+            "Independent variable",
+            "Constant",
+            "Coefficient",
+            QuestionOption.B,
+            "The dependent variable is the outcome that regression attempts to predict.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Regression",
+            "Regression attempts to find the:",
+            "Shortest path",
+            "Largest number",
+            "Best relationship between variables",
+            "Median value",
+            QuestionOption.C,
+            "Regression identifies the mathematical relationship that best fits the observed data.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Regression",
+            "Regression is commonly used for:",
+            "Sorting numbers",
+            "Drawing circles",
+            "Finding probabilities only",
+            "Prediction and trend analysis",
+            QuestionOption.D,
+            "Regression is widely used to forecast values and identify trends.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Regression",
+            "Regression analysis is important because it helps:",
+            "Predict future values using existing data",
+            "Measure only averages",
+            "Count frequencies only",
+            "Replace experiments entirely",
+            QuestionOption.A,
+            "Regression uses patterns in existing data to estimate future outcomes.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Linear Regression and Prediction Models
+        // ==========================================================
+
+        AddQuestion(
+            "Linear Regression and Prediction Models",
+            "Linear regression fits data using:",
+            "A straight line",
+            "A circle",
+            "A triangle",
+            "A parabola",
+            QuestionOption.A,
+            "Linear regression models the relationship between variables using the best-fit straight line.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Linear Regression and Prediction Models",
+            "The line that best represents the relationship between variables is called the:",
+            "Median line",
+            "Line of best fit",
+            "Probability line",
+            "Reference line",
+            QuestionOption.B,
+            "The line of best fit minimises prediction errors across the dataset.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Linear Regression and Prediction Models",
+            "A residual is the:",
+            "Average of all values",
+            "Slope of the line",
+            "Difference between the observed and predicted value",
+            "Intercept of the graph",
+            QuestionOption.C,
+            "Residuals measure prediction errors by comparing actual and predicted values.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Linear Regression and Prediction Models",
+            "The coefficient of a regression model represents:",
+            "The sample size",
+            "The graph colour",
+            "The dataset order",
+            "The effect of an independent variable on the prediction",
+            QuestionOption.D,
+            "Regression coefficients show how much the predicted value changes when an independent variable changes.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Linear Regression and Prediction Models",
+            "Linear regression models are mainly used to:",
+            "Estimate unknown values from known data",
+            "Calculate only averages",
+            "Replace probability theory",
+            "Create pie charts",
+            QuestionOption.A,
+            "Regression equations are used to predict unknown values based on observed relationships.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Regression
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Regression",
+            "Businesses use regression to:",
+            "Forecast sales and demand",
+            "Create passwords",
+            "Format documents",
+            "Compress files",
+            QuestionOption.A,
+            "Regression helps businesses predict future sales, revenue, and customer behaviour.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Regression",
+            "Healthcare uses regression to:",
+            "Predict disease risk and patient outcomes",
+            "Play music",
+            "Build operating systems",
+            "Design keyboards",
+            QuestionOption.B,
+            "Regression models help estimate medical risks and treatment outcomes.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Regression",
+            "Machine learning frequently uses regression to:",
+            "Compress images",
+            "Increase internet speed",
+            "Predict continuous values",
+            "Encrypt passwords",
+            QuestionOption.C,
+            "Regression algorithms are widely used to predict continuous numerical values.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Regression",
+            "Economists use regression to analyse:",
+            "Font styles",
+            "Software bugs",
+            "Music playlists",
+            "Relationships between economic variables",
+            QuestionOption.D,
+            "Regression helps economists study variables such as inflation, GDP, and unemployment.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Regression",
+            "Regression is valuable because it:",
+            "Finds patterns and predicts future outcomes from data",
+            "Always guarantees perfect predictions",
+            "Only works for financial data",
+            "Replaces all statistical methods",
+            QuestionOption.A,
+            "Regression provides useful predictions based on observed patterns, but no model is perfectly accurate.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Sampling
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Sampling",
+            "Sampling is the process of:",
+            "Studying an entire population only",
+            "Selecting a smaller group from a population for study",
+            "Creating new data",
+            "Removing incorrect data",
+            QuestionOption.B,
+            "Sampling involves selecting a subset of a population to make conclusions about the whole group.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Sampling",
+            "The complete group being studied is called the:",
+            "Sample",
+            "Population",
+            "Variable",
+            "Dataset",
+            QuestionOption.B,
+            "A population is the entire collection of individuals or items of interest.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Sampling",
+            "Why is sampling commonly used?",
+            "To avoid collecting data",
+            "To replace statistics",
+            "Because studying the whole population is often expensive or impractical",
+            "To guarantee perfect results",
+            QuestionOption.C,
+            "Sampling saves time, money, and effort while still providing useful information.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Sampling",
+            "A sample should ideally be:",
+            "As small as possible",
+            "Completely random without purpose",
+            "Larger than the population",
+            "Representative of the population",
+            QuestionOption.D,
+            "A representative sample reflects the characteristics of the entire population.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Sampling",
+            "Good sampling allows statisticians to:",
+            "Draw conclusions about the population",
+            "Guarantee every prediction is correct",
+            "Avoid analysing data",
+            "Replace experiments completely",
+            QuestionOption.A,
+            "Proper sampling helps make reliable conclusions about the whole population.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Sampling Methods and Techniques
+        // ==========================================================
+
+        AddQuestion(
+            "Sampling Methods and Techniques",
+            "Which sampling method gives every member an equal chance of being selected?",
+            "Random sampling",
+            "Convenience sampling",
+            "Judgment sampling",
+            "Quota sampling",
+            QuestionOption.A,
+            "Random sampling provides every population member with an equal selection chance.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Sampling Methods and Techniques",
+            "Stratified sampling divides the population into:",
+            "Time intervals",
+            "Groups with similar characteristics",
+            "Random numbers",
+            "Equal-sized samples only",
+            QuestionOption.B,
+            "Stratified sampling separates the population into meaningful groups before sampling.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Sampling Methods and Techniques",
+            "Systematic sampling usually selects every:",
+            "Third variable",
+            "Largest value",
+            "Nth member after a starting point",
+            "Oldest participant",
+            QuestionOption.C,
+            "Systematic sampling follows a fixed interval after choosing a random starting point.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Sampling Methods and Techniques",
+            "Cluster sampling involves selecting:",
+            "Only individuals with high scores",
+            "One person from every family",
+            "Only volunteers",
+            "Entire groups or clusters from the population",
+            QuestionOption.D,
+            "Cluster sampling randomly selects complete groups rather than individual members.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Sampling Methods and Techniques",
+            "Choosing the right sampling method helps improve:",
+            "The reliability of statistical conclusions",
+            "The colour of charts",
+            "Internet speed",
+            "Computer memory",
+            QuestionOption.A,
+            "Appropriate sampling methods reduce bias and improve result accuracy.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Sampling
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Sampling",
+            "Opinion polls before elections mainly use:",
+            "Sampling",
+            "Guesswork",
+            "Random drawing",
+            "Predictions without data",
+            QuestionOption.A,
+            "Polls survey a sample of voters to estimate the opinions of the entire population.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Sampling",
+            "Healthcare researchers use sampling because:",
+            "Testing every individual is often impossible",
+            "Hospitals have no data",
+            "Sampling guarantees perfect results",
+            "Patients refuse treatment",
+            QuestionOption.B,
+            "Researchers study representative samples when examining an entire population isn't practical.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Sampling",
+            "Machine learning datasets often use sampling to:",
+            "Replace algorithms",
+            "Increase internet speed",
+            "Reduce computation while maintaining useful information",
+            "Create new hardware",
+            QuestionOption.C,
+            "Sampling allows models to train efficiently while preserving representative data.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Sampling",
+            "Businesses commonly use sampling to:",
+            "Replace customers",
+            "Increase taxes",
+            "Delete databases",
+            "Study customer satisfaction through surveys",
+            QuestionOption.D,
+            "Businesses survey a sample of customers to understand the opinions of the larger customer base.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Sampling",
+            "Effective sampling is valuable because it:",
+            "Provides reliable insights without studying every member",
+            "Guarantees perfect predictions",
+            "Eliminates all uncertainty",
+            "Makes statistics unnecessary",
+            QuestionOption.A,
+            "Sampling enables efficient analysis while maintaining reasonable accuracy when done correctly.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Hypothesis Testing
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Hypothesis Testing",
+            "A hypothesis is:",
+            "A prediction or assumption that can be tested",
+            "A proven scientific law",
+            "A type of graph",
+            "A mathematical constant",
+            QuestionOption.A,
+            "A hypothesis is a statement or assumption that researchers test using statistical evidence.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Hypothesis Testing",
+            "The null hypothesis usually represents:",
+            "The researcher's expectation",
+            "No effect or no difference",
+            "A successful experiment",
+            "The final conclusion",
+            QuestionOption.B,
+            "The null hypothesis assumes there is no significant effect or difference until evidence suggests otherwise.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Hypothesis Testing",
+            "The alternative hypothesis states:",
+            "There is no relationship",
+            "The sample size",
+            "There is an effect or difference",
+            "The experiment has ended",
+            QuestionOption.C,
+            "The alternative hypothesis represents the claim that an effect or relationship exists.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Hypothesis Testing",
+            "Hypothesis testing mainly helps researchers:",
+            "Memorise formulas",
+            "Collect more variables",
+            "Draw graphs automatically",
+            "Make decisions using sample data",
+            QuestionOption.D,
+            "Hypothesis testing uses sample evidence to decide whether there is enough support for a claim.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Hypothesis Testing",
+            "The purpose of hypothesis testing is to:",
+            "Evaluate evidence before making conclusions",
+            "Guarantee every result is correct",
+            "Remove uncertainty completely",
+            "Replace scientific experiments",
+            QuestionOption.A,
+            "Statistical hypothesis testing helps make evidence-based decisions while acknowledging uncertainty.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Statistical Tests and Significance Levels
+        // ==========================================================
+
+        AddQuestion(
+            "Statistical Tests and Significance Levels",
+            "A p-value measures:",
+            "The strength of evidence against the null hypothesis",
+            "The sample size",
+            "The average of the dataset",
+            "The graph's slope",
+            QuestionOption.A,
+            "Smaller p-values indicate stronger evidence against the null hypothesis.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Statistical Tests and Significance Levels",
+            "The significance level is commonly represented by:",
+            "β",
+            "α",
+            "π",
+            "λ",
+            QuestionOption.B,
+            "The significance level, usually denoted by α, defines the threshold for rejecting the null hypothesis.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Statistical Tests and Significance Levels",
+            "If the p-value is less than the significance level, we usually:",
+            "Accept the null hypothesis",
+            "Collect no more data",
+            "Reject the null hypothesis",
+            "Ignore the results",
+            QuestionOption.C,
+            "When p < α, there is sufficient evidence to reject the null hypothesis.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Statistical Tests and Significance Levels",
+            "A critical region is the set of values where we:",
+            "Calculate the average",
+            "Measure variance",
+            "Find the sample size",
+            "Reject the null hypothesis",
+            QuestionOption.D,
+            "Test statistics that fall within the critical region lead to rejection of the null hypothesis.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Statistical Tests and Significance Levels",
+            "Hypothesis tests help determine whether observed differences are:",
+            "Statistically significant",
+            "Always correct",
+            "Randomly generated",
+            "Impossible to explain",
+            QuestionOption.A,
+            "Statistical tests determine whether observed differences are likely due to chance or reflect real effects.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Hypothesis Testing
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Hypothesis Testing",
+            "Medical researchers use hypothesis testing to:",
+            "Evaluate whether new treatments are effective",
+            "Create medical equipment",
+            "Design hospital buildings",
+            "Store patient records",
+            QuestionOption.A,
+            "Clinical trials use hypothesis testing to determine whether treatments produce meaningful improvements.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Hypothesis Testing",
+            "Businesses commonly use hypothesis testing to:",
+            "Compare products, marketing campaigns, or customer behaviour",
+            "Manufacture hardware",
+            "Increase internet speed",
+            "Create databases",
+            QuestionOption.B,
+            "Businesses analyse data to determine whether changes produce statistically significant improvements.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Hypothesis Testing",
+            "Machine learning practitioners often use hypothesis testing to:",
+            "Increase storage capacity",
+            "Replace all algorithms",
+            "Compare model performance and validate improvements",
+            "Build computer processors",
+            QuestionOption.C,
+            "Statistical tests help determine whether one model performs significantly better than another.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Hypothesis Testing",
+            "Financial analysts use hypothesis testing to:",
+            "Create passwords",
+            "Print reports",
+            "Manage computer memory",
+            "Evaluate investment strategies using data",
+            QuestionOption.D,
+            "Hypothesis testing helps determine whether investment strategies outperform benchmarks.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Hypothesis Testing",
+            "The greatest benefit of hypothesis testing is that it:",
+            "Supports objective, evidence-based decision making",
+            "Guarantees perfect predictions",
+            "Removes all uncertainty",
+            "Eliminates the need for data collection",
+            QuestionOption.A,
+            "Hypothesis testing provides a systematic framework for making informed decisions based on statistical evidence.",
+            DifficultyLevel.Advance,
+            5);
+
+
 
 
 
