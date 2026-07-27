@@ -13655,6 +13655,1720 @@ public static class PracticeQuestionSeeder
             "Mathematical induction is a fundamental proof technique with applications in theoretical and practical fields.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Introduction to Matrix Basics
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Matrix Basics",
+            "A matrix is best described as:",
+            "A single number",
+            "A collection of equations",
+            "A rectangular arrangement of numbers in rows and columns",
+            "A geometric figure",
+            QuestionOption.C,
+            "A matrix is a rectangular array of numbers arranged in rows and columns.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Matrix Basics",
+            "The order of a matrix is written as:",
+            "Columns × Rows",
+            "Rows × Columns",
+            "Rows + Columns",
+            "Rows − Columns",
+            QuestionOption.B,
+            "The order of a matrix is expressed as the number of rows × the number of columns.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Matrix Basics",
+            "A matrix with 3 rows and 2 columns has the order:",
+            "2 × 3",
+            "3 × 2",
+            "5 × 1",
+            "6 × 2",
+            QuestionOption.B,
+            "The matrix has 3 rows and 2 columns, so its order is 3 × 2.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Matrix Basics",
+            "Rows in a matrix are arranged:",
+            "Vertically",
+            "Diagonally",
+            "Randomly",
+            "Horizontally",
+            QuestionOption.D,
+            "Rows extend horizontally across a matrix.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Matrix Basics",
+            "Matrices are primarily used to:",
+            "Organize and manipulate numerical data",
+            "Measure physical distances",
+            "Calculate probabilities only",
+            "Draw geometric figures",
+            QuestionOption.A,
+            "Matrices provide an efficient way to organize and perform operations on numerical data.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Elements and Representation of Matrices
+        // ==========================================================
+
+        AddQuestion(
+            "Elements and Representation of Matrices",
+            "An individual value inside a matrix is called a:",
+            "Variable",
+            "Element",
+            "Coefficient",
+            "Factor",
+            QuestionOption.B,
+            "Each number inside a matrix is known as an element.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Elements and Representation of Matrices",
+            "The element a₂₃ is located in:",
+            "Row 2, Column 3",
+            "Row 3, Column 2",
+            "Column 2 only",
+            "Row 1, Column 3",
+            QuestionOption.A,
+            "The first subscript represents the row, and the second represents the column.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Elements and Representation of Matrices",
+            "A matrix with the same number of rows and columns is called a:",
+            "Diagonal matrix",
+            "Identity matrix",
+            "Square matrix",
+            "Column matrix",
+            QuestionOption.C,
+            "A square matrix has an equal number of rows and columns.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Elements and Representation of Matrices",
+            "How many elements are in a 2 × 4 matrix?",
+            "4",
+            "6",
+            "8",
+            "10",
+            QuestionOption.C,
+            "A 2 × 4 matrix contains 2 × 4 = 8 elements.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Elements and Representation of Matrices",
+            "Matrices are classified based on:",
+            "Their size and structure",
+            "Their colour",
+            "Their position on paper",
+            "Their age",
+            QuestionOption.A,
+            "Matrices are classified by their dimensions and structural properties.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Matrix Basics
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Matrix Basics",
+            "Matrices are widely used in:",
+            "Computer graphics",
+            "Cooking",
+            "Photography",
+            "Literature",
+            QuestionOption.A,
+            "Matrices are fundamental in computer graphics for transformations and rendering.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Basics",
+            "Which field commonly uses matrices for handling datasets?",
+            "Data science",
+            "History",
+            "Music",
+            "Linguistics",
+            QuestionOption.A,
+            "Data science uses matrices to organize and process large amounts of numerical data.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Basics",
+            "Machine learning algorithms often represent data using:",
+            "Matrices",
+            "Circles",
+            "Triangles",
+            "Fractions only",
+            QuestionOption.A,
+            "Matrices efficiently store and manipulate training data in machine learning.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Basics",
+            "Engineers use matrices to:",
+            "Solve systems of equations and model problems",
+            "Write novels",
+            "Compose music",
+            "Study grammar",
+            QuestionOption.A,
+            "Matrices are widely used in engineering calculations and modelling.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Basics",
+            "Why are matrices important in modern mathematics and technology?",
+            "They organize data efficiently and support applications in computer graphics, engineering, data science, and machine learning.",
+            "They are only useful in school mathematics.",
+            "They replace all algebraic methods.",
+            "They are only used to store numbers.",
+            QuestionOption.A,
+            "Matrices form the foundation of many computational and scientific applications.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Types of Matrices
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Types of Matrices",
+            "A matrix having only one row is called a:",
+            "Column matrix",
+            "Square matrix",
+            "Row matrix",
+            "Diagonal matrix",
+            QuestionOption.C,
+            "A row matrix consists of exactly one row.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Types of Matrices",
+            "A matrix having only one column is called a:",
+            "Identity matrix",
+            "Column matrix",
+            "Rectangular matrix",
+            "Zero matrix",
+            QuestionOption.B,
+            "A column matrix consists of exactly one column.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Types of Matrices",
+            "A square matrix has:",
+            "Equal rows and columns",
+            "Only one row",
+            "More rows than columns",
+            "More columns than rows",
+            QuestionOption.A,
+            "A square matrix has the same number of rows and columns.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Types of Matrices",
+            "Which matrix has all of its elements equal to zero?",
+            "Identity matrix",
+            "Scalar matrix",
+            "Diagonal matrix",
+            "Zero matrix",
+            QuestionOption.D,
+            "Every element of a zero matrix is 0.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Types of Matrices",
+            "An identity matrix has:",
+            "1s on the main diagonal and 0s elsewhere",
+            "All elements equal to 1",
+            "Only diagonal elements equal to 2",
+            "No diagonal elements",
+            QuestionOption.A,
+            "In an identity matrix, diagonal entries are 1 while all other entries are 0.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Properties and Classification of Matrices
+        // ==========================================================
+
+        AddQuestion(
+            "Properties and Classification of Matrices",
+            "A rectangular matrix is one in which:",
+            "Rows and columns are unequal",
+            "Rows and columns are equal",
+            "All elements are zero",
+            "All diagonal elements are one",
+            QuestionOption.A,
+            "A rectangular matrix has a different number of rows and columns.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Properties and Classification of Matrices",
+            "A diagonal matrix is a square matrix in which:",
+            "Only diagonal elements may be non-zero",
+            "Every element is non-zero",
+            "All rows are identical",
+            "All columns are identical",
+            QuestionOption.A,
+            "All off-diagonal elements of a diagonal matrix are zero.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Properties and Classification of Matrices",
+            "A scalar matrix is a:",
+            "Diagonal matrix with equal diagonal elements",
+            "Zero matrix",
+            "Rectangular matrix",
+            "Column matrix",
+            QuestionOption.A,
+            "A scalar matrix is a diagonal matrix whose diagonal entries are all equal.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Properties and Classification of Matrices",
+            "Which of the following is always a square matrix?",
+            "Identity matrix",
+            "Row matrix",
+            "Column matrix",
+            "Rectangular matrix",
+            QuestionOption.A,
+            "Identity matrices are defined only for square matrices.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Properties and Classification of Matrices",
+            "Matrices are classified mainly according to:",
+            "Their dimensions and element arrangement",
+            "Their colour",
+            "Their age",
+            "Their notation style",
+            QuestionOption.A,
+            "The number of rows, columns, and arrangement of elements determine the type of matrix.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Types of Matrices
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Types of Matrices",
+            "Identity matrices are commonly used in:",
+            "Matrix multiplication",
+            "Drawing graphs",
+            "Probability only",
+            "Geometry only",
+            QuestionOption.A,
+            "The identity matrix acts as the multiplicative identity in matrix multiplication.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Types of Matrices",
+            "Diagonal matrices simplify calculations because:",
+            "Most off-diagonal elements are zero",
+            "They have no rows",
+            "Every element is one",
+            "They are rectangular",
+            QuestionOption.A,
+            "Having zeros outside the main diagonal makes many computations easier.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Types of Matrices",
+            "Which field commonly uses matrices to represent image transformations?",
+            "Computer graphics",
+            "Literature",
+            "Music",
+            "Biology",
+            QuestionOption.A,
+            "Transformation matrices are widely used in computer graphics.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Types of Matrices",
+            "Matrices play an important role in:",
+            "Machine learning and scientific computing",
+            "Painting only",
+            "Poetry",
+            "Sports statistics only",
+            QuestionOption.A,
+            "Matrices are fundamental in machine learning, simulations, and scientific computations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Types of Matrices",
+            "Why is it important to understand different types of matrices?",
+            "Different matrix types have unique properties that make them useful in engineering, graphics, cryptography, machine learning, and mathematical computations.",
+            "They are only useful for examinations.",
+            "All matrices behave exactly the same.",
+            "Only square matrices have practical applications.",
+            QuestionOption.A,
+            "Choosing the appropriate matrix type simplifies computations and enables many real-world applications.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Matrix Operations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Matrix Operations",
+            "Which operation can only be performed on matrices of the same order?",
+            "Matrix multiplication",
+            "Matrix addition",
+            "Scalar multiplication",
+            "Transpose",
+            QuestionOption.B,
+            "Matrices must have the same dimensions to be added or subtracted.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Matrix Operations",
+            "Scalar multiplication means:",
+            "Multiplying a matrix by a single number",
+            "Adding two matrices",
+            "Multiplying two matrices",
+            "Finding the determinant",
+            QuestionOption.A,
+            "In scalar multiplication, every element of the matrix is multiplied by the same number.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Matrix Operations",
+            "Which operation is generally NOT commutative?",
+            "Matrix addition",
+            "Scalar multiplication",
+            "Matrix multiplication",
+            "Adding zero matrices",
+            QuestionOption.C,
+            "In general, AB ≠ BA for matrices.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Matrix Operations",
+            "If A is a 2×3 matrix and B is a 3×4 matrix, the product AB has order:",
+            "2 × 4",
+            "3 × 3",
+            "2 × 3",
+            "4 × 2",
+            QuestionOption.A,
+            "The resulting matrix has the rows of A and columns of B.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Matrix Operations",
+            "Matrix operations are important because they:",
+            "Provide efficient methods for solving mathematical and computational problems",
+            "Can only be used in geometry",
+            "Replace algebra completely",
+            "Are only useful in examinations",
+            QuestionOption.A,
+            "Matrix operations are fundamental in mathematics, engineering, and computer science.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Performing Matrix Operations
+        // ==========================================================
+
+        AddQuestion(
+            "Performing Matrix Operations",
+            "Two matrices can be added only if they have:",
+            "The same order",
+            "The same determinant",
+            "The same trace",
+            "The same transpose",
+            QuestionOption.A,
+            "Addition and subtraction require both matrices to have identical dimensions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Performing Matrix Operations",
+            "For the product AB to exist, the number of columns of A must equal:",
+            "The number of rows of B",
+            "The number of columns of B",
+            "The number of rows of A",
+            "The determinant of B",
+            QuestionOption.A,
+            "This is the compatibility condition for matrix multiplication.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Performing Matrix Operations",
+            "Which property is always true for matrix addition?",
+            "A + B = B + A",
+            "AB = BA",
+            "A - B = B - A",
+            "AB = A + B",
+            QuestionOption.A,
+            "Matrix addition satisfies the commutative property.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Performing Matrix Operations",
+            "Multiplying every element of a matrix by 5 is called:",
+            "Scalar multiplication",
+            "Matrix multiplication",
+            "Transpose",
+            "Matrix inversion",
+            QuestionOption.A,
+            "A scalar multiplies every element of the matrix.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Performing Matrix Operations",
+            "When performing matrix multiplication, each element is obtained by:",
+            "Adding corresponding elements",
+            "Multiplying corresponding rows only",
+            "Taking the dot product of a row and a column",
+            "Subtracting corresponding columns",
+            QuestionOption.C,
+            "Each entry is found by multiplying corresponding row and column elements and summing the products.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Matrix Operations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Matrix Operations",
+            "Matrix multiplication is widely used in:",
+            "Computer graphics",
+            "Cooking",
+            "Literature",
+            "Poetry",
+            QuestionOption.A,
+            "Transformations such as rotation and scaling are performed using matrix multiplication.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Operations",
+            "Robots use matrix operations to:",
+            "Represent movement and position",
+            "Write essays",
+            "Create music",
+            "Cook food",
+            QuestionOption.A,
+            "Matrices are used to model robotic motion and coordinate transformations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Operations",
+            "Machine learning algorithms commonly perform:",
+            "Large-scale matrix operations",
+            "Only scalar multiplication",
+            "Only subtraction",
+            "Only determinants",
+            QuestionOption.A,
+            "Machine learning relies heavily on matrix computations for handling data and model parameters.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Operations",
+            "Scientific computing frequently uses matrix operations to:",
+            "Solve systems of equations and numerical models",
+            "Translate languages",
+            "Study history",
+            "Write poems",
+            QuestionOption.A,
+            "Matrices are essential in simulations, modelling, and solving linear systems.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Operations",
+            "Why are matrix operations important in modern technology?",
+            "They enable efficient computations used in engineering, robotics, graphics, machine learning, and scientific computing.",
+            "They are only useful in classroom exercises.",
+            "They replace all mathematical formulas.",
+            "They are only used for square matrices.",
+            QuestionOption.A,
+            "Matrix operations form the mathematical foundation of many modern computational systems.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Determinants
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Determinants",
+            "A determinant is defined only for:",
+            "Rectangular matrices",
+            "Square matrices",
+            "Row matrices",
+            "Column matrices",
+            QuestionOption.B,
+            "Determinants are defined only for square matrices.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Determinants",
+            "The determinant of a 2 × 2 matrix [a b; c d] is:",
+            "ad + bc",
+            "ab - cd",
+            "ad - bc",
+            "ac - bd",
+            QuestionOption.C,
+            "For a 2 × 2 matrix, the determinant is calculated as ad - bc.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Determinants",
+            "A determinant is commonly represented by:",
+            "|A|",
+            "A²",
+            "A⁻¹",
+            "Aᵀ",
+            QuestionOption.A,
+            "The notation |A| is commonly used to represent the determinant of matrix A.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Determinants",
+            "If the determinant of a square matrix is zero, then the matrix is:",
+            "Identity",
+            "Diagonal",
+            "Singular",
+            "Symmetric",
+            QuestionOption.C,
+            "A matrix with determinant zero is called a singular matrix.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Determinants",
+            "Determinants are mainly used to:",
+            "Analyse square matrices and solve linear systems",
+            "Draw geometric figures",
+            "Find percentages",
+            "Convert fractions",
+            QuestionOption.A,
+            "Determinants help determine matrix properties and solve systems of equations.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Properties and Evaluation of Determinants
+        // ==========================================================
+
+        AddQuestion(
+            "Properties and Evaluation of Determinants",
+            "A minor of an element is obtained by:",
+            "Deleting its row and column",
+            "Multiplying the row by 2",
+            "Adding all elements",
+            "Finding the transpose",
+            QuestionOption.A,
+            "A minor is obtained by removing the row and column containing the selected element.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Properties and Evaluation of Determinants",
+            "A cofactor differs from a minor because it:",
+            "Includes a positive or negative sign",
+            "Always equals zero",
+            "Uses only diagonal elements",
+            "Can only be found for 2 × 2 matrices",
+            QuestionOption.A,
+            "A cofactor is the minor multiplied by (-1)^(i+j).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Properties and Evaluation of Determinants",
+            "Which method is commonly used to evaluate a 3 × 3 determinant?",
+            "Expansion by cofactors",
+            "Long division",
+            "Integration",
+            "Factorization only",
+            QuestionOption.A,
+            "Expansion by cofactors is a standard method for evaluating 3 × 3 determinants.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Properties and Evaluation of Determinants",
+            "Interchanging two rows of a determinant:",
+            "Leaves it unchanged",
+            "Multiplies it by -1",
+            "Makes it zero",
+            "Doubles its value",
+            QuestionOption.B,
+            "Swapping two rows changes the sign of the determinant.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Properties and Evaluation of Determinants",
+            "A determinant having two identical rows is always:",
+            "One",
+            "Negative",
+            "Twice its value",
+            "Zero",
+            QuestionOption.D,
+            "If two rows (or columns) are identical, the determinant equals zero.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Determinants
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Determinants",
+            "Determinants are commonly used to:",
+            "Solve systems of linear equations",
+            "Write essays",
+            "Draw pie charts",
+            "Calculate averages only",
+            QuestionOption.A,
+            "Determinants are used in methods such as Cramer's Rule for solving linear systems.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Determinants",
+            "In geometry, determinants can be used to calculate:",
+            "Area",
+            "Temperature",
+            "Population",
+            "Speed only",
+            QuestionOption.A,
+            "Determinants help compute the area of triangles and other geometric figures.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Determinants",
+            "Engineers use determinants in:",
+            "Structural analysis and system modelling",
+            "Language translation",
+            "Music composition",
+            "Cooking recipes",
+            QuestionOption.A,
+            "Determinants appear in many engineering calculations involving matrices.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Determinants",
+            "Computer graphics use determinants for:",
+            "Coordinate transformations",
+            "Grammar checking",
+            "Audio recording",
+            "Essay writing",
+            QuestionOption.A,
+            "Determinants help determine scaling, orientation, and transformations in graphics.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Determinants",
+            "Why are determinants important in mathematics and technology?",
+            "They help solve linear systems, analyse matrices, and support applications in geometry, engineering, physics, and computer graphics.",
+            "They are only useful in examinations.",
+            "They replace all matrix operations.",
+            "They are only used with 2 × 2 matrices.",
+            QuestionOption.A,
+            "Determinants are fundamental tools with applications across mathematics, science, and engineering.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Inverse Matrix
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Inverse Matrix",
+            "An inverse matrix exists only for:",
+            "Rectangular matrices",
+            "Square non-singular matrices",
+            "Row matrices",
+            "Zero matrices",
+            QuestionOption.B,
+            "Only square matrices with a non-zero determinant have an inverse.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Inverse Matrix",
+            "If a matrix A has an inverse, then:",
+            "AA⁻¹ = I",
+            "AA⁻¹ = 0",
+            "AA⁻¹ = A",
+            "AA⁻¹ = A²",
+            QuestionOption.A,
+            "Multiplying a matrix by its inverse gives the identity matrix.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Inverse Matrix",
+            "A matrix with determinant zero is:",
+            "Invertible",
+            "Orthogonal",
+            "Singular",
+            "Identity",
+            QuestionOption.C,
+            "A singular matrix has no inverse because its determinant is zero.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Inverse Matrix",
+            "The inverse of a matrix is represented by:",
+            "A²",
+            "Aᵀ",
+            "A⁻¹",
+            "|A|",
+            QuestionOption.C,
+            "The notation A⁻¹ represents the inverse of matrix A.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Inverse Matrix",
+            "Inverse matrices are mainly used to:",
+            "Solve matrix equations and systems of linear equations",
+            "Calculate percentages",
+            "Find graph areas",
+            "Convert fractions",
+            QuestionOption.A,
+            "Inverse matrices provide an efficient way to solve equations such as AX = B.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Finding and Verifying Inverse Matrices
+        // ==========================================================
+
+        AddQuestion(
+            "Finding and Verifying Inverse Matrices",
+            "Which method can be used to find the inverse of a matrix?",
+            "Using determinants and adjoints",
+            "Long division",
+            "Integration",
+            "Prime factorization",
+            QuestionOption.A,
+            "The adjoint method is a standard technique for finding matrix inverses.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Matrices",
+            "Another method for finding an inverse matrix is:",
+            "Elementary row operations",
+            "Differentiation",
+            "Graph plotting",
+            "Polynomial division",
+            QuestionOption.A,
+            "The Gauss-Jordan elimination method uses elementary row operations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Matrices",
+            "To verify that B is the inverse of A, you should check whether:",
+            "AB = I",
+            "AB = A",
+            "AB = 0",
+            "AB = B",
+            QuestionOption.A,
+            "If the product of A and B is the identity matrix, then B is the inverse of A.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Matrices",
+            "Before finding the inverse of a matrix, you should first verify that:",
+            "Its determinant is non-zero",
+            "It has equal rows",
+            "It is rectangular",
+            "Its trace is zero",
+            QuestionOption.A,
+            "Only matrices with non-zero determinants are invertible.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding and Verifying Inverse Matrices",
+            "If |A| = 0, then:",
+            "The inverse of A exists",
+            "The inverse of A does not exist",
+            "A is an identity matrix",
+            "A is a scalar matrix",
+            QuestionOption.B,
+            "A zero determinant indicates that the matrix is singular and has no inverse.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Inverse Matrices
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Inverse Matrices",
+            "Inverse matrices are commonly used to:",
+            "Solve systems of linear equations",
+            "Draw circles",
+            "Calculate percentages",
+            "Measure distances",
+            QuestionOption.A,
+            "Many matrix equations are solved by multiplying both sides by the inverse matrix.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Matrices",
+            "Which field uses inverse matrices for transformations?",
+            "Computer graphics",
+            "Literature",
+            "Music",
+            "Cooking",
+            QuestionOption.A,
+            "Inverse transformations are widely used in computer graphics and image processing.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Matrices",
+            "Inverse matrices are important in:",
+            "Cryptography",
+            "Painting",
+            "Poetry",
+            "Journalism",
+            QuestionOption.A,
+            "Many encryption algorithms rely on invertible matrices.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Matrices",
+            "Machine learning algorithms often use inverse matrices in:",
+            "Linear regression and optimization",
+            "Grammar correction",
+            "Photo editing only",
+            "Sound recording",
+            QuestionOption.A,
+            "Inverse matrices appear in several machine learning algorithms and numerical methods.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Inverse Matrices",
+            "Why are inverse matrices important in mathematics and technology?",
+            "They help solve matrix equations and support applications in engineering, graphics, cryptography, machine learning, and scientific computing.",
+            "They are only useful in examinations.",
+            "They replace determinants completely.",
+            "They are only used with 2 × 2 matrices.",
+            QuestionOption.A,
+            "Inverse matrices are fundamental tools for solving many mathematical and computational problems.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================
+        // Introduction to Rank of Matrix
+        // ==========================
+
+        AddQuestion(
+            "Introduction to Rank of Matrix",
+            "What does the rank of a matrix represent?",
+            "The determinant of the matrix.",
+            "The number of linearly independent rows or columns.",
+            "The total number of elements.",
+            "The trace of the matrix.",
+            QuestionOption.B,
+            "The rank of a matrix is the maximum number of linearly independent rows or columns.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Rank of Matrix",
+            "What is the maximum possible rank of a 3 × 5 matrix?",
+            "8",
+            "5",
+            "3",
+            "15",
+            QuestionOption.C,
+            "The maximum rank of a matrix is the smaller of the number of rows and columns.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Rank of Matrix",
+            "What is the rank of a zero matrix?",
+            "0",
+            "1",
+            "Equal to the number of rows",
+            "Cannot be determined",
+            QuestionOption.A,
+            "A zero matrix has no linearly independent rows or columns, so its rank is 0.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Rank of Matrix",
+            "Matrix rank is defined for:",
+            "Only square matrices.",
+            "Only invertible matrices.",
+            "Only diagonal matrices.",
+            "All matrices.",
+            QuestionOption.D,
+            "Every matrix has a rank regardless of its dimensions.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Rank of Matrix",
+            "If all rows of a matrix are linearly independent, then its rank is:",
+            "Equal to the number of rows.",
+            "Always 1.",
+            "Always equal to the number of columns.",
+            "0",
+            QuestionOption.A,
+            "The rank equals the number of linearly independent rows.",
+            DifficultyLevel.Begineer,
+            5);
+
+        // ==========================
+        // Finding the Rank of a Matrix
+        // ==========================
+
+        AddQuestion(
+            "Finding the Rank of a Matrix",
+            "Which method is commonly used to determine the rank of a matrix?",
+            "Differentiation",
+            "Integration",
+            "Row reduction to echelon form",
+            "Factorisation",
+            QuestionOption.C,
+            "Row reduction converts a matrix into echelon form, making the rank easy to determine.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Finding the Rank of a Matrix",
+            "The rank of a matrix is equal to the number of:",
+            "Diagonal elements",
+            "Non-zero rows in row echelon form",
+            "Columns",
+            "Zero elements",
+            QuestionOption.B,
+            "After row reduction, the number of non-zero rows equals the rank.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Finding the Rank of a Matrix",
+            "If a 4 × 4 matrix reduces to three non-zero rows, its rank is:",
+            "2",
+            "4",
+            "1",
+            "3",
+            QuestionOption.D,
+            "The rank equals the number of non-zero rows after row reduction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding the Rank of a Matrix",
+            "Which of the following can also be used to determine the rank of a matrix?",
+            "Eigenvalues only",
+            "Matrix trace",
+            "Minors",
+            "Transpose",
+            QuestionOption.C,
+            "The highest-order non-zero minor determines the rank of a matrix.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding the Rank of a Matrix",
+            "Elementary row operations:",
+            "Always change the rank.",
+            "Always increase the rank.",
+            "Always decrease the rank.",
+            "Preserve the rank of the matrix.",
+            QuestionOption.D,
+            "Elementary row operations do not affect the rank of a matrix.",
+            DifficultyLevel.Intermediate,
+            5);
+
+        // ==========================
+        // Applications and Practice of Matrix Rank
+        // ==========================
+
+        AddQuestion(
+            "Applications and Practice of Matrix Rank",
+            "Matrix rank is used to determine:",
+            "The colour of a graph.",
+            "The consistency of a system of linear equations.",
+            "The transpose of a matrix.",
+            "The sum of matrix elements.",
+            QuestionOption.B,
+            "The ranks of the coefficient and augmented matrices help determine whether a system has no solution, one solution, or infinitely many solutions.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Rank",
+            "In machine learning, matrix rank is useful for:",
+            "Generating random numbers.",
+            "Data compression and feature analysis.",
+            "Changing image colours.",
+            "Sorting arrays.",
+            QuestionOption.B,
+            "Rank helps identify redundant information and reduce data dimensions.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Rank",
+            "If the rank equals the number of variables in a consistent system, the system has:",
+            "Infinitely many solutions.",
+            "No solution.",
+            "A unique solution.",
+            "Exactly two solutions.",
+            QuestionOption.C,
+            "A consistent system with full rank has a unique solution.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Rank",
+            "Which field commonly applies matrix rank?",
+            "Engineering",
+            "Computer graphics",
+            "Data science",
+            "All of the above",
+            QuestionOption.D,
+            "Matrix rank is widely used in engineering, graphics, machine learning, and data science.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Matrix Rank",
+            "Why is matrix rank important in mathematics and technology?",
+            "It is only useful for solving examination questions.",
+            "It replaces determinants completely.",
+            "It helps analyse linear systems and supports applications in engineering, graphics, machine learning, and scientific computing.",
+            "It is only used for square matrices.",
+            QuestionOption.C,
+            "Matrix rank is fundamental in solving linear systems and analysing data across many scientific and technological fields.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Systems of Linear Equations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Systems of Linear Equations",
+            "What is a system of linear equations?",
+            "A collection of two or more linear equations involving the same variables.",
+            "A single quadratic equation.",
+            "A set of unrelated algebraic expressions.",
+            "A polynomial with only one variable.",
+            QuestionOption.A,
+            "A system of linear equations consists of multiple linear equations that are solved together.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Systems of Linear Equations",
+            "How are systems of linear equations commonly represented graphically?",
+            "As intersecting, parallel, or coincident lines on a coordinate plane.",
+            "As circles with different radii.",
+            "As parabolas only.",
+            "As exponential curves.",
+            QuestionOption.A,
+            "Each linear equation represents a line, and the solution depends on how the lines intersect.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Systems of Linear Equations",
+            "What does the solution of a system of linear equations represent?",
+            "The point that satisfies all equations simultaneously.",
+            "The largest coefficient in the equations.",
+            "The slope of every equation.",
+            "The constant term of each equation.",
+            QuestionOption.A,
+            "A solution must satisfy every equation in the system.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Systems of Linear Equations",
+            "Which type of graph indicates that a system has no solution?",
+            "Parallel lines.",
+            "Intersecting lines.",
+            "Coincident lines.",
+            "Perpendicular lines.",
+            QuestionOption.A,
+            "Parallel lines never meet, so there is no common solution.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Systems of Linear Equations",
+            "What is the main purpose of studying systems of linear equations?",
+            "To analyse relationships between multiple variables simultaneously.",
+            "To memorise multiplication tables.",
+            "To replace algebra completely.",
+            "To avoid using graphs.",
+            QuestionOption.A,
+            "Systems of equations model relationships involving multiple unknown quantities.",
+            DifficultyLevel.Begineer,
+            5);
+
+        // ==========================================================
+        // Solving Systems of Linear Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Systems of Linear Equations",
+            "Which method solves a system by replacing one variable with an equivalent expression?",
+            "Substitution method.",
+            "Differentiation.",
+            "Factorisation.",
+            "Integration.",
+            QuestionOption.A,
+            "The substitution method replaces one variable using an expression from another equation.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Solving Systems of Linear Equations",
+            "Which method eliminates a variable by adding or subtracting equations?",
+            "Elimination method.",
+            "Completing the square.",
+            "Long division.",
+            "Graph colouring.",
+            QuestionOption.A,
+            "The elimination method removes one variable to simplify solving the system.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Solving Systems of Linear Equations",
+            "Which matrix-based method can be used to solve systems of linear equations?",
+            "Cramer's Rule.",
+            "Pascal's Triangle.",
+            "Binomial Expansion.",
+            "Newton's Method.",
+            QuestionOption.A,
+            "Cramer's Rule uses determinants to solve systems with a unique solution.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Systems of Linear Equations",
+            "What does it mean if two equations represent the same line?",
+            "The system has infinitely many solutions.",
+            "The system has no solution.",
+            "The system has exactly two solutions.",
+            "The variables cannot be determined.",
+            QuestionOption.A,
+            "Coincident lines overlap completely, producing infinitely many common solutions.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Systems of Linear Equations",
+            "Which method is especially useful for solving large systems using matrices?",
+            "Matrix methods such as row reduction.",
+            "Prime factorisation.",
+            "Synthetic division.",
+            "Trial and error only.",
+            QuestionOption.A,
+            "Matrix methods efficiently solve larger systems of linear equations.",
+            DifficultyLevel.Intermediate,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Systems of Linear Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Systems of Linear Equations",
+            "Where are systems of linear equations commonly used?",
+            "Economics, engineering, operations research, computer science, and data analysis.",
+            "Only in geometry classes.",
+            "Only in music theory.",
+            "Only in language studies.",
+            QuestionOption.A,
+            "Systems of equations model many real-world situations across numerous disciplines.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Systems of Linear Equations",
+            "Why are systems of linear equations important in engineering?",
+            "They help model and solve interconnected engineering problems.",
+            "They eliminate the need for measurements.",
+            "They replace calculus entirely.",
+            "They are only used for drawing graphs.",
+            QuestionOption.A,
+            "Many engineering systems involve multiple variables that must satisfy several equations.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Systems of Linear Equations",
+            "How are systems of linear equations used in data analysis?",
+            "To model relationships among multiple variables and datasets.",
+            "To generate random colours.",
+            "To compress image files only.",
+            "To create web page layouts.",
+            QuestionOption.A,
+            "Linear systems are fundamental in statistical models and numerical computations.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Systems of Linear Equations",
+            "What role do systems of linear equations play in operations research?",
+            "They help optimise resource allocation and decision-making.",
+            "They replace probability completely.",
+            "They are used only for geometry proofs.",
+            "They are limited to classroom exercises.",
+            QuestionOption.A,
+            "Operations research relies heavily on solving systems of equations to optimise processes.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Systems of Linear Equations",
+            "Why are systems of linear equations fundamental in computer science?",
+            "They are used in graphics, machine learning, optimisation, and scientific computing.",
+            "They are only used to print text.",
+            "They only calculate simple averages.",
+            "They are useful only for calculators.",
+            QuestionOption.A,
+            "Many computational algorithms depend on efficiently solving systems of linear equations.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Eigenvalues
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Eigenvalues",
+            "What is an eigenvalue of a matrix?",
+            "A scalar that satisfies the equation Av = λv for a non-zero vector.",
+            "A row of a matrix.",
+            "The determinant of any matrix.",
+            "The sum of all matrix elements.",
+            QuestionOption.A,
+            "An eigenvalue is a scalar that scales an eigenvector during a linear transformation.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Eigenvalues",
+            "What is an eigenvector?",
+            "A non-zero vector whose direction remains unchanged after a matrix transformation.",
+            "Any row of a matrix.",
+            "A vector with all zero entries.",
+            "A determinant of a square matrix.",
+            QuestionOption.B,
+            "An eigenvector changes only in magnitude, not direction, when transformed by a matrix.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Eigenvalues",
+            "Which type of matrices have eigenvalues?",
+            "Square matrices.",
+            "Only rectangular matrices.",
+            "Only identity matrices.",
+            "Only diagonal matrices.",
+            QuestionOption.C,
+            "Eigenvalues are defined only for square matrices.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Eigenvalues",
+            "Eigenvalues are mainly used to study what?",
+            "Properties of matrix transformations and linear systems.",
+            "Only arithmetic progressions.",
+            "Prime factorisation.",
+            "Circle geometry.",
+            QuestionOption.D,
+            "Eigenvalues reveal important characteristics of linear transformations.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Eigenvalues",
+            "What does the symbol λ commonly represent?",
+            "An eigenvalue.",
+            "A determinant.",
+            "A matrix rank.",
+            "A vector dimension.",
+            QuestionOption.A,
+            "The Greek letter λ is the standard notation for an eigenvalue.",
+            DifficultyLevel.Begineer,
+            5);
+
+        // ==========================================================
+        // Finding Eigenvalues and Eigenvectors
+        // ==========================================================
+
+        AddQuestion(
+            "Finding Eigenvalues and Eigenvectors",
+            "Which equation is solved to find the eigenvalues of a matrix?",
+            "Characteristic equation.",
+            "Quadratic formula.",
+            "Binomial theorem.",
+            "Distance formula.",
+            QuestionOption.B,
+            "Eigenvalues are obtained by solving the characteristic equation det(A − λI) = 0.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Finding Eigenvalues and Eigenvectors",
+            "After finding the eigenvalues, what is the next step?",
+            "Find the corresponding eigenvectors.",
+            "Compute the matrix rank.",
+            "Find the inverse matrix only.",
+            "Calculate the trace repeatedly.",
+            QuestionOption.D,
+            "Each eigenvalue has one or more corresponding eigenvectors.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Finding Eigenvalues and Eigenvectors",
+            "What does the characteristic equation involve?",
+            "The determinant of A − λI.",
+            "The inverse of every matrix.",
+            "The transpose only.",
+            "The matrix trace only.",
+            QuestionOption.A,
+            "The characteristic polynomial is obtained from det(A − λI).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding Eigenvalues and Eigenvectors",
+            "What equation is solved to determine an eigenvector after finding λ?",
+            "(A − λI)v = 0.",
+            "A + I = λ.",
+            "det(A) = 1.",
+            "A² = λ.",
+            QuestionOption.C,
+            "Substituting an eigenvalue into (A − λI)v = 0 gives the corresponding eigenvector.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding Eigenvalues and Eigenvectors",
+            "Why are eigenvectors paired with eigenvalues?",
+            "They describe the directions preserved by the transformation.",
+            "They determine matrix dimensions.",
+            "They replace determinants.",
+            "They calculate matrix addition.",
+            QuestionOption.B,
+            "Eigenvectors identify invariant directions associated with each eigenvalue.",
+            DifficultyLevel.Intermediate,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Eigenvalues
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Eigenvalues",
+            "In which field are eigenvalues commonly used for dimensionality reduction?",
+            "Machine learning.",
+            "Basic arithmetic.",
+            "Grammar analysis.",
+            "Probability tables only.",
+            QuestionOption.C,
+            "Techniques such as Principal Component Analysis rely on eigenvalues and eigenvectors.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvalues",
+            "How are eigenvalues used in computer graphics?",
+            "To analyse geometric transformations and scaling.",
+            "To replace image files.",
+            "To create web pages.",
+            "To perform text formatting.",
+            QuestionOption.A,
+            "Eigenvalues help analyse transformations such as scaling and rotation.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvalues",
+            "Why are eigenvalues important in vibration analysis?",
+            "They help determine natural frequencies of vibrating systems.",
+            "They measure electrical resistance only.",
+            "They calculate prime numbers.",
+            "They replace calculus.",
+            QuestionOption.D,
+            "Engineers use eigenvalues to study vibration modes and natural frequencies.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvalues",
+            "Which branch of physics makes extensive use of eigenvalues?",
+            "Quantum mechanics.",
+            "Classical grammar.",
+            "Number naming.",
+            "Simple bookkeeping.",
+            QuestionOption.B,
+            "Quantum mechanics models many physical quantities using eigenvalues and eigenvectors.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvalues",
+            "Why are eigenvalues valuable in data science and engineering?",
+            "They help analyse transformations, optimise models, and solve complex computational problems.",
+            "They are only used for matrix addition.",
+            "They eliminate the need for vectors.",
+            "They are useful only for theoretical proofs.",
+            QuestionOption.C,
+            "Eigenvalues are fundamental tools in modern scientific computing and data analysis.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Eigenvectors
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Eigenvectors",
+            "What is an eigenvector?",
+            "A non-zero vector whose direction remains unchanged under a matrix transformation.",
+            "A row of a matrix.",
+            "The determinant of a matrix.",
+            "A vector containing only zeros.",
+            QuestionOption.A,
+            "An eigenvector changes only in magnitude, not direction, when multiplied by a matrix.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Eigenvectors",
+            "What happens to an eigenvector after a matrix transformation?",
+            "Its direction remains the same while its magnitude may change.",
+            "Its direction always changes.",
+            "It becomes a scalar.",
+            "It becomes a determinant.",
+            QuestionOption.B,
+            "Eigenvectors retain their direction, although they may be scaled by an eigenvalue.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Eigenvectors",
+            "Eigenvectors are associated with which mathematical concept?",
+            "Eigenvalues.",
+            "Binomial coefficients.",
+            "Arithmetic progressions.",
+            "Logarithms.",
+            QuestionOption.C,
+            "Each eigenvector corresponds to an eigenvalue of a square matrix.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Eigenvectors",
+            "For which type of matrices are eigenvectors defined?",
+            "Square matrices.",
+            "Only diagonal matrices.",
+            "Only rectangular matrices.",
+            "Only identity matrices.",
+            QuestionOption.D,
+            "Eigenvectors are defined only for square matrices.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Eigenvectors",
+            "Why are eigenvectors important?",
+            "They describe invariant directions in linear transformations.",
+            "They replace matrix multiplication.",
+            "They eliminate the need for determinants.",
+            "They calculate matrix dimensions.",
+            QuestionOption.A,
+            "Eigenvectors reveal directions that remain unchanged under matrix transformations.",
+            DifficultyLevel.Begineer,
+            5);
+
+        // ==========================================================
+        // Finding and Analyzing Eigenvectors
+        // ==========================================================
+
+        AddQuestion(
+            "Finding and Analyzing Eigenvectors",
+            "To find an eigenvector, which equation is solved after obtaining an eigenvalue?",
+            "(A − λI)v = 0.",
+            "det(A) = 0.",
+            "A + I = λ.",
+            "A² = λ.",
+            QuestionOption.C,
+            "Eigenvectors are found by solving the homogeneous equation (A − λI)v = 0.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Finding and Analyzing Eigenvectors",
+            "What must an eigenvector never be?",
+            "The zero vector.",
+            "A column vector.",
+            "A real-valued vector.",
+            "A unit vector.",
+            QuestionOption.A,
+            "The zero vector is excluded because it satisfies every homogeneous equation trivially.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Finding and Analyzing Eigenvectors",
+            "How can an eigenvector be verified?",
+            "By checking whether Av = λv.",
+            "By finding the determinant only.",
+            "By computing the matrix trace.",
+            "By adding all matrix elements.",
+            QuestionOption.D,
+            "A valid eigenvector satisfies the defining equation Av = λv.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding and Analyzing Eigenvectors",
+            "What do eigenvectors represent geometrically?",
+            "Directions preserved during a linear transformation.",
+            "Areas enclosed by matrices.",
+            "Matrix dimensions.",
+            "Random vectors in space.",
+            QuestionOption.B,
+            "Geometrically, eigenvectors indicate invariant directions under transformation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding and Analyzing Eigenvectors",
+            "What is required before finding an eigenvector?",
+            "The corresponding eigenvalue.",
+            "The inverse matrix only.",
+            "The rank of the matrix.",
+            "The determinant alone.",
+            QuestionOption.A,
+            "Eigenvectors are determined after first calculating the corresponding eigenvalue.",
+            DifficultyLevel.Intermediate,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Eigenvectors
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Eigenvectors",
+            "Which machine learning technique heavily relies on eigenvectors?",
+            "Principal Component Analysis (PCA).",
+            "Bubble Sort.",
+            "Binary Search.",
+            "Linear Search.",
+            QuestionOption.D,
+            "PCA uses eigenvectors to identify the directions of maximum variance in data.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvectors",
+            "How are eigenvectors used in facial recognition?",
+            "They help represent important facial features using eigenfaces.",
+            "They generate random passwords.",
+            "They compress text files.",
+            "They sort database records.",
+            QuestionOption.A,
+            "Eigenvectors are used to create eigenfaces for efficient facial recognition systems.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvectors",
+            "Why are eigenvectors important in computer graphics?",
+            "They help analyse transformations such as scaling and rotation.",
+            "They replace image editing software.",
+            "They calculate internet speed.",
+            "They only store image files.",
+            QuestionOption.C,
+            "Eigenvectors provide insight into the behaviour of graphical transformations.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvectors",
+            "In engineering, eigenvectors are commonly used to study what?",
+            "Structural vibrations and dynamic systems.",
+            "Alphabetical sorting.",
+            "Currency conversion.",
+            "Word processing.",
+            QuestionOption.B,
+            "Engineers use eigenvectors to analyse vibration modes and system behaviour.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Eigenvectors",
+            "Why are eigenvectors valuable in modern science and technology?",
+            "They support data analysis, machine learning, computer graphics, engineering, and quantum physics.",
+            "They are useful only in classroom exercises.",
+            "They replace every numerical method.",
+            "They are only used to solve determinants.",
+            QuestionOption.A,
+            "Eigenvectors have broad applications across mathematics, science, and engineering.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
