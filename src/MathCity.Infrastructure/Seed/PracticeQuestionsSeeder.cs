@@ -4898,6 +4898,2076 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+        // PQ. 3
+        // Introduction to Cartesian Plane
+
+        AddQuestion(
+            "Introduction to Cartesian Plane",
+            "What are the two main axes used in a Cartesian plane?",
+            "The x-axis and y-axis",
+            "The horizontal axis and diagonal axis",
+            "The radius and diameter",
+            "The length and width",
+            QuestionOption.A,
+            "A Cartesian plane is formed by two perpendicular axes: the x-axis and y-axis.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Cartesian Plane",
+            "What is the coordinate of the origin in a Cartesian plane?",
+            "(0,0)",
+            "(1,1)",
+            "(-1,-1)",
+            "(0,1)",
+            QuestionOption.A,
+            "The origin is the point where the x-axis and y-axis intersect, represented as (0,0).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Cartesian Plane",
+            "How many quadrants are formed by the x-axis and y-axis?",
+            "Four quadrants",
+            "Two quadrants",
+            "Three quadrants",
+            "Five quadrants",
+            QuestionOption.A,
+            "The two perpendicular axes divide the Cartesian plane into four quadrants.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Cartesian Plane",
+            "In which quadrant does the point (4,5) lie?",
+            "First quadrant",
+            "Second quadrant",
+            "Third quadrant",
+            "Fourth quadrant",
+            QuestionOption.A,
+            "Points with positive x and positive y coordinates lie in the first quadrant.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Cartesian Plane",
+            "A point has coordinates (-3,6). Which quadrant does it belong to?",
+            "Second quadrant",
+            "First quadrant",
+            "Third quadrant",
+            "Fourth quadrant",
+            QuestionOption.A,
+            "A negative x-coordinate and positive y-coordinate place the point in the second quadrant.",
+            DifficultyLevel.Intermediate,
+            5);
+        // Understanding Coordinates and Quadrants
+
+        AddQuestion(
+            "Understanding Coordinates and Quadrants",
+            "What does an ordered pair (x, y) represent in a Cartesian plane?",
+            "The position of a point using its x-coordinate and y-coordinate",
+            "The distance between two points",
+            "The angle between two lines",
+            "The size of a geometric shape",
+            QuestionOption.A,
+            "An ordered pair represents the location of a point where x shows horizontal position and y shows vertical position.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Understanding Coordinates and Quadrants",
+            "In which quadrant does the point (-5, 3) lie?",
+            "Second quadrant",
+            "First quadrant",
+            "Third quadrant",
+            "Fourth quadrant",
+            QuestionOption.A,
+            "A point with a negative x-coordinate and positive y-coordinate lies in the second quadrant.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Understanding Coordinates and Quadrants",
+            "Which coordinate remains zero for a point located on the y-axis?",
+            "The x-coordinate",
+            "The y-coordinate",
+            "Both coordinates",
+            "Neither coordinate",
+            QuestionOption.A,
+            "Any point on the y-axis has an x-coordinate of zero.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Understanding Coordinates and Quadrants",
+            "A point has coordinates (−4, −7). Which quadrant does it belong to?",
+            "Third quadrant",
+            "First quadrant",
+            "Second quadrant",
+            "Fourth quadrant",
+            QuestionOption.A,
+            "Points with both negative x and negative y coordinates are located in the third quadrant.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Understanding Coordinates and Quadrants",
+            "Which point lies in the fourth quadrant?",
+            "(3, -6)",
+            "(-3, 6)",
+            "(-5, -2)",
+            "(4, 7)",
+            QuestionOption.A,
+            "The fourth quadrant contains points with positive x-coordinates and negative y-coordinates.",
+            DifficultyLevel.Intermediate,
+            5);
+        // Applications and Practice of Cartesian Plane
+
+        AddQuestion(
+            "Applications and Practice of Cartesian Plane",
+            "Why is the Cartesian plane useful in real-world applications?",
+            "It helps represent locations, movements, and relationships using coordinates.",
+            "It is only used for basic arithmetic calculations.",
+            "It removes the need for measurements.",
+            "It can only represent circles.",
+            QuestionOption.A,
+            "The Cartesian plane is widely used in maps, engineering, computer graphics, and data analysis to represent positions and relationships.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Cartesian Plane",
+            "A drone moves from point (2,3) to point (7,3). In which direction does it move?",
+            "Horizontally to the right",
+            "Vertically upward",
+            "Diagonally downward",
+            "Vertically downward",
+            QuestionOption.A,
+            "The y-coordinate remains the same while the x-coordinate increases, showing horizontal movement to the right.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Cartesian Plane",
+            "A city map uses coordinates to mark locations. What mathematical concept is being applied?",
+            "Coordinate geometry",
+            "Algebraic factorization",
+            "Trigonometric identities",
+            "Probability theory",
+            QuestionOption.A,
+            "Coordinate geometry uses points and coordinates to represent locations and solve spatial problems.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Cartesian Plane",
+            "A point moves from (−2,4) to (−2,−5). What type of movement occurs?",
+            "Vertical movement downward",
+            "Horizontal movement right",
+            "Horizontal movement left",
+            "No movement",
+            QuestionOption.A,
+            "The x-coordinate remains constant while the y-coordinate decreases, indicating downward vertical movement.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Cartesian Plane",
+            "How are Cartesian coordinates used in computer graphics?",
+            "They help position and transform objects on a screen.",
+            "They are only used to calculate probabilities.",
+            "They replace programming languages.",
+            "They are used only for measuring angles.",
+            QuestionOption.A,
+            "Computer graphics rely on coordinate systems to place, move, rotate, and scale objects digitally.",
+            DifficultyLevel.Advance,
+            5);
+
+        // Introduction to Distance Formula
+
+        AddQuestion(
+            "Introduction to Distance Formula",
+            "What is the distance formula used to find?",
+            "The distance between two points on a coordinate plane",
+            "The midpoint of a line segment",
+            "The slope of a line",
+            "The area of a triangle",
+            QuestionOption.A,
+            "The distance formula calculates the length of the line segment joining two points in a coordinate plane.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Distance Formula",
+            "Which theorem is used to derive the distance formula?",
+            "Pythagorean theorem",
+            "Angle sum theorem",
+            "Similarity theorem",
+            "Binomial theorem",
+            QuestionOption.A,
+            "The distance formula is derived by applying the Pythagorean theorem to the horizontal and vertical differences between two points.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Distance Formula",
+            "What are the coordinates of two points generally represented as in the distance formula?",
+            "(x₁, y₁) and (x₂, y₂)",
+            "(a, b) and (c, d)",
+            "(x, y) and (r, θ)",
+            "(l, w) and (h, k)",
+            QuestionOption.A,
+            "The distance formula uses two points represented as (x₁, y₁) and (x₂, y₂).",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Distance Formula",
+            "If two points have the same x-coordinate, what type of line segment connects them?",
+            "Vertical line segment",
+            "Horizontal line segment",
+            "Curved line segment",
+            "No line segment",
+            QuestionOption.A,
+            "When x-coordinates are equal, the points lie on the same vertical line.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Distance Formula",
+            "Why is the distance formula important in coordinate geometry?",
+            "It helps measure lengths between points using coordinates",
+            "It calculates only angles between lines",
+            "It replaces all geometric formulas",
+            "It is only used for circles",
+            QuestionOption.A,
+            "The distance formula connects algebra and geometry by allowing lengths to be calculated from coordinate values.",
+            DifficultyLevel.Begineer,
+            5);
+
+        // Solving Problems Using Distance Formula
+
+        AddQuestion(
+            "Solving Problems Using Distance Formula",
+            "Find the distance between the points (0,0) and (3,4).",
+            "5 units",
+            "6 units",
+            "7 units",
+            "4 units",
+                        QuestionOption.A,
+            "Using the distance formula: √((3-0)² + (4-0)²) = √(9+16) = √25 = 5 units.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Distance Formula",
+            "What is the distance between the points (2,3) and (6,6)?",
+            "5 units",
+            "4 units",
+            "6 units",
+            "7 units",
+                        QuestionOption.A,
+            "The distance is √((6-2)² + (6-3)²) = √(16+9) = √25 = 5 units.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Distance Formula",
+            "The points A(1,2) and B(1,8) lie on the same vertical line. What is the distance between them?",
+            "6 units",
+            "7 units",
+            "5 units",
+            "8 units",
+                        QuestionOption.A,
+            "Since the x-coordinates are the same, the distance is the difference between y-coordinates: |8-2| = 6 units.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Distance Formula",
+            "Find the distance between the points (-2,-3) and (4,5).",
+            "10 units",
+            "8 units",
+            "12 units",
+            "6 units",
+                        QuestionOption.A,
+            "Using the distance formula: √((4+2)² + (5+3)²) = √(36+64) = √100 = 10 units.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Distance Formula",
+            "A point is moved from (3,5) to (9,13). What is the length of the movement?",
+            "10 units",
+            "8 units",
+            "12 units",
+            "14 units",
+            QuestionOption.A,
+            "The movement distance is √((9-3)² + (13-5)²) = √(36+64) = 10 units.",
+            DifficultyLevel.Intermediate,
+            5);
+
+        // Applications and Practice of Distance Formula
+
+        AddQuestion(
+            "Applications and Practice of Distance Formula",
+            "Why is the distance formula used in engineering and design applications?",
+            "It helps calculate accurate distances between points in models and layouts.",
+            "It only measures angles between objects.",
+            "It replaces coordinate systems completely.",
+            "It is used only for basic arithmetic.",
+            QuestionOption.A,
+            "Engineers and designers use coordinate distances to measure lengths, positions, and spatial relationships in models.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Distance Formula",
+            "A robot moves from position (2,4) to (8,12) on a coordinate map. What distance does it travel?",
+            "10 units",
+            "8 units",
+            "12 units",
+            "14 units",
+            QuestionOption.A,
+            "Using the distance formula: √((8-2)² + (12-4)²) = √(36+64) = √100 = 10 units.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Distance Formula",
+            "How can the distance formula help in map-based applications?",
+            "It calculates the distance between two locations represented by coordinates.",
+            "It determines only the direction of movement.",
+            "It calculates population growth.",
+            "It measures only angles.",
+            QuestionOption.A,
+            "Maps and navigation systems use coordinate distances to estimate real-world distances between locations.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Distance Formula",
+            "Two points on a blueprint are located at (-3,4) and (5,-2). What is the distance between them?",
+            "10 units",
+            "8 units",
+            "12 units",
+            "14 units",
+            QuestionOption.A,
+            "Distance = √((5+3)² + (-2-4)²) = √(64+36) = √100 = 10 units.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Distance Formula",
+            "Why is the distance formula considered a connection between algebra and geometry?",
+            "It uses algebraic coordinates to solve geometric distance problems.",
+            "It removes the need for geometric reasoning.",
+            "It is only used for algebraic equations.",
+            "It cannot be applied outside mathematics.",
+            QuestionOption.A,
+            "The distance formula converts geometric measurements into algebraic calculations using coordinates.",
+            DifficultyLevel.Advance,
+            5);
+
+        // Introduction to Midpoint Formula
+
+        AddQuestion(
+            "Introduction to Midpoint Formula",
+            "Which formula is used to find the midpoint between two points?",
+            "M = ((x₁ + x₂) / 2, (y₁ + y₂) / 2)",
+            "M = (x₂ - x₁, y₂ - y₁)",
+            "M = √((x₂-x₁)²+(y₂-y₁)²)",
+            "M = (x₁ × x₂, y₁ × y₂)",
+            QuestionOption.A,
+            "The midpoint formula finds the average of the x-coordinates and y-coordinates of two endpoints.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Midpoint Formula",
+            "What does the midpoint of a line segment represent?",
+            "The point exactly halfway between two endpoints",
+            "The longest distance between two points",
+            "The angle formed by two lines",
+            "The slope of the line segment",
+            QuestionOption.A,
+            "A midpoint divides a line segment into two equal parts.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Midpoint Formula",
+            "If the endpoints of a line segment are (x₁,y₁) and (x₂,y₂), what values are averaged to find the midpoint?",
+            "The x-coordinates and y-coordinates separately",
+            "Only the x-coordinates",
+            "Only the y-coordinates",
+            "The distances between points",
+            QuestionOption.A,
+            "The midpoint is calculated by averaging the x-values and averaging the y-values.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Midpoint Formula",
+            "The midpoint formula is mainly used in which branch of mathematics?",
+            "Coordinate Geometry",
+            "Probability",
+            "Statistics",
+            "Trigonometry",
+            QuestionOption.A,
+            "The midpoint formula is a fundamental concept in coordinate geometry.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Midpoint Formula",
+            "Why is the midpoint formula considered useful?",
+            "It helps locate the center point of a segment using coordinates",
+            "It calculates the area of any shape",
+            "It finds only angles",
+            "It converts coordinates into measurements",
+            QuestionOption.A,
+            "The midpoint formula allows us to find exact central positions between two points.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Solving Problems Using Midpoint Formula
+
+        AddQuestion(
+            "Solving Problems Using Midpoint Formula",
+            "Find the midpoint of the points (4,6) and (8,10).",
+            "(6,8)",
+            "(12,16)",
+            "(4,4)",
+            "(2,2)",
+            QuestionOption.B,
+            "Midpoint = ((4+8)/2, (6+10)/2) = (6,8).",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Midpoint Formula",
+            "Find the midpoint of (-2,5) and (6,9).",
+            "(2,7)",
+            "(4,14)",
+            "(8,4)",
+            "(-4,2)",
+            QuestionOption.A,
+            "Midpoint = ((-2+6)/2, (5+9)/2) = (2,7).",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Midpoint Formula",
+            "The midpoint of two points is (5,4). One endpoint is (2,3). Find the other endpoint.",
+            "(8,5)",
+            "(7,6)",
+            "(3,1)",
+            "(10,8)",
+            QuestionOption.A,
+            "Using midpoint relation: x₂ = 2(5)-2 = 8 and y₂ = 2(4)-3 = 5.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Midpoint Formula",
+            "What is the midpoint of the points (-6,-4) and (2,8)?",
+            "(-2,2)",
+            "(4,4)",
+            "(-4,6)",
+            "(2,-2)",
+            QuestionOption.A,
+            "Midpoint = ((-6+2)/2, (-4+8)/2) = (-2,2).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Midpoint Formula",
+            "A line segment has endpoints (10,2) and (10,12). What is its midpoint?",
+            "(10,7)",
+            "(20,14)",
+            "(5,7)",
+            "(10,10)",
+            QuestionOption.A,
+            "The x-coordinate remains 10, and the y-coordinate is averaged: (2+12)/2 = 7.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Midpoint Formula
+
+        AddQuestion(
+            "Applications and Practice of Midpoint Formula",
+            "How is the midpoint formula used in architecture and engineering?",
+            "To find central points and balance locations in designs",
+            "To calculate only angles",
+            "To remove coordinate systems",
+            "To measure temperature changes",
+            QuestionOption.A,
+            "Engineers use midpoint calculations for symmetry, balance, and positioning structures.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Midpoint Formula",
+            "A GPS system uses two coordinate locations and calculates their midpoint. What does this represent?",
+            "The location halfway between the two points",
+            "The total distance between points",
+            "The direction of movement",
+            "The area between locations",
+            QuestionOption.A,
+            "The midpoint represents the exact center location between two coordinate positions.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Midpoint Formula",
+            "In computer graphics, midpoint calculations help with:",
+            "Positioning and transforming objects",
+            "Calculating sound waves",
+            "Measuring electrical power",
+            "Creating random values",
+            QuestionOption.A,
+            "Graphics systems use midpoint calculations to determine object positions and transformations.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Midpoint Formula",
+            "A designer finds the midpoint of two corners of a digital object. Why is this useful?",
+            "To locate the object's center position",
+            "To calculate its colour",
+            "To remove its dimensions",
+            "To change its coordinate system",
+            QuestionOption.A,
+            "The midpoint helps identify the central position of an object.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Midpoint Formula",
+            "Why is the midpoint formula important in real-world coordinate applications?",
+            "It connects mathematical coordinates with practical location problems",
+            "It only works for textbook exercises",
+            "It replaces all geometry formulas",
+            "It cannot be used outside mathematics",
+            QuestionOption.A,
+            "The midpoint formula is used in mapping, navigation, engineering, and computer graphics.",
+            DifficultyLevel.Advance,
+            5);
+        // Introduction to Section Formula
+
+        AddQuestion(
+            "Introduction to Section Formula",
+            "What does the section formula help us find?",
+            "The distance between two points",
+            "The coordinates of a point dividing a line segment in a given ratio",
+            "The slope of a line",
+            "The angle between two lines",
+            QuestionOption.B,
+            "The section formula is used to find the coordinates of a point that divides a line segment internally or externally in a given ratio.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Section Formula",
+            "In internal division, where is the dividing point located?",
+            "Between the two endpoints of the line segment",
+            "Outside the line segment",
+            "Always at the origin",
+            "Only on the x-axis",
+            QuestionOption.A,
+            "Internal division means the point lies between the two given endpoints.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Section Formula",
+            "Which information is required to apply the section formula?",
+            "Only the slope of the line",
+            "Only one coordinate point",
+            "Two endpoints and the ratio of division",
+            "Only the length of the segment",
+            QuestionOption.C,
+            "The section formula requires coordinates of both endpoints and the ratio in which the segment is divided.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Section Formula",
+            "Section formula is a concept mainly studied under:",
+            "Probability",
+            "Statistics",
+            "Trigonometry",
+            "Coordinate Geometry",
+            QuestionOption.D,
+            "Section formula is an important topic in coordinate geometry.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Section Formula",
+            "What does a ratio like 2:3 represent in section formula?",
+            "The angle between two points",
+            "How the line segment is divided",
+            "The distance from origin",
+            "The slope value",
+            QuestionOption.B,
+            "The ratio shows the relative lengths of the two parts created by the dividing point.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Solving Problems Using Section Formula
+
+        AddQuestion(
+            "Solving Problems Using Section Formula",
+            "Find the point dividing (2,4) and (8,10) internally in the ratio 1:1.",
+            "(5,7)",
+            "(6,8)",
+            "(4,6)",
+            "(3,5)",
+            QuestionOption.A,
+            "Ratio 1:1 gives the midpoint: ((2+8)/2, (4+10)/2) = (5,7).",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Section Formula",
+            "Find the point dividing (0,0) and (6,9) internally in the ratio 1:2.",
+            "(4,6)",
+            "(2,3)",
+            "(3,4)",
+            "(1,2)",
+            QuestionOption.B,
+            "Using section formula: ((1×6+2×0)/(3), (1×9+2×0)/(3)) = (2,3).",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Section Formula",
+            "The midpoint of a line segment is a special case of section formula with ratio:",
+            "2:3",
+            "3:4",
+            "1:1",
+            "1:2",
+            QuestionOption.C,
+            "When the ratio is 1:1, the point divides the segment into two equal parts and becomes the midpoint.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Section Formula",
+            "Find the point dividing (-4,2) and (6,12) in ratio 1:1.",
+            "(2,8)",
+            "(-1,6)",
+            "(0,5)",
+            "(1,7)",
+            QuestionOption.D,
+            "The midpoint is ((-4+6)/2, (2+12)/2) = (1,7).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Section Formula",
+            "Which formula is used to find internal division point?",
+            "((mx₂+nx₁)/(m+n), (my₂+ny₁)/(m+n))",
+            "√((x₂-x₁)²+(y₂-y₁)²)",
+            "((x₁+x₂),(y₁+y₂))",
+            "y = mx + c",
+            QuestionOption.A,
+            "The internal section formula uses weighted averages of the endpoint coordinates.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Section Formula
+
+        AddQuestion(
+            "Applications and Practice of Section Formula",
+            "Why is section formula useful in engineering drawings?",
+            "It helps locate points at specific proportional positions",
+            "It calculates only angles",
+            "It removes coordinate systems",
+            "It replaces all measurements",
+            QuestionOption.A,
+            "Engineers use section formula to locate points along structures based on ratios.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Section Formula",
+            "A designer wants to find a point that divides a bridge support in a fixed ratio. Which concept is useful?",
+            "Distance Formula",
+            "Section Formula",
+            "Slope Formula",
+            "Circle Equation",
+            QuestionOption.B,
+            "Section formula helps find coordinates of points dividing a segment in a given ratio.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Section Formula",
+            "How is section formula applied in computer graphics?",
+            "By placing objects at proportional positions",
+            "By calculating sound frequencies",
+            "By removing coordinate systems",
+            "By measuring only angles",
+            QuestionOption.A,
+            "Graphics applications use coordinate ratios for positioning and transformations.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Section Formula",
+            "A map shows two locations and needs a point exactly halfway between them. Which method can be used?",
+            "Distance formula only",
+            "Slope formula only",
+            "Section formula with ratio 1:1",
+            "Area formula",
+            QuestionOption.C,
+            "A midpoint is obtained using section formula with a 1:1 ratio.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Section Formula",
+            "Why is section formula important in coordinate geometry?",
+            "It connects ratios with coordinate positions",
+            "It works only for circles",
+            "It replaces geometry completely",
+            "It cannot be used practically",
+            QuestionOption.A,
+            "Section formula connects algebraic ratios with geometric positions on a coordinate plane.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // Introduction to Straight Line
+
+        AddQuestion(
+            "Introduction to Straight Line",
+            "What is a straight line in coordinate geometry?",
+            "A line that extends infinitely in both directions with a constant slope",
+            "A closed geometric figure",
+            "A curve with changing slope",
+            "A line segment with fixed length",
+            QuestionOption.A,
+            "A straight line has a constant slope and can be represented using an equation on the coordinate plane.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Straight Line",
+            "Which equation represents the general form of a straight line?",
+            "y = mx + c",
+            "x² + y² = r²",
+            "a² + b² = c²",
+            "y = x²",
+            QuestionOption.A,
+            "The equation y = mx + c represents a straight line where m is the slope and c is the y-intercept.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Straight Line",
+            "What does the slope of a straight line represent?",
+            "The rate of change between y and x",
+            "The length of the line",
+            "The area below the line",
+            "The angle of a triangle",
+            QuestionOption.A,
+            "Slope measures how much y changes for a change in x.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Straight Line",
+            "A straight line with positive slope moves in which direction?",
+            "Upward from left to right",
+            "Downward from left to right",
+            "Only vertically",
+            "Only horizontally",
+            QuestionOption.A,
+            "A positive slope means the line rises as it moves from left to right.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Straight Line",
+            "The point where a line crosses the y-axis is called:",
+            "Y-intercept",
+            "X-intercept",
+            "Origin",
+            "Slope",
+            QuestionOption.A,
+            "The y-intercept is the value of y when x equals zero.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Equations and Properties of Straight Lines
+
+        AddQuestion(
+            "Equations and Properties of Straight Lines",
+            "Find the slope of the line passing through (2,3) and (6,11).",
+            "2",
+            "3",
+            "4",
+            "1",
+            QuestionOption.A,
+            "Slope = (11-3)/(6-2) = 8/4 = 2.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Straight Lines",
+            "Which form of equation is known as slope-intercept form?",
+            "y = mx + c",
+            "ax + by + c = 0",
+            "x² + y² = r²",
+            "y = x²",
+            QuestionOption.A,
+            "Slope-intercept form directly shows slope and y-intercept values.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Straight Lines",
+            "What is the slope of a horizontal line?",
+            "0",
+            "1",
+            "Undefined",
+            "Infinite",
+            QuestionOption.A,
+            "A horizontal line has no vertical change, so its slope is zero.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Straight Lines",
+            "Two lines having the same slope are:",
+            "Parallel lines",
+            "Perpendicular lines",
+            "Intersecting lines",
+            "Curved lines",
+            QuestionOption.A,
+            "Lines with equal slopes remain the same distance apart and are parallel.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Straight Lines",
+            "What is the y-intercept of the line y = 3x + 5?",
+            "5",
+            "3",
+            "8",
+            "0",
+            QuestionOption.A,
+            "In y = mx + c, c represents the y-intercept. Here c = 5.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Straight Lines
+
+        AddQuestion(
+            "Applications and Practice of Straight Lines",
+            "Why are straight line equations useful in real-world applications?",
+            "They model constant relationships between quantities",
+            "They only describe circles",
+            "They cannot represent data",
+            "They are only used in geometry classes",
+            QuestionOption.A,
+            "Straight lines are used in engineering, physics, economics, and data analysis to represent linear relationships.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Straight Lines",
+            "A graph showing constant speed over time is usually represented by:",
+            "A straight line",
+            "A circle",
+            "A random curve",
+            "A triangle",
+            QuestionOption.A,
+            "Constant speed creates a linear relationship between distance and time.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Straight Lines",
+            "In computer graphics, straight line equations are used for:",
+            "Drawing and positioning objects",
+            "Calculating probability only",
+            "Finding chemical formulas",
+            "Measuring temperature only",
+            QuestionOption.A,
+            "Graphics systems use line equations for rendering shapes and paths.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Straight Lines",
+            "A road on a map is represented by a linear equation. What does the slope indicate?",
+            "The direction and steepness of the road",
+            "The colour of the road",
+            "The total area of the map",
+            "The population of the location",
+            QuestionOption.A,
+            "Slope represents the change in vertical position compared to horizontal movement.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Straight Lines",
+            "Why are straight lines important in coordinate geometry?",
+            "They connect algebraic equations with geometric representations",
+            "They replace all mathematical concepts",
+            "They only work for triangles",
+            "They cannot be used practically",
+            QuestionOption.A,
+            "Straight lines are a foundation of coordinate geometry and many real-world models.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // Introduction to Pair of Straight Lines
+
+        AddQuestion(
+            "Introduction to Pair of Straight Lines",
+            "What does a pair of straight lines represent in coordinate geometry?",
+            "Two straight lines considered together as a single equation",
+            "A single curved line",
+            "A circle equation",
+            "A quadratic graph only",
+            QuestionOption.A,
+            "A pair of straight lines represents two lines together using a combined equation.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Pair of Straight Lines",
+            "A pair of straight lines can intersect at:",
+            "Two different circles",
+            "A common point",
+            "No coordinate point",
+            "Only the origin",
+            QuestionOption.B,
+            "Two intersecting straight lines meet at one common point.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Pair of Straight Lines",
+            "Which equation represents a pair of straight lines passing through the origin?",
+            "ax² + 2hxy + by² = 0",
+            "x² + y² = r²",
+            "y = mx + c",
+            "ax + by + c = 0",
+            QuestionOption.A,
+            "The homogeneous second-degree equation ax² + 2hxy + by² = 0 represents a pair of lines through the origin.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Pair of Straight Lines",
+            "Two lines that never meet are called:",
+            "Intersecting lines",
+            "Parallel lines",
+            "Perpendicular lines",
+            "Coincident lines",
+            QuestionOption.B,
+            "Parallel lines have the same slope and never intersect.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Pair of Straight Lines",
+            "The angle between two straight lines depends on their:",
+            "Slopes",
+            "Lengths",
+            "Coordinates only",
+            "Areas",
+            QuestionOption.A,
+            "The angle between two lines can be calculated using their slopes.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Equations and Properties of Pair of Straight Lines
+
+        AddQuestion(
+            "Equations and Properties of Pair of Straight Lines",
+            "The general equation of a pair of straight lines is:",
+            "ax + by + c = 0",
+            "ax² + 2hxy + by² + 2gx + 2fy + c = 0",
+            "x² + y² = r²",
+            "y = mx + c",
+            QuestionOption.B,
+            "A second-degree equation can represent a pair of straight lines under specific conditions.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Pair of Straight Lines",
+            "When two straight lines intersect, they have:",
+            "The same slope",
+            "A common point",
+            "No solution",
+            "Infinite distance",
+            QuestionOption.B,
+            "Intersecting lines share one common point.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Pair of Straight Lines",
+            "For two lines to be parallel, their slopes must be:",
+            "Equal",
+            "Opposite",
+            "Zero always",
+            "Undefined always",
+            QuestionOption.A,
+            "Parallel lines have equal slopes.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Pair of Straight Lines",
+            "Which condition represents perpendicular lines?",
+            "m₁ = m₂",
+            "m₁ + m₂ = 1",
+            "m₁m₂ = -1",
+            "m₁m₂ = 1",
+            QuestionOption.C,
+            "Two lines are perpendicular when the product of their slopes is -1.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Pair of Straight Lines",
+            "A pair of coincident lines means:",
+            "Two lines overlap completely",
+            "Two lines intersect once",
+            "Two lines are perpendicular",
+            "Two lines are parallel but different",
+            QuestionOption.A,
+            "Coincident lines represent the same line occupying the same position.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Pair of Straight Lines
+
+        AddQuestion(
+            "Applications and Practice of Pair of Straight Lines",
+            "Pair of straight lines are useful in engineering because they help model:",
+            "Intersections and directional relationships",
+            "Only circular objects",
+            "Only statistical data",
+            "Random patterns",
+            QuestionOption.A,
+            "Engineers use pairs of lines to analyse intersections and geometric structures.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Pair of Straight Lines",
+            "In computer graphics, pairs of straight lines are commonly used for:",
+            "Creating intersections and geometric shapes",
+            "Calculating probability",
+            "Generating sound waves",
+            "Measuring temperature",
+            QuestionOption.A,
+            "Graphics systems use line intersections to construct shapes and models.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Pair of Straight Lines",
+            "A road junction represented by two crossing roads can be analysed using:",
+            "Circle equations",
+            "Pair of straight lines",
+            "Area formulas",
+            "Probability formulas",
+            QuestionOption.B,
+            "Intersecting roads can be represented mathematically as a pair of straight lines.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Pair of Straight Lines",
+            "Why is the angle between two lines important?",
+            "It helps analyse direction and intersection relationships",
+            "It calculates only areas",
+            "It removes coordinate systems",
+            "It is unrelated to geometry",
+            QuestionOption.A,
+            "The angle between lines helps understand orientation and geometric relationships.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Pair of Straight Lines",
+            "Pair of straight line concepts are applied in:",
+            "Architecture, engineering, and computer modelling",
+            "Only basic arithmetic",
+            "Only biology",
+            "Only probability",
+            QuestionOption.D,
+            "Pairs of lines are widely used in design, modelling, and analytical geometry.",
+            DifficultyLevel.Advance,
+            5);
+
+        // Introduction to Circle in Coordinate Geometry
+
+        AddQuestion(
+            "Introduction to Circle in Coordinate Geometry",
+            "What is the equation of a circle with centre (0,0) and radius r?",
+            "x² + y² = r²",
+            "y = mx + c",
+            "ax + by + c = 0",
+            "x = r",
+            QuestionOption.A,
+            "A circle centred at the origin has the standard equation x² + y² = r².",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Circle in Coordinate Geometry",
+            "What does the radius of a circle represent?",
+            "The distance between two points on the circle",
+            "The distance from the centre to any point on the circle",
+            "The slope of the circle",
+            "The area inside the circle",
+            QuestionOption.B,
+            "The radius is the distance from the centre of the circle to any point on its boundary.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Circle in Coordinate Geometry",
+            "Which point is called the centre of a circle?",
+            "The point where the circle crosses the x-axis",
+            "The point with maximum radius",
+            "The fixed point from which all boundary points are equally distant",
+            "The highest point of the circle",
+            QuestionOption.C,
+            "The centre is the fixed point that maintains equal distance from every point on the circle.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Circle in Coordinate Geometry",
+            "A circle in coordinate geometry is mainly represented using:",
+            "Slope",
+            "Ratio",
+            "Linear equation",
+            "Equation involving centre and radius",
+            QuestionOption.D,
+            "Coordinate geometry represents circles using equations involving centre coordinates and radius.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Circle in Coordinate Geometry",
+            "If the radius of a circle increases, the size of the circle:",
+            "Increases",
+            "Decreases",
+            "Remains unchanged",
+            "Becomes a straight line",
+            QuestionOption.A,
+            "A larger radius creates a larger circle.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Equations and Properties of Circle
+
+        AddQuestion(
+            "Equations and Properties of Circle",
+            "What is the standard form equation of a circle with centre (h,k)?",
+            "(x-h)² + (y-k)² = r²",
+            "y = mx + c",
+            "ax + by + c = 0",
+            "x² + y² = 0",
+            QuestionOption.A,
+            "The standard equation represents a circle with centre (h,k) and radius r.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Circle",
+            "In the circle equation, what does r represent?",
+            "Centre",
+            "Radius",
+            "Slope",
+            "Diameter",
+            QuestionOption.B,
+            "The value r represents the radius of the circle.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Circle",
+            "The centre of the circle x² + y² = 25 is:",
+            "(5,5)",
+            "(25,0)",
+            "(0,0)",
+            "(0,5)",
+            QuestionOption.C,
+            "Since there are no shifted terms, the centre is the origin (0,0).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Circle",
+            "The diameter of a circle with radius 7 is:",
+            "7",
+            "14",
+            "21",
+            "49",
+            QuestionOption.B,
+            "Diameter is twice the radius: 2 × 7 = 14.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Circle",
+            "Which equation represents a circle?",
+            "x² + y² = 16",
+            "y = 2x + 1",
+            "x + y = 5",
+            "y = x²",
+            QuestionOption.A,
+            "An equation containing squared x and y terms with equal coefficients can represent a circle.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Circle
+
+        AddQuestion(
+            "Applications and Practice of Circle",
+            "Circles in coordinate geometry are useful in:",
+            "Modelling circular objects and paths",
+            "Only solving inequalities",
+            "Only measuring angles",
+            "Only calculating slopes",
+            QuestionOption.A,
+            "Circle equations are used in engineering, graphics, navigation, and design.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Circle",
+            "In computer graphics, circle equations are used for:",
+            "Creating circular shapes and curves",
+            "Writing text documents",
+            "Calculating probability only",
+            "Replacing coordinate systems",
+            QuestionOption.A,
+            "Graphics systems use circle equations to render circular objects.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Circle",
+            "A satellite orbit can be approximated mathematically using:",
+            "Straight line equation",
+            "Circle equation",
+            "Triangle formula",
+            "Slope formula",
+            QuestionOption.B,
+            "Circular motion can often be represented using circle equations.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Circle",
+            "Why are circle equations important in engineering?",
+            "They help model circular components and motion",
+            "They remove the need for measurements",
+            "They only describe triangles",
+            "They cannot be applied practically",
+            QuestionOption.A,
+            "Engineers use circle equations for wheels, gears, pipes, and mechanical designs.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Circle",
+            "Which fields commonly use circle concepts?",
+            "Only history",
+            "Only literature",
+            "Engineering, astronomy, and computer graphics",
+            "Only basic arithmetic",
+            QuestionOption.C,
+            "Circle geometry is widely used in science, engineering, and technology.",
+            DifficultyLevel.Advance,
+            5);
+
+        // Introduction to Parabola in Coordinate Geometry
+
+        AddQuestion(
+            "Introduction to Parabola in Coordinate Geometry",
+            "What is a parabola?",
+            "A curve formed by points equidistant from a focus and directrix",
+            "A closed circular shape",
+            "A straight line",
+            "A polygon with equal sides",
+            QuestionOption.A,
+            "A parabola is a conic section where every point is equally distant from the focus and directrix.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Parabola in Coordinate Geometry",
+            "The fixed point of a parabola is called:",
+            "Directrix",
+            "Focus",
+            "Vertex",
+            "Axis",
+            QuestionOption.B,
+            "The focus is the fixed point used to define a parabola.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Parabola in Coordinate Geometry",
+            "The fixed line associated with a parabola is called:",
+            "Axis of symmetry",
+            "Tangent",
+            "Directrix",
+            "Chord",
+            QuestionOption.C,
+            "The directrix is the fixed line from which points on a parabola are equally distant from the focus.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Parabola in Coordinate Geometry",
+            "The highest or lowest point of a parabola is called:",
+            "Focus",
+            "Directrix",
+            "Axis",
+            "Vertex",
+            QuestionOption.D,
+            "The vertex is the turning point of a parabola.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Parabola in Coordinate Geometry",
+            "A parabola is a type of:",
+            "Conic section",
+            "Triangle",
+            "Quadrilateral",
+            "Circle only",
+            QuestionOption.A,
+            "Parabola is one of the four major conic sections.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Equations and Properties of Parabola
+
+        AddQuestion(
+            "Equations and Properties of Parabola",
+            "Which equation represents a basic parabola opening upward?",
+            "y² = 4ax",
+            "y = x²",
+            "x² + y² = r²",
+            "ax + by + c = 0",
+            QuestionOption.B,
+            "The equation y = x² represents a standard upward-opening parabola.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Parabola",
+            "The line that divides a parabola into two equal halves is called:",
+            "Focus",
+            "Directrix",
+            "Axis of symmetry",
+            "Tangent",
+            QuestionOption.C,
+            "The axis of symmetry divides the parabola into two mirror-image halves.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Parabola",
+            "In the equation y² = 4ax, the value a represents:",
+            "Radius",
+            "Slope",
+            "Distance from vertex to focus",
+            "Diameter",
+            QuestionOption.C,
+            "The parameter a represents the distance between the vertex and focus.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Parabola",
+            "A parabola with equation x² = 4ay opens:",
+            "Along the x-axis",
+            "Along the y-axis",
+            "Only downward",
+            "In a circular direction",
+            QuestionOption.A,
+            "The equation x² = 4ay represents a parabola opening along the y-axis.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Parabola",
+            "Which property is true for every parabola?",
+            "Every point is equally distant from focus and directrix",
+            "It always forms a circle",
+            "It has no symmetry",
+            "It has four vertices",
+            QuestionOption.A,
+            "Equal distance from focus and directrix is the defining property of a parabola.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Parabola
+
+        AddQuestion(
+            "Applications and Practice of Parabola",
+            "Parabolic reflectors are used in:",
+            "Satellite dishes and headlights",
+            "Flat surfaces",
+            "Rectangular designs",
+            "Only maps",
+            QuestionOption.A,
+            "Parabolic shapes reflect signals and light efficiently toward a focus.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Parabola",
+            "The path of a projectile under gravity is approximately:",
+            "Circular",
+            "Parabolic",
+            "Linear",
+            "Triangular",
+            QuestionOption.B,
+            "Projectile motion follows a parabolic trajectory when air resistance is ignored.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Parabola",
+            "In engineering, parabolas are useful for designing:",
+            "Reflectors and optimized structures",
+            "Only straight roads",
+            "Only square objects",
+            "Random patterns",
+            QuestionOption.A,
+            "Engineers use parabolic curves in antennas, bridges, and optical devices.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Parabola",
+            "A satellite communication dish uses a parabola because:",
+            "It concentrates signals at the focus",
+            "It removes all signals",
+            "It creates random waves",
+            "It prevents reflection",
+            QuestionOption.D,
+            "The reflective property of a parabola directs signals toward the focus.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Parabola",
+            "Which field commonly applies parabola concepts?",
+            "Astronomy and physics",
+            "Only literature",
+            "Only history",
+            "Only basic counting",
+            QuestionOption.A,
+            "Parabolas are widely used in physics, astronomy, engineering, and technology.",
+            DifficultyLevel.Advance,
+            5);
+
+        // Introduction to Ellipse in Coordinate Geometry
+
+        AddQuestion(
+            "Introduction to Ellipse in Coordinate Geometry",
+            "What is an ellipse?",
+            "A closed curve where the sum of distances from two fixed points is constant",
+            "A straight line with constant slope",
+            "A curve with only one focus",
+            "A polygon with equal sides",
+            QuestionOption.A,
+            "An ellipse is defined as a set of points where the sum of distances from two foci remains constant.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Ellipse in Coordinate Geometry",
+            "The fixed points used to define an ellipse are called:",
+            "Vertices",
+            "Foci",
+            "Axes",
+            "Directrices",
+            QuestionOption.B,
+            "The two fixed points inside an ellipse are called foci.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Ellipse in Coordinate Geometry",
+            "The longest diameter of an ellipse is called:",
+            "Minor axis",
+            "Radius",
+            "Major axis",
+            "Directrix",
+            QuestionOption.C,
+            "The major axis is the longest line segment passing through the centre of an ellipse.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Ellipse in Coordinate Geometry",
+            "The shortest diameter of an ellipse is called:",
+            "Focus",
+            "Major axis",
+            "Vertex",
+            "Minor axis",
+            QuestionOption.D,
+            "The minor axis is the shorter diameter perpendicular to the major axis.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Ellipse in Coordinate Geometry",
+            "An ellipse is a type of:",
+            "Conic section",
+            "Triangle",
+            "Straight line",
+            "Quadrilateral",
+            QuestionOption.A,
+            "Ellipse is one of the four main conic sections.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Equations and Properties of Ellipse
+
+        AddQuestion(
+            "Equations and Properties of Ellipse",
+            "Which equation represents a standard ellipse centred at the origin?",
+            "(x²/a²) + (y²/b²) = 1",
+            "y = mx + c",
+            "x² + y² = r²",
+            "ax + by + c = 0",
+            QuestionOption.A,
+            "The standard ellipse equation uses squared coordinates divided by squared axes lengths.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Ellipse",
+            "In an ellipse equation, a and b represent:",
+            "Slopes",
+            "Semi-axis lengths",
+            "Angles",
+            "Coordinates only",
+            QuestionOption.B,
+            "The values a and b represent the semi-major and semi-minor axis lengths.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Ellipse",
+            "The centre of the ellipse x²/25 + y²/9 = 1 is:",
+            "(5,9)",
+            "(25,9)",
+            "(0,0)",
+            "(1,1)",
+            QuestionOption.C,
+            "Since there are no shifted terms, the ellipse is centred at the origin.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Ellipse",
+            "An ellipse has:",
+            "No symmetry",
+            "Only one axis",
+            "A circular shape always",
+            "Two axes of symmetry",
+            QuestionOption.D,
+            "Every ellipse has symmetry about both its major and minor axes.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Ellipse",
+            "If both axes of an ellipse become equal, the ellipse becomes:",
+            "A circle",
+            "A parabola",
+            "A hyperbola",
+            "A line",
+            QuestionOption.A,
+            "A circle is a special case of an ellipse where both axes are equal.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Ellipse
+
+        AddQuestion(
+            "Applications and Practice of Ellipse",
+            "Ellipses are used in astronomy to describe:",
+            "Planetary orbits",
+            "Straight roads",
+            "Square structures",
+            "Random motion",
+            QuestionOption.A,
+            "Many planetary orbits are approximately elliptical.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Ellipse",
+            "An elliptical reflector works because:",
+            "It blocks all waves",
+            "It can direct energy between its foci",
+            "It removes the centre point",
+            "It creates straight lines",
+            QuestionOption.B,
+            "A property of ellipses allows signals or sound to travel between the two foci.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Ellipse",
+            "Elliptical shapes are commonly used in:",
+            "Only arithmetic",
+            "Only biology",
+            "Architecture and engineering design",
+            "Only programming syntax",
+            QuestionOption.C,
+            "Elliptical designs appear in buildings, mechanical parts, and structures.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Ellipse",
+            "Why are ellipse equations important in coordinate geometry?",
+            "They connect algebra with geometric curves",
+            "They replace all geometric concepts",
+            "They only calculate slopes",
+            "They cannot model real objects",
+            QuestionOption.A,
+            "Ellipse equations allow mathematical analysis of curved shapes and real-world systems.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Ellipse",
+            "Which field uses ellipse concepts for orbital calculations?",
+            "Astronomy",
+            "Literature",
+            "History",
+            "Basic arithmetic",
+            QuestionOption.A,
+            "Astronomy uses elliptical models to study planetary motion.",
+            DifficultyLevel.Advance,
+            5);
+
+        // Introduction to Hyperbola in Coordinate Geometry
+
+        AddQuestion(
+            "Introduction to Hyperbola in Coordinate Geometry",
+            "What is a hyperbola?",
+            "A conic section formed by points with a constant difference of distances from two fixed points",
+            "A closed circular curve",
+            "A straight line",
+            "A polygon with equal sides",
+            QuestionOption.A,
+            "A hyperbola is defined as a set of points where the difference of distances from two foci is constant.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Hyperbola in Coordinate Geometry",
+            "The fixed points of a hyperbola are called:",
+            "Vertices",
+            "Foci",
+            "Axes",
+            "Directrices",
+            QuestionOption.B,
+            "The fixed points used to define a hyperbola are called foci.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Hyperbola in Coordinate Geometry",
+            "The lines that a hyperbola approaches but never touches are called:",
+            "Vertices",
+            "Foci",
+            "Asymptotes",
+            "Axes",
+            QuestionOption.C,
+            "Asymptotes are lines that guide the shape of a hyperbola as it extends outward.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Hyperbola in Coordinate Geometry",
+            "The turning points of a hyperbola are called:",
+            "Focus",
+            "Directrix",
+            "Centre",
+            "Vertices",
+            QuestionOption.D,
+            "The vertices are the points where each branch of a hyperbola reaches its closest point to the centre.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Hyperbola in Coordinate Geometry",
+            "A hyperbola is a type of:",
+            "Conic section",
+            "Triangle",
+            "Quadrilateral",
+            "Circle only",
+            QuestionOption.A,
+            "Hyperbola is one of the four main conic sections.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Equations and Properties of Hyperbola
+
+        AddQuestion(
+            "Equations and Properties of Hyperbola",
+            "Which equation represents a standard hyperbola centred at the origin?",
+            "x²/a² - y²/b² = 1",
+            "x² + y² = r²",
+            "y = mx + c",
+            "ax + by + c = 0",
+            QuestionOption.A,
+            "The standard equation of a horizontal hyperbola is x²/a² - y²/b² = 1.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Hyperbola",
+            "In a hyperbola equation, a represents:",
+            "Slope",
+            "Distance from centre to vertex",
+            "Radius",
+            "Area",
+            QuestionOption.B,
+            "The value a represents the distance from the centre to a vertex.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Hyperbola",
+            "The centre of the hyperbola x²/16 - y²/9 = 1 is:",
+            "(16,9)",
+            "(4,3)",
+            "(0,0)",
+            "(1,1)",
+            QuestionOption.C,
+            "Since there are no translated terms, the centre is at the origin.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Hyperbola",
+            "A hyperbola has how many branches?",
+            "One",
+            "Three",
+            "Four",
+            "Two",
+            QuestionOption.D,
+            "A standard hyperbola consists of two separate branches.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Hyperbola",
+            "Which property helps determine the shape of a hyperbola?",
+            "Asymptotes",
+            "Only radius",
+            "Only circumference",
+            "Area formula",
+            QuestionOption.A,
+            "Asymptotes define the direction and shape of hyperbola branches.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Hyperbola
+
+        AddQuestion(
+            "Applications and Practice of Hyperbola",
+            "Hyperbolas are used in navigation systems for:",
+            "Locating positions using signal differences",
+            "Drawing circles only",
+            "Calculating areas only",
+            "Creating triangles",
+            QuestionOption.A,
+            "Navigation systems can use hyperbolic curves based on differences in signal arrival times.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Hyperbola",
+            "A hyperbolic path can be observed in:",
+            "Projectile motion only",
+            "Some physics and engineering systems",
+            "Only square structures",
+            "Only arithmetic problems",
+            QuestionOption.B,
+            "Hyperbolic models are used in physics, engineering, and signal analysis.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Hyperbola",
+            "Hyperbola concepts are applied in:",
+            "Only literature",
+            "Only history",
+            "Engineering and astronomy",
+            "Only basic counting",
+            QuestionOption.C,
+            "Engineering and astronomy use hyperbolic models for analysis and design.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Hyperbola",
+            "Why are hyperbola equations important in coordinate geometry?",
+            "They connect algebra with complex geometric curves",
+            "They remove the need for graphs",
+            "They only describe circles",
+            "They cannot model real systems",
+            QuestionOption.A,
+            "Hyperbola equations allow mathematical analysis of important curved structures.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Hyperbola",
+            "Which technology uses hyperbolic principles for positioning?",
+            "GPS and navigation systems",
+            "Text editors",
+            "Image filters only",
+            "Simple calculators",
+            QuestionOption.A,
+            "Navigation technologies use hyperbolic relationships for accurate positioning.",
+            DifficultyLevel.Advance,
+            5);
+        // Introduction to Conic Sections
+
+        AddQuestion(
+            "Introduction to Conic Sections",
+            "What are conic sections?",
+            "Curves obtained by intersecting a cone with a plane",
+            "Types of polygons",
+            "Straight lines only",
+            "Arithmetic formulas",
+            QuestionOption.A,
+            "Conic sections are curves formed when a plane intersects a double cone.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Conic Sections",
+            "Which of the following is a conic section?",
+            "Square",
+            "Ellipse",
+            "Triangle",
+            "Rectangle",
+            QuestionOption.B,
+            "An ellipse is one of the four main conic sections.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Conic Sections",
+            "The four main types of conic sections are:",
+            "Triangles, squares, circles, rectangles",
+            "Lines, angles, points, planes",
+            "Circle, parabola, ellipse, and hyperbola",
+            "Only circles and lines",
+            QuestionOption.C,
+            "The four major conic sections are circles, parabolas, ellipses, and hyperbolas.",
+            DifficultyLevel.Begineer,
+            3);
+
+        AddQuestion(
+            "Introduction to Conic Sections",
+            "Which conic section has a constant distance from a centre point?",
+            "Parabola",
+            "Hyperbola",
+            "Ellipse",
+            "Circle",
+            QuestionOption.D,
+            "A circle is defined as all points at a fixed distance from the centre.",
+            DifficultyLevel.Begineer,
+            4);
+
+        AddQuestion(
+            "Introduction to Conic Sections",
+            "Conic sections are mainly studied in:",
+            "Coordinate geometry",
+            "Basic arithmetic",
+            "Number theory only",
+            "Statistics only",
+            QuestionOption.A,
+            "Coordinate geometry uses equations to represent and analyse conic sections.",
+            DifficultyLevel.Begineer,
+            5);
+
+
+        // Equations and Properties of Conic Sections
+
+        AddQuestion(
+            "Equations and Properties of Conic Sections",
+            "Which equation represents a circle centred at the origin?",
+            "x² + y² = r²",
+            "y = mx + c",
+            "x²/a² - y²/b² = 1",
+            "y² = 4ax",
+            QuestionOption.A,
+            "The equation x² + y² = r² represents a circle with centre at the origin.",
+            DifficultyLevel.Intermediate,
+            1);
+
+        AddQuestion(
+            "Equations and Properties of Conic Sections",
+            "Which conic section is represented by y = x²?",
+            "Circle",
+            "Parabola",
+            "Ellipse",
+            "Hyperbola",
+            QuestionOption.B,
+            "The equation y = x² represents a standard upward-opening parabola.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Equations and Properties of Conic Sections",
+            "The equation x²/a² + y²/b² = 1 represents:",
+            "Hyperbola",
+            "Parabola",
+            "Ellipse",
+            "Straight line",
+            QuestionOption.C,
+            "The standard ellipse equation contains the sum of two squared terms equal to one.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Equations and Properties of Conic Sections",
+            "The equation x²/a² - y²/b² = 1 represents:",
+            "Circle",
+            "Ellipse",
+            "Parabola",
+            "Hyperbola",
+            QuestionOption.D,
+            "A difference between squared terms represents a standard hyperbola.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Equations and Properties of Conic Sections",
+            "Which property helps classify different conic sections?",
+            "Their equations and geometric characteristics",
+            "Only their colours",
+            "Only their sizes",
+            "Only their positions",
+            QuestionOption.A,
+            "Conic sections are classified using their equations and geometric properties.",
+            DifficultyLevel.Intermediate,
+            5);
+
+
+        // Applications and Practice of Conic Sections
+
+        AddQuestion(
+            "Applications and Practice of Conic Sections",
+            "Conic sections are used in astronomy for:",
+            "Studying planetary orbits",
+            "Writing documents",
+            "Counting numbers",
+            "Creating tables",
+            QuestionOption.A,
+            "Elliptical and hyperbolic paths are important in astronomy.",
+            DifficultyLevel.Advance,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Conic Sections",
+            "Parabolic reflectors are commonly used in:",
+            "Satellite dishes and antennas",
+            "Flat surfaces",
+            "Random structures",
+            "Only books",
+            QuestionOption.B,
+            "Parabolic reflectors focus signals and waves efficiently.",
+            DifficultyLevel.Advance,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Conic Sections",
+            "Which field uses conic sections for modelling real-world structures?",
+            "Only history",
+            "Only literature",
+            "Engineering and physics",
+            "Only basic calculation",
+            QuestionOption.C,
+            "Engineering and physics use conic sections for modelling curves and motion.",
+            DifficultyLevel.Advance,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Conic Sections",
+            "Why are conic sections important in mathematics?",
+            "They connect algebra with geometric shapes and real applications",
+            "They replace all mathematical topics",
+            "They only describe straight lines",
+            "They cannot be used practically",
+            QuestionOption.A,
+            "Conic sections provide mathematical models for many scientific and engineering systems.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Conic Sections",
+            "Which technology uses conic section principles?",
+            "Optics, navigation, and engineering systems",
+            "Only calculators",
+            "Only text processing",
+            "Only simple arithmetic",
+            QuestionOption.A,
+            "Many technologies rely on conic sections for design and analysis.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+
+
+
+
+
         context.PracticeQuestions.AddRange(questions);
         await context.SaveChangesAsync();
     }

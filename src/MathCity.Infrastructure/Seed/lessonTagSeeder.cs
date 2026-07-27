@@ -33,7 +33,7 @@ public static class LessonTagSeeder
                 TagId = tag.Id
             });
         }
-        // Algebraic Expressions
+        // Algebraic Expressions 1
         // Lesson 1
         AddTag("Introduction to Algebraic Expressions", "Introduction");
         AddTag("Introduction to Algebraic Expressions", "Concept");
@@ -52,7 +52,7 @@ public static class LessonTagSeeder
         AddTag("Applications and Practice of Algebraic Expressions", "Real World");
         AddTag("Applications and Practice of Algebraic Expressions", "Revision");
 
-        // Geometry
+        // Geometry 2
         AddTag("Introduction to Triangles", "Introduction");
         AddTag("Introduction to Triangles", "Concept");
         AddTag("Introduction to Triangles", "Definition");
@@ -68,6 +68,23 @@ public static class LessonTagSeeder
         AddTag("Applications of Triangles", "Real World");
         AddTag("Applications of Triangles", "Revision");
 
+
+        // Coordinate Geometry 3
+        AddTag("Introduction to Cartesian Plane", "Introduction");
+        AddTag("Introduction to Cartesian Plane", "Concept");
+        AddTag("Introduction to Cartesian Plane", "Definition");
+        AddTag("Introduction to Cartesian Plane", "Visualization");
+
+        AddTag("Understanding Coordinates and Quadrants", "Concept");
+        AddTag("Understanding Coordinates and Quadrants", "Visualization");
+        AddTag("Understanding Coordinates and Quadrants", "Worked Example");
+        AddTag("Understanding Coordinates and Quadrants", "Step-by-Step");
+
+        AddTag("Applications and Practice of Cartesian Plane", "Practice");
+        AddTag("Applications and Practice of Cartesian Plane", "Exercise");
+        AddTag("Applications and Practice of Cartesian Plane", "Application");
+        AddTag("Applications and Practice of Cartesian Plane", "Real World");
+        AddTag("Applications and Practice of Cartesian Plane", "Revision");
 
 
 

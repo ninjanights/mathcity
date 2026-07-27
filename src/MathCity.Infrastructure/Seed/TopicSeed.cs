@@ -42,7 +42,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Geometry"].Id, Title = "Transformations", DisplayOrder = 11 },
             new Topic { ChapterId = chapters["Geometry"].Id, Title = "Coordinate Proofs", DisplayOrder = 12 },
 
-            // Coordinate Geometry
+            // Coordinate Geometry 3
 
             new Topic { ChapterId = chapters["Coordinate Geometry"].Id, Title = "Cartesian Plane", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Coordinate Geometry"].Id, Title = "Distance Formula", DisplayOrder = 2 },
@@ -56,7 +56,22 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Coordinate Geometry"].Id, Title = "Hyperbola", DisplayOrder = 10 },
             new Topic { ChapterId = chapters["Coordinate Geometry"].Id, Title = "Conic Sections", DisplayOrder = 11 },
 
-            // Trigonometry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Trigonometry 4
 
             new Topic { ChapterId = chapters["Trigonometry"].Id, Title = "Trigonometric Ratios", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Trigonometry"].Id, Title = "Trigonometric Identities", DisplayOrder = 2 },
@@ -68,7 +83,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Trigonometry"].Id, Title = "Graphs of Trigonometric Functions", DisplayOrder = 8 },
 
 
-            // Functions
+            // Functions 5
 
             new Topic { ChapterId = chapters["Functions"].Id, Title = "Relations", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Functions"].Id, Title = "Types of Functions", DisplayOrder = 2 },
@@ -79,7 +94,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Functions"].Id, Title = "Piecewise Functions", DisplayOrder = 7 },
             new Topic { ChapterId = chapters["Functions"].Id, Title = "Transformations of Functions", DisplayOrder = 8 },
 
-            // Sequences & Series
+            // Sequences & Series 6
 
             new Topic { ChapterId = chapters["Sequences & Series"].Id, Title = "Arithmetic Progression (AP)", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Sequences & Series"].Id, Title = "Geometric Progression (GP)", DisplayOrder = 2 },
@@ -91,7 +106,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Sequences & Series"].Id, Title = "Mathematical Induction", DisplayOrder = 8 },
 
 
-            // Matrices & Determinants
+            // Matrices & Determinants 7
 
             new Topic { ChapterId = chapters["Matrices & Determinants"].Id, Title = "Matrix Basics", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Matrices & Determinants"].Id, Title = "Types of Matrices", DisplayOrder = 2 },
@@ -104,7 +119,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Matrices & Determinants"].Id, Title = "Eigenvectors", DisplayOrder = 9 },
 
 
-            // Vectors
+            // Vectors 8
 
             new Topic { ChapterId = chapters["Vectors"].Id, Title = "Vector Basics", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Vectors"].Id, Title = "Vector Operations", DisplayOrder = 2 },
@@ -116,7 +131,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Vectors"].Id, Title = "Planes", DisplayOrder = 8 },
 
 
-            // Probability
+            // Probability 9
 
             new Topic { ChapterId = chapters["Probability"].Id, Title = "Basic Probability", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Probability"].Id, Title = "Conditional Probability", DisplayOrder = 2 },
@@ -127,7 +142,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Probability"].Id, Title = "Binomial Distribution", DisplayOrder = 7 },
             new Topic { ChapterId = chapters["Probability"].Id, Title = "Normal Distribution", DisplayOrder = 8 },
 
-            // Statistics
+            // Statistics 10
 
             new Topic { ChapterId = chapters["Statistics"].Id, Title = "Data Collection", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Statistics"].Id, Title = "Measures of Central Tendency", DisplayOrder = 2 },
@@ -141,7 +156,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Statistics"].Id, Title = "Hypothesis Testing", DisplayOrder = 10 },
 
 
-            // Calculus
+            // Calculus 11
 
             new Topic { ChapterId = chapters["Calculus"].Id, Title = "Limits", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Calculus"].Id, Title = "Continuity", DisplayOrder = 2 },
@@ -155,7 +170,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Calculus"].Id, Title = "Multivariable Calculus", DisplayOrder = 10 },
 
 
-            // Differential Equations
+            // Differential Equations 12
 
             new Topic { ChapterId = chapters["Differential Equations"].Id, Title = "Introduction", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Differential Equations"].Id, Title = "First Order Differential Equations", DisplayOrder = 2 },
@@ -167,7 +182,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Differential Equations"].Id, Title = "Applications", DisplayOrder = 8 },
 
 
-            // Complex Numbers
+            // Complex Numbers 13
 
             new Topic { ChapterId = chapters["Complex Numbers"].Id, Title = "Imaginary Numbers", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Complex Numbers"].Id, Title = "Complex Plane", DisplayOrder = 2 },
@@ -178,7 +193,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Complex Numbers"].Id, Title = "Complex Functions", DisplayOrder = 7 },
 
 
-            // Discrete Mathematics
+            // Discrete Mathematics 14
 
             new Topic { ChapterId = chapters["Discrete Mathematics"].Id, Title = "Counting Principles", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Discrete Mathematics"].Id, Title = "Permutations", DisplayOrder = 2 },
@@ -190,7 +205,7 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Discrete Mathematics"].Id, Title = "Number Theory", DisplayOrder = 8 },
             new Topic { ChapterId = chapters["Discrete Mathematics"].Id, Title = "Algorithms", DisplayOrder = 9 },
 
-            // Mathematical Logic & Set Theory
+            // Mathematical Logic & Set Theory 15
 
             new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Sets", DisplayOrder = 1 },
             new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Set Operations", DisplayOrder = 2 },
@@ -203,9 +218,6 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Truth Tables", DisplayOrder = 9 },
             new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Logical Equivalence", DisplayOrder = 10 },
             new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Mathematical Proof Techniques", DisplayOrder = 11 },
-
-
-
         });
     }
 }
