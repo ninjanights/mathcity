@@ -12128,6 +12128,1539 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
+        // ==========================================================
+        // Introduction to Arithmetic Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Arithmetic Progression",
+            "What is an arithmetic progression (AP)?",
+            "A sequence with a common ratio",
+            "A sequence where each term differs from the previous by a constant value",
+            "A random sequence of numbers",
+            "A sequence of prime numbers",
+            QuestionOption.B,
+            "An arithmetic progression is a sequence in which the difference between consecutive terms is constant.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Arithmetic Progression",
+            "The fixed value added or subtracted in an AP is called the:",
+            "First term",
+            "Last term",
+            "Common difference",
+            "Common ratio",
+            QuestionOption.C,
+            "The common difference is the constant difference between consecutive terms.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Arithmetic Progression",
+            "Which of the following is an arithmetic progression?",
+            "2, 4, 8, 16",
+            "5, 8, 11, 14",
+            "1, 4, 9, 16",
+            "3, 6, 12, 24",
+            QuestionOption.B,
+            "Each term increases by 3, making it an arithmetic progression.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Arithmetic Progression",
+            "In the AP 10, 15, 20, 25, the common difference is:",
+            "10",
+            "15",
+            "20",
+            "5",
+            QuestionOption.D,
+            "Each consecutive term differs by 5.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Arithmetic Progression",
+            "Why are arithmetic progressions important?",
+            "They help study patterns with equal differences.",
+            "They are only used in geometry.",
+            "They replace algebra.",
+            "They are only useful in statistics.",
+            QuestionOption.A,
+            "Arithmetic progressions model regularly increasing or decreasing patterns.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Finding Terms and Sum of Arithmetic Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Finding Terms and Sum of Arithmetic Progression",
+            "The nth term of an AP is found using:",
+            "a + (n - 1)d",
+            "a × d",
+            "a + nd²",
+            "n(a + d)",
+            QuestionOption.A,
+            "The formula for the nth term is a + (n - 1)d.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Finding Terms and Sum of Arithmetic Progression",
+            "The symbol 'a' in an AP formula represents the:",
+            "Common difference",
+            "First term",
+            "Last term",
+            "Number of terms",
+            QuestionOption.B,
+            "The first term of the arithmetic progression is denoted by 'a'.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Finding Terms and Sum of Arithmetic Progression",
+            "Which formula gives the sum of the first n terms of an AP?",
+            "S = nd",
+            "S = a + d",
+            "S = n/2 [2a + (n - 1)d]",
+            "S = a² + d²",
+            QuestionOption.C,
+            "This is the standard formula for the sum of an arithmetic progression.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding Terms and Sum of Arithmetic Progression",
+            "If the first term is 3 and the common difference is 4, what is the 5th term?",
+            "15",
+            "19",
+            "20",
+            "23",
+            QuestionOption.B,
+            "a₅ = 3 + (5 - 1) × 4 = 19.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding Terms and Sum of Arithmetic Progression",
+            "Before finding the nth term of an AP, you must know:",
+            "Only the last term",
+            "Only the number of terms",
+            "The first term and common difference",
+            "Only the sum",
+            QuestionOption.C,
+            "Both the first term and common difference are required.",
+            DifficultyLevel.Advance,
+            5);
+
+// PQ. 6
+        // ==========================================================
+        // Applications and Practice of Arithmetic Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Arithmetic Progression",
+            "Arithmetic progressions are commonly used in:",
+            "Finance and budgeting",
+            "Painting only",
+            "Cooking only",
+            "Music composition only",
+            QuestionOption.A,
+            "Financial calculations often involve regular increases or decreases.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Arithmetic Progression",
+            "A staircase with each step increasing by the same height is an example of:",
+            "Geometric progression",
+            "Arithmetic progression",
+            "Random sequence",
+            "Quadratic sequence",
+            QuestionOption.B,
+            "Equal increments form an arithmetic progression.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Arithmetic Progression",
+            "Engineers use arithmetic progressions to model:",
+            "Regularly changing measurements",
+            "Only circular motion",
+            "Random events",
+            "Chemical formulas only",
+            QuestionOption.A,
+            "APs help describe evenly changing values.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Arithmetic Progression",
+            "Scheduling tasks at equal intervals is an application of:",
+            "Arithmetic progression",
+            "Logarithms",
+            "Probability",
+            "Matrices",
+            QuestionOption.A,
+            "Equal intervals naturally follow an arithmetic progression.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Arithmetic Progression",
+            "Why is arithmetic progression important in mathematics and real-world applications?",
+            "It models situations involving constant increases or decreases, making it useful in finance, engineering, scheduling, and pattern analysis.",
+            "It is only useful in examinations.",
+            "It replaces algebra completely.",
+            "It is only used for number puzzles.",
+            QuestionOption.A,
+            "Arithmetic progressions provide a simple mathematical model for uniformly changing quantities across many practical applications.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Geometric Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Geometric Progression",
+            "What is a geometric progression (GP)?",
+            "A sequence with a constant difference",
+            "A sequence of prime numbers",
+            "A sequence where each term is obtained by multiplying the previous term by a constant",
+            "A sequence of consecutive integers",
+            QuestionOption.C,
+            "In a geometric progression, each term is obtained by multiplying the previous term by a fixed number called the common ratio.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Geometric Progression",
+            "The fixed number used to multiply consecutive terms in a GP is called the:",
+            "Common difference",
+            "Common ratio",
+            "First term",
+            "Factorial",
+            QuestionOption.B,
+            "The constant multiplier in a geometric progression is called the common ratio.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Geometric Progression",
+            "Which of the following is a geometric progression?",
+            "2, 5, 8, 11",
+            "3, 6, 12, 24",
+            "1, 4, 9, 16",
+            "5, 10, 15, 20",
+            QuestionOption.B,
+            "Each term is multiplied by 2 to obtain the next term.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Geometric Progression",
+            "What is the common ratio of the GP 4, 12, 36, 108?",
+            "2",
+            "4",
+            "6",
+            "3",
+            QuestionOption.D,
+            "Each term is multiplied by 3 to obtain the next term.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Geometric Progression",
+            "Why are geometric progressions important?",
+            "They model situations involving repeated multiplication or exponential growth.",
+            "They are only used in geometry.",
+            "They replace algebraic equations.",
+            "They are only useful in statistics.",
+            QuestionOption.A,
+            "Geometric progressions describe many real-world situations involving exponential change.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Finding Terms and Sum of Geometric Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Finding Terms and Sum of Geometric Progression",
+            "The nth term of a GP is given by:",
+            "a + (n - 1)d",
+            "arⁿ",
+            "ar^(n - 1)",
+            "a(n + r)",
+            QuestionOption.C,
+            "The nth term formula for a geometric progression is a × r^(n - 1).",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Finding Terms and Sum of Geometric Progression",
+            "In a GP, the symbol 'r' represents the:",
+            "Range",
+            "Ratio",
+            "Radius",
+            "Remainder",
+            QuestionOption.B,
+            "The symbol r denotes the common ratio.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Finding Terms and Sum of Geometric Progression",
+            "Which formula gives the sum of the first n terms of a GP (r ≠ 1)?",
+            "S = a + nr",
+            "S = a(1 - rⁿ)/(1 - r)",
+            "S = n/2[2a + (n - 1)d]",
+            "S = arⁿ",
+            QuestionOption.B,
+            "This is the standard formula for the finite sum of a geometric progression.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding Terms and Sum of Geometric Progression",
+            "The sum to infinity of a GP exists only when:",
+            "r > 1",
+            "r = 1",
+            "|r| < 1",
+            "r = 0",
+            QuestionOption.C,
+            "An infinite geometric series converges only when the absolute value of the common ratio is less than 1.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding Terms and Sum of Geometric Progression",
+            "Before finding the nth term of a GP, you must know:",
+            "Only the last term",
+            "The first term and the common ratio",
+            "Only the number of terms",
+            "Only the sum",
+            QuestionOption.B,
+            "Both the first term and common ratio are required to determine any term.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Geometric Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Geometric Progression",
+            "Compound interest calculations are based on:",
+            "Arithmetic progression",
+            "Linear equations",
+            "Geometric progression",
+            "Quadratic equations",
+            QuestionOption.C,
+            "Compound interest grows by repeated multiplication, making it a geometric progression.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Geometric Progression",
+            "Population growth under a constant growth rate is commonly modelled using:",
+            "Geometric progression",
+            "Arithmetic progression",
+            "Probability",
+            "Matrices",
+            QuestionOption.A,
+            "Population growth often follows exponential patterns represented by geometric progressions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Geometric Progression",
+            "Computer science uses geometric progressions in:",
+            "Memory allocation and algorithm analysis",
+            "Grammar checking",
+            "Weather forecasting only",
+            "Drawing circles only",
+            QuestionOption.A,
+            "Many algorithms and data structures involve exponential growth or reduction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Geometric Progression",
+            "Which real-world situation best represents a geometric progression?",
+            "Salary increasing by ₹500 every month",
+            "Tree height increasing by 2 cm every year",
+            "Money doubling every year",
+            "Temperature decreasing by 1°C every hour",
+            QuestionOption.C,
+            "Doubling is repeated multiplication, which forms a geometric progression.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Geometric Progression",
+            "Why is geometric progression important in mathematics and real-world applications?",
+            "It models repeated multiplication and exponential change, making it valuable in finance, population studies, computer science, engineering, and scientific modelling.",
+            "It is only useful in examinations.",
+            "It replaces arithmetic progression completely.",
+            "It is only used for sequences.",
+            QuestionOption.A,
+            "Geometric progressions are fundamental for understanding exponential growth and decay across many disciplines.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Harmonic Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Harmonic Progression",
+            "What is a harmonic progression (HP)?",
+            "A sequence with a common ratio",
+            "A sequence whose reciprocals form an arithmetic progression",
+            "A sequence with a common difference",
+            "A sequence of prime numbers",
+            QuestionOption.B,
+            "A harmonic progression is formed by taking the reciprocals of the terms of an arithmetic progression.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Harmonic Progression",
+            "The reciprocals of the terms in a harmonic progression form a:",
+            "Geometric progression",
+            "Fibonacci sequence",
+            "Arithmetic progression",
+            "Quadratic sequence",
+            QuestionOption.C,
+            "The defining property of a harmonic progression is that its reciprocals form an arithmetic progression.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Harmonic Progression",
+            "Which of the following is a harmonic progression?",
+            "1, 2, 3, 4",
+            "1, 1/2, 1/3, 1/4",
+            "2, 4, 8, 16",
+            "3, 6, 9, 12",
+            QuestionOption.B,
+            "The reciprocals are 1, 2, 3, 4, which form an arithmetic progression.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Harmonic Progression",
+            "A harmonic progression is closely related to:",
+            "Arithmetic progression",
+            "Probability",
+            "Matrices",
+            "Vectors",
+            QuestionOption.A,
+            "The reciprocals of a harmonic progression always form an arithmetic progression.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Harmonic Progression",
+            "Why is harmonic progression important?",
+            "It helps solve problems involving reciprocal quantities and rates.",
+            "It is only used in algebra.",
+            "It replaces arithmetic progression.",
+            "It is only useful for graphing.",
+            QuestionOption.A,
+            "Harmonic progressions are useful when working with rates, speeds, and reciprocal relationships.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Problems Using Harmonic Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Problems Using Harmonic Progression",
+            "To determine whether a sequence is an HP, you should first:",
+            "Find its sum",
+            "Take the reciprocal of each term",
+            "Multiply every term by 2",
+            "Find the square of each term",
+            QuestionOption.B,
+            "If the reciprocals form an arithmetic progression, then the sequence is a harmonic progression.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Harmonic Progression",
+            "If the reciprocals of a sequence have a common difference, then the sequence is a:",
+            "Geometric progression",
+            "Random sequence",
+            "Harmonic progression",
+            "Quadratic progression",
+            QuestionOption.C,
+            "This is the defining property of a harmonic progression.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Harmonic Progression",
+            "The terms of a harmonic progression are generally found by:",
+            "Taking the reciprocals of an arithmetic progression",
+            "Adding a constant value",
+            "Multiplying by a common ratio",
+            "Squaring each term",
+            QuestionOption.A,
+            "An HP is obtained by taking reciprocals of an AP.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Harmonic Progression",
+            "Which concept is most important when solving HP problems?",
+            "Differentiation",
+            "Reciprocal values",
+            "Matrices",
+            "Logarithms",
+            QuestionOption.B,
+            "Most HP problems involve converting terms into their reciprocals.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Harmonic Progression",
+            "Before solving a harmonic progression problem, you should identify:",
+            "Whether the reciprocals form an arithmetic progression",
+            "The graph of the sequence",
+            "The determinant",
+            "The derivative",
+            QuestionOption.A,
+            "Checking the reciprocal sequence is the first step in solving HP problems.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Harmonic Progression
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Harmonic Progression",
+            "Harmonic progression is commonly used in:",
+            "Rate and speed calculations",
+            "Drawing circles",
+            "Painting",
+            "Prime factorization",
+            QuestionOption.A,
+            "Many rate-based problems naturally involve reciprocal relationships.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Harmonic Progression",
+            "Which field commonly uses harmonic progression in the study of sound?",
+            "Astronomy",
+            "Acoustics",
+            "Botany",
+            "History",
+            QuestionOption.B,
+            "Acoustics frequently uses harmonic relationships in the study of sound waves.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Harmonic Progression",
+            "Engineers use harmonic progression when analysing:",
+            "Reciprocal relationships and rates",
+            "Only geometric shapes",
+            "Historical records",
+            "Literary texts",
+            QuestionOption.A,
+            "Engineering calculations often involve reciprocal quantities such as resistance and flow rates.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Harmonic Progression",
+            "Optics frequently uses harmonic progression concepts when studying:",
+            "Light-related measurements",
+            "Population growth",
+            "Tax calculations",
+            "Matrices",
+            QuestionOption.A,
+            "Some optical calculations involve reciprocal relationships.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Harmonic Progression",
+            "Why is harmonic progression important in mathematics and real-world applications?",
+            "It helps analyse reciprocal quantities and is widely used in physics, engineering, acoustics, optics, and rate-based calculations.",
+            "It is only useful for examinations.",
+            "It replaces arithmetic progression completely.",
+            "It is only used for number sequences.",
+            QuestionOption.A,
+            "Harmonic progression provides an effective model for solving problems involving reciprocal values and varying rates.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Sigma Notation
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Sigma Notation",
+            "What is sigma notation used for?",
+            "To represent multiplication",
+            "To represent the sum of a sequence of terms",
+            "To solve equations only",
+            "To represent division",
+            QuestionOption.B,
+            "Sigma notation provides a compact way to write the sum of a sequence of numbers.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Sigma Notation",
+            "The Greek letter used for summation is:",
+            "π",
+            "Δ",
+            "Σ",
+            "θ",
+            QuestionOption.C,
+            "The uppercase Greek letter Sigma (Σ) denotes summation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Sigma Notation",
+            "In Σ(i = 1 to 5) i, what is the starting value of the index?",
+            "0",
+            "1",
+            "5",
+            "10",
+            QuestionOption.B,
+            "The summation begins with i = 1.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Sigma Notation",
+            "In sigma notation, the variable that changes during the summation is called the:",
+            "Coefficient",
+            "Constant",
+            "Index of summation",
+            "Exponent",
+            QuestionOption.C,
+            "The index of summation takes each value from the lower limit to the upper limit.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Sigma Notation",
+            "Why is sigma notation useful?",
+            "It simplifies the representation of long sums.",
+            "It replaces algebra completely.",
+            "It is only used in geometry.",
+            "It is only useful for calculators.",
+            QuestionOption.A,
+            "Sigma notation makes lengthy summations concise and easier to understand.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Evaluating Expressions Using Sigma Notation
+        // ==========================================================
+
+        AddQuestion(
+            "Evaluating Expressions Using Sigma Notation",
+            "What is the value of Σ(i = 1 to 4) i?",
+            "8",
+            "10",
+            "12",
+            "16",
+            QuestionOption.B,
+            "1 + 2 + 3 + 4 = 10.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Evaluating Expressions Using Sigma Notation",
+            "To evaluate a sigma expression, you should:",
+            "Replace the index with each value in the given range and add the results.",
+            "Multiply all terms together.",
+            "Square each term.",
+            "Divide every term by the upper limit.",
+            QuestionOption.A,
+            "Each value of the index is substituted into the expression and the results are added.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Evaluating Expressions Using Sigma Notation",
+            "What is the value of Σ(i = 1 to 3) 2i?",
+            "10",
+            "14",
+            "12",
+            "18",
+            QuestionOption.C,
+            "2(1) + 2(2) + 2(3) = 2 + 4 + 6 = 12.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Evaluating Expressions Using Sigma Notation",
+            "The upper number in sigma notation indicates the:",
+            "First value of the index",
+            "Coefficient",
+            "Final value of the index",
+            "Answer of the summation",
+            QuestionOption.C,
+            "The upper limit tells where the summation ends.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Evaluating Expressions Using Sigma Notation",
+            "Summation formulas are mainly used to:",
+            "Evaluate long sums efficiently",
+            "Draw graphs",
+            "Solve quadratic equations",
+            "Find derivatives only",
+            QuestionOption.A,
+            "Summation formulas save time when evaluating large series.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Sigma Notation
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Sigma Notation",
+            "Sigma notation is widely used in:",
+            "Statistics",
+            "Painting",
+            "Music only",
+            "Sports only",
+            QuestionOption.A,
+            "Statistics frequently uses summations to calculate averages, variances, and other measures.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Sigma Notation",
+            "Calculus uses sigma notation primarily to:",
+            "Represent finite and infinite sums",
+            "Solve grammar problems",
+            "Draw triangles",
+            "Measure temperature",
+            QuestionOption.A,
+            "Sigma notation is fundamental in defining series and integrals.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Sigma Notation",
+            "Computer science uses sigma notation for:",
+            "Analysing algorithms and mathematical computations",
+            "Painting graphics manually",
+            "Creating maps only",
+            "Studying grammar",
+            QuestionOption.A,
+            "Summation notation is common in algorithm analysis and computational mathematics.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Sigma Notation",
+            "Finance commonly uses sigma notation to:",
+            "Calculate accumulated values and financial totals",
+            "Find square roots only",
+            "Draw circles",
+            "Measure speed",
+            QuestionOption.A,
+            "Many financial formulas involve summing payments, investments, or returns.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Sigma Notation",
+            "Why is sigma notation important in mathematics and real-world applications?",
+            "It provides a compact and efficient way to represent summations used in statistics, calculus, computer science, finance, and scientific computations.",
+            "It is only useful for examinations.",
+            "It replaces algebra entirely.",
+            "It is only used for sequences.",
+            QuestionOption.A,
+            "Sigma notation is a standard mathematical tool for expressing and evaluating sums across many disciplines.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Finite Series
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Finite Series",
+            "What is a finite series?",
+            "A sum with infinitely many terms",
+            "A sequence with no end",
+            "A sum containing a fixed number of terms",
+            "A sequence of prime numbers",
+            QuestionOption.C,
+            "A finite series consists of a fixed and limited number of terms added together.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Finite Series",
+            "A finite series is formed by:",
+            "Adding the terms of a sequence",
+            "Multiplying all terms together",
+            "Finding the average of numbers",
+            "Squaring every term",
+            QuestionOption.A,
+            "A series is obtained by adding the terms of a sequence.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Finite Series",
+            "Which of the following is a finite series?",
+            "1 + 2 + 3 + 4",
+            "1 + 2 + 3 + ...",
+            "2, 4, 6, 8",
+            "3, 9, 27, 81",
+            QuestionOption.A,
+            "The sum has only four terms, so it is finite.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Finite Series",
+            "The main characteristic of a finite series is that it has:",
+            "No first term",
+            "An unlimited number of terms",
+            "Exactly one term",
+            "A limited number of terms",
+            QuestionOption.D,
+            "A finite series always contains a fixed number of terms.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Finite Series",
+            "Why are finite series important?",
+            "They help calculate totals from a limited number of values.",
+            "They replace algebra completely.",
+            "They are only used in geometry.",
+            "They are only useful in examinations.",
+            QuestionOption.A,
+            "Finite series are widely used to calculate totals efficiently in mathematics and real-life applications.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Evaluating and Solving Finite Series
+        // ==========================================================
+
+        AddQuestion(
+            "Evaluating and Solving Finite Series",
+            "To evaluate a finite series, you generally:",
+            "Subtract all the terms",
+            "Add all the terms together",
+            "Multiply every term",
+            "Square each term",
+            QuestionOption.B,
+            "A finite series is evaluated by adding its terms.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Evaluating and Solving Finite Series",
+            "Which type of progression commonly has a finite sum formula?",
+            "Arithmetic progression",
+            "Random sequence",
+            "Prime numbers",
+            "Matrices",
+            QuestionOption.A,
+            "Arithmetic progressions have standard formulas for finite sums.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Evaluating and Solving Finite Series",
+            "The sum of a finite geometric series depends on:",
+            "The first term, common ratio, and number of terms",
+            "Only the last term",
+            "Only the common ratio",
+            "Only the number of terms",
+            QuestionOption.A,
+            "All three values are required to calculate the sum of a finite geometric series.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Evaluating and Solving Finite Series",
+            "Which mathematical tool is commonly used to represent finite sums compactly?",
+            "Vectors",
+            "Sigma notation",
+            "Matrices",
+            "Logarithms",
+            QuestionOption.B,
+            "Sigma notation provides a concise way to write finite summations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Evaluating and Solving Finite Series",
+            "Using formulas to evaluate finite series is helpful because it:",
+            "Avoids adding every term individually",
+            "Changes the sequence into a graph",
+            "Removes the first term",
+            "Converts the series into a matrix",
+            QuestionOption.A,
+            "Summation formulas make calculations much faster and more efficient.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Finite Series
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Finite Series",
+            "Finite series are commonly used in:",
+            "Finance",
+            "Painting",
+            "Music only",
+            "Sports only",
+            QuestionOption.A,
+            "Finance uses finite series to calculate payments, investments, and savings.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Finite Series",
+            "Engineers use finite series to:",
+            "Perform mathematical calculations and modelling",
+            "Write essays",
+            "Study languages",
+            "Design clothing",
+            QuestionOption.A,
+            "Finite series help engineers solve practical computational problems.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Finite Series",
+            "Statistics often uses finite series to:",
+            "Calculate totals and averages",
+            "Draw circles",
+            "Measure temperature",
+            "Find square roots only",
+            QuestionOption.A,
+            "Many statistical formulas involve summing a finite number of observations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Finite Series",
+            "Computer science applies finite series in:",
+            "Algorithm analysis and computational calculations",
+            "Painting graphics manually",
+            "History research",
+            "Language translation only",
+            QuestionOption.A,
+            "Finite summations frequently appear in algorithm design and analysis.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Finite Series",
+            "Why are finite series important in mathematics and real-world applications?",
+            "They provide efficient methods for calculating finite totals used in finance, engineering, statistics, computer science, and scientific computations.",
+            "They are only useful in examinations.",
+            "They replace arithmetic progression.",
+            "They are only used for algebra homework.",
+            QuestionOption.A,
+            "Finite series are essential whenever a limited collection of values must be summed efficiently.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Infinite Series
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Infinite Series",
+            "What is an infinite series?",
+            "A sum containing exactly 100 terms",
+            "A sum containing a finite number of terms",
+            "A sum of infinitely many terms",
+            "A sequence of prime numbers",
+            QuestionOption.C,
+            "An infinite series is formed by adding infinitely many terms of a sequence.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Infinite Series",
+            "An infinite series may either:",
+            "Be increasing only",
+            "Converge or diverge",
+            "Contain negative numbers only",
+            "Be arithmetic only",
+            QuestionOption.B,
+            "Infinite series are classified based on whether they approach a finite value (converge) or not (diverge).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Infinite Series",
+            "A convergent infinite series is one that:",
+            "Has infinitely many terms",
+            "Approaches a finite value",
+            "Always equals zero",
+            "Has only positive terms",
+            QuestionOption.B,
+            "A convergent series has a finite sum even though it contains infinitely many terms.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Infinite Series",
+            "Which of the following is an example of an infinite series?",
+            "1 + 2 + 3 + 4",
+            "2 + 4 + 6",
+            "1 + 1/2 + 1/4 + 1/8 + ...",
+            "5 + 10",
+            QuestionOption.C,
+            "The ellipsis (...) indicates that the terms continue forever.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Infinite Series",
+            "Why are infinite series important?",
+            "They help model continuous processes and approximate complex mathematical expressions.",
+            "They replace algebra completely.",
+            "They are only useful for examinations.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Infinite series are fundamental in higher mathematics, especially calculus and analysis.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Convergence and Evaluation of Infinite Series
+        // ==========================================================
+
+        AddQuestion(
+            "Convergence and Evaluation of Infinite Series",
+            "A series is said to converge if:",
+            "Its terms become larger forever",
+            "Its partial sums approach a finite value",
+            "Its first term is zero",
+            "It contains infinitely many positive numbers",
+            QuestionOption.B,
+            "Convergence depends on the behaviour of the partial sums.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Convergence and Evaluation of Infinite Series",
+            "A series that does not approach a finite value is called:",
+            "Arithmetic",
+            "Finite",
+            "Divergent",
+            "Geometric",
+            QuestionOption.C,
+            "A divergent series has no finite sum.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Convergence and Evaluation of Infinite Series",
+            "The infinite geometric series a + ar + ar² + ... converges only when:",
+            "r > 1",
+            "|r| < 1",
+            "r = 1",
+            "r > 0",
+            QuestionOption.B,
+            "An infinite geometric series converges only if the absolute value of the common ratio is less than 1.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Convergence and Evaluation of Infinite Series",
+            "Which mathematical concept is commonly used to determine convergence?",
+            "Convergence tests",
+            "Prime factorization",
+            "Matrix multiplication",
+            "Coordinate geometry",
+            QuestionOption.A,
+            "Various convergence tests help determine whether an infinite series converges or diverges.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Convergence and Evaluation of Infinite Series",
+            "Why are convergence tests important?",
+            "They determine whether an infinite series has a finite sum.",
+            "They find the square root of numbers.",
+            "They convert equations into graphs.",
+            "They calculate determinants.",
+            QuestionOption.A,
+            "Convergence tests are essential for analysing infinite series.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Infinite Series
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Infinite Series",
+            "Infinite series are widely used in:",
+            "Calculus",
+            "Painting",
+            "History",
+            "Grammar",
+            QuestionOption.A,
+            "Calculus frequently uses infinite series for approximations and function expansions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Infinite Series",
+            "Physicists use infinite series to:",
+            "Model waves and physical phenomena",
+            "Write essays",
+            "Draw maps",
+            "Create databases",
+            QuestionOption.A,
+            "Many physical models rely on infinite series expansions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Infinite Series",
+            "Infinite series are useful in computer science for:",
+            "Numerical algorithms and approximations",
+            "Painting graphics manually",
+            "Studying literature",
+            "Designing buildings only",
+            QuestionOption.A,
+            "Numerical methods and algorithm analysis often involve infinite series.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Infinite Series",
+            "Engineers frequently use infinite series to:",
+            "Approximate complex functions",
+            "Measure rainfall only",
+            "Classify animals",
+            "Write legal documents",
+            QuestionOption.A,
+            "Series expansions simplify complicated engineering calculations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Infinite Series",
+            "Why are infinite series important in mathematics and real-world applications?",
+            "They provide powerful tools for approximating functions and solving problems in calculus, physics, engineering, computer science, and numerical analysis.",
+            "They are only useful for examinations.",
+            "They replace finite series completely.",
+            "They are only used in geometry.",
+            QuestionOption.A,
+            "Infinite series are essential for modelling continuous systems and solving advanced mathematical problems.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Binomial Expansion
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Binomial Expansion",
+            "What is the purpose of the binomial theorem?",
+            "To solve quadratic equations",
+            "To expand powers of a binomial expression",
+            "To find square roots",
+            "To simplify fractions",
+            QuestionOption.B,
+            "The binomial theorem provides a systematic method for expanding expressions like (a + b)ⁿ.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Binomial Expansion",
+            "A binomial expression contains:",
+            "One term",
+            "Two terms",
+            "Three terms",
+            "Four terms",
+            QuestionOption.B,
+            "A binomial is an algebraic expression consisting of exactly two terms.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Binomial Expansion",
+            "Which of the following is a binomial?",
+            "x²",
+            "x + 5",
+            "3xyz",
+            "7",
+            QuestionOption.B,
+            "The expression x + 5 contains exactly two terms.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Binomial Expansion",
+            "The coefficients in a binomial expansion are called:",
+            "Arithmetic coefficients",
+            "Polynomial factors",
+            "Binomial coefficients",
+            "Common ratios",
+            QuestionOption.C,
+            "The numbers appearing in the expansion are known as binomial coefficients.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Binomial Expansion",
+            "Why is binomial expansion important?",
+            "It provides an efficient way to expand powers of binomial expressions.",
+            "It replaces algebra completely.",
+            "It is only used in geometry.",
+            "It is only useful for examinations.",
+            QuestionOption.A,
+            "Binomial expansion simplifies calculations involving powers of algebraic expressions.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applying the Binomial Theorem
+        // ==========================================================
+
+        AddQuestion(
+            "Applying the Binomial Theorem",
+            "Which triangle is commonly used to determine binomial coefficients?",
+            "Pascal's Triangle",
+            "Bermuda Triangle",
+            "Right Triangle",
+            "Equilateral Triangle",
+            QuestionOption.A,
+            "Pascal's Triangle provides the coefficients used in binomial expansions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applying the Binomial Theorem",
+            "The expansion of (a + b)² is:",
+            "a² + b²",
+            "a² + 2ab + b²",
+            "a² - 2ab + b²",
+            "2a + 2b",
+            QuestionOption.B,
+            "Applying the binomial theorem gives a² + 2ab + b².",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applying the Binomial Theorem",
+            "The general term in a binomial expansion contains:",
+            "A binomial coefficient",
+            "Only variables",
+            "Only constants",
+            "Only exponents",
+            QuestionOption.A,
+            "Each term contains an appropriate binomial coefficient along with powers of the variables.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applying the Binomial Theorem",
+            "Pascal's Triangle helps to:",
+            "Find derivatives",
+            "Determine binomial coefficients",
+            "Calculate logarithms",
+            "Solve matrices",
+            QuestionOption.B,
+            "Each row of Pascal's Triangle gives the coefficients for a binomial expansion.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applying the Binomial Theorem",
+            "The binomial theorem makes expanding large powers easier because it:",
+            "Provides a direct expansion formula",
+            "Uses graph plotting",
+            "Converts equations into matrices",
+            "Finds square roots automatically",
+            QuestionOption.A,
+            "The theorem eliminates repeated multiplication by providing a direct formula.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Binomial Expansion
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Binomial Expansion",
+            "Binomial expansion is commonly used in:",
+            "Probability",
+            "Painting",
+            "History",
+            "Music",
+            QuestionOption.A,
+            "Binomial coefficients are widely used in probability calculations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Expansion",
+            "Calculus often uses binomial expansion to:",
+            "Approximate algebraic expressions",
+            "Measure distances",
+            "Draw circles",
+            "Calculate averages only",
+            QuestionOption.A,
+            "Binomial expansion is useful for approximating functions in calculus.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Expansion",
+            "Computer science applies binomial expansion in:",
+            "Algorithm analysis and computational mathematics",
+            "Writing essays",
+            "Painting graphics manually",
+            "Weather forecasting only",
+            QuestionOption.A,
+            "Many computational algorithms use combinatorial concepts based on binomial coefficients.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Expansion",
+            "Engineers use binomial expansion to:",
+            "Simplify mathematical models and approximations",
+            "Study literature",
+            "Translate languages",
+            "Design clothing",
+            QuestionOption.A,
+            "Engineering calculations often involve algebraic approximations using binomial expansion.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Expansion",
+            "Why is binomial expansion important in mathematics and real-world applications?",
+            "It simplifies algebraic calculations and is widely used in probability, calculus, computer science, engineering, and scientific modelling.",
+            "It is only useful in examinations.",
+            "It replaces algebra completely.",
+            "It is only used for polynomials of degree two.",
+            QuestionOption.A,
+            "The binomial theorem is a powerful mathematical tool with applications across many scientific disciplines.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Mathematical Induction
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Mathematical Induction",
+            "What is the primary purpose of mathematical induction?",
+            "To solve quadratic equations",
+            "To prove statements involving natural numbers",
+            "To find derivatives",
+            "To simplify fractions",
+            QuestionOption.B,
+            "Mathematical induction is a proof technique used to establish that a statement is true for all natural numbers.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Mathematical Induction",
+            "The first step in mathematical induction is called the:",
+            "Inductive hypothesis",
+            "Final proof",
+            "Base case",
+            "Generalization",
+            QuestionOption.C,
+            "The base case verifies that the statement is true for the initial value, usually n = 1.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Mathematical Induction",
+            "After proving the base case, the next step is to:",
+            "Draw a graph",
+            "Assume the statement is true for n = k",
+            "Differentiate the equation",
+            "Find the inverse",
+            QuestionOption.B,
+            "This assumption is called the inductive hypothesis.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Mathematical Induction",
+            "The inductive step proves the statement for:",
+            "n = 0 only",
+            "n = k",
+            "n = k + 1",
+            "All even numbers only",
+            QuestionOption.C,
+            "The goal is to show that if the statement is true for n = k, then it is also true for n = k + 1.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Mathematical Induction",
+            "Why is mathematical induction important?",
+            "It provides a systematic way to prove statements for all natural numbers.",
+            "It replaces algebra completely.",
+            "It is only useful for geometry.",
+            "It is only used in examinations.",
+            QuestionOption.A,
+            "Mathematical induction is one of the most important proof techniques in mathematics.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Proving Statements Using Mathematical Induction
+        // ==========================================================
+
+        AddQuestion(
+            "Proving Statements Using Mathematical Induction",
+            "What assumption is made during the inductive hypothesis?",
+            "The statement is true for n = k",
+            "The statement is false for n = k",
+            "The statement is true only for n = 1",
+            "The statement is true for all real numbers",
+            QuestionOption.A,
+            "The inductive hypothesis assumes the statement holds for an arbitrary positive integer k.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Proving Statements Using Mathematical Induction",
+            "The final goal of the inductive step is to prove the statement for:",
+            "n = k²",
+            "n = k + 1",
+            "n = 2k",
+            "n = k − 1",
+            QuestionOption.B,
+            "Showing the statement is true for k + 1 completes the induction step.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Proving Statements Using Mathematical Induction",
+            "Mathematical induction is commonly used to prove:",
+            "Algebraic identities",
+            "Weather forecasts",
+            "Chemical reactions",
+            "Historical facts",
+            QuestionOption.A,
+            "Induction is frequently applied to algebraic identities and sequence formulas.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Proving Statements Using Mathematical Induction",
+            "Which property can also be proved using mathematical induction?",
+            "Divisibility",
+            "Colour combinations",
+            "Population statistics only",
+            "Temperature conversions",
+            QuestionOption.A,
+            "Many divisibility results are naturally proved using induction.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Proving Statements Using Mathematical Induction",
+            "A proof by mathematical induction is complete only after:",
+            "The base case and inductive step are both proved",
+            "Only the base case is proved",
+            "Only the inductive hypothesis is written",
+            "A graph is drawn",
+            QuestionOption.A,
+            "Both the base case and inductive step are essential for a valid induction proof.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Mathematical Induction
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Mathematical Induction",
+            "Mathematical induction is widely used in:",
+            "Computer science",
+            "Painting",
+            "Music theory",
+            "Photography",
+            QuestionOption.A,
+            "Many algorithms and recursive structures are proved correct using induction.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Mathematical Induction",
+            "In mathematics, induction is commonly used to prove:",
+            "Theorems involving natural numbers",
+            "Chemical formulas",
+            "Geographical maps",
+            "Language grammar",
+            QuestionOption.A,
+            "Induction is designed for proving propositions involving positive integers.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Mathematical Induction",
+            "Algorithm correctness is often established using:",
+            "Mathematical induction",
+            "Probability only",
+            "Coordinate geometry",
+            "Matrices only",
+            QuestionOption.A,
+            "Recursive algorithms are commonly proved correct through induction.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Mathematical Induction",
+            "Mathematical induction is an important topic in:",
+            "Discrete mathematics",
+            "Painting",
+            "Architecture only",
+            "Physical education",
+            QuestionOption.A,
+            "Discrete mathematics makes extensive use of induction proofs.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Mathematical Induction",
+            "Why is mathematical induction important in mathematics and real-world applications?",
+            "It provides a rigorous proof technique used in mathematics, computer science, algorithms, and discrete structures to verify statements that hold for all natural numbers.",
+            "It is only useful for examinations.",
+            "It replaces all other proof methods.",
+            "It is only used for algebraic equations.",
+            QuestionOption.A,
+            "Mathematical induction is a fundamental proof technique with applications in theoretical and practical fields.",
+            DifficultyLevel.Advance,
+            5);
+
+
+
+
+
+
 
 
 
