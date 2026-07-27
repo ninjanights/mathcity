@@ -20119,8 +20119,1739 @@ AddQuestion(
             QuestionOption.A,
             "Hypothesis testing provides a systematic framework for making informed decisions based on statistical evidence.",
             DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Limits
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Limits",
+            "A limit describes:",
+            "The value a function approaches as the input approaches a certain point",
+            "The largest value of a function",
+            "The derivative of a function",
+            "The graph's highest point",
+            QuestionOption.A,
+            "A limit tells us the value a function gets closer to as the input approaches a specific value.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Limits",
+            "Limits are considered the foundation of:",
+            "Probability",
+            "Calculus",
+            "Statistics",
+            "Geometry",
+            QuestionOption.B,
+            "Limits are used to define derivatives, integrals, and many important concepts in calculus.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Limits",
+            "When evaluating a limit, we are mainly interested in:",
+            "The exact value at the point only",
+            "The graph's colour",
+            "The value the function approaches",
+            "The function's equation length",
+            QuestionOption.C,
+            "A limit focuses on the behaviour of a function near a point rather than necessarily at the point.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Limits",
+            "A limit may exist even if:",
+            "The graph is a straight line",
+            "The function is increasing",
+            "The function is decreasing",
+            "The function is not defined at that point",
+            QuestionOption.D,
+            "A function can have a limit even when its value at that point is undefined.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Limits",
+            "Limits help mathematicians study:",
+            "The behaviour of functions near specific points",
+            "Only whole numbers",
+            "Only triangles",
+            "Only probability experiments",
+            QuestionOption.A,
+            "Limits allow us to understand how functions behave as inputs approach particular values.",
+            DifficultyLevel.Advance,
             5);
 
+
+        // ==========================================================
+        // Calculating and Evaluating Limits
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating and Evaluating Limits",
+            "One-sided limits examine function behaviour from:",
+            "One direction only",
+            "The graph's centre",
+            "Both directions simultaneously",
+            "Only above the x-axis",
+            QuestionOption.A,
+            "Left-hand and right-hand limits examine the function from one direction at a time.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating and Evaluating Limits",
+            "A limit exists only when the left-hand and right-hand limits are:",
+            "Infinite",
+            "Equal",
+            "Negative",
+            "Positive",
+            QuestionOption.B,
+            "Both one-sided limits must be equal for the overall limit to exist.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating and Evaluating Limits",
+            "Infinite limits describe functions whose values grow:",
+            "Toward zero",
+            "Toward one",
+            "Without bound",
+            "Toward negative one",
+            QuestionOption.C,
+            "Infinite limits occur when function values become extremely large or extremely small.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating and Evaluating Limits",
+            "One common technique for evaluating algebraic limits is:",
+            "Drawing random numbers",
+            "Ignoring the denominator",
+            "Changing the coordinate system",
+            "Factoring and simplifying expressions",
+            QuestionOption.D,
+            "Factoring often removes removable discontinuities and simplifies limit calculations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating and Evaluating Limits",
+            "Graphs are useful when evaluating limits because they:",
+            "Show how a function behaves near a point",
+            "Automatically calculate derivatives",
+            "Remove algebra completely",
+            "Guarantee exact answers in every case",
+            QuestionOption.A,
+            "Graphs provide a visual understanding of how function values approach a limit.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Limits
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Limits",
+            "Limits are used to define:",
+            "Derivatives",
+            "Passwords",
+            "Databases",
+            "Matrices only",
+            QuestionOption.A,
+            "The derivative is formally defined using the concept of limits.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Limits",
+            "Engineers use limits to model:",
+            "Internet connections",
+            "Continuous physical systems",
+            "Social media trends only",
+            "Computer storage",
+            QuestionOption.B,
+            "Limits help engineers analyse motion, forces, and continuous changes.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Limits",
+            "In economics, limits help analyse:",
+            "Only tax rates",
+            "Election results",
+            "Marginal cost and marginal revenue",
+            "Population size only",
+            QuestionOption.C,
+            "Marginal analysis in economics relies heavily on calculus and limits.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Limits",
+            "Physicists use limits to:",
+            "Create programming languages",
+            "Compress images",
+            "Store cloud data",
+            "Describe motion, velocity, and acceleration",
+            QuestionOption.D,
+            "Velocity and acceleration are defined using limits of changing quantities.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Limits",
+            "The greatest importance of limits is that they:",
+            "Provide the mathematical foundation for calculus and continuous change",
+            "Replace algebra completely",
+            "Guarantee exact numerical answers",
+            "Eliminate the need for graphs",
+            QuestionOption.A,
+            "Limits form the basis for derivatives, integrals, continuity, and many mathematical models used across science and engineering.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Continuity
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Continuity",
+            "A function is continuous if:",
+            "Its graph can be drawn without lifting the pen",
+            "It has only straight lines",
+            "It contains no variables",
+            "It always passes through the origin",
+            QuestionOption.A,
+            "A continuous function has no breaks, holes, or jumps over the interval being considered.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Continuity",
+            "Continuity is closely related to:",
+            "Matrices",
+            "Limits",
+            "Probability",
+            "Vectors",
+            QuestionOption.B,
+            "A function is continuous at a point if its limit equals its function value there.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Continuity",
+            "For continuity at x = a, which must exist?",
+            "Only the derivative",
+            "Only the graph",
+            "The limit of the function",
+            "Only the slope",
+            QuestionOption.C,
+            "The limit at the point must exist before continuity can be established.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Continuity",
+            "A function is continuous at a point only if:",
+            "Its derivative is zero",
+            "Its graph is horizontal",
+            "Its value is positive",
+            "Its limit equals its function value",
+            QuestionOption.D,
+            "The limit approaching the point must equal the actual function value.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Continuity",
+            "Continuous functions are important because they:",
+            "Model smooth real-world changes",
+            "Always produce integers",
+            "Never require graphs",
+            "Replace algebra completely",
+            QuestionOption.A,
+            "Many natural phenomena change smoothly, making continuous functions ideal mathematical models.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Properties and Types of Continuity
+        // ==========================================================
+
+        AddQuestion(
+            "Properties and Types of Continuity",
+            "A jump discontinuity occurs when:",
+            "The left-hand and right-hand limits are different",
+            "The graph is curved",
+            "The derivative is zero",
+            "The function crosses the x-axis",
+            QuestionOption.A,
+            "A jump discontinuity happens when the two one-sided limits do not agree.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Properties and Types of Continuity",
+            "A removable discontinuity is commonly called a:",
+            "Hole",
+            "Corner",
+            "Peak",
+            "Vertex",
+            QuestionOption.B,
+            "A removable discontinuity is a hole that can often be fixed by redefining the function value.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Properties and Types of Continuity",
+            "A function is continuous on an interval if it is continuous at:",
+            "Only the endpoints",
+            "Only the midpoint",
+            "Every point in the interval",
+            "Only integer values",
+            QuestionOption.C,
+            "Continuity over an interval requires continuity everywhere within that interval.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Properties and Types of Continuity",
+            "An infinite discontinuity usually occurs when:",
+            "The graph becomes horizontal",
+            "The graph touches the x-axis",
+            "The graph forms a circle",
+            "The function approaches positive or negative infinity",
+            QuestionOption.D,
+            "Infinite discontinuities often occur near vertical asymptotes.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Properties and Types of Continuity",
+            "To verify continuity at a point, we compare:",
+            "The limit and the function value",
+            "The derivative and the slope",
+            "The graph colour and scale",
+            "The intercept and gradient only",
+            QuestionOption.A,
+            "A function is continuous when its limit exists and equals its actual value at that point.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Continuity
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Continuity",
+            "Engineers use continuity to model:",
+            "Smooth physical systems",
+            "Password generation",
+            "File compression",
+            "Network routing",
+            QuestionOption.A,
+            "Engineering systems often involve continuous changes in position, force, and temperature.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Continuity",
+            "Continuous functions are important in physics because they describe:",
+            "Smooth motion and changing quantities",
+            "Only electrical circuits",
+            "Only atomic particles",
+            "Only geometric figures",
+            QuestionOption.B,
+            "Physical quantities such as motion and energy often vary continuously.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Continuity",
+            "Economists use continuity when modelling:",
+            "Only stock prices",
+            "Only taxes",
+            "Continuous changes in cost, revenue, and demand",
+            "Election results",
+            QuestionOption.C,
+            "Economic models often assume variables change continuously over time.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Continuity",
+            "Mathematical models in science rely on continuity because it:",
+            "Creates random values",
+            "Guarantees perfect accuracy",
+            "Eliminates variables",
+            "Represents smooth behaviour realistically",
+            QuestionOption.D,
+            "Continuous models closely approximate many real-world systems.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Continuity",
+            "Continuity is essential for many calculus concepts because it:",
+            "Supports derivatives, optimisation, and mathematical modelling",
+            "Replaces limits completely",
+            "Removes the need for equations",
+            "Works only for straight lines",
+            QuestionOption.A,
+            "Many important theorems and techniques in calculus assume functions are continuous.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+// Introduction to Differentiation
+// ==========================================================
+
+AddQuestion(
+    "Introduction to Differentiation",
+    "A derivative primarily measures:",
+    "The rate of change of a function",
+    "The total area under a curve",
+    "The probability of an event",
+    "The length of a vector",
+    QuestionOption.A,
+    "A derivative tells us how quickly a function changes with respect to its variable.",
+    DifficultyLevel.Begineer,
+    1);
+
+AddQuestion(
+    "Introduction to Differentiation",
+    "Differentiation is built upon the concept of:",
+    "Matrices",
+    "Limits",
+    "Statistics",
+    "Probability",
+    QuestionOption.B,
+    "The derivative is formally defined using limits.",
+    DifficultyLevel.Begineer,
+    2);
+
+AddQuestion(
+    "Introduction to Differentiation",
+    "The derivative of a function at a point represents the:",
+    "Area under the graph",
+    "Average value",
+    "Slope of the tangent line",
+    "Highest point of the graph",
+    QuestionOption.C,
+    "The derivative gives the slope of the tangent to the curve at that point.",
+    DifficultyLevel.Intermediate,
+    3);
+
+AddQuestion(
+    "Introduction to Differentiation",
+    "Differentiation is mainly used to study:",
+    "Only circles",
+    "Only triangles",
+    "Only straight lines",
+    "How functions change",
+    QuestionOption.D,
+    "Differentiation helps analyse changing quantities and function behaviour.",
+    DifficultyLevel.Intermediate,
+    4);
+
+AddQuestion(
+    "Introduction to Differentiation",
+    "One important application of derivatives is:",
+    "Finding maximum and minimum values",
+    "Counting prime numbers",
+    "Drawing histograms",
+    "Finding matrix determinants",
+    QuestionOption.A,
+    "Derivatives are widely used in optimisation problems.",
+    DifficultyLevel.Advance,
+    5);
+
+
+// ==========================================================
+// Rules and Techniques of Differentiation
+// ==========================================================
+
+AddQuestion(
+    "Rules and Techniques of Differentiation",
+    "Which rule is commonly used to differentiate xⁿ?",
+    "Power Rule",
+    "Chain Rule",
+    "Product Rule",
+    "Quotient Rule",
+    QuestionOption.A,
+    "The Power Rule states that d/dx(xⁿ) = n·xⁿ⁻¹.",
+    DifficultyLevel.Begineer,
+    1);
+
+AddQuestion(
+    "Rules and Techniques of Differentiation",
+    "Which differentiation rule is used for the product of two functions?",
+    "Power Rule",
+    "Product Rule",
+    "Chain Rule",
+    "Quotient Rule",
+    QuestionOption.B,
+    "The Product Rule differentiates expressions like f(x)g(x).",
+    DifficultyLevel.Begineer,
+    2);
+
+AddQuestion(
+    "Rules and Techniques of Differentiation",
+    "The Chain Rule is primarily used for:",
+    "Adding functions",
+    "Subtracting functions",
+    "Composite functions",
+    "Constant functions",
+    QuestionOption.C,
+    "The Chain Rule differentiates functions inside other functions.",
+    DifficultyLevel.Intermediate,
+    3);
+
+AddQuestion(
+    "Rules and Techniques of Differentiation",
+    "Which rule is used for differentiating one function divided by another?",
+    "Power Rule",
+    "Product Rule",
+    "Chain Rule",
+    "Quotient Rule",
+    QuestionOption.D,
+    "The Quotient Rule is used when differentiating fractions of functions.",
+    DifficultyLevel.Intermediate,
+    4);
+
+AddQuestion(
+    "Rules and Techniques of Differentiation",
+    "Choosing the correct differentiation rule depends mainly on:",
+    "The structure of the function",
+    "The graph colour",
+    "The variable name",
+    "The coordinate axes",
+    QuestionOption.A,
+    "Different function structures require different differentiation techniques.",
+    DifficultyLevel.Advance,
+    5);
+
+
+// ==========================================================
+// Applications and Practice of Differentiation
+// ==========================================================
+
+AddQuestion(
+    "Applications and Practice of Differentiation",
+    "Engineers use differentiation to analyse:",
+    "Rates of change",
+    "Passwords",
+    "Databases",
+    "File systems",
+    QuestionOption.A,
+    "Engineering often involves changing quantities such as speed, force, and temperature.",
+    DifficultyLevel.Begineer,
+    1);
+
+AddQuestion(
+    "Applications and Practice of Differentiation",
+    "In physics, differentiation is used to calculate:",
+    "Velocity and acceleration",
+    "Probability",
+    "Population growth only",
+    "Interest rates only",
+    QuestionOption.B,
+    "Velocity and acceleration are derivatives of position and velocity respectively.",
+    DifficultyLevel.Begineer,
+    2);
+
+AddQuestion(
+    "Applications and Practice of Differentiation",
+    "Businesses use derivatives to optimise:",
+    "Only salaries",
+    "Only taxes",
+    "Profit and cost functions",
+    "Election results",
+    QuestionOption.C,
+    "Economists use differentiation to maximise profit and minimise cost.",
+    DifficultyLevel.Intermediate,
+    3);
+
+AddQuestion(
+    "Applications and Practice of Differentiation",
+    "Machine learning uses differentiation mainly for:",
+    "Creating databases",
+    "Managing operating systems",
+    "Compressing files",
+    "Optimising model parameters",
+    QuestionOption.D,
+    "Training machine learning models relies on derivatives during optimisation.",
+    DifficultyLevel.Intermediate,
+    4);
+
+AddQuestion(
+    "Applications and Practice of Differentiation",
+    "Differentiation is essential because it helps analyse:",
+    "Continuous change in mathematics and real-world systems",
+    "Only geometric shapes",
+    "Only probability experiments",
+    "Only algebraic equations",
+    QuestionOption.A,
+    "Derivatives are fundamental for modelling changing quantities across science, engineering, AI, and economics.",
+    DifficultyLevel.Advance,
+    5);// ==========================================================
+       // Introduction to Applications of Derivatives
+       // ==========================================================
+
+        AddQuestion(
+            "Introduction to Applications of Derivatives",
+            "Derivatives are commonly used to measure:",
+            "Rate of change",
+            "Colour of graphs",
+            "Number of variables",
+            "Length of equations",
+            QuestionOption.A,
+            "A derivative measures how quickly one quantity changes with respect to another.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Applications of Derivatives",
+            "Which real-world quantity is commonly found using derivatives?",
+            "Velocity",
+            "Population count",
+            "Matrix order",
+            "Probability",
+            QuestionOption.B,
+            "Velocity is the derivative of position with respect to time.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Applications of Derivatives",
+            "Derivatives help us determine whether a function is:",
+            "Increasing or decreasing",
+            "Always positive",
+            "Always constant",
+            "Always quadratic",
+            QuestionOption.C,
+            "The sign of the derivative tells whether a function increases or decreases.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Applications of Derivatives",
+            "Which field frequently uses derivatives to model changing systems?",
+            "Painting",
+            "Music theory",
+            "Literature",
+            "Physics",
+            QuestionOption.D,
+            "Physics relies heavily on derivatives to describe motion and changing quantities.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Applications of Derivatives",
+            "Why are derivatives important in real life?",
+            "They help analyse changing quantities and optimise systems.",
+            "They only simplify fractions.",
+            "They only solve geometry problems.",
+            "They replace algebra completely.",
+            QuestionOption.A,
+            "Derivatives are used wherever quantities change over time or another variable.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Optimization and Related Rates
+        // ==========================================================
+
+        AddQuestion(
+            "Optimization and Related Rates",
+            "Optimization problems usually aim to find:",
+            "Maximum or minimum values",
+            "Only derivatives",
+            "Only integrals",
+            "Only equations",
+            QuestionOption.A,
+            "Optimization uses derivatives to locate maximum or minimum values.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Optimization and Related Rates",
+            "Related rates problems involve:",
+            "Independent quantities only",
+            "Changing quantities connected together",
+            "Constant functions only",
+            "Static diagrams",
+            QuestionOption.B,
+            "Related rates analyse variables that change together over time.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Optimization and Related Rates",
+            "To determine a local maximum or minimum, we often examine:",
+            "The function colour",
+            "The graph title",
+            "Critical points",
+            "The y-axis only",
+            QuestionOption.C,
+            "Critical points occur where the derivative is zero or undefined.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Optimization and Related Rates",
+            "Which test helps classify maxima and minima using derivatives?",
+            "Distance Formula",
+            "Pythagorean Theorem",
+            "Binomial Theorem",
+            "Second Derivative Test",
+            QuestionOption.D,
+            "The second derivative helps determine whether a critical point is a maximum or minimum.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Optimization and Related Rates",
+            "Optimization is widely used because it helps:",
+            "Find the best possible solution under given conditions",
+            "Draw prettier graphs",
+            "Avoid derivatives completely",
+            "Convert equations into matrices",
+            QuestionOption.A,
+            "Engineers, economists, and scientists optimise systems for maximum efficiency or minimum cost.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Derivatives
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Derivatives",
+            "Engineers use derivatives to analyse:",
+            "Motion, stress, and system behaviour",
+            "Only colours",
+            "Only statistics",
+            "Only geometry proofs",
+            QuestionOption.A,
+            "Engineering frequently involves changing quantities that are modelled using derivatives.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Derivatives",
+            "Economists use derivatives to:",
+            "Calculate triangle areas",
+            "Maximise profit and minimise cost",
+            "Find prime numbers",
+            "Measure rainfall",
+            QuestionOption.B,
+            "Businesses optimise revenue and minimise expenses using calculus.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Derivatives",
+            "Machine learning uses derivatives mainly during:",
+            "File compression",
+            "Database indexing",
+            "Model training and optimisation",
+            "Network installation",
+            QuestionOption.C,
+            "Gradient-based optimisation relies on derivatives to train models.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Derivatives",
+            "In robotics, derivatives are useful for:",
+            "Writing essays",
+            "Designing logos",
+            "Managing databases",
+            "Controlling movement and trajectory",
+            QuestionOption.D,
+            "Robotic systems use derivatives to model motion and control paths.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Derivatives",
+            "Overall, applications of derivatives help solve:",
+            "Real-world optimisation and change-related problems",
+            "Only arithmetic calculations",
+            "Only algebraic identities",
+            "Only probability experiments",
+            QuestionOption.A,
+            "Derivatives are fundamental across science, engineering, economics, AI, and many other fields.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Indefinite Integration
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Indefinite Integration",
+            "An indefinite integral represents:",
+            "The derivative of a function",
+            "The antiderivative of a function",
+            "The slope of a tangent",
+            "The equation of a line",
+            QuestionOption.B,
+            "An indefinite integral gives the family of antiderivatives of a function.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Indefinite Integration",
+            "Differentiation and indefinite integration are:",
+            "Opposite (inverse) processes",
+            "The same process",
+            "Completely unrelated",
+            "Only used in geometry",
+            QuestionOption.A,
+            "Integration reverses differentiation by recovering the original function.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Indefinite Integration",
+            "The constant '+ C' is added because:",
+            "The integral is always positive",
+            "Every function has one solution only",
+            "Many functions have the same derivative",
+            "It makes equations easier",
+            QuestionOption.C,
+            "Different functions differing only by a constant have the same derivative.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Indefinite Integration",
+            "The symbol used for integration is:",
+            "+",
+            "Δ",
+            "∑",
+            "∫",
+            QuestionOption.D,
+            "The elongated S symbol (∫) represents integration.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Indefinite Integration",
+            "Indefinite integration mainly helps us:",
+            "Recover an original function from its derivative",
+            "Find only graph colours",
+            "Solve only probability problems",
+            "Replace algebra completely",
+            QuestionOption.A,
+            "Integration finds the original function when its derivative is known.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Methods and Techniques of Indefinite Integration
+        // ==========================================================
+
+        AddQuestion(
+            "Methods and Techniques of Indefinite Integration",
+            "Which method is commonly used when one function is inside another?",
+            "Substitution",
+            "Long division",
+            "Matrix multiplication",
+            "Elimination",
+            QuestionOption.A,
+            "Substitution simplifies composite functions before integration.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods and Techniques of Indefinite Integration",
+            "Which integration technique is especially useful for products of functions?",
+            "Factorisation",
+            "Integration by parts",
+            "Completing the square",
+            "Cross multiplication",
+            QuestionOption.B,
+            "Integration by parts is designed for integrating products of functions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods and Techniques of Indefinite Integration",
+            "The substitution method is based on reversing which differentiation rule?",
+            "Power rule",
+            "Product rule",
+            "Chain rule",
+            "Quotient rule",
+            QuestionOption.C,
+            "Substitution is the reverse process of the chain rule.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods and Techniques of Indefinite Integration",
+            "Which formula is used in integration by parts?",
+            "Distance Formula",
+            "Quadratic Formula",
+            "Binomial Formula",
+            "∫u dv = uv − ∫v du",
+            QuestionOption.D,
+            "Integration by parts follows directly from the product rule of differentiation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods and Techniques of Indefinite Integration",
+            "Choosing the correct integration technique mainly helps:",
+            "Simplify difficult integrals",
+            "Avoid constants of integration",
+            "Convert functions into matrices",
+            "Remove variables completely",
+            QuestionOption.A,
+            "Different integration methods are suited to different types of functions.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Indefinite Integration
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Indefinite Integration",
+            "In physics, indefinite integration is commonly used to find:",
+            "Position from velocity",
+            "Colour of light",
+            "Atomic number",
+            "Electrical resistance only",
+            QuestionOption.A,
+            "Integrating velocity gives displacement or position functions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Indefinite Integration",
+            "Engineers use integration to model:",
+            "Changing systems and accumulated quantities",
+            "Grammar rules",
+            "Historical events",
+            "Weather colours",
+            QuestionOption.B,
+            "Integration models quantities accumulated over time or distance.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Indefinite Integration",
+            "Economists use integration to study:",
+            "Triangle construction",
+            "Prime numbers",
+            "Cost and revenue functions",
+            "Compass directions",
+            QuestionOption.C,
+            "Economics uses integration to analyse accumulated cost, revenue, and growth.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Indefinite Integration",
+            "Computer science and AI use integration in:",
+            "Painting software only",
+            "Keyboard design",
+            "Database indexing",
+            "Scientific modelling and optimisation",
+            QuestionOption.D,
+            "Many scientific computing and AI applications rely on calculus-based models.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Indefinite Integration",
+            "Overall, indefinite integration is valuable because it:",
+            "Helps model accumulated change across many real-world systems",
+            "Only solves textbook exercises",
+            "Removes the need for differentiation",
+            "Applies only to geometry",
+            QuestionOption.A,
+            "Integration is fundamental in science, engineering, economics, AI, and mathematical modelling.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Applications of Integration
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Applications of Integration",
+            "One of the most common applications of integration is finding:",
+            "The area under a curve",
+            "The slope of a tangent",
+            "Prime numbers",
+            "Matrix inverses",
+            QuestionOption.A,
+            "Integration is widely used to calculate the area enclosed by curves over an interval.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Applications of Integration",
+            "Integration is primarily used to calculate:",
+            "Instantaneous rates of change",
+            "Accumulated quantities",
+            "Only algebraic identities",
+            "Only trigonometric values",
+            QuestionOption.B,
+            "Integration measures accumulated quantities such as area, distance, mass, and work.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Applications of Integration",
+            "Which physical quantity can be found by integrating velocity with respect to time?",
+            "Acceleration",
+            "Force",
+            "Displacement",
+            "Momentum",
+            QuestionOption.C,
+            "The integral of velocity over time gives displacement.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Applications of Integration",
+            "Integration is often described as the mathematics of:",
+            "Approximation only",
+            "Rotation only",
+            "Equations only",
+            "Accumulation",
+            QuestionOption.D,
+            "Integration measures how quantities accumulate over an interval.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Applications of Integration",
+            "Applications of integration appear in:",
+            "Science, engineering, economics, and many other fields",
+            "Only geometry",
+            "Only algebra",
+            "Only probability",
+            QuestionOption.A,
+            "Integration is one of the most widely used mathematical tools across disciplines.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Area, Volume, and Real-World Applications of Integration
+        // ==========================================================
+
+        AddQuestion(
+            "Area, Volume, and Real-World Applications of Integration",
+            "Integration can be used to calculate the volume of:",
+            "Solids",
+            "Triangles only",
+            "Lines only",
+            "Points",
+            QuestionOption.A,
+            "Integration determines the volume of three-dimensional solids using methods such as disks and shells.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Area, Volume, and Real-World Applications of Integration",
+            "The area between two curves is found by integrating the:",
+            "Product of the functions",
+            "Difference between the functions",
+            "Average of the functions",
+            "Derivative of the functions",
+            QuestionOption.B,
+            "The upper function minus the lower function is integrated over the interval.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Area, Volume, and Real-World Applications of Integration",
+            "If velocity changes with time, total distance travelled can be determined using:",
+            "Differentiation",
+            "Factorisation",
+            "Integration",
+            "Matrix multiplication",
+            QuestionOption.C,
+            "Integrating velocity over time gives displacement or total distance in suitable cases.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Area, Volume, and Real-World Applications of Integration",
+            "Which field frequently uses integration to calculate fluid flow and pressure?",
+            "Music",
+            "Literature",
+            "Photography",
+            "Engineering",
+            QuestionOption.D,
+            "Engineering uses integration extensively for modelling physical systems.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Area, Volume, and Real-World Applications of Integration",
+            "Real-world integration problems usually involve:",
+            "Accumulating continuously changing quantities",
+            "Only solving equations",
+            "Only drawing graphs",
+            "Only simplifying expressions",
+            QuestionOption.A,
+            "Integration models continuously changing quantities over an interval.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Advanced Applications and Practice of Integration
+        // ==========================================================
+
+        AddQuestion(
+            "Advanced Applications and Practice of Integration",
+            "In economics, integration is commonly used to calculate:",
+            "Consumer and producer surplus",
+            "Prime numbers",
+            "Quadratic roots",
+            "Triangle angles",
+            QuestionOption.A,
+            "Economic surplus is computed using definite integrals.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Integration",
+            "In probability, integration is mainly used with:",
+            "Discrete distributions only",
+            "Continuous probability distributions",
+            "Matrices",
+            "Sequences",
+            QuestionOption.B,
+            "Continuous probability density functions require integration.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Integration",
+            "Machine learning and AI often use integration in:",
+            "Grammar correction",
+            "Keyboard layouts",
+            "Optimisation and probability models",
+            "Text formatting",
+            QuestionOption.C,
+            "Many ML algorithms rely on probability theory and optimisation involving integration.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Integration",
+            "Scientists use integration to model:",
+            "Only straight lines",
+            "Only circles",
+            "Only triangles",
+            "Changing physical systems",
+            QuestionOption.D,
+            "Scientific models frequently involve continuously changing quantities that require integration.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Integration",
+            "The greatest strength of integration is its ability to:",
+            "Model and calculate accumulated real-world quantities accurately",
+            "Replace algebra completely",
+            "Solve only geometry problems",
+            "Remove the need for differentiation",
+            QuestionOption.A,
+            "Integration is fundamental wherever accumulation, area, volume, probability, or continuous change is involved.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Parametric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Parametric Equations",
+            "A parametric equation represents a curve using:",
+            "One or more parameters",
+            "Only a straight line",
+            "A matrix",
+            "A constant value",
+            QuestionOption.A,
+            "Parametric equations describe x and y (or x, y, z) using a parameter, usually t.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Parametric Equations",
+            "In most parametric equations, the parameter is commonly denoted by:",
+            "x",
+            "t",
+            "y",
+            "z",
+            QuestionOption.B,
+            "The variable t is commonly used as the parameter representing time or progression along the curve.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Parametric Equations",
+            "Parametric equations are especially useful for describing:",
+            "Static equations only",
+            "Matrices",
+            "Motion along a path",
+            "Prime numbers",
+            QuestionOption.C,
+            "Since position changes with time, parametric equations naturally describe motion.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Parametric Equations",
+            "A circle can be represented parametrically using:",
+            "Only linear equations",
+            "Quadratic equations only",
+            "Logarithmic equations",
+            "Sine and cosine functions",
+            QuestionOption.D,
+            "A common representation is x = r cos(t), y = r sin(t).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Parametric Equations",
+            "One advantage of parametric equations is that they can represent:",
+            "Complex curves and motion easily",
+            "Only straight lines",
+            "Only constant values",
+            "Only algebraic identities",
+            QuestionOption.A,
+            "Many curves and moving objects are easier to describe parametrically than in Cartesian form.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Graphing and Differentiating Parametric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Graphing and Differentiating Parametric Equations",
+            "To graph a parametric curve, we evaluate x and y for different:",
+            "Matrices",
+            "Parameter values",
+            "Functions only",
+            "Vectors",
+            QuestionOption.B,
+            "The curve is traced by calculating coordinates for different values of the parameter.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Graphing and Differentiating Parametric Equations",
+            "The slope of a parametric curve is found using:",
+            "dx/dy",
+            "x/y",
+            "(dy/dt)/(dx/dt)",
+            "y/x",
+            QuestionOption.C,
+            "The derivative dy/dx is computed as (dy/dt) divided by (dx/dt).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Graphing and Differentiating Parametric Equations",
+            "Converting a parametric equation into Cartesian form involves:",
+            "Adding derivatives",
+            "Finding matrix inverses",
+            "Differentiating twice",
+            "Eliminating the parameter",
+            QuestionOption.D,
+            "The parameter is removed to obtain an equation involving only x and y.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Graphing and Differentiating Parametric Equations",
+            "Differentiation of parametric equations helps determine:",
+            "The slope of the tangent line",
+            "Only the area",
+            "Only the volume",
+            "Only the parameter",
+            QuestionOption.A,
+            "The derivative provides the slope and rate of change at any point on the curve.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Graphing and Differentiating Parametric Equations",
+            "Parametric differentiation is especially useful when:",
+            "The relationship cannot easily be written as y = f(x)",
+            "The graph is always linear",
+            "The derivative is always zero",
+            "The parameter never changes",
+            QuestionOption.A,
+            "Many curves are difficult or impossible to express as functions of x alone.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Parametric Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Parametric Equations",
+            "In physics, parametric equations commonly describe:",
+            "Object motion",
+            "Grammar rules",
+            "Musical notes",
+            "Chemical symbols",
+            QuestionOption.A,
+            "Position changes over time are naturally represented using parameters.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Parametric Equations",
+            "Computer graphics uses parametric equations to:",
+            "Generate random passwords",
+            "Create smooth curves and animations",
+            "Store databases",
+            "Compress files",
+            QuestionOption.B,
+            "Bezier curves, animations, and many graphical paths rely on parametric equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Parametric Equations",
+            "Robotics uses parametric equations primarily for:",
+            "Food preparation",
+            "Accounting",
+            "Trajectory and path planning",
+            "Image compression",
+            QuestionOption.C,
+            "Robots calculate smooth paths and movements using parametric representations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Parametric Equations",
+            "Engineers frequently apply parametric equations when designing:",
+            "Only tables",
+            "Only documents",
+            "Only spreadsheets",
+            "Roads, bridges, and machine paths",
+            QuestionOption.D,
+            "Complex engineering designs often involve curves represented parametrically.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Parametric Equations",
+            "The greatest advantage of parametric equations in real-world modelling is:",
+            "Their ability to represent complex motion and curved paths accurately",
+            "They eliminate the need for calculus",
+            "They only work for straight lines",
+            "They replace algebra completely",
+            QuestionOption.A,
+            "Parametric equations are ideal for modelling dynamic systems and complex geometric paths.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Polar Coordinates
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Polar Coordinates",
+            "A point in the polar coordinate system is represented using:",
+            "Radius and angle",
+            "Length and width",
+            "Slope and intercept",
+            "Base and height",
+            QuestionOption.A,
+            "Polar coordinates specify a point using its distance from the origin (r) and its angle (θ).",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Polar Coordinates",
+            "The symbol r in polar coordinates represents the:",
+            "Radius (distance from the origin)",
+            "Rotation speed",
+            "Rectangle area",
+            "Reference line",
+            QuestionOption.B,
+            "The value r gives the distance of the point from the pole (origin).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Polar Coordinates",
+            "The angle in polar coordinates is commonly measured from the:",
+            "Positive y-axis",
+            "Negative x-axis",
+            "Positive x-axis",
+            "Origin only",
+            QuestionOption.C,
+            "Angles are conventionally measured counter-clockwise from the positive x-axis.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Polar Coordinates",
+            "The origin in the polar coordinate system is called the:",
+            "Vertex",
+            "Focus",
+            "Centre",
+            "Pole",
+            QuestionOption.D,
+            "The origin of a polar coordinate system is known as the pole.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Polar Coordinates",
+            "Polar coordinates are particularly useful when dealing with:",
+            "Circular and rotational motion",
+            "Only linear equations",
+            "Only matrices",
+            "Only arithmetic operations",
+            QuestionOption.A,
+            "Problems involving circles, rotations, and angles are often easier in polar coordinates.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Graphs and Transformations in Polar Coordinates
+        // ==========================================================
+
+        AddQuestion(
+            "Graphs and Transformations in Polar Coordinates",
+            "To convert polar coordinates into Cartesian coordinates, we commonly use:",
+            "Trigonometric relationships",
+            "Matrix multiplication",
+            "Quadratic formula",
+            "Logarithms",
+            QuestionOption.A,
+            "The formulas x = r cosθ and y = r sinθ convert polar coordinates into Cartesian coordinates.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Graphs and Transformations in Polar Coordinates",
+            "Which graph is commonly represented using a polar equation?",
+            "Spiral",
+            "Histogram",
+            "Bar chart",
+            "Pie chart",
+            QuestionOption.B,
+            "Many spirals, roses, and circles are naturally represented using polar equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Graphs and Transformations in Polar Coordinates",
+            "The equations x = r cosθ and y = r sinθ are used to:",
+            "Differentiate polar equations",
+            "Find derivatives",
+            "Convert polar coordinates to Cartesian coordinates",
+            "Calculate probabilities",
+            QuestionOption.C,
+            "These equations convert from polar form to Cartesian form.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Graphs and Transformations in Polar Coordinates",
+            "A circle centred at the pole is especially easy to represent using:",
+            "Quadratic equations",
+            "Matrices",
+            "Linear equations",
+            "A constant value of r",
+            QuestionOption.D,
+            "A constant radius produces a circle centred at the pole.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Graphs and Transformations in Polar Coordinates",
+            "Polar graphs are useful because many curved shapes become:",
+            "Much simpler to describe",
+            "Impossible to graph",
+            "Completely linear",
+            "Independent of angles",
+            QuestionOption.A,
+            "Many complex curves have elegant equations in polar form.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Polar Coordinates
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Polar Coordinates",
+            "Astronomers commonly use polar coordinates to describe:",
+            "Planetary and orbital positions",
+            "Grammar structures",
+            "Programming syntax",
+            "Chemical formulas",
+            QuestionOption.A,
+            "Objects moving around a central point are naturally described using polar coordinates.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Polar Coordinates",
+            "Navigation systems frequently use polar coordinates because they involve:",
+            "Binary numbers",
+            "Distance and direction",
+            "Only matrices",
+            "Only algebra",
+            QuestionOption.B,
+            "Navigation often specifies how far and in which direction to travel.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Polar Coordinates",
+            "Robotics commonly uses polar coordinates for:",
+            "Typing text",
+            "Sorting files",
+            "Path planning and robot movement",
+            "Compressing images",
+            QuestionOption.C,
+            "Robot movement often involves distance and angle calculations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Polar Coordinates",
+            "Engineers frequently apply polar coordinates when analysing:",
+            "Word documents",
+            "Music playlists",
+            "Email systems",
+            "Rotational systems and circular mechanisms",
+            QuestionOption.D,
+            "Mechanical systems involving gears, wheels, and rotating components are naturally analysed in polar form.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Polar Coordinates",
+            "One major advantage of polar coordinates is their ability to simplify:",
+            "Problems involving circular symmetry",
+            "Only matrix operations",
+            "Only arithmetic",
+            "Only probability questions",
+            QuestionOption.A,
+            "Polar coordinates provide elegant solutions whenever radial distance and angles are the natural variables.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Multivariable Calculus
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Multivariable Calculus",
+            "Multivariable calculus studies functions of:",
+            "More than one variable",
+            "Only one variable",
+            "Only constants",
+            "Only matrices",
+            QuestionOption.A,
+            "Multivariable calculus extends calculus to functions involving two or more independent variables.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Multivariable Calculus",
+            "A function f(x, y) depends on:",
+            "Two variables",
+            "One variable",
+            "Three constants",
+            "No variables",
+            QuestionOption.B,
+            "Functions like f(x, y) depend on both x and y.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Multivariable Calculus",
+            "A graph of a function f(x, y) is commonly represented as a:",
+            "Straight line",
+            "Circle",
+            "Surface",
+            "Point",
+            QuestionOption.C,
+            "Functions of two variables usually form three-dimensional surfaces.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Multivariable Calculus",
+            "Multivariable calculus extends the ideas of differentiation and integration to:",
+            "Only geometry",
+            "Only probability",
+            "Only algebra",
+            "Functions with multiple variables",
+            QuestionOption.D,
+            "The same calculus concepts are applied to functions involving several variables.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Multivariable Calculus",
+            "Multivariable calculus is widely used because many real-world systems depend on:",
+            "Several changing variables simultaneously",
+            "Only one variable",
+            "Only integers",
+            "Only constants",
+            QuestionOption.A,
+            "Physical, engineering, and scientific systems often involve many variables interacting together.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Partial Derivatives and Multiple Integrals
+        // ==========================================================
+
+        AddQuestion(
+            "Partial Derivatives and Multiple Integrals",
+            "A partial derivative measures how a function changes with respect to:",
+            "All variables together",
+            "One variable while keeping the others constant",
+            "Only time",
+            "Only constants",
+            QuestionOption.B,
+            "Partial derivatives isolate the effect of changing a single variable.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Partial Derivatives and Multiple Integrals",
+            "The gradient of a function points in the direction of:",
+            "Minimum decrease",
+            "Constant value",
+            "Greatest increase",
+            "Zero change",
+            QuestionOption.C,
+            "The gradient vector indicates the direction of the steepest ascent.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Partial Derivatives and Multiple Integrals",
+            "Double integrals are primarily used to calculate:",
+            "Simple derivatives",
+            "Single-variable limits",
+            "One-dimensional distances",
+            "Area and accumulated quantities over a region",
+            QuestionOption.D,
+            "Double integrals compute quantities over two-dimensional regions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Partial Derivatives and Multiple Integrals",
+            "Triple integrals are commonly used to calculate:",
+            "Volume and accumulated quantities in three dimensions",
+            "Only slopes",
+            "Only probabilities",
+            "Only equations of lines",
+            QuestionOption.A,
+            "Triple integrals extend integration into three-dimensional space.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Partial Derivatives and Multiple Integrals",
+            "Directional derivatives measure the rate of change of a function in:",
+            "A specified direction",
+            "Only the x-direction",
+            "Only the y-direction",
+            "No direction",
+            QuestionOption.A,
+            "Directional derivatives generalize ordinary derivatives by allowing any chosen direction.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Multivariable Calculus
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Multivariable Calculus",
+            "In physics, multivariable calculus is commonly used to model:",
+            "Fields such as temperature and gravity",
+            "Grammar rules",
+            "Music notes",
+            "Passwords",
+            QuestionOption.A,
+            "Physical fields vary across space and often require multivariable calculus.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Multivariable Calculus",
+            "Machine learning commonly uses multivariable calculus to:",
+            "Cook recipes",
+            "Optimise model parameters",
+            "Compress images only",
+            "Store databases",
+            QuestionOption.B,
+            "Training machine learning models relies heavily on gradients and optimisation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Multivariable Calculus",
+            "Computer graphics uses multivariable calculus for:",
+            "Document editing",
+            "Spreadsheet formatting",
+            "Surface modelling and lighting calculations",
+            "File encryption",
+            QuestionOption.C,
+            "Rendering realistic surfaces and lighting often involves multivariable mathematics.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Multivariable Calculus",
+            "Robotics relies on multivariable calculus for:",
+            "Writing essays",
+            "Playing music",
+            "Sorting emails",
+            "Motion planning and control",
+            QuestionOption.D,
+            "Robot movement and optimisation require functions involving many variables.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Multivariable Calculus",
+            "The greatest strength of multivariable calculus is its ability to:",
+            "Model complex systems involving many interacting variables",
+            "Replace algebra completely",
+            "Solve only geometry problems",
+            "Avoid differentiation",
+            QuestionOption.A,
+            "Modern science, engineering, AI, economics, and simulation all depend on analysing systems with multiple variables.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
