@@ -16845,9 +16845,1356 @@ public static class PracticeQuestionSeeder
             "Plane geometry is fundamental for modelling aircraft, buildings, robots, simulations, games, and scientific systems.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Introduction to Basic Probability
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Basic Probability",
+            "Probability measures:",
+            "The speed of an object",
+            "The likelihood of an event occurring",
+            "The weight of an object",
+            "The length of a line",
+            QuestionOption.B,
+            "Probability tells us how likely an event is to happen.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Basic Probability",
+            "The set of all possible outcomes is called the:",
+            "Event",
+            "Sample Space",
+            "Experiment",
+            "Variable",
+            QuestionOption.B,
+            "A sample space contains every possible outcome of an experiment.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Basic Probability",
+            "Rolling a standard six-sided die has how many possible outcomes?",
+            "5",
+            "6",
+            "7",
+            "12",
+            QuestionOption.B,
+            "A die has six faces numbered from 1 to 6.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Basic Probability",
+            "Probability values always lie between:",
+            "0 and 1",
+            "1 and 10",
+            "-1 and 1",
+            "0 and 100",
+            QuestionOption.A,
+            "A probability of 0 means impossible, while 1 means certain.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Basic Probability",
+            "Probability is mainly used to:",
+            "Predict uncertain events",
+            "Measure weight",
+            "Calculate area only",
+            "Find temperature",
+            QuestionOption.A,
+            "Probability helps us make predictions and informed decisions under uncertainty.",
+            DifficultyLevel.Advance,
+            5);
 
 
+        // ==========================================================
+        // Calculating Basic Probability
+        // ==========================================================
 
+        AddQuestion(
+            "Calculating Basic Probability",
+            "The probability of an event is calculated as:",
+            "Favourable Outcomes ÷ Total Outcomes",
+            "Total Outcomes ÷ Favourable Outcomes",
+            "Favourable Outcomes × Total Outcomes",
+            "Total Outcomes − Favourable Outcomes",
+            QuestionOption.A,
+            "This is the basic probability formula for equally likely outcomes.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Basic Probability",
+            "If a coin is tossed, the probability of getting Heads is:",
+            "0",
+            "1/4",
+            "1/2",
+            "1",
+            QuestionOption.C,
+            "There are two equally likely outcomes: Heads and Tails.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Basic Probability",
+            "When rolling a die, the probability of getting an even number is:",
+            "1/6",
+            "1/3",
+            "1/2",
+            "2/3",
+            QuestionOption.C,
+            "Even numbers are 2, 4, and 6, giving 3 favourable outcomes out of 6.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Basic Probability",
+            "The probability of an impossible event is:",
+            "0",
+            "1/2",
+            "1",
+            "2",
+            QuestionOption.A,
+            "Impossible events never occur, so their probability is zero.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Basic Probability",
+            "Which step should always be performed first when solving a probability problem?",
+            "Identify the sample space",
+            "Guess the answer",
+            "Multiply random numbers",
+            "Draw a graph",
+            QuestionOption.A,
+            "Finding the sample space ensures that all possible outcomes are considered.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Basic Probability
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Basic Probability",
+            "Weather forecasts use probability to:",
+            "Estimate the chance of rain",
+            "Measure wind speed only",
+            "Calculate temperature only",
+            "Find Earth's size",
+            QuestionOption.A,
+            "Weather predictions are based on probability models.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Basic Probability",
+            "Doctors use probability to:",
+            "Estimate disease risks and treatment outcomes",
+            "Build bridges",
+            "Create music",
+            "Design clothes",
+            QuestionOption.A,
+            "Medical decisions often rely on probability and statistical analysis.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Basic Probability",
+            "Banks and insurance companies use probability to:",
+            "Assess financial risks",
+            "Print books",
+            "Create games",
+            "Measure distance",
+            QuestionOption.A,
+            "Risk assessment is one of the biggest applications of probability.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Basic Probability",
+            "Artificial Intelligence uses probability to:",
+            "Make predictions from data",
+            "Increase computer size",
+            "Generate electricity",
+            "Store files only",
+            QuestionOption.A,
+            "Machine learning models often estimate probabilities before making predictions.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Basic Probability",
+            "Probability plays an important role in modern fields because it helps computers and humans:",
+            "Make better decisions under uncertainty",
+            "Increase internet speed",
+            "Reduce file size",
+            "Build larger monitors",
+            QuestionOption.A,
+            "Probability powers AI, finance, robotics, healthcare, weather forecasting, recommendation systems, and scientific research by helping make informed decisions with uncertain information.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Conditional Probability
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Conditional Probability",
+            "Conditional probability measures:",
+            "The probability of an event after another event has occurred",
+            "The probability of two impossible events",
+            "The total number of outcomes",
+            "The average probability",
+            QuestionOption.A,
+            "Conditional probability tells us how the chance of an event changes when another event is already known to have happened.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Conditional Probability",
+            "Conditional probability is written as:",
+            "P(A + B)",
+            "P(A|B)",
+            "P(A × B)",
+            "P(A - B)",
+            QuestionOption.B,
+            "P(A|B) means the probability of A given that B has already occurred.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Conditional Probability",
+            "Knowing that one event has occurred may:",
+            "Change the probability of another event",
+            "Always make probability zero",
+            "Always make probability one",
+            "Have no mathematical meaning",
+            QuestionOption.A,
+            "The occurrence of one event can affect the likelihood of another event.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Conditional Probability",
+            "Conditional probability is mainly used when events are:",
+            "Dependent",
+            "Always impossible",
+            "Always equal",
+            "Always independent",
+            QuestionOption.A,
+            "Conditional probability is especially useful when one event influences another.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Conditional Probability",
+            "Conditional probability helps us make:",
+            "Better decisions with available information",
+            "Longer equations",
+            "Bigger sample spaces",
+            "Random guesses",
+            QuestionOption.A,
+            "It allows us to update probabilities whenever new information becomes available.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Conditional Probability
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Conditional Probability",
+            "The formula for conditional probability is:",
+            "P(A|B) = P(A ∩ B) / P(B)",
+            "P(A|B) = P(A) + P(B)",
+            "P(A|B) = P(A) × P(B)",
+            "P(A|B) = P(A) - P(B)",
+            QuestionOption.A,
+            "Conditional probability is calculated by dividing the probability of both events occurring by the probability of the given event.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Conditional Probability",
+            "In the formula P(A|B), B represents:",
+            "The event already known to have occurred",
+            "The impossible event",
+            "The sample space",
+            "The answer",
+            QuestionOption.A,
+            "The event after the vertical bar is assumed to have already happened.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Conditional Probability",
+            "Which diagram is commonly used to visualize conditional probability?",
+            "Venn Diagram",
+            "Pie Chart",
+            "Bar Graph",
+            "Line Graph",
+            QuestionOption.A,
+            "Venn diagrams help visualize overlapping events and conditional probabilities.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Conditional Probability",
+            "If two events are independent, then:",
+            "Knowing one event does not change the probability of the other",
+            "Both events become impossible",
+            "Both events always occur together",
+            "Their probabilities become zero",
+            QuestionOption.A,
+            "Independent events do not affect each other's probabilities.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Conditional Probability",
+            "The first step when solving a conditional probability problem is to:",
+            "Identify the given event and the required event",
+            "Guess the answer",
+            "Multiply all probabilities",
+            "Draw any graph",
+            QuestionOption.A,
+            "Understanding what information is already known is essential before applying the formula.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Conditional Probability
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Conditional Probability",
+            "Doctors use conditional probability to:",
+            "Interpret medical test results",
+            "Build bridges",
+            "Create music",
+            "Measure temperature",
+            QuestionOption.A,
+            "Medical diagnoses often depend on updating probabilities after receiving test results.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Conditional Probability",
+            "Banks use conditional probability to:",
+            "Estimate loan default risk",
+            "Generate electricity",
+            "Print books",
+            "Design buildings",
+            QuestionOption.A,
+            "Financial institutions estimate risks using conditional probability models.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Conditional Probability",
+            "Artificial Intelligence uses conditional probability to:",
+            "Make predictions using observed data",
+            "Increase storage capacity",
+            "Build processors",
+            "Reduce internet speed",
+            QuestionOption.A,
+            "Many AI algorithms update predictions whenever new information becomes available.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Conditional Probability",
+            "Spam email filters rely heavily on:",
+            "Conditional probability",
+            "Geometry",
+            "Calculus",
+            "Matrices only",
+            QuestionOption.A,
+            "Spam filters estimate the probability of an email being spam based on its contents.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Conditional Probability",
+            "Conditional probability is widely used in AI, medicine, finance, cybersecurity, and data science because it helps:",
+            "Update decisions whenever new evidence becomes available",
+            "Increase computer speed",
+            "Reduce file size",
+            "Generate passwords",
+            QuestionOption.A,
+            "Modern intelligent systems constantly revise predictions using newly observed information, making conditional probability one of the foundations of machine learning, Bayesian inference, and decision-making.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+// Introduction to Bayes' Theorem
+// ==========================================================
+
+AddQuestion(
+    "Introduction to Bayes' Theorem",
+    "Bayes' Theorem helps us:",
+    "Update probabilities when new evidence is available",
+    "Calculate areas of circles",
+    "Solve quadratic equations",
+    "Measure vector lengths",
+    QuestionOption.A,
+    "Bayes' Theorem allows us to revise probabilities whenever new information becomes available.",
+    DifficultyLevel.Begineer,
+    1);
+
+AddQuestion(
+    "Introduction to Bayes' Theorem",
+    "Bayes' Theorem is mainly based on:",
+    "Conditional Probability",
+    "Geometry",
+    "Calculus",
+    "Statistics only",
+    QuestionOption.A,
+    "Bayes' Theorem is derived directly from the formula for conditional probability.",
+    DifficultyLevel.Begineer,
+    2);
+
+AddQuestion(
+    "Introduction to Bayes' Theorem",
+    "The probability before seeing new evidence is called the:",
+    "Posterior Probability",
+    "Likelihood",
+    "Prior Probability",
+    "Joint Probability",
+    QuestionOption.C,
+    "The prior probability represents our initial belief before observing new evidence.",
+    DifficultyLevel.Intermediate,
+    3);
+
+AddQuestion(
+    "Introduction to Bayes' Theorem",
+    "After applying Bayes' Theorem, the updated probability is called the:",
+    "Prior Probability",
+    "Posterior Probability",
+    "Sample Space",
+    "Marginal Probability",
+    QuestionOption.B,
+    "The posterior probability is the revised probability after considering new evidence.",
+    DifficultyLevel.Intermediate,
+    4);
+
+AddQuestion(
+    "Introduction to Bayes' Theorem",
+    "Bayes' Theorem is especially useful when:",
+    "Making decisions with incomplete information",
+    "Finding the area of triangles",
+    "Drawing circles",
+    "Converting units",
+    QuestionOption.A,
+    "Bayes' Theorem improves decision-making whenever uncertainty exists and new evidence arrives.",
+    DifficultyLevel.Advance,
+    5);
+
+
+// ==========================================================
+// Applying Bayes' Theorem
+// ==========================================================
+
+AddQuestion(
+    "Applying Bayes' Theorem",
+    "Bayes' Theorem combines:",
+    "Prior probability, likelihood, and evidence",
+    "Area and perimeter",
+    "Speed and distance",
+    "Addition and subtraction",
+    QuestionOption.A,
+    "Bayes' Theorem updates the prior probability using the likelihood of observed evidence.",
+    DifficultyLevel.Begineer,
+    1);
+
+AddQuestion(
+    "Applying Bayes' Theorem",
+    "The likelihood in Bayes' Theorem represents:",
+    "The probability of observing evidence given an event",
+    "The total sample space",
+    "The final answer",
+    "The impossible event",
+    QuestionOption.A,
+    "Likelihood measures how probable the observed evidence is if the event is true.",
+    DifficultyLevel.Begineer,
+    2);
+
+AddQuestion(
+    "Applying Bayes' Theorem",
+    "The denominator in Bayes' Theorem represents:",
+    "The probability of the observed evidence",
+    "The probability of the hypothesis only",
+    "The prior probability",
+    "The likelihood only",
+    QuestionOption.A,
+    "The denominator ensures that the updated probabilities remain valid and sum correctly.",
+    DifficultyLevel.Intermediate,
+    3);
+
+AddQuestion(
+    "Applying Bayes' Theorem",
+    "Bayes' Theorem is mainly used for:",
+    "Updating beliefs after observing evidence",
+    "Finding matrix determinants",
+    "Calculating derivatives",
+    "Solving logarithms",
+    QuestionOption.A,
+    "Every application of Bayes' Theorem involves updating probabilities using new information.",
+    DifficultyLevel.Intermediate,
+    4);
+
+AddQuestion(
+    "Applying Bayes' Theorem",
+    "The first step when solving a Bayes' Theorem problem is to:",
+    "Identify the prior probability and the observed evidence",
+    "Guess the answer",
+    "Multiply random values",
+    "Draw a graph",
+    QuestionOption.A,
+    "Identifying the known probabilities is essential before applying the formula.",
+    DifficultyLevel.Advance,
+    5);
+
+
+// ==========================================================
+// Applications and Practice of Bayes' Theorem
+// ==========================================================
+
+AddQuestion(
+    "Applications and Practice of Bayes' Theorem",
+    "Doctors use Bayes' Theorem to:",
+    "Interpret medical test results",
+    "Build roads",
+    "Measure rainfall",
+    "Calculate distances",
+    QuestionOption.A,
+    "Medical diagnosis updates disease probabilities after receiving test results.",
+    DifficultyLevel.Begineer,
+    1);
+
+AddQuestion(
+    "Applications and Practice of Bayes' Theorem",
+    "Email spam filters use Bayes' Theorem to:",
+    "Classify emails as spam or not spam",
+    "Increase internet speed",
+    "Compress images",
+    "Generate passwords",
+    QuestionOption.A,
+    "Spam filters estimate the probability that an email is spam based on its words and patterns.",
+    DifficultyLevel.Begineer,
+    2);
+
+AddQuestion(
+    "Applications and Practice of Bayes' Theorem",
+    "Machine Learning uses Bayes' Theorem for:",
+    "Prediction and classification",
+    "Increasing processor speed",
+    "Building hardware",
+    "Creating databases",
+    QuestionOption.A,
+    "Many machine learning algorithms, including Naive Bayes, rely on Bayes' Theorem.",
+    DifficultyLevel.Intermediate,
+    3);
+
+AddQuestion(
+    "Applications and Practice of Bayes' Theorem",
+    "Financial institutions use Bayes' Theorem to:",
+    "Estimate risks and detect fraud",
+    "Design buildings",
+    "Measure temperature",
+    "Generate music",
+    QuestionOption.A,
+    "Banks continuously update fraud and credit-risk estimates using new transaction data.",
+    DifficultyLevel.Intermediate,
+    4);
+
+AddQuestion(
+    "Applications and Practice of Bayes' Theorem",
+    "Bayes' Theorem is one of the foundations of modern AI because it helps systems:",
+    "Continuously update predictions as new information becomes available",
+    "Increase RAM capacity",
+    "Reduce monitor size",
+    "Improve internet bandwidth",
+    QuestionOption.A,
+    "Bayesian reasoning powers recommendation systems, robotics, autonomous vehicles, medical diagnosis, cybersecurity, search engines, and many machine learning models by allowing intelligent systems to learn from new evidence.",
+    DifficultyLevel.Advance,
+    5);// ==========================================================
+       // Introduction to Random Variables
+       // ==========================================================
+
+        AddQuestion(
+            "Introduction to Random Variables",
+            "A random variable is:",
+            "A variable whose value depends on the outcome of a random experiment",
+            "A variable that never changes",
+            "A mathematical constant",
+            "A type of equation",
+            QuestionOption.A,
+            "A random variable assigns numerical values to the outcomes of a random experiment.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Random Variables",
+            "Which type of random variable takes countable values?",
+            "Continuous Random Variable",
+            "Discrete Random Variable",
+            "Complex Variable",
+            "Constant Variable",
+            QuestionOption.B,
+            "Discrete random variables have countable values such as 0, 1, 2, and so on.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Random Variables",
+            "A continuous random variable can take:",
+            "Only whole numbers",
+            "Only positive numbers",
+            "Any value within an interval",
+            "Only negative numbers",
+            QuestionOption.C,
+            "Continuous random variables can take infinitely many values within a range.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Random Variables",
+            "Which of the following is an example of a continuous random variable?",
+            "Number of students in a class",
+            "Number of cars",
+            "Height of a person",
+            "Number of books",
+            QuestionOption.C,
+            "Height can take any real value within a range, making it continuous.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Random Variables",
+            "Random variables are useful because they help us:",
+            "Model uncertain outcomes mathematically",
+            "Measure temperature only",
+            "Solve geometry only",
+            "Draw graphs only",
+            QuestionOption.A,
+            "Random variables provide a mathematical way to represent uncertainty.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Types and Probability Distributions of Random Variables
+        // ==========================================================
+
+        AddQuestion(
+            "Types and Probability Distributions of Random Variables",
+            "A Probability Mass Function (PMF) is used for:",
+            "Discrete random variables",
+            "Continuous random variables",
+            "Matrices",
+            "Vectors",
+            QuestionOption.A,
+            "PMFs assign probabilities to each possible value of a discrete random variable.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types and Probability Distributions of Random Variables",
+            "A Probability Density Function (PDF) is used for:",
+            "Continuous random variables",
+            "Discrete random variables",
+            "Only integers",
+            "Only fractions",
+            QuestionOption.A,
+            "PDFs describe probabilities for continuous random variables.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types and Probability Distributions of Random Variables",
+            "The total probability of all possible outcomes in a probability distribution is:",
+            "0",
+            "1",
+            "2",
+            "Depends on the experiment",
+            QuestionOption.B,
+            "The probabilities of all possible outcomes must always add up to 1.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types and Probability Distributions of Random Variables",
+            "Which distribution represents the probability of a discrete random variable?",
+            "Probability Mass Function",
+            "Probability Density Function",
+            "Line Equation",
+            "Vector Equation",
+            QuestionOption.A,
+            "Discrete random variables are described using a Probability Mass Function (PMF).",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types and Probability Distributions of Random Variables",
+            "Before solving problems involving random variables, we should first:",
+            "Identify whether the variable is discrete or continuous",
+            "Guess the answer",
+            "Multiply all probabilities",
+            "Draw a triangle",
+            QuestionOption.A,
+            "Recognising the type of random variable determines which probability model to use.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Random Variables
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Random Variables",
+            "Random variables are widely used in:",
+            "Statistics",
+            "Painting",
+            "Cooking",
+            "Music",
+            QuestionOption.A,
+            "Statistics relies heavily on random variables to analyse uncertain events.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Random Variables",
+            "Financial analysts use random variables to:",
+            "Model stock prices and investment risks",
+            "Design buildings",
+            "Generate electricity",
+            "Measure rainfall",
+            QuestionOption.A,
+            "Stock prices and market movements are often modelled using random variables.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Random Variables",
+            "Machine Learning uses random variables to:",
+            "Model uncertainty in predictions",
+            "Increase internet speed",
+            "Build computer hardware",
+            "Create passwords",
+            QuestionOption.A,
+            "Many AI and machine learning algorithms represent uncertainty using random variables.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Random Variables",
+            "Engineers use random variables to:",
+            "Analyse uncertainty in measurements and system performance",
+            "Write novels",
+            "Play games",
+            "Design logos",
+            QuestionOption.A,
+            "Engineering systems often include uncertainty that is modelled using random variables.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Random Variables",
+            "Random variables form the foundation of modern statistics, AI, finance, engineering, and scientific research because they help:",
+            "Represent and analyse uncertainty mathematically",
+            "Increase processor speed",
+            "Reduce monitor size",
+            "Improve internet bandwidth",
+            QuestionOption.A,
+            "Random variables are fundamental to probability theory and power predictive models, simulations, risk analysis, robotics, machine learning, weather forecasting, and scientific discoveries.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Expected Value
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Expected Value",
+            "Expected value represents:",
+            "The average outcome of a random experiment over many repetitions",
+            "The largest possible outcome",
+            "The smallest possible outcome",
+            "The total number of outcomes",
+            QuestionOption.A,
+            "Expected value is the long-term average result you would expect if the experiment were repeated many times.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Expected Value",
+            "Expected value is often denoted by:",
+            "Var(X)",
+            "P(X)",
+            "E(X)",
+            "F(X)",
+            QuestionOption.C,
+            "The notation E(X) is commonly used to represent the expected value of a random variable X.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Expected Value",
+            "Expected value predicts:",
+            "The exact outcome of the next experiment",
+            "The average outcome over many experiments",
+            "Only the largest outcome",
+            "Only the smallest outcome",
+            QuestionOption.B,
+            "Expected value does not predict a single result but the average over repeated trials.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Expected Value",
+            "Expected value is calculated using:",
+            "Only the outcomes",
+            "Only the probabilities",
+            "The outcomes multiplied by their probabilities",
+            "The number of experiments",
+            QuestionOption.C,
+            "Each possible outcome is multiplied by its probability and the results are added together.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Expected Value",
+            "Expected value is most useful when making:",
+            "Long-term decisions under uncertainty",
+            "Geometric constructions",
+            "Matrix calculations",
+            "Unit conversions",
+            QuestionOption.A,
+            "Expected value helps compare choices by considering their long-term average outcomes.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Expected Value
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Expected Value",
+            "For a discrete random variable, expected value is found by:",
+            "Adding all probabilities",
+            "Multiplying each outcome by its probability and summing the results",
+            "Subtracting probabilities from outcomes",
+            "Finding the largest outcome",
+            QuestionOption.B,
+            "The expected value formula is E(X) = Σ[x × P(x)].",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Expected Value",
+            "Before calculating expected value, you should know:",
+            "The possible outcomes and their probabilities",
+            "Only the largest outcome",
+            "Only the sample size",
+            "Only the mean",
+            QuestionOption.A,
+            "Expected value requires both the possible values and the probability of each value.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Expected Value",
+            "If an outcome has probability 0, then its contribution to expected value is:",
+            "Equal to the outcome",
+            "Zero",
+            "One",
+            "Undefined",
+            QuestionOption.B,
+            "Any value multiplied by a probability of zero contributes nothing to the expected value.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Expected Value",
+            "Expected value may sometimes:",
+            "Be a value that never actually occurs",
+            "Always be one of the possible outcomes",
+            "Always be zero",
+            "Always be an integer",
+            QuestionOption.A,
+            "Expected value is an average, so it may not match any actual outcome.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Expected Value",
+            "The expected value formula helps us calculate:",
+            "The long-term average result",
+            "The exact next result",
+            "The probability of impossible events",
+            "The variance directly",
+            QuestionOption.A,
+            "Expected value represents the average outcome expected over many repetitions.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Expected Value
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Expected Value",
+            "Insurance companies use expected value to:",
+            "Estimate average future payouts",
+            "Design buildings",
+            "Create websites",
+            "Solve geometry problems",
+            QuestionOption.A,
+            "Insurance premiums are based on the average expected cost of future claims.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Expected Value",
+            "Investors use expected value to:",
+            "Estimate potential returns and risks",
+            "Measure temperatures",
+            "Find triangle areas",
+            "Calculate speed",
+            QuestionOption.A,
+            "Expected value helps investors compare different investment opportunities.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Expected Value",
+            "Machine learning algorithms use expected value to:",
+            "Estimate predictions under uncertainty",
+            "Increase internet speed",
+            "Build processors",
+            "Store databases",
+            QuestionOption.A,
+            "Many AI models optimise decisions by considering expected outcomes.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Expected Value",
+            "Game designers use expected value to:",
+            "Balance rewards and probabilities",
+            "Reduce electricity usage",
+            "Create animations only",
+            "Measure distances",
+            QuestionOption.A,
+            "Expected value helps make games fair and balanced by analysing average rewards.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Expected Value",
+            "Expected value is widely used in finance, insurance, economics, AI, and decision-making because it:",
+            "Provides a mathematical way to compare uncertain choices using their long-term average outcomes",
+            "Increases processor speed",
+            "Reduces storage requirements",
+            "Improves internet bandwidth",
+            QuestionOption.A,
+            "Expected value helps people and intelligent systems make better decisions by evaluating the average outcome of uncertain situations over time.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Binomial Distribution
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Binomial Distribution",
+            "A binomial distribution is used when:",
+            "There are a fixed number of independent trials with two possible outcomes",
+            "There are infinitely many outcomes",
+            "Events are always dependent",
+            "Only continuous variables are involved",
+            QuestionOption.A,
+            "A binomial distribution models repeated independent trials where each trial has only two possible outcomes, such as success or failure.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Binomial Distribution",
+            "Each experiment in a binomial distribution is called a:",
+            "Bernoulli Trial",
+            "Random Walk",
+            "Continuous Event",
+            "Probability Function",
+            QuestionOption.A,
+            "A Bernoulli trial is an experiment with exactly two possible outcomes.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Binomial Distribution",
+            "The two possible outcomes in a Bernoulli trial are commonly called:",
+            "Positive and Negative",
+            "True and False",
+            "Success and Failure",
+            "High and Low",
+            QuestionOption.C,
+            "Binomial distributions are based on repeated success-or-failure experiments.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Binomial Distribution",
+            "For a binomial distribution, each trial must be:",
+            "Dependent on previous trials",
+            "Independent of every other trial",
+            "Continuous",
+            "Impossible",
+            QuestionOption.B,
+            "The outcome of one trial must not affect the outcome of another.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Binomial Distribution",
+            "A binomial distribution helps us determine:",
+            "The probability of a certain number of successes in repeated trials",
+            "The exact outcome of every trial",
+            "The average of continuous variables only",
+            "The shape of a graph",
+            QuestionOption.A,
+            "It calculates the probability of obtaining a specified number of successes after a fixed number of independent trials.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Binomial Probabilities
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Binomial Probabilities",
+            "The binomial probability formula is used to calculate:",
+            "The probability of obtaining a specific number of successes",
+            "The average of all observations",
+            "The largest outcome",
+            "The median",
+            QuestionOption.A,
+            "The formula computes the probability of exactly x successes in n trials.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Binomial Probabilities",
+            "Which symbol usually represents the probability of success?",
+            "n",
+            "p",
+            "x",
+            "r",
+            QuestionOption.B,
+            "The symbol p represents the probability of success in each trial.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Binomial Probabilities",
+            "The value n in a binomial distribution represents:",
+            "Number of trials",
+            "Probability of failure",
+            "Expected value",
+            "Sample mean",
+            QuestionOption.A,
+            "The symbol n represents the fixed number of independent trials.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Binomial Probabilities",
+            "The probability of failure in a binomial distribution is:",
+            "p²",
+            "1 + p",
+            "n - p",
+            "1 - p",
+            QuestionOption.D,
+            "If the probability of success is p, then the probability of failure is 1 − p.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Binomial Probabilities",
+            "Before applying the binomial formula, we must verify:",
+            "The trials are independent, fixed in number, and have two outcomes",
+            "The graph is symmetric",
+            "The expected value is zero",
+            "The sample size is always 100",
+            QuestionOption.A,
+            "A valid binomial experiment requires independent trials, two outcomes, constant probability, and a fixed number of trials.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Binomial Distribution
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Binomial Distribution",
+            "Manufacturing industries use the binomial distribution to:",
+            "Estimate defective products",
+            "Measure rainfall",
+            "Calculate distances",
+            "Design bridges",
+            QuestionOption.A,
+            "Quality control often involves counting defective products among manufactured items.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Distribution",
+            "Geneticists use the binomial distribution to:",
+            "Predict inheritance probabilities",
+            "Measure temperatures",
+            "Find matrix inverses",
+            "Calculate vectors",
+            QuestionOption.A,
+            "Many inheritance problems involve repeated independent probability events.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Distribution",
+            "Doctors may use the binomial distribution to estimate:",
+            "The number of patients responding to a treatment",
+            "The Earth's circumference",
+            "Building heights",
+            "Computer memory",
+            QuestionOption.A,
+            "Medical researchers use it to analyse treatment success rates.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Distribution",
+            "Machine learning and AI use binomial models to:",
+            "Model binary classification outcomes",
+            "Increase processor speed",
+            "Reduce internet latency",
+            "Compress databases",
+            QuestionOption.A,
+            "Binary classification problems often involve success/failure style probability models.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Binomial Distribution",
+            "The binomial distribution is widely used because it models:",
+            "Repeated independent events with two possible outcomes in real-world decision making",
+            "Only geometric shapes",
+            "Only continuous variables",
+            "Only deterministic systems",
+            QuestionOption.A,
+            "It is widely applied in quality control, medicine, genetics, finance, artificial intelligence, reliability testing, surveys, and scientific experiments wherever repeated success-or-failure events occur.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Normal Distribution
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Normal Distribution",
+            "The normal distribution is commonly known as the:",
+            "Bell-shaped curve",
+            "Square curve",
+            "Triangular curve",
+            "Step graph",
+            QuestionOption.A,
+            "The normal distribution has a symmetric bell-shaped curve that appears frequently in nature and statistics.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Normal Distribution",
+            "A normal distribution is:",
+            "Symmetric about its mean",
+            "Always skewed to the left",
+            "Always skewed to the right",
+            "Never continuous",
+            QuestionOption.A,
+            "In a normal distribution, the left and right sides of the curve are mirror images.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Normal Distribution",
+            "In a perfectly normal distribution, the mean, median, and mode are:",
+            "All different",
+            "Mean is the largest",
+            "All equal",
+            "Undefined",
+            QuestionOption.C,
+            "A normal distribution is perfectly symmetric, so the mean, median, and mode occur at the same point.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Normal Distribution",
+            "Which of the following often follows a normal distribution?",
+            "Human heights",
+            "Dice outcomes",
+            "Coin tosses",
+            "Alphabet letters",
+            QuestionOption.A,
+            "Many natural measurements such as height and IQ approximately follow a normal distribution.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Normal Distribution",
+            "The normal distribution is important because many real-world measurements:",
+            "Approximate its shape",
+            "Always have only two outcomes",
+            "Never vary",
+            "Cannot be analysed",
+            QuestionOption.A,
+            "Many natural, biological, and engineering measurements closely follow a normal distribution.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Properties and Calculations of Normal Distribution
+        // ==========================================================
+
+        AddQuestion(
+            "Properties and Calculations of Normal Distribution",
+            "A z-score tells us:",
+            "How far a value is from the mean in standard deviations",
+            "The total number of observations",
+            "The maximum value",
+            "The median of a dataset",
+            QuestionOption.A,
+            "A z-score measures the distance between a value and the mean in units of standard deviation.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Properties and Calculations of Normal Distribution",
+            "The standard normal distribution has:",
+            "Mean = 0 and Standard Deviation = 1",
+            "Mean = 1 and Standard Deviation = 0",
+            "Mean = 100 and Standard Deviation = 15",
+            "Mean = 50 and Standard Deviation = 25",
+            QuestionOption.A,
+            "The standard normal distribution is a special normal distribution with mean 0 and standard deviation 1.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Properties and Calculations of Normal Distribution",
+            "Approximately what percentage of data lies within one standard deviation of the mean?",
+            "50%",
+            "68%",
+            "95%",
+            "99.7%",
+            QuestionOption.B,
+            "According to the Empirical Rule, about 68% of observations lie within one standard deviation of the mean.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Properties and Calculations of Normal Distribution",
+            "Which table is commonly used to calculate probabilities for a normal distribution?",
+            "Multiplication table",
+            "Prime number table",
+            "Periodic table",
+            "Z-table",
+            QuestionOption.D,
+            "The Z-table provides cumulative probabilities for standard normal values.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Properties and Calculations of Normal Distribution",
+            "The Empirical Rule states that approximately 95% of observations lie within:",
+            "One standard deviation",
+            "Two standard deviations",
+            "Three standard deviations",
+            "Four standard deviations",
+            QuestionOption.B,
+            "The 68-95-99.7 rule states that about 95% of observations lie within two standard deviations of the mean.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Normal Distribution
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Normal Distribution",
+            "Quality control engineers use the normal distribution to:",
+            "Monitor product quality",
+            "Write computer programs",
+            "Create websites",
+            "Design buildings",
+            QuestionOption.A,
+            "Manufacturers monitor production measurements using the normal distribution.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Normal Distribution",
+            "Medical researchers use the normal distribution to analyse:",
+            "Biological measurements and clinical data",
+            "Weather maps only",
+            "Traffic signals",
+            "Building materials",
+            QuestionOption.A,
+            "Many biological measurements approximately follow a normal distribution.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Normal Distribution",
+            "Machine learning commonly uses the normal distribution for:",
+            "Modelling data and estimating uncertainty",
+            "Increasing internet speed",
+            "Building processors",
+            "Compressing images",
+            QuestionOption.A,
+            "Many ML algorithms assume normally distributed errors or features.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Normal Distribution",
+            "Financial analysts often assume investment returns are approximately:",
+            "Normally distributed",
+            "Always constant",
+            "Always zero",
+            "Perfectly predictable",
+            QuestionOption.A,
+            "Although not always exact, the normal distribution is widely used in financial modelling.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Normal Distribution",
+            "The normal distribution is one of the most important statistical models because it:",
+            "Appears naturally in many real-world datasets and supports prediction, inference, and decision-making",
+            "Works only for geometry",
+            "Can only describe two outcomes",
+            "Never changes shape",
+            QuestionOption.A,
+            "It is used throughout statistics, artificial intelligence, machine learning, finance, medicine, engineering, quality control, psychology, and scientific research because many naturally occurring measurements approximately follow a normal distribution.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
