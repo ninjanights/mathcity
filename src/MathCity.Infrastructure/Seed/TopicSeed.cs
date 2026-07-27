@@ -56,21 +56,6 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Coordinate Geometry"].Id, Title = "Hyperbola", DisplayOrder = 10 },
             new Topic { ChapterId = chapters["Coordinate Geometry"].Id, Title = "Conic Sections", DisplayOrder = 11 },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             // Trigonometry 4
 
             new Topic { ChapterId = chapters["Trigonometry"].Id, Title = "Trigonometric Ratios", DisplayOrder = 1 },
@@ -81,6 +66,14 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Trigonometry"].Id, Title = "Trigonometric Equations", DisplayOrder = 6 },
             new Topic { ChapterId = chapters["Trigonometry"].Id, Title = "Heights & Distances", DisplayOrder = 7 },
             new Topic { ChapterId = chapters["Trigonometry"].Id, Title = "Graphs of Trigonometric Functions", DisplayOrder = 8 },
+
+
+
+
+
+
+
+
 
 
             // Functions 5
@@ -104,6 +97,15 @@ public static class TopicSeed
             new Topic { ChapterId = chapters["Sequences & Series"].Id, Title = "Infinite Series", DisplayOrder = 6 },
             new Topic { ChapterId = chapters["Sequences & Series"].Id, Title = "Binomial Expansion", DisplayOrder = 7 },
             new Topic { ChapterId = chapters["Sequences & Series"].Id, Title = "Mathematical Induction", DisplayOrder = 8 },
+
+
+
+
+
+
+
+
+
 
 
             // Matrices & Determinants 7
