@@ -21852,8 +21852,1544 @@ AddQuestion(
             "Modern science, engineering, AI, economics, and simulation all depend on analysing systems with multiple variables.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Introduction to Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Differential Equations",
+            "A differential equation is an equation involving:",
+            "Derivatives of one or more functions",
+            "Only constants",
+            "Only matrices",
+            "Only probabilities",
+            QuestionOption.A,
+            "Differential equations relate a function to one or more of its derivatives.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Differential Equations",
+            "Differential equations are mainly used to describe:",
+            "Static objects only",
+            "Changing quantities and dynamic systems",
+            "Geometric constructions only",
+            "Prime numbers only",
+            QuestionOption.B,
+            "They model how quantities change over time or space.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Differential Equations",
+            "Which branch of mathematics provides the foundation for differential equations?",
+            "Probability",
+            "Statistics",
+            "Calculus",
+            "Number Theory",
+            QuestionOption.C,
+            "Differential equations are based on the concepts of derivatives from calculus.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Differential Equations",
+            "A solution of a differential equation is:",
+            "A constant number",
+            "A matrix",
+            "A graph only",
+            "A function that satisfies the equation",
+            QuestionOption.D,
+            "The solution is a function whose derivatives satisfy the given differential equation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Differential Equations",
+            "Differential equations are important because they help:",
+            "Model real-world phenomena mathematically",
+            "Replace arithmetic",
+            "Generate random numbers",
+            "Simplify multiplication tables",
+            QuestionOption.A,
+            "Many natural and engineered systems are described using differential equations.",
+            DifficultyLevel.Advance,
+            5);
 
 
+        // ==========================================================
+        // Types and Classification of Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Types and Classification of Differential Equations",
+            "An ordinary differential equation (ODE) involves:",
+            "Only one independent variable",
+            "Two independent variables",
+            "Only constants",
+            "No variables",
+            QuestionOption.A,
+            "ODEs contain derivatives with respect to a single independent variable.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types and Classification of Differential Equations",
+            "A partial differential equation (PDE) contains:",
+            "Only algebraic expressions",
+            "Partial derivatives",
+            "Only integrals",
+            "Only matrices",
+            QuestionOption.B,
+            "PDEs involve partial derivatives with respect to multiple variables.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types and Classification of Differential Equations",
+            "The order of a differential equation is determined by:",
+            "The number of variables",
+            "The number of constants",
+            "The highest derivative present",
+            "The degree of the polynomial",
+            QuestionOption.C,
+            "The order is the highest order derivative appearing in the equation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types and Classification of Differential Equations",
+            "The degree of a differential equation refers to:",
+            "The number of variables",
+            "The number of derivatives",
+            "The number of constants",
+            "The exponent of the highest-order derivative after simplification",
+            QuestionOption.D,
+            "The degree is the exponent of the highest-order derivative when the equation is polynomial in derivatives.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types and Classification of Differential Equations",
+            "Classifying a differential equation helps us:",
+            "Choose an appropriate solution method",
+            "Avoid solving it",
+            "Find prime numbers",
+            "Convert it into a matrix automatically",
+            QuestionOption.A,
+            "Different classes of differential equations require different solving techniques.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Differential Equations",
+            "In physics, differential equations are commonly used to describe:",
+            "Motion and physical systems",
+            "Grammar rules",
+            "Programming syntax",
+            "Passwords",
+            QuestionOption.A,
+            "Newton's laws and many physical models are expressed using differential equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Differential Equations",
+            "Biologists use differential equations to model:",
+            "Population growth",
+            "Movie ratings",
+            "Book indexes",
+            "Colour palettes",
+            QuestionOption.B,
+            "Population dynamics are commonly represented using differential equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Differential Equations",
+            "Engineers frequently use differential equations to analyse:",
+            "Word processing",
+            "Image compression only",
+            "Electrical and mechanical systems",
+            "Database indexing",
+            QuestionOption.C,
+            "Electrical circuits, vibrations, and control systems rely heavily on differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Differential Equations",
+            "Artificial intelligence and robotics use differential equations to model:",
+            "Typing speed",
+            "File management",
+            "Spreadsheet layouts",
+            "Dynamic systems and control",
+            QuestionOption.D,
+            "Robotic motion, control theory, and continuous optimisation often involve differential equations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Differential Equations",
+            "One of the greatest strengths of differential equations is their ability to:",
+            "Describe continuously changing real-world systems",
+            "Replace geometry",
+            "Solve only arithmetic problems",
+            "Avoid mathematical modelling",
+            QuestionOption.A,
+            "They provide mathematical models for changing systems across science, engineering, economics, biology, and AI.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to First Order Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to First Order Differential Equations",
+            "A first order differential equation contains:",
+            "Only the first derivative",
+            "Only the second derivative",
+            "Only constants",
+            "No derivatives",
+            QuestionOption.A,
+            "A first order differential equation involves the first derivative and no higher-order derivatives.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to First Order Differential Equations",
+            "The order of a differential equation is determined by its:",
+            "Coefficient",
+            "Highest derivative",
+            "Number of variables",
+            "Degree",
+            QuestionOption.B,
+            "Since only the first derivative appears, it is called a first order differential equation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to First Order Differential Equations",
+            "First order differential equations are commonly used to model:",
+            "Only geometric shapes",
+            "Only algebraic expressions",
+            "Changing quantities over time",
+            "Only matrices",
+            QuestionOption.C,
+            "They describe systems whose rate of change depends on current conditions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to First Order Differential Equations",
+            "The solution of a first order differential equation is generally:",
+            "A single number",
+            "A matrix",
+            "A graph only",
+            "A function",
+            QuestionOption.D,
+            "The solution is a function whose first derivative satisfies the equation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to First Order Differential Equations",
+            "One important advantage of first order differential equations is that they:",
+            "Can model many natural and engineering processes",
+            "Replace algebra completely",
+            "Require no calculus",
+            "Always have constant solutions",
+            QuestionOption.A,
+            "Many physical, biological, and engineering systems are naturally described by first order differential equations.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Methods for Solving First Order Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Methods for Solving First Order Differential Equations",
+            "Which method is commonly used when variables can be separated?",
+            "Separation of variables",
+            "Matrix inversion",
+            "Fourier transform",
+            "Laplace expansion",
+            QuestionOption.A,
+            "Separation of variables is one of the simplest techniques for solving first order differential equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods for Solving First Order Differential Equations",
+            "An integrating factor is primarily used to solve:",
+            "Exact equations",
+            "Linear first order differential equations",
+            "Quadratic equations",
+            "Second order equations only",
+            QuestionOption.B,
+            "Multiplying by an integrating factor converts a linear equation into an exact derivative.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods for Solving First Order Differential Equations",
+            "An exact differential equation satisfies:",
+            "Only one solution",
+            "No derivatives",
+            "A specific mathematical condition relating partial derivatives",
+            "Constant coefficients only",
+            QuestionOption.C,
+            "Exact equations satisfy a condition that allows them to be solved using potential functions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods for Solving First Order Differential Equations",
+            "Choosing the correct solving technique depends mainly on the equation's:",
+            "Answer",
+            "Graph",
+            "Coefficient values only",
+            "Form and structure",
+            QuestionOption.D,
+            "Different types of first order differential equations require different solving methods.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods for Solving First Order Differential Equations",
+            "Learning multiple solution methods allows us to:",
+            "Solve a wider variety of differential equations",
+            "Avoid using derivatives",
+            "Ignore initial conditions",
+            "Replace integration entirely",
+            QuestionOption.A,
+            "Recognising the equation type helps select the most efficient solution method.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of First Order Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of First Order Differential Equations",
+            "Population growth is commonly modeled using:",
+            "First order differential equations",
+            "Pie charts",
+            "Matrices only",
+            "Histograms",
+            QuestionOption.A,
+            "Population growth depends on its current size, making first order differential equations appropriate.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of First Order Differential Equations",
+            "Radioactive decay is an example of:",
+            "Constant motion",
+            "A first order differential equation model",
+            "Polynomial regression",
+            "Geometric construction",
+            QuestionOption.B,
+            "The rate of radioactive decay depends on the amount of radioactive material remaining.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of First Order Differential Equations",
+            "Engineers often use first order differential equations when analysing:",
+            "Word processors",
+            "Image editors",
+            "Electrical circuits and heat transfer",
+            "Database indexing",
+            QuestionOption.C,
+            "Many electrical and thermal systems are naturally modeled using first order differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of First Order Differential Equations",
+            "Economists use first order differential equations to model:",
+            "Typing speed",
+            "Music playlists",
+            "Document formatting",
+            "Growth and changing economic quantities",
+            QuestionOption.D,
+            "Economic variables such as investment and growth often change continuously over time.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of First Order Differential Equations",
+            "First order differential equations remain important because they describe:",
+            "Many real-world dynamic systems accurately",
+            "Only geometry problems",
+            "Only arithmetic calculations",
+            "Only algebraic identities",
+            QuestionOption.A,
+            "They are fundamental tools in science, engineering, economics, biology, and artificial intelligence.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Separable Equations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Separable Equations",
+            "A separable differential equation is one in which:",
+            "Variables can be separated onto opposite sides",
+            "Only constants appear",
+            "Only second derivatives exist",
+            "No derivatives are present",
+            QuestionOption.A,
+            "A separable equation allows variables to be rearranged so each side contains only one variable.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Separable Equations",
+            "The main idea behind solving a separable equation is to:",
+            "Differentiate both sides",
+            "Separate the variables before integrating",
+            "Square every term",
+            "Use matrices",
+            QuestionOption.B,
+            "The variables are first separated, then both sides are integrated.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Separable Equations",
+            "Separable equations belong to which category of differential equations?",
+            "Second-order equations",
+            "Partial differential equations",
+            "First-order differential equations",
+            "Integral equations",
+            QuestionOption.C,
+            "Most separable equations are first-order ordinary differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Separable Equations",
+            "The solution to a separable differential equation is generally:",
+            "A constant",
+            "A matrix",
+            "A graph only",
+            "A function obtained after integration",
+            QuestionOption.D,
+            "After separating variables and integrating, the solution is a function.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Separable Equations",
+            "Separable equations are important because they provide:",
+            "A simple method for solving many real-world models",
+            "A replacement for calculus",
+            "Only numerical answers",
+            "Only geometric solutions",
+            QuestionOption.A,
+            "Many physical and biological models can be solved efficiently using separation of variables.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Solving Separable Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Separable Differential Equations",
+            "After separating variables, the next step is to:",
+            "Multiply both sides by zero",
+            "Integrate both sides",
+            "Take another derivative",
+            "Square every term",
+            QuestionOption.B,
+            "Integration is performed after the variables have been separated.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Separable Differential Equations",
+            "Initial conditions are mainly used to:",
+            "Estimate derivatives",
+            "Separate variables",
+            "Determine the constant of integration",
+            "Find the order of the equation",
+            QuestionOption.C,
+            "Initial conditions help determine the unknown integration constant.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Separable Differential Equations",
+            "Why must variables be separated before integration?",
+            "So each side contains only one variable",
+            "To remove derivatives",
+            "To simplify constants",
+            "To convert the equation into a matrix",
+            QuestionOption.A,
+            "Each integral should involve only one independent variable.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Separable Differential Equations",
+            "Which mathematical operation is essential in solving separable equations?",
+            "Differentiation only",
+            "Matrix multiplication",
+            "Factorisation only",
+            "Integration",
+            QuestionOption.D,
+            "Integration is the key step after separating the variables.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Separable Differential Equations",
+            "Correctly identifying a separable equation helps us:",
+            "Choose an efficient solving technique",
+            "Avoid integration completely",
+            "Ignore constants",
+            "Convert every equation into a polynomial",
+            QuestionOption.A,
+            "Recognising separable equations allows us to apply one of the simplest solution methods.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Separable Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Separable Equations",
+            "Population growth is commonly modeled using:",
+            "Separable differential equations",
+            "Pie charts",
+            "Histograms",
+            "Matrices",
+            QuestionOption.A,
+            "Simple population growth models are often separable differential equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Separable Equations",
+            "Newton's Law of Cooling is commonly solved using:",
+            "Quadratic equations",
+            "Separable differential equations",
+            "Complex numbers",
+            "Linear programming",
+            QuestionOption.B,
+            "The cooling equation can often be solved by separating variables.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Separable Equations",
+            "Radioactive decay is an application because the rate depends on:",
+            "The colour of the material",
+            "The surrounding temperature only",
+            "The amount of substance remaining",
+            "The size of the equation",
+            QuestionOption.C,
+            "Decay rate is proportional to the remaining radioactive material.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Separable Equations",
+            "Chemists use separable differential equations to model:",
+            "Typing speed",
+            "Music playlists",
+            "Computer storage",
+            "Reaction rates",
+            QuestionOption.D,
+            "Many reaction-rate equations can be solved using separation of variables.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Separable Equations",
+            "The greatest advantage of separable equations is that they:",
+            "Provide exact solutions for many practical models",
+            "Eliminate the need for derivatives",
+            "Replace all differential equations",
+            "Always produce linear functions",
+            QuestionOption.A,
+            "Many important physical, biological, and engineering models have exact solutions using separation of variables.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Linear Differential Equations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Linear Differential Equations",
+            "A linear differential equation is one in which:",
+            "The dependent variable and its derivatives appear only to the first power",
+            "The derivatives are squared",
+            "Only constants appear",
+            "No derivatives exist",
+            QuestionOption.A,
+            "In a linear differential equation, the function and its derivatives are not multiplied together or raised to powers greater than one.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Linear Differential Equations",
+            "A first-order linear differential equation contains:",
+            "Only second derivatives",
+            "The first derivative as the highest derivative",
+            "No derivatives",
+            "Only algebraic expressions",
+            QuestionOption.B,
+            "Its highest derivative is the first derivative.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Linear Differential Equations",
+            "Which branch of mathematics provides the foundation for linear differential equations?",
+            "Statistics",
+            "Geometry",
+            "Calculus",
+            "Number Theory",
+            QuestionOption.C,
+            "Linear differential equations are built upon differentiation and integration in calculus.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Linear Differential Equations",
+            "The solution of a linear differential equation is generally:",
+            "A constant",
+            "A matrix",
+            "A graph only",
+            "A function",
+            QuestionOption.D,
+            "The solution is a function that satisfies the differential equation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Linear Differential Equations",
+            "Linear differential equations are widely used because they:",
+            "Model many real-world dynamic systems",
+            "Replace algebra completely",
+            "Always have constant solutions",
+            "Require no calculus",
+            QuestionOption.A,
+            "Many engineering, physical, and economic systems can be approximated using linear differential equations.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Solving Linear Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Linear Differential Equations",
+            "The standard method for solving first-order linear differential equations uses:",
+            "An integrating factor",
+            "Quadratic formula",
+            "Laplace expansion",
+            "Matrix inversion",
+            QuestionOption.A,
+            "The integrating factor transforms the equation into an easily integrable form.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Linear Differential Equations",
+            "The integrating factor is mainly used to:",
+            "Separate variables",
+            "Simplify the equation into an exact derivative",
+            "Increase the order of the equation",
+            "Remove constants",
+            QuestionOption.B,
+            "Multiplying by the integrating factor allows the left-hand side to become the derivative of a product.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Linear Differential Equations",
+            "Initial conditions help determine:",
+            "The equation's order",
+            "The integrating factor",
+            "The constant of integration",
+            "The derivative formula",
+            QuestionOption.C,
+            "After obtaining the general solution, initial conditions determine the particular solution.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Linear Differential Equations",
+            "A general solution becomes a particular solution after:",
+            "Differentiating again",
+            "Removing derivatives",
+            "Changing variables",
+            "Applying initial conditions",
+            QuestionOption.D,
+            "Initial conditions determine the unknown constant in the general solution.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Linear Differential Equations",
+            "Understanding the equation's form helps us:",
+            "Select the correct solving method",
+            "Avoid integration",
+            "Ignore constants",
+            "Replace derivatives with matrices",
+            QuestionOption.A,
+            "Recognising a linear equation allows the integrating factor method to be applied efficiently.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Linear Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Linear Differential Equations",
+            "Electrical circuits are commonly analysed using:",
+            "Linear differential equations",
+            "Pie charts",
+            "Histograms",
+            "Matrices only",
+            QuestionOption.A,
+            "Current and voltage relationships are frequently modelled using linear differential equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Linear Differential Equations",
+            "Economists use linear differential equations to study:",
+            "Changing economic variables",
+            "Grammar rules",
+            "File systems",
+            "Music playlists",
+            QuestionOption.B,
+            "Economic growth and investment models often involve continuously changing quantities.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Linear Differential Equations",
+            "Engineers use linear differential equations to analyse:",
+            "Painting techniques",
+            "Book indexing",
+            "Control systems and physical processes",
+            "Sorting algorithms only",
+            QuestionOption.C,
+            "Control engineering and many physical systems are modelled using linear differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Linear Differential Equations",
+            "Population models frequently use linear differential equations to describe:",
+            "Typing speed",
+            "Computer storage",
+            "Website traffic",
+            "Population change over time",
+            QuestionOption.D,
+            "Simple population growth and decay models can often be represented by linear differential equations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Linear Differential Equations",
+            "Linear differential equations remain valuable because they:",
+            "Provide accurate mathematical models for many practical systems",
+            "Replace nonlinear equations completely",
+            "Eliminate integration",
+            "Solve only theoretical problems",
+            QuestionOption.A,
+            "They are widely used across engineering, science, economics, physics, and many other disciplines.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Homogeneous Differential Equations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Homogeneous Differential Equations",
+            "A homogeneous differential equation is often solved by using:",
+            "Variable substitution",
+            "Matrix multiplication",
+            "Laplace transform",
+            "Quadratic formula",
+            QuestionOption.A,
+            "The substitution y = vx (or x = vy) often transforms a homogeneous equation into a separable one.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Homogeneous Differential Equations",
+            "The substitution y = vx helps because it:",
+            "Removes derivatives",
+            "Converts the equation into a separable form",
+            "Changes it into a quadratic equation",
+            "Eliminates constants",
+            QuestionOption.B,
+            "After substitution, the equation often becomes separable and easier to solve.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Homogeneous Differential Equations",
+            "Homogeneous differential equations are generally classified as:",
+            "Second-order equations",
+            "Partial differential equations",
+            "First-order differential equations",
+            "Integral equations",
+            QuestionOption.C,
+            "Most introductory homogeneous equations are first-order ordinary differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Homogeneous Differential Equations",
+            "The final solution of a homogeneous differential equation is usually:",
+            "A constant",
+            "A matrix",
+            "A graph",
+            "A function",
+            QuestionOption.D,
+            "The solution is a function that satisfies the differential equation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Homogeneous Differential Equations",
+            "Studying homogeneous differential equations helps us:",
+            "Solve many nonlinear differential equations efficiently",
+            "Avoid calculus",
+            "Replace integration completely",
+            "Eliminate derivatives",
+            QuestionOption.A,
+            "Many nonlinear first-order equations become manageable through homogeneous substitutions.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Methods for Solving Homogeneous Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Methods for Solving Homogeneous Equations",
+            "The most common substitution for homogeneous equations is:",
+            "y = vx",
+            "x = y²",
+            "y = e^x",
+            "x = sin y",
+            QuestionOption.A,
+            "The substitution y = vx is commonly used to transform homogeneous equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods for Solving Homogeneous Equations",
+            "After substitution, homogeneous equations are usually solved by:",
+            "Differentiating again",
+            "Separating variables and integrating",
+            "Finding determinants",
+            "Using matrices",
+            QuestionOption.B,
+            "The substitution often converts the equation into a separable differential equation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods for Solving Homogeneous Equations",
+            "Integration is performed after:",
+            "Finding the graph",
+            "Calculating the determinant",
+            "Separating the variables",
+            "Removing constants",
+            QuestionOption.C,
+            "Once the variables are separated, both sides are integrated.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods for Solving Homogeneous Equations",
+            "Initial conditions are used to determine:",
+            "The equation's order",
+            "The substitution",
+            "The derivative",
+            "The constant of integration",
+            QuestionOption.D,
+            "Initial values determine the particular solution.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods for Solving Homogeneous Equations",
+            "Recognising a homogeneous equation allows us to:",
+            "Choose the correct substitution method",
+            "Avoid differentiation",
+            "Ignore integration",
+            "Convert every equation into a polynomial",
+            QuestionOption.A,
+            "Identifying the equation type is the first step toward selecting the appropriate solving technique.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Homogeneous Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Homogeneous Equations",
+            "Homogeneous differential equations are useful in modelling:",
+            "Physical systems with changing variables",
+            "Grammar rules",
+            "File systems",
+            "Music playlists",
+            QuestionOption.A,
+            "Many physical systems can be described using homogeneous differential equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Homogeneous Equations",
+            "Engineers use homogeneous equations to analyse:",
+            "Cooking recipes",
+            "Fluid flow and engineering systems",
+            "Book indexes",
+            "Image formats",
+            QuestionOption.B,
+            "Fluid dynamics and engineering models frequently involve homogeneous differential equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Homogeneous Equations",
+            "Economists may use homogeneous differential equations to model:",
+            "Painting techniques",
+            "Password generation",
+            "Changing economic systems",
+            "Database indexing",
+            QuestionOption.C,
+            "Continuous economic processes can often be represented using differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Homogeneous Equations",
+            "In physics, homogeneous differential equations help describe:",
+            "Typing speed",
+            "Document formatting",
+            "Spreadsheet layouts",
+            "Dynamic physical processes",
+            QuestionOption.D,
+            "Many continuously changing physical systems are described by differential equations.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Homogeneous Equations",
+            "The main benefit of homogeneous equation techniques is that they:",
+            "Simplify certain nonlinear differential equations into solvable forms",
+            "Replace calculus entirely",
+            "Always eliminate integration",
+            "Work only for algebraic equations",
+            QuestionOption.A,
+            "Appropriate substitutions transform otherwise difficult equations into easier ones.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Exact Equations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Exact Equations",
+            "An exact differential equation satisfies:",
+            "It contains only first derivatives",
+            "The equation has constant coefficients",
+            "A specific condition relating partial derivatives",
+            "It can always be solved by separation of variables",
+            QuestionOption.C,
+            "An equation is exact when the required partial derivatives are equal.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Exact Equations",
+            "Exact differential equations are commonly written in the form:",
+            "dy/dx = mx + c",
+            "M(x,y)dx + N(x,y)dy = 0",
+            "ax² + bx + c = 0",
+            "∫f(x)dx = C",
+            QuestionOption.B,
+            "Most exact equations are expressed as M(x,y)dx + N(x,y)dy = 0.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Exact Equations",
+            "The main purpose of checking exactness is to:",
+            "Find a potential function",
+            "Calculate a determinant",
+            "Find matrix eigenvalues",
+            "Determine graph symmetry",
+            QuestionOption.A,
+            "If the equation is exact, a potential function can be determined.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Exact Equations",
+            "Exact equations usually involve:",
+            "Only algebraic expressions",
+            "Functions of more than one variable",
+            "Only trigonometric identities",
+            "Only exponential functions",
+            QuestionOption.B,
+            "Exact differential equations generally involve functions of x and y.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Exact Equations",
+            "Exact differential equations are widely used in:",
+            "Thermodynamics and physics",
+            "Image compression",
+            "Sorting algorithms",
+            "Web page styling",
+            QuestionOption.A,
+            "Many physical systems naturally produce exact differential equations.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Solving Exact Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Exact Differential Equations",
+            "The first step in solving an exact equation is to:",
+            "Find the determinant",
+            "Compute the Laplace transform",
+            "Verify the exactness condition",
+            "Differentiate both sides twice",
+            QuestionOption.C,
+            "Always verify that the equation is exact before solving it.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Exact Differential Equations",
+            "After confirming exactness, we generally:",
+            "Multiply by x",
+            "Integrate one of the functions to find the potential function",
+            "Use Taylor expansion",
+            "Square every term",
+            QuestionOption.B,
+            "Integrating one component helps construct the potential function.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Exact Differential Equations",
+            "While finding the potential function, the remaining variable is treated as:",
+            "A constant during partial integration",
+            "Zero",
+            "Infinity",
+            "Undefined",
+            QuestionOption.A,
+            "Partial integration treats the other variable as constant.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Exact Differential Equations",
+            "After integration, any missing function is determined by:",
+            "Guessing",
+            "Comparing with the other partial derivative",
+            "Graphing the equation",
+            "Using numerical approximation",
+            QuestionOption.B,
+            "Differentiate the result and compare with the remaining expression.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Exact Differential Equations",
+            "The final solution of an exact differential equation is usually expressed as:",
+            "y = mx + c",
+            "x = ky",
+            "F(x,y) = C",
+            "dy/dx = C",
+            QuestionOption.C,
+            "The solution is written as the potential function equal to a constant.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Exact Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Exact Equations",
+            "Exact differential equations are commonly applied in:",
+            "Thermodynamics",
+            "Video editing",
+            "Word processing",
+            "Game animation",
+            QuestionOption.A,
+            "Many thermodynamic relationships are represented by exact equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Exact Equations",
+            "Engineers use exact equations to model:",
+            "Physical systems",
+            "Website themes",
+            "Social media feeds",
+            "Keyboard layouts",
+            QuestionOption.A,
+            "Engineering systems often involve exact differential equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Exact Equations",
+            "Fluid mechanics frequently applies exact equations to study:",
+            "Fluid flow behaviour",
+            "Sound recording",
+            "Video streaming",
+            "Image rendering",
+            QuestionOption.A,
+            "Exact equations help model fluid flow and pressure relationships.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Exact Equations",
+            "Which field regularly uses exact differential equations to describe energy relationships?",
+            "Thermodynamics",
+            "Graphic design",
+            "Database indexing",
+            "Networking",
+            QuestionOption.A,
+            "Energy and state-variable relationships are often exact.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Exact Equations",
+            "Exact differential equations are valuable because they:",
+            "Provide systematic solutions to many physical models",
+            "Replace matrices entirely",
+            "Remove the need for calculus",
+            "Only solve quadratic equations",
+            QuestionOption.A,
+            "They provide elegant analytical solutions for many real-world systems.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Higher Order Differential Equations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Higher Order Differential Equations",
+            "A higher order differential equation contains:",
+            "Only first derivatives",
+            "Second or higher derivatives",
+            "Only algebraic expressions",
+            "No derivatives",
+            QuestionOption.B,
+            "Higher order differential equations involve derivatives of order two or greater.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Higher Order Differential Equations",
+            "The order of a differential equation is determined by:",
+            "The number of variables",
+            "The degree of the polynomial",
+            "The highest derivative present",
+            "The number of constants",
+            QuestionOption.C,
+            "The order is defined by the highest derivative appearing in the equation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Higher Order Differential Equations",
+            "Second-order differential equations commonly appear in:",
+            "Motion and vibration problems",
+            "Sorting algorithms",
+            "Database indexing",
+            "Text formatting",
+            QuestionOption.A,
+            "Many physical systems involving acceleration are modeled using second-order equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Higher Order Differential Equations",
+            "Higher order differential equations are mainly used to:",
+            "Compress digital images",
+            "Model changing physical systems",
+            "Encrypt passwords",
+            "Create spreadsheets",
+            QuestionOption.B,
+            "They describe systems involving rates of change and higher-order effects.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Higher Order Differential Equations",
+            "A second-order differential equation always contains at least:",
+            "A third derivative",
+            "A fourth derivative",
+            "A second derivative",
+            "An integral",
+            QuestionOption.C,
+            "The defining feature of a second-order equation is the presence of a second derivative.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Methods for Solving Higher Order Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Methods for Solving Higher Order Differential Equations",
+            "For linear differential equations with constant coefficients, the first step is usually to:",
+            "Find the characteristic equation",
+            "Differentiate both sides again",
+            "Apply Laplace's equation",
+            "Draw the graph",
+            QuestionOption.A,
+            "The characteristic equation helps determine the complementary solution.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Methods for Solving Higher Order Differential Equations",
+            "The complementary solution corresponds to:",
+            "The homogeneous equation",
+            "The non-homogeneous forcing term",
+            "The boundary conditions only",
+            "The numerical approximation",
+            QuestionOption.A,
+            "The complementary solution is obtained by solving the associated homogeneous equation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Methods for Solving Higher Order Differential Equations",
+            "A particular solution is needed when the equation is:",
+            "Linear and homogeneous",
+            "Non-homogeneous",
+            "Separable",
+            "Exact",
+            QuestionOption.B,
+            "The particular solution accounts for the non-zero forcing function.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Methods for Solving Higher Order Differential Equations",
+            "The complete solution of a non-homogeneous linear equation is:",
+            "Only the complementary solution",
+            "Only the particular solution",
+            "The sum of complementary and particular solutions",
+            "The product of both solutions",
+            QuestionOption.C,
+            "The general solution equals the complementary solution plus the particular solution.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Methods for Solving Higher Order Differential Equations",
+            "Characteristic equations are especially useful for:",
+            "Linear differential equations with constant coefficients",
+            "Probability distributions",
+            "Matrix multiplication",
+            "Statistical sampling",
+            QuestionOption.A,
+            "They provide an efficient way to solve many higher-order linear equations.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Higher Order Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Higher Order Differential Equations",
+            "Higher order differential equations are widely used in:",
+            "Engineering and physics",
+            "Cooking recipes",
+            "Graphic design",
+            "Social media",
+            QuestionOption.A,
+            "Engineering and physics frequently model systems using higher-order equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Higher Order Differential Equations",
+            "Mechanical vibration analysis commonly involves:",
+            "Higher order differential equations",
+            "Only quadratic equations",
+            "Simple arithmetic",
+            "Boolean algebra",
+            QuestionOption.A,
+            "Vibration models are often represented by second-order differential equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Higher Order Differential Equations",
+            "Control systems use higher order differential equations to:",
+            "Model system dynamics",
+            "Compress files",
+            "Store databases",
+            "Create animations",
+            QuestionOption.A,
+            "Dynamic behaviour in control engineering is described using differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Higher Order Differential Equations",
+            "Robotics relies on higher order differential equations to describe:",
+            "Motion and dynamic behaviour",
+            "File encryption",
+            "Text editing",
+            "Web layouts",
+            QuestionOption.A,
+            "Robot motion and control involve acceleration and dynamic models.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Higher Order Differential Equations",
+            "Higher order differential equations are valuable because they:",
+            "Accurately model complex dynamic systems",
+            "Replace all algebra",
+            "Remove the need for experiments",
+            "Guarantee exact solutions for every problem",
+            QuestionOption.A,
+            "They provide mathematical models for many real-world dynamic systems.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Applications of Differential Equations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Applications of Differential Equations",
+            "Differential equations are primarily used to:",
+            "Model systems that change over time",
+            "Sort large databases",
+            "Encrypt digital files",
+            "Create geometric patterns",
+            QuestionOption.A,
+            "Differential equations describe relationships involving changing quantities.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Applications of Differential Equations",
+            "A differential equation is most useful when studying:",
+            "Static objects",
+            "Changing processes",
+            "Colour combinations",
+            "Programming syntax",
+            QuestionOption.B,
+            "They model quantities that vary with time or other variables.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Applications of Differential Equations",
+            "Many scientific models are based on:",
+            "Random guessing",
+            "Only algebra",
+            "Differential equations",
+            "Bar charts",
+            QuestionOption.C,
+            "Differential equations form the mathematical foundation of many scientific models.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Applications of Differential Equations",
+            "Differential equations connect:",
+            "Variables and their rates of change",
+            "Colours and shapes",
+            "Numbers and letters",
+            "Images and sounds",
+            QuestionOption.A,
+            "They relate variables to one or more of their derivatives.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Applications of Differential Equations",
+            "One major advantage of differential equations is that they:",
+            "Model real-world dynamic behaviour",
+            "Eliminate the need for experiments",
+            "Solve every mathematical problem",
+            "Replace statistics completely",
+            QuestionOption.A,
+            "They provide mathematical models for many changing systems.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Mathematical Modeling with Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Mathematical Modeling with Differential Equations",
+            "Population growth is commonly modeled using:",
+            "Differential equations",
+            "Matrix multiplication",
+            "Boolean logic",
+            "Number systems",
+            QuestionOption.A,
+            "Population growth changes continuously over time and is naturally modeled by differential equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Mathematical Modeling with Differential Equations",
+            "Heat transfer problems are commonly described using:",
+            "Histograms",
+            "Differential equations",
+            "Pie charts",
+            "Set theory",
+            QuestionOption.B,
+            "Heat flow changes continuously and is modeled with differential equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Mathematical Modeling with Differential Equations",
+            "Electrical circuit analysis often uses differential equations because:",
+            "Voltage and current change over time",
+            "Circuits contain only constants",
+            "Resistance is always zero",
+            "Electricity never changes",
+            QuestionOption.A,
+            "Electrical quantities vary with time and satisfy differential equations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Mathematical Modeling with Differential Equations",
+            "Chemical reaction rates are frequently modeled using:",
+            "Differential equations",
+            "Probability trees",
+            "Sorting algorithms",
+            "Coordinate geometry",
+            QuestionOption.A,
+            "Reaction rates describe how concentrations change with time.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Mathematical Modeling with Differential Equations",
+            "Mathematical modeling with differential equations helps:",
+            "Predict future system behaviour",
+            "Increase computer memory",
+            "Reduce file sizes",
+            "Generate passwords",
+            QuestionOption.A,
+            "Solutions can predict how systems evolve over time.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Advanced Applications and Practice of Differential Equations
+        // ==========================================================
+
+        AddQuestion(
+            "Advanced Applications and Practice of Differential Equations",
+            "Differential equations play a major role in:",
+            "Physics and engineering",
+            "Graphic design",
+            "Spreadsheet formatting",
+            "Audio editing",
+            QuestionOption.A,
+            "Many engineering and physical systems are modeled with differential equations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Differential Equations",
+            "In robotics, differential equations help describe:",
+            "Robot motion and control",
+            "Keyboard layouts",
+            "Image compression",
+            "Database queries",
+            QuestionOption.A,
+            "Robot dynamics are governed by differential equations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Differential Equations",
+            "Artificial intelligence uses differential equations in areas such as:",
+            "Continuous optimization and neural models",
+            "Colour selection",
+            "Document formatting",
+            "Printer calibration",
+            QuestionOption.A,
+            "Many AI algorithms rely on continuous mathematical models.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Differential Equations",
+            "Economic models use differential equations to study:",
+            "Changing markets and growth",
+            "Computer hardware",
+            "Network cables",
+            "Programming languages",
+            QuestionOption.A,
+            "Economic variables often evolve continuously over time.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Advanced Applications and Practice of Differential Equations",
+            "Differential equations remain important because they:",
+            "Provide accurate mathematical models for complex real-world systems",
+            "Replace all branches of mathematics",
+            "Guarantee exact solutions for every model",
+            "Can only be applied in physics",
+            QuestionOption.A,
+            "They are one of the most powerful tools for describing dynamic systems across many disciplines.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
