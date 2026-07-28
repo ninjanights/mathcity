@@ -23390,11 +23390,3075 @@ AddQuestion(
             "They are one of the most powerful tools for describing dynamic systems across many disciplines.",
             DifficultyLevel.Advance,
             5);
+        // ==========================================================
+        // Introduction to Imaginary Numbers
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Imaginary Numbers",
+            "Imaginary numbers were introduced to:",
+            "Represent fractions",
+            "Solve equations involving √(-1)",
+            "Replace real numbers",
+            "Measure angles",
+            QuestionOption.B,
+            "Imaginary numbers were introduced because the square root of a negative number is not defined within the real numbers.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Imaginary Numbers",
+            "The imaginary unit i is defined as:",
+            "i = √1",
+            "i = -1",
+            "i = 1",
+            "i² = -1",
+            QuestionOption.D,
+            "The defining property of the imaginary unit is i² = -1.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Imaginary Numbers",
+            "Imaginary numbers extend the:",
+            "Real number system",
+            "Natural numbers only",
+            "Prime numbers",
+            "Whole numbers",
+            QuestionOption.A,
+            "Imaginary numbers combine with real numbers to form the complex number system.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Imaginary Numbers",
+            "A number containing both a real and an imaginary part is called a:",
+            "Rational number",
+            "Natural number",
+            "Complex number",
+            "Prime number",
+            QuestionOption.C,
+            "A complex number has the form a + bi.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Imaginary Numbers",
+            "Imaginary numbers are especially important in:",
+            "Geometry only",
+            "Advanced mathematics and engineering",
+            "Accounting",
+            "History",
+            QuestionOption.B,
+            "Imaginary numbers are widely used in engineering, physics, and higher mathematics.",
+            DifficultyLevel.Advance,
+            5);
 
 
+        // ==========================================================
+        // Operations with Imaginary Numbers
+        // ==========================================================
+
+        AddQuestion(
+            "Operations with Imaginary Numbers",
+            "What is i² equal to?",
+            "−1",
+            "1",
+            "0",
+            "i",
+            QuestionOption.A,
+            "The fundamental property of the imaginary unit is i² = -1.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Operations with Imaginary Numbers",
+            "Which operation follows the same rules as algebra when working with imaginary numbers?",
+            "Only multiplication",
+            "Only division",
+            "Addition and subtraction",
+            "None of these",
+            QuestionOption.C,
+            "Addition and subtraction are performed by combining like terms.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Operations with Imaginary Numbers",
+            "When multiplying imaginary numbers, the identity i² = -1 is used to:",
+            "Simplify expressions",
+            "Find square roots",
+            "Calculate logarithms",
+            "Convert fractions",
+            QuestionOption.A,
+            "Replacing i² with -1 simplifies complex expressions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Operations with Imaginary Numbers",
+            "Division of complex numbers usually involves multiplying by the:",
+            "Square root",
+            "Reciprocal",
+            "Identity matrix",
+            "Complex conjugate",
+            QuestionOption.D,
+            "Multiplying by the conjugate removes the imaginary part from the denominator.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Operations with Imaginary Numbers",
+            "The powers of i repeat every:",
+            "2 powers",
+            "4 powers",
+            "6 powers",
+            "8 powers",
+            QuestionOption.B,
+            "The sequence i, -1, -i, 1 repeats every four powers.",
+            DifficultyLevel.Advance,
+            5);
 
 
+        // ==========================================================
+        // Applications and Practice of Imaginary Numbers
+        // ==========================================================
 
+        AddQuestion(
+            "Applications and Practice of Imaginary Numbers",
+            "Imaginary numbers are widely used in:",
+            "Cooking",
+            "Sports scoring",
+            "Electrical engineering",
+            "Painting",
+            QuestionOption.C,
+            "Electrical engineers use complex numbers to analyse alternating current circuits.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Imaginary Numbers",
+            "Signal processing relies on imaginary numbers because they:",
+            "Represent oscillating signals efficiently",
+            "Store computer files",
+            "Compress images",
+            "Measure temperature",
+            QuestionOption.A,
+            "Complex numbers simplify the analysis of waves and signals.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Imaginary Numbers",
+            "In physics, imaginary numbers commonly appear in:",
+            "Population surveys",
+            "Accounting reports",
+            "Word processing",
+            "Wave equations and quantum mechanics",
+            QuestionOption.D,
+            "Quantum mechanics and wave analysis frequently use complex numbers.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Imaginary Numbers",
+            "Complex numbers help engineers analyze:",
+            "AC electrical circuits",
+            "Food recipes",
+            "Grammar rules",
+            "Book chapters",
+            QuestionOption.A,
+            "Alternating-current circuit analysis is one of the most common applications of complex numbers.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Imaginary Numbers",
+            "Imaginary numbers are valuable because they:",
+            "Extend mathematics to solve problems impossible with only real numbers",
+            "Replace all real numbers",
+            "Eliminate algebra",
+            "Remove the need for equations",
+            QuestionOption.B,
+            "They allow solutions to many mathematical and engineering problems that have no real-number solutions.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to the Complex Plane
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to the Complex Plane",
+            "The horizontal axis of the complex plane represents the:",
+            "Imaginary part",
+            "Real part",
+            "Magnitude",
+            "Argument",
+            QuestionOption.B,
+            "The horizontal (x) axis represents the real component of a complex number.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to the Complex Plane",
+            "The vertical axis of the complex plane represents the:",
+            "Magnitude",
+            "Argument",
+            "Imaginary part",
+            "Real part",
+            QuestionOption.C,
+            "The vertical (y) axis represents the imaginary component.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to the Complex Plane",
+            "A complex number is written in the form:",
+            "a + bi",
+            "a × b",
+            "a/b",
+            "ab²",
+            QuestionOption.A,
+            "A complex number consists of a real part (a) and an imaginary part (bi).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to the Complex Plane",
+            "The complex plane is also known as the:",
+            "Cartesian graph",
+            "Argand plane",
+            "Polar grid",
+            "Number line",
+            QuestionOption.B,
+            "The complex plane is commonly called the Argand plane.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to the Complex Plane",
+            "Representing complex numbers geometrically helps us:",
+            "Solve grammar problems",
+            "Understand their position and relationships visually",
+            "Replace algebra entirely",
+            "Avoid using coordinates",
+            QuestionOption.B,
+            "The complex plane provides a geometric interpretation of complex numbers.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Plotting and Operations on the Complex Plane
+        // ==========================================================
+
+        AddQuestion(
+            "Plotting and Operations on the Complex Plane",
+            "The magnitude of a complex number is its:",
+            "Real component",
+            "Distance from the origin",
+            "Imaginary component",
+            "Slope",
+            QuestionOption.B,
+            "Magnitude is the distance from the origin to the point representing the complex number.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Plotting and Operations on the Complex Plane",
+            "The direction of a complex number is measured by its:",
+            "Argument",
+            "Magnitude",
+            "Real value",
+            "Absolute error",
+            QuestionOption.A,
+            "The argument is the angle the complex number makes with the positive real axis.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Plotting and Operations on the Complex Plane",
+            "Adding two complex numbers corresponds to:",
+            "Vector addition on the complex plane",
+            "Multiplying their magnitudes",
+            "Squaring both numbers",
+            "Ignoring the imaginary parts",
+            QuestionOption.A,
+            "Complex number addition follows the rules of vector addition.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Plotting and Operations on the Complex Plane",
+            "Multiplying a complex number by i results in a:",
+            "Reflection",
+            "90° rotation about the origin",
+            "Horizontal translation",
+            "Scaling by zero",
+            QuestionOption.B,
+            "Multiplication by i rotates a complex number 90 degrees counterclockwise.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Plotting and Operations on the Complex Plane",
+            "Polar form of a complex number is especially useful for:",
+            "Complex multiplication and division",
+            "Sorting numbers",
+            "Finding percentages",
+            "Counting objects",
+            QuestionOption.A,
+            "Polar form simplifies multiplication, division, and powers of complex numbers.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of the Complex Plane
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of the Complex Plane",
+            "The complex plane is widely used in:",
+            "Electrical engineering",
+            "Cooking",
+            "Painting",
+            "Typing",
+            QuestionOption.A,
+            "Electrical engineering frequently uses complex numbers to analyse AC circuits.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of the Complex Plane",
+            "Computer graphics uses the complex plane for:",
+            "Geometric transformations",
+            "Food preparation",
+            "Book indexing",
+            "File compression",
+            QuestionOption.A,
+            "Complex numbers are useful for rotations and other geometric operations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of the Complex Plane",
+            "Signal processing often represents signals using:",
+            "Complex numbers",
+            "Roman numerals",
+            "Fractions only",
+            "Prime numbers",
+            QuestionOption.A,
+            "Complex numbers simplify the analysis of oscillating signals.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of the Complex Plane",
+            "In physics, the complex plane is commonly applied in:",
+            "Wave analysis",
+            "Cooking measurements",
+            "Weather forecasting maps",
+            "Book publishing",
+            QuestionOption.A,
+            "Wave mechanics and quantum physics make extensive use of complex numbers.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of the Complex Plane",
+            "The complex plane is valuable because it:",
+            "Provides both algebraic and geometric interpretations of complex numbers",
+            "Replaces real numbers completely",
+            "Eliminates coordinate geometry",
+            "Works only for electrical circuits",
+            QuestionOption.A,
+            "The complex plane connects algebra with geometry, making many advanced concepts easier to understand.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Polar Form of Complex Numbers
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Polar Form of Complex Numbers",
+            "In polar form, a complex number is represented using:",
+            "Real and imaginary parts",
+            "Magnitude and argument",
+            "Slope and intercept",
+            "Length and width",
+            QuestionOption.B,
+            "Polar form represents a complex number using its magnitude (modulus) and angle (argument).",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Polar Form of Complex Numbers",
+            "The magnitude of a complex number is also called its:",
+            "Argument",
+            "Phase",
+            "Modulus",
+            "Conjugate",
+            QuestionOption.C,
+            "The magnitude is commonly referred to as the modulus.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Polar Form of Complex Numbers",
+            "The angle made with the positive real axis is called the:",
+            "Radius",
+            "Argument",
+            "Gradient",
+            "Coordinate",
+            QuestionOption.B,
+            "The angle of a complex number is known as its argument.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Polar Form of Complex Numbers",
+            "Polar form is especially useful when working with:",
+            "Complex multiplication and division",
+            "Simple addition only",
+            "Natural numbers",
+            "Fractions",
+            QuestionOption.A,
+            "Polar form simplifies multiplication, division, and powers of complex numbers.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Polar Form of Complex Numbers",
+            "A polar representation combines:",
+            "Coordinates and gradients",
+            "Modulus and argument",
+            "Only real values",
+            "Only imaginary values",
+            QuestionOption.B,
+            "A complex number in polar form is expressed using its modulus and argument.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Converting and Operating with Polar Form
+        // ==========================================================
+
+        AddQuestion(
+            "Converting and Operating with Polar Form",
+            "To convert from rectangular form to polar form, you first determine the:",
+            "Argument and modulus",
+            "Slope only",
+            "Imaginary part only",
+            "Real part only",
+            QuestionOption.A,
+            "The modulus and argument completely determine the polar form.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Converting and Operating with Polar Form",
+            "When multiplying two complex numbers in polar form, the magnitudes are:",
+            "Subtracted",
+            "Divided",
+            "Multiplied",
+            "Squared",
+            QuestionOption.C,
+            "The moduli are multiplied while the arguments are added.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Converting and Operating with Polar Form",
+            "When dividing complex numbers in polar form, the arguments are:",
+            "Added",
+            "Subtracted",
+            "Multiplied",
+            "Ignored",
+            QuestionOption.B,
+            "Division involves dividing the moduli and subtracting the arguments.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Converting and Operating with Polar Form",
+            "The rectangular form of a complex number can be recovered using:",
+            "Trigonometric functions",
+            "Only logarithms",
+            "Matrices",
+            "Probability",
+            QuestionOption.A,
+            "Sine and cosine are used to convert polar form back to rectangular form.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Converting and Operating with Polar Form",
+            "Geometrically, multiplying by a complex number in polar form changes:",
+            "Magnitude and rotation",
+            "Only the real part",
+            "Only the imaginary part",
+            "Nothing",
+            QuestionOption.A,
+            "Multiplication scales the modulus and rotates the argument.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Polar Form
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Polar Form",
+            "Polar form is widely used in:",
+            "Electrical engineering",
+            "Painting",
+            "Cooking",
+            "Typing",
+            QuestionOption.A,
+            "Electrical engineers frequently use polar form for AC circuit analysis.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Polar Form",
+            "Signal processing commonly represents signals using:",
+            "Polar and complex forms",
+            "Roman numerals",
+            "Binary trees",
+            "Prime factors",
+            QuestionOption.A,
+            "Complex numbers in polar form simplify signal analysis.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Polar Form",
+            "Rotations in the complex plane are naturally described using:",
+            "Polar form",
+            "Fractions",
+            "Statistics",
+            "Matrices only",
+            QuestionOption.A,
+            "The argument directly represents rotation in the complex plane.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Polar Form",
+            "Polar form is especially useful in physics because it simplifies:",
+            "Wave and oscillation analysis",
+            "Grammar checking",
+            "Image editing",
+            "Database design",
+            QuestionOption.A,
+            "Many wave phenomena are naturally represented using complex numbers in polar form.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Polar Form",
+            "One major advantage of polar form is that it:",
+            "Makes multiplication, division, and powers of complex numbers easier",
+            "Replaces rectangular coordinates",
+            "Removes imaginary numbers",
+            "Eliminates trigonometry",
+            QuestionOption.A,
+            "Polar form greatly simplifies many operations on complex numbers.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Modulus and Argument
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Modulus and Argument",
+            "The modulus of a complex number represents its:",
+            "Angle from the positive real axis",
+            "Distance from the origin",
+            "Imaginary part",
+            "Real part",
+            QuestionOption.B,
+            "The modulus is the distance of the complex number from the origin on the complex plane.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Modulus and Argument",
+            "The argument of a complex number is the:",
+            "Length of the vector",
+            "Real coordinate",
+            "Angle measured from the positive real axis",
+            "Imaginary coordinate",
+            QuestionOption.C,
+            "The argument describes the direction of the complex number.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Modulus and Argument",
+            "The modulus of a complex number is always:",
+            "Negative",
+            "Zero only",
+            "Non-negative",
+            "Imaginary",
+            QuestionOption.C,
+            "Since it represents distance, the modulus cannot be negative.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Modulus and Argument",
+            "Modulus and argument together describe a complex number in:",
+            "Rectangular form",
+            "Polar form",
+            "Fractional form",
+            "Exponential growth form",
+            QuestionOption.B,
+            "Polar form uses the modulus and argument to represent a complex number.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Modulus and Argument",
+            "The modulus and argument provide a:",
+            "Geometric interpretation of complex numbers",
+            "Method for solving matrices",
+            "Replacement for real numbers",
+            "Way to calculate probabilities",
+            QuestionOption.A,
+            "Together they describe both the size and direction of a complex number geometrically.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Calculating Modulus and Argument
+        // ==========================================================
+
+        AddQuestion(
+            "Calculating Modulus and Argument",
+            "The modulus of a complex number a + bi is calculated using:",
+            "√(a² + b²)",
+            "a + b",
+            "a² − b²",
+            "ab",
+            QuestionOption.A,
+            "The modulus is found using the Pythagorean theorem.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Calculating Modulus and Argument",
+            "The argument is commonly calculated using:",
+            "sin⁻¹",
+            "tan⁻¹(b/a)",
+            "cos⁻¹",
+            "log",
+            QuestionOption.B,
+            "The inverse tangent helps determine the angle of the complex number.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Calculating Modulus and Argument",
+            "When calculating the argument, it is important to:",
+            "Ignore the signs of coordinates",
+            "Always use degrees",
+            "Consider the correct quadrant",
+            "Multiply by the modulus",
+            QuestionOption.C,
+            "The signs of the real and imaginary parts determine the correct quadrant.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Calculating Modulus and Argument",
+            "The modulus corresponds geometrically to the:",
+            "Slope",
+            "Radius from the origin",
+            "Area",
+            "Circumference",
+            QuestionOption.B,
+            "It is the radius of the point representing the complex number.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Calculating Modulus and Argument",
+            "Knowing both the modulus and argument allows conversion to:",
+            "Polar form",
+            "Only matrix form",
+            "Only logarithmic form",
+            "Only exponential equations",
+            QuestionOption.A,
+            "The modulus and argument completely determine the polar representation.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Modulus and Argument
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Modulus and Argument",
+            "Modulus and argument are widely used in:",
+            "Signal processing",
+            "Cooking",
+            "History",
+            "Grammar",
+            QuestionOption.A,
+            "Signal processing frequently represents signals using complex numbers.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Modulus and Argument",
+            "Electrical engineers use modulus and argument to analyze:",
+            "Alternating current circuits",
+            "Water pressure only",
+            "Road traffic",
+            "Population growth",
+            QuestionOption.A,
+            "AC circuit analysis commonly uses complex numbers in polar form.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Modulus and Argument",
+            "The argument is especially useful for describing:",
+            "Rotation and direction",
+            "Mass and density",
+            "Temperature",
+            "Probability",
+            QuestionOption.A,
+            "The argument directly represents angular direction in the complex plane.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Modulus and Argument",
+            "In geometry, modulus and argument help describe:",
+            "Position using magnitude and angle",
+            "Only straight lines",
+            "Only circles",
+            "Only triangles",
+            QuestionOption.A,
+            "They provide a complete geometric description of a point in the complex plane.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Modulus and Argument",
+            "One major advantage of using modulus and argument is:",
+            "They simplify multiplication, division, and rotations of complex numbers",
+            "They replace all algebra",
+            "They eliminate imaginary numbers",
+            "They avoid trigonometry completely",
+            QuestionOption.A,
+            "Polar representation greatly simplifies many complex number operations.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to De Moivre's Theorem
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to De Moivre's Theorem",
+            "De Moivre's Theorem is mainly used with complex numbers written in:",
+            "Rectangular form",
+            "Fractional form",
+            "Polar form",
+            "Matrix form",
+            QuestionOption.C,
+            "De Moivre's Theorem applies directly to complex numbers expressed in polar form.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to De Moivre's Theorem",
+            "De Moivre's Theorem is useful for finding:",
+            "Powers of complex numbers",
+            "Areas of triangles",
+            "Square roots of integers only",
+            "Probability values",
+            QuestionOption.A,
+            "The theorem provides a simple method for raising complex numbers to integer powers.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to De Moivre's Theorem",
+            "The theorem connects complex numbers with:",
+            "Statistics",
+            "Trigonometry",
+            "Geometry only",
+            "Logarithms",
+            QuestionOption.B,
+            "It combines trigonometric functions with complex number operations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to De Moivre's Theorem",
+            "De Moivre's Theorem works by multiplying the:",
+            "Real part only",
+            "Magnitude by the angle",
+            "Argument by the exponent",
+            "Imaginary part only",
+            QuestionOption.C,
+            "The argument is multiplied by the exponent while the modulus is raised to that exponent.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to De Moivre's Theorem",
+            "De Moivre's Theorem is built upon the:",
+            "Polar representation of complex numbers",
+            "Binomial theorem",
+            "Pythagorean theorem",
+            "Quadratic formula",
+            QuestionOption.A,
+            "The theorem relies on expressing complex numbers in polar form.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Using De Moivre's Theorem
+        // ==========================================================
+
+        AddQuestion(
+            "Using De Moivre's Theorem",
+            "When applying De Moivre's Theorem, the modulus is:",
+            "Raised to the given power",
+            "Added to the exponent",
+            "Subtracted from the angle",
+            "Always unchanged",
+            QuestionOption.A,
+            "The modulus is raised to the exponent n.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Using De Moivre's Theorem",
+            "The argument of a complex number is:",
+            "Squared",
+            "Multiplied by the exponent",
+            "Divided by the modulus",
+            "Converted into radians only",
+            QuestionOption.B,
+            "The angle is multiplied by n when finding powers.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Using De Moivre's Theorem",
+            "De Moivre's Theorem can also help find:",
+            "Complex roots",
+            "Matrix inverses",
+            "Probability distributions",
+            "Determinants",
+            QuestionOption.A,
+            "The theorem extends naturally to finding roots of complex numbers.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Using De Moivre's Theorem",
+            "The theorem greatly simplifies calculations involving:",
+            "Repeated multiplication of complex numbers",
+            "Addition of fractions",
+            "Linear equations",
+            "Statistics",
+            QuestionOption.A,
+            "Instead of repeated multiplication, powers can be calculated directly.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Using De Moivre's Theorem",
+            "Finding the nth roots of a complex number requires:",
+            "Dividing the argument appropriately",
+            "Ignoring the modulus",
+            "Multiplying the modulus by n",
+            "Setting the argument to zero",
+            QuestionOption.A,
+            "The argument is divided by n (with additional multiples of 2π) to obtain all roots.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of De Moivre's Theorem
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of De Moivre's Theorem",
+            "De Moivre's Theorem is widely used in:",
+            "Signal processing",
+            "Cooking",
+            "Grammar",
+            "History",
+            QuestionOption.A,
+            "Signal processing frequently uses complex numbers and De Moivre's Theorem.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of De Moivre's Theorem",
+            "Electrical engineers use De Moivre's Theorem when working with:",
+            "Alternating current circuits",
+            "Traffic signals",
+            "Population growth",
+            "Chemical formulas",
+            QuestionOption.A,
+            "Complex numbers are fundamental in AC circuit analysis.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of De Moivre's Theorem",
+            "Wave analysis often uses De Moivre's Theorem because it simplifies:",
+            "Complex trigonometric calculations",
+            "Sorting algorithms",
+            "Database queries",
+            "Statistical sampling",
+            QuestionOption.A,
+            "The theorem simplifies many trigonometric and wave-related calculations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of De Moivre's Theorem",
+            "The theorem is valuable in mathematical transformations involving:",
+            "Rotations in the complex plane",
+            "Arithmetic sequences",
+            "Linear inequalities",
+            "Prime numbers",
+            QuestionOption.A,
+            "Rotations are naturally represented using polar-form complex numbers.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of De Moivre's Theorem",
+            "One major advantage of De Moivre's Theorem is that it:",
+            "Provides an efficient way to compute powers and roots of complex numbers",
+            "Eliminates imaginary numbers",
+            "Replaces calculus",
+            "Removes the need for trigonometry",
+            QuestionOption.A,
+            "The theorem makes computations involving powers and roots much simpler.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Roots of Complex Numbers
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Roots of Complex Numbers",
+            "The roots of a complex number are:",
+            "Values whose powers produce the original complex number",
+            "Only its real components",
+            "Always imaginary numbers",
+            "Coordinates on the real axis",
+            QuestionOption.A,
+            "A root is a value which, when raised to a specified power, gives the original complex number.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Roots of Complex Numbers",
+            "A non-zero complex number has how many distinct nth roots?",
+            "One",
+            "n",
+            "n²",
+            "2n",
+            QuestionOption.B,
+            "Every non-zero complex number has exactly n distinct nth roots.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Roots of Complex Numbers",
+            "The roots of a complex number are equally spaced:",
+            "On the real axis",
+            "On a circle centred at the origin",
+            "On the imaginary axis",
+            "On a parabola",
+            QuestionOption.B,
+            "All nth roots lie on a circle and are equally spaced in angle.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Roots of Complex Numbers",
+            "Finding complex roots mainly relies on:",
+            "Polar representation",
+            "Matrix multiplication",
+            "Probability theory",
+            "Arithmetic sequences",
+            QuestionOption.A,
+            "Polar form makes root calculations much easier.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Roots of Complex Numbers",
+            "The geometric arrangement of the roots forms a:",
+            "Regular polygon",
+            "Straight line",
+            "Rectangle",
+            "Hyperbola",
+            QuestionOption.A,
+            "The roots are equally spaced around a circle, forming a regular polygon.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Finding Roots Using Polar Form
+        // ==========================================================
+
+        AddQuestion(
+            "Finding Roots Using Polar Form",
+            "To find the nth roots, the modulus is:",
+            "Raised to the power n",
+            "Multiplied by n",
+            "Raised to the power 1/n",
+            "Left unchanged",
+            QuestionOption.C,
+            "The modulus of each root is the nth root of the original modulus.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Finding Roots Using Polar Form",
+            "The arguments of the roots differ by:",
+            "360°/n (or 2π/n radians)",
+            "180°",
+            "90°",
+            "45°",
+            QuestionOption.A,
+            "Successive roots are separated by equal angular intervals of 360°/n.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Finding Roots Using Polar Form",
+            "Which theorem is commonly used to derive the roots of complex numbers?",
+            "Binomial Theorem",
+            "Pythagorean Theorem",
+            "De Moivre's Theorem",
+            "Mean Value Theorem",
+            QuestionOption.C,
+            "De Moivre's Theorem provides the foundation for finding complex roots.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Finding Roots Using Polar Form",
+            "All nth roots have the same:",
+            "Argument",
+            "Modulus",
+            "Real part",
+            "Imaginary part",
+            QuestionOption.B,
+            "Each root has the same modulus but a different argument.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Finding Roots Using Polar Form",
+            "Polar form simplifies root calculations because it separates:",
+            "Magnitude and angle",
+            "Real and imaginary parts only",
+            "Integers and fractions",
+            "Functions and graphs",
+            QuestionOption.A,
+            "Working separately with magnitude and angle makes root calculations straightforward.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Complex Roots
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Complex Roots",
+            "Complex roots are commonly used in:",
+            "Signal processing",
+            "Cooking",
+            "Grammar",
+            "Geography",
+            QuestionOption.A,
+            "Signal processing frequently relies on complex root calculations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Complex Roots",
+            "In engineering, complex roots help analyse:",
+            "Dynamic systems and control",
+            "Historical events",
+            "Population surveys",
+            "Weather forecasts",
+            QuestionOption.A,
+            "Control systems and engineering applications often involve complex roots.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Complex Roots",
+            "Quantum physics frequently uses complex roots when studying:",
+            "Wave functions",
+            "Chemical equations only",
+            "Population growth",
+            "Accounting models",
+            QuestionOption.A,
+            "Wave functions and quantum mechanics rely heavily on complex numbers.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Complex Roots",
+            "Complex roots are important for describing:",
+            "Rotations and oscillations",
+            "Sorting algorithms",
+            "Database indexing",
+            "Prime numbers",
+            QuestionOption.A,
+            "They naturally appear in rotational and oscillatory systems.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Complex Roots",
+            "One major advantage of studying complex roots is that they:",
+            "Provide complete solutions to polynomial equations",
+            "Eliminate trigonometry",
+            "Replace calculus entirely",
+            "Avoid imaginary numbers",
+            QuestionOption.A,
+            "Many polynomial equations require complex roots to obtain all possible solutions.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Understanding Complex Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Understanding Complex Functions",
+            "A complex function maps:",
+            "Real numbers to real numbers only",
+            "Complex numbers to complex numbers",
+            "Matrices to vectors",
+            "Integers to fractions",
+            QuestionOption.B,
+            "A complex function takes a complex number as input and produces another complex number as output.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Understanding Complex Functions",
+            "The input of a complex function is usually represented by:",
+            "z",
+            "x only",
+            "y only",
+            "n",
+            QuestionOption.A,
+            "The variable z commonly represents a complex number.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Understanding Complex Functions",
+            "A complex function is commonly written as:",
+            "g(x)",
+            "f(z)",
+            "M(A)",
+            "P(n)",
+            QuestionOption.B,
+            "Complex functions are generally denoted by f(z).",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Understanding Complex Functions",
+            "The output of a complex function is called its:",
+            "Domain",
+            "Input",
+            "Range",
+            "Coefficient",
+            QuestionOption.C,
+            "The collection of output values forms the range.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Understanding Complex Functions",
+            "Complex functions extend mathematical analysis into the:",
+            "Complex plane",
+            "Number line",
+            "Matrix space",
+            "Probability space",
+            QuestionOption.A,
+            "Complex functions operate on points in the complex plane.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Analytic Functions and Complex Transformations
+        // ==========================================================
+
+        AddQuestion(
+            "Analytic Functions and Complex Transformations",
+            "A function is analytic if it is:",
+            "Differentiable in a neighbourhood",
+            "Always linear",
+            "Always polynomial",
+            "Always periodic",
+            QuestionOption.A,
+            "Analytic functions are complex differentiable in a neighbourhood of every point.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Analytic Functions and Complex Transformations",
+            "Which equations are fundamental for analytic functions?",
+            "Quadratic equations",
+            "Cauchy-Riemann equations",
+            "Binomial equations",
+            "Euler equations",
+            QuestionOption.B,
+            "The Cauchy-Riemann equations determine whether a function is analytic.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Analytic Functions and Complex Transformations",
+            "A conformal mapping preserves:",
+            "Angles",
+            "Lengths",
+            "Areas",
+            "Volumes",
+            QuestionOption.A,
+            "Conformal mappings preserve angles locally.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Analytic Functions and Complex Transformations",
+            "Complex mappings transform:",
+            "One region of the complex plane into another",
+            "Matrices into vectors",
+            "Fractions into decimals",
+            "Integers into primes",
+            QuestionOption.A,
+            "A mapping sends points from one complex region to another.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Analytic Functions and Complex Transformations",
+            "Analytic functions are important because they have:",
+            "Strong geometric and algebraic properties",
+            "Only real outputs",
+            "No derivatives",
+            "Constant values",
+            QuestionOption.A,
+            "Analytic functions satisfy many powerful mathematical properties.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Real-World Applications of Complex Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Real-World Applications of Complex Functions",
+            "Complex functions are widely used in:",
+            "Signal processing",
+            "Cooking",
+            "Agriculture only",
+            "Grammar",
+            QuestionOption.A,
+            "Signal processing heavily relies on complex analysis.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Real-World Applications of Complex Functions",
+            "Fluid flow around objects is often analysed using:",
+            "Complex mappings",
+            "Statistics",
+            "Arithmetic progressions",
+            "Linear inequalities",
+            QuestionOption.A,
+            "Conformal mappings simplify fluid flow analysis.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Real-World Applications of Complex Functions",
+            "Quantum mechanics frequently uses:",
+            "Complex-valued wave functions",
+            "Only integers",
+            "Natural logarithms only",
+            "Probability trees",
+            QuestionOption.A,
+            "Wave functions in quantum mechanics are complex-valued.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Real-World Applications of Complex Functions",
+            "Electrical engineering uses complex functions to analyse:",
+            "AC circuits",
+            "Population growth",
+            "Sorting algorithms",
+            "Prime numbers",
+            QuestionOption.A,
+            "Complex numbers simplify alternating current circuit analysis.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Real-World Applications of Complex Functions",
+            "One advantage of complex functions is that they simplify:",
+            "Many physical and engineering models",
+            "Only arithmetic",
+            "Only geometry",
+            "Only probability",
+            QuestionOption.A,
+            "Complex analysis provides elegant solutions to many engineering and physics problems.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Counting Principles
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Counting Principles",
+            "The fundamental counting principle is used to:",
+            "Solve equations",
+            "Count the total number of possible outcomes",
+            "Find averages",
+            "Calculate derivatives",
+            QuestionOption.B,
+            "The fundamental counting principle multiplies the number of choices at each step to determine the total number of outcomes.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Counting Principles",
+            "If one task can be done in 3 ways and another in 5 ways, the total number of ways to perform both tasks is:",
+            "8",
+            "15",
+            "10",
+            "2",
+            QuestionOption.B,
+            "By the multiplication principle, 3 × 5 = 15 possible outcomes.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Counting Principles",
+            "Counting principles form the foundation of:",
+            "Calculus",
+            "Combinatorics",
+            "Geometry",
+            "Algebra",
+            QuestionOption.B,
+            "Combinatorics is the branch of mathematics concerned with counting.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Counting Principles",
+            "A systematic counting method helps avoid:",
+            "Multiplication",
+            "Duplicate counting",
+            "Division",
+            "Equations",
+            QuestionOption.B,
+            "Organized counting ensures every possibility is counted exactly once.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Counting Principles",
+            "Counting principles are especially useful when dealing with:",
+            "Large numbers of possibilities",
+            "Only triangles",
+            "Fractions",
+            "Linear equations",
+            QuestionOption.A,
+            "Counting principles efficiently handle problems with many possible outcomes.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Permutations and Combinations
+        // ==========================================================
+
+        AddQuestion(
+            "Permutations and Combinations",
+            "A permutation is an arrangement where:",
+            "Order matters",
+            "Order does not matter",
+            "Only repetition matters",
+            "Nothing matters",
+            QuestionOption.A,
+            "In permutations, different orders produce different arrangements.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Permutations and Combinations",
+            "A combination is a selection where:",
+            "Order matters",
+            "Order does not matter",
+            "Repetition is required",
+            "Only two objects are selected",
+            QuestionOption.B,
+            "Combinations ignore the order of selected objects.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Permutations and Combinations",
+            "The symbol n! represents:",
+            "Factorial",
+            "Power",
+            "Fraction",
+            "Root",
+            QuestionOption.A,
+            "Factorial is the product of all positive integers from n down to 1.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Permutations and Combinations",
+            "Which counting method is appropriate when choosing a committee?",
+            "Permutation",
+            "Combination",
+            "Division",
+            "Factorization",
+            QuestionOption.B,
+            "Since order is unimportant when selecting a committee, combinations are used.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Permutations and Combinations",
+            "Permutations and combinations are widely used in:",
+            "Probability problems",
+            "Grammar",
+            "Painting",
+            "Music notation",
+            QuestionOption.A,
+            "Many probability calculations rely on permutations and combinations.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Counting Principles
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Counting Principles",
+            "Counting principles are commonly used in:",
+            "Probability",
+            "Cooking",
+            "History",
+            "Grammar",
+            QuestionOption.A,
+            "Probability problems often begin by counting possible outcomes.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Counting Principles",
+            "Cryptography relies on counting principles to estimate:",
+            "Possible encryption keys",
+            "Population growth",
+            "Rainfall",
+            "Temperatures",
+            QuestionOption.A,
+            "Counting techniques help measure the size of key spaces.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Counting Principles",
+            "Algorithms often use counting principles to analyze:",
+            "Possible arrangements and complexity",
+            "Chemical reactions",
+            "Planetary motion",
+            "Historical records",
+            QuestionOption.A,
+            "Many algorithms involve counting arrangements or possible cases.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Counting Principles",
+            "Software engineering applies counting principles when testing:",
+            "Input combinations",
+            "Musical notes",
+            "Weather forecasts",
+            "Road maps",
+            QuestionOption.A,
+            "Testing often requires evaluating many combinations of inputs.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Counting Principles",
+            "A major advantage of counting principles is that they:",
+            "Provide efficient ways to solve complex counting problems",
+            "Replace algebra completely",
+            "Eliminate probability",
+            "Avoid multiplication",
+            QuestionOption.A,
+            "Counting principles make solving large combinatorial problems manageable.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Permutations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Permutations",
+            "A permutation is:",
+            "A selection where order does not matter",
+            "A method of simplifying fractions",
+            "An ordered arrangement of objects",
+            "A probability distribution",
+            QuestionOption.C,
+            "A permutation is an arrangement in which the order of objects is important.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Permutations",
+            "In permutations, changing the order of objects:",
+            "Makes no difference",
+            "Creates a different arrangement",
+            "Reduces the total count",
+            "Is only allowed for numbers",
+            QuestionOption.B,
+            "Different orders are counted as different permutations.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Permutations",
+            "How many ways can 3 different books be arranged on a shelf?",
+            "3",
+            "9",
+            "5",
+            "6",
+            QuestionOption.D,
+            "There are 3! = 6 different arrangements.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Permutations",
+            "Which mathematical operation is commonly used in permutation formulas?",
+            "Factorial",
+            "Square root",
+            "Division only",
+            "Logarithm",
+            QuestionOption.A,
+            "Permutation formulas are based on factorial notation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Permutations",
+            "Permutations are primarily used when:",
+            "Order is important",
+            "Only probabilities are needed",
+            "Objects cannot repeat",
+            "Only two objects exist",
+            QuestionOption.B,
+            "Permutations apply whenever the order of arrangement matters.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Permutation Formulas and Techniques
+        // ==========================================================
+
+        AddQuestion(
+            "Permutation Formulas and Techniques",
+            "The formula for permutations of n objects taken r at a time is:",
+            "n! / r!",
+            "n! / (n − r)!",
+            "(n − r)! / n!",
+            "r! / n!",
+            QuestionOption.B,
+            "The standard permutation formula is nPr = n! / (n − r)!.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Permutation Formulas and Techniques",
+            "The value of 5! is:",
+            "60",
+            "100",
+            "120",
+            "24",
+            QuestionOption.C,
+            "5! = 5 × 4 × 3 × 2 × 1 = 120.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Permutation Formulas and Techniques",
+            "Circular permutations arrange objects:",
+            "In a straight line",
+            "Inside a matrix",
+            "Around a circle",
+            "Randomly",
+            QuestionOption.C,
+            "Circular permutations are arrangements around a circle.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Permutation Formulas and Techniques",
+            "Arrangements with repetition allow:",
+            "Objects to appear more than once",
+            "Only unique objects",
+            "No repeated positions",
+            "Only prime numbers",
+            QuestionOption.A,
+            "Permutations with repetition permit repeated selections.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Permutation Formulas and Techniques",
+            "Factorial notation grows:",
+            "Linearly",
+            "Very rapidly",
+            "Constantly",
+            "Negatively",
+            QuestionOption.B,
+            "Factorial values increase extremely quickly as n increases.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Permutations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Permutations",
+            "Permutations are commonly used in:",
+            "Scheduling problems",
+            "Balancing equations",
+            "Finding averages",
+            "Drawing circles",
+            QuestionOption.A,
+            "Scheduling often depends on the order of tasks.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Permutations",
+            "Password arrangements are an example of:",
+            "Permutations",
+            "Linear equations",
+            "Fractions",
+            "Ratios",
+            QuestionOption.A,
+            "Password order matters, making it a permutation problem.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Permutations",
+            "Cryptography frequently uses permutations to:",
+            "Secure information",
+            "Measure angles",
+            "Draw graphs",
+            "Calculate percentages",
+            QuestionOption.A,
+            "Many encryption algorithms rely on permutations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Permutations",
+            "Permutations help algorithms by counting:",
+            "Possible arrangements",
+            "Only errors",
+            "Only variables",
+            "Only equations",
+            QuestionOption.A,
+            "Algorithms often analyze all possible arrangements.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Permutations",
+            "A key benefit of permutations is solving:",
+            "Ordering and arrangement problems efficiently",
+            "Only geometry problems",
+            "Only algebra equations",
+            "Only calculus limits",
+            QuestionOption.A,
+            "Permutations provide systematic methods for arrangement problems.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Combinations
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Combinations",
+            "A combination is:",
+            "An ordered arrangement of objects",
+            "A selection where order does not matter",
+            "A mathematical equation",
+            "A probability experiment",
+            QuestionOption.B,
+            "A combination is a selection in which the order of the chosen objects is unimportant.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Combinations",
+            "The main difference between combinations and permutations is that combinations:",
+            "Always involve repetition",
+            "Use factorials differently",
+            "Ignore the order of objects",
+            "Cannot be calculated",
+            QuestionOption.C,
+            "In combinations, changing the order of selected objects does not create a new selection.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Combinations",
+            "Choosing 3 students from a class to form a committee is an example of:",
+            "Permutation",
+            "Combination",
+            "Division",
+            "Factorization",
+            QuestionOption.B,
+            "Since the order of committee members is irrelevant, combinations are used.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Combinations",
+            "Combinations are most useful when:",
+            "Order matters",
+            "Only one object is selected",
+            "Objects are arranged in a line",
+            "Order does not matter",
+            QuestionOption.D,
+            "Combinations count selections without considering order.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Combinations",
+            "Combinations are a branch of:",
+            "Combinatorics",
+            "Geometry",
+            "Calculus",
+            "Trigonometry",
+            QuestionOption.A,
+            "Combinations are one of the fundamental concepts in combinatorics.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Combination Formulas and Techniques
+        // ==========================================================
+
+        AddQuestion(
+            "Combination Formulas and Techniques",
+            "The formula for nCr is:",
+            "n! / (r!(n-r)!)",
+            "n! / (n-r)!",
+            "(n-r)! / r!",
+            "r! / n!",
+            QuestionOption.A,
+            "The standard combination formula is nCr = n! / (r!(n-r)!).",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Combination Formulas and Techniques",
+            "The notation nCr is also known as:",
+            "Factorial notation",
+            "Binomial coefficient",
+            "Power notation",
+            "Cartesian notation",
+            QuestionOption.B,
+            "nCr is commonly called the binomial coefficient.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Combination Formulas and Techniques",
+            "The value of 5C2 is:",
+            "15",
+            "20",
+            "10",
+            "5",
+            QuestionOption.C,
+            "5C2 = 5! / (2!3!) = 10.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Combination Formulas and Techniques",
+            "Combination formulas are commonly used for:",
+            "Ordered arrangements",
+            "Unordered selections",
+            "Linear equations",
+            "Complex numbers",
+            QuestionOption.B,
+            "Combination formulas count selections where order is not important.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Combination Formulas and Techniques",
+            "Restrictions in combination problems often require:",
+            "Additional counting strategies",
+            "Ignoring factorials",
+            "Using derivatives",
+            "Finding limits",
+            QuestionOption.A,
+            "Restricted selections often need complementary counting or case analysis.",
+            DifficultyLevel.Advance,
+            5);
+
+
+        // ==========================================================
+        // Applications and Practice of Combinations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Combinations",
+            "Combinations are widely used in:",
+            "Probability",
+            "Painting",
+            "Grammar",
+            "Navigation",
+            QuestionOption.A,
+            "Many probability problems involve selecting objects without considering order.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Combinations",
+            "Selecting lottery numbers is an example of:",
+            "Combination",
+            "Permutation",
+            "Division",
+            "Algebra",
+            QuestionOption.A,
+            "Lottery selections ignore the order of chosen numbers.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Combinations",
+            "Statistics frequently uses combinations when:",
+            "Choosing samples",
+            "Drawing triangles",
+            "Solving equations",
+            "Finding roots",
+            QuestionOption.A,
+            "Sample selection is a common application of combinations.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Combinations",
+            "Decision-making systems often evaluate:",
+            "Possible combinations of choices",
+            "Only arithmetic operations",
+            "Only equations",
+            "Only probabilities",
+            QuestionOption.A,
+            "Decision systems compare different possible combinations before choosing one.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Combinations",
+            "A major real-world use of combinations is:",
+            "Forming groups and selecting subsets",
+            "Drawing graphs only",
+            "Finding derivatives",
+            "Simplifying fractions",
+            QuestionOption.A,
+            "Combinations are ideal whenever groups or subsets are selected without regard to order.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Recurrence Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Recurrence Relations",
+            "What is a recurrence relation?",
+            "A formula that defines each term using one or more previous terms.",
+            "A formula that always gives the final term directly.",
+            "A method for solving only quadratic equations.",
+            "A graph representing continuous functions.",
+            QuestionOption.A,
+            "A recurrence relation defines a sequence by expressing each term in terms of earlier terms.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Recurrence Relations",
+            "Which sequence is defined by a recurrence relation?",
+            "aₙ = 2n + 1",
+            "aₙ = aₙ₋₁ + 3",
+            "f(x) = x²",
+            "y = mx + c",
+            QuestionOption.B,
+            "The recurrence relation uses the previous term to generate the next one.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Recurrence Relations",
+            "What additional information is required to generate a sequence from a recurrence relation?",
+            "A graph",
+            "A derivative",
+            "Initial value(s)",
+            "A probability table",
+            QuestionOption.C,
+            "Without initial conditions, infinitely many sequences could satisfy the same recurrence relation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Recurrence Relations",
+            "Recurrence relations are primarily used to describe:",
+            "Static geometric figures",
+            "Random colours",
+            "Relationships between previous and future sequence terms",
+            "Only polynomial roots",
+            QuestionOption.C,
+            "They define how future terms depend on earlier terms.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Recurrence Relations",
+            "Which field heavily relies on recurrence relations?",
+            "Botany only",
+            "Computer Science",
+            "Astronomy only",
+            "Music Theory only",
+            QuestionOption.B,
+            "Algorithms, dynamic programming, and complexity analysis frequently use recurrence relations.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Recurrence Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Recurrence Relations",
+            "If a₁ = 2 and aₙ = aₙ₋₁ + 3, what is a₂?",
+            "3",
+            "4",
+            "5",
+            "6",
+            QuestionOption.C,
+            "a₂ = 2 + 3 = 5.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Recurrence Relations",
+            "Which technique repeatedly substitutes previous terms until a pattern appears?",
+            "Iteration",
+            "Integration",
+            "Factorisation",
+            "Matrix inversion",
+            QuestionOption.A,
+            "Iteration expands the recurrence repeatedly until a recognizable pattern emerges.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Recurrence Relations",
+            "Characteristic equations are commonly used for solving:",
+            "Linear homogeneous recurrence relations",
+            "Circle equations",
+            "Probability distributions",
+            "Matrix multiplication",
+            QuestionOption.A,
+            "Characteristic equations provide closed-form solutions for many linear homogeneous recurrences.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Recurrence Relations",
+            "What is the next term if a₁ = 4 and aₙ = 2aₙ₋₁?",
+            "6",
+            "8",
+            "10",
+            "12",
+            QuestionOption.B,
+            "a₂ = 2 × 4 = 8.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Recurrence Relations",
+            "Which recurrence commonly appears in divide-and-conquer algorithm analysis?",
+            "T(n)=T(n−1)+1",
+            "T(n)=2T(n/2)+n",
+            "T(n)=5n",
+            "T(n)=n²+1",
+            QuestionOption.B,
+            "The recurrence T(n)=2T(n/2)+n models algorithms like Merge Sort.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Recurrence Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Recurrence Relations",
+            "Which famous sequence is naturally defined using a recurrence relation?",
+            "Prime numbers",
+            "Square numbers",
+            "Fibonacci sequence",
+            "Even numbers",
+            QuestionOption.C,
+            "Each Fibonacci number is the sum of the two previous numbers.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Recurrence Relations",
+            "Dynamic programming primarily uses recurrence relations to:",
+            "Store images",
+            "Break complex problems into smaller subproblems",
+            "Create databases",
+            "Encrypt passwords",
+            QuestionOption.B,
+            "Dynamic programming solves problems by defining recurrence relations between subproblems.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Recurrence Relations",
+            "Which algorithm commonly involves solving recurrence relations for time complexity?",
+            "Merge Sort",
+            "Bubble Sort",
+            "Selection Sort",
+            "Insertion Sort",
+            QuestionOption.A,
+            "Merge Sort follows the recurrence T(n)=2T(n/2)+n.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Recurrence Relations",
+            "Recurrence relations are widely used in cryptography because they:",
+            "Generate predictable passwords",
+            "Model recursive mathematical structures",
+            "Replace encryption keys",
+            "Only solve geometry problems",
+            QuestionOption.B,
+            "Many cryptographic algorithms rely on recursively defined mathematical structures.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Recurrence Relations",
+            "Which statement best describes the real-world importance of recurrence relations?",
+            "They are useful only in school mathematics.",
+            "They are used only for solving calculus problems.",
+            "They model repeated processes in computing, science, and engineering.",
+            "They are limited to geometric constructions.",
+            QuestionOption.C,
+            "Recurrence relations describe iterative processes found in algorithms, simulations, economics, biology, and engineering.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Graph Theory
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Graph Theory",
+            "What is a graph in graph theory?",
+            "A collection of vertices connected by edges.",
+            "A mathematical equation with variables.",
+            "A table of numerical values.",
+            "A type of binary tree.",
+            QuestionOption.A,
+            "A graph consists of vertices (nodes) connected by edges representing relationships.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Graph Theory",
+            "What is another common name for a vertex in a graph?",
+            "Edge",
+            "Node",
+            "Path",
+            "Cycle",
+            QuestionOption.B,
+            "A vertex is commonly referred to as a node in graph theory and computer science.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Graph Theory",
+            "Which component connects two vertices in a graph?",
+            "Weight",
+            "Degree",
+            "Edge",
+            "Loop",
+            QuestionOption.C,
+            "An edge represents the connection between two vertices.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Graph Theory",
+            "Which data structure is commonly used to represent sparse graphs efficiently?",
+            "Array",
+            "Stack",
+            "Queue",
+            "Adjacency List",
+            QuestionOption.D,
+            "An adjacency list stores only existing edges, making it efficient for sparse graphs.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Graph Theory",
+            "Graphs are primarily used to model:",
+            "Relationships between connected objects",
+            "Only arithmetic calculations",
+            "Text formatting",
+            "File compression",
+            QuestionOption.A,
+            "Graphs model relationships such as roads, social networks, and communication systems.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Graph Structures and Algorithms
+        // ==========================================================
+
+        AddQuestion(
+            "Graph Structures and Algorithms",
+            "Which graph traversal algorithm explores vertices level by level?",
+            "Depth-First Search (DFS)",
+            "Breadth-First Search (BFS)",
+            "Binary Search",
+            "Merge Sort",
+            QuestionOption.B,
+            "Breadth-First Search visits all neighbouring vertices before moving deeper.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Graph Structures and Algorithms",
+            "A graph containing no cycles is called a:",
+            "Complete graph",
+            "Tree",
+            "Directed graph",
+            "Weighted graph",
+            QuestionOption.B,
+            "A tree is a connected graph with no cycles.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Graph Structures and Algorithms",
+            "Which traversal algorithm typically uses a stack or recursion?",
+            "Breadth-First Search",
+            "Dijkstra's Algorithm",
+            "Depth-First Search",
+            "Prim's Algorithm",
+            QuestionOption.C,
+            "DFS explores as deeply as possible before backtracking using recursion or a stack.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Graph Structures and Algorithms",
+            "Which algorithm finds the shortest path in a graph with non-negative edge weights?",
+            "Kruskal's Algorithm",
+            "DFS",
+            "BFS",
+            "Dijkstra's Algorithm",
+            QuestionOption.D,
+            "Dijkstra's Algorithm efficiently computes shortest paths when edge weights are non-negative.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Graph Structures and Algorithms",
+            "What is the degree of a vertex?",
+            "The number of edges connected to it.",
+            "The number of graphs it belongs to.",
+            "The number of vertices in the graph.",
+            "The weight of its edges.",
+            QuestionOption.A,
+            "The degree of a vertex is the total number of edges incident on it.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Graph Theory
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Graph Theory",
+            "Social media platforms use graphs to represent:",
+            "Friend or follower relationships",
+            "Image resolution",
+            "Computer memory",
+            "Keyboard layouts",
+            QuestionOption.A,
+            "Users are represented as vertices, while friendships or follows are represented as edges.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Graph Theory",
+            "GPS navigation systems commonly use graph algorithms to:",
+            "Compress files",
+            "Find the shortest route",
+            "Encrypt messages",
+            "Generate passwords",
+            QuestionOption.B,
+            "Road networks are modelled as graphs to compute optimal routes.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Graph Theory",
+            "Which field uses graph theory to analyse relationships between web pages?",
+            "Web Search Engines",
+            "Word Processing",
+            "Spreadsheet Software",
+            "Image Editing",
+            QuestionOption.A,
+            "Search engines model hyperlinks as graphs to rank and analyse web pages.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Graph Theory",
+            "In cybersecurity, graph theory can help detect:",
+            "Network intrusions",
+            "Grammar mistakes",
+            "Colour palettes",
+            "Audio frequencies",
+            QuestionOption.A,
+            "Graphs help analyse communication patterns and detect suspicious network activity.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Graph Theory",
+            "Which area of Artificial Intelligence frequently applies graph theory?",
+            "Knowledge Graphs and Recommendation Systems",
+            "Only Word Processing",
+            "Spreadsheet Formatting",
+            "Screen Brightness Control",
+            QuestionOption.A,
+            "Knowledge graphs, recommendation systems, and graph neural networks rely heavily on graph theory.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Trees
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Trees",
+            "What is a tree in graph theory?",
+            "A connected graph with no cycles.",
+            "A graph containing exactly one cycle.",
+            "A disconnected graph.",
+            "A graph with weighted edges only.",
+            QuestionOption.A,
+            "A tree is a connected acyclic graph.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Trees",
+            "What is the topmost node of a tree called?",
+            "Leaf",
+            "Root",
+            "Branch",
+            "Parent",
+            QuestionOption.B,
+            "The root is the starting node of a tree and has no parent.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Trees",
+            "A node with no children is called a:",
+            "Root",
+            "Internal node",
+            "Leaf node",
+            "Ancestor",
+            QuestionOption.C,
+            "Leaf nodes are terminal nodes that have no children.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Trees",
+            "If a tree has n vertices, how many edges does it contain?",
+            "n",
+            "n + 1",
+            "2n",
+            "n − 1",
+            QuestionOption.D,
+            "Every tree with n vertices always contains exactly n − 1 edges.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Trees",
+            "Trees are commonly used to represent:",
+            "Hierarchical relationships",
+            "Only circular networks",
+            "Random number sequences",
+            "Chemical formulas",
+            QuestionOption.A,
+            "Trees naturally represent hierarchical structures such as family trees and file systems.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Tree Properties and Algorithms
+        // ==========================================================
+
+        AddQuestion(
+            "Tree Properties and Algorithms",
+            "Which traversal visits the root before its children?",
+            "Postorder Traversal",
+            "Preorder Traversal",
+            "Inorder Traversal",
+            "Level-order Traversal",
+            QuestionOption.B,
+            "Preorder traversal visits Root → Left → Right.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Tree Properties and Algorithms",
+            "Which traversal visits the left subtree, root, then right subtree?",
+            "Inorder Traversal",
+            "Preorder Traversal",
+            "Postorder Traversal",
+            "Breadth-First Traversal",
+            QuestionOption.A,
+            "Inorder traversal follows Left → Root → Right.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Tree Properties and Algorithms",
+            "A binary tree is a tree in which each node has at most:",
+            "One child",
+            "Three children",
+            "Two children",
+            "Four children",
+            QuestionOption.C,
+            "A binary tree allows each node to have up to two children.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Tree Properties and Algorithms",
+            "Which tree is commonly used to connect all vertices of a graph with minimum total edge weight?",
+            "Binary Tree",
+            "AVL Tree",
+            "Decision Tree",
+            "Minimum Spanning Tree",
+            QuestionOption.D,
+            "A Minimum Spanning Tree connects all vertices while minimizing total edge weight.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Tree Properties and Algorithms",
+            "Which data structure is commonly used to perform level-order traversal?",
+            "Queue",
+            "Stack",
+            "Heap",
+            "Linked List",
+            QuestionOption.A,
+            "Level-order traversal (BFS) processes nodes level by level using a queue.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Trees
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Trees",
+            "Which computer system commonly uses a tree structure?",
+            "File System",
+            "Calculator",
+            "Keyboard",
+            "Monitor",
+            QuestionOption.A,
+            "Folders and files are organized hierarchically using tree structures.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Trees",
+            "Binary Search Trees are mainly used for:",
+            "Sorting images",
+            "Efficient searching and insertion",
+            "Compressing videos",
+            "Encrypting passwords",
+            QuestionOption.B,
+            "BSTs allow efficient searching, insertion, and deletion operations.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Trees",
+            "Decision trees are widely used in:",
+            "Spreadsheet software",
+            "Text formatting",
+            "Machine Learning",
+            "Operating systems only",
+            QuestionOption.C,
+            "Decision trees are popular supervised learning algorithms used for classification and regression.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Trees",
+            "Which tree-based structure is widely used in database indexing?",
+            "Binary Heap",
+            "Expression Tree",
+            "Trie",
+            "B-Tree",
+            QuestionOption.D,
+            "B-Trees efficiently organize large amounts of data for database indexing.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Trees",
+            "Expression trees are commonly used by:",
+            "Compilers",
+            "Music players",
+            "Image editors",
+            "GPS devices",
+            QuestionOption.A,
+            "Compilers use expression trees to represent and evaluate mathematical expressions.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Boolean Algebra
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Boolean Algebra",
+            "Boolean algebra works primarily with which two values?",
+            "0 and 1",
+            "-1 and 1",
+            "True and Unknown",
+            "Positive and Negative",
+            QuestionOption.A,
+            "Boolean algebra is based on binary values: 0 (false) and 1 (true).",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Boolean Algebra",
+            "Which Boolean operator returns true only when both inputs are true?",
+            "OR",
+            "AND",
+            "NOT",
+            "XOR",
+            QuestionOption.B,
+            "The AND operation outputs 1 only if both operands are 1.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Boolean Algebra",
+            "Which Boolean operation reverses a logical value?",
+            "AND",
+            "OR",
+            "NOT",
+            "NAND",
+            QuestionOption.C,
+            "The NOT operator inverts a Boolean value from 1 to 0 or from 0 to 1.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Boolean Algebra",
+            "Boolean algebra was introduced by:",
+            "Isaac Newton",
+            "Alan Turing",
+            "Blaise Pascal",
+            "George Boole",
+            QuestionOption.D,
+            "George Boole developed Boolean algebra as a mathematical system for logic.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Boolean Algebra",
+            "Boolean algebra is mainly used to represent:",
+            "Logical relationships",
+            "Chemical equations",
+            "Geometric constructions",
+            "Financial transactions",
+            QuestionOption.A,
+            "Boolean algebra provides a mathematical framework for representing logical operations.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Boolean Laws and Logic Circuits
+        // ==========================================================
+
+        AddQuestion(
+            "Boolean Laws and Logic Circuits",
+            "Which law states A + 0 = A?",
+            "Identity Law",
+            "Complement Law",
+            "Absorption Law",
+            "Distributive Law",
+            QuestionOption.A,
+            "The Identity Law states that OR with 0 leaves the value unchanged.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Boolean Laws and Logic Circuits",
+            "A truth table is used to:",
+            "Store binary files",
+            "Show all possible logical outputs",
+            "Represent graphs",
+            "Draw logic gate symbols",
+            QuestionOption.B,
+            "A truth table lists every possible input combination and its corresponding output.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Boolean Laws and Logic Circuits",
+            "Which logic gate outputs 1 only when the input is 0?",
+            "OR Gate",
+            "AND Gate",
+            "NOT Gate",
+            "XOR Gate",
+            QuestionOption.C,
+            "A NOT gate inverts its input value.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Boolean Laws and Logic Circuits",
+            "Which theorem is commonly used to simplify Boolean expressions?",
+            "Pythagoras' Theorem",
+            "Binomial Theorem",
+            "Fundamental Theorem of Calculus",
+            "De Morgan's Theorem",
+            QuestionOption.D,
+            "De Morgan's Theorem transforms AND and OR operations under negation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Boolean Laws and Logic Circuits",
+            "Logic gates are the basic building blocks of:",
+            "Digital circuits",
+            "Mechanical engines",
+            "Hydraulic systems",
+            "Electrical generators",
+            QuestionOption.A,
+            "Digital electronic systems are constructed using combinations of logic gates.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Boolean Algebra
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Boolean Algebra",
+            "Boolean algebra is fundamental to the design of:",
+            "Digital computers",
+            "Steam engines",
+            "Solar panels",
+            "Water pumps",
+            QuestionOption.A,
+            "Modern digital computers rely on Boolean logic for computation.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Boolean Algebra",
+            "SQL queries often use Boolean logic in:",
+            "WHERE clauses",
+            "CREATE TABLE statements",
+            "Database backups",
+            "Indexes only",
+            QuestionOption.A,
+            "Boolean expressions in WHERE clauses filter rows based on conditions.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Boolean Algebra",
+            "Programming languages use Boolean values mainly for:",
+            "Conditional statements",
+            "Drawing graphics",
+            "Playing audio",
+            "Compressing images",
+            QuestionOption.A,
+            "Conditions such as if, while, and for rely on Boolean expressions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Boolean Algebra",
+            "Which cybersecurity mechanism heavily relies on Boolean logic?",
+            "Access control rules",
+            "Battery management",
+            "Screen brightness",
+            "Printer calibration",
+            QuestionOption.A,
+            "Access permissions are evaluated using logical conditions based on Boolean operations.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Boolean Algebra",
+            "Which field relies heavily on Boolean algebra for hardware design?",
+            "Digital Electronics",
+            "Organic Chemistry",
+            "Civil Engineering",
+            "Astronomy",
+            QuestionOption.A,
+            "Boolean algebra is the mathematical foundation of digital electronic circuit design.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Number Theory
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Number Theory",
+            "Which branch of mathematics studies the properties of integers?",
+            "Number Theory",
+            "Calculus",
+            "Geometry",
+            "Statistics",
+            QuestionOption.A,
+            "Number Theory focuses on integers and their properties such as divisibility and prime numbers.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Number Theory",
+            "Which of the following is a prime number?",
+            "21",
+            "17",
+            "27",
+            "39",
+            QuestionOption.B,
+            "17 has exactly two positive divisors: 1 and 17.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Number Theory",
+            "Which number divides every integer?",
+            "2",
+            "-1",
+            "1",
+            "0",
+            QuestionOption.C,
+            "Every integer is divisible by 1.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Number Theory",
+            "Which of the following is NOT an integer?",
+            "12",
+            "-5",
+            "0",
+            "3.5",
+            QuestionOption.D,
+            "Integers do not include fractions or decimal values.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Number Theory",
+            "Which statement is true about prime numbers?",
+            "They have exactly two positive divisors.",
+            "They are always even.",
+            "They are divisible by every integer.",
+            "They always end with 1.",
+            QuestionOption.A,
+            "A prime number has exactly two positive divisors: 1 and itself.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Prime Numbers and Number Theory Techniques
+        // ==========================================================
+
+        AddQuestion(
+            "Prime Numbers and Number Theory Techniques",
+            "What is the greatest common divisor (GCD) of 18 and 24?",
+            "12",
+            "6",
+            "3",
+            "2",
+            QuestionOption.B,
+            "The largest number dividing both 18 and 24 is 6.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Prime Numbers and Number Theory Techniques",
+            "What is the prime factorization of 20?",
+            "2 × 10",
+            "2² × 5",
+            "4 × 5",
+            "2 × 2 × 2",
+            QuestionOption.B,
+            "20 = 2 × 2 × 5 = 2² × 5.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Prime Numbers and Number Theory Techniques",
+            "In modular arithmetic, what is 17 mod 5?",
+            "5",
+            "3",
+            "2",
+            "1",
+            QuestionOption.C,
+            "17 ÷ 5 leaves a remainder of 2.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Prime Numbers and Number Theory Techniques",
+            "Which algorithm efficiently computes the GCD of two integers?",
+            "Dijkstra's Algorithm",
+            "Merge Sort",
+            "Binary Search",
+            "Euclidean Algorithm",
+            QuestionOption.D,
+            "The Euclidean Algorithm repeatedly applies division to find the GCD.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Prime Numbers and Number Theory Techniques",
+            "Two integers are called coprime if:",
+            "Their GCD is 1.",
+            "They are both prime.",
+            "They are consecutive.",
+            "Their product is even.",
+            QuestionOption.A,
+            "Coprime numbers share no common positive divisor other than 1.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Number Theory
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Number Theory",
+            "Number theory plays a vital role in:",
+            "Cryptography",
+            "Painting",
+            "Photography",
+            "Architecture",
+            QuestionOption.A,
+            "Modern encryption algorithms rely heavily on number theory.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Number Theory",
+            "RSA encryption mainly depends on the difficulty of:",
+            "Matrix multiplication",
+            "Factoring large integers",
+            "Sorting numbers",
+            "Finding averages",
+            QuestionOption.B,
+            "RSA security relies on the computational difficulty of prime factorization.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Number Theory",
+            "Which computer science field frequently applies modular arithmetic?",
+            "Cryptography",
+            "Graphic Design",
+            "Video Editing",
+            "Animation",
+            QuestionOption.A,
+            "Modular arithmetic is fundamental in encryption and secure communication.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Number Theory",
+            "Which concept is commonly used to verify data integrity and error detection?",
+            "Prime Factorization",
+            "Differentiation",
+            "Integration",
+            "Check Digits",
+            QuestionOption.D,
+            "Check digits in systems like ISBN and credit cards are based on number theory.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Number Theory",
+            "Which technology heavily relies on prime numbers for secure communication?",
+            "Public-key encryption",
+            "Computer graphics",
+            "Audio compression",
+            "Image rendering",
+            QuestionOption.A,
+            "Public-key cryptography, such as RSA, uses properties of large prime numbers.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Algorithms
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Algorithms",
+            "What is an algorithm?",
+            "A step-by-step procedure for solving a problem.",
+            "A programming language.",
+            "A computer processor.",
+            "A database system.",
+            QuestionOption.A,
+            "An algorithm is a finite sequence of well-defined steps used to solve a problem.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Algorithms",
+            "Which characteristic is essential for every algorithm?",
+            "It must use recursion.",
+            "It must terminate after a finite number of steps.",
+            "It must always use arrays.",
+            "It must be written in C#.",
+            QuestionOption.B,
+            "Every valid algorithm must eventually terminate.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Algorithms",
+            "What is the input of an algorithm?",
+            "The final answer.",
+            "The execution time.",
+            "The data provided to solve a problem.",
+            "The programming language.",
+            QuestionOption.C,
+            "Input refers to the data given to an algorithm before execution.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Algorithms",
+            "Which of the following is NOT a property of a good algorithm?",
+            "Correctness",
+            "Efficiency",
+            "Finiteness",
+            "Infinite execution",
+            QuestionOption.D,
+            "Algorithms should always finish after a finite number of steps.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Algorithms",
+            "Algorithms are primarily designed to:",
+            "Solve problems efficiently.",
+            "Increase monitor resolution.",
+            "Replace programming languages.",
+            "Store files permanently.",
+            QuestionOption.A,
+            "Algorithms provide efficient methods for solving computational problems.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Algorithm Design and Analysis
+        // ==========================================================
+
+        AddQuestion(
+            "Algorithm Design and Analysis",
+            "What does Big O notation measure?",
+            "Programming language speed",
+            "Algorithm complexity",
+            "Computer memory size",
+            "Internet bandwidth",
+            QuestionOption.B,
+            "Big O notation describes the growth rate of an algorithm's resource usage.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Algorithm Design and Analysis",
+            "Which searching algorithm requires sorted data?",
+            "Linear Search",
+            "Depth-First Search",
+            "Binary Search",
+            "Breadth-First Search",
+            QuestionOption.C,
+            "Binary Search only works correctly on sorted collections.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Algorithm Design and Analysis",
+            "Merge Sort is an example of which design technique?",
+            "Greedy Method",
+            "Dynamic Programming",
+            "Backtracking",
+            "Divide and Conquer",
+            QuestionOption.D,
+            "Merge Sort recursively divides the problem into smaller subproblems.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Algorithm Design and Analysis",
+            "Which complexity is generally faster for large inputs?",
+            "O(log n)",
+            "O(n²)",
+            "O(n³)",
+            "O(2ⁿ)",
+            QuestionOption.A,
+            "Logarithmic algorithms scale much better than quadratic, cubic, or exponential ones.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Algorithm Design and Analysis",
+            "Recursion is a technique where:",
+            "A function calls itself.",
+            "Two computers communicate.",
+            "Memory is compressed.",
+            "Programs execute simultaneously.",
+            QuestionOption.A,
+            "In recursion, a function solves a problem by calling itself on smaller subproblems.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Advanced Algorithms and Applications
+        // ==========================================================
+
+        AddQuestion(
+            "Advanced Algorithms and Applications",
+            "Which algorithm is commonly used to find the shortest path in a weighted graph?",
+            "Dijkstra's Algorithm",
+            "Bubble Sort",
+            "Insertion Sort",
+            "Linear Search",
+            QuestionOption.A,
+            "Dijkstra's Algorithm efficiently computes shortest paths in graphs with non-negative edge weights.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Advanced Algorithms and Applications",
+            "Dynamic programming is mainly used to:",
+            "Solve overlapping subproblems efficiently.",
+            "Increase CPU speed.",
+            "Create databases.",
+            "Encrypt passwords.",
+            QuestionOption.A,
+            "Dynamic programming stores solutions to overlapping subproblems to avoid repeated computation.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Advanced Algorithms and Applications",
+            "Greedy algorithms make decisions by:",
+            "Trying every possible solution.",
+            "Choosing the locally optimal option at each step.",
+            "Using recursion only.",
+            "Randomly selecting answers.",
+            QuestionOption.B,
+            "Greedy algorithms build solutions by making the best immediate choice.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Advanced Algorithms and Applications",
+            "Which field heavily relies on graph algorithms?",
+            "Video Editing",
+            "Word Processing",
+            "Spreadsheet Formatting",
+            "Network Routing",
+            QuestionOption.D,
+            "Graph algorithms are fundamental in routing packets across computer networks.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Advanced Algorithms and Applications",
+            "Which area commonly uses advanced algorithms for decision-making and optimization?",
+            "Artificial Intelligence",
+            "Painting",
+            "Photography",
+            "Music Recording",
+            QuestionOption.A,
+            "AI systems rely on advanced algorithms for learning, planning, and optimization.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
