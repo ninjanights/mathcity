@@ -26460,7 +26460,2107 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
+        // ==========================================================
+        // Introduction to Sets
+        // ==========================================================
 
+        AddQuestion(
+            "Introduction to Sets",
+            "What is a set in mathematics?",
+            "A collection of distinct objects.",
+            "A mathematical equation.",
+            "A type of graph.",
+            "A sequence of operations.",
+            QuestionOption.A,
+            "A set is a well-defined collection of distinct objects called elements.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Sets",
+            "Which symbol is commonly used to indicate 'is an element of'?",
+            "∈",
+            "⊂",
+            "∪",
+            "∩",
+            QuestionOption.A,
+            "The symbol ∈ means 'belongs to' or 'is an element of' a set.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Sets",
+            "Which of the following is an empty set?",
+            "{0}",
+            "{ }",
+            "{1}",
+            "{a}",
+            QuestionOption.B,
+            "The empty set contains no elements and is written as {} or ∅.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Sets",
+            "A set that contains all elements under consideration is called the:",
+            "Subset",
+            "Finite Set",
+            "Universal Set",
+            "Power Set",
+            QuestionOption.C,
+            "The universal set contains every object relevant to the discussion.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Sets",
+            "Which statement about sets is TRUE?",
+            "A set may contain duplicate elements.",
+            "The order of elements changes the set.",
+            "A set must contain numbers only.",
+            "Duplicate elements are ignored in a set.",
+            QuestionOption.D,
+            "Sets contain unique elements, and duplicate entries are ignored.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Set Operations and Relationships
+        // ==========================================================
+
+        AddQuestion(
+            "Set Operations and Relationships",
+            "The union of two sets contains:",
+            "Only common elements.",
+            "All elements from both sets.",
+            "Only elements from the first set.",
+            "Only elements from the second set.",
+            QuestionOption.B,
+            "The union combines every distinct element from both sets.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Set Operations and Relationships",
+            "The intersection of two sets contains:",
+            "All unique elements.",
+            "Elements common to both sets.",
+            "Only elements not shared.",
+            "The larger set.",
+            QuestionOption.B,
+            "The intersection consists of elements present in both sets.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Set Operations and Relationships",
+            "If A = {1,2,3} and B = {2,3,4}, what is A − B?",
+            "{2,3}",
+            "{2}",
+            "{1}",
+            "{4}",
+            QuestionOption.C,
+            "A − B contains elements in A that are not in B, which is {1}.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Set Operations and Relationships",
+            "A set A is called a subset of B if:",
+            "A has more elements than B.",
+            "A and B are equal in size.",
+            "B is empty.",
+            "Every element of A belongs to B.",
+            QuestionOption.D,
+            "A ⊆ B means every element of A is also an element of B.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Set Operations and Relationships",
+            "How many subsets does a set with 3 elements have?",
+            "8",
+            "6",
+            "3",
+            "9",
+            QuestionOption.A,
+            "A set with n elements has 2ⁿ subsets. Here, 2³ = 8.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Sets
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Sets",
+            "Which database operation is similar to the union of sets?",
+            "Combining records from two tables.",
+            "Deleting records.",
+            "Sorting records.",
+            "Updating records.",
+            QuestionOption.A,
+            "The SQL UNION operation combines rows from multiple queries.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Sets",
+            "Venn diagrams are primarily used to:",
+            "Represent relationships between sets.",
+            "Draw bar charts.",
+            "Plot functions.",
+            "Store data.",
+            QuestionOption.A,
+            "Venn diagrams visually show relationships such as unions and intersections.",
+            DifficultyLevel.Intermediate,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Sets",
+            "Set theory is widely used in:",
+            "Artificial Intelligence",
+            "Painting",
+            "Music Composition",
+            "Photography",
+            QuestionOption.A,
+            "AI uses set theory in logic, reasoning, and knowledge representation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Sets",
+            "Which field commonly uses set operations for query processing?",
+            "Computer Graphics",
+            "Operating Systems",
+            "Databases",
+            "Networking",
+            QuestionOption.C,
+            "Databases use union, intersection, and difference operations extensively.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Sets",
+            "Set theory provides a mathematical foundation for:",
+            "Logic and Computer Science",
+            "Mechanical Engineering only",
+            "Music Theory only",
+            "Astronomy only",
+            QuestionOption.A,
+            "Set theory underpins logic, mathematics, databases, and many areas of computer science.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Introduction to Set Operations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Set Operations",
+            "Which operation combines all unique elements from two sets?",
+            "Intersection",
+            "Difference",
+            "Union",
+            "Complement",
+            QuestionOption.C,
+            "The union of two sets contains every distinct element that belongs to either set.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Set Operations",
+            "If A = {1,2,3} and B = {3,4}, what is A ∩ B?",
+            "{1,2}",
+            "{3}",
+            "{1,2,3,4}",
+            "{4}",
+            QuestionOption.B,
+            "The intersection contains only the elements common to both sets.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Set Operations",
+            "Which operation returns elements that are in set A but not in set B?",
+            "Difference",
+            "Union",
+            "Intersection",
+            "Complement",
+            QuestionOption.A,
+            "The difference A − B contains elements that belong only to A.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Set Operations",
+            "If U is the universal set, the complement of A contains:",
+            "Elements common to all sets",
+            "Only the elements in A",
+            "Elements not in A",
+            "The empty set only",
+            QuestionOption.C,
+            "The complement of A consists of all elements in the universal set that are not in A.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Set Operations",
+            "Which symbol represents the union of two sets?",
+            "∩",
+            "⊂",
+            "−",
+            "∪",
+            QuestionOption.D,
+            "The symbol ∪ denotes the union operation.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Advanced Set Operations and Laws
+        // ==========================================================
+
+        AddQuestion(
+            "Advanced Set Operations and Laws",
+            "Which law states (A ∪ B)' = A' ∩ B'?",
+            "De Morgan's Law",
+            "Associative Law",
+            "Identity Law",
+            "Distributive Law",
+            QuestionOption.A,
+            "This is one of De Morgan's Laws relating complements, unions, and intersections.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Advanced Set Operations and Laws",
+            "The Cartesian product A × B consists of:",
+            "Ordered pairs",
+            "Subsets",
+            "Only common elements",
+            "Complements",
+            QuestionOption.A,
+            "Each element of A is paired with each element of B to form ordered pairs.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Advanced Set Operations and Laws",
+            "Which property states A ∪ B = B ∪ A?",
+            "Commutative Law",
+            "Distributive Law",
+            "Complement Law",
+            "Absorption Law",
+            QuestionOption.A,
+            "The commutative law states that changing the order does not change the result.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Advanced Set Operations and Laws",
+            "If |A| = 5 and |B| = 2, then |A × B| equals:",
+            "7",
+            "10",
+            "25",
+            "3",
+            QuestionOption.B,
+            "The size of the Cartesian product is |A| × |B| = 5 × 2 = 10.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Advanced Set Operations and Laws",
+            "Which law is represented by A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)?",
+            "Identity Law",
+            "Commutative Law",
+            "Distributive Law",
+            "Complement Law",
+            QuestionOption.C,
+            "This is the distributive law of set operations.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Set Operations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Set Operations",
+            "Which SQL keyword behaves similarly to the union of sets?",
+            "UNION",
+            "DELETE",
+            "UPDATE",
+            "ALTER",
+            QuestionOption.A,
+            "SQL UNION combines rows from multiple queries while removing duplicates.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Set Operations",
+            "Set operations are commonly used in:",
+            "Databases",
+            "Painting",
+            "Cooking",
+            "Photography",
+            QuestionOption.A,
+            "Database systems use set operations to combine and filter records.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Set Operations",
+            "In probability theory, events are usually represented as:",
+            "Matrices",
+            "Sets",
+            "Functions",
+            "Vectors",
+            QuestionOption.B,
+            "Events are represented as sets of possible outcomes.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Set Operations",
+            "Which field frequently uses set operations for logical reasoning and knowledge representation?",
+            "Artificial Intelligence",
+            "Civil Engineering",
+            "Architecture",
+            "Mechanical Design",
+            QuestionOption.A,
+            "AI relies heavily on set theory for representing and manipulating knowledge.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Set Operations",
+            "Set operations help software engineers mainly by:",
+            "Organizing and comparing collections of data",
+            "Increasing CPU clock speed",
+            "Reducing memory size",
+            "Improving monitor resolution",
+            QuestionOption.A,
+            "Algorithms and databases frequently manipulate collections using set operations.",
+            DifficultyLevel.Advance,
+            5);// ==========================================================
+               // Introduction to Venn Diagrams
+               // ==========================================================
+
+        AddQuestion(
+            "Introduction to Venn Diagrams",
+            "What is the primary purpose of a Venn diagram?",
+            "To solve equations",
+            "To represent relationships between sets",
+            "To plot graphs",
+            "To measure angles",
+            QuestionOption.B,
+            "A Venn diagram visually represents relationships between sets using overlapping circles.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Venn Diagrams",
+            "In a Venn diagram, the overlapping region represents:",
+            "The union of sets",
+            "The complement of a set",
+            "The intersection of sets",
+            "The universal set",
+            QuestionOption.C,
+            "The overlapping area shows elements common to both sets, known as the intersection.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Venn Diagrams",
+            "Which shape is most commonly used to represent a set in a Venn diagram?",
+            "Square",
+            "Triangle",
+            "Circle",
+            "Rectangle",
+            QuestionOption.C,
+            "Sets are typically represented using circles in Venn diagrams.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Venn Diagrams",
+            "The rectangle surrounding all sets in a Venn diagram represents:",
+            "The intersection",
+            "The complement",
+            "The universal set",
+            "The empty set",
+            QuestionOption.C,
+            "The rectangle represents the universal set containing all elements under consideration.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Venn Diagrams",
+            "Which mathematical topic is most closely associated with Venn diagrams?",
+            "Calculus",
+            "Trigonometry",
+            "Set Theory",
+            "Coordinate Geometry",
+            QuestionOption.C,
+            "Venn diagrams are visual tools used in set theory.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Solving Problems Using Venn Diagrams
+        // ==========================================================
+
+        AddQuestion(
+            "Solving Problems Using Venn Diagrams",
+            "The union of two sets A and B contains:",
+            "Only common elements",
+            "Elements in A or B or both",
+            "Elements only in A",
+            "Elements outside both sets",
+            QuestionOption.B,
+            "The union includes every element that belongs to at least one of the sets.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Solving Problems Using Venn Diagrams",
+            "If A = {1,2,3} and B = {3,4}, what is A ∩ B?",
+            "{1,2}",
+            "{3}",
+            "{4}",
+            "{1,2,3,4}",
+            QuestionOption.B,
+            "The intersection consists of elements common to both sets.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Solving Problems Using Venn Diagrams",
+            "Which region represents A − B?",
+            "Elements common to both A and B",
+            "Elements in B only",
+            "Elements in A only",
+            "Elements outside A",
+            QuestionOption.C,
+            "A − B contains elements that belong to A but not to B.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Solving Problems Using Venn Diagrams",
+            "Which principle is commonly used with Venn diagrams to avoid double counting?",
+            "Pythagorean Theorem",
+            "Inclusion-Exclusion Principle",
+            "Binomial Theorem",
+            "Chain Rule",
+            QuestionOption.B,
+            "The Inclusion-Exclusion Principle accounts for overlapping regions correctly.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Solving Problems Using Venn Diagrams",
+            "If every element of A belongs to B, then A is:",
+            "Disjoint from B",
+            "Equal to the universal set",
+            "A subset of B",
+            "The complement of B",
+            QuestionOption.C,
+            "A subset means every element of A is also contained in B.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Venn Diagrams
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Venn Diagrams",
+            "Venn diagrams are commonly used to visualize:",
+            "Relationships between groups",
+            "Chemical reactions",
+            "Planetary motion",
+            "Linear equations",
+            QuestionOption.A,
+            "They help compare and analyze relationships among different sets.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Venn Diagrams",
+            "Which subject frequently uses Venn diagrams to calculate probabilities?",
+            "Statistics",
+            "Astronomy",
+            "Geology",
+            "Mechanics",
+            QuestionOption.A,
+            "Probability and statistics often use Venn diagrams to represent events.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Venn Diagrams",
+            "Database query operations are conceptually similar to:",
+            "Venn diagram set operations",
+            "Differentiation",
+            "Matrix multiplication",
+            "Logarithms",
+            QuestionOption.A,
+            "SQL operations like UNION and INTERSECT directly relate to Venn diagram concepts.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Venn Diagrams",
+            "Artificial Intelligence uses Venn diagrams mainly for:",
+            "Representing logical relationships",
+            "Increasing processor speed",
+            "Drawing computer graphics",
+            "Compressing files",
+            QuestionOption.A,
+            "Venn diagrams help visualize logical and set-based relationships in AI.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Venn Diagrams",
+            "Survey analysis often uses Venn diagrams to:",
+            "Display overlapping responses",
+            "Calculate square roots",
+            "Find derivatives",
+            "Measure distances",
+            QuestionOption.A,
+            "Venn diagrams effectively show how different survey groups overlap.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Cartesian Product
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Cartesian Product",
+            "What is the Cartesian product of two sets?",
+            "The common elements of both sets",
+            "The union of both sets",
+            "A set of ordered pairs formed from the two sets",
+            "The difference between two sets",
+            QuestionOption.C,
+            "The Cartesian product A × B consists of all ordered pairs (a, b), where a ∈ A and b ∈ B.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Cartesian Product",
+            "If A = {1, 2} and B = {x, y}, how many ordered pairs are in A × B?",
+            "2",
+            "6",
+            "8",
+            "4",
+            QuestionOption.D,
+            "The number of ordered pairs is |A| × |B| = 2 × 2 = 4.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Cartesian Product",
+            "Which of the following is an element of A × B where A={1} and B={2}?",
+            "{1,2}",
+            "(1,2)",
+            "(2,1)",
+            "{2,1}",
+            QuestionOption.B,
+            "Cartesian products consist of ordered pairs, so (1,2) is correct.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Cartesian Product",
+            "In the ordered pair (a, b), the first element always belongs to:",
+            "Set B",
+            "The universal set",
+            "Either set",
+            "Set A",
+            QuestionOption.D,
+            "In A × B, the first element comes from A and the second comes from B.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Cartesian Product",
+            "If |A| = 3 and |B| = 5, then |A × B| equals:",
+            "15",
+            "8",
+            "2",
+            "25",
+            QuestionOption.A,
+            "The size of a Cartesian product is the product of the sizes of the two sets.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Properties and Applications of Cartesian Products
+        // ==========================================================
+
+        AddQuestion(
+            "Properties and Applications of Cartesian Products",
+            "Which statement about A × B and B × A is generally true?",
+            "They are always identical.",
+            "They always contain the same ordered pairs.",
+            "They are generally different because order matters.",
+            "They always have different numbers of elements.",
+            QuestionOption.C,
+            "Since ordered pairs preserve order, A × B is generally different from B × A.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Properties and Applications of Cartesian Products",
+            "Cartesian products are the foundation for defining:",
+            "Relations",
+            "Prime numbers",
+            "Fractions",
+            "Matrices only",
+            QuestionOption.A,
+            "Relations are subsets of Cartesian products.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Properties and Applications of Cartesian Products",
+            "A function from A to B is a special type of:",
+            "Prime factorization",
+            "Subset of A",
+            "Relation on A × B",
+            "Union of sets",
+            QuestionOption.C,
+            "Every function is a relation that satisfies additional conditions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Properties and Applications of Cartesian Products",
+            "The Cartesian coordinate system is based on:",
+            "Ordered pairs",
+            "Prime numbers",
+            "Permutations",
+            "Matrices",
+            QuestionOption.A,
+            "Coordinates such as (x, y) are ordered pairs from Cartesian products.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Properties and Applications of Cartesian Products",
+            "If A has m elements and B has n elements, then A × B contains:",
+            "m + n elements",
+            "m − n elements",
+            "m × n elements",
+            "m² + n² elements",
+            QuestionOption.C,
+            "The total number of ordered pairs is the product of the sizes of the sets.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Advanced Problems and Practice of Cartesian Products
+        // ==========================================================
+
+        AddQuestion(
+            "Advanced Problems and Practice of Cartesian Products",
+            "Database tables are conceptually related to Cartesian products because they:",
+            "Store ordered relationships between data",
+            "Always contain duplicate rows",
+            "Can only contain numbers",
+            "Represent only graphs",
+            QuestionOption.A,
+            "Relational databases are built on concepts closely related to Cartesian products.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Advanced Problems and Practice of Cartesian Products",
+            "Graph edges connecting two sets of vertices are commonly represented using:",
+            "Cartesian products",
+            "Factorials",
+            "Integrals",
+            "Matrices only",
+            QuestionOption.A,
+            "Edges in bipartite graphs are subsets of Cartesian products.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Advanced Problems and Practice of Cartesian Products",
+            "Which computer science concept commonly uses ordered pairs?",
+            "Relations in databases",
+            "Prime testing",
+            "Sorting only",
+            "Compression only",
+            QuestionOption.A,
+            "Database relations are represented using ordered tuples derived from Cartesian products.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Advanced Problems and Practice of Cartesian Products",
+            "In programming, nested loops often generate:",
+            "Cartesian products",
+            "Square roots",
+            "Prime factors",
+            "Logarithms",
+            QuestionOption.A,
+            "Nested loops iterate through every possible pair of values, effectively generating a Cartesian product.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Advanced Problems and Practice of Cartesian Products",
+            "Cartesian products are especially useful for modelling:",
+            "Relationships between two collections",
+            "Only arithmetic equations",
+            "Temperature conversions",
+            "Polynomial factorization",
+            QuestionOption.A,
+            "Cartesian products provide a mathematical foundation for modelling relationships between two sets.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Relations",
+            "What is a relation between two sets?",
+            "A collection of ordered pairs",
+            "A set containing only numbers",
+            "A mathematical equation",
+            "A type of function only",
+            QuestionOption.A,
+            "A relation is any set of ordered pairs that associates elements from one set with elements of another.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "The set of all first elements in a relation is called the:",
+            "Codomain",
+            "Range",
+            "Image",
+            "Domain",
+            QuestionOption.D,
+            "The domain consists of all first elements of the ordered pairs in a relation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "The set of all second elements in a relation is called the:",
+            "Domain",
+            "Range",
+            "Power set",
+            "Subset",
+            QuestionOption.B,
+            "The range contains all second elements appearing in the ordered pairs.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "Which ordered pair belongs to the relation {(1,2), (3,4)}?",
+            "(2,1)",
+            "(4,3)",
+            "(3,4)",
+            "(1,4)",
+            QuestionOption.C,
+            "The ordered pair (3,4) is explicitly included in the relation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Relations",
+            "Every function is:",
+            "Always a graph",
+            "A special type of relation",
+            "A Cartesian product",
+            "Always one-to-one",
+            QuestionOption.B,
+            "A function is a relation in which every domain element is associated with exactly one range element.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Properties and Types of Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Properties and Types of Relations",
+            "A relation R on a set A is reflexive if:",
+            "Every element is related to itself",
+            "Every pair is reversed",
+            "No element is related to itself",
+            "Every element has two images",
+            QuestionOption.A,
+            "A relation is reflexive when (a, a) belongs to R for every element a in the set.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Properties and Types of Relations",
+            "A relation is symmetric if:",
+            "Whenever (a,b) belongs to R, then (b,a) also belongs to R",
+            "Only (a,a) belongs to R",
+            "Every element is unique",
+            "The relation contains no ordered pairs",
+            QuestionOption.A,
+            "Symmetry means reversing an ordered pair still produces a valid pair in the relation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Properties and Types of Relations",
+            "A relation is transitive if:",
+            "Whenever (a,b) and (b,c) belong to R, then (a,c) belongs to R",
+            "Every element relates to itself",
+            "Every pair is reversed",
+            "Only one ordered pair exists",
+            QuestionOption.A,
+            "Transitivity allows chaining relationships together.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Properties and Types of Relations",
+            "Which property distinguishes an antisymmetric relation?",
+            "If (a,b) and (b,a) are both in R, then a = b",
+            "Every pair has an opposite pair",
+            "Every element relates to itself",
+            "Every relation is also symmetric",
+            QuestionOption.A,
+            "Antisymmetry allows both (a,b) and (b,a) only when the two elements are identical.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Properties and Types of Relations",
+            "A relation that is reflexive, symmetric, and transitive is called:",
+            "A partial order",
+            "An equivalence relation",
+            "A bijection",
+            "A graph",
+            QuestionOption.B,
+            "Equivalence relations satisfy reflexive, symmetric, and transitive properties simultaneously.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Relations
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Relations are commonly used in databases to represent:",
+            "Connections between records",
+            "Prime numbers",
+            "Trigonometric identities",
+            "Polynomial equations",
+            QuestionOption.A,
+            "Database tables model relationships between different pieces of information.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Which field heavily relies on relations to model social connections?",
+            "Social network analysis",
+            "Geometry only",
+            "Calculus",
+            "Linear algebra",
+            QuestionOption.A,
+            "Social networks use relations to connect users and represent interactions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "In graph theory, a relation can often be represented by:",
+            "Edges connecting vertices",
+            "Only matrices",
+            "Only equations",
+            "Only tables of numbers",
+            QuestionOption.A,
+            "Graph edges naturally represent relationships between vertices.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Artificial intelligence commonly uses relations to:",
+            "Represent knowledge between entities",
+            "Replace programming languages",
+            "Solve only arithmetic problems",
+            "Store images only",
+            QuestionOption.A,
+            "Knowledge graphs and semantic networks are built using relations.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Relations",
+            "Which concept is built directly on relations in mathematics?",
+            "Functions",
+            "Square roots",
+            "Logarithms",
+            "Prime factorization",
+            QuestionOption.A,
+            "Functions are special kinds of relations with exactly one output for each input.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Functions",
+            "What is a function?",
+            "A set of random numbers",
+            "A relation where each input has exactly one output",
+            "A relation with multiple outputs for every input",
+            "A graph without coordinates",
+            QuestionOption.B,
+            "A function is a relation that assigns exactly one output to every input.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Functions",
+            "The set of all possible input values of a function is called the:",
+            "Range",
+            "Image",
+            "Domain",
+            "Codomain",
+            QuestionOption.C,
+            "The domain consists of all allowable input values.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Functions",
+            "The set of actual output values produced by a function is called the:",
+            "Codomain",
+            "Domain",
+            "Power set",
+            "Range",
+            QuestionOption.D,
+            "The range contains all output values actually obtained.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Functions",
+            "Which of the following is NOT a function?",
+            "{(1,2), (2,3), (3,4)}",
+            "{(1,2), (1,3), (2,4)}",
+            "{(2,5), (3,6)}",
+            "{(4,8), (5,10)}",
+            QuestionOption.B,
+            "The input 1 maps to two different outputs (2 and 3), so it is not a function.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Functions",
+            "Functions are primarily used to:",
+            "Represent relationships between inputs and outputs",
+            "Store only prime numbers",
+            "Find only geometric shapes",
+            "Replace equations",
+            QuestionOption.A,
+            "Functions describe how one quantity depends on another.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Types and Properties of Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Types and Properties of Functions",
+            "A function is one-to-one (injective) if:",
+            "Different inputs always produce different outputs",
+            "Every output has multiple inputs",
+            "Every input has two outputs",
+            "Every output is zero",
+            QuestionOption.A,
+            "Injective functions map distinct inputs to distinct outputs.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Types and Properties of Functions",
+            "A function is onto (surjective) if:",
+            "Every element of the codomain has at least one preimage",
+            "Every input has two outputs",
+            "It has no inverse",
+            "Its domain is empty",
+            QuestionOption.A,
+            "A surjective function covers every element of the codomain.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Types and Properties of Functions",
+            "A function that is both one-to-one and onto is called:",
+            "Linear",
+            "Constant",
+            "Bijective",
+            "Quadratic",
+            QuestionOption.C,
+            "A bijection is both injective and surjective.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Types and Properties of Functions",
+            "An inverse function exists only if the function is:",
+            "Constant",
+            "Many-to-one",
+            "Bijective",
+            "Periodic",
+            QuestionOption.C,
+            "Only bijective functions have inverses defined over the entire codomain.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Types and Properties of Functions",
+            "Which test is commonly used to determine whether a graph represents a function?",
+            "Vertical Line Test",
+            "Horizontal Line Test",
+            "Slope Test",
+            "Midpoint Test",
+            QuestionOption.A,
+            "If a vertical line intersects the graph more than once, it is not a function.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Functions
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Functions",
+            "Functions are widely used in programming to:",
+            "Organize reusable blocks of code",
+            "Store only variables",
+            "Replace operating systems",
+            "Create hardware devices",
+            QuestionOption.A,
+            "Programming functions group reusable instructions into callable units.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Functions",
+            "In artificial intelligence, functions are commonly used to:",
+            "Model relationships between inputs and predictions",
+            "Replace databases",
+            "Generate only images",
+            "Store passwords",
+            QuestionOption.A,
+            "Machine learning models are mathematical functions mapping inputs to outputs.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Functions",
+            "Which mathematical concept is commonly represented using functions?",
+            "Growth of populations over time",
+            "Random text formatting",
+            "Keyboard layouts",
+            "Computer memory addresses only",
+            QuestionOption.A,
+            "Population growth is naturally modeled using mathematical functions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Functions",
+            "Database systems often use functions to:",
+            "Transform and process stored data",
+            "Replace SQL",
+            "Store only images",
+            "Delete all records automatically",
+            QuestionOption.A,
+            "Database functions calculate, transform, and manipulate stored values.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Functions",
+            "Functions are fundamental in mathematical modelling because they:",
+            "Describe relationships between variables",
+            "Always produce whole numbers",
+            "Can only represent straight lines",
+            "Remove the need for equations",
+            QuestionOption.A,
+            "Functions express how one variable changes with respect to another.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Propositional Logic
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Propositional Logic",
+            "A proposition is:",
+            "A mathematical statement that is either true or false",
+            "Any sentence with punctuation",
+            "A question that needs an answer",
+            "A command or instruction",
+            QuestionOption.A,
+            "A proposition is a declarative statement with a definite truth value.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Propositional Logic",
+            "Which of the following is NOT a proposition?",
+            "7 is a prime number.",
+            "The Earth revolves around the Sun.",
+            "What is your name?",
+            "2 + 2 = 4.",
+            QuestionOption.C,
+            "Questions do not have a truth value, so they are not propositions.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Propositional Logic",
+            "Every proposition has:",
+            "Exactly one truth value",
+            "Two variables",
+            "An implication",
+            "A logical operator",
+            QuestionOption.A,
+            "Every proposition is either true or false.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Propositional Logic",
+            "The truth value of a proposition can be:",
+            "Positive or Negative",
+            "Even or Odd",
+            "True or False",
+            "Large or Small",
+            QuestionOption.C,
+            "A proposition always evaluates to either True or False.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Propositional Logic",
+            "Propositional logic is mainly used for:",
+            "Logical reasoning and mathematical proofs",
+            "Drawing geometric figures",
+            "Measuring physical quantities",
+            "Solving only arithmetic problems",
+            QuestionOption.A,
+            "Propositional logic provides the foundation for logical reasoning.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Logical Operators and Truth Tables
+        // ==========================================================
+
+        AddQuestion(
+            "Logical Operators and Truth Tables",
+            "The logical AND operator is represented by:",
+            "∨",
+            "→",
+            "∧",
+            "¬",
+            QuestionOption.C,
+            "The symbol ∧ represents logical AND.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Logical Operators and Truth Tables",
+            "The negation of a proposition P is represented by:",
+            "P ∨ Q",
+            "¬P",
+            "P → Q",
+            "P ∧ Q",
+            QuestionOption.B,
+            "The symbol ¬ denotes logical NOT or negation.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Logical Operators and Truth Tables",
+            "If P is true and Q is false, then P ∧ Q is:",
+            "True",
+            "Cannot be determined",
+            "Depends on Q",
+            "False",
+            QuestionOption.D,
+            "AND is true only when both propositions are true.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Logical Operators and Truth Tables",
+            "A truth table is used to:",
+            "Store mathematical formulas",
+            "Display all possible truth values of a logical expression",
+            "Find prime numbers",
+            "Represent geometric figures",
+            QuestionOption.B,
+            "Truth tables evaluate logical expressions for every possible combination of truth values.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Logical Operators and Truth Tables",
+            "The implication P → Q is false only when:",
+            "P is true and Q is false",
+            "Both P and Q are false",
+            "P is false and Q is true",
+            "Both P and Q are true",
+            QuestionOption.A,
+            "An implication fails only when a true statement leads to a false conclusion.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Propositional Logic
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Propositional Logic",
+            "Propositional logic is widely used in:",
+            "Digital circuit design",
+            "Painting landscapes",
+            "Cooking recipes",
+            "Musical notation",
+            QuestionOption.A,
+            "Logic gates in digital electronics are based on propositional logic.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Propositional Logic",
+            "Which computer science field heavily relies on propositional logic?",
+            "Artificial Intelligence",
+            "Graphic Design",
+            "Video Editing",
+            "Photography",
+            QuestionOption.A,
+            "AI systems use logical reasoning for decision-making and inference.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Propositional Logic",
+            "Boolean expressions used in programming are based on:",
+            "Propositional logic",
+            "Calculus",
+            "Statistics",
+            "Linear algebra",
+            QuestionOption.A,
+            "Conditional statements in programming use Boolean logic derived from propositional logic.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Propositional Logic",
+            "Formal verification uses propositional logic to:",
+            "Prove software and hardware correctness",
+            "Compress image files",
+            "Generate random numbers",
+            "Improve internet speed",
+            QuestionOption.A,
+            "Formal verification checks whether systems satisfy logical specifications.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Propositional Logic",
+            "Database query conditions commonly rely on:",
+            "Logical operators such as AND, OR, and NOT",
+            "Only arithmetic operators",
+            "Geometry formulas",
+            "Matrix multiplication",
+            QuestionOption.A,
+            "SQL WHERE clauses use logical operators to filter records.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Predicate Logic
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Predicate Logic",
+            "Predicate logic extends propositional logic by introducing:",
+            "Predicates and variables",
+            "Matrices",
+            "Vectors",
+            "Complex numbers",
+            QuestionOption.A,
+            "Predicate logic introduces predicates and variables to describe properties and relationships.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Predicate Logic",
+            "Which symbol commonly represents the universal quantifier?",
+            "∃",
+            "∀",
+            "¬",
+            "→",
+            QuestionOption.B,
+            "The symbol ∀ means 'for all'.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Predicate Logic",
+            "A predicate becomes a proposition when:",
+            "It contains two variables",
+            "It is assigned specific values for its variables",
+            "It contains a logical operator",
+            "It is written in uppercase",
+            QuestionOption.B,
+            "A predicate has a definite truth value only after its variables are assigned values.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Predicate Logic",
+            "Which of the following is a predicate?",
+            "5 > 3",
+            "P ∧ Q",
+            "x > 5",
+            "True",
+            QuestionOption.C,
+            "The statement x > 5 depends on the value of x, making it a predicate.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Predicate Logic",
+            "Predicate logic is primarily used to:",
+            "Express relationships between objects",
+            "Draw graphs",
+            "Calculate areas",
+            "Store numerical data",
+            QuestionOption.A,
+            "Predicate logic describes properties and relationships involving variables.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Quantifiers and Logical Reasoning
+        // ==========================================================
+
+        AddQuestion(
+            "Quantifiers and Logical Reasoning",
+            "The existential quantifier (∃) means:",
+            "There exists at least one",
+            "For every",
+            "Not",
+            "If and only if",
+            QuestionOption.A,
+            "∃ states that at least one element satisfies the condition.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Quantifiers and Logical Reasoning",
+            "The statement 'For every x, x + 0 = x' uses which quantifier?",
+            "Existential quantifier",
+            "Negation",
+            "Universal quantifier",
+            "Implication",
+            QuestionOption.C,
+            "The phrase 'for every' corresponds to the universal quantifier (∀).",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Quantifiers and Logical Reasoning",
+            "The negation of '∀x P(x)' is:",
+            "∀x ¬P(x)",
+            "∃x ¬P(x)",
+            "¬∃x P(x)",
+            "∃x P(x)",
+            QuestionOption.B,
+            "Negating a universal statement produces an existential statement with negation.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Quantifiers and Logical Reasoning",
+            "The negation of '∃x P(x)' is:",
+            "∀x P(x)",
+            "∃x ¬P(x)",
+            "∀x ¬P(x)",
+            "¬P(x)",
+            QuestionOption.C,
+            "Negating an existential statement gives a universal statement with negation.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Quantifiers and Logical Reasoning",
+            "Quantifiers are mainly used to:",
+            "Specify how many elements satisfy a condition",
+            "Replace variables",
+            "Store truth values",
+            "Perform arithmetic operations",
+            QuestionOption.A,
+            "Quantifiers define whether all or some elements satisfy a predicate.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Predicate Logic
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Predicate Logic",
+            "Predicate logic is widely used in:",
+            "Artificial Intelligence",
+            "Photography",
+            "Music composition",
+            "Video editing",
+            QuestionOption.A,
+            "AI systems use predicate logic for knowledge representation and reasoning.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Predicate Logic",
+            "Database query languages often use predicate logic to:",
+            "Filter and retrieve data",
+            "Draw charts",
+            "Compress files",
+            "Design web pages",
+            QuestionOption.A,
+            "Conditions in database queries are based on logical predicates.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Predicate Logic",
+            "Automated theorem provers rely heavily on:",
+            "Predicate logic",
+            "Calculus",
+            "Geometry",
+            "Statistics",
+            QuestionOption.A,
+            "Theorem provers use predicate logic to derive logical conclusions.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Predicate Logic",
+            "Programming languages often use predicate logic in:",
+            "Conditional statements and assertions",
+            "Colour selection",
+            "Font rendering",
+            "Audio playback",
+            QuestionOption.A,
+            "Assertions and conditions are based on logical predicates.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Predicate Logic",
+            "Predicate logic is important because it:",
+            "Represents complex relationships with precision",
+            "Only solves arithmetic equations",
+            "Eliminates variables from mathematics",
+            "Replaces programming languages",
+            QuestionOption.A,
+            "Predicate logic provides a precise way to express and analyse mathematical relationships.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Truth Tables
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Truth Tables",
+            "The primary purpose of a truth table is to:",
+            "Evaluate the truth value of logical expressions",
+            "Solve algebraic equations",
+            "Represent matrices",
+            "Calculate probabilities",
+            QuestionOption.A,
+            "A truth table lists all possible truth value combinations and evaluates logical expressions.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Truth Tables",
+            "How many possible rows are needed for a truth table with two variables?",
+            "8",
+            "2",
+            "4",
+            "16",
+            QuestionOption.C,
+            "A truth table with n variables has 2ⁿ rows. For 2 variables, 2² = 4.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Truth Tables",
+            "Which values are used in a truth table?",
+            "0 and 1",
+            "True and False",
+            "Positive and Negative",
+            "Even and Odd",
+            QuestionOption.B,
+            "Truth tables represent logical values using True and False.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Truth Tables",
+            "A truth table evaluates:",
+            "Only simple propositions",
+            "Only predicates",
+            "Logical expressions for every possible input",
+            "Only arithmetic operations",
+            QuestionOption.C,
+            "Every possible combination of truth values is evaluated.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Truth Tables",
+            "Truth tables are most commonly associated with:",
+            "Logic and Boolean algebra",
+            "Geometry",
+            "Statistics",
+            "Trigonometry",
+            QuestionOption.A,
+            "Truth tables are fundamental tools in logic and Boolean algebra.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Constructing and Simplifying Truth Tables
+        // ==========================================================
+
+        AddQuestion(
+            "Constructing and Simplifying Truth Tables",
+            "A truth table with three variables contains how many rows?",
+            "6",
+            "4",
+            "8",
+            "16",
+            QuestionOption.C,
+            "Three variables require 2³ = 8 possible truth value combinations.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Constructing and Simplifying Truth Tables",
+            "The expression P ∨ Q is false only when:",
+            "Both P and Q are false",
+            "P is true and Q is false",
+            "Both P and Q are true",
+            "P is false and Q is true",
+            QuestionOption.A,
+            "The OR operator is false only if both operands are false.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Constructing and Simplifying Truth Tables",
+            "Which logical operator has the highest precedence?",
+            "OR (∨)",
+            "Implication (→)",
+            "NOT (¬)",
+            "AND (∧)",
+            QuestionOption.C,
+            "Negation (NOT) is evaluated before other logical operators.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Constructing and Simplifying Truth Tables",
+            "A tautology is a logical expression that is:",
+            "Always false",
+            "Sometimes true",
+            "Always true",
+            "Undefined",
+            QuestionOption.C,
+            "A tautology evaluates to true for every possible combination of inputs.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Constructing and Simplifying Truth Tables",
+            "Truth tables help simplify logical expressions by:",
+            "Comparing equivalent expressions",
+            "Calculating derivatives",
+            "Finding matrix inverses",
+            "Computing integrals",
+            QuestionOption.A,
+            "Equivalent truth tables indicate logically equivalent expressions.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Truth Tables
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Truth Tables",
+            "Truth tables are widely used in designing:",
+            "Digital logic circuits",
+            "Chemical equations",
+            "Statistical surveys",
+            "Geometric proofs",
+            QuestionOption.A,
+            "Logic gates are analysed using truth tables.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Truth Tables",
+            "Which field frequently uses truth tables to verify logical correctness?",
+            "Formal verification",
+            "Photography",
+            "Architecture",
+            "Astronomy",
+            QuestionOption.A,
+            "Formal verification checks system correctness using logical methods.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Truth Tables",
+            "Truth tables are essential for understanding:",
+            "Boolean expressions in programming",
+            "Sorting algorithms only",
+            "Database indexing only",
+            "File compression only",
+            QuestionOption.A,
+            "Boolean conditions in programming are analysed using truth tables.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Truth Tables",
+            "Artificial intelligence systems use truth tables primarily for:",
+            "Logical reasoning",
+            "Drawing graphics",
+            "Audio processing",
+            "Memory allocation",
+            QuestionOption.A,
+            "Logical inference in AI often relies on truth table concepts.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Truth Tables",
+            "Truth tables are useful because they:",
+            "Provide a complete evaluation of logical expressions",
+            "Replace programming languages",
+            "Solve only numerical equations",
+            "Store database records",
+            QuestionOption.A,
+            "Truth tables systematically evaluate every possible logical case.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Logical Equivalence
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Logical Equivalence",
+            "Two logical statements are logically equivalent if they:",
+            "Always have the same truth value",
+            "Contain the same variables",
+            "Use the same logical operators",
+            "Have the same number of symbols",
+            QuestionOption.A,
+            "Logically equivalent statements produce identical truth values for every possible input.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Logical Equivalence",
+            "Logical equivalence is commonly represented by the symbol:",
+            "↔",
+            "≡",
+            "→",
+            "∧",
+            QuestionOption.B,
+            "The symbol ≡ denotes logical equivalence.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Logical Equivalence",
+            "Which method is commonly used to verify logical equivalence?",
+            "Graph plotting",
+            "Truth tables",
+            "Integration",
+            "Prime factorization",
+            QuestionOption.B,
+            "Truth tables verify whether two expressions always have identical truth values.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Logical Equivalence",
+            "If two propositions are logically equivalent, they:",
+            "May differ for some truth assignments",
+            "Always evaluate identically",
+            "Must have identical notation",
+            "Cannot contain negation",
+            QuestionOption.B,
+            "Equivalent propositions always produce the same result.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Logical Equivalence",
+            "Logical equivalence is mainly used to:",
+            "Simplify logical expressions",
+            "Solve geometry problems",
+            "Calculate derivatives",
+            "Draw graphs",
+            QuestionOption.A,
+            "Equivalent expressions allow logical formulas to be simplified.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Laws and Methods of Logical Equivalence
+        // ==========================================================
+
+        AddQuestion(
+            "Laws and Methods of Logical Equivalence",
+            "Which law states that ¬(¬P) ≡ P?",
+            "Identity Law",
+            "Double Negation Law",
+            "Domination Law",
+            "Absorption Law",
+            QuestionOption.B,
+            "Applying negation twice returns the original proposition.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Laws and Methods of Logical Equivalence",
+            "De Morgan's Law states that ¬(P ∧ Q) is equivalent to:",
+            "¬P ∨ ¬Q",
+            "¬P ∧ ¬Q",
+            "P ∨ Q",
+            "P ∧ ¬Q",
+            QuestionOption.A,
+            "Negating an AND changes it into an OR with both operands negated.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Laws and Methods of Logical Equivalence",
+            "Which law states that P ∨ False ≡ P?",
+            "Identity Law",
+            "Complement Law",
+            "Distributive Law",
+            "Domination Law",
+            QuestionOption.A,
+            "OR with False leaves the proposition unchanged.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Laws and Methods of Logical Equivalence",
+            "The expression P ∨ P simplifies using which law?",
+            "Double Negation Law",
+            "Idempotent Law",
+            "Commutative Law",
+            "Associative Law",
+            QuestionOption.B,
+            "The Idempotent Law states P ∨ P ≡ P.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Laws and Methods of Logical Equivalence",
+            "Logical equivalence laws are mainly used to:",
+            "Simplify logical expressions without changing meaning",
+            "Increase the number of variables",
+            "Generate truth values randomly",
+            "Convert propositions into predicates",
+            QuestionOption.A,
+            "Equivalence laws preserve meaning while simplifying expressions.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Applications and Practice of Logical Equivalence
+        // ==========================================================
+
+        AddQuestion(
+            "Applications and Practice of Logical Equivalence",
+            "Logical equivalence is widely used in:",
+            "Digital circuit optimisation",
+            "Painting",
+            "Photography",
+            "Music composition",
+            QuestionOption.A,
+            "Equivalent logic expressions help reduce the number of logic gates.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Applications and Practice of Logical Equivalence",
+            "Compilers use logical equivalence to:",
+            "Optimise program conditions",
+            "Increase program size",
+            "Generate images",
+            "Compress audio",
+            QuestionOption.A,
+            "Equivalent conditions can produce more efficient code.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Applications and Practice of Logical Equivalence",
+            "Automated theorem proving relies on logical equivalence for:",
+            "Logical simplification and proof generation",
+            "Sorting arrays",
+            "Managing memory",
+            "Rendering graphics",
+            QuestionOption.A,
+            "Equivalent transformations help prove logical statements.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Applications and Practice of Logical Equivalence",
+            "Artificial intelligence systems use logical equivalence to:",
+            "Improve logical reasoning",
+            "Increase processor speed",
+            "Draw user interfaces",
+            "Store multimedia files",
+            QuestionOption.A,
+            "Equivalent logical rules simplify knowledge representation.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Applications and Practice of Logical Equivalence",
+            "The greatest advantage of logical equivalence is that it:",
+            "Produces simpler but logically identical expressions",
+            "Removes all logical operators",
+            "Changes truth values",
+            "Eliminates variables completely",
+            QuestionOption.A,
+            "Equivalent expressions preserve meaning while reducing complexity.",
+            DifficultyLevel.Advance,
+            5);
+        // ==========================================================
+        // Introduction to Mathematical Proofs
+        // ==========================================================
+
+        AddQuestion(
+            "Introduction to Mathematical Proofs",
+            "What is the primary purpose of a mathematical proof?",
+            "To verify that a statement is always true",
+            "To estimate an answer",
+            "To simplify calculations",
+            "To create formulas",
+            QuestionOption.A,
+            "A mathematical proof demonstrates that a statement is true using logical reasoning.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Introduction to Mathematical Proofs",
+            "A mathematical proof must be based on:",
+            "Logical reasoning",
+            "Random examples",
+            "Personal opinion",
+            "Experimental guesses",
+            QuestionOption.A,
+            "Proofs rely on logical reasoning, definitions, and previously established results.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Introduction to Mathematical Proofs",
+            "Which of the following is essential in every valid proof?",
+            "Assumptions and logical steps",
+            "Computer software",
+            "Numerical approximation",
+            "A graph",
+            QuestionOption.A,
+            "Every proof consists of logical steps beginning from valid assumptions or known facts.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Introduction to Mathematical Proofs",
+            "A theorem is:",
+            "A statement proven using logical reasoning",
+            "An unproven guess",
+            "A mathematical formula only",
+            "A diagram",
+            QuestionOption.A,
+            "A theorem is a statement that has been formally proven.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Introduction to Mathematical Proofs",
+            "Mathematical proofs ensure:",
+            "Universal correctness of mathematical statements",
+            "Faster calculations",
+            "Smaller equations",
+            "Better graph drawing",
+            QuestionOption.A,
+            "Proofs establish that statements are true in every applicable case.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Common Proof Methods and Strategies
+        // ==========================================================
+
+        AddQuestion(
+            "Common Proof Methods and Strategies",
+            "A direct proof begins by:",
+            "Assuming the hypothesis is true",
+            "Assuming the conclusion is false",
+            "Using only examples",
+            "Drawing a graph",
+            QuestionOption.A,
+            "Direct proofs start from the hypothesis and logically derive the conclusion.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Common Proof Methods and Strategies",
+            "Proof by contradiction starts by assuming:",
+            "The conclusion is false",
+            "The hypothesis is false",
+            "Nothing",
+            "Every statement is true",
+            QuestionOption.A,
+            "Contradiction assumes the opposite of the desired conclusion and derives an impossibility.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Common Proof Methods and Strategies",
+            "Mathematical induction is commonly used to prove statements about:",
+            "Positive integers",
+            "Triangles",
+            "Circles",
+            "Matrices only",
+            QuestionOption.A,
+            "Induction is primarily used for propositions involving natural numbers.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Common Proof Methods and Strategies",
+            "A counterexample is used to:",
+            "Disprove a universal statement",
+            "Prove every theorem",
+            "Simplify equations",
+            "Construct graphs",
+            QuestionOption.A,
+            "One valid counterexample is enough to show a universal statement is false.",
+            DifficultyLevel.Intermediate,
+            4);
+
+        AddQuestion(
+            "Common Proof Methods and Strategies",
+            "Proof by contrapositive proves 'If P then Q' by showing:",
+            "If not Q then not P",
+            "If Q then P",
+            "If not P then Q",
+            "If P then not Q",
+            QuestionOption.A,
+            "A statement and its contrapositive are logically equivalent.",
+            DifficultyLevel.Advance,
+            5);
+
+        // ==========================================================
+        // Advanced Proof Applications and Practice
+        // ==========================================================
+
+        AddQuestion(
+            "Advanced Proof Applications and Practice",
+            "Mathematical proofs are widely used in:",
+            "Algorithm correctness",
+            "Painting",
+            "Photography",
+            "Music production",
+            QuestionOption.A,
+            "Algorithms are proven correct using formal mathematical proofs.",
+            DifficultyLevel.Begineer,
+            1);
+
+        AddQuestion(
+            "Advanced Proof Applications and Practice",
+            "Formal verification in computer science relies heavily on:",
+            "Mathematical proofs",
+            "Random testing only",
+            "Trial and error",
+            "Guesswork",
+            QuestionOption.A,
+            "Formal verification uses proofs to guarantee software and hardware correctness.",
+            DifficultyLevel.Begineer,
+            2);
+
+        AddQuestion(
+            "Advanced Proof Applications and Practice",
+            "Which area frequently applies proof techniques?",
+            "Discrete mathematics",
+            "Painting",
+            "Photography",
+            "Music theory",
+            QuestionOption.A,
+            "Discrete mathematics is heavily based on formal proof techniques.",
+            DifficultyLevel.Intermediate,
+            3);
+
+        AddQuestion(
+            "Advanced Proof Applications and Practice",
+            "Proof techniques help computer scientists to:",
+            "Verify algorithms and systems",
+            "Increase internet speed",
+            "Design graphics only",
+            "Compress images",
+            QuestionOption.A,
+            "Proofs verify correctness, efficiency, and security properties.",
+            DifficultyLevel.Advance,
+            4);
+
+        AddQuestion(
+            "Advanced Proof Applications and Practice",
+            "The main benefit of mathematical proofs is:",
+            "Providing certainty through logical reasoning",
+            "Making equations shorter",
+            "Avoiding calculations",
+            "Replacing experiments",
+            QuestionOption.A,
+            "Proofs provide rigorous certainty that mathematical statements are correct.",
+            DifficultyLevel.Advance,
+            5);
 
 
 
