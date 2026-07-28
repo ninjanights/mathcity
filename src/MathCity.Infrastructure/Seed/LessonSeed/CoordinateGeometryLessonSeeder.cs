@@ -28,7 +28,7 @@ public static class CoordinateGeometryLessonSeeder
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -42,7 +42,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -56,7 +56,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 // Distance Formula
 
@@ -71,7 +71,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -85,7 +85,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -99,7 +99,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 // Midpoint Formula
@@ -115,7 +115,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -129,7 +129,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -143,7 +143,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 // Section Formula
 
@@ -158,7 +158,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -172,7 +172,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -186,7 +186,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 // Straight Line
@@ -202,7 +202,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -216,7 +216,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -230,7 +230,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 
@@ -247,7 +247,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -261,7 +261,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -275,7 +275,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 // Circle
@@ -291,7 +291,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -305,7 +305,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -319,7 +319,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 // Parabola
@@ -335,7 +335,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -349,7 +349,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -363,7 +363,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 
@@ -380,7 +380,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -394,7 +394,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -408,7 +408,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 // Hyperbola
 
@@ -423,7 +423,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -437,7 +437,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -451,7 +451,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 // Conic Sections
@@ -467,7 +467,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -481,7 +481,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -495,7 +495,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 

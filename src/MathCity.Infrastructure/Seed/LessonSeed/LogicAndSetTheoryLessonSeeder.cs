@@ -1,6 +1,6 @@
-﻿// ==========================================================
+﻿
 // Logic & Set Theory Lesson Seeder
-// ==========================================================
+
 
 using MathCity.Domain.Entities;
 using MathCity.Domain.Enums;
@@ -18,9 +18,9 @@ public static class LogicAndSetTheoryLessonSeeder
 
         var lessons = new List<Lesson>
         {
-            // ==========================================================
+            
 // Sets
-// ==========================================================
+
 
 new Lesson
 {
@@ -33,7 +33,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -47,7 +47,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -61,11 +61,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Set Operations
-// ==========================================================
+
 
 new Lesson
 {
@@ -78,7 +78,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -92,7 +92,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -106,10 +106,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Venn Diagrams
-// ==========================================================
+
 
 new Lesson
 {
@@ -122,7 +122,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -136,7 +136,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -150,10 +150,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Cartesian Product
-// ==========================================================
+
 
 new Lesson
 {
@@ -166,7 +166,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -180,7 +180,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -194,10 +194,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Relations
-// ==========================================================
+
 
 new Lesson
 {
@@ -210,7 +210,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -224,7 +224,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -238,10 +238,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Functions
-// ==========================================================
+
 
 new Lesson
 {
@@ -254,7 +254,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -268,7 +268,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -282,10 +282,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Propositional Logic
-// ==========================================================
+
 
 new Lesson
 {
@@ -298,7 +298,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -312,7 +312,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -326,10 +326,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Predicate Logic
-// ==========================================================
+
 
 new Lesson
 {
@@ -342,7 +342,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -356,7 +356,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -370,10 +370,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Truth Tables
-// ==========================================================
+
 
 new Lesson
 {
@@ -386,7 +386,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -400,7 +400,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -414,10 +414,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Logical Equivalence
-// ==========================================================
+
 
 new Lesson
 {
@@ -430,7 +430,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -444,7 +444,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -458,10 +458,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Mathematical Proof Techniques
-// ==========================================================
+
 
 new Lesson
 {
@@ -474,7 +474,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -488,7 +488,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -502,7 +502,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
         };

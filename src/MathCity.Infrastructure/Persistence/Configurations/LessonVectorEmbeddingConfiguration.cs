@@ -30,7 +30,7 @@ public class LessonVectorEmbeddingConfiguration
             .IsRequired();
 
         builder.Property(x => x.Embedding)
-    .HasColumnType("vector(768)")
+    .HasColumnType("vector(1024)")
     .IsRequired();
 
         builder.Property(x => x.Dimensions)
@@ -49,6 +49,7 @@ public class LessonVectorEmbeddingConfiguration
         builder.HasIndex(x => x.LessonId);
 
         builder.HasIndex(x => x.ChunkType);
+        builder.HasIndex(x => x.Model);
 
         builder.HasIndex(x => new
         {

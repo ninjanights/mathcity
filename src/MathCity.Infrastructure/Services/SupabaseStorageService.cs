@@ -3,7 +3,6 @@ using MathCity.Application.Features.Storage.Interfaces;
 using MathCity.Infrastructure.Settings;
 using Microsoft.Extensions.Options;
 using System.Net.Http.Headers;
-using SkiaSharp;
 using MathCity.Domain.Enums;
 
 namespace MathCity.Infrastructure.Storage;
@@ -33,7 +32,7 @@ public class SupabaseStorageService : IFileStorageService
     }
 
 
-    public async Task<FileUploadResponse> UploadAsync(
+    private async Task<FileUploadResponse> UploadAsync(
         Stream stream,
         string fileName,
         string contentType,
@@ -132,60 +131,8 @@ public class SupabaseStorageService : IFileStorageService
     }
 
 
-    public async Task<string> UploadLessonThumbnailAsync(
-        Guid lessonId,
-        Stream stream,
-        string fileName,
-        string contentType,
-        CancellationToken cancellationToken = default)
-    {
-        stream.Position = 0;
 
-        using var bitmap = SKBitmap.Decode(stream);
-
-        if (bitmap == null)
-            throw new InvalidOperationException("Invalid image.");
-
-        // 4:3 validation
-        var ratio = (double)bitmap.Width / bitmap.Height;
-
-        if (Math.Abs(ratio - (4d / 3d)) > 0.05)
-            throw new InvalidOperationException("Thumbnail must have a 4:3 aspect ratio.");
-
-        // Resize
-        using var resizedBitmap = bitmap.Resize(
-            new SKImageInfo(800, 600),
-            SKSamplingOptions.Default);
-
-        if (resizedBitmap == null)
-            throw new InvalidOperationException("Failed to resize image.");
-
-        using var image = SKImage.FromBitmap(resizedBitmap);
-
-        using var data = image.Encode(SKEncodedImageFormat.Webp, 80);
-
-        using var output = new MemoryStream();
-
-        data.SaveTo(output);
-
-        output.Position = 0;
-
-
-
-        var upload = await UploadAsync(
-            output,
-            $"{lessonId}.webp",
-            "image/webp",
-            "lesson-thumbnails",
-            generateUniqueName: false,
-            cancellationToken);
-
-        return upload.PublicUrl;
-    }
-
-
-
-    public async Task<FileUploadResponse> UploadLessonResourceAsync(
+    public async Task<FileUploadResponse> UploadDocumentAsync(
     Guid lessonId,
     string resourceTitle,
     int displayOrder,
@@ -221,25 +168,6 @@ public class SupabaseStorageService : IFileStorageService
     }
 
 
-    private static readonly string[] ImageExtensions =
-[
-    ".jpg",
-    ".jpeg",
-    ".png",
-    ".webp",
-    ".gif",
-    ".svg"
-];
-
-    private static readonly string[] ImageContentTypes =
-    [
-        "image/jpeg",
-    "image/png",
-    "image/webp",
-    "image/gif",
-    "image/svg+xml"
-    ];
-
     private static readonly string[] PdfExtensions =
 [
     ".pdf"
@@ -250,33 +178,14 @@ public class SupabaseStorageService : IFileStorageService
         "application/pdf"
     ];
 
-    private static readonly string[] VideoExtensions =
+    private static readonly string[] TextExtensions =
 [
-    ".mp4",
-    ".mov",
-    ".webm"
+    ".txt"
 ];
 
-    private static readonly string[] VideoContentTypes =
+    private static readonly string[] TextContentTypes =
     [
-        "video/mp4",
-    "video/quicktime",
-    "video/webm"
-    ];
-
-    private static readonly string[] ArchiveExtensions =
-[
-    ".zip",
-    ".rar",
-    ".7z"
-];
-
-    private static readonly string[] ArchiveContentTypes =
-    [
-        "application/zip",
-    "application/x-zip-compressed",
-    "application/x-rar-compressed",
-    "application/x-7z-compressed"
+        "text/plain"
     ];
 
 
@@ -311,16 +220,6 @@ public class SupabaseStorageService : IFileStorageService
 
         switch (type)
         {
-            case ResourceType.Image:
-
-                Validate(
-                    extension,
-                    contentType,
-                    ImageExtensions,
-                    ImageContentTypes,
-                    "image");
-
-                break;
 
             case ResourceType.Pdf:
 
@@ -333,27 +232,18 @@ public class SupabaseStorageService : IFileStorageService
 
                 break;
 
-            case ResourceType.Video:
+
+            case ResourceType.Text:
 
                 Validate(
                     extension,
                     contentType,
-                    VideoExtensions,
-                    VideoContentTypes,
-                    "video");
+                    TextExtensions,
+                    TextContentTypes,
+                    "Text");
 
                 break;
 
-            case ResourceType.Zip:
-
-                Validate(
-                    extension,
-                    contentType,
-                    ArchiveExtensions,
-                    ArchiveContentTypes,
-                    "archive");
-
-                break;
 
             default:
 

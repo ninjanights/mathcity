@@ -14,9 +14,9 @@ public static class MatricesAndDeterminantsLessonSeeder
 
         var lessons = new List<Lesson>
         {
-            // ==========================================================
+            
 // Matrix Basics
-// ==========================================================
+
 
 new Lesson
 {
@@ -29,7 +29,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -43,7 +43,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -57,11 +57,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Types of Matrices
-// ==========================================================
+
 
 new Lesson
 {
@@ -74,7 +74,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -88,7 +88,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -102,12 +102,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Matrix Operations
-// ==========================================================
+
 
 new Lesson
 {
@@ -120,7 +120,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -134,7 +134,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -148,12 +148,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Determinants
-// ==========================================================
+
 
 new Lesson
 {
@@ -166,7 +166,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -180,7 +180,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -194,11 +194,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Inverse Matrix
-// ==========================================================
+
 
 new Lesson
 {
@@ -211,7 +211,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -225,7 +225,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -239,11 +239,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Rank of Matrix
-// ==========================================================
+
 
 new Lesson
 {
@@ -256,7 +256,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -270,7 +270,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -284,11 +284,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // System of Linear Equations
-// ==========================================================
+
 
 new Lesson
 {
@@ -301,7 +301,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -315,7 +315,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -329,11 +329,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Eigenvalues
-// ==========================================================
+
 
 new Lesson
 {
@@ -346,7 +346,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -360,7 +360,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -374,11 +374,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Eigenvectors
-// ==========================================================
+
 
 new Lesson
 {
@@ -391,7 +391,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -405,7 +405,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -419,7 +419,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 

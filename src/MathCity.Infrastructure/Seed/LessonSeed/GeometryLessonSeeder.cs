@@ -15,9 +15,9 @@ public static class GeometryLessonSeeder
         var lessons = new List<Lesson>
         {
 
-            // ==========================================================
+            
             // Points, Lines & Angles
-            // ==========================================================
+            
 
             new Lesson
             {
@@ -30,7 +30,7 @@ public static class GeometryLessonSeeder
                 ReadingTimeMinutes = 10,
                 IsPublished = true,
                 DisplayOrder = 1,
-                ThumbnailUrl = ""
+                
             },
 
             new Lesson
@@ -44,7 +44,7 @@ public static class GeometryLessonSeeder
                 ReadingTimeMinutes = 15,
                 IsPublished = true,
                 DisplayOrder = 2,
-                ThumbnailUrl = ""
+                
             },
 
             new Lesson
@@ -58,11 +58,11 @@ public static class GeometryLessonSeeder
                 ReadingTimeMinutes = 20,
                 IsPublished = true,
                 DisplayOrder = 3,
-                ThumbnailUrl = ""
+                
             },
-            // ==========================================================
+            
 // Triangles
-// ==========================================================
+
 
 new Lesson
 {
@@ -75,7 +75,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -89,7 +89,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -103,11 +103,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Congruence
-// ==========================================================
+
 
 new Lesson
 {
@@ -120,7 +120,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -134,7 +134,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -148,12 +148,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 }, 
 
-// ==========================================================
+
 // Similarity
-// ==========================================================
+
 
 new Lesson
 {
@@ -166,7 +166,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -180,7 +180,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -194,12 +194,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Quadrilaterals
-// ==========================================================
+
 
 new Lesson
 {
@@ -212,7 +212,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -226,7 +226,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -240,12 +240,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Polygons
-// ==========================================================
+
 
 new Lesson
 {
@@ -258,7 +258,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -272,7 +272,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -286,11 +286,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Circles
-// ==========================================================
+
 
 new Lesson
 {
@@ -303,7 +303,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -317,7 +317,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -331,12 +331,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Constructions
-// ==========================================================
+
 
 new Lesson
 {
@@ -349,7 +349,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -363,7 +363,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -377,12 +377,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Area
-// ==========================================================
+
 
 new Lesson
 {
@@ -395,7 +395,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -409,7 +409,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -423,12 +423,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Perimeter
-// ==========================================================
+
 
 new Lesson
 {
@@ -441,7 +441,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -455,7 +455,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -469,12 +469,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Transformations
-// ==========================================================
+
 
 new Lesson
 {
@@ -487,7 +487,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -501,7 +501,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -515,12 +515,12 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
-// ==========================================================
+
 // Coordinate Proofs
-// ==========================================================
+
 
 new Lesson
 {
@@ -533,7 +533,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -547,7 +547,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -561,7 +561,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 
@@ -608,7 +608,6 @@ new Lesson
             existing.ReadingTimeMinutes = lesson.ReadingTimeMinutes;
             existing.IsPublished = lesson.IsPublished;
             existing.DisplayOrder = lesson.DisplayOrder;
-            existing.ThumbnailUrl = lesson.ThumbnailUrl;
         }
 
         await context.SaveChangesAsync();

@@ -36,16 +36,13 @@ public class LessonsController : ControllerBase
     [HttpPost]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create(
-    [FromForm] CreateLessonRequest request, IFormFile? thumbnail)
+    [FromBody] CreateLessonRequest request)
     {
 
-        using var stream = thumbnail?.OpenReadStream();
+       
 
         var result = await _lessonService.CreateAsync(
-    request,
-   stream,
-    thumbnail?.FileName,
-    thumbnail?.ContentType);
+    request);
 
 
 
@@ -90,17 +87,14 @@ public class LessonsController : ControllerBase
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Update(
        Guid id,
-       [FromForm] UpdateLessonRequest request,
-       IFormFile? thumbnail)
+       [FromBody] UpdateLessonRequest request
+      )
     {
 
-        using var stream = thumbnail?.OpenReadStream();
+       
         var result = await _lessonService.UpdateAsync(
       id,
-      request,
-      stream,
-      thumbnail?.FileName,
-      thumbnail?.ContentType);
+      request);
 
         return Ok(ApiResponse<object?>.Ok(result));
     }

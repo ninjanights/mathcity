@@ -11,21 +11,19 @@ public static class LessonTagSeeder
         if (await context.LessonTags.AnyAsync())
             return;
 
-        var lessons = await context.Lessons
-            .ToDictionaryAsync(l => l.Title);
+        var lessons = await context.Lessons.ToListAsync();
 
         var tags = await context.Tags
             .ToDictionaryAsync(t => t.Name);
 
         var lessonTags = new List<LessonTag>();
 
-        void AddTag(string lessonTitle, string tagName)
+        void AddTag(Lesson lesson, string tagName)
         {
-            if (!lessons.TryGetValue(lessonTitle, out var lesson))
-                return;
-
             if (!tags.TryGetValue(tagName, out var tag))
                 return;
+
+
 
             lessonTags.Add(new LessonTag
             {
@@ -33,58 +31,47 @@ public static class LessonTagSeeder
                 TagId = tag.Id
             });
         }
-        // Algebraic Expressions 1
-        // Lesson 1
-        AddTag("Introduction to Algebraic Expressions", "Introduction");
-        AddTag("Introduction to Algebraic Expressions", "Concept");
-        AddTag("Introduction to Algebraic Expressions", "Definition");
-        AddTag("Introduction to Algebraic Expressions", "Visualization");
 
-        // Lesson 2
-        AddTag("Simplifying and Evaluating Algebraic Expressions", "Formula");
-        AddTag("Simplifying and Evaluating Algebraic Expressions", "Worked Example");
-        AddTag("Simplifying and Evaluating Algebraic Expressions", "Step-by-Step");
+        foreach (var lesson in lessons)
+        {
+            switch (lesson.DisplayOrder)
+            {
+                case 1:
+                    AddTag(lesson, "Introduction");
+                    AddTag(lesson, "Concept");
+                    AddTag(lesson, "Definition");
+                    AddTag(lesson, "Example");
+                    break;
 
-        // Lesson 3
-        AddTag("Applications and Practice of Algebraic Expressions", "Practice");
-        AddTag("Applications and Practice of Algebraic Expressions", "Exercise");
-        AddTag("Applications and Practice of Algebraic Expressions", "Application");
-        AddTag("Applications and Practice of Algebraic Expressions", "Real World");
-        AddTag("Applications and Practice of Algebraic Expressions", "Revision");
+                case 2:
+                    AddTag(lesson, "Theory");
+                    AddTag(lesson, "Worked Example");
+                    AddTag(lesson, "Step-by-Step");
 
-        // Geometry 2
-        AddTag("Introduction to Triangles", "Introduction");
-        AddTag("Introduction to Triangles", "Concept");
-        AddTag("Introduction to Triangles", "Definition");
-        AddTag("Introduction to Triangles", "Visualization");
+                    // adds - Formula only when appropriate
+                    if (lesson.Title.Contains("Formula", StringComparison.OrdinalIgnoreCase))
+                        AddTag(lesson, "Formula");
 
-        AddTag("Types of Triangles", "Concept");
-        AddTag("Types of Triangles", "Formula");
-        AddTag("Types of Triangles", "Worked Example");
-        AddTag("Types of Triangles", "Step-by-Step");
+                    if (lesson.Title.Contains("Proof", StringComparison.OrdinalIgnoreCase))
+                        AddTag(lesson, "Proof");
 
-        AddTag("Applications of Triangles", "Application");
-        AddTag("Applications of Triangles", "Practice");
-        AddTag("Applications of Triangles", "Real World");
-        AddTag("Applications of Triangles", "Revision");
+                    break;
+
+                case 3:
+                    AddTag(lesson, "Practice");
+                    AddTag(lesson, "Exercise");
+                    AddTag(lesson, "Quiz");
+                    AddTag(lesson, "Revision");
+
+                    if (lesson.Title.Contains("Application", StringComparison.OrdinalIgnoreCase))
+                        AddTag(lesson, "Real World");
+
+                    break;
+            }
+        }
 
 
-        // Coordinate Geometry 3
-        AddTag("Introduction to Cartesian Plane", "Introduction");
-        AddTag("Introduction to Cartesian Plane", "Concept");
-        AddTag("Introduction to Cartesian Plane", "Definition");
-        AddTag("Introduction to Cartesian Plane", "Visualization");
 
-        AddTag("Understanding Coordinates and Quadrants", "Concept");
-        AddTag("Understanding Coordinates and Quadrants", "Visualization");
-        AddTag("Understanding Coordinates and Quadrants", "Worked Example");
-        AddTag("Understanding Coordinates and Quadrants", "Step-by-Step");
-
-        AddTag("Applications and Practice of Cartesian Plane", "Practice");
-        AddTag("Applications and Practice of Cartesian Plane", "Exercise");
-        AddTag("Applications and Practice of Cartesian Plane", "Application");
-        AddTag("Applications and Practice of Cartesian Plane", "Real World");
-        AddTag("Applications and Practice of Cartesian Plane", "Revision");
 
 
 

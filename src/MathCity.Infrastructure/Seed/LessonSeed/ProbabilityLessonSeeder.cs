@@ -14,9 +14,9 @@ public static class ProbabilityLessonSeeder
 
         var lessons = new List<Lesson>
         {
-            // ==========================================================
+            
 // Basic Probability
-// ==========================================================
+
 
 new Lesson
 {
@@ -29,7 +29,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -43,7 +43,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -57,10 +57,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Conditional Probability
-// ==========================================================
+
 
 new Lesson
 {
@@ -73,7 +73,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -87,7 +87,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -101,11 +101,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Bayes' Theorem
-// ==========================================================
+
 
 new Lesson
 {
@@ -118,7 +118,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -132,7 +132,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -146,11 +146,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Random Variables
-// ==========================================================
+
 
 new Lesson
 {
@@ -163,7 +163,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -177,7 +177,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -191,11 +191,11 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
-// ==========================================================
+
 // Probability Distributions
-// ==========================================================
+
 
 new Lesson
 {
@@ -208,7 +208,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -222,7 +222,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -236,10 +236,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Expected Value
-// ==========================================================
+
 
 new Lesson
 {
@@ -252,7 +252,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -266,7 +266,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -280,10 +280,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Binomial Distribution
-// ==========================================================
+
 
 new Lesson
 {
@@ -296,7 +296,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -310,7 +310,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -324,10 +324,10 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
-},// ==========================================================
+    
+},
 // Normal Distribution
-// ==========================================================
+
 
 new Lesson
 {
@@ -340,7 +340,7 @@ new Lesson
     ReadingTimeMinutes = 10,
     IsPublished = true,
     DisplayOrder = 1,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -354,7 +354,7 @@ new Lesson
     ReadingTimeMinutes = 15,
     IsPublished = true,
     DisplayOrder = 2,
-    ThumbnailUrl = ""
+    
 },
 
 new Lesson
@@ -368,7 +368,7 @@ new Lesson
     ReadingTimeMinutes = 20,
     IsPublished = true,
     DisplayOrder = 3,
-    ThumbnailUrl = ""
+    
 },
 
 

@@ -1,5 +1,6 @@
 ﻿using MathCity.Infrastructure.Identity;
 using MathCity.Infrastructure.Persistence.Context;
+using MathCity.Infrastructure.Seed.Lessons;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -11,28 +12,65 @@ namespace MathCity.Infrastructure.Seed;
 
 public static class SeedData
 {
-    public static async Task InitializeAsync(ApplicationDbContext context,
-                UserManager<ApplicationUser> userManager,
-                        RoleManager<ApplicationRole> roleManager)
+    public static async Task InitializeAsync(
+        ApplicationDbContext context,
+        UserManager<ApplicationUser> userManager,
+        RoleManager<ApplicationRole> roleManager)
     {
-        // Identity
-        await RoleSeeder.SeedAsync(roleManager);
-        await AdminSeeder.SeedAsync(userManager);
+        await using var transaction = await context.Database.BeginTransactionAsync();
+        try
+        {
+            // Identity
 
-        // Learning Content
-        await SubjectSeeder.SeedAsync(context);
-        await ChapterSeeder.SeedAsync(context);
-        await TopicSeed.SeedAsync(context);
-        await AlgebraLessonSeed.SeedAsync(context);
-
-        await TagSeed.SeedAsync(context);
+            await RoleSeeder.SeedAsync(roleManager);
+            await AdminSeeder.SeedAsync(userManager);
 
 
+            // Learning Structure
 
-        // Depends on Lesson + Tag
-        await LessonTagSeeder.SeedAsync(context);
+            await SubjectSeeder.SeedAsync(context);
+            await ChapterSeeder.SeedAsync(context);
+            await TopicSeed.SeedAsync(context);
 
-        // Depends on Lesson
-        //await PracticeQuestionSeeder.SeedAsync(context);
+
+            // Lessons
+
+            await AlgebraLessonSeed.SeedAsync(context);
+            await CalculusLessonSeeder.SeedAsync(context);
+            await ComplexNumbersLessonSeeder.SeedAsync(context);
+            await CoordinateGeometryLessonSeeder.SeedAsync(context);
+            await DifferentialEquationsLessonSeeder.SeedAsync(context);
+            await DiscreteMathematicsLessonSeeder.SeedAsync(context);
+            await FunctionsLessonSeeder.SeedAsync(context);
+            await GeometryLessonSeeder.SeedAsync(context);
+            await LogicAndSetTheoryLessonSeeder.SeedAsync(context);
+            await MatricesAndDeterminantsLessonSeeder.SeedAsync(context);
+            await ProbabilityLessonSeeder.SeedAsync(context);
+            await SequencesAndSeriesLessonSeeder.SeedAsync(context);
+            await StatisticsLessonSeeder.SeedAsync(context);
+            await TrigonometryLessonSeeder.SeedAsync(context);
+            await VectorsLessonSeeder.SeedAsync(context);
+
+
+            // Metadata
+
+            await TagSeed.SeedAsync(context);
+
+
+            // Relations
+
+            await LessonTagSeeder.SeedAsync(context);
+
+
+            // Questions
+
+            await PracticeQuestionSeeder.SeedAsync(context);
+        }
+        catch
+        {
+            await transaction.RollbackAsync();
+            throw;
+
+        } 
     }
 }

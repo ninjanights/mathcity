@@ -5,12 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace MathCity.Infrastructure.Settings;
+
 public class AISettings
 {
     public const string SectionName = "AI";
-    public string Provider { get; set; } = string.Empty;
-    public string Model { get; set; } = string.Empty;
-    public string BaseUrl { get; set; } = "http://localhost:11434";
 
-    public int Dimention { get; set; } = 768;
+    public string BaseUrl { get; set; }
+        = "https://api.jina.ai";
+
+    public string ApiKey { get; set; } = "";
+
+    public string Model { get; set; }
+        = "jina-embeddings-v3";
+
+    public int Dimension { get; set; }
+        = 1024;
 }

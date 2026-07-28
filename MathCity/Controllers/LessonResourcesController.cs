@@ -31,7 +31,7 @@ public class LessonResourcesController : ControllerBase
         if (file == null || file.Length == 0)
             return BadRequest("No file selected."); 
 
-        var upload = await _fileStorageService.UploadLessonResourceAsync(
+        var upload = await _fileStorageService.UploadDocumentAsync(
     request.LessonId,
     request.Title,
     request.DisplayOrder,

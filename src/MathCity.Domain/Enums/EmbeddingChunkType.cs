@@ -11,6 +11,7 @@ public enum EmbeddingChunkType
     Lesson = 1,
     Summary = 2,
     PracticeQuestion = 3,
-    Resource = 4,
-    Tag = 5
+    SolutionExplanation = 4,
+    Resource = 5,
+    Tag = 6
 }

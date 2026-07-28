@@ -6,13 +6,13 @@ using System.Net.Http.Json;
 
 namespace MathCity.Infrastructure.AI.Embeddings;
 
-public class EmbeddingGenerator : IEmbeddingGenerator
+public class JinaEmbeddingGenerator : IEmbeddingGenerator
 {
     private readonly HttpClient _httpClient;
     private readonly AISettings _settings;
 
 
-    public EmbeddingGenerator(
+    public JinaEmbeddingGenerator(
         HttpClient httpClient,
         IOptions<AISettings> options)
     {
@@ -26,16 +26,25 @@ public class EmbeddingGenerator : IEmbeddingGenerator
         string text,
         CancellationToken cancellationToken = default)
     {
-
-        var request = new EmbeddingRequest
+        var request = new
         {
-            Model = _settings.Model,
-            Prompt = text
+            model = _settings.Model,
+            input = new[]
+        {
+            text
+        }
         };
 
 
+        _httpClient.DefaultRequestHeaders.Authorization =
+        new System.Net.Http.Headers.AuthenticationHeaderValue(
+            "Bearer",
+            _settings.ApiKey
+        );
+
+
         var response = await _httpClient.PostAsJsonAsync(
-            "/api/embeddings",
+            "https://api.jina.ai/v1/embeddings",
             request,
             cancellationToken
         );
@@ -46,18 +55,20 @@ public class EmbeddingGenerator : IEmbeddingGenerator
 
         var result =
             await response.Content
-                .ReadFromJsonAsync<EmbeddingResponse>(
+                .ReadFromJsonAsync<JinaEmbeddingResponse>(
                     cancellationToken: cancellationToken
                 );
 
 
-        if (result?.Embedding == null)
+        if (result?.Data == null || result.Data.Count == 0)
             throw new Exception(
-                "Embedding generation failed"
+                "Jina embedding generation failed"
             );
 
 
-        return new Vector(result.Embedding);
+        return new Vector(
+            result.Data[0].Embedding
+        );
     }
 
 

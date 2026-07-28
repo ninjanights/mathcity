@@ -14,20 +14,14 @@ namespace MathCity.Infrastructure.Services;
 public class LessonService : ILessonService
 {
     private readonly ApplicationDbContext _context;
-    private readonly IFileStorageService _storage;
 
-    public LessonService(ApplicationDbContext context,
-          IFileStorageService storage)
+    public LessonService(ApplicationDbContext context)
     {
         _context = context;
-        _storage = storage;
     }
 
     public async Task<LessonResponse> CreateAsync(
-        CreateLessonRequest request,
-        Stream? thumbnailStream,
-        string? fileName,
-        string? contentType)
+        CreateLessonRequest request)
     {
         var topicExists = await _context.Topics
             .AnyAsync(x => x.Id == request.TopicId);
@@ -61,19 +55,9 @@ public class LessonService : ILessonService
         // Generate Lesson Id
         await _context.SaveChangesAsync();
 
-        if (thumbnailStream != null &&
-            fileName != null &&
-            contentType != null)
-        {
-            lesson.ThumbnailUrl =
-                await _storage.UploadLessonThumbnailAsync(
-                    lesson.Id,
-                    thumbnailStream,
-                    fileName,
-                    contentType);
-        }
+       
 
-        await _context.SaveChangesAsync();
+      
 
         return MapToResponse(lesson);
     }
@@ -168,7 +152,7 @@ public class LessonService : ILessonService
                 Difficulty = x.Difficulty,
                 TopicTitle = x.Topic.Title,
                 ReadingTimeMinutes = x.ReadingTimeMinutes,
-                ThumbnailUrl = x.ThumbnailUrl,
+                
                 DisplayOrder = x.DisplayOrder,
                 IsPublished = x.IsPublished
             })
@@ -198,10 +182,7 @@ public class LessonService : ILessonService
     }
     public async Task<LessonResponse> UpdateAsync(
      Guid id,
-     UpdateLessonRequest request,
-     Stream? thumbnailStream,
-     string? fileName,
-     string? contentType)
+     UpdateLessonRequest request)
     {
         var lesson = await _context.Lessons
             .FirstOrDefaultAsync(x => x.Id == id);
@@ -235,24 +216,9 @@ public class LessonService : ILessonService
                 .FirstAsync(x => x.Id == id);
         }
 
-        if (thumbnailStream != null &&
-     fileName != null &&
-     contentType != null)
-        {
-            var oldThumbnail = lesson.ThumbnailUrl;
+        
 
-            lesson.ThumbnailUrl =
-                await _storage.UploadLessonThumbnailAsync(
-                    lesson.Id,
-                    thumbnailStream,
-                    fileName,
-                    contentType);
-
-            if (!string.IsNullOrWhiteSpace(oldThumbnail))
-            {
-                await _storage.DeleteAsync(oldThumbnail);
-            }
-        }
+          
 
         await _context.SaveChangesAsync();
 
@@ -266,10 +232,7 @@ public class LessonService : ILessonService
         if (lesson == null)
             throw new NotFoundException("Lesson not found.");
 
-        if (!string.IsNullOrWhiteSpace(lesson.ThumbnailUrl))
-        {
-            await _storage.DeleteAsync(lesson.ThumbnailUrl);
-        }
+       
 
         _context.Lessons.Remove(lesson);
 
@@ -290,7 +253,7 @@ public class LessonService : ILessonService
             MarkdownContent = lesson.Content,
             Difficulty = lesson.Difficulty,
             ReadingTimeMinutes = lesson.ReadingTimeMinutes,
-            ThumbnailUrl = lesson.ThumbnailUrl,
+            
             IsPublished = lesson.IsPublished,
             DisplayOrder = lesson.DisplayOrder,
             IsBookmarked = isBookmarked

@@ -64,13 +64,16 @@ public static class DependencyInjection
         });
 
 
-        services.AddHttpClient<IEmbeddingGenerator, EmbeddingGenerator>(
+        services.AddHttpClient<IEmbeddingGenerator, JinaEmbeddingGenerator>(
 client =>
 {
  client.BaseAddress = new Uri(
      configuration["AI:BaseUrl"]!
  );
 });
+
+
+
         services.AddScoped<ILessonEmbeddingService, LessonEmbeddingService>();
 
 

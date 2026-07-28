@@ -29,7 +29,7 @@ public static class AlgebraLessonSeed
                 ReadingTimeMinutes = 10,
                 IsPublished = true,
                 DisplayOrder = 1,
-                ThumbnailUrl = ""
+                
             },
 
             new Lesson
@@ -43,7 +43,7 @@ public static class AlgebraLessonSeed
                 ReadingTimeMinutes = 15,
                 IsPublished = true,
                 DisplayOrder = 2,
-                ThumbnailUrl = ""
+                
             },
 
             new Lesson
@@ -57,7 +57,7 @@ public static class AlgebraLessonSeed
                 ReadingTimeMinutes = 20,
                 IsPublished = true,
                 DisplayOrder = 3,
-                ThumbnailUrl = ""
+                
             },
 
     new Lesson
@@ -71,7 +71,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -85,7 +85,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 15,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -99,7 +99,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 20,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 
 
@@ -119,7 +119,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -133,7 +133,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 15,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -147,7 +147,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 20,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 
 
@@ -165,7 +165,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -179,7 +179,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 15,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -193,7 +193,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 20,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 
 
@@ -213,7 +213,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -227,7 +227,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -241,7 +241,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 
    
@@ -259,7 +259,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -273,7 +273,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -287,7 +287,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 
 // Factorization
@@ -303,7 +303,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -317,7 +317,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -331,7 +331,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 // Rational Expressions
     new Lesson
@@ -345,7 +345,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -359,7 +359,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -373,7 +373,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 
    
@@ -390,7 +390,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -404,7 +404,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -418,7 +418,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
 
 // Radicals (Surds)
@@ -437,7 +437,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -451,7 +451,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -465,7 +465,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     }, 
 // Logarithms
     new Lesson
@@ -479,7 +479,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -493,7 +493,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -507,7 +507,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
     
 // Absolute Value
@@ -526,7 +526,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -540,7 +540,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -554,7 +554,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     },
    
 // Algebraic Identities
@@ -570,7 +570,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 10,
         IsPublished = true,
         DisplayOrder = 1,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -584,7 +584,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 18,
         IsPublished = true,
         DisplayOrder = 2,
-        ThumbnailUrl = ""
+        
     },
 
     new Lesson
@@ -598,7 +598,7 @@ public static class AlgebraLessonSeed
         ReadingTimeMinutes = 22,
         IsPublished = true,
         DisplayOrder = 3,
-        ThumbnailUrl = ""
+        
     }
 
 

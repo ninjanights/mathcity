@@ -38,7 +38,7 @@ public class LessonResourceService : ILessonResourceService
             Title = request.Title,
             
             FileName = upload.FileName,
-            FilePath = upload.FilePath,
+           
             FileUrl = upload.PublicUrl,
             FileSize = upload.Size,
             ContentType = upload.ContentType,

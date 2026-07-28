@@ -107,9 +107,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Simplifying and Evaluating Algebraic Expressions
-        // ==========================================================
+        
 
         AddQuestion(
             "Simplifying and Evaluating Algebraic Expressions",
@@ -172,9 +172,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Algebraic Expressions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Algebraic Expressions",
@@ -302,9 +302,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Solving Linear Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Linear Equations",
@@ -368,9 +368,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Applications and Practice of Linear Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Linear Equations",
@@ -431,9 +431,9 @@ public static class PracticeQuestionSeeder
             "Linear equations are widely used in finance, science, engineering, business, and everyday decision-making to model relationships between quantities.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Simultaneous Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Simultaneous Equations",
@@ -496,9 +496,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Methods for Solving Simultaneous Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods for Solving Simultaneous Equations",
@@ -561,9 +561,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Simultaneous Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Simultaneous Equations",
@@ -625,9 +625,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Inequalities
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Inequalities",
@@ -688,9 +688,9 @@ public static class PracticeQuestionSeeder
             "Inequalities are used to represent conditions, limits, and ranges in areas such as budgeting, science, engineering, and optimization problems.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Solving and Graphing Inequalities
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving and Graphing Inequalities",
@@ -754,9 +754,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Applications and Practice of Inequalities
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Inequalities",
@@ -818,9 +818,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Quadratic Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Quadratic Equations",
@@ -882,9 +882,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Methods for Solving Quadratic Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods for Solving Quadratic Equations",
@@ -948,9 +948,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Applications and Practice of Quadratic Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Quadratic Equations",
@@ -1015,9 +1015,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Introduction to Polynomials
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Polynomials",
@@ -1080,9 +1080,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Polynomial Operations and Factorization
-        // ==========================================================
+        
 
         AddQuestion(
             "Polynomial Operations and Factorization",
@@ -1145,9 +1145,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Polynomials
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Polynomials",
@@ -1209,9 +1209,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Factorization
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Factorization",
@@ -1274,9 +1274,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Methods of Factorization
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods of Factorization",
@@ -1339,9 +1339,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Factorization
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Factorization",
@@ -1405,9 +1405,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Introduction to Rational Expressions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Rational Expressions",
@@ -1470,9 +1470,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Simplifying and Operating on Rational Expressions
-        // ==========================================================
+        
 
         AddQuestion(
             "Simplifying and Operating on Rational Expressions",
@@ -1536,9 +1536,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Applications and Practice of Rational Expressions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Rational Expressions",
@@ -1599,9 +1599,9 @@ public static class PracticeQuestionSeeder
             "Rational expressions are widely used in algebra, calculus, physics, engineering, and scientific modelling.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Exponents
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Exponents",
@@ -1663,9 +1663,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Laws and Operations of Exponents
-        // ==========================================================
+        
 
         AddQuestion(
             "Laws and Operations of Exponents",
@@ -1726,9 +1726,9 @@ public static class PracticeQuestionSeeder
             "Exponent rules are essential for simplifying expressions in algebra, calculus, science, engineering, and computing.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Applications and Practice of Exponents
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Exponents",
@@ -1789,9 +1789,9 @@ public static class PracticeQuestionSeeder
             "Exponents are widely used in physics, computing, biology, finance, and scientific calculations.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Radicals and Surds
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Radicals and Surds",
@@ -1854,9 +1854,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Simplifying and Operating on Radicals
-        // ==========================================================
+        
 
         AddQuestion(
             "Simplifying and Operating on Radicals",
@@ -1920,9 +1920,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Applications and Practice of Radicals and Surds
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Radicals and Surds",
@@ -1983,9 +1983,9 @@ public static class PracticeQuestionSeeder
             "Radicals appear throughout algebra, geometry, calculus, physics, and engineering when exact values are required.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Logarithms
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Logarithms",
@@ -2046,9 +2046,9 @@ public static class PracticeQuestionSeeder
             "Logarithms simplify calculations involving exponential relationships and are widely used in mathematics, engineering, physics, chemistry, finance, and computer science.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Laws and Properties of Logarithms
-        // ==========================================================
+        
 
         AddQuestion(
             "Laws and Properties of Logarithms",
@@ -2111,9 +2111,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Logarithms
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Logarithms",
@@ -2174,9 +2174,9 @@ public static class PracticeQuestionSeeder
             "Logarithms are widely used in computer science, engineering, physics, finance, and information theory.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Absolute Value
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Absolute Value",
@@ -2239,9 +2239,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Operations and Equations with Absolute Value
-        // ==========================================================
+        
 
         AddQuestion(
             "Operations and Equations with Absolute Value",
@@ -2305,9 +2305,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Applications and Practice of Absolute Value
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Absolute Value",
@@ -2368,9 +2368,9 @@ public static class PracticeQuestionSeeder
             "Absolute value is widely used in statistics, computer science, engineering, optimization, and data analysis.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Algebraic Identities
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Algebraic Identities",
@@ -2432,9 +2432,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applying Algebraic Identities
-        // ==========================================================
+        
 
         AddQuestion(
             "Applying Algebraic Identities",
@@ -2497,9 +2497,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Algebraic Identities
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Algebraic Identities",
@@ -2563,9 +2563,9 @@ public static class PracticeQuestionSeeder
 
 
         // Geometry PQ. 2
-        // ==========================================================
+        
         // Introduction to Points, Lines & Angles
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Points, Lines & Angles",
@@ -2627,9 +2627,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Types of Points, Lines & Angles
-        // ==========================================================
+        
 
         AddQuestion(
             "Types of Points, Lines & Angles",
@@ -2691,9 +2691,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications of Points, Lines & Angles
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Points, Lines & Angles",
@@ -2756,9 +2756,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Introduction to Triangles
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Triangles",
@@ -2821,9 +2821,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Types of Triangles
-        // ==========================================================
+        
 
         AddQuestion(
             "Types of Triangles",
@@ -2886,9 +2886,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications of Triangles
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Triangles",
@@ -2957,9 +2957,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Introduction to Congruence
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Congruence",
@@ -3021,9 +3021,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Congruence Criteria
-        // ==========================================================
+        
 
         AddQuestion(
             "Congruence Criteria",
@@ -3085,9 +3085,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications of Congruence
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Congruence",
@@ -3150,9 +3150,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Introduction to Similarity
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Similarity",
@@ -3215,9 +3215,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Similarity Criteria
-        // ==========================================================
+        
 
         AddQuestion(
             "Similarity Criteria",
@@ -3279,9 +3279,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications of Similarity
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Similarity",
@@ -3345,9 +3345,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Introduction to Quadrilaterals
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Quadrilaterals",
@@ -3408,9 +3408,9 @@ public static class PracticeQuestionSeeder
             "Quadrilaterals such as rectangles and squares are commonly used in construction, engineering, manufacturing, and design because of their practical shapes and properties.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Types of Quadrilaterals
-        // ==========================================================
+        
 
         AddQuestion(
             "Types of Quadrilaterals",
@@ -3472,9 +3472,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications of Quadrilaterals
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Quadrilaterals",
@@ -3535,9 +3535,9 @@ public static class PracticeQuestionSeeder
             "Quadrilaterals are fundamental in architecture, engineering, computer graphics, and structural design.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Polygons
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Polygons",
@@ -3599,9 +3599,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Types of Polygons
-        // ==========================================================
+        
 
         AddQuestion(
             "Types of Polygons",
@@ -3665,9 +3665,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Applications of Polygons
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Polygons",
@@ -3729,9 +3729,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Circles
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Circles",
@@ -3795,9 +3795,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Parts and Properties of Circles
-        // ==========================================================
+        
 
         AddQuestion(
             "Parts and Properties of Circles",
@@ -3859,9 +3859,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications of Circles
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Circles",
@@ -3925,9 +3925,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Introduction to Geometric Constructions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Geometric Constructions",
@@ -3989,9 +3989,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Common Geometric Constructions
-        // ==========================================================
+        
 
         AddQuestion(
             "Common Geometric Constructions",
@@ -4053,9 +4053,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications of Geometric Constructions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Geometric Constructions",
@@ -4127,9 +4127,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Introduction to Area
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Area",
@@ -4192,9 +4192,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Area of Common Shapes
-        // ==========================================================
+        
 
         AddQuestion(
             "Area of Common Shapes",
@@ -4255,9 +4255,9 @@ public static class PracticeQuestionSeeder
             "Area calculations are essential in architecture, construction, land measurement, manufacturing, and many practical applications.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Applications of Area
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Area",
@@ -4321,9 +4321,9 @@ public static class PracticeQuestionSeeder
 
 
 
-        // ==========================================================
+        
         // Introduction to Perimeter
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Perimeter",
@@ -4386,9 +4386,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Calculating the Perimeter of Shapes
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating the Perimeter of Shapes",
@@ -4451,9 +4451,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications of Perimeter
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Perimeter",
@@ -4515,9 +4515,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Transformations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Transformations",
@@ -4579,9 +4579,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Types of Transformations
-        // ==========================================================
+        
 
         AddQuestion(
             "Types of Transformations",
@@ -4643,9 +4643,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications of Transformations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Transformations",
@@ -4707,9 +4707,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Coordinate Proofs
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Coordinate Proofs",
@@ -4771,9 +4771,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Methods of Coordinate Proofs
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods of Coordinate Proofs",
@@ -4834,9 +4834,9 @@ public static class PracticeQuestionSeeder
             "Coordinate proofs are used in geometry, engineering, computer graphics, and analytical mathematics.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Applications of Coordinate Proofs
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications of Coordinate Proofs",
@@ -6963,9 +6963,9 @@ public static class PracticeQuestionSeeder
 
 
         // PQ. 3
-        // ==========================================================
+        
         // Introduction to Cartesian Plane
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Cartesian Plane",
@@ -7027,9 +7027,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Understanding Coordinates and Quadrants
-        // ==========================================================
+        
 
         AddQuestion(
             "Understanding Coordinates and Quadrants",
@@ -7091,9 +7091,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Cartesian Plane
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Cartesian Plane",
@@ -7155,9 +7155,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Distance Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Distance Formula",
@@ -7219,9 +7219,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Distance Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Distance Formula",
@@ -7283,9 +7283,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Distance Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Distance Formula",
@@ -7346,9 +7346,9 @@ public static class PracticeQuestionSeeder
             "The distance formula is fundamental for solving real-world measurement problems involving coordinates.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Midpoint Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Midpoint Formula",
@@ -7410,9 +7410,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Midpoint Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Midpoint Formula",
@@ -7474,9 +7474,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Midpoint Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Midpoint Formula",
@@ -7537,9 +7537,9 @@ public static class PracticeQuestionSeeder
             "The midpoint formula is widely used in geometry, engineering, mapping, computer graphics, and construction to determine central positions.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Section Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Section Formula",
@@ -7601,9 +7601,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Section Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Section Formula",
@@ -7665,9 +7665,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Section Formula
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Section Formula",
@@ -7728,9 +7728,9 @@ public static class PracticeQuestionSeeder
             "The section formula has practical applications in geometry, engineering, mapping, construction, and computer graphics where proportional division is required.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Straight Line
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Straight Line",
@@ -7792,9 +7792,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Equations and Properties of Straight Lines
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Properties of Straight Lines",
@@ -7856,9 +7856,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Straight Lines
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Straight Lines",
@@ -7919,9 +7919,9 @@ public static class PracticeQuestionSeeder
             "Straight lines are widely used to model physical laws, engineering designs, and data trends.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Pair of Straight Lines
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Pair of Straight Lines",
@@ -7983,9 +7983,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Equations and Properties of Pair of Straight Lines
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Properties of Pair of Straight Lines",
@@ -8047,9 +8047,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Pair of Straight Lines
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Pair of Straight Lines",
@@ -8110,9 +8110,9 @@ public static class PracticeQuestionSeeder
             "Understanding how two lines relate helps solve many real-world problems in engineering, architecture, mapping, and mathematics.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Circle in Coordinate Geometry
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Circle in Coordinate Geometry",
@@ -8174,9 +8174,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Equations and Properties of Circle
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Properties of Circle",
@@ -8238,9 +8238,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Circle
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Circle",
@@ -8301,9 +8301,9 @@ public static class PracticeQuestionSeeder
             "Circle equations are widely used in physics, engineering, architecture, navigation, and computer graphics.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Parabola in Coordinate Geometry
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Parabola in Coordinate Geometry",
@@ -8365,9 +8365,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Equations and Properties of Parabola
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Properties of Parabola",
@@ -8429,9 +8429,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Parabola
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Parabola",
@@ -8492,9 +8492,9 @@ public static class PracticeQuestionSeeder
             "Parabolas are fundamental in projectile motion, satellite communication, optics, and engineering design.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Ellipse in Coordinate Geometry
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Ellipse in Coordinate Geometry",
@@ -8556,9 +8556,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Equations and Properties of Ellipse
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Properties of Ellipse",
@@ -8620,9 +8620,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Ellipse
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Ellipse",
@@ -8683,9 +8683,9 @@ public static class PracticeQuestionSeeder
             "Ellipses are fundamental in astronomy, engineering, architecture, optics, and many areas of applied mathematics.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Probability",
@@ -8747,9 +8747,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Basic Probability Rules
-        // ==========================================================
+        
 
         AddQuestion(
             "Basic Probability Rules",
@@ -8811,9 +8811,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Probability",
@@ -8874,9 +8874,9 @@ public static class PracticeQuestionSeeder
             "Probability supports decision-making in science, medicine, finance, engineering, business, and daily life whenever uncertainty exists.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Conic Sections
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Conic Sections",
@@ -8938,9 +8938,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Equations and Properties of Conic Sections
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Properties of Conic Sections",
@@ -9002,9 +9002,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Conic Sections
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Conic Sections",
@@ -9065,9 +9065,9 @@ public static class PracticeQuestionSeeder
             "Conic sections have numerous practical applications in science, engineering, physics, navigation, and technology.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Trigonometric Ratios
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Trigonometric Ratios",
@@ -9129,9 +9129,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Understanding and Solving Trigonometric Ratios
-        // ==========================================================
+        
 
         AddQuestion(
             "Understanding and Solving Trigonometric Ratios",
@@ -9195,9 +9195,9 @@ public static class PracticeQuestionSeeder
 
         // PQ. 4
 
-        // ==========================================================
+        
         // Applications and Practice of Trigonometric Ratios
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Trigonometric Ratios",
@@ -9259,9 +9259,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Trigonometric Identities
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Trigonometric Identities",
@@ -9323,9 +9323,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Simplifying Expressions Using Trigonometric Identities
-        // ==========================================================
+        
 
         AddQuestion(
             "Simplifying Expressions Using Trigonometric Identities",
@@ -9387,9 +9387,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Trigonometric Identities
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Trigonometric Identities",
@@ -9450,9 +9450,9 @@ public static class PracticeQuestionSeeder
             "Trigonometric identities are fundamental tools used across mathematics, engineering, computer graphics, navigation, and physics.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Compound Angles
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Compound Angles",
@@ -9514,9 +9514,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Compound Angle Formulas
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Compound Angle Formulas",
@@ -9578,9 +9578,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Compound Angles
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Compound Angles",
@@ -9641,9 +9641,9 @@ public static class PracticeQuestionSeeder
             "Compound angle formulas are fundamental tools in mathematics, physics, engineering, computer graphics, and signal processing.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Trigonometric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Trigonometric Equations",
@@ -9705,9 +9705,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Trigonometric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Trigonometric Equations",
@@ -9769,9 +9769,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Trigonometric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Trigonometric Equations",
@@ -9833,9 +9833,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Inverse Trigonometric Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Inverse Trigonometric Functions",
@@ -9897,9 +9897,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Inverse Trigonometric Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Inverse Trigonometric Functions",
@@ -9961,9 +9961,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Inverse Trigonometric Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Inverse Trigonometric Functions",
@@ -10024,9 +10024,9 @@ public static class PracticeQuestionSeeder
             "Inverse trigonometric functions are essential for solving practical problems involving unknown angles in many scientific and engineering fields.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Trigonometric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Trigonometric Equations",
@@ -10088,9 +10088,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Trigonometric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Trigonometric Equations",
@@ -10152,9 +10152,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Trigonometric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Trigonometric Equations",
@@ -10215,9 +10215,9 @@ public static class PracticeQuestionSeeder
             "Trigonometric equations are fundamental in physics, engineering, astronomy, navigation, computer graphics, and many other applications.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Heights & Distances
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Heights & Distances",
@@ -10279,9 +10279,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Heights & Distances
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Heights & Distances",
@@ -10343,9 +10343,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Heights & Distances
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Heights & Distances",
@@ -10406,9 +10406,9 @@ public static class PracticeQuestionSeeder
             "Heights and distances provide practical methods for measuring objects that are difficult or impossible to measure directly.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Graphs of Trigonometric Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Graphs of Trigonometric Functions",
@@ -10470,9 +10470,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Understanding and Analyzing Trigonometric Graphs
-        // ==========================================================
+        
 
         AddQuestion(
             "Understanding and Analyzing Trigonometric Graphs",
@@ -10534,9 +10534,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Trigonometric Graphs
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Trigonometric Graphs",
@@ -10597,9 +10597,9 @@ public static class PracticeQuestionSeeder
             "Trigonometric graphs are fundamental in engineering, physics, signal processing, astronomy, and computer graphics because they accurately describe periodic behaviour.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Relations",
@@ -10661,9 +10661,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Types and Properties of Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Types and Properties of Relations",
@@ -10725,9 +10725,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Relations",
@@ -10788,9 +10788,9 @@ public static class PracticeQuestionSeeder
             "Relations provide a formal way to describe associations and are fundamental in mathematics, databases, graph theory, and logic.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Types of Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Types of Functions",
@@ -10852,9 +10852,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Understanding and Classifying Types of Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Understanding and Classifying Types of Functions",
@@ -10916,9 +10916,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Types of Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Types of Functions",
@@ -10978,9 +10978,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Functions provide a mathematical framework for describing how one quantity depends on another across many disciplines.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Domain & Range
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Domain & Range",
@@ -11042,9 +11042,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Finding Domain & Range of Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding Domain & Range of Functions",
@@ -11106,9 +11106,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Domain & Range
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Domain & Range",
@@ -11169,9 +11169,9 @@ public static class PracticeQuestionSeeder
             "Understanding domain and range ensures mathematical models accurately represent real-world situations.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Composite Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Composite Functions",
@@ -11233,9 +11233,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Evaluating and Solving Composite Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Evaluating and Solving Composite Functions",
@@ -11297,9 +11297,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Composite Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Composite Functions",
@@ -11361,9 +11361,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Inverse Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Inverse Functions",
@@ -11425,9 +11425,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Finding and Verifying Inverse Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding and Verifying Inverse Functions",
@@ -11489,9 +11489,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Inverse Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Inverse Functions",
@@ -11553,9 +11553,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Graphing Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Graphing Functions",
@@ -11617,9 +11617,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Analyzing and Sketching Function Graphs
-        // ==========================================================
+        
 
         AddQuestion(
             "Analyzing and Sketching Function Graphs",
@@ -11681,9 +11681,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Graphing Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Graphing Functions",
@@ -11745,9 +11745,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Piecewise Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Piecewise Functions",
@@ -11809,9 +11809,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Evaluating and Graphing Piecewise Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Evaluating and Graphing Piecewise Functions",
@@ -11873,9 +11873,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Piecewise Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Piecewise Functions",
@@ -11936,9 +11936,9 @@ public static class PracticeQuestionSeeder
             "Piecewise functions accurately represent systems whose behaviour changes under different conditions.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Transformations of Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Transformations of Functions",
@@ -12000,9 +12000,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Graphing and Analyzing Function Transformations
-        // ==========================================================
+        
 
         AddQuestion(
             "Graphing and Analyzing Function Transformations",
@@ -12064,9 +12064,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Function Transformations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Function Transformations",
@@ -12128,9 +12128,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Arithmetic Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Arithmetic Progression",
@@ -12192,9 +12192,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Finding Terms and Sum of Arithmetic Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding Terms and Sum of Arithmetic Progression",
@@ -12257,9 +12257,9 @@ public static class PracticeQuestionSeeder
             5);
 
 // PQ. 6
-        // ==========================================================
+        
         // Applications and Practice of Arithmetic Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Arithmetic Progression",
@@ -12321,9 +12321,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Geometric Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Geometric Progression",
@@ -12385,9 +12385,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Finding Terms and Sum of Geometric Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding Terms and Sum of Geometric Progression",
@@ -12449,9 +12449,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Geometric Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Geometric Progression",
@@ -12512,9 +12512,9 @@ public static class PracticeQuestionSeeder
             "Geometric progressions are fundamental for understanding exponential growth and decay across many disciplines.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Harmonic Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Harmonic Progression",
@@ -12576,9 +12576,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Harmonic Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Harmonic Progression",
@@ -12640,9 +12640,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Harmonic Progression
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Harmonic Progression",
@@ -12703,9 +12703,9 @@ public static class PracticeQuestionSeeder
             "Harmonic progression provides an effective model for solving problems involving reciprocal values and varying rates.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Sigma Notation
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Sigma Notation",
@@ -12767,9 +12767,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Evaluating Expressions Using Sigma Notation
-        // ==========================================================
+        
 
         AddQuestion(
             "Evaluating Expressions Using Sigma Notation",
@@ -12831,9 +12831,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Sigma Notation
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Sigma Notation",
@@ -12893,9 +12893,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Sigma notation is a standard mathematical tool for expressing and evaluating sums across many disciplines.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Finite Series
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Finite Series",
@@ -12957,9 +12957,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Evaluating and Solving Finite Series
-        // ==========================================================
+        
 
         AddQuestion(
             "Evaluating and Solving Finite Series",
@@ -13021,9 +13021,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Finite Series
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Finite Series",
@@ -13083,9 +13083,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Finite series are essential whenever a limited collection of values must be summed efficiently.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Infinite Series
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Infinite Series",
@@ -13147,9 +13147,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Convergence and Evaluation of Infinite Series
-        // ==========================================================
+        
 
         AddQuestion(
             "Convergence and Evaluation of Infinite Series",
@@ -13211,9 +13211,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Infinite Series
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Infinite Series",
@@ -13273,9 +13273,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Infinite series are essential for modelling continuous systems and solving advanced mathematical problems.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Binomial Expansion
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Binomial Expansion",
@@ -13337,9 +13337,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applying the Binomial Theorem
-        // ==========================================================
+        
 
         AddQuestion(
             "Applying the Binomial Theorem",
@@ -13401,9 +13401,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Binomial Expansion
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Binomial Expansion",
@@ -13464,9 +13464,9 @@ public static class PracticeQuestionSeeder
             "The binomial theorem is a powerful mathematical tool with applications across many scientific disciplines.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Mathematical Induction
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Mathematical Induction",
@@ -13528,9 +13528,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Proving Statements Using Mathematical Induction
-        // ==========================================================
+        
 
         AddQuestion(
             "Proving Statements Using Mathematical Induction",
@@ -13592,9 +13592,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Mathematical Induction
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Mathematical Induction",
@@ -13655,9 +13655,9 @@ public static class PracticeQuestionSeeder
             "Mathematical induction is a fundamental proof technique with applications in theoretical and practical fields.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Matrix Basics
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Matrix Basics",
@@ -13719,9 +13719,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Elements and Representation of Matrices
-        // ==========================================================
+        
 
         AddQuestion(
             "Elements and Representation of Matrices",
@@ -13783,9 +13783,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Matrix Basics
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Matrix Basics",
@@ -13845,9 +13845,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Matrices form the foundation of many computational and scientific applications.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Types of Matrices
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Types of Matrices",
@@ -13909,9 +13909,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Properties and Classification of Matrices
-        // ==========================================================
+        
 
         AddQuestion(
             "Properties and Classification of Matrices",
@@ -13973,9 +13973,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Types of Matrices
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Types of Matrices",
@@ -14035,9 +14035,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Choosing the appropriate matrix type simplifies computations and enables many real-world applications.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Matrix Operations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Matrix Operations",
@@ -14099,9 +14099,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Performing Matrix Operations
-        // ==========================================================
+        
 
         AddQuestion(
             "Performing Matrix Operations",
@@ -14163,9 +14163,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Matrix Operations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Matrix Operations",
@@ -14225,9 +14225,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Matrix operations form the mathematical foundation of many modern computational systems.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Determinants
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Determinants",
@@ -14289,9 +14289,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Properties and Evaluation of Determinants
-        // ==========================================================
+        
 
         AddQuestion(
             "Properties and Evaluation of Determinants",
@@ -14353,9 +14353,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Determinants
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Determinants",
@@ -14415,9 +14415,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Determinants are fundamental tools with applications across mathematics, science, and engineering.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Inverse Matrix
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Inverse Matrix",
@@ -14479,9 +14479,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Finding and Verifying Inverse Matrices
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding and Verifying Inverse Matrices",
@@ -14543,9 +14543,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Inverse Matrices
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Inverse Matrices",
@@ -14797,9 +14797,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.C,
             "Matrix rank is fundamental in solving linear systems and analysing data across many scientific and technological fields.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Systems of Linear Equations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Systems of Linear Equations",
@@ -14861,9 +14861,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Begineer,
             5);
 
-        // ==========================================================
+        
         // Solving Systems of Linear Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Systems of Linear Equations",
@@ -14925,9 +14925,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Intermediate,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Systems of Linear Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Systems of Linear Equations",
@@ -14987,9 +14987,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Many computational algorithms depend on efficiently solving systems of linear equations.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Eigenvalues
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Eigenvalues",
@@ -15051,9 +15051,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Begineer,
             5);
 
-        // ==========================================================
+        
         // Finding Eigenvalues and Eigenvectors
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding Eigenvalues and Eigenvectors",
@@ -15115,9 +15115,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Intermediate,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Eigenvalues
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Eigenvalues",
@@ -15178,9 +15178,9 @@ public static class PracticeQuestionSeeder
             "Eigenvalues are fundamental tools in modern scientific computing and data analysis.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Eigenvectors
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Eigenvectors",
@@ -15242,9 +15242,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Begineer,
             5);
 
-        // ==========================================================
+        
         // Finding and Analyzing Eigenvectors
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding and Analyzing Eigenvectors",
@@ -15306,9 +15306,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Intermediate,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Eigenvectors
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Eigenvectors",
@@ -15369,9 +15369,9 @@ public static class PracticeQuestionSeeder
             "Eigenvectors have broad applications across mathematics, science, and engineering.",
             DifficultyLevel.Advance,
             5);
-        // ------------------------------------------------------------
+        
         // Introduction to Vector Basics
-        // ------------------------------------------------------------
+        
 
         AddQuestion(
             "Introduction to Vector Basics",
@@ -15434,9 +15434,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ------------------------------------------------------------
+        
         // Representation and Components of Vectors
-        // ------------------------------------------------------------
+        
 
         AddQuestion(
             "Representation and Components of Vectors",
@@ -15499,9 +15499,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ------------------------------------------------------------
+        
         // Applications and Practice of Vector Basics
-        // ------------------------------------------------------------
+        
 
         AddQuestion(
             "Applications and Practice of Vector Basics",
@@ -15563,9 +15563,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Vector Operations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Vector Operations",
@@ -15628,9 +15628,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Performing Vector Operations
-        // ==========================================================
+        
 
         AddQuestion(
             "Performing Vector Operations",
@@ -15693,9 +15693,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Vector Operations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Vector Operations",
@@ -15755,9 +15755,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Modern AI represents text, images, and knowledge as vectors to perform similarity search and machine learning.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Dot Product
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Dot Product",
@@ -15820,9 +15820,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Calculating and Interpreting Dot Product
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating and Interpreting Dot Product",
@@ -15885,9 +15885,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Dot Product
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Dot Product",
@@ -15947,9 +15947,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Modern AI models compare text and image embeddings using the dot product or cosine similarity.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Calculating and Interpreting Cross Product
-               // ==========================================================
+               
 
         AddQuestion(
             "Calculating and Interpreting Cross Product",
@@ -16012,9 +16012,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Cross Product
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Cross Product",
@@ -16075,9 +16075,9 @@ public static class PracticeQuestionSeeder
             "3D graphics, game engines, CAD software, robotics, and engineering all depend on cross product calculations.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Vector Projection
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Vector Projection",
@@ -16140,9 +16140,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Calculating Vector Projection
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Vector Projection",
@@ -16205,9 +16205,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Vector Projection
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Vector Projection",
@@ -16267,9 +16267,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Projection is widely used in embeddings, dimensionality reduction, similarity search, and recommendation systems.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Direction Cosines
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Direction Cosines",
@@ -16332,9 +16332,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Calculating Direction Cosines and Ratios
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Direction Cosines and Ratios",
@@ -16397,9 +16397,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Direction Cosines
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Direction Cosines",
@@ -16460,9 +16460,9 @@ public static class PracticeQuestionSeeder
             "3D graphics engines use direction information for rendering, animation, lighting, and camera control.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Lines in Space
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Lines in Space",
@@ -16525,9 +16525,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Equations and Relationships of Lines in Space
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Relationships of Lines in Space",
@@ -16590,9 +16590,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Lines in Space
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Lines in Space",
@@ -16652,9 +16652,9 @@ public static class PracticeQuestionSeeder
             QuestionOption.A,
             "Modern engineering, aerospace, robotics, CAD software, and physics all rely heavily on three-dimensional line geometry.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Planes
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Planes",
@@ -16717,9 +16717,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Equations and Properties of Planes
-        // ==========================================================
+        
 
         AddQuestion(
             "Equations and Properties of Planes",
@@ -16782,9 +16782,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Planes
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Planes",
@@ -16845,9 +16845,9 @@ public static class PracticeQuestionSeeder
             "Plane geometry is fundamental for modelling aircraft, buildings, robots, simulations, games, and scientific systems.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Basic Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Basic Probability",
@@ -16910,9 +16910,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Calculating Basic Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Basic Probability",
@@ -16975,9 +16975,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Basic Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Basic Probability",
@@ -17039,9 +17039,9 @@ public static class PracticeQuestionSeeder
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Conditional Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Conditional Probability",
@@ -17104,9 +17104,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Calculating Conditional Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Conditional Probability",
@@ -17169,9 +17169,9 @@ public static class PracticeQuestionSeeder
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Conditional Probability
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Conditional Probability",
@@ -17232,9 +17232,9 @@ public static class PracticeQuestionSeeder
             "Modern intelligent systems constantly revise predictions using newly observed information, making conditional probability one of the foundations of machine learning, Bayesian inference, and decision-making.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
 // Introduction to Bayes' Theorem
-// ==========================================================
+
 
 AddQuestion(
     "Introduction to Bayes' Theorem",
@@ -17297,9 +17297,9 @@ AddQuestion(
     5);
 
 
-// ==========================================================
+
 // Applying Bayes' Theorem
-// ==========================================================
+
 
 AddQuestion(
     "Applying Bayes' Theorem",
@@ -17362,9 +17362,9 @@ AddQuestion(
     5);
 
 
-// ==========================================================
+
 // Applications and Practice of Bayes' Theorem
-// ==========================================================
+
 
 AddQuestion(
     "Applications and Practice of Bayes' Theorem",
@@ -17424,9 +17424,9 @@ AddQuestion(
     QuestionOption.A,
     "Bayesian reasoning powers recommendation systems, robotics, autonomous vehicles, medical diagnosis, cybersecurity, search engines, and many machine learning models by allowing intelligent systems to learn from new evidence.",
     DifficultyLevel.Advance,
-    5);// ==========================================================
+    5);
        // Introduction to Random Variables
-       // ==========================================================
+       
 
         AddQuestion(
             "Introduction to Random Variables",
@@ -17489,9 +17489,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Types and Probability Distributions of Random Variables
-        // ==========================================================
+        
 
         AddQuestion(
             "Types and Probability Distributions of Random Variables",
@@ -17554,9 +17554,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Random Variables
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Random Variables",
@@ -17618,9 +17618,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Expected Value
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Expected Value",
@@ -17683,9 +17683,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Calculating Expected Value
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Expected Value",
@@ -17748,9 +17748,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Expected Value
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Expected Value",
@@ -17810,9 +17810,9 @@ AddQuestion(
             QuestionOption.A,
             "Expected value helps people and intelligent systems make better decisions by evaluating the average outcome of uncertain situations over time.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Binomial Distribution
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Binomial Distribution",
@@ -17875,9 +17875,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Calculating Binomial Probabilities
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Binomial Probabilities",
@@ -17940,9 +17940,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Binomial Distribution
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Binomial Distribution",
@@ -18002,9 +18002,9 @@ AddQuestion(
             QuestionOption.A,
             "It is widely applied in quality control, medicine, genetics, finance, artificial intelligence, reliability testing, surveys, and scientific experiments wherever repeated success-or-failure events occur.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Normal Distribution
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Normal Distribution",
@@ -18067,9 +18067,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Properties and Calculations of Normal Distribution
-        // ==========================================================
+        
 
         AddQuestion(
             "Properties and Calculations of Normal Distribution",
@@ -18132,9 +18132,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Normal Distribution
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Normal Distribution",
@@ -18195,9 +18195,9 @@ AddQuestion(
             "It is used throughout statistics, artificial intelligence, machine learning, finance, medicine, engineering, quality control, psychology, and scientific research because many naturally occurring measurements approximately follow a normal distribution.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Data Collection
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Data Collection",
@@ -18260,9 +18260,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Methods and Techniques of Data Collection
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods and Techniques of Data Collection",
@@ -18325,9 +18325,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Data Collection
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Data Collection",
@@ -18388,9 +18388,9 @@ AddQuestion(
             "High-quality data enables meaningful analysis in business, healthcare, scientific research, artificial intelligence, machine learning, government planning, finance, and data science.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Measures of Central Tendency
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Measures of Central Tendency",
@@ -18453,9 +18453,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Calculating Mean, Median, and Mode
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Mean, Median, and Mode",
@@ -18518,9 +18518,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Central Tendency
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Central Tendency",
@@ -18581,9 +18581,9 @@ AddQuestion(
             "Mean, median, and mode provide a quick summary before performing advanced statistical analysis or machine learning.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Measures of Dispersion
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Measures of Dispersion",
@@ -18646,9 +18646,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Calculating Variance and Standard Deviation
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Variance and Standard Deviation",
@@ -18711,9 +18711,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Measures of Dispersion
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Measures of Dispersion",
@@ -18774,9 +18774,9 @@ AddQuestion(
             "Mean, median, and mode describe the centre, while dispersion explains how spread out the data is, giving a more complete understanding of the dataset.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Frequency Distribution
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Frequency Distribution",
@@ -18839,9 +18839,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Creating and Analyzing Frequency Distributions
-        // ==========================================================
+        
 
         AddQuestion(
             "Creating and Analyzing Frequency Distributions",
@@ -18904,9 +18904,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Frequency Distribution
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Frequency Distribution",
@@ -18966,9 +18966,9 @@ AddQuestion(
             QuestionOption.A,
             "Organized data makes trends, clusters, and unusual values much easier to detect.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Histograms
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Histograms",
@@ -19031,9 +19031,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Creating and Interpreting Histograms
-        // ==========================================================
+        
 
         AddQuestion(
             "Creating and Interpreting Histograms",
@@ -19096,9 +19096,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Histograms
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Histograms",
@@ -19158,9 +19158,9 @@ AddQuestion(
             QuestionOption.A,
             "Histograms make it easier to visualize the shape, spread, and concentration of numerical data.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Box Plots
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Box Plots",
@@ -19223,9 +19223,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Creating and Interpreting Box Plots
-        // ==========================================================
+        
 
         AddQuestion(
             "Creating and Interpreting Box Plots",
@@ -19288,9 +19288,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Box Plots
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Box Plots",
@@ -19350,9 +19350,9 @@ AddQuestion(
             QuestionOption.A,
             "Box plots provide a compact summary of the centre, spread, and unusual values in a dataset.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Correlation
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Correlation",
@@ -19415,9 +19415,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Calculating and Interpreting Correlation
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating and Interpreting Correlation",
@@ -19480,9 +19480,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Correlation
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Correlation",
@@ -19542,9 +19542,9 @@ AddQuestion(
             QuestionOption.A,
             "Two variables may be correlated without one causing the other. Correlation does not imply causation.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Regression
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Regression",
@@ -19607,9 +19607,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Linear Regression and Prediction Models
-        // ==========================================================
+        
 
         AddQuestion(
             "Linear Regression and Prediction Models",
@@ -19672,9 +19672,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Regression
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Regression",
@@ -19734,9 +19734,9 @@ AddQuestion(
             QuestionOption.A,
             "Regression provides useful predictions based on observed patterns, but no model is perfectly accurate.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Sampling
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Sampling",
@@ -19799,9 +19799,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Sampling Methods and Techniques
-        // ==========================================================
+        
 
         AddQuestion(
             "Sampling Methods and Techniques",
@@ -19864,9 +19864,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Sampling
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Sampling",
@@ -19927,9 +19927,9 @@ AddQuestion(
             "Sampling enables efficient analysis while maintaining reasonable accuracy when done correctly.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Hypothesis Testing
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Hypothesis Testing",
@@ -19992,9 +19992,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Statistical Tests and Significance Levels
-        // ==========================================================
+        
 
         AddQuestion(
             "Statistical Tests and Significance Levels",
@@ -20057,9 +20057,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Hypothesis Testing
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Hypothesis Testing",
@@ -20119,9 +20119,9 @@ AddQuestion(
             QuestionOption.A,
             "Hypothesis testing provides a systematic framework for making informed decisions based on statistical evidence.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Limits
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Limits",
@@ -20184,9 +20184,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Calculating and Evaluating Limits
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating and Evaluating Limits",
@@ -20249,9 +20249,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Limits
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Limits",
@@ -20312,9 +20312,9 @@ AddQuestion(
             "Limits form the basis for derivatives, integrals, continuity, and many mathematical models used across science and engineering.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Continuity
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Continuity",
@@ -20377,9 +20377,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Properties and Types of Continuity
-        // ==========================================================
+        
 
         AddQuestion(
             "Properties and Types of Continuity",
@@ -20442,9 +20442,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Continuity
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Continuity",
@@ -20504,9 +20504,9 @@ AddQuestion(
             QuestionOption.A,
             "Many important theorems and techniques in calculus assume functions are continuous.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
 // Introduction to Differentiation
-// ==========================================================
+
 
 AddQuestion(
     "Introduction to Differentiation",
@@ -20569,9 +20569,9 @@ AddQuestion(
     5);
 
 
-// ==========================================================
+
 // Rules and Techniques of Differentiation
-// ==========================================================
+
 
 AddQuestion(
     "Rules and Techniques of Differentiation",
@@ -20634,9 +20634,9 @@ AddQuestion(
     5);
 
 
-// ==========================================================
+
 // Applications and Practice of Differentiation
-// ==========================================================
+
 
 AddQuestion(
     "Applications and Practice of Differentiation",
@@ -20696,9 +20696,9 @@ AddQuestion(
     QuestionOption.A,
     "Derivatives are fundamental for modelling changing quantities across science, engineering, AI, and economics.",
     DifficultyLevel.Advance,
-    5);// ==========================================================
+    5);
        // Introduction to Applications of Derivatives
-       // ==========================================================
+       
 
         AddQuestion(
             "Introduction to Applications of Derivatives",
@@ -20761,9 +20761,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Optimization and Related Rates
-        // ==========================================================
+        
 
         AddQuestion(
             "Optimization and Related Rates",
@@ -20826,9 +20826,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Derivatives
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Derivatives",
@@ -20888,9 +20888,9 @@ AddQuestion(
             QuestionOption.A,
             "Derivatives are fundamental across science, engineering, economics, AI, and many other fields.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Indefinite Integration
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Indefinite Integration",
@@ -20953,9 +20953,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Methods and Techniques of Indefinite Integration
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods and Techniques of Indefinite Integration",
@@ -21018,9 +21018,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Indefinite Integration
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Indefinite Integration",
@@ -21081,9 +21081,9 @@ AddQuestion(
             "Integration is fundamental in science, engineering, economics, AI, and mathematical modelling.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Applications of Integration
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Applications of Integration",
@@ -21146,9 +21146,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Area, Volume, and Real-World Applications of Integration
-        // ==========================================================
+        
 
         AddQuestion(
             "Area, Volume, and Real-World Applications of Integration",
@@ -21211,9 +21211,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Advanced Applications and Practice of Integration
-        // ==========================================================
+        
 
         AddQuestion(
             "Advanced Applications and Practice of Integration",
@@ -21274,9 +21274,9 @@ AddQuestion(
             "Integration is fundamental wherever accumulation, area, volume, probability, or continuous change is involved.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Parametric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Parametric Equations",
@@ -21339,9 +21339,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Graphing and Differentiating Parametric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Graphing and Differentiating Parametric Equations",
@@ -21404,9 +21404,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Parametric Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Parametric Equations",
@@ -21466,9 +21466,9 @@ AddQuestion(
             QuestionOption.A,
             "Parametric equations are ideal for modelling dynamic systems and complex geometric paths.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Polar Coordinates
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Polar Coordinates",
@@ -21531,9 +21531,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Graphs and Transformations in Polar Coordinates
-        // ==========================================================
+        
 
         AddQuestion(
             "Graphs and Transformations in Polar Coordinates",
@@ -21596,9 +21596,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Polar Coordinates
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Polar Coordinates",
@@ -21659,9 +21659,9 @@ AddQuestion(
             "Polar coordinates provide elegant solutions whenever radial distance and angles are the natural variables.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Multivariable Calculus
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Multivariable Calculus",
@@ -21724,9 +21724,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Partial Derivatives and Multiple Integrals
-        // ==========================================================
+        
 
         AddQuestion(
             "Partial Derivatives and Multiple Integrals",
@@ -21789,9 +21789,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Multivariable Calculus
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Multivariable Calculus",
@@ -21852,9 +21852,9 @@ AddQuestion(
             "Modern science, engineering, AI, economics, and simulation all depend on analysing systems with multiple variables.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Differential Equations",
@@ -21917,9 +21917,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Types and Classification of Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Types and Classification of Differential Equations",
@@ -21982,9 +21982,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Differential Equations",
@@ -22045,9 +22045,9 @@ AddQuestion(
             "They provide mathematical models for changing systems across science, engineering, economics, biology, and AI.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to First Order Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to First Order Differential Equations",
@@ -22110,9 +22110,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Methods for Solving First Order Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods for Solving First Order Differential Equations",
@@ -22175,9 +22175,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of First Order Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of First Order Differential Equations",
@@ -22237,9 +22237,9 @@ AddQuestion(
             QuestionOption.A,
             "They are fundamental tools in science, engineering, economics, biology, and artificial intelligence.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Separable Equations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Separable Equations",
@@ -22302,9 +22302,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Solving Separable Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Separable Differential Equations",
@@ -22367,9 +22367,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Separable Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Separable Equations",
@@ -22429,9 +22429,9 @@ AddQuestion(
             QuestionOption.A,
             "Many important physical, biological, and engineering models have exact solutions using separation of variables.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Linear Differential Equations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Linear Differential Equations",
@@ -22494,9 +22494,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Solving Linear Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Linear Differential Equations",
@@ -22559,9 +22559,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Linear Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Linear Differential Equations",
@@ -22621,9 +22621,9 @@ AddQuestion(
             QuestionOption.A,
             "They are widely used across engineering, science, economics, physics, and many other disciplines.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Homogeneous Differential Equations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Homogeneous Differential Equations",
@@ -22686,9 +22686,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Methods for Solving Homogeneous Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods for Solving Homogeneous Equations",
@@ -22751,9 +22751,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Homogeneous Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Homogeneous Equations",
@@ -22813,9 +22813,9 @@ AddQuestion(
             QuestionOption.A,
             "Appropriate substitutions transform otherwise difficult equations into easier ones.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Exact Equations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Exact Equations",
@@ -22878,9 +22878,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Solving Exact Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Exact Differential Equations",
@@ -22943,9 +22943,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Exact Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Exact Equations",
@@ -23005,9 +23005,9 @@ AddQuestion(
             QuestionOption.A,
             "They provide elegant analytical solutions for many real-world systems.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Higher Order Differential Equations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Higher Order Differential Equations",
@@ -23070,9 +23070,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Methods for Solving Higher Order Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Methods for Solving Higher Order Differential Equations",
@@ -23135,9 +23135,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Higher Order Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Higher Order Differential Equations",
@@ -23197,9 +23197,9 @@ AddQuestion(
             QuestionOption.A,
             "They provide mathematical models for many real-world dynamic systems.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Applications of Differential Equations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Applications of Differential Equations",
@@ -23262,9 +23262,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Mathematical Modeling with Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Mathematical Modeling with Differential Equations",
@@ -23327,9 +23327,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Advanced Applications and Practice of Differential Equations
-        // ==========================================================
+        
 
         AddQuestion(
             "Advanced Applications and Practice of Differential Equations",
@@ -23390,9 +23390,9 @@ AddQuestion(
             "They are one of the most powerful tools for describing dynamic systems across many disciplines.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Imaginary Numbers
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Imaginary Numbers",
@@ -23455,9 +23455,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Operations with Imaginary Numbers
-        // ==========================================================
+        
 
         AddQuestion(
             "Operations with Imaginary Numbers",
@@ -23520,9 +23520,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Imaginary Numbers
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Imaginary Numbers",
@@ -23582,9 +23582,9 @@ AddQuestion(
             QuestionOption.B,
             "They allow solutions to many mathematical and engineering problems that have no real-number solutions.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to the Complex Plane
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to the Complex Plane",
@@ -23647,9 +23647,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Plotting and Operations on the Complex Plane
-        // ==========================================================
+        
 
         AddQuestion(
             "Plotting and Operations on the Complex Plane",
@@ -23712,9 +23712,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of the Complex Plane
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of the Complex Plane",
@@ -23774,9 +23774,9 @@ AddQuestion(
             QuestionOption.A,
             "The complex plane connects algebra with geometry, making many advanced concepts easier to understand.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Polar Form of Complex Numbers
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Polar Form of Complex Numbers",
@@ -23839,9 +23839,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Converting and Operating with Polar Form
-        // ==========================================================
+        
 
         AddQuestion(
             "Converting and Operating with Polar Form",
@@ -23904,9 +23904,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Polar Form
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Polar Form",
@@ -23966,9 +23966,9 @@ AddQuestion(
             QuestionOption.A,
             "Polar form greatly simplifies many operations on complex numbers.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Modulus and Argument
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Modulus and Argument",
@@ -24031,9 +24031,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Calculating Modulus and Argument
-        // ==========================================================
+        
 
         AddQuestion(
             "Calculating Modulus and Argument",
@@ -24096,9 +24096,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Modulus and Argument
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Modulus and Argument",
@@ -24158,9 +24158,9 @@ AddQuestion(
             QuestionOption.A,
             "Polar representation greatly simplifies many complex number operations.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to De Moivre's Theorem
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to De Moivre's Theorem",
@@ -24223,9 +24223,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Using De Moivre's Theorem
-        // ==========================================================
+        
 
         AddQuestion(
             "Using De Moivre's Theorem",
@@ -24288,9 +24288,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of De Moivre's Theorem
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of De Moivre's Theorem",
@@ -24350,9 +24350,9 @@ AddQuestion(
             QuestionOption.A,
             "The theorem makes computations involving powers and roots much simpler.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Roots of Complex Numbers
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Roots of Complex Numbers",
@@ -24415,9 +24415,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Finding Roots Using Polar Form
-        // ==========================================================
+        
 
         AddQuestion(
             "Finding Roots Using Polar Form",
@@ -24480,9 +24480,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Complex Roots
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Complex Roots",
@@ -24543,9 +24543,9 @@ AddQuestion(
             "Many polynomial equations require complex roots to obtain all possible solutions.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Understanding Complex Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Understanding Complex Functions",
@@ -24608,9 +24608,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Analytic Functions and Complex Transformations
-        // ==========================================================
+        
 
         AddQuestion(
             "Analytic Functions and Complex Transformations",
@@ -24673,9 +24673,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Real-World Applications of Complex Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Real-World Applications of Complex Functions",
@@ -24735,9 +24735,9 @@ AddQuestion(
             QuestionOption.A,
             "Complex analysis provides elegant solutions to many engineering and physics problems.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Counting Principles
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Counting Principles",
@@ -24800,9 +24800,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Permutations and Combinations
-        // ==========================================================
+        
 
         AddQuestion(
             "Permutations and Combinations",
@@ -24865,9 +24865,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Counting Principles
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Counting Principles",
@@ -24927,9 +24927,9 @@ AddQuestion(
             QuestionOption.A,
             "Counting principles make solving large combinatorial problems manageable.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Permutations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Permutations",
@@ -24992,9 +24992,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Permutation Formulas and Techniques
-        // ==========================================================
+        
 
         AddQuestion(
             "Permutation Formulas and Techniques",
@@ -25057,9 +25057,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Permutations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Permutations",
@@ -25119,9 +25119,9 @@ AddQuestion(
             QuestionOption.A,
             "Permutations provide systematic methods for arrangement problems.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Combinations
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Combinations",
@@ -25184,9 +25184,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Combination Formulas and Techniques
-        // ==========================================================
+        
 
         AddQuestion(
             "Combination Formulas and Techniques",
@@ -25249,9 +25249,9 @@ AddQuestion(
             5);
 
 
-        // ==========================================================
+        
         // Applications and Practice of Combinations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Combinations",
@@ -25313,9 +25313,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Recurrence Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Recurrence Relations",
@@ -25377,9 +25377,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Recurrence Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Recurrence Relations",
@@ -25441,9 +25441,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Recurrence Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Recurrence Relations",
@@ -25504,9 +25504,9 @@ AddQuestion(
             "Recurrence relations describe iterative processes found in algorithms, simulations, economics, biology, and engineering.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Graph Theory
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Graph Theory",
@@ -25568,9 +25568,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Graph Structures and Algorithms
-        // ==========================================================
+        
 
         AddQuestion(
             "Graph Structures and Algorithms",
@@ -25632,9 +25632,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Graph Theory
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Graph Theory",
@@ -25695,9 +25695,9 @@ AddQuestion(
             "Knowledge graphs, recommendation systems, and graph neural networks rely heavily on graph theory.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Trees
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Trees",
@@ -25759,9 +25759,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Tree Properties and Algorithms
-        // ==========================================================
+        
 
         AddQuestion(
             "Tree Properties and Algorithms",
@@ -25823,9 +25823,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Trees
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Trees",
@@ -25886,9 +25886,9 @@ AddQuestion(
             "Compilers use expression trees to represent and evaluate mathematical expressions.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Boolean Algebra
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Boolean Algebra",
@@ -25950,9 +25950,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Boolean Laws and Logic Circuits
-        // ==========================================================
+        
 
         AddQuestion(
             "Boolean Laws and Logic Circuits",
@@ -26014,9 +26014,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Boolean Algebra
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Boolean Algebra",
@@ -26077,9 +26077,9 @@ AddQuestion(
             "Boolean algebra is the mathematical foundation of digital electronic circuit design.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Number Theory
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Number Theory",
@@ -26141,9 +26141,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Prime Numbers and Number Theory Techniques
-        // ==========================================================
+        
 
         AddQuestion(
             "Prime Numbers and Number Theory Techniques",
@@ -26205,9 +26205,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Number Theory
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Number Theory",
@@ -26268,9 +26268,9 @@ AddQuestion(
             "Public-key cryptography, such as RSA, uses properties of large prime numbers.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Algorithms
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Algorithms",
@@ -26332,9 +26332,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Algorithm Design and Analysis
-        // ==========================================================
+        
 
         AddQuestion(
             "Algorithm Design and Analysis",
@@ -26396,9 +26396,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Advanced Algorithms and Applications
-        // ==========================================================
+        
 
         AddQuestion(
             "Advanced Algorithms and Applications",
@@ -26460,9 +26460,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Sets
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Sets",
@@ -26524,9 +26524,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Set Operations and Relationships
-        // ==========================================================
+        
 
         AddQuestion(
             "Set Operations and Relationships",
@@ -26588,9 +26588,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Sets
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Sets",
@@ -26652,9 +26652,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Introduction to Set Operations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Set Operations",
@@ -26716,9 +26716,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Advanced Set Operations and Laws
-        // ==========================================================
+        
 
         AddQuestion(
             "Advanced Set Operations and Laws",
@@ -26780,9 +26780,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Set Operations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Set Operations",
@@ -26842,9 +26842,9 @@ AddQuestion(
             QuestionOption.A,
             "Algorithms and databases frequently manipulate collections using set operations.",
             DifficultyLevel.Advance,
-            5);// ==========================================================
+            5);
                // Introduction to Venn Diagrams
-               // ==========================================================
+               
 
         AddQuestion(
             "Introduction to Venn Diagrams",
@@ -26906,9 +26906,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Solving Problems Using Venn Diagrams
-        // ==========================================================
+        
 
         AddQuestion(
             "Solving Problems Using Venn Diagrams",
@@ -26970,9 +26970,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Venn Diagrams
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Venn Diagrams",
@@ -27033,9 +27033,9 @@ AddQuestion(
             "Venn diagrams effectively show how different survey groups overlap.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Cartesian Product
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Cartesian Product",
@@ -27097,9 +27097,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Properties and Applications of Cartesian Products
-        // ==========================================================
+        
 
         AddQuestion(
             "Properties and Applications of Cartesian Products",
@@ -27161,9 +27161,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Advanced Problems and Practice of Cartesian Products
-        // ==========================================================
+        
 
         AddQuestion(
             "Advanced Problems and Practice of Cartesian Products",
@@ -27224,9 +27224,9 @@ AddQuestion(
             "Cartesian products provide a mathematical foundation for modelling relationships between two sets.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Relations",
@@ -27288,9 +27288,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Properties and Types of Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Properties and Types of Relations",
@@ -27352,9 +27352,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Relations
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Relations",
@@ -27415,9 +27415,9 @@ AddQuestion(
             "Functions are special kinds of relations with exactly one output for each input.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Functions",
@@ -27479,9 +27479,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Types and Properties of Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Types and Properties of Functions",
@@ -27543,9 +27543,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Functions
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Functions",
@@ -27606,9 +27606,9 @@ AddQuestion(
             "Functions express how one variable changes with respect to another.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Propositional Logic
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Propositional Logic",
@@ -27670,9 +27670,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Logical Operators and Truth Tables
-        // ==========================================================
+        
 
         AddQuestion(
             "Logical Operators and Truth Tables",
@@ -27734,9 +27734,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Propositional Logic
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Propositional Logic",
@@ -27797,9 +27797,9 @@ AddQuestion(
             "SQL WHERE clauses use logical operators to filter records.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Predicate Logic
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Predicate Logic",
@@ -27861,9 +27861,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Quantifiers and Logical Reasoning
-        // ==========================================================
+        
 
         AddQuestion(
             "Quantifiers and Logical Reasoning",
@@ -27925,9 +27925,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Predicate Logic
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Predicate Logic",
@@ -27988,9 +27988,9 @@ AddQuestion(
             "Predicate logic provides a precise way to express and analyse mathematical relationships.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Truth Tables
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Truth Tables",
@@ -28052,9 +28052,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Constructing and Simplifying Truth Tables
-        // ==========================================================
+        
 
         AddQuestion(
             "Constructing and Simplifying Truth Tables",
@@ -28116,9 +28116,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Truth Tables
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Truth Tables",
@@ -28179,9 +28179,9 @@ AddQuestion(
             "Truth tables systematically evaluate every possible logical case.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Logical Equivalence
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Logical Equivalence",
@@ -28243,9 +28243,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Laws and Methods of Logical Equivalence
-        // ==========================================================
+        
 
         AddQuestion(
             "Laws and Methods of Logical Equivalence",
@@ -28307,9 +28307,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Applications and Practice of Logical Equivalence
-        // ==========================================================
+        
 
         AddQuestion(
             "Applications and Practice of Logical Equivalence",
@@ -28370,9 +28370,9 @@ AddQuestion(
             "Equivalent expressions preserve meaning while reducing complexity.",
             DifficultyLevel.Advance,
             5);
-        // ==========================================================
+        
         // Introduction to Mathematical Proofs
-        // ==========================================================
+        
 
         AddQuestion(
             "Introduction to Mathematical Proofs",
@@ -28434,9 +28434,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Common Proof Methods and Strategies
-        // ==========================================================
+        
 
         AddQuestion(
             "Common Proof Methods and Strategies",
@@ -28498,9 +28498,9 @@ AddQuestion(
             DifficultyLevel.Advance,
             5);
 
-        // ==========================================================
+        
         // Advanced Proof Applications and Practice
-        // ==========================================================
+        
 
         AddQuestion(
             "Advanced Proof Applications and Practice",

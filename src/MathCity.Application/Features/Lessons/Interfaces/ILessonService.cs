@@ -7,10 +7,8 @@ namespace MathCity.Application.Features.Lessons.Interfaces;
 public interface ILessonService
 {
     Task<LessonResponse> CreateAsync(
-     CreateLessonRequest request,
-     Stream? thumbnailStream,
-     string? fileName,
-     string? contentType);
+    CreateLessonRequest request
+        );
 
     Task<PagedResult<LessonListResponse>> GetAllAsync(
      LessonQuery query);
@@ -23,10 +21,7 @@ public interface ILessonService
 
     Task<LessonResponse> UpdateAsync(
     Guid id,
-    UpdateLessonRequest request,
-    Stream? thumbnailStream,
-    string? fileName,
-    string? contentType);
+    UpdateLessonRequest request);
 
     Task MoveAsync(
     Guid id,

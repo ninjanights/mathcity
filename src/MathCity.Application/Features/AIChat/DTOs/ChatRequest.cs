@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MathCity.Domain.Common;
 
-namespace MathCity.Domain.Enums;
-
-public enum ResourceType
+namespace MathCity.Application.Features.AIChat.DTOs
 {
-    Text = 1,
-    Pdf = 2,   
+    internal class ChatRequest
+    {
+    }
 }

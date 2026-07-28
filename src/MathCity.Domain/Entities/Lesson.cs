@@ -30,8 +30,6 @@ public class Lesson : BaseEntity
 
     public int DisplayOrder { get; set; }
 
-    public string ThumbnailUrl { get; set; } = string.Empty;
-
     public DateTime? EmbeddingsGeneratedAt { get; set; }
 
     public ICollection<LessonResource> Resources { get; set; } = new List<LessonResource>();

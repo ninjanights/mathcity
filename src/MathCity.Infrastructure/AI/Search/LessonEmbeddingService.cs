@@ -1,4 +1,5 @@
 ﻿using MathCity.Application.Features.LessonVectorEmbeddings.DTOs;
+using MathCity.Application.Features.LessonVectorEmbeddings.Enums;
 using MathCity.Application.Features.LessonVectorEmbeddings.Interfaces;
 using MathCity.Domain.Entities;
 using MathCity.Domain.Enums;
@@ -69,10 +70,11 @@ public class LessonEmbeddingService : ILessonEmbeddingService
             {
                 var vector = await _embeddingGenerator.GenerateAsync(chunk.Content);
                 var dimension = vector.ToArray().Length;
-                if (dimension != 768)
+
+                if (dimension != _settings.Dimension)
                 {
                     throw new Exception(
-                        $"Invalid embedding dimension. Expected 768, got {dimension}."
+                        $"Invalid embedding dimension. Expected {_settings.Dimension}, got {dimension}."
                     );
                 }
 
@@ -129,6 +131,31 @@ public class LessonEmbeddingService : ILessonEmbeddingService
     {
 
         var queryVector = await _embeddingGenerator.GenerateAsync(request.Query);
+
+        var query = _context.LessonVectorEmbeddings.AsQueryable();
+        switch (request.Context)
+        {
+            case SearchContext.Lesson:
+                if (request.LessonId.HasValue)
+                    query = query.Where(x => x.LessonId == request.LessonId.Value);
+                break;
+
+            case SearchContext.Topic:
+                if (request.TopicId.HasValue)
+                    query = query.Where(x => x.Lesson.TopicId == request.TopicId.Value);
+                break;
+
+            case SearchContext.Chapter:
+                if (request.ChapterId.HasValue)
+                    query = query.Where(x => x.Lesson.Topic.ChapterId == request.ChapterId.Value);
+                break;
+
+            case SearchContext.Global:
+            default:
+                break;
+        }
+
+
 
         var results = await _context.LessonVectorEmbeddings
             .OrderBy(x => x.Embedding.CosineDistance(queryVector))
@@ -196,7 +223,6 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
         if (lesson.LessonTags.Any())
 
-
             chunks.Add(new EmbeddingChunk
             {
                 Title = $"{lesson.Title} Tags",
@@ -238,9 +264,7 @@ public class LessonEmbeddingService : ILessonEmbeddingService
         Description:
         {resource.Description}
 
-        File:
-        {resource.FileName}
-        """,
+     """,
 
                 Type = EmbeddingChunkType.Resource,
 
@@ -285,6 +309,33 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
                 SourceId = question.Id
             });
+
+            // Solution / explanation
+            chunks.Add(new EmbeddingChunk
+            {
+                Title = "Practice Question Solution",
+
+                Content =
+                $"""
+        Question:
+        {question.Question}
+
+        Correct Answer:
+        {question.CorrectAnswer}
+
+        Explanation:
+        {question.Explanation}
+        """,
+
+                Type = EmbeddingChunkType.SolutionExplanation,
+
+                SourceId = question.Id
+            });
+
+
+
+
+
         }
 
         if (lesson.LessonTags.Any())

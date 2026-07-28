@@ -20,7 +20,6 @@ public class ApplicationDbContext
     {
     }
 
-
     public DbSet<Subject> Subjects => Set<Subject>();
 
     public DbSet<Topic> Topics => Set<Topic>();
@@ -51,9 +50,8 @@ public class ApplicationDbContext
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-        builder.HasPostgresExtension("vector");
         base.OnModelCreating(builder);
+        builder.HasPostgresExtension("vector");
         builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-
     }
 }

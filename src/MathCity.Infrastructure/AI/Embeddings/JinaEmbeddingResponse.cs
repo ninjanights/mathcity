@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace MathCity.Infrastructure.AI.Embeddings;
 
-public class EmbeddingResponse
+public class JinaEmbeddingResponse
+{
+    public List<JinaEmbeddingData> Data { get; set; } = [];
+}
+
+
+public class JinaEmbeddingData
 {
     public float[] Embedding { get; set; } = [];
 }
