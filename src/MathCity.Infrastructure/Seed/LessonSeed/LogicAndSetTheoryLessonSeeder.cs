@@ -201,9 +201,9 @@ new Lesson
 
 new Lesson
 {
-    TopicId = topics["Relations"].Id,
+    TopicId = topics["Relations in Set Theory"].Id,
     Title = "Introduction to Relations",
-    Slug = "introduction-to-relations",
+    Slug = "introduction-to-set-relations",
     Summary = "Learn the fundamentals of relations, understand ordered pairs, domain and range, and explore how relationships between mathematical objects are represented.",
     Content = "",
     Difficulty = DifficultyLevel.Begineer,
@@ -215,7 +215,7 @@ new Lesson
 
 new Lesson
 {
-    TopicId = topics["Relations"].Id,
+    TopicId = topics["Relations in Set Theory"].Id,
     Title = "Properties and Types of Relations",
     Slug = "properties-and-types-of-relations",
     Summary = "Explore different types of relations including reflexive, symmetric, antisymmetric, and transitive relations, along with methods for analyzing relation properties.",
@@ -229,9 +229,9 @@ new Lesson
 
 new Lesson
 {
-    TopicId = topics["Relations"].Id,
+    TopicId = topics["Relations in Set Theory"].Id,
     Title = "Applications and Practice of Relations",
-    Slug = "applications-and-practice-of-relations",
+    Slug = "relations-in-set-theory-introduction",
     Summary = "Apply relation concepts to solve advanced problems and explore applications in databases, graph theory, programming, algorithms, artificial intelligence, and mathematical modelling.",
     Content = "",
     Difficulty = DifficultyLevel.Advance,
@@ -245,7 +245,7 @@ new Lesson
 
 new Lesson
 {
-    TopicId = topics["Functions"].Id,
+    TopicId = topics["Functions in Set Theory"].Id,
     Title = "Introduction to Functions",
     Slug = "introduction-to-functions",
     Summary = "Learn the fundamentals of functions, understand mappings between sets, domain and range, and explore how functions describe relationships between mathematical objects.",
@@ -259,7 +259,7 @@ new Lesson
 
 new Lesson
 {
-    TopicId = topics["Functions"].Id,
+    TopicId = topics["Functions in Set Theory"].Id,
     Title = "Types and Properties of Functions",
     Slug = "types-and-properties-of-functions",
     Summary = "Explore different types of functions including one-to-one, onto, bijective functions, inverse functions, and methods for analyzing function properties.",
@@ -273,7 +273,7 @@ new Lesson
 
 new Lesson
 {
-    TopicId = topics["Functions"].Id,
+    TopicId = topics["Functions in Set Theory"].Id,
     Title = "Applications and Practice of Functions",
     Slug = "applications-and-practice-of-functions",
     Summary = "Apply function concepts to solve advanced problems and explore applications in computer science, programming, databases, artificial intelligence, modelling, and mathematical systems.",
@@ -507,7 +507,45 @@ new Lesson
 
         };
 
-        await context.Lessons.AddRangeAsync(lessons);
-        await context.SaveChangesAsync();
+        foreach (var lesson in lessons)
+        {
+            Console.WriteLine(
+        $"TopicId={lesson.TopicId}, DisplayOrder={lesson.DisplayOrder}, Slug={lesson.Slug}, Title={lesson.Title}");
+
+            var tracked = context.ChangeTracker.Entries<Lesson>();
+
+            Console.WriteLine("Tracked lessons:");
+
+            foreach (var e in tracked)
+            {
+                Console.WriteLine(
+                    $"{e.Entity.TopicId} | {e.Entity.DisplayOrder} | {e.Entity.Title}");
+            }
+
+
+            var existing = await context.Lessons
+    .AsNoTracking()
+    .Where(x =>
+        x.TopicId == lesson.TopicId &&
+        x.DisplayOrder == lesson.DisplayOrder)
+    .Select(x => new
+    {
+        x.Title,
+        x.Slug,
+        x.TopicId,
+        x.DisplayOrder
+    })
+    .FirstOrDefaultAsync();
+
+            if (existing != null)
+            {
+                Console.WriteLine("ALREADY EXISTS: --------------------------------------------------------------");
+                Console.WriteLine(existing.Title);
+                Console.WriteLine(existing.Slug);
+            }
+
+            context.Lessons.Add(lesson);
+            await context.SaveChangesAsync();
+        }
     }
 }

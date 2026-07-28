@@ -50,7 +50,7 @@ public static class ChapterSeeder
     new()
     {
         SubjectId = math.Id,
-        Title = "Functions",
+        Title = "Functions in Set Theory",
         Description = "Functions show how one value changes into another through simple mathematical rules. You'll learn to describe relationships, predict outcomes, and build models. Functions are used everywhere from programming and AI to economics and physics.",
         DisplayOrder = 5
     },

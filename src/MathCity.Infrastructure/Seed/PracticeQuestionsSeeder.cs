@@ -26813,7 +26813,7 @@ AddQuestion(
             "In probability theory, events are usually represented as:",
             "Matrices",
             "Sets",
-            "Functions",
+            "Functions in Set Theory",
             "Vectors",
             QuestionOption.B,
             "Events are represented as sets of possible outcomes.",
@@ -27407,7 +27407,7 @@ AddQuestion(
         AddQuestion(
             "Applications and Practice of Relations",
             "Which concept is built directly on relations in mathematics?",
-            "Functions",
+            "Functions in Set Theory",
             "Square roots",
             "Logarithms",
             "Prime factorization",

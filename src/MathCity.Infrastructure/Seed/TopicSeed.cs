@@ -78,14 +78,14 @@ public static class TopicSeed
 
             // Functions 5
 
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Relations", DisplayOrder = 1 },
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Types of Functions", DisplayOrder = 2 },
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Domain & Range", DisplayOrder = 3 },
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Composite Functions", DisplayOrder = 4 },
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Inverse Functions", DisplayOrder = 5 },
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Graphing Functions", DisplayOrder = 6 },
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Piecewise Functions", DisplayOrder = 7 },
-            new Topic { ChapterId = chapters["Functions"].Id, Title = "Transformations of Functions", DisplayOrder = 8 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Relations", DisplayOrder = 1 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Types of Functions", DisplayOrder = 2 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Domain & Range", DisplayOrder = 3 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Composite Functions", DisplayOrder = 4 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Inverse Functions", DisplayOrder = 5 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Graphing Functions", DisplayOrder = 6 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Piecewise Functions", DisplayOrder = 7 },
+            new Topic { ChapterId = chapters["Functions in Set Theory"].Id, Title = "Transformations of Functions", DisplayOrder = 8 },
 
             // Sequences & Series 6
 
@@ -209,17 +209,28 @@ public static class TopicSeed
 
             // Mathematical Logic & Set Theory 15
 
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Sets", DisplayOrder = 1 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Set Operations", DisplayOrder = 2 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Venn Diagrams", DisplayOrder = 3 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Cartesian Product", DisplayOrder = 4 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Relations", DisplayOrder = 5 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Functions", DisplayOrder = 6 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Propositional Logic", DisplayOrder = 7 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Predicate Logic", DisplayOrder = 8 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Truth Tables", DisplayOrder = 9 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Logical Equivalence", DisplayOrder = 10 },
-            new Topic { ChapterId = chapters["Mathematical Logic & Set Theory"].Id, Title = "Mathematical Proof Techniques", DisplayOrder = 11 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Sets", DisplayOrder = 1 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Set Operations", DisplayOrder = 2 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Venn Diagrams", DisplayOrder = 3 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Cartesian Product", DisplayOrder = 4 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Relations in Set Theory", DisplayOrder = 5 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Functions in Set Theory", DisplayOrder = 6 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Propositional Logic", DisplayOrder = 7 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Predicate Logic", DisplayOrder = 8 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Truth Tables", DisplayOrder = 9 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Logical Equivalence", DisplayOrder = 10 },
+            new Topic { ChapterId = chapters["Logic & Set Theory"].Id, Title = "Mathematical Proof Techniques", DisplayOrder = 11 },
         });
+
+        context.Topics.AddRange(topics);
+        await context.SaveChangesAsync();
+
+
     }
+
+
+
+
+
 }
+

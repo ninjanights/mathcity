@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using Pgvector;
 
 #nullable disable
 
@@ -12,6 +13,9 @@ namespace MathCity.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AlterDatabase()
+                .Annotation("Npgsql:PostgresExtension:vector", ",,");
+
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -82,8 +86,8 @@ namespace MathCity.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Name = table.Column<string>(type: "text", nullable: false),
-                    Slug = table.Column<string>(type: "text", nullable: false),
+                    Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Slug = table.Column<string>(type: "character varying(120)", maxLength: 120, nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     IsDeleted = table.Column<bool>(type: "boolean", nullable: false),
@@ -286,7 +290,7 @@ namespace MathCity.Infrastructure.Migrations
                     ReadingTimeMinutes = table.Column<int>(type: "integer", nullable: false),
                     IsPublished = table.Column<bool>(type: "boolean", nullable: false),
                     DisplayOrder = table.Column<int>(type: "integer", nullable: false),
-                    ThumbnailUrl = table.Column<string>(type: "text", nullable: false),
+                    EmbeddingsGeneratedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     IsDeleted = table.Column<bool>(type: "boolean", nullable: false),
@@ -358,7 +362,7 @@ namespace MathCity.Infrastructure.Migrations
                     LessonId = table.Column<Guid>(type: "uuid", nullable: false),
                     Title = table.Column<string>(type: "text", nullable: false),
                     FileName = table.Column<string>(type: "text", nullable: false),
-                    FilePath = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true),
                     FileUrl = table.Column<string>(type: "text", nullable: false),
                     FileSize = table.Column<long>(type: "bigint", nullable: false),
                     ContentType = table.Column<string>(type: "text", nullable: false),
@@ -410,6 +414,37 @@ namespace MathCity.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "LessonVectorEmbeddings",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    LessonId = table.Column<Guid>(type: "uuid", nullable: false),
+                    SourceId = table.Column<Guid>(type: "uuid", nullable: true),
+                    Model = table.Column<string>(type: "text", nullable: false),
+                    Dimensions = table.Column<int>(type: "integer", nullable: false),
+                    ChunkType = table.Column<int>(type: "integer", nullable: false),
+                    ChunkIndex = table.Column<int>(type: "integer", nullable: false),
+                    Title = table.Column<string>(type: "text", nullable: false),
+                    Content = table.Column<string>(type: "text", nullable: false),
+                    Embedding = table.Column<Vector>(type: "vector(1024)", nullable: false),
+                    TokenCount = table.Column<int>(type: "integer", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false),
+                    DeletedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_LessonVectorEmbeddings", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_LessonVectorEmbeddings_Lessons_LessonId",
+                        column: x => x.LessonId,
+                        principalTable: "Lessons",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "PracticeQuestions",
                 columns: table => new
                 {
@@ -420,7 +455,7 @@ namespace MathCity.Infrastructure.Migrations
                     OptionB = table.Column<string>(type: "text", nullable: false),
                     OptionC = table.Column<string>(type: "text", nullable: false),
                     OptionD = table.Column<string>(type: "text", nullable: false),
-                    CorrectAnswer = table.Column<string>(type: "text", nullable: false),
+                    CorrectAnswer = table.Column<int>(type: "integer", nullable: false),
                     Explanation = table.Column<string>(type: "text", nullable: false),
                     Difficulty = table.Column<int>(type: "integer", nullable: false),
                     DisplayOrder = table.Column<int>(type: "integer", nullable: false),
@@ -510,9 +545,10 @@ namespace MathCity.Infrastructure.Migrations
                 column: "LessonId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Chapters_SubjectId",
+                name: "IX_Chapters_SubjectId_DisplayOrder",
                 table: "Chapters",
-                column: "SubjectId");
+                columns: new[] { "SubjectId", "DisplayOrder" },
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Comments_LessonId",
@@ -520,9 +556,10 @@ namespace MathCity.Infrastructure.Migrations
                 column: "LessonId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LessonResources_LessonId",
+                name: "IX_LessonResources_LessonId_DisplayOrder",
                 table: "LessonResources",
-                column: "LessonId");
+                columns: new[] { "LessonId", "DisplayOrder" },
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Lessons_Slug",
@@ -531,14 +568,16 @@ namespace MathCity.Infrastructure.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Lessons_TopicId",
+                name: "IX_Lessons_TopicId_DisplayOrder",
                 table: "Lessons",
-                column: "TopicId");
+                columns: new[] { "TopicId", "DisplayOrder" },
+                unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_LessonTags_LessonId",
+                name: "IX_LessonTags_LessonId_TagId",
                 table: "LessonTags",
-                column: "LessonId");
+                columns: new[] { "LessonId", "TagId" },
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_LessonTags_TagId",
@@ -546,9 +585,30 @@ namespace MathCity.Infrastructure.Migrations
                 column: "TagId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PracticeQuestions_LessonId",
-                table: "PracticeQuestions",
+                name: "IX_LessonVectorEmbeddings_ChunkType",
+                table: "LessonVectorEmbeddings",
+                column: "ChunkType");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LessonVectorEmbeddings_LessonId",
+                table: "LessonVectorEmbeddings",
                 column: "LessonId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LessonVectorEmbeddings_LessonId_ChunkType_ChunkIndex",
+                table: "LessonVectorEmbeddings",
+                columns: new[] { "LessonId", "ChunkType", "ChunkIndex" });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LessonVectorEmbeddings_Model",
+                table: "LessonVectorEmbeddings",
+                column: "Model");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PracticeQuestions_LessonId_DisplayOrder",
+                table: "PracticeQuestions",
+                columns: new[] { "LessonId", "DisplayOrder" },
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Progress_LessonId",
@@ -573,9 +633,22 @@ namespace MathCity.Infrastructure.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Topics_ChapterId",
+                name: "IX_Tags_Name",
+                table: "Tags",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tags_Slug",
+                table: "Tags",
+                column: "Slug",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Topics_ChapterId_DisplayOrder",
                 table: "Topics",
-                column: "ChapterId");
+                columns: new[] { "ChapterId", "DisplayOrder" },
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -607,6 +680,9 @@ namespace MathCity.Infrastructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "LessonTags");
+
+            migrationBuilder.DropTable(
+                name: "LessonVectorEmbeddings");
 
             migrationBuilder.DropTable(
                 name: "PracticeQuestions");

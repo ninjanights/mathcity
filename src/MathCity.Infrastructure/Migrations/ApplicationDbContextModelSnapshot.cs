@@ -116,9 +116,10 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LessonId");
-
                     b.HasIndex("TagId");
+
+                    b.HasIndex("LessonId", "TagId")
+                        .IsUnique();
 
                     b.ToTable("LessonTags");
                 });
@@ -209,10 +210,6 @@ namespace MathCity.Infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("character varying(1000)");
 
-                    b.Property<string>("ThumbnailUrl")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -258,10 +255,6 @@ namespace MathCity.Infrastructure.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("FileName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("FilePath")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -323,7 +316,7 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.Property<Vector>("Embedding")
                         .IsRequired()
-                        .HasColumnType("vector(768)");
+                        .HasColumnType("vector(1024)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
@@ -353,6 +346,8 @@ namespace MathCity.Infrastructure.Migrations
                     b.HasIndex("ChunkType");
 
                     b.HasIndex("LessonId");
+
+                    b.HasIndex("Model");
 
                     b.HasIndex("LessonId", "ChunkType", "ChunkIndex");
 

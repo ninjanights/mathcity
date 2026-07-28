@@ -56,8 +56,10 @@ public static class DependencyInjection
                 
                 );
 
-     
 
+
+            options.EnableDetailedErrors();
+            options.EnableSensitiveDataLogging();
 
 
 

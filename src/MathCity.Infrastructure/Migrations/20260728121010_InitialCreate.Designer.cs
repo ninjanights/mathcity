@@ -6,13 +6,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
+using Pgvector;
 
 #nullable disable
 
 namespace MathCity.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260703065826_InitialCreate")]
+    [Migration("20260728121010_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -23,6 +24,7 @@ namespace MathCity.Infrastructure.Migrations
                 .HasAnnotation("ProductVersion", "8.0.28")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
+            NpgsqlModelBuilderExtensions.HasPostgresExtension(modelBuilder, "vector");
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
             modelBuilder.Entity("Bookmark", b =>
@@ -117,9 +119,10 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LessonId");
-
                     b.HasIndex("TagId");
+
+                    b.HasIndex("LessonId", "TagId")
+                        .IsUnique();
 
                     b.ToTable("LessonTags");
                 });
@@ -160,7 +163,8 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SubjectId");
+                    b.HasIndex("SubjectId", "DisplayOrder")
+                        .IsUnique();
 
                     b.ToTable("Chapters", (string)null);
                 });
@@ -187,6 +191,9 @@ namespace MathCity.Infrastructure.Migrations
                     b.Property<int>("DisplayOrder")
                         .HasColumnType("integer");
 
+                    b.Property<DateTime?>("EmbeddingsGeneratedAt")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
@@ -206,10 +213,6 @@ namespace MathCity.Infrastructure.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("character varying(1000)");
 
-                    b.Property<string>("ThumbnailUrl")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -226,7 +229,8 @@ namespace MathCity.Infrastructure.Migrations
                     b.HasIndex("Slug")
                         .IsUnique();
 
-                    b.HasIndex("TopicId");
+                    b.HasIndex("TopicId", "DisplayOrder")
+                        .IsUnique();
 
                     b.ToTable("Lessons", (string)null);
                 });
@@ -247,14 +251,13 @@ namespace MathCity.Infrastructure.Migrations
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
                     b.Property<int>("DisplayOrder")
                         .HasColumnType("integer");
 
                     b.Property<string>("FileName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("FilePath")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -283,9 +286,75 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LessonId");
+                    b.HasIndex("LessonId", "DisplayOrder")
+                        .IsUnique();
 
                     b.ToTable("LessonResources", (string)null);
+                });
+
+            modelBuilder.Entity("MathCity.Domain.Entities.LessonVectorEmbedding", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("ChunkIndex")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ChunkType")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<int>("Dimensions")
+                        .HasColumnType("integer");
+
+                    b.Property<Vector>("Embedding")
+                        .IsRequired()
+                        .HasColumnType("vector(1024)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<Guid>("LessonId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Model")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid?>("SourceId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("TokenCount")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChunkType");
+
+                    b.HasIndex("LessonId");
+
+                    b.HasIndex("Model");
+
+                    b.HasIndex("LessonId", "ChunkType", "ChunkIndex");
+
+                    b.ToTable("LessonVectorEmbeddings", (string)null);
                 });
 
             modelBuilder.Entity("MathCity.Domain.Entities.Progress", b =>
@@ -456,7 +525,8 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ChapterId");
+                    b.HasIndex("ChapterId", "DisplayOrder")
+                        .IsUnique();
 
                     b.ToTable("Topics", (string)null);
                 });
@@ -676,9 +746,8 @@ namespace MathCity.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("CorrectAnswer")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("CorrectAnswer")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -727,7 +796,8 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LessonId");
+                    b.HasIndex("LessonId", "DisplayOrder")
+                        .IsUnique();
 
                     b.ToTable("PracticeQuestions", (string)null);
                 });
@@ -749,18 +819,26 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.Property<string>("Slug")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasMaxLength(120)
+                        .HasColumnType("character varying(120)");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.HasIndex("Slug")
+                        .IsUnique();
+
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("Bookmark", b =>
@@ -830,6 +908,17 @@ namespace MathCity.Infrastructure.Migrations
                 {
                     b.HasOne("MathCity.Domain.Entities.Lesson", "Lesson")
                         .WithMany("Resources")
+                        .HasForeignKey("LessonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lesson");
+                });
+
+            modelBuilder.Entity("MathCity.Domain.Entities.LessonVectorEmbedding", b =>
+                {
+                    b.HasOne("MathCity.Domain.Entities.Lesson", "Lesson")
+                        .WithMany("VectorEmbeddings")
                         .HasForeignKey("LessonId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -944,6 +1033,8 @@ namespace MathCity.Infrastructure.Migrations
                     b.Navigation("PracticeQuestions");
 
                     b.Navigation("Resources");
+
+                    b.Navigation("VectorEmbeddings");
                 });
 
             modelBuilder.Entity("MathCity.Domain.Entities.Subject", b =>
