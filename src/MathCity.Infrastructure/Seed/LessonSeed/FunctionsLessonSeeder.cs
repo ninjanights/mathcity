@@ -2,6 +2,7 @@
 using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MathCity.Infrastructure.Seed.Lessons;
 

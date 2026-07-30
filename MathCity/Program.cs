@@ -122,6 +122,7 @@ using (var scope = app.Services.CreateScope())
             );
 
         app.Logger.LogInformation("Database seeded successfully.");
+       
     }
     catch (Exception ex)
     {

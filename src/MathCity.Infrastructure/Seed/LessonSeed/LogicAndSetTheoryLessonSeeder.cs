@@ -202,7 +202,7 @@ new Lesson
 new Lesson
 {
     TopicId = topics["Relations in Set Theory"].Id,
-    Title = "Introduction to Relations",
+    Title = "Introduction to Relations in Set Theory",
     Slug = "introduction-to-set-relations",
     Summary = "Learn the fundamentals of relations, understand ordered pairs, domain and range, and explore how relationships between mathematical objects are represented.",
     Content = "",
@@ -230,7 +230,7 @@ new Lesson
 new Lesson
 {
     TopicId = topics["Relations in Set Theory"].Id,
-    Title = "Applications and Practice of Relations",
+    Title = "Applications and Practice of Relations in Set Theory",
     Slug = "relations-in-set-theory-introduction",
     Summary = "Apply relation concepts to solve advanced problems and explore applications in databases, graph theory, programming, algorithms, artificial intelligence, and mathematical modelling.",
     Content = "",

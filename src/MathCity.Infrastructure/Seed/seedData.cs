@@ -97,6 +97,7 @@ public static class SeedData
             // Questions
             Console.WriteLine("Seeding P Q...");
             await PracticeQuestionSeeder.SeedAsync(context);
+            await transaction.CommitAsync();
         }
         catch
         {

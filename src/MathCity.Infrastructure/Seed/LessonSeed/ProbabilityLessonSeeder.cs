@@ -21,7 +21,7 @@ public static class ProbabilityLessonSeeder
 new Lesson
 {
     TopicId = topics["Basic Probability"].Id,
-    Title = "Introduction to Basic Probability",
+    Title = "Basic Probability",
     Slug = "introduction-to-basic-probability",
     Summary = "Learn the fundamentals of probability, understand events, outcomes, sample spaces, and how probability measures the likelihood of an event occurring.",
     Content = "",
