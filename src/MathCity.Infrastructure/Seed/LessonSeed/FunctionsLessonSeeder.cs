@@ -10,6 +10,9 @@ public static class FunctionsLessonSeeder
 {
     public static async Task SeedAsync(ApplicationDbContext context)
     {
+
+        if (await context.Lessons.AnyAsync())
+            return;
         var topics = await context.Topics
             .ToDictionaryAsync(t => t.Title);
 

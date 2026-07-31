@@ -15,8 +15,7 @@ public class CreateLessonResourceRequestValidator
             .NotEmpty()
             .MaximumLength(200);
 
-        RuleFor(x => x.DisplayOrder)
-            .GreaterThanOrEqualTo(0);
+       
 
         RuleFor(x => x.ResourceType)
     .IsInEnum();

@@ -7,7 +7,7 @@ public static class AlgebraLessonSeed
 {
     public static async Task SeedAsync(ApplicationDbContext context)
     {
-        if (context.Lessons.Any())
+        if (await context.Lessons.AnyAsync())
             return;
 
         var topics = await context.Topics.ToDictionaryAsync(t => t.Title);

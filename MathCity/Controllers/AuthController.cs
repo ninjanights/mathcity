@@ -22,7 +22,6 @@ public class AuthController : ControllerBase
 
         var response = await _authService.RegisterAsync(request);
 
-
         return Ok(response);
     }
 

@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Topics.DTOs;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.Topics.DTOs;
 
 namespace MathCity.Application.Features.Topics.Interfaces;
 
@@ -6,9 +7,7 @@ public interface ITopicService
 {
     Task<TopicResponse> CreateAsync(CreateTopicRequest request);
 
-    Task<IReadOnlyList<TopicListResponse>> GetAllAsync(
-    string? search = null);
-
+    Task<PagedResult<TopicListResponse>> GetAllAsync(TopicQuery query);
 
     Task<IReadOnlyList<TopicListResponse>> GetByChapterAsync(Guid chapterId);
 

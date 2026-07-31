@@ -3,6 +3,7 @@ using MathCity.Application.Features.PracticeQuestions.DTOs;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Application.Features.Progress.Interfaces;
 using MathCity.Domain.Entities;
+using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -30,9 +31,10 @@ public class PracticeQuestionService : IPracticeQuestionService
         if (!lessonExists)
             throw new NotFoundException("Lesson not found.");
 
-        await MoveDisplayOrderAsync(
-    request.LessonId,
-    request.DisplayOrder);
+        var maxDisplayOrder = await _context.PracticeQuestions
+    .Where(x => x.LessonId == request.LessonId)
+    .Select(x => (int?)x.DisplayOrder)
+    .MaxAsync() ?? 0;
 
         var question = new PracticeQuestion
         {
@@ -45,7 +47,7 @@ public class PracticeQuestionService : IPracticeQuestionService
             CorrectAnswer = request.CorrectAnswer,
             Explanation = request.Explanation,
             Difficulty = request.Difficulty,
-            DisplayOrder = request.DisplayOrder
+            DisplayOrder = maxDisplayOrder + 1,
         };
 
         _context.PracticeQuestions.Add(question);
@@ -150,13 +152,7 @@ public class PracticeQuestionService : IPracticeQuestionService
         if (question == null)
             throw new NotFoundException("Practice question not found.");
 
-        if (question.DisplayOrder != request.DisplayOrder)
-        {
-            await MoveDisplayOrderAsync(
-                question.LessonId,
-                request.DisplayOrder,
-                question.Id);
-        }
+     
 
 
         question.Question = request.Question;
@@ -167,7 +163,7 @@ public class PracticeQuestionService : IPracticeQuestionService
         question.CorrectAnswer = request.CorrectAnswer;
         question.Explanation = request.Explanation;
         question.Difficulty = request.Difficulty;
-        question.DisplayOrder = request.DisplayOrder;
+        
 
         await _context.SaveChangesAsync();
 
@@ -175,8 +171,8 @@ public class PracticeQuestionService : IPracticeQuestionService
     }
 
     public async Task MoveAsync(
-    Guid id,
-    MovePracticeQuestionRequest request)
+        Guid id,
+        MovePracticeQuestionRequest request)
     {
         var question = await _context.PracticeQuestions
             .FirstOrDefaultAsync(x => x.Id == id);
@@ -184,10 +180,35 @@ public class PracticeQuestionService : IPracticeQuestionService
         if (question == null)
             throw new NotFoundException("Practice question not found.");
 
-        await MoveDisplayOrderAsync(
-            question.LessonId,
-            request.Position,
-            question.Id);
+        PracticeQuestion? neighbour = null;
+
+        if (request.Direction == MoveDirection.Up)
+        {
+            neighbour = await _context.PracticeQuestions
+                .Where(x =>
+                    x.LessonId == question.LessonId &&
+                    x.DisplayOrder < question.DisplayOrder)
+                .OrderByDescending(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
+        }
+        else
+        {
+            neighbour = await _context.PracticeQuestions
+                .Where(x =>
+                    x.LessonId == question.LessonId &&
+                    x.DisplayOrder > question.DisplayOrder)
+                .OrderBy(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
+        }
+
+        if (neighbour == null)
+            return;
+
+        var temp = question.DisplayOrder;
+        question.DisplayOrder = neighbour.DisplayOrder;
+        neighbour.DisplayOrder = temp;
+
+        await _context.SaveChangesAsync();
     }
 
     public async Task DeleteAsync(Guid id)
@@ -198,63 +219,25 @@ public class PracticeQuestionService : IPracticeQuestionService
         if (question == null)
             throw new NotFoundException("Practice question not found.");
 
+        var deletedPosition = question.DisplayOrder;
+
         _context.PracticeQuestions.Remove(question);
 
-        await _context.SaveChangesAsync();
-
-        var questions = await _context.PracticeQuestions
-            .Where(x => x.LessonId == question.LessonId)
-            .OrderBy(x => x.DisplayOrder)
+        var questionsToShift = await _context.PracticeQuestions
+            .Where(x =>
+                x.LessonId == question.LessonId &&
+                x.DisplayOrder > deletedPosition)
             .ToListAsync();
 
-        for (int i = 0; i < questions.Count; i++)
+        foreach (var item in questionsToShift)
         {
-            questions[i].DisplayOrder = i + 1;
+            item.DisplayOrder--;
         }
 
         await _context.SaveChangesAsync();
     }
 
-    private async Task MoveDisplayOrderAsync(
-    Guid lessonId,
-    int newPosition,
-    Guid? questionId = null)
-    {
-        var questions = await _context.PracticeQuestions
-            .Where(x => x.LessonId == lessonId)
-            .OrderBy(x => x.DisplayOrder)
-            .ToListAsync();
-
-        PracticeQuestion? moving = null;
-
-        if (questionId.HasValue)
-        {
-            moving = questions.First(x => x.Id == questionId.Value);
-            questions.Remove(moving);
-        }
-
-        newPosition = Math.Clamp(newPosition, 1, questions.Count + 1);
-
-        if (moving != null)
-        {
-            questions.Insert(newPosition - 1, moving);
-        }
-
-        for (int i = 0; i < questions.Count; i++)
-        {
-            questions[i].DisplayOrder = i + 1000;
-        }
-
-        await _context.SaveChangesAsync();
-
-        for (int i = 0; i < questions.Count; i++)
-        {
-            questions[i].DisplayOrder = i + 1;
-        }
-
-        await _context.SaveChangesAsync();
-    }
-
+    
     public async Task<PracticeQuestionSubmissionResponse> SubmitAsync(
        Guid? userId,
        SubmitPracticeQuestionsRequest request)

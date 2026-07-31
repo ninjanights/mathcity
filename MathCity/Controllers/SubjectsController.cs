@@ -81,15 +81,14 @@ public class SubjectsController : ControllerBase
         return NoContent();
     }
 
-    // PATCH: /api/subjects/{id}/position
-    [HttpPatch("{id:guid}/position")]
+    [HttpPatch("{id:guid}/move")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Move(
-        Guid id,
-        MoveSubjectRequest request)
+    Guid id,
+    [FromBody] MoveSubjectRequest request)
     {
         await _subjectService.MoveAsync(id, request);
 
-        return NoContent();
+        return Ok(ApiResponse<object?>.Ok(null, "Subject moved successfully."));
     }
 }

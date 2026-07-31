@@ -1,7 +1,9 @@
 ﻿using MathCity.Application.Common.Exceptions;
+using MathCity.Application.Common.Models;
 using MathCity.Application.Features.Topics.DTOs;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Domain.Entities;
+using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,50 +28,29 @@ public class TopicService : ITopicService
             throw new NotFoundException("Chapter not found.");
         }
 
-        //var topic = new Topic
-        //{
-        //    ChapterId = request.ChapterId,
-        //    Title = request.Title,
-        //    DisplayOrder = request.DisplayOrder
-        //};
-
-        //_context.Topics.Add(topic);
-
-        //await _context.SaveChangesAsync();
-
-        var totalTopics = await _context.Topics
-    .CountAsync(x => x.ChapterId == request.ChapterId);
-
-        var position = Math.Max(
-            1,
-            Math.Min(request.DisplayOrder, totalTopics + 1));
+        var maxDisplayOrder = await _context.Topics
+            .Where(x => x.ChapterId == request.ChapterId)
+            .Select(x => (int?)x.DisplayOrder)
+            .MaxAsync() ?? 0;
 
         var topic = new Topic
         {
             ChapterId = request.ChapterId,
             Title = request.Title,
-            DisplayOrder = position
+            DisplayOrder = maxDisplayOrder + 1
         };
 
         _context.Topics.Add(topic);
 
         await _context.SaveChangesAsync();
 
-        await MoveAsync(
-            topic.Id,
-            new MoveTopicRequest
-            {
-                Position = position
-            });
-
-
         return MapToResponse(topic);
     }
 
     // move scoped topic
     public async Task MoveAsync(
-    Guid id,
-    MoveTopicRequest request)
+      Guid id,
+      MoveTopicRequest request)
     {
         var topic = await _context.Topics
             .FirstOrDefaultAsync(x => x.Id == id);
@@ -77,67 +58,65 @@ public class TopicService : ITopicService
         if (topic == null)
             throw new NotFoundException("Topic not found.");
 
-        var totalTopics = await _context.Topics
-            .CountAsync(x => x.ChapterId == topic.ChapterId);
+        Topic? neighbour = null;
 
-        var newPosition = Math.Max(
-            1,
-            Math.Min(request.Position, totalTopics));
-
-        var oldPosition = topic.DisplayOrder;
-
-        if (oldPosition == newPosition)
-            return;
-
-        if (newPosition < oldPosition)
+        if (request.Direction == MoveDirection.Up)
         {
-            var topicsToShift = await _context.Topics
+            neighbour = await _context.Topics
                 .Where(x =>
                     x.ChapterId == topic.ChapterId &&
-                    x.DisplayOrder >= newPosition &&
-                    x.DisplayOrder < oldPosition)
-                .ToListAsync();
-
-            foreach (var item in topicsToShift)
-            {
-                item.DisplayOrder++;
-            }
+                    x.DisplayOrder < topic.DisplayOrder)
+                .OrderByDescending(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
         else
         {
-            var topicsToShift = await _context.Topics
+            neighbour = await _context.Topics
                 .Where(x =>
                     x.ChapterId == topic.ChapterId &&
-                    x.DisplayOrder <= newPosition &&
-                    x.DisplayOrder > oldPosition)
-                .ToListAsync();
-
-            foreach (var item in topicsToShift)
-            {
-                item.DisplayOrder--;
-            }
+                    x.DisplayOrder > topic.DisplayOrder)
+                .OrderBy(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
 
-        topic.DisplayOrder = newPosition;
+        if (neighbour == null)
+            return;
+
+        var temp = topic.DisplayOrder;
+        topic.DisplayOrder = neighbour.DisplayOrder;
+        neighbour.DisplayOrder = temp;
 
         await _context.SaveChangesAsync();
     }
 
-    public async Task<IReadOnlyList<TopicListResponse>> GetAllAsync(
-    string? search = null)
-    {
-        var query = _context.Topics.AsQueryable();
 
-        if (!string.IsNullOrWhiteSpace(search))
+    public async Task<PagedResult<TopicListResponse>> GetAllAsync(
+    TopicQuery query)
+    {
+        var topics = _context.Topics.AsQueryable();
+
+        // Search
+        if (!string.IsNullOrWhiteSpace(query.Search))
         {
-            query = query.Where(x =>
+            topics = topics.Where(x =>
                 EF.Functions.ILike(
                     x.Title,
-                    $"%{search}%"));
+                    $"%{query.Search}%"));
         }
 
-        return await query
+        // Filter by Chapter
+        if (query.ChapterId.HasValue)
+        {
+            topics = topics.Where(x =>
+                x.ChapterId == query.ChapterId.Value);
+        }
+
+        var totalCount = await topics.CountAsync();
+
+        var items = await topics
             .OrderBy(x => x.DisplayOrder)
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
             .Select(x => new TopicListResponse
             {
                 Id = x.Id,
@@ -146,7 +125,29 @@ public class TopicService : ITopicService
                 DisplayOrder = x.DisplayOrder
             })
             .ToListAsync();
+
+        return new PagedResult<TopicListResponse>
+        {
+            Items = items,
+            Page = query.Page,
+            PageSize = query.PageSize,
+            TotalCount = totalCount,
+            TotalPages = (int)Math.Ceiling(totalCount / (double)query.PageSize)
+        };
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public async Task<IReadOnlyList<TopicListResponse>> GetByChapterAsync(Guid chapterId)
     {
@@ -200,12 +201,7 @@ public class TopicService : ITopicService
 
         await _context.SaveChangesAsync();
 
-        await MoveAsync(
-            topic.Id,
-            new MoveTopicRequest
-            {
-                Position = request.DisplayOrder
-            });
+       
 
         return MapToResponse(topic);
     }
@@ -220,7 +216,20 @@ public class TopicService : ITopicService
             throw new NotFoundException("Topic not found.");
         }
 
+        var deletedPosition = topic.DisplayOrder;
+
         _context.Topics.Remove(topic);
+
+        var topicsToShift = await _context.Topics
+            .Where(x =>
+                x.ChapterId == topic.ChapterId &&
+                x.DisplayOrder > deletedPosition)
+            .ToListAsync();
+
+        foreach (var item in topicsToShift)
+        {
+            item.DisplayOrder--;
+        }
 
         await _context.SaveChangesAsync();
     }

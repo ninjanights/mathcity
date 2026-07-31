@@ -173,15 +173,15 @@ public class LessonsController : ControllerBase
         return NoContent();
     }
 
+    // PATCH: api/lessons/{id}/move
     [HttpPatch("{id:guid}/move")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Move(
-    Guid id,
-    MoveLessonRequest request)
+        Guid id,
+        [FromBody] MoveLessonRequest request)
     {
         await _lessonService.MoveAsync(id, request);
 
         return NoContent();
     }
-
 }

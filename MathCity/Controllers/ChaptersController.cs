@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Chapters.DTOs;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.Chapters.DTOs;
 using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Infrastructure.Services;
@@ -34,12 +35,11 @@ public class ChaptersController : ControllerBase
 
 
     [HttpGet]
-    public async Task<IActionResult> GetAll(
-     [FromQuery] string? search)
+    public async Task<IActionResult> GetAll([FromQuery] ChapterQuery query)
     {
-        var result = await _chapterService.GetAllAsync(search);
+        var result = await _chapterService.GetAllAsync(query);
 
-        return Ok(ApiResponse<object?>.Ok(result));
+        return Ok(ApiResponse<PagedResult<ChapterListResponse>>.Ok(result));
     }
 
     [HttpGet("{id:guid}")]
@@ -84,14 +84,12 @@ public class ChaptersController : ControllerBase
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Move(
     Guid id,
-    MoveChapterRequest request)
+    [FromBody] MoveChapterRequest request)
     {
         await _chapterService.MoveAsync(id, request);
 
-        return NoContent();
+        return Ok(ApiResponse<object?>.Ok(null, "Chapter moved successfully."));
     }
-
-
 
 
 }

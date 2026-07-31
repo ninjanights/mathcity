@@ -12,5 +12,4 @@ public class CreateLessonResourceRequest
 
     public string Description { get; set; } = string.Empty;
 
-    public int DisplayOrder { get; set; }
 }

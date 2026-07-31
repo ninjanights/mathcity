@@ -16,7 +16,5 @@ public class UpdateLessonResourceRequestValidator
             .NotEmpty()
             .MaximumLength(1000);
 
-        RuleFor(x => x.DisplayOrder)
-            .GreaterThanOrEqualTo(0);
     }
 }

@@ -9,6 +9,8 @@ public static class CoordinateGeometryLessonSeeder
 {
     public static async Task SeedAsync(ApplicationDbContext context)
     {
+
+
         if (await context.Lessons.AnyAsync(l => l.Topic.Chapter.Title == "Coordinate Geometry"))
             return;
 

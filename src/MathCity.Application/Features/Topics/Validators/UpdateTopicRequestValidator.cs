@@ -12,7 +12,6 @@ public class UpdateTopicRequestValidator
             .NotEmpty()
             .MaximumLength(100);
 
-        RuleFor(x => x.DisplayOrder)
-            .GreaterThanOrEqualTo(0);
+     
     }
 }

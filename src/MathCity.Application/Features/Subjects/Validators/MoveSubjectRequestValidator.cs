@@ -13,7 +13,7 @@ public class MoveSubjectRequestValidator
 {
     public MoveSubjectRequestValidator()
     {
-        RuleFor(x => x.Position)
-            .GreaterThan(0);
+        RuleFor(x => x.Direction)
+     .IsInEnum();
     }
 }

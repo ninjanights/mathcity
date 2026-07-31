@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Chapters.DTOs;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.Chapters.DTOs;
 
 namespace MathCity.Application.Features.Chapters.Interfaces;
 
@@ -6,8 +7,7 @@ public interface IChapterService
 {
     Task<ChapterResponse> CreateAsync(CreateChapterRequest request);
 
-    Task<IReadOnlyList<ChapterListResponse>> GetAllAsync(
-     string? search = null);
+    Task<PagedResult<ChapterListResponse>> GetAllAsync(ChapterQuery query);
 
     Task<IReadOnlyList<ChapterListResponse>> GetBySubjectAsync(Guid subjectId);
 

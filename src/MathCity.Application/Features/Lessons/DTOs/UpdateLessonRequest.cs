@@ -13,7 +13,5 @@ public class UpdateLessonRequest
 
     public int ReadingTimeMinutes { get; set; }
 
-    public int DisplayOrder { get; set; }
-
     public bool IsPublished { get; set; }
 }

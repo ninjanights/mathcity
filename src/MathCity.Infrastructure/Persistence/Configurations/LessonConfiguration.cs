@@ -27,9 +27,7 @@ public class LessonConfiguration : IEntityTypeConfiguration<Lesson>
                .HasMaxLength(200)
                .IsRequired();
 
-        builder.Property(x => x.DisplayOrder)
-       .IsRequired();
-
+       
 
         builder.HasIndex(x => x.Slug)
                .IsUnique();

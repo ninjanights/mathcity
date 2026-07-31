@@ -22,5 +22,4 @@ public class CreatePracticeQuestionRequest
 
     public DifficultyLevel Difficulty { get; set; }
 
-    public int DisplayOrder { get; set; }
 }

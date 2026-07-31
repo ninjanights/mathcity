@@ -3,6 +3,7 @@ using MathCity.Application.Features.LessonResources.DTOs;
 using MathCity.Application.Features.LessonResources.Interfaces;
 using MathCity.Application.Features.Storage.DTOs;
 using MathCity.Domain.Entities;
+using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -27,10 +28,10 @@ public class LessonResourceService : ILessonResourceService
         if (!lessonExists)
             throw new NotFoundException("Lesson not found.");
 
-        await MoveDisplayOrderAsync(
-    request.LessonId,
-    request.DisplayOrder);
-
+        var maxDisplayOrder = await _context.LessonResources
+            .Where(x => x.LessonId == request.LessonId)
+            .Select(x => (int?)x.DisplayOrder)
+            .MaxAsync() ?? 0;
 
         var resource = new LessonResource
         {
@@ -44,7 +45,7 @@ public class LessonResourceService : ILessonResourceService
             ContentType = upload.ContentType,
             Description = request.Description,
             Type = request.ResourceType,
-            DisplayOrder = request.DisplayOrder
+            DisplayOrder = maxDisplayOrder +1,
         };
 
         _context.LessonResources.Add(resource);
@@ -106,18 +107,10 @@ public class LessonResourceService : ILessonResourceService
         if (resource == null)
             throw new NotFoundException("Lesson resource not found.");
 
-        if (resource.DisplayOrder != request.DisplayOrder)
-        {
-            await MoveDisplayOrderAsync(
-                resource.LessonId,
-                request.DisplayOrder,
-                resource.Id);
-        }
 
         resource.Title = request.Title;
         resource.Description = request.Description;
         resource.Type = request.ResourceType;
-        resource.DisplayOrder = request.DisplayOrder;
 
         await _context.SaveChangesAsync();
 
@@ -126,61 +119,46 @@ public class LessonResourceService : ILessonResourceService
 
 
     public async Task MoveAsync(
-    Guid id,
-    MoveLessonResourceRequest request)
-{
-    var resource = await _context.LessonResources
-        .FirstOrDefaultAsync(x => x.Id == id);
-
-    if (resource == null)
-        throw new NotFoundException("Lesson resource not found.");
-
-    await MoveDisplayOrderAsync(
-        resource.LessonId,
-        request.Position,
-        resource.Id);
-}
-
-
-    private async Task MoveDisplayOrderAsync(
-    Guid lessonId,
-    int newPosition,
-    Guid? resourceId = null)
+        Guid id,
+        MoveLessonResourceRequest request)
     {
-        var resources = await _context.LessonResources
-            .Where(x => x.LessonId == lessonId)
-            .OrderBy(x => x.DisplayOrder)
-            .ToListAsync();
+        var resource = await _context.LessonResources
+            .FirstOrDefaultAsync(x => x.Id == id);
 
-        LessonResource? moving = null;
+        if (resource == null)
+            throw new NotFoundException("Lesson resource not found.");
 
-        if (resourceId.HasValue)
+        LessonResource? neighbour = null;
+
+        if (request.Direction == MoveDirection.Up)
         {
-            moving = resources.First(x => x.Id == resourceId.Value);
-            resources.Remove(moving);
+            neighbour = await _context.LessonResources
+                .Where(x =>
+                    x.LessonId == resource.LessonId &&
+                    x.DisplayOrder < resource.DisplayOrder)
+                .OrderByDescending(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
+        }
+        else
+        {
+            neighbour = await _context.LessonResources
+                .Where(x =>
+                    x.LessonId == resource.LessonId &&
+                    x.DisplayOrder > resource.DisplayOrder)
+                .OrderBy(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
 
-        newPosition = Math.Clamp(newPosition, 1, resources.Count + 1);
+        if (neighbour == null)
+            return;
 
-        if (moving != null)
-        {
-            resources.Insert(newPosition - 1, moving);
-        }
-
-        for (int i = 0; i < resources.Count; i++)
-        {
-            resources[i].DisplayOrder = i + 1000;
-        }
-
-        await _context.SaveChangesAsync();
-
-        for (int i = 0; i < resources.Count; i++)
-        {
-            resources[i].DisplayOrder = i + 1;
-        }
+        var temp = resource.DisplayOrder;
+        resource.DisplayOrder = neighbour.DisplayOrder;
+        neighbour.DisplayOrder = temp;
 
         await _context.SaveChangesAsync();
     }
+
 
 
 
@@ -192,18 +170,19 @@ public class LessonResourceService : ILessonResourceService
         if (resource == null)
             throw new NotFoundException("Lesson resource not found.");
 
+        var deletedPosition = resource.DisplayOrder;
+
         _context.LessonResources.Remove(resource);
 
-        await _context.SaveChangesAsync();
-
-        var resources = await _context.LessonResources
-            .Where(x => x.LessonId == resource.LessonId)
-            .OrderBy(x => x.DisplayOrder)
+        var resourcesToShift = await _context.LessonResources
+            .Where(x =>
+                x.LessonId == resource.LessonId &&
+                x.DisplayOrder > deletedPosition)
             .ToListAsync();
 
-        for (int i = 0; i < resources.Count; i++)
+        foreach (var item in resourcesToShift)
         {
-            resources[i].DisplayOrder = i + 1;
+            item.DisplayOrder--;
         }
 
         await _context.SaveChangesAsync();

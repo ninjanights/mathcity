@@ -9,6 +9,11 @@ public static class CalculusLessonSeeder
 {
     public static async Task SeedAsync(ApplicationDbContext context)
     {
+        Console.WriteLine(
+    $"Lessons in DB: {await context.Lessons.CountAsync()}"
+);
+        if (await context.Lessons.AnyAsync())
+            return;
         var topics = await context.Topics
             .ToDictionaryAsync(t => t.Title);
 

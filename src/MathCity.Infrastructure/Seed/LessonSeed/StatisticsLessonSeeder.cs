@@ -9,6 +9,9 @@ public static class StatisticsLessonSeeder
 {
     public static async Task SeedAsync(ApplicationDbContext context)
     {
+
+        if (await context.Lessons.AnyAsync())
+            return;
         var topics = await context.Topics
             .ToDictionaryAsync(t => t.Title);
 

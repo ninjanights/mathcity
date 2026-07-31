@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MathCity.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace MathCity.Application.Features.PracticeQuestions.DTOs;
 
 public class MovePracticeQuestionRequest
 {
-    public int Position { get; set; }
+
+    public MoveDirection Direction { get; set; }
 }

@@ -2,6 +2,7 @@
 using MathCity.Application.Features.Subjects.DTOs;
 using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Domain.Entities;
+using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
@@ -28,6 +29,9 @@ public class SubjectService : ISubjectService
         {
             throw new ConflictException("A subject with this name already exists.");
         }
+        var maxDisplayOrder = await _context.Subjects
+    .Select(x => (int?)x.DisplayOrder)
+    .MaxAsync() ?? 0;
 
         var subject = new Subject
         {
@@ -36,7 +40,7 @@ public class SubjectService : ISubjectService
             Description = request.Description,
             Icon = request.Icon,
             Color = request.Color,
-            DisplayOrder = request.DisplayOrder,
+            DisplayOrder = maxDisplayOrder + 1,
             IsPublished = false
 
         };
@@ -69,7 +73,18 @@ public class SubjectService : ISubjectService
             throw new NotFoundException("Subject not found.");
         }
 
+        var deletedOrder = subject.DisplayOrder;
+
         _context.Subjects.Remove(subject);
+
+        var subjectsToShift = await _context.Subjects
+            .Where(x => x.DisplayOrder > deletedOrder)
+            .ToListAsync();
+
+        foreach (var item in subjectsToShift)
+        {
+            item.DisplayOrder--;
+        }
 
         await _context.SaveChangesAsync();
     }
@@ -98,6 +113,7 @@ public class SubjectService : ISubjectService
                 Icon = x.Icon,
                 Color = x.Color,
                 Description = x.Description,
+                DisplayOrder = x.DisplayOrder,
                 IsPublished = x.IsPublished
             })
             .ToListAsync();
@@ -127,59 +143,43 @@ public class SubjectService : ISubjectService
         };
     }
 
-   public async Task MoveAsync(
-    Guid id,
-    MoveSubjectRequest request)
-{
-    var subject = await _context.Subjects
-        .FirstOrDefaultAsync(x => x.Id == id);
-
-    if (subject == null)
-        throw new NotFoundException("Subject not found.");
-
-    var totalSubjects = await _context.Subjects.CountAsync();
-
-    // Clamp position between 1 and total subjects
-    var newPosition = Math.Max(1, Math.Min(request.Position, totalSubjects));
-
-    var oldPosition = subject.DisplayOrder;
-
-    if (oldPosition == newPosition)
-        return;
-
-    if (newPosition < oldPosition)
+    public async Task MoveAsync(
+        Guid id,
+        MoveSubjectRequest request)
     {
-        // Moving up
-        var subjectsToShift = await _context.Subjects
-            .Where(x =>
-                x.DisplayOrder >= newPosition &&
-                x.DisplayOrder < oldPosition)
-            .ToListAsync();
+        var subject = await _context.Subjects
+            .FirstOrDefaultAsync(x => x.Id == id);
 
-        foreach (var item in subjectsToShift)
+        if (subject == null)
+            throw new NotFoundException("Subject not found.");
+
+        Subject? neighbour = null;
+
+        if (request.Direction == MoveDirection.Up)
         {
-            item.DisplayOrder++;
+            neighbour = await _context.Subjects
+                .Where(x => x.DisplayOrder < subject.DisplayOrder)
+                .OrderByDescending(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
-    }
-    else
-    {
-        // Moving down
-        var subjectsToShift = await _context.Subjects
-            .Where(x =>
-                x.DisplayOrder <= newPosition &&
-                x.DisplayOrder > oldPosition)
-            .ToListAsync();
-
-        foreach (var item in subjectsToShift)
+        else
         {
-            item.DisplayOrder--;
+            neighbour = await _context.Subjects
+                .Where(x => x.DisplayOrder > subject.DisplayOrder)
+                .OrderBy(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
+
+        // Already at the top/bottom
+        if (neighbour == null)
+            return;
+
+        var temp = subject.DisplayOrder;
+        subject.DisplayOrder = neighbour.DisplayOrder;
+        neighbour.DisplayOrder = temp;
+
+        await _context.SaveChangesAsync();
     }
-
-    subject.DisplayOrder = newPosition;
-
-    await _context.SaveChangesAsync();
-}
 
     // Implement the UpdateAsync method to update an existing subject
     public async Task<SubjectResponse> UpdateAsync(
@@ -193,9 +193,19 @@ public class SubjectService : ISubjectService
         {
             throw new NotFoundException("Subject not found.");
         }
+        var slug = GenerateSlug(request.Name);
+
+        var exists = await _context.Subjects.AnyAsync(x =>
+            x.Id != id &&
+            x.Slug == slug);
+
+        if (exists)
+        {
+            throw new ConflictException("A subject with this name already exists.");
+        }
 
         subject.Name = request.Name;
-        subject.Slug = GenerateSlug(request.Name);
+        subject.Slug = slug;
         subject.Description = request.Description;
         subject.Icon = request.Icon;
         subject.Color = request.Color;

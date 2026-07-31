@@ -13,5 +13,4 @@ public class UpdateLessonResourceRequest
 
     public ResourceType ResourceType { get; set; }
 
-    public int DisplayOrder { get; set; }
 }

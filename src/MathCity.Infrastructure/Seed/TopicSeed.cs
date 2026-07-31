@@ -6,9 +6,32 @@ public static class TopicSeed
 {
     public static async Task SeedAsync(ApplicationDbContext context)
     {
+
+        if (await context.Topics.AnyAsync())
+            return;
         var chapters = await context.Chapters.ToDictionaryAsync(c => c.Title);
 
         var topics = new List<Topic>();
+
+        var duplicates = topics
+    .GroupBy(t => new { t.ChapterId, t.DisplayOrder })
+    .Where(g => g.Count() > 1)
+    .ToList();
+
+        Console.WriteLine($"---------Duplicate groups: {duplicates.Count}---------");
+
+        foreach (var g in duplicates)
+        {
+            var chapter = chapters.Values.First(c => c.Id == g.Key.ChapterId);
+
+            Console.WriteLine($"Chapter: {chapter.Title}");
+            Console.WriteLine($"DisplayOrder: {g.Key.DisplayOrder}");
+
+            foreach (var t in g)
+            {
+                Console.WriteLine($"  {t.Title}");
+            }
+        }
 
         topics.AddRange(new[]
 {

@@ -36,10 +36,9 @@ public class TopicsController : ControllerBase
 
     // GET: api/topics
     [HttpGet]
-    public async Task<IActionResult> GetAll(
-    [FromQuery] string? search)
+    public async Task<IActionResult> GetAll([FromQuery] TopicQuery query)
     {
-        var result = await _topicService.GetAllAsync(search);
+        var result = await _topicService.GetAllAsync(query);
 
         return Ok(ApiResponse<object?>.Ok(result));
     }
@@ -84,11 +83,12 @@ public class TopicsController : ControllerBase
         return Ok(ApiResponse<object?>.Ok(result));
     }
 
+    // PATCH: api/topics/{id}/move
     [HttpPatch("{id:guid}/move")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Move(
-    Guid id,
-    MoveTopicRequest request)
+        Guid id,
+        [FromBody] MoveTopicRequest request)
     {
         await _topicService.MoveAsync(id, request);
 

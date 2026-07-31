@@ -1,10 +1,12 @@
 ﻿using MathCity.Application.Common.Exceptions;
+using MathCity.Application.Common.Models;
 using MathCity.Application.Features.Chapters.DTOs;
 using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Domain.Entities;
+using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
-using MathCity.Domain.Enums;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MathCity.Infrastructure.Services;
 
@@ -27,34 +29,19 @@ public class ChapterService : IChapterService
             throw new NotFoundException("Subject not found.");
         }
 
-        // Total chapters inside this subject
-        var total = await _context.Chapters
-            .CountAsync(x => x.SubjectId == request.SubjectId);
-
-        // Clamp position
-        var newPosition = Math.Max(
-            1,
-            Math.Min(request.DisplayOrder, total + 1));
-
-        // Shift all chapters at or after this position
-        var chaptersToShift = await _context.Chapters
-            .Where(x =>
-                x.SubjectId == request.SubjectId &&
-                x.DisplayOrder >= newPosition)
-            .ToListAsync();
-
-        foreach (var chapter in chaptersToShift)
-        {
-            chapter.DisplayOrder++;
-        }
+        var maxDisplayOrder = await _context.Chapters
+      .Where(x => x.SubjectId == request.SubjectId)
+      .Select(x => (int?)x.DisplayOrder)
+      .MaxAsync() ?? 0;
 
         var chapterEntity = new Chapter
         {
             SubjectId = request.SubjectId,
             Title = request.Title,
             Description = request.Description,
-            DisplayOrder = newPosition
+            DisplayOrder = maxDisplayOrder + 1
         };
+
 
         _context.Chapters.Add(chapterEntity);
 
@@ -66,8 +53,8 @@ public class ChapterService : IChapterService
 
 
     public async Task MoveAsync(
-    Guid id,
-    MoveChapterRequest request)
+       Guid id,
+       MoveChapterRequest request)
     {
         var chapter = await _context.Chapters
             .FirstOrDefaultAsync(x => x.Id == id);
@@ -75,80 +62,81 @@ public class ChapterService : IChapterService
         if (chapter == null)
             throw new NotFoundException("Chapter not found.");
 
-        var totalChapters = await _context.Chapters
-            .CountAsync(x => x.SubjectId == chapter.SubjectId);
+        Chapter? neighbour = null;
 
-        var newPosition = Math.Max(
-            1,
-            Math.Min(request.Position, totalChapters));
-
-        var oldPosition = chapter.DisplayOrder;
-
-        if (oldPosition == newPosition)
-            return;
-
-        if (newPosition < oldPosition)
+        if (request.Direction == MoveDirection.Up)
         {
-            // Moving upward
-            var chaptersToShift = await _context.Chapters
+            neighbour = await _context.Chapters
                 .Where(x =>
                     x.SubjectId == chapter.SubjectId &&
-                    x.DisplayOrder >= newPosition &&
-                    x.DisplayOrder < oldPosition)
-                .ToListAsync();
-
-            foreach (var item in chaptersToShift)
-            {
-                item.DisplayOrder++;
-            }
+                    x.DisplayOrder < chapter.DisplayOrder)
+                .OrderByDescending(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
         else
         {
-            // Moving downward
-            var chaptersToShift = await _context.Chapters
+            neighbour = await _context.Chapters
                 .Where(x =>
                     x.SubjectId == chapter.SubjectId &&
-                    x.DisplayOrder <= newPosition &&
-                    x.DisplayOrder > oldPosition)
-                .ToListAsync();
-
-            foreach (var item in chaptersToShift)
-            {
-                item.DisplayOrder--;
-            }
+                    x.DisplayOrder > chapter.DisplayOrder)
+                .OrderBy(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
 
-        chapter.DisplayOrder = newPosition;
+        if (neighbour == null)
+            return;
+
+        var temp = chapter.DisplayOrder;
+        chapter.DisplayOrder = neighbour.DisplayOrder;
+        neighbour.DisplayOrder = temp;
 
         await _context.SaveChangesAsync();
     }
 
 
 
-
-    public async Task<IReadOnlyList<ChapterListResponse>> GetAllAsync(
-      string? search = null)
+    public async Task<PagedResult<ChapterListResponse>> GetAllAsync(
+        ChapterQuery query)
     {
-        var query = _context.Chapters.AsQueryable();
+        var chapters = _context.Chapters.AsQueryable();
 
-        if (!string.IsNullOrWhiteSpace(search))
+        if (!string.IsNullOrWhiteSpace(query.Search))
         {
-            query = query.Where(x =>
+            chapters = chapters.Where(x =>
                 EF.Functions.ILike(
                     x.Title,
-                    $"%{search}%"));
+                    $"%{query.Search}%"));
         }
 
-        return await query
-            .OrderBy(x => x.DisplayOrder)
-            .Select(x => new ChapterListResponse
-            {
-                Id = x.Id,
-                SubjectId = x.SubjectId,
-                Title = x.Title,
-                DisplayOrder = x.DisplayOrder
-            })
-            .ToListAsync();
+
+        if (!string.IsNullOrWhiteSpace(query.SubjectSlug))
+        {
+            chapters = chapters.Where(x =>
+                x.Subject.Slug == query.SubjectSlug);
+        }
+        var totalCount = await chapters.CountAsync();
+
+        var items = await chapters
+    .OrderBy(x => x.DisplayOrder)
+    .Skip((query.Page - 1) * query.PageSize)
+    .Take(query.PageSize)
+    .Select(x => new ChapterListResponse
+    {
+        Id = x.Id,
+        SubjectId = x.SubjectId,
+        Title = x.Title,
+        DisplayOrder = x.DisplayOrder
+    })
+    .ToListAsync();
+
+        return new PagedResult<ChapterListResponse>
+        {
+            Items = items,
+            Page = query.Page,
+            PageSize = query.PageSize,
+            TotalCount = totalCount,
+            TotalPages = (int)Math.Ceiling(totalCount / (double)query.PageSize)
+        };
     }
 
 
@@ -201,18 +189,7 @@ public class ChapterService : IChapterService
             throw new NotFoundException("Chapter not found.");
         }
 
-        if (chapter.DisplayOrder != request.DisplayOrder)
-        {
-            await MoveAsync(
-                id,
-                new MoveChapterRequest
-                {
-                    Position = request.DisplayOrder
-                });
-
-            chapter = await _context.Chapters
-                .FirstAsync(x => x.Id == id);
-        }
+       
 
 
         chapter.Title = request.Title;

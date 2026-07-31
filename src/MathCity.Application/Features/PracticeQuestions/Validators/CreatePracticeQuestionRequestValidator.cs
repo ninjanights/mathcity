@@ -23,7 +23,6 @@ public class CreatePracticeQuestionRequestValidator
         RuleFor(x => x.CorrectAnswer)
             .IsInEnum();
 
-        RuleFor(x => x.DisplayOrder)
-            .GreaterThanOrEqualTo(0);
+       
     }
 }

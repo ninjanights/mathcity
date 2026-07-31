@@ -23,7 +23,5 @@ public class CreateSubjectRequestValidator
             .Matches("^#([A-Fa-f0-9]{6})$")
             .WithMessage("Color must be a valid hex color.");
 
-        RuleFor(x => x.DisplayOrder)
-            .GreaterThanOrEqualTo(0);
     }
 }

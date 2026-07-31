@@ -36,6 +36,11 @@ public class LessonService : ILessonService
 
         if (exists)
             throw new ConflictException("Lesson already exists.");
+        
+        var maxDisplayOrder = await _context.Lessons
+    .Where(x => x.TopicId == request.TopicId)
+    .Select(x => (int?)x.DisplayOrder)
+    .MaxAsync() ?? 0;
 
         var lesson = new Lesson
         {
@@ -47,7 +52,7 @@ public class LessonService : ILessonService
             Difficulty = request.Difficulty,
             ReadingTimeMinutes = request.ReadingTimeMinutes,
             IsPublished = request.IsPublished,
-            DisplayOrder = request.DisplayOrder
+            DisplayOrder = maxDisplayOrder + 1
         };
 
         _context.Lessons.Add(lesson);
@@ -67,15 +72,16 @@ public class LessonService : ILessonService
      LessonQuery query)
     {
         var lessons = _context.Lessons
-            .AsQueryable();
+     .AsNoTracking()
+     .AsQueryable();
 
         // Search by title
         if (!string.IsNullOrWhiteSpace(query.Search))
         {
-            var search = query.Search.Trim().ToLower();
-
             lessons = lessons.Where(x =>
-                x.Title.ToLower().Contains(search));
+                EF.Functions.ILike(
+                    x.Title,
+                    $"%{query.Search}%"));
         }
 
         // Filter by Topic
@@ -102,18 +108,19 @@ public class LessonService : ILessonService
         // Filter by Tag
         if (!string.IsNullOrWhiteSpace(query.Tag))
         {
-            var tag = query.Tag.Trim().ToLower();
+            var tag = query.Tag.Trim();
 
             lessons = lessons.Where(x =>
                 x.LessonTags.Any(t =>
-                    t.Tag.Slug == tag ||
-                    t.Tag.Name.ToLower() == tag));
+                    EF.Functions.ILike(t.Tag.Name, tag) ||
+                    EF.Functions.ILike(t.Tag.Slug, tag)));
         }
 
         var totalCount = await lessons.CountAsync();
 
         var items = await lessons
-.OrderBy(x => x.DisplayOrder)
+            .OrderBy(x => x.DisplayOrder)
+.ThenBy(x => x.Title)
             .Skip((query.Page - 1) * query.PageSize)
             .Take(query.PageSize)
             .Select(x => new LessonListResponse
@@ -205,21 +212,7 @@ public class LessonService : ILessonService
         lesson.ReadingTimeMinutes = request.ReadingTimeMinutes;
         lesson.IsPublished = request.IsPublished;
         lesson.Slug = slug;
-        if (lesson.DisplayOrder != request.DisplayOrder)
-        {
-            await MoveAsync(id, new MoveLessonRequest
-            {
-                Position = request.DisplayOrder
-            });
-
-            lesson = await _context.Lessons
-                .FirstAsync(x => x.Id == id);
-        }
-
-        
-
-          
-
+    
         await _context.SaveChangesAsync();
 
         return MapToResponse(lesson);
@@ -232,9 +225,22 @@ public class LessonService : ILessonService
         if (lesson == null)
             throw new NotFoundException("Lesson not found.");
 
-       
+
+
+        var deletedPosition = lesson.DisplayOrder;
 
         _context.Lessons.Remove(lesson);
+
+        var lessonsToShift = await _context.Lessons
+            .Where(x =>
+                x.TopicId == lesson.TopicId &&
+                x.DisplayOrder > deletedPosition)
+            .ToListAsync();
+
+        foreach (var item in lessonsToShift)
+        {
+            item.DisplayOrder--;
+        }
 
         await _context.SaveChangesAsync();
     }
@@ -277,42 +283,33 @@ public class LessonService : ILessonService
         if (lesson == null)
             throw new NotFoundException("Lesson not found.");
 
-        var total = await _context.Lessons
-            .CountAsync(x => x.TopicId == lesson.TopicId);
+        Lesson? neighbour = null;
 
-        var newPosition = Math.Clamp(request.Position, 1, total);
-
-        var oldPosition = lesson.DisplayOrder;
-
-        if (oldPosition == newPosition)
-            return;
-
-        if (newPosition < oldPosition)
+        if (request.Direction == MoveDirection.Up)
         {
-            var lessons = await _context.Lessons
+            neighbour = await _context.Lessons
                 .Where(x =>
                     x.TopicId == lesson.TopicId &&
-                    x.DisplayOrder >= newPosition &&
-                    x.DisplayOrder < oldPosition)
-                .ToListAsync();
-
-            foreach (var item in lessons)
-                item.DisplayOrder++;
+                    x.DisplayOrder < lesson.DisplayOrder)
+                .OrderByDescending(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
         else
         {
-            var lessons = await _context.Lessons
+            neighbour = await _context.Lessons
                 .Where(x =>
                     x.TopicId == lesson.TopicId &&
-                    x.DisplayOrder <= newPosition &&
-                    x.DisplayOrder > oldPosition)
-                .ToListAsync();
-
-            foreach (var item in lessons)
-                item.DisplayOrder--;
+                    x.DisplayOrder > lesson.DisplayOrder)
+                .OrderBy(x => x.DisplayOrder)
+                .FirstOrDefaultAsync();
         }
 
-        lesson.DisplayOrder = newPosition;
+        if (neighbour == null)
+            return;
+
+        var temp = lesson.DisplayOrder;
+        lesson.DisplayOrder = neighbour.DisplayOrder;
+        neighbour.DisplayOrder = temp;
 
         await _context.SaveChangesAsync();
     }
