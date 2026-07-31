@@ -135,7 +135,7 @@ public class SupabaseStorageService : IFileStorageService
     public async Task<FileUploadResponse> UploadDocumentAsync(
     Guid lessonId,
     string resourceTitle,
-    int displayOrder,
+    
     ResourceType resourceType,
     Stream stream,
     string fileName,
@@ -145,7 +145,7 @@ public class SupabaseStorageService : IFileStorageService
         var folder = $"resources/{lessonId}";
 
         var finalName = GenerateResourceFileName(
-        displayOrder,
+       
         resourceTitle,
         Path.GetExtension(fileName));
 
@@ -259,7 +259,7 @@ public class SupabaseStorageService : IFileStorageService
 
 
     private static string GenerateResourceFileName(
-        int displayOrder,
+      
         string resourceTitle,
         string extension)
     {
@@ -268,7 +268,7 @@ public class SupabaseStorageService : IFileStorageService
             .ToLowerInvariant()
             .Replace(" ", "-");
 
-        return $"{displayOrder:D3}_{slug}{extension}";
+        return $"{slug}{extension}";
     }
 
     public async Task DeleteAsync(

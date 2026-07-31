@@ -121,7 +121,7 @@ public class PracticeQuestionsController : ControllerBase
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Move(
     Guid id,
-    MovePracticeQuestionRequest request)
+    [FromBody] MovePracticeQuestionRequest request)
     {
         await _practiceQuestionService.MoveAsync(id, request);
 

@@ -34,7 +34,6 @@ public class LessonResourcesController : ControllerBase
         var upload = await _fileStorageService.UploadDocumentAsync(
     request.LessonId,
     request.Title,
-    request.DisplayOrder,
     request.ResourceType,
     file.OpenReadStream(),
     file.FileName,
@@ -88,12 +87,11 @@ public class LessonResourcesController : ControllerBase
 
         return NoContent();
     }
-
     [HttpPatch("{id:guid}/move")]
     [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Move(
-    Guid id,
-    MoveLessonResourceRequest request)
+        Guid id,
+        [FromBody] MoveLessonResourceRequest request)
     {
         await _lessonResourceService.MoveAsync(id, request);
 

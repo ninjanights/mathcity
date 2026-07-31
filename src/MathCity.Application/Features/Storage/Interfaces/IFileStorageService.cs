@@ -8,7 +8,6 @@ public interface IFileStorageService
     Task<FileUploadResponse> UploadDocumentAsync(
         Guid lessonId,
         string resourceTitle,
-        int displayOrder,
         ResourceType resourceType,
         Stream stream,
         string fileName,
