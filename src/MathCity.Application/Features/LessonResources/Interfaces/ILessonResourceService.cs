@@ -11,7 +11,9 @@ public interface ILessonResourceService
     CreateLessonResourceRequest request,
     FileUploadResponse upload);
 
-    Task<IReadOnlyList<LessonResourceListResponse>> GetAllAsync();
+    Task<PagedResult<LessonResourceListResponse>> GetAllAsync(
+     LessonResourceQuery query);
+
     Task<LessonResourceResponse> GetByIdAsync(Guid id);
 
     Task<IReadOnlyList<LessonResourceListResponse>> GetByLessonAsync(Guid lessonId);

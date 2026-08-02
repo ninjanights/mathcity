@@ -6,7 +6,7 @@ using MathCity.Domain.Entities;
 using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
-
+using MathCity.Application.Common.Models;
 namespace MathCity.Infrastructure.Services;
 
 public class LessonResourceService : ILessonResourceService
@@ -55,10 +55,53 @@ public class LessonResourceService : ILessonResourceService
         return MapToResponse(resource);
     }
 
-    public async Task<IReadOnlyList<LessonResourceListResponse>> GetAllAsync()
+    public async Task<PagedResult<LessonResourceListResponse>> GetAllAsync(
+     LessonResourceQuery query)
     {
-        return await _context.LessonResources
+        var resources = _context.LessonResources
+            .AsNoTracking()
+            .AsQueryable();
+
+
+        if (!string.IsNullOrWhiteSpace(query.LessonSlug))
+        {
+            var lessonId = await _context.Lessons
+                .Where(x => x.Slug == query.LessonSlug)
+                .Select(x => x.Id)
+                .FirstOrDefaultAsync();
+
+            if (lessonId == Guid.Empty)
+                throw new NotFoundException("Lesson not found.");
+
+
+            resources = resources
+                .Where(x => x.LessonId == lessonId);
+        }
+
+
+        if (!string.IsNullOrWhiteSpace(query.Search))
+        {
+            resources = resources.Where(x =>
+                x.Title.Contains(query.Search) ||
+               (x.Description != null &&
+     x.Description.Contains(query.Search)));
+        }
+
+
+        if (query.ResourceType.HasValue)
+        {
+            resources = resources.Where(x =>
+                x.Type == query.ResourceType.Value);
+        }
+
+
+        var totalCount = await resources.CountAsync();
+
+
+        var items = await resources
             .OrderBy(x => x.DisplayOrder)
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
             .Select(x => new LessonResourceListResponse
             {
                 Id = x.Id,
@@ -68,6 +111,15 @@ public class LessonResourceService : ILessonResourceService
                 DisplayOrder = x.DisplayOrder
             })
             .ToListAsync();
+
+
+        return new PagedResult<LessonResourceListResponse>
+        {
+            Items = items,
+            TotalCount = totalCount,
+            Page = query.Page,
+            PageSize = query.PageSize
+        };
     }
 
     public async Task<IReadOnlyList<LessonResourceListResponse>> GetByLessonAsync(Guid lessonId)

@@ -49,11 +49,12 @@ public class LessonResourcesController : ControllerBase
 
     // GET: api/lessonresources
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll(
+     [FromQuery] LessonResourceQuery query)
     {
-        var result = await _lessonResourceService.GetAllAsync();
+        var result = await _lessonResourceService.GetAllAsync(query);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
     }
 
     // GET: api/lessonresources/{id}
