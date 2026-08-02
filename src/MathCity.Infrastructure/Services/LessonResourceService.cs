@@ -248,6 +248,7 @@ public class LessonResourceService : ILessonResourceService
             LessonId = resource.LessonId,
             Title = resource.Title,
             ResourceType = resource.Type,
+            Url = resource.FileUrl,
             Description = resource.Description,
             DisplayOrder = resource.DisplayOrder
         };

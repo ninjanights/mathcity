@@ -1,5 +1,6 @@
 ﻿using MathCity.Application.Features.LessonResources.DTOs;
 using MathCity.Application.Features.LessonResources.Interfaces;
+using MathCity.Application.Features.Lessons.Interfaces;
 using MathCity.Application.Features.Storage.Interfaces;
 using MathCity.Shared.Responses;
 using Microsoft.AspNetCore.Authorization;
@@ -13,13 +14,15 @@ public class LessonResourcesController : ControllerBase
 {
     private readonly ILessonResourceService _lessonResourceService;
     private readonly IFileStorageService _fileStorageService;
-
+    private readonly ILessonService _lessonService;
     public LessonResourcesController(
         ILessonResourceService lessonResourceService,
-        IFileStorageService fileStorageService)
+        IFileStorageService fileStorageService,
+        ILessonService lessonService)
     {
         _lessonResourceService = lessonResourceService;
-        _fileStorageService = fileStorageService;
+        _fileStorageService = fileStorageService; 
+        _lessonService = lessonService;
     }
 
     [HttpPost]
@@ -29,15 +32,14 @@ public class LessonResourcesController : ControllerBase
     IFormFile file)
     {
         if (file == null || file.Length == 0)
-            return BadRequest("No file selected."); 
+            return BadRequest("No file selected.");
+        var lesson = await _lessonService.GetByIdAsync(request.LessonId);
 
         var upload = await _fileStorageService.UploadDocumentAsync(
-    request.LessonId,
-    request.Title,
-    request.ResourceType,
-    file.OpenReadStream(),
-    file.FileName,
-    file.ContentType);
+     lesson.Slug,
+     request.ResourceType,
+     file.OpenReadStream(),
+     file.ContentType);
 
         var result =
      await _lessonResourceService.CreateAsync(

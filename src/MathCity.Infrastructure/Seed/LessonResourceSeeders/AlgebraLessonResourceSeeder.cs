@@ -26,22 +26,17 @@ public class AlgebraLessonResourceSeeder
     "LessonResourceSeeders",
     "Algebra"
 );
-
         if (!Directory.Exists(folderPath))
         {
             Console.WriteLine($"Missing folder: {folderPath}");
             return;
         }
-
         var txtFiles = Directory.GetFiles(folderPath, "*.txt");
         Console.WriteLine($"Found {txtFiles.Length} Algebra files");
-
-
         // 1. Find related Lesson
         // 2. Upload TXT using _storage
         // 3. Create LessonResource entity
         // 4. Save to database
-
         foreach (var file in txtFiles)
         {
             var slug = Path.GetFileNameWithoutExtension(file);
@@ -68,14 +63,19 @@ public class AlgebraLessonResourceSeeder
             using var stream = new MemoryStream(fileBytes);
 
             var uploadResult = await _storage.UploadDocumentAsync(
-    lesson.Id,
-    $"{lesson.Title} Notes",
+    lesson.Slug,
     ResourceType.Text,
     stream,
-    $"{slug}.txt",
+    
     "text/plain",
     CancellationToken.None
-); var resource = new LessonResource
+); 
+            var nextDisplayOrder = await _context.LessonResources
+    .Where(x => x.LessonId == lesson.Id)
+    .Select(x => (int?)x.DisplayOrder)
+    .MaxAsync() ?? 0;
+            
+            var resource = new LessonResource
 {
     LessonId = lesson.Id,
     Title = $"{lesson.Title} Notes",

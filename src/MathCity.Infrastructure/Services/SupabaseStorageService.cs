@@ -31,7 +31,25 @@ public class SupabaseStorageService : IFileStorageService
        
     }
 
+    public async Task<bool> ExistsAsync(
+    string lessonSlug,
+    string fileName,
+    CancellationToken cancellationToken = default)
+    {
+        var path = $"resources/{lessonSlug}/{fileName}";
+        var url =
+       $"{_settings.ProjectUrl.TrimEnd('/')}/storage/v1/object/{_settings.BucketName}/{path}";
 
+        using var request = new HttpRequestMessage(
+            HttpMethod.Head,
+            url);
+
+
+        var response = await _httpClient.SendAsync(
+            request,
+            cancellationToken);
+        return response.IsSuccessStatusCode;
+    }
     private async Task<FileUploadResponse> UploadAsync(
         Stream stream,
         string fileName,
@@ -130,31 +148,52 @@ public class SupabaseStorageService : IFileStorageService
         return result;
     }
 
-
+    private static string GenerateResourceFileName(
+    string slug,
+    string extension)
+    {
+        return $"{slug}{extension}";
+    }
 
     public async Task<FileUploadResponse> UploadDocumentAsync(
-    Guid lessonId,
-    string resourceTitle,
-    
+     string lessonSlug,
     ResourceType resourceType,
     Stream stream,
-    string fileName,
     string contentType,
     CancellationToken cancellationToken = default)
     {
-        var folder = $"resources/{lessonId}";
-
-        var finalName = GenerateResourceFileName(
-       
-        resourceTitle,
-        Path.GetExtension(fileName));
-
-        var extension = Path.GetExtension(fileName).ToLowerInvariant();
-
+        var folder = $"resources/{lessonSlug}";
+        var extension = resourceType switch
+        {
+            ResourceType.Text => ".txt",
+            ResourceType.Pdf => ".pdf",
+            _ => throw new InvalidOperationException()
+        };
         ValidateResource(
-            resourceType,
-            extension,
-            contentType);
+    resourceType,
+    extension,
+    contentType);
+        var finalName = GenerateResourceFileName(lessonSlug, extension);
+
+        if (await ExistsAsync(
+        lessonSlug,
+        finalName,
+        cancellationToken))
+        {
+            var storagePath = $"{folder}/{finalName}";
+
+            var publicUrl =
+                $"{_settings.ProjectUrl.TrimEnd('/')}/storage/v1/object/public/{_settings.BucketName}/{storagePath}";
+
+            return new FileUploadResponse
+            {
+                FileName = finalName,
+                FilePath = storagePath,
+                PublicUrl = publicUrl,
+                Size = stream.Length,
+                ContentType = contentType
+            };
+        }
 
         return await UploadAsync(
     stream,
@@ -163,11 +202,7 @@ public class SupabaseStorageService : IFileStorageService
     folder,
     generateUniqueName: false,
     cancellationToken);
-
-
     }
-
-
     private static readonly string[] PdfExtensions =
 [
     ".pdf"
@@ -258,18 +293,7 @@ public class SupabaseStorageService : IFileStorageService
 
 
 
-    private static string GenerateResourceFileName(
-      
-        string resourceTitle,
-        string extension)
-    {
-        var slug = resourceTitle
-            .Trim()
-            .ToLowerInvariant()
-            .Replace(" ", "-");
-
-        return $"{slug}{extension}";
-    }
+    
 
     public async Task DeleteAsync(
        string filePath,
