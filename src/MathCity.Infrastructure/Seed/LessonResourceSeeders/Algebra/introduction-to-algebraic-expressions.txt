@@ -1,0 +1,73 @@
+﻿# Introduction to Algebraic Expressions
+
+## What is an Algebraic Expression?
+
+An algebraic expression is a mathematical phrase made up of numbers, variables, and operations such as addition, subtraction, multiplication, and division.
+
+Examples:
+- x + 5
+- 3a - 2
+- 4m + 7n
+- (x + y) / 2
+
+Unlike equations, algebraic expressions do not contain an equals (=) sign.
+
+## Components of an Expression
+
+Variables:
+Letters that represent unknown values.
+Examples: x, y, a, b.
+
+Constants:
+Fixed numerical values.
+Examples: 5, -3, 10.
+
+Coefficients:
+Numbers multiplied with variables.
+Example:
+In 7x, the coefficient is 7.
+
+Terms:
+Parts separated by addition or subtraction.
+
+Example:
+3x + 2y - 5
+
+Terms:
+- 3x
+- 2y
+- -5
+
+## Types of Expressions
+
+Monomial:
+Contains one term.
+Examples:
+- 5x
+- 8
+
+Binomial:
+Contains two terms.
+Examples:
+- x + 3
+- 4a - 2
+
+Trinomial:
+Contains three terms.
+Examples:
+- x² + 3x + 2
+
+Polynomial:
+Contains multiple terms.
+
+## Why Algebra Matters
+
+Algebra allows us to represent unknown quantities, solve real-world problems, build mathematical models, and forms the foundation of higher mathematics, engineering, computer science, and physics.
+
+## Summary
+
+- Expressions have no equals sign.
+- Variables represent unknown values.
+- Constants never change.
+- Coefficients multiply variables.
+- Terms are separated by + or -.

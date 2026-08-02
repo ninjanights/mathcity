@@ -1,0 +1,84 @@
+﻿# Simplifying and Evaluating Algebraic Expressions
+
+## Simplifying Expressions
+
+Simplifying means writing an expression in its shortest equivalent form.
+
+This is done by combining like terms.
+
+Like terms have the same variables raised to the same powers.
+
+Example:
+
+3x + 5x = 8x
+
+Example:
+
+4a + 2 - a + 6
+
+Combine like terms:
+
+(4a - a) + (2 + 6)
+
+= 3a + 8
+
+## Evaluating Expressions
+
+Evaluating means replacing variables with given values and calculating the result.
+
+Example:
+
+Evaluate:
+
+3x + 2
+
+when x = 4.
+
+Solution:
+
+3(4) + 2
+
+= 12 + 2
+
+= 14
+
+## Order of Operations
+
+Always follow:
+
+1. Parentheses
+2. Exponents
+3. Multiplication and Division
+4. Addition and Subtraction
+
+Example:
+
+2(x + 5)
+
+If x = 3,
+
+2(3 + 5)
+
+= 2 × 8
+
+= 16
+
+## Common Mistakes
+
+Do not combine unlike terms.
+
+Incorrect:
+
+3x + 2 = 5x
+
+Correct:
+
+3x + 2
+
+cannot be simplified further.
+
+## Summary
+
+- Combine like terms.
+- Substitute values carefully.
+- Follow the correct order of operations.

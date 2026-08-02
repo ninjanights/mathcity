@@ -17,6 +17,8 @@ using MathCity.Infrastructure.AI.Search;
 using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
 using MathCity.Infrastructure.Persistence.Context;
+using MathCity.Infrastructure.Seed;
+using MathCity.Infrastructure.Seed.LessonResourceSeeders;
 using MathCity.Infrastructure.Services;
 using MathCity.Infrastructure.Settings;
 using MathCity.Infrastructure.Storage;
@@ -25,9 +27,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Pgvector.EntityFrameworkCore;
-
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -117,6 +116,12 @@ client =>
 
         services.Configure<UploadOptions>(configuration.GetSection(UploadOptions.SectionName));
         services.Configure<AISettings>(configuration.GetSection(AISettings.SectionName));
+
+        // resource seeders
+        services.AddScoped<LessonResourceSeeder>();
+        services.AddScoped<AlgebraLessonResourceSeeder>();
+        services.AddScoped<CalculusLessonResourceSeeder>();
+        services.AddScoped<GeometryLessonResourceSeeder>();
 
         return services;
     }

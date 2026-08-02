@@ -32,9 +32,10 @@ public class PracticeQuestionsController : ControllerBase
 
     // GET: api/practicequestions
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll(
+        [FromQuery] PracticeQuestionQuery query)
     {
-        var result = await _practiceQuestionService.GetAllAsync();
+        var result = await _practiceQuestionService.GetAllAsync(query);
 
         return Ok(ApiResponse<object?>.Ok(result));
     }
@@ -43,6 +44,14 @@ public class PracticeQuestionsController : ControllerBase
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById(Guid id)
     {
+
+        Console.WriteLine($"Authenticated: {User.Identity?.IsAuthenticated}");
+        Console.WriteLine($"Is Admin: {User.IsInRole("Admin")}");
+
+        foreach (var claim in User.Claims)
+        {
+            Console.WriteLine($"{claim.Type} = {claim.Value}");
+        }
         // If admin, return full response including correct answer & explanation
         if (User.Identity?.IsAuthenticated == true && User.IsInRole("Admin"))
         {

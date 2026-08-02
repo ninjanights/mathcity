@@ -108,14 +108,11 @@ public class LessonService : ILessonService
         // Filter by Tag
         if (!string.IsNullOrWhiteSpace(query.Tag))
         {
-            var tag = query.Tag.Trim();
-
             lessons = lessons.Where(x =>
                 x.LessonTags.Any(t =>
-                    EF.Functions.ILike(t.Tag.Name, tag) ||
-                    EF.Functions.ILike(t.Tag.Slug, tag)));
+                    EF.Functions.ILike(t.Tag.Name, query.Tag) ||
+                    EF.Functions.ILike(t.Tag.Slug, query.Tag)));
         }
-
         var totalCount = await lessons.CountAsync();
 
         var items = await lessons

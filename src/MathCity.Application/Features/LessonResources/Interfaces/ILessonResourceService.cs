@@ -1,4 +1,6 @@
-﻿using MathCity.Application.Features.LessonResources.DTOs;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.LessonResources.DTOs;
+using MathCity.Application.Features.Lessons.DTOs;
 using MathCity.Application.Features.Storage.DTOs;
 
 namespace MathCity.Application.Features.LessonResources.Interfaces;
@@ -10,7 +12,6 @@ public interface ILessonResourceService
     FileUploadResponse upload);
 
     Task<IReadOnlyList<LessonResourceListResponse>> GetAllAsync();
-
     Task<LessonResourceResponse> GetByIdAsync(Guid id);
 
     Task<IReadOnlyList<LessonResourceListResponse>> GetByLessonAsync(Guid lessonId);

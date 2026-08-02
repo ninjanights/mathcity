@@ -1,4 +1,5 @@
 ﻿using MathCity.Application.Common.Exceptions;
+using MathCity.Application.Common.Models;
 using MathCity.Application.Features.PracticeQuestions.DTOs;
 using MathCity.Application.Features.PracticeQuestions.Interfaces;
 using MathCity.Application.Features.Progress.Interfaces;
@@ -79,20 +80,63 @@ public class PracticeQuestionService : IPracticeQuestionService
         };
     }
 
-    public async Task<IReadOnlyList<PracticeQuestionListResponse>> GetAllAsync()
+    public async Task<PagedResult<PracticeQuestionListResponse>> GetAllAsync(
+     PracticeQuestionQuery query)
     {
-        return await _context.PracticeQuestions
-            .OrderBy(x => x.DisplayOrder)
-            .Select(x => new PracticeQuestionListResponse
-            {
-                Id = x.Id,
-                Question = x.Question,
-                Difficulty = x.Difficulty,
-                DisplayOrder = x.DisplayOrder
-            })
-            .ToListAsync();
-    }
+        var questions = _context.PracticeQuestions
+            .AsNoTracking()
+            .AsQueryable();
 
+        if (!string.IsNullOrWhiteSpace(query.Search))
+        {
+            questions = questions.Where(x =>
+                EF.Functions.ILike(
+                    x.Question,
+                    $"%{query.Search}%"));
+        }
+
+        if (!string.IsNullOrWhiteSpace(query.LessonSlug))
+        {
+
+            var slug = query.LessonSlug.Trim().ToLower();
+
+            questions = questions.Where(x =>
+                x.Lesson.Slug == slug);
+        }
+
+        if (query.Difficulty.HasValue)
+        {
+            questions = questions.Where(x =>
+                x.Difficulty == query.Difficulty.Value);
+        }
+
+        var totalCount = await questions.CountAsync();
+
+        var items = await questions
+            .OrderBy(x => x.DisplayOrder)
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
+           .Select(x => new PracticeQuestionListResponse
+           {
+               Id = x.Id,
+               LessonId = x.LessonId,
+               LessonTitle = x.Lesson.Title,
+               Question = x.Question,
+               Difficulty = x.Difficulty,
+               DisplayOrder = x.DisplayOrder
+           })
+            .ToListAsync();
+
+        return new PagedResult<PracticeQuestionListResponse>
+        {
+            Items = items,
+            Page = query.Page,
+            PageSize = query.PageSize,
+            TotalCount = totalCount,
+            TotalPages = (int)Math.Ceiling(
+                totalCount / (double)query.PageSize)
+        };
+    }
     public async Task<IReadOnlyList<PracticeQuestionListResponse>> GetByLessonAsync(Guid lessonId)
     {
         return await _context.PracticeQuestions

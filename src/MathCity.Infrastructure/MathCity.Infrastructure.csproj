@@ -41,5 +41,9 @@
     <ProjectReference Include="..\MathCity.Domain\MathCity.Domain.csproj" />
 	  <ProjectReference Include="..\MathCity.Shared\MathCity.Shared.csproj" />
   </ItemGroup>
-
+	<ItemGroup>
+		<None Update="Seed\LessonResourceSeeders\**\*.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>

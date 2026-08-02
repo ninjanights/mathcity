@@ -1,4 +1,6 @@
 ﻿using MathCity.Application.Common.Exceptions;
+using MathCity.Application.Common.Models;
+using MathCity.Application.Features.Chapters.DTOs;
 using MathCity.Application.Features.Subjects.DTOs;
 using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Domain.Entities;
@@ -90,33 +92,47 @@ public class SubjectService : ISubjectService
     }
 
     // Implement the GetAllAsync method to retrieve all subjects
-    public async Task<IReadOnlyList<SubjectListResponse>> GetAllAsync(
-      string? search = null)
+    public async Task<PagedResult<SubjectListResponse>> GetAllAsync(
+    SubjectQuery query)
     {
-        var query = _context.Subjects.AsQueryable();
 
-        if (!string.IsNullOrWhiteSpace(search))
+        var subjects = _context.Subjects.AsQueryable();
+        if (!string.IsNullOrWhiteSpace(query.Search))
         {
-            query = query.Where(x =>
+            subjects = subjects.Where(x =>
                 EF.Functions.ILike(
                     x.Name,
-                    $"%{search}%"));
+                    $"%{query.Search}%"));
         }
 
-        return await query
-            .OrderBy(x => x.DisplayOrder)
-            .Select(x => new SubjectListResponse
-            {
-                Id = x.Id,
-                Name = x.Name,
-                Slug = x.Slug,
-                Icon = x.Icon,
-                Color = x.Color,
-                Description = x.Description,
-                DisplayOrder = x.DisplayOrder,
-                IsPublished = x.IsPublished
-            })
-            .ToListAsync();
+        var totalCount = await subjects.CountAsync();
+        var items = await subjects
+    .OrderBy(x => x.DisplayOrder)
+    .Skip((query.Page - 1) * query.PageSize)
+    .Take(query.PageSize)
+    .Select(x => new SubjectListResponse
+    {
+        Id = x.Id,
+        Name = x.Name,
+        Slug = x.Slug,
+        Icon = x.Icon,
+        Color = x.Color,
+        Description = x.Description,
+        DisplayOrder = x.DisplayOrder,
+        IsPublished = x.IsPublished
+    })
+    .ToListAsync();
+
+
+
+        return new PagedResult<SubjectListResponse>
+        {
+            Items = items,
+            Page = query.Page,
+            PageSize = query.PageSize,
+            TotalCount = totalCount,
+            TotalPages = (int)Math.Ceiling(totalCount / (double)query.PageSize)
+        };
     }
 
     // Implement the GetByIdAsync method to retrieve a subject by its ID

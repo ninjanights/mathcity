@@ -1,10 +1,10 @@
-﻿using System;
+﻿using MathCity.Application.Features.Subjects.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MathCity.Application.Common.Models;
 using System.Threading.Tasks;
-
-using MathCity.Application.Features.Subjects.DTOs;
 
 namespace MathCity.Application.Features.Subjects.Interfaces;
 
@@ -24,6 +24,5 @@ public interface ISubjectService
 
     Task<SubjectResponse> GetByIdAsync(Guid id);
 
-    Task<IReadOnlyList<SubjectListResponse>> GetAllAsync(
-    string? search = null);
+    Task<PagedResult<SubjectListResponse>> GetAllAsync(SubjectQuery query);
 }

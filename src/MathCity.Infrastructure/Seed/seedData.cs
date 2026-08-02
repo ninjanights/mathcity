@@ -1,4 +1,5 @@
-﻿using MathCity.Infrastructure.Identity;
+﻿using MathCity.Application.Features.Storage.Interfaces;
+using MathCity.Infrastructure.Identity;
 using MathCity.Infrastructure.Persistence.Context;
 using MathCity.Infrastructure.Seed.Lessons;
 using Microsoft.AspNetCore.Identity;
@@ -15,9 +16,11 @@ public static class SeedData
     public static async Task InitializeAsync(
         ApplicationDbContext context,
         UserManager<ApplicationUser> userManager,
-        RoleManager<ApplicationRole> roleManager)
+        RoleManager<ApplicationRole> roleManager,
+        LessonResourceSeeder lessonResourceSeeder)
     {
         await using var transaction = await context.Database.BeginTransactionAsync();
+
         try
         {
             // Identity
@@ -82,6 +85,14 @@ public static class SeedData
 
             Console.WriteLine("Seeding Vector L...");
             await VectorsLessonSeeder.SeedAsync(context);
+
+            // Lesson Resources
+            Console.WriteLine("Seeding Lesson Resources...");
+
+     
+            await lessonResourceSeeder.SeedAsync();
+
+
 
 
             // Metadata

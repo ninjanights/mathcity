@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.PracticeQuestions.DTOs;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.PracticeQuestions.DTOs;
 
 namespace MathCity.Application.Features.PracticeQuestions.Interfaces;
 
@@ -6,7 +7,8 @@ public interface IPracticeQuestionService
 {
     Task<PracticeQuestionResponse> CreateAsync(CreatePracticeQuestionRequest request);
 
-    Task<IReadOnlyList<PracticeQuestionListResponse>> GetAllAsync();
+    Task<PagedResult<PracticeQuestionListResponse>> GetAllAsync(
+    PracticeQuestionQuery query);
 
     Task<PracticeQuestionResponse> GetByIdAsync(Guid id);
 

@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Chapters.Interfaces;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.Subjects.DTOs;
 using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Shared.Responses;
@@ -43,11 +44,11 @@ public class SubjectsController : ControllerBase
     // GET: /api/subjects
     [HttpGet]
     public async Task<IActionResult> GetAll(
-     [FromQuery] string? search)
+    [FromQuery] SubjectQuery query)
     {
-        var result = await _subjectService.GetAllAsync(search);
+        var result = await _subjectService.GetAllAsync(query);
 
-        return Ok(ApiResponse<object?>.Ok(result));
+        return Ok(ApiResponse<PagedResult<SubjectListResponse>>.Ok(result));
     }
 
     // GET: /api/subjects/{id}

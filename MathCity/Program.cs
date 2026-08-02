@@ -114,11 +114,14 @@ using (var scope = app.Services.CreateScope())
 
         var userManager =
             services.GetRequiredService<UserManager<ApplicationUser>>();
+        var lessonResourceSeeder = scope.ServiceProvider.GetRequiredService<LessonResourceSeeder>();
+
         await context.Database.MigrateAsync();
         await SeedData.InitializeAsync(
             context,
             userManager,
-            roleManager
+            roleManager,
+            lessonResourceSeeder
             );
 
         app.Logger.LogInformation("Database seeded successfully.");
