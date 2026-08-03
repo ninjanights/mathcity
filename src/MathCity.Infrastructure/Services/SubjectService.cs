@@ -93,10 +93,10 @@ public class SubjectService : ISubjectService
 
     // Implement the GetAllAsync method to retrieve all subjects
     public async Task<PagedResult<SubjectListResponse>> GetAllAsync(
-    SubjectQuery query)
+      SubjectQuery query)
     {
+        var subjects = _context.Subjects.AsNoTracking().AsQueryable();
 
-        var subjects = _context.Subjects.AsQueryable();
         if (!string.IsNullOrWhiteSpace(query.Search))
         {
             subjects = subjects.Where(x =>
@@ -106,24 +106,46 @@ public class SubjectService : ISubjectService
         }
 
         var totalCount = await subjects.CountAsync();
+
         var items = await subjects
-    .OrderBy(x => x.DisplayOrder)
-    .Skip((query.Page - 1) * query.PageSize)
-    .Take(query.PageSize)
-    .Select(x => new SubjectListResponse
-    {
-        Id = x.Id,
-        Name = x.Name,
-        Slug = x.Slug,
-        Icon = x.Icon,
-        Color = x.Color,
-        Description = x.Description,
-        DisplayOrder = x.DisplayOrder,
-        IsPublished = x.IsPublished
-    })
-    .ToListAsync();
+            .OrderBy(x => x.DisplayOrder)
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
+            .Select(x => new SubjectListResponse
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Slug = x.Slug,
+                Icon = x.Icon,
+                Color = x.Color,
+                Description = x.Description,
+                DisplayOrder = x.DisplayOrder,
+                IsPublished = x.IsPublished,
 
+                ChapterCount = x.Chapters.Count(),
 
+                TopicCount = x.Chapters
+                    .SelectMany(c => c.Topics)
+                    .Count(),
+
+                LessonCount = x.Chapters
+                    .SelectMany(c => c.Topics)
+                    .SelectMany(t => t.Lessons)
+                    .Count(),
+
+                LessonResourceCount = x.Chapters
+                    .SelectMany(c => c.Topics)
+                    .SelectMany(t => t.Lessons)
+                    .SelectMany(l => l.Resources)
+                    .Count(),
+
+                PracticeQuestionCount = x.Chapters
+                    .SelectMany(c => c.Topics)
+                    .SelectMany(t => t.Lessons)
+                    .SelectMany(l => l.PracticeQuestions)
+                    .Count()
+            })
+            .ToListAsync();
 
         return new PagedResult<SubjectListResponse>
         {
@@ -134,6 +156,7 @@ public class SubjectService : ISubjectService
             TotalPages = (int)Math.Ceiling(totalCount / (double)query.PageSize)
         };
     }
+
 
     // Implement the GetByIdAsync method to retrieve a subject by its ID
     public async Task<SubjectResponse> GetByIdAsync(Guid id)

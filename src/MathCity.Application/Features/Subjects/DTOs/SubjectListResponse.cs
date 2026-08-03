@@ -23,4 +23,11 @@ public class SubjectListResponse
     public int DisplayOrder { get; set; }
 
     public string Color { get; set; } = string.Empty;
+
+    // agrigate counts for chapters, topics, lessons, lesson resources, and practice questions
+    public int ChapterCount { get; set; }
+    public int TopicCount { get; set; }
+    public int LessonCount { get; set; }
+    public int LessonResourceCount { get; set; }
+    public int PracticeQuestionCount { get; set; }
 }
