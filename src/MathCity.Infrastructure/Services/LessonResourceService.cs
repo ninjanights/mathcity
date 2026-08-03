@@ -249,8 +249,30 @@ public class LessonResourceService : ILessonResourceService
             Title = resource.Title,
             ResourceType = resource.Type,
             Url = resource.FileUrl,
+            FileSize = resource.FileSize,
             Description = resource.Description,
             DisplayOrder = resource.DisplayOrder
         };
     }
 }
+
+
+    //public Guid LessonId { get; set; }
+
+    //public Lesson Lesson { get; set; } = null!;
+
+    //public string Title { get; set; } = string.Empty;
+
+    //public string FileName { get; set; } = string.Empty;
+
+    //public string? Description { get; set; }
+
+    //public string FileUrl { get; set; } = string.Empty;
+
+    //public long FileSize { get; set; }
+
+    //public string ContentType { get; set; } = string.Empty;
+
+    //public ResourceType Type { get; set; }
+
+    //public int DisplayOrder { get; set; }

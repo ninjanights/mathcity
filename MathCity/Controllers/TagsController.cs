@@ -28,11 +28,12 @@ public class TagsController : ControllerBase
     }
 
     // GET: api/tags
+    // GET: api/tags
     [HttpGet]
     public async Task<IActionResult> GetAll(
-    [FromQuery] string? search)
+        [FromQuery] TagQuery query)
     {
-        var result = await _tagService.GetAllAsync(search);
+        var result = await _tagService.GetAllAsync(query);
 
         return Ok(ApiResponse<object?>.Ok(result));
     }

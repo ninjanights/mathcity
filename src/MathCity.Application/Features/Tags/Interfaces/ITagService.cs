@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Tags.DTOs;
+﻿using MathCity.Application.Common.Models;
+using MathCity.Application.Features.Tags.DTOs;
 
 namespace MathCity.Application.Features.Tags.Interfaces;
 
@@ -6,8 +7,8 @@ public interface ITagService
 {
     Task<TagResponse> CreateAsync(CreateTagRequest request);
 
-    Task<IReadOnlyList<TagListResponse>> GetAllAsync(
-    string? search = null);
+    Task<PagedResult<TagListResponse>> GetAllAsync(
+    TagQuery query);
 
     Task<TagResponse> GetByIdAsync(Guid id);
 

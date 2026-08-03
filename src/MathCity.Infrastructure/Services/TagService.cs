@@ -1,4 +1,5 @@
 ﻿using MathCity.Application.Common.Exceptions;
+using MathCity.Application.Common.Models;
 using MathCity.Application.Features.Tags.DTOs;
 using MathCity.Application.Features.Tags.Interfaces;
 using MathCity.Domain.Entities;
@@ -41,21 +42,27 @@ public class TagService : ITagService
     }
 
     // Get all tags with optional search
-    public async Task<IReadOnlyList<TagListResponse>> GetAllAsync(
-       string? search = null)
+    public async Task<PagedResult<TagListResponse>> GetAllAsync(
+     TagQuery query)
     {
-        var query = _context.Tags.AsQueryable();
+        var tags = _context.Tags
+            .AsNoTracking()
+            .AsQueryable();
 
-        if (!string.IsNullOrWhiteSpace(search))
+        if (!string.IsNullOrWhiteSpace(query.Search))
         {
-            query = query.Where(x =>
+            tags = tags.Where(x =>
                 EF.Functions.ILike(
                     x.Name,
-                    $"%{search}%"));
+                    $"%{query.Search}%"));
         }
 
-        return await query
+        var totalCount = await tags.CountAsync();
+
+        var items = await tags
             .OrderBy(x => x.Name)
+            .Skip((query.Page - 1) * query.PageSize)
+            .Take(query.PageSize)
             .Select(x => new TagListResponse
             {
                 Id = x.Id,
@@ -63,6 +70,14 @@ public class TagService : ITagService
                 Slug = x.Slug
             })
             .ToListAsync();
+
+        return new PagedResult<TagListResponse>
+        {
+            Items = items,
+            TotalCount = totalCount,
+            Page = query.Page,
+            PageSize = query.PageSize
+        };
     }
 
     public async Task<TagResponse> GetByIdAsync(Guid id)

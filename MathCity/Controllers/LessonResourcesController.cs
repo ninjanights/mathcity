@@ -65,7 +65,8 @@ public class LessonResourcesController : ControllerBase
     {
         var result = await _lessonResourceService.GetByIdAsync(id);
 
-        return Ok(result);
+        return Ok(ApiResponse<object?>.Ok(result));
+
     }
 
     // PUT: api/lessonresources/{id}

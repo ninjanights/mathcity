@@ -14,6 +14,8 @@ public class LessonResourceResponse
 
     public string? Description { get; set; }
 
+    public long FileSize { get; set; }
+
     public ResourceType ResourceType { get; set; }
 
     public int DisplayOrder { get; set; }
