@@ -20,4 +20,6 @@ public class AISettings
 
     public int Dimension { get; set; }
         = 1024;
+
+    public string ChatModel { get; set; } = "gemini-2.5-flash-lite";
 }

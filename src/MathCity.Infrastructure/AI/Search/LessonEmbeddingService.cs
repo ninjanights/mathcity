@@ -157,7 +157,7 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
 
 
-        var results = await _context.LessonVectorEmbeddings
+        var results = await query
             .OrderBy(x => x.Embedding.CosineDistance(queryVector))
             .Take(request.TopK)
             .Select(x => new SemanticSearchResult
@@ -195,7 +195,7 @@ public class LessonEmbeddingService : ILessonEmbeddingService
         
         chunks.Add(new EmbeddingChunk
         {
-            Title = lesson.Title + " Summary",
+            Title = lesson.Title + "Summary",
 
             Content =
             $"""
@@ -213,9 +213,6 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
         Summary:
         {lesson.Summary}
-
-        Content:
-        {lesson.Content}
         """,
 
             Type = EmbeddingChunkType.Summary,
@@ -256,15 +253,29 @@ public class LessonEmbeddingService : ILessonEmbeddingService
             {
                 Title = resource.Title,
 
+                // Learning resource such as article,
+                // PDF, YouTube video, etc.
+
                 Content =
-                $"""
-        Resource:
-        {resource.Title}
+$"""
+Subject:
+{lesson.Topic.Chapter.Subject.Name}
 
-        Description:
-        {resource.Description}
+Chapter:
+{lesson.Topic.Chapter.Title}
 
-     """,
+Topic:
+{lesson.Topic.Title}
+
+Lesson:
+{lesson.Title}
+
+Resource:
+{resource.Title}
+
+Description:
+{resource.Description}
+""",
 
                 Type = EmbeddingChunkType.Resource,
 
@@ -273,11 +284,31 @@ public class LessonEmbeddingService : ILessonEmbeddingService
         }
 
 
+        // Main lesson content.
+        // Include metadata so this chunk can be understood
+        // without relying on database joins.
+
         chunks.Add(new EmbeddingChunk
         {
             Title = lesson.Title,
 
-            Content = lesson.Content,
+            Content =
+            $"""
+    Subject:
+    {lesson.Topic.Chapter.Subject.Name}
+
+    Chapter:
+    {lesson.Topic.Chapter.Title}
+
+    Topic:
+    {lesson.Topic.Title}
+
+    Lesson:
+    {lesson.Title}
+
+    Content:
+    {lesson.Content}
+    """,
 
             Type = EmbeddingChunkType.Lesson
         });
@@ -290,20 +321,38 @@ public class LessonEmbeddingService : ILessonEmbeddingService
             {
                 Title = "Practice Question",
 
+                // Practice question used during semantic search.
+
                 Content =
-                $"""
-            Question:
-            {question.Question}
+$"""
+Subject:
+{lesson.Topic.Chapter.Subject.Name}
 
-            Options:
-            A. {question.OptionA}
-            B. {question.OptionB}
-            C. {question.OptionC}
-            D. {question.OptionD}
+Chapter:
+{lesson.Topic.Chapter.Title}
 
-            Explanation:
-            {question.Explanation}
-            """,
+Topic:
+{lesson.Topic.Title}
+
+Lesson:
+{lesson.Title}
+
+Question:
+{question.Question}
+
+Options:
+
+A. {question.OptionA}
+
+B. {question.OptionB}
+
+C. {question.OptionC}
+
+D. {question.OptionD}
+
+Explanation:
+{question.Explanation}
+""",
 
                 Type = EmbeddingChunkType.PracticeQuestion,
 
@@ -315,17 +364,31 @@ public class LessonEmbeddingService : ILessonEmbeddingService
             {
                 Title = "Practice Question Solution",
 
+                // Stores the complete solution for retrieval.
+
                 Content =
-                $"""
-        Question:
-        {question.Question}
+$"""
+Subject:
+{lesson.Topic.Chapter.Subject.Name}
 
-        Correct Answer:
-        {question.CorrectAnswer}
+Chapter:
+{lesson.Topic.Chapter.Title}
 
-        Explanation:
-        {question.Explanation}
-        """,
+Topic:
+{lesson.Topic.Title}
+
+Lesson:
+{lesson.Title}
+
+Question:
+{question.Question}
+
+Correct Answer:
+{question.CorrectAnswer}
+
+Explanation:
+{question.Explanation}
+""",
 
                 Type = EmbeddingChunkType.SolutionExplanation,
 
@@ -338,19 +401,7 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
         }
 
-        if (lesson.LessonTags.Any())
-        {
-            chunks.Add(new EmbeddingChunk
-            {
-                Content =
-                "Tags: " +
-                string.Join(", ",
-                    lesson.LessonTags.Select(x => x.Tag.Name)
-                ),
-
-                Type = EmbeddingChunkType.Tag
-            });
-        }
+     
 
 
         return chunks;
