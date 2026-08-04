@@ -10,16 +10,14 @@ public class AISettings
 {
     public const string SectionName = "AI";
 
-    public string BaseUrl { get; set; }
-        = "https://api.jina.ai";
-
-    public string ApiKey { get; set; } = "";
-
-    public string Model { get; set; }
-        = "jina-embeddings-v3";
-
+    // Jina
+    public string JinaBaseUrl { get; set; } = string.Empty;
+    public string JinaApiKey { get; set; } = string.Empty;
+    public string JinaModel { get; set; } = string.Empty;
     public int Dimension { get; set; }
-        = 1024;
 
-    public string ChatModel { get; set; } = "gemini-2.5-flash-lite";
+    // Gemini
+    public string GeminiBaseUrl { get; set; } = string.Empty;
+    public string GeminiApiKey { get; set; } = string.Empty;
+    public string GeminiModel { get; set; } = string.Empty;
 }

@@ -68,13 +68,24 @@ public static class DependencyInjection
         });
 
         // Embeddings (Jina)
-        services.AddHttpClient<IEmbeddingGenerator, JinaEmbeddingGenerator>(client =>
+        services.AddHttpClient<IEmbeddingGenerator, JinaEmbeddingGenerator>((sp, client) =>
         {
-            client.BaseAddress = new Uri(configuration["AI:BaseUrl"]!);
+            var settings = sp.GetRequiredService<
+                Microsoft.Extensions.Options.IOptions<AISettings>>().Value;
+
+            client.BaseAddress = new Uri(settings.JinaBaseUrl);
         });
 
         // Chat (Gemini)
-        services.AddHttpClient<IAIChatService, GeminiChatService>();
+        services.AddHttpClient<IAIChatService, GeminiChatService>((sp, client) =>
+        {
+            var settings = sp.GetRequiredService<
+                Microsoft.Extensions.Options.IOptions<AISettings>>().Value;
+
+            client.BaseAddress = new Uri(settings.GeminiBaseUrl);
+        });
+
+
 
         // Semantic Search
         services.AddScoped<ILessonEmbeddingService, LessonEmbeddingService>();

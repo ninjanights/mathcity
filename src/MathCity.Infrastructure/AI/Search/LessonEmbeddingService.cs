@@ -88,7 +88,7 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
                     SourceId = chunk.SourceId,
 
-                    Model = _settings.Model,
+                    Model = _settings.JinaModel,
 
                     Dimensions = dimension,
 

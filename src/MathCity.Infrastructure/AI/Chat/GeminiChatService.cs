@@ -43,9 +43,9 @@ public class GeminiChatService : IAIChatService
         };
 
         var response = await _httpClient.PostAsJsonAsync(
-            $"https://generativelanguage.googleapis.com/v1beta/models/{_settings.ChatModel}:generateContent?key={_settings.ApiKey}",
-            request,
-            cancellationToken);
+    $"v1beta/models/{_settings.GeminiModel}:generateContent?key={_settings.GeminiApiKey}",
+    request,
+    cancellationToken);
 
         response.EnsureSuccessStatusCode();
 

@@ -28,7 +28,7 @@ public class JinaEmbeddingGenerator : IEmbeddingGenerator
     {
         var request = new
         {
-            model = _settings.Model,
+            model = _settings.JinaModel,
             input = new[]
         {
             text
@@ -39,12 +39,12 @@ public class JinaEmbeddingGenerator : IEmbeddingGenerator
         _httpClient.DefaultRequestHeaders.Authorization =
         new System.Net.Http.Headers.AuthenticationHeaderValue(
             "Bearer",
-            _settings.ApiKey
+            _settings.JinaApiKey
         );
 
 
         var response = await _httpClient.PostAsJsonAsync(
-            "https://api.jina.ai/v1/embeddings",
+            "v1/embeddings",
             request,
             cancellationToken
         );
