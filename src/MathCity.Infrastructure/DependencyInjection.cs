@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.Authentication.Interfaces;
+﻿using MathCity.Application.Features.AIChat.Interfaces;
+using MathCity.Application.Features.Authentication.Interfaces;
 using MathCity.Application.Features.Bookmarks.Interfaces;
 using MathCity.Application.Features.Chapters.Interfaces;
 using MathCity.Application.Features.LessonResources.Interfaces;
@@ -12,7 +13,9 @@ using MathCity.Application.Features.Subjects.Interfaces;
 using MathCity.Application.Features.Tags.Interfaces;
 using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Application.Features.Users.Interfaces;
+using MathCity.Infrastructure.AI.Chat;
 using MathCity.Infrastructure.AI.Embeddings;
+using MathCity.Infrastructure.AI.Orchestrator;
 using MathCity.Infrastructure.AI.Search;
 using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
@@ -64,20 +67,20 @@ public static class DependencyInjection
 
         });
 
+        // Embeddings (Jina)
+        services.AddHttpClient<IEmbeddingGenerator, JinaEmbeddingGenerator>(client =>
+        {
+            client.BaseAddress = new Uri(configuration["AI:BaseUrl"]!);
+        });
 
-        services.AddHttpClient<IEmbeddingGenerator, JinaEmbeddingGenerator>(
-client =>
-{
- client.BaseAddress = new Uri(
-     configuration["AI:BaseUrl"]!
- );
-});
+        // Chat (Gemini)
+        services.AddHttpClient<IAIChatService, GeminiChatService>();
 
-
-
+        // Semantic Search
         services.AddScoped<ILessonEmbeddingService, LessonEmbeddingService>();
 
-
+        // RAG Orchestrator
+        services.AddScoped<IChatOrchestrator, ChatOrchestrator>();
 
         services
 .AddIdentity<ApplicationUser, ApplicationRole>(options =>

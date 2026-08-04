@@ -13,7 +13,6 @@ public class ChatRequest
 
     public SearchContext Context { get; set; } = SearchContext.Global;
 
-
     public Guid? LessonId { get; set; }
 
     public Guid? TopicId { get; set; }
