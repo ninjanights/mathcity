@@ -16,14 +16,12 @@ public class SemanticSearchController : ControllerBase
 
     [HttpPost]
     public async Task<IActionResult> Search(
-        SemanticSearchRequest request)
+        [FromBody] SemanticSearchRequest request)
     {
+        Console.WriteLine($"Received search request: Query='{request.Query}', TopK={request.TopK}, Context={request.Context}, LessonId={request.LessonId}, TopicId={request.TopicId}, ChapterId={request.ChapterId}");
         var result = await _service.SearchAsync(request);
-
         return Ok(result);
-   
     }
-    
 
 
 

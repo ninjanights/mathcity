@@ -14,4 +14,6 @@ public class LessonQuery : PaginationQuery
     public bool? Published { get; set; }
 
     public string? Tag { get; set; }
+
+
 }

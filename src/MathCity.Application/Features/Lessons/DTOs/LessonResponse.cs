@@ -17,7 +17,9 @@ public class LessonResponse
     public string MarkdownContent { get; set; } = string.Empty;
 
     public DifficultyLevel Difficulty { get; set; }
+    public bool IsEmbedded { get; set; }
 
+    public DateTime? EmbeddingsGeneratedAt { get; set; }
     public int ReadingTimeMinutes { get; set; }
 
     public bool IsPublished { get; set; }

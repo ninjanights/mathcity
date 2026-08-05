@@ -52,7 +52,10 @@ public class LessonService : ILessonService
             Difficulty = request.Difficulty,
             ReadingTimeMinutes = request.ReadingTimeMinutes,
             IsPublished = request.IsPublished,
-            DisplayOrder = maxDisplayOrder + 1
+            DisplayOrder = maxDisplayOrder + 1,
+
+            IsEmbedded = false,
+            EmbeddingsGeneratedAt = null
         };
 
         _context.Lessons.Add(lesson);
@@ -129,7 +132,10 @@ public class LessonService : ILessonService
                 Difficulty = x.Difficulty,
                 ReadingTimeMinutes = x.ReadingTimeMinutes,
                 IsPublished = x.IsPublished,
-                DisplayOrder = x.DisplayOrder
+                DisplayOrder = x.DisplayOrder,
+
+                IsEmbedded = x.IsEmbedded,
+                EmbeddingsGeneratedAt = x.EmbeddingsGeneratedAt
             })
             .ToListAsync();
 
@@ -158,7 +164,9 @@ public class LessonService : ILessonService
                 ReadingTimeMinutes = x.ReadingTimeMinutes,
                 
                 DisplayOrder = x.DisplayOrder,
-                IsPublished = x.IsPublished
+                IsPublished = x.IsPublished,
+                IsEmbedded = x.IsEmbedded,
+                EmbeddingsGeneratedAt = x.EmbeddingsGeneratedAt
             })
             .ToListAsync();
     }
@@ -202,6 +210,11 @@ public class LessonService : ILessonService
         if (slugExists)
             throw new ConflictException("Lesson already exists.");
 
+        var shouldRegenerate =
+    lesson.Title != request.Title ||
+    lesson.Summary != request.Summary ||
+    lesson.Content != request.MarkdownContent;
+
         lesson.Title = request.Title;
         lesson.Summary = request.Summary;
         lesson.Content = request.MarkdownContent;
@@ -209,7 +222,16 @@ public class LessonService : ILessonService
         lesson.ReadingTimeMinutes = request.ReadingTimeMinutes;
         lesson.IsPublished = request.IsPublished;
         lesson.Slug = slug;
-    
+
+
+
+        if (shouldRegenerate)
+        {
+            lesson.IsEmbedded = false;
+            lesson.EmbeddingsGeneratedAt = null;
+        }
+
+
         await _context.SaveChangesAsync();
 
         return MapToResponse(lesson);
@@ -256,10 +278,12 @@ public class LessonService : ILessonService
             MarkdownContent = lesson.Content,
             Difficulty = lesson.Difficulty,
             ReadingTimeMinutes = lesson.ReadingTimeMinutes,
-            
             IsPublished = lesson.IsPublished,
             DisplayOrder = lesson.DisplayOrder,
-            IsBookmarked = isBookmarked
+            IsBookmarked = isBookmarked,
+
+            IsEmbedded = lesson.IsEmbedded,
+            EmbeddingsGeneratedAt = lesson.EmbeddingsGeneratedAt
         };
     }
 

@@ -47,6 +47,14 @@ public class GeminiChatService : IAIChatService
     request,
     cancellationToken);
 
+
+
+        var body = await response.Content.ReadAsStringAsync();
+
+        Console.WriteLine("Status: " + response.StatusCode);
+        Console.WriteLine("Response:");
+        Console.WriteLine(body);
+
         response.EnsureSuccessStatusCode();
 
         var result =

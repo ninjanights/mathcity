@@ -78,6 +78,11 @@ public class LessonEmbeddingService : ILessonEmbeddingService
                     );
                 }
 
+                Console.WriteLine($"Subject : {lesson.Topic.Chapter.Subject.Name}");
+                Console.WriteLine($"Chapter : {lesson.Topic.Chapter.Title}");
+                Console.WriteLine($"Topic   : {lesson.Topic.Title}");
+                Console.WriteLine($"Lesson  : {lesson.Title}");
+
                 Console.WriteLine(
         $"Saving chunk index: {chunkIndex} | {chunk.Title}"
     );
@@ -102,11 +107,28 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
                     Embedding = vector,
 
-                    TokenCount = 0
+                    TokenCount = 0,
+                    SubjectId = lesson.Topic.Chapter.Subject.Id,
+                    Tags = lesson.LessonTags
+        .Select(x => x.Tag.Name)
+        .ToArray(),
+                    ChapterId = lesson.Topic.Chapter.Id,
+
+                    TopicId = lesson.Topic.Id,
+
+                    LessonTitle = lesson.Title,
+
+                    SubjectName = lesson.Topic.Chapter.Subject.Name,
+
+                    ChapterName = lesson.Topic.Chapter.Title,
+
+                    TopicName = lesson.Topic.Title,
                 });
                 Console.WriteLine(
                     $"✓ {chunk.Type} | {chunk.Title} | {dimension} dimensions");
             }
+
+            lesson.IsEmbedded = true;
             lesson.EmbeddingsGeneratedAt = DateTime.UtcNow;
             _context.LessonVectorEmbeddings.AddRange(embeddings);
             await _context.SaveChangesAsync();

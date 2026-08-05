@@ -20,7 +20,7 @@ public class AIChatController : ControllerBase
 
     [HttpPost]
     public async Task<IActionResult> Chat(
-        ChatRequest request,
+        [FromBody] ChatRequest request,
         CancellationToken cancellationToken)
     {
         var response = await _chatOrchestrator.ChatAsync(

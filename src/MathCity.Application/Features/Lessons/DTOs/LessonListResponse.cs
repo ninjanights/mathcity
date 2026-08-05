@@ -18,5 +18,9 @@ public class LessonListResponse
 
     public int DisplayOrder { get; set; }
 
+    public bool IsEmbedded { get; set; }
+
+    public DateTime? EmbeddingsGeneratedAt { get; set; }
+
     public bool IsPublished { get; set; }
 }

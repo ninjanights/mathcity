@@ -38,20 +38,8 @@ public class LessonsController : ControllerBase
     public async Task<IActionResult> Create(
     [FromBody] CreateLessonRequest request)
     {
-
-       
-
         var result = await _lessonService.CreateAsync(
     request);
-
-
-
-      
-      
-
-
-
-
         return Ok(ApiResponse<object?>.Ok(result));
     }
 

@@ -30,7 +30,10 @@ public class Lesson : BaseEntity
 
     public int DisplayOrder { get; set; }
 
+    public bool IsEmbedded { get; set; } = false;
     public DateTime? EmbeddingsGeneratedAt { get; set; }
+
+
 
     public ICollection<LessonResource> Resources { get; set; } = new List<LessonResource>();
 
