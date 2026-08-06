@@ -23,7 +23,6 @@ public class LessonVectorEmbedding : BaseEntity
     public string ChapterName { get; set; } = "";
     public string TopicName { get; set; } = "";
 
-
     public string LessonTitle { get; set; } = "";
     public Guid? SourceId { get; set; }
     public EmbeddingChunkType ChunkType { get; set; }

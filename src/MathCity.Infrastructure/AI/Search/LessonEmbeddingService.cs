@@ -131,6 +131,13 @@ public class LessonEmbeddingService : ILessonEmbeddingService
             lesson.IsEmbedded = true;
             lesson.EmbeddingsGeneratedAt = DateTime.UtcNow;
             _context.LessonVectorEmbeddings.AddRange(embeddings);
+            foreach (var entry in _context.ChangeTracker.Entries())
+            {
+                Console.WriteLine(
+                    $"{entry.Entity.GetType().Name} | {entry.State}");
+            }
+
+
             await _context.SaveChangesAsync();
             await transaction.CommitAsync();
 
@@ -141,9 +148,17 @@ public class LessonEmbeddingService : ILessonEmbeddingService
                 GeneratedAt = lesson.EmbeddingsGeneratedAt.Value
             };
         }
-        catch
-        {       
-            await transaction.RollbackAsync();
+        catch (Exception ex)
+        {
+            Console.WriteLine("•••••••••••••••••••••••••••••••••");
+            Console.WriteLine(ex.ToString());
+            Console.WriteLine("•••••••••••••••••••••••••••••••••");
+
+            if (_context.Database.CurrentTransaction != null)
+            {
+                await transaction.RollbackAsync();
+            }
+
             throw;
         }
     }
