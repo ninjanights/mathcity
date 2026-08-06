@@ -15,7 +15,6 @@ using MathCity.Application.Features.Topics.Interfaces;
 using MathCity.Application.Features.Users.Interfaces;
 using MathCity.Infrastructure.AI.Chat;
 using MathCity.Infrastructure.AI.Embeddings;
-using MathCity.Infrastructure.AI.Orchestrator;
 using MathCity.Infrastructure.AI.Search;
 using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
@@ -89,9 +88,8 @@ public static class DependencyInjection
 
         // Semantic Search
         services.AddScoped<ILessonEmbeddingService, LessonEmbeddingService>();
-
-        // RAG Orchestrator
-        services.AddScoped<IChatOrchestrator, ChatOrchestrator>();
+        services.AddScoped<IChatService, ChatService>();
+        services.AddScoped<IChatSessionService, ChatSessionService>();
 
         services
 .AddIdentity<ApplicationUser, ApplicationRole>(options =>

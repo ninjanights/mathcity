@@ -43,6 +43,9 @@ public class ApplicationDbContext
     public DbSet<LessonTag> LessonTags => Set<LessonTag>();
 
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+    public DbSet<ChatSession> ChatSessions => Set<ChatSession>();
+
+    public DbSet<ChatMessage> ChatMessages => Set<ChatMessage>();
 
     public DbSet<LessonVectorEmbedding> LessonVectorEmbeddings
      => Set<LessonVectorEmbedding>();

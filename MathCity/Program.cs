@@ -1,12 +1,14 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MathCity.API.Middleware;
+using MathCity.Application.Features.AIChat.Interfaces;
 using MathCity.Application.Features.Subjects.Validators;
 using MathCity.Infrastructure;
 using MathCity.Infrastructure.Authentication;
 using MathCity.Infrastructure.Identity;
 using MathCity.Infrastructure.Persistence.Context;
 using MathCity.Infrastructure.Seed;
+using MathCity.Infrastructure.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -53,6 +55,9 @@ builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<CreateSubjectRequestValidator>();
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IChatSessionService, ChatSessionService>();
 
 builder.Services.AddCors(options =>
 {

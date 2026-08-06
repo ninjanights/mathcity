@@ -1,8 +1,7 @@
 ﻿using MathCity.Application.Features.LessonVectorEmbeddings.DTOs;
-using MathCity.Application.Features.LessonVectorEmbeddings.Enums;
+using MathCity.Domain.Enums;
 using MathCity.Application.Features.LessonVectorEmbeddings.Interfaces;
 using MathCity.Domain.Entities;
-using MathCity.Domain.Enums;
 using MathCity.Infrastructure.AI.Embeddings;
 using MathCity.Infrastructure.Persistence.Context;
 using MathCity.Infrastructure.Settings;
@@ -46,17 +45,13 @@ public class LessonEmbeddingService : ILessonEmbeddingService
             .Include(x => x.LessonTags)
                 .ThenInclude(x => x.Tag)
             .FirstOrDefaultAsync(x => x.Id == lessonId);
-
         if (lesson == null)
         {
             throw new Exception("Lesson not found.");
         }
-
-
         var existingEmbeddings = await _context.LessonVectorEmbeddings
      .Where(x => x.LessonId == lesson.Id)
      .ToListAsync();
-
 
         var transaction = await _context.Database.BeginTransactionAsync();
         try  {
@@ -77,12 +72,6 @@ public class LessonEmbeddingService : ILessonEmbeddingService
                         $"Invalid embedding dimension. Expected {_settings.Dimension}, got {dimension}."
                     );
                 }
-
-                Console.WriteLine($"Subject : {lesson.Topic.Chapter.Subject.Name}");
-                Console.WriteLine($"Chapter : {lesson.Topic.Chapter.Title}");
-                Console.WriteLine($"Topic   : {lesson.Topic.Title}");
-                Console.WriteLine($"Lesson  : {lesson.Title}");
-
                 Console.WriteLine(
         $"Saving chunk index: {chunkIndex} | {chunk.Title}"
     );
@@ -90,57 +79,41 @@ public class LessonEmbeddingService : ILessonEmbeddingService
                 embeddings.Add(new LessonVectorEmbedding
                 {
                     LessonId = lesson.Id,
-
                     SourceId = chunk.SourceId,
-
                     Model = _settings.JinaModel,
-
                     Dimensions = dimension,
-
                     ChunkType = chunk.Type,
-
                     ChunkIndex = chunkIndex++,
-
                     Title = chunk.Title,
-
                     Content = chunk.Content,
-
                     Embedding = vector,
-
                     TokenCount = 0,
                     SubjectId = lesson.Topic.Chapter.Subject.Id,
                     Tags = lesson.LessonTags
-        .Select(x => x.Tag.Name)
-        .ToArray(),
+                    .Select(x => x.Tag.Name)
+                    .ToArray(),
                     ChapterId = lesson.Topic.Chapter.Id,
-
                     TopicId = lesson.Topic.Id,
-
                     LessonTitle = lesson.Title,
-
                     SubjectName = lesson.Topic.Chapter.Subject.Name,
-
                     ChapterName = lesson.Topic.Chapter.Title,
-
                     TopicName = lesson.Topic.Title,
                 });
                 Console.WriteLine(
                     $"✓ {chunk.Type} | {chunk.Title} | {dimension} dimensions");
             }
 
-            lesson.IsEmbedded = true;
-            lesson.EmbeddingsGeneratedAt = DateTime.UtcNow;
+          
             _context.LessonVectorEmbeddings.AddRange(embeddings);
             foreach (var entry in _context.ChangeTracker.Entries())
             {
                 Console.WriteLine(
                     $"{entry.Entity.GetType().Name} | {entry.State}");
             }
-
-
+            lesson.IsEmbedded = true;
+            lesson.EmbeddingsGeneratedAt = DateTime.UtcNow;
             await _context.SaveChangesAsync();
             await transaction.CommitAsync();
-
             return new LessonEmbeddingResponse
             {
                 LessonId = lesson.Id,
@@ -236,20 +209,11 @@ public class LessonEmbeddingService : ILessonEmbeddingService
 
             Content =
             $"""
-        Subject:
-        {lesson.Topic.Chapter.Subject.Name}
-
-        Chapter:
-        {lesson.Topic.Chapter.Title}
-
-        Topic:
-        {lesson.Topic.Title}
-
-        Lesson:
-        {lesson.Title}
-
-        Summary:
-        {lesson.Summary}
+        Subject: {lesson.Topic.Chapter.Subject.Name}
+        Chapter: {lesson.Topic.Chapter.Title}
+        Topic: {lesson.Topic.Title}
+        Lesson: {lesson.Title}
+        Summary: {lesson.Summary}
         """,
 
             Type = EmbeddingChunkType.Summary,

@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 
 namespace MathCity.Application.Features.AIChat.Interfaces;
 
-public interface IChatOrchestrator
+public interface IChatService
 {
-    Task<ChatResponse> ChatAsync(
-        ChatRequest request,
-        CancellationToken cancellationToken = default);
+    Task<ChatResponse> ChatAsync(ChatRequest request);
 }

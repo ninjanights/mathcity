@@ -3,6 +3,7 @@ using System;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Pgvector;
@@ -12,9 +13,11 @@ using Pgvector;
 namespace MathCity.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260806135026_AddChatSystem")]
+    partial class AddChatSystem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -178,9 +181,6 @@ namespace MathCity.Infrastructure.Migrations
                     b.Property<Guid>("ChatSessionId")
                         .HasColumnType("uuid");
 
-                    b.Property<int>("Context")
-                        .HasColumnType("integer");
-
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
@@ -195,8 +195,7 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.Property<string>("Message")
                         .IsRequired()
-                        .HasMaxLength(8000)
-                        .HasColumnType("character varying(8000)");
+                        .HasColumnType("text");
 
                     b.Property<int>("Role")
                         .HasColumnType("integer");
@@ -212,53 +211,9 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ChapterId");
-
                     b.HasIndex("ChatSessionId");
 
-                    b.HasIndex("LessonId");
-
-                    b.HasIndex("SubjectId");
-
-                    b.HasIndex("TopicId");
-
-                    b.ToTable("ChatMessages", (string)null);
-                });
-
-            modelBuilder.Entity("MathCity.Domain.Entities.ChatMessageSource", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("ChatMessageId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
-
-                    b.Property<Guid>("LessonVectorEmbeddingId")
-                        .HasColumnType("uuid");
-
-                    b.Property<double>("Score")
-                        .HasColumnType("double precision");
-
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ChatMessageId");
-
-                    b.HasIndex("LessonVectorEmbeddingId");
-
-                    b.ToTable("ChatMessageSource");
+                    b.ToTable("ChatMessages");
                 });
 
             modelBuilder.Entity("MathCity.Domain.Entities.ChatSession", b =>
@@ -273,9 +228,6 @@ namespace MathCity.Infrastructure.Migrations
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<DateTime>("ExpiresAt")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
@@ -284,8 +236,7 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.Property<string>("SessionId")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
@@ -295,10 +246,7 @@ namespace MathCity.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("SessionId")
-                        .IsUnique();
-
-                    b.ToTable("ChatSessions", (string)null);
+                    b.ToTable("ChatSessions");
                 });
 
             modelBuilder.Entity("MathCity.Domain.Entities.Lesson", b =>
@@ -1068,25 +1016,6 @@ namespace MathCity.Infrastructure.Migrations
                     b.Navigation("ChatSession");
                 });
 
-            modelBuilder.Entity("MathCity.Domain.Entities.ChatMessageSource", b =>
-                {
-                    b.HasOne("MathCity.Domain.Entities.ChatMessage", "ChatMessage")
-                        .WithMany("Sources")
-                        .HasForeignKey("ChatMessageId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("MathCity.Domain.Entities.LessonVectorEmbedding", "LessonVectorEmbedding")
-                        .WithMany()
-                        .HasForeignKey("LessonVectorEmbeddingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ChatMessage");
-
-                    b.Navigation("LessonVectorEmbedding");
-                });
-
             modelBuilder.Entity("MathCity.Domain.Entities.Lesson", b =>
                 {
                     b.HasOne("MathCity.Domain.Entities.Topic", "Topic")
@@ -1216,11 +1145,6 @@ namespace MathCity.Infrastructure.Migrations
             modelBuilder.Entity("MathCity.Domain.Entities.Chapter", b =>
                 {
                     b.Navigation("Topics");
-                });
-
-            modelBuilder.Entity("MathCity.Domain.Entities.ChatMessage", b =>
-                {
-                    b.Navigation("Sources");
                 });
 
             modelBuilder.Entity("MathCity.Domain.Entities.ChatSession", b =>

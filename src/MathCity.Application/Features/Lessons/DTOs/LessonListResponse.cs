@@ -23,4 +23,10 @@ public class LessonListResponse
     public DateTime? EmbeddingsGeneratedAt { get; set; }
 
     public bool IsPublished { get; set; }
+
+    public int TagCount { get; set; }
+
+    public int ResourceCount { get; set; }
+
+    public int PracticeQuestionCount { get; set; }
 }

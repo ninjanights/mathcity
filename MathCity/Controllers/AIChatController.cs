@@ -8,24 +8,20 @@ namespace MathCity.API.Controllers;
 
 [ApiController]
 [Route("api/chat")]
-public class AIChatController : ControllerBase
+public class ChatController : ControllerBase
 {
-    private readonly IChatOrchestrator _chatOrchestrator;
+    private readonly IChatService _chatService;
 
-    public AIChatController(
-        IChatOrchestrator chatOrchestrator)
+    public ChatController(IChatService chatService)
     {
-        _chatOrchestrator = chatOrchestrator;
+        _chatService = chatService;
     }
 
     [HttpPost]
     public async Task<IActionResult> Chat(
-        [FromBody] ChatRequest request,
-        CancellationToken cancellationToken)
+        [FromBody] ChatRequest request)
     {
-        var response = await _chatOrchestrator.ChatAsync(
-            request,
-            cancellationToken);
+        var response = await _chatService.ChatAsync(request);
 
         return Ok(ApiResponse<object?>.Ok(response));
     }

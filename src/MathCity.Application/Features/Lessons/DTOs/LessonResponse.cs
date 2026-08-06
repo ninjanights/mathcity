@@ -27,4 +27,10 @@ public class LessonResponse
     public int DisplayOrder { get; set; }
 
     public bool IsBookmarked { get; set; }
+
+    public int TagCount { get; set; }
+
+    public int ResourceCount { get; set; }
+
+    public int PracticeQuestionCount { get; set; }
 }

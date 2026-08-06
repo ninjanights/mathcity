@@ -135,7 +135,11 @@ public class LessonService : ILessonService
                 DisplayOrder = x.DisplayOrder,
 
                 IsEmbedded = x.IsEmbedded,
-                EmbeddingsGeneratedAt = x.EmbeddingsGeneratedAt
+                EmbeddingsGeneratedAt = x.EmbeddingsGeneratedAt,
+
+                TagCount = x.LessonTags.Count(),
+                ResourceCount = x.Resources.Count(),
+                PracticeQuestionCount = x.PracticeQuestions.Count()
             })
             .ToListAsync();
 
@@ -176,7 +180,10 @@ public class LessonService : ILessonService
         Guid? userId = null)
     {
         var lesson = await _context.Lessons
-            .FirstOrDefaultAsync(x => x.Id == lessonId);
+    .Include(x => x.LessonTags)
+    .Include(x => x.Resources)
+    .Include(x => x.PracticeQuestions)
+    .FirstOrDefaultAsync(x => x.Id == lessonId);
 
         if (lesson == null)
             throw new NotFoundException("Lesson not found.");
@@ -283,7 +290,10 @@ public class LessonService : ILessonService
             IsBookmarked = isBookmarked,
 
             IsEmbedded = lesson.IsEmbedded,
-            EmbeddingsGeneratedAt = lesson.EmbeddingsGeneratedAt
+            EmbeddingsGeneratedAt = lesson.EmbeddingsGeneratedAt,
+            TagCount = lesson.LessonTags.Count(),
+            ResourceCount = lesson.Resources.Count(),
+            PracticeQuestionCount = lesson.PracticeQuestions.Count()
         };
     }
 

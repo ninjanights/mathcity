@@ -1,4 +1,4 @@
-﻿using MathCity.Application.Features.LessonVectorEmbeddings.Enums;
+﻿using MathCity.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;

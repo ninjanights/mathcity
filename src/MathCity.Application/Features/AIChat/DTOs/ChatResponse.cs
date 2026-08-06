@@ -11,6 +11,7 @@ public class ChatResponse
 {
     public string Answer { get; set; } = string.Empty;
 
-    public List<SemanticSearchResult> Sources { get; set; }
-        = new();
+    public string SessionId { get; set; } = string.Empty;
+    public IReadOnlyList<SemanticSearchResult> Sources { get; set; }
+      = Array.Empty<SemanticSearchResult>();
 }
