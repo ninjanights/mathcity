@@ -5,6 +5,7 @@ using MathCity.Application.Features.LessonVectorEmbeddings.Interfaces;
 using MathCity.Domain.Entities;
 using MathCity.Domain.Enums;
 using MathCity.Infrastructure.Persistence.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,7 @@ public class ChatService : IChatService
     private readonly ILessonEmbeddingService _embeddingService;
     private readonly IAIChatService _aiChatService;
     private readonly ApplicationDbContext _context;
+
 
     public ChatService(
         IChatSessionService chatSessionService,
@@ -36,10 +38,12 @@ public class ChatService : IChatService
     {
         var sessionId = await _chatSessionService.GetOrCreateSessionIdAsync();
 
-        await _chatSessionService.TouchSessionAsync();
 
         var chatSessionId =
             await _chatSessionService.GetSessionDatabaseIdAsync(sessionId);
+
+        await _chatSessionService.TouchSessionAsync(sessionId);
+
 
         // search for relevant lessons based on the request context
         var results = await _embeddingService.SearchAsync(
@@ -55,7 +59,7 @@ public class ChatService : IChatService
 
 
 
-        
+
 
         var context = string.Join("\n\n",
     results.Select(x => x.Content));
@@ -116,4 +120,82 @@ public class ChatService : IChatService
             Sources = results
         };
     }
+
+    public async Task<ChatHistoryResponse> GetHistoryAsync(
+    Guid? beforeMessageId,
+    int take = 10)
+        {
+
+
+        var sessionId =
+            await _chatSessionService.GetOrCreateSessionIdAsync();
+
+
+
+        
+        var chatSessionId =
+            await _chatSessionService.GetSessionDatabaseIdAsync(sessionId);
+
+        await _chatSessionService.TouchSessionAsync(sessionId);
+
+
+        var query = _context.ChatMessages
+            .Where(x => x.ChatSessionId == chatSessionId)
+            .AsQueryable();
+
+        if (beforeMessageId.HasValue)
+        {
+            var before = await _context.ChatMessages
+                .Where(x => x.Id == beforeMessageId.Value)
+                .Select(x => x.CreatedAt)
+                .FirstAsync();
+
+            query = query.Where(x => x.CreatedAt < before);
+        }
+
+        var messages = await query
+    .OrderByDescending(x => x.CreatedAt)
+    .Take(take + 1)
+    .ToListAsync();
+
+
+        var hasMore = messages.Count > take;
+
+        messages = messages.Take(take).ToList();
+
+        return new ChatHistoryResponse
+        {
+            Messages = messages
+        .OrderBy(x => x.CreatedAt)
+        .Select(x => new ChatMessageDto
+        {
+            Id = x.Id,
+
+            Role = x.Role,
+
+            Message = x.Message,
+
+            CreatedAt = x.CreatedAt,
+
+            Context = x.Context,
+
+            SubjectId = x.SubjectId,
+
+            ChapterId = x.ChapterId,
+
+            TopicId = x.TopicId,
+
+            LessonId = x.LessonId
+        })
+        .ToList(),
+
+            HasMore = hasMore,
+
+            NextCursor = messages.FirstOrDefault()?.Id
+        };
+    }
+
 }
+
+
+

@@ -25,4 +25,17 @@ public class ChatController : ControllerBase
 
         return Ok(ApiResponse<object?>.Ok(response));
     }
+
+
+    [HttpGet]
+    public async Task<IActionResult> GetHistory(
+        [FromQuery] Guid? beforeMessageId,
+        [FromQuery] int take = 10)
+    {
+        var response = await _chatService.GetHistoryAsync(beforeMessageId, take);
+
+        return Ok(ApiResponse<object?>.Ok(response));
+    }
+
+
 }

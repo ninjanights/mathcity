@@ -3,8 +3,7 @@
 public interface IChatSessionService
 {
     Task<string> GetOrCreateSessionIdAsync();
-
-    Task TouchSessionAsync();
+    Task TouchSessionAsync(string sessionId);
 
     Task<Guid> GetSessionDatabaseIdAsync(string sessionId);
 }

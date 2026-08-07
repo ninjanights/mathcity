@@ -30,6 +30,7 @@ public class ChatSessionService : IChatSessionService
         // Cookie already exists
         if (httpContext.Request.Cookies.TryGetValue(cookieName, out var sessionId))
         {
+            Console.WriteLine($"Existing session retrieved with ID -------------=================++++++++++++: {sessionId}");
             return sessionId;
         }
         // Else : Create new session id
@@ -45,25 +46,22 @@ public class ChatSessionService : IChatSessionService
                 SameSite = SameSiteMode.Lax,
                 Expires = DateTimeOffset.UtcNow.AddDays(7)
             });
-
+        Console.WriteLine($"New session created with ID -------------=================++++++++++++: {sessionId}");
         return sessionId;
     }
 
 
-    public async Task TouchSessionAsync()
+    public async Task TouchSessionAsync(string sessionId)
     {
        const string cookieName = "mc_session";
         var httpContext = _httpContextAccessor.HttpContext
       ?? throw new InvalidOperationException("HttpContext is unavailable.");
-
-        if (!httpContext.Request.Cookies.TryGetValue(cookieName, out var sessionId))
-            return;
-
         var session = await _context.ChatSessions
       .FirstOrDefaultAsync(x => x.SessionId == sessionId);
 
         if (session == null)
             return;
+
         session.LastAccessedAt = DateTime.UtcNow;
         session.ExpiresAt = DateTime.UtcNow.AddDays(7);
 
