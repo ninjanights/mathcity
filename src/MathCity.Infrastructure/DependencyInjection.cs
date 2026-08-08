@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.AIChat.Interfaces;
+﻿using MathCity.Application.Common.Interfaces;
+using MathCity.Application.Features.AIChat.Interfaces;
 using MathCity.Application.Features.Authentication.Interfaces;
 using MathCity.Application.Features.Bookmarks.Interfaces;
 using MathCity.Application.Features.Chapters.Interfaces;
@@ -125,6 +126,9 @@ public static class DependencyInjection
         services.AddScoped<IRefreshTokenService, RefreshTokenService>();
         services.Configure<SupabaseSettings>(configuration.GetSection(SupabaseSettings.SectionName));
         services.AddHttpClient<IFileStorageService, SupabaseStorageService>();
+
+        services.AddHttpContextAccessor();
+        services.AddScoped<ICurrentUserService, CurrentUserService>();
 
         services.Configure<UploadOptions>(configuration.GetSection(UploadOptions.SectionName));
         services.Configure<AISettings>(configuration.GetSection(AISettings.SectionName));

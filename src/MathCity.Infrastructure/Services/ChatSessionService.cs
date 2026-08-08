@@ -1,4 +1,5 @@
-﻿using MathCity.Application.Features.AIChat.Interfaces;
+﻿using MathCity.Application.Common.Interfaces;
+using MathCity.Application.Features.AIChat.Interfaces;
 using MathCity.Domain.Entities;
 using MathCity.Infrastructure.Persistence.Context;
 using Microsoft.AspNetCore.Http;
@@ -11,53 +12,27 @@ public class ChatSessionService : IChatSessionService
 {
     private readonly ApplicationDbContext _context;
     private readonly IHttpContextAccessor _httpContextAccessor;
+    private readonly ICurrentUserService _currentUserService;
 
     public ChatSessionService(
         ApplicationDbContext context,
-        IHttpContextAccessor httpContextAccessor)
+        IHttpContextAccessor httpContextAccessor,
+        ICurrentUserService currentUserService)
     {
         _context = context;
         _httpContextAccessor = httpContextAccessor;
+        _currentUserService = currentUserService;
     }
 
-    public async Task<string> GetOrCreateSessionIdAsync()
+    public async Task TouchSessionAsync(string sessionId)
     {
         const string cookieName = "mc_session";
 
         var httpContext = _httpContextAccessor.HttpContext
-          ?? throw new InvalidOperationException("HttpContext is unavailable.");
+            ?? throw new InvalidOperationException("HttpContext is unavailable.");
 
-        // Cookie already exists
-        if (httpContext.Request.Cookies.TryGetValue(cookieName, out var sessionId))
-        {
-            Console.WriteLine($"Existing session retrieved with ID -------------=================++++++++++++: {sessionId}");
-            return sessionId;
-        }
-        // Else : Create new session id
-        sessionId = Guid.NewGuid().ToString("N");
-
-        httpContext.Response.Cookies.Append(
-            cookieName,
-            sessionId,
-            new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = false, // true in production
-                SameSite = SameSiteMode.Lax,
-                Expires = DateTimeOffset.UtcNow.AddDays(7)
-            });
-        Console.WriteLine($"New session created with ID -------------=================++++++++++++: {sessionId}");
-        return sessionId;
-    }
-
-
-    public async Task TouchSessionAsync(string sessionId)
-    {
-       const string cookieName = "mc_session";
-        var httpContext = _httpContextAccessor.HttpContext
-      ?? throw new InvalidOperationException("HttpContext is unavailable.");
         var session = await _context.ChatSessions
-      .FirstOrDefaultAsync(x => x.SessionId == sessionId);
+            .FirstOrDefaultAsync(x => x.SessionId == sessionId);
 
         if (session == null)
             return;
@@ -67,6 +42,7 @@ public class ChatSessionService : IChatSessionService
 
         await _context.SaveChangesAsync();
 
+        // Refresh the browser cookie expiration.
         httpContext.Response.Cookies.Append(
             cookieName,
             sessionId,
@@ -75,19 +51,14 @@ public class ChatSessionService : IChatSessionService
                 HttpOnly = true,
                 Secure = false, // true in production
                 SameSite = SameSiteMode.Lax,
-                Expires = DateTimeOffset.UtcNow.AddDays(7)
+                Expires = session.ExpiresAt
             });
-
-
-
-
-
     }
 
     public async Task<Guid> GetSessionDatabaseIdAsync(string sessionId)
     {
         var session = await _context.ChatSessions
-        .FirstOrDefaultAsync(x => x.SessionId == sessionId);
+            .FirstOrDefaultAsync(x => x.SessionId == sessionId);
 
         if (session != null)
             return session.Id;
@@ -95,6 +66,7 @@ public class ChatSessionService : IChatSessionService
         session = new ChatSession
         {
             SessionId = sessionId,
+            UserId = _currentUserService.UserId,
             LastAccessedAt = DateTime.UtcNow,
             ExpiresAt = DateTime.UtcNow.AddDays(7)
         };
@@ -103,7 +75,91 @@ public class ChatSessionService : IChatSessionService
         await _context.SaveChangesAsync();
 
         return session.Id;
-
     }
+    public async Task<string> GetOrCreateSessionIdAsync()
+    {
+        const string cookieName = "mc_session";
 
+        var httpContext = _httpContextAccessor.HttpContext
+            ?? throw new InvalidOperationException("HttpContext is unavailable.");
+
+        var userId = _currentUserService.UserId;
+
+        // =========================================================
+        // LOGGED-IN USER
+        // =========================================================
+        // If the user is authenticated, their ChatSession is tied
+        // to UserId instead of depending on the browser cookie.
+        // This means the same user gets the same chat in every browser.
+        // =========================================================
+        if (userId.HasValue)
+        {
+            var userSession = await _context.ChatSessions
+                .FirstOrDefaultAsync(x => x.UserId == userId.Value);
+
+            if (userSession != null)
+            {
+                return userSession.SessionId;
+            }
+
+            // No session exists for this user yet.
+            // Create one and bind it to their UserId.
+            var sessionId = Guid.NewGuid().ToString("N");
+
+            var session = new ChatSession
+            {
+                SessionId = sessionId,
+                UserId = userId.Value,
+                LastAccessedAt = DateTime.UtcNow,
+                ExpiresAt = DateTime.UtcNow.AddDays(7)
+            };
+
+            _context.ChatSessions.Add(session);
+            await _context.SaveChangesAsync();
+
+            // Also give the browser the session cookie.
+            httpContext.Response.Cookies.Append(
+                cookieName,
+                sessionId,
+                new CookieOptions
+                {
+                    HttpOnly = true,
+                    Secure = false, // true in production
+                    SameSite = SameSiteMode.Lax,
+                    Expires = session.ExpiresAt
+                });
+
+            return sessionId;
+        }
+
+        // =========================================================
+        // ANONYMOUS USER
+        // =========================================================
+        // No UserId exists, so the browser's session cookie becomes
+        // the identity of the chat session.
+        // =========================================================
+
+        if (httpContext.Request.Cookies.TryGetValue(
+            cookieName,
+            out var existingSessionId))
+        {
+            return existingSessionId;
+        }
+
+        // No cookie -> create a new anonymous session ID.
+        var anonymousSessionId = Guid.NewGuid().ToString("N");
+
+        httpContext.Response.Cookies.Append(
+            cookieName,
+            anonymousSessionId,
+            new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = false, // true in production
+                SameSite = SameSiteMode.Lax,
+                Expires = DateTimeOffset.UtcNow.AddDays(7)
+            });
+
+        return anonymousSessionId;
+    }
 }

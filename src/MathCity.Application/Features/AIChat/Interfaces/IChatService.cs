@@ -9,7 +9,7 @@ namespace MathCity.Application.Features.AIChat.Interfaces;
 
 public interface IChatService
 {
-    Task<ChatResponse> ChatAsync(ChatRequest request);
+    Task<ChatResponse> ChatAsync(ChatRequest request );
 
     Task<ChatHistoryResponse> GetHistoryAsync(
     Guid? beforeMessageId,

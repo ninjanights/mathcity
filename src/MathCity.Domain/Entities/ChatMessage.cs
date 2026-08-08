@@ -28,6 +28,14 @@ public class ChatMessage : BaseEntity
 
     public Guid? LessonId { get; set; }
 
+    public string? SubjectName { get; set; }
+
+    public string? ChapterName { get; set; }
+
+    public string? TopicName { get; set; }
+
+    public string? LessonTitle { get; set; }
+
     // OPTIONAL (recommended)
     public ICollection<ChatMessageSource> Sources { get; set; }
         = new List<ChatMessageSource>();

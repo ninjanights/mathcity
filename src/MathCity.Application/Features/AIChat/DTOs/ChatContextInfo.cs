@@ -7,30 +7,19 @@ using System.Threading.Tasks;
 
 namespace MathCity.Application.Features.AIChat.DTOs;
 
-public class ChatMessageDto
+public class ChatContextInfo
 {
-    public Guid Id { get; set; }
-
-    public ChatRole Role { get; set; }
-
-    public string Message { get; set; } = string.Empty;
-
-    public DateTime CreatedAt { get; set; }
-
     public SearchContext Context { get; set; }
 
     public Guid? SubjectId { get; set; }
-
-    public Guid? ChapterId { get; set; }
-
-    public Guid? TopicId { get; set; }
-
-    public Guid? LessonId { get; set; }
     public string? SubjectName { get; set; }
 
+    public Guid? ChapterId { get; set; }
     public string? ChapterName { get; set; }
 
+    public Guid? TopicId { get; set; }
     public string? TopicName { get; set; }
 
+    public Guid? LessonId { get; set; }
     public string? LessonTitle { get; set; }
 }
